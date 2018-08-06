@@ -23,7 +23,12 @@
   "license": "CC0-1.0",
   "version": "3.0.1",
   "canonicalBase": "http://hl7.org/fhir/us/bser",
-  "dependencyList": [],
+  "dependencyList": [{
+    "name": "uscore",
+    "location": "http://hl7.org/fhir/us/core",
+    "source": "dependencies/uscore",
+    "version": "1.0.1"
+  }],
   "source": "implementationguide/4383.xml",
   "sct-edition": "http://snomed.info/sct/731000124108",
   "special-urls": [],
