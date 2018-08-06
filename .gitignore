@@ -1,2 +1,6 @@
 
 org.hl7.fhir.igpublisher.jar
+output/qa.json
+output/
+qa/
+temp/
