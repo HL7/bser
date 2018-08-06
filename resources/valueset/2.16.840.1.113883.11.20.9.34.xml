@@ -1,0 +1,38 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id
+    value="2.16.840.1.113883.11.20.9.34" />
+  <meta
+    id="216" />
+  <url
+    value="http://hl7.org/fhir/phwg/bser/StructureDefinition/Bidirectional-Services-eReferrals/ValueSet/2.16.840.1.113883.11.20.9.34" />
+  <name
+    value="Patient Education" />
+  <status
+    value="active" />
+  <description
+    value="Limited to terms descending from the Education (409073007) hierarchy." />
+  <compose>
+    <include>
+      <system
+        value="urn:oid:2.16.840.1.113883.6.96" />
+      <concept>
+        <code
+          value="311401005" />
+        <display
+          value="Patient Education" />
+      </concept>
+      <concept>
+        <code
+          value="171044003" />
+        <display
+          value="Immunization Education" />
+      </concept>
+      <concept>
+        <code
+          value="243072006" />
+        <display
+          value="Cancer Education" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

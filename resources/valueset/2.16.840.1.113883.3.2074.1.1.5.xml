@@ -1,0 +1,31 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id
+    value="2.16.840.1.113883.3.2074.1.1.5" />
+  <meta
+    id="2447" />
+  <url
+    value="http://hl7.org/fhir/phwg/bser/StructureDefinition/Bidirectional-Services-eReferrals/ValueSet/2.16.840.1.113883.3.2074.1.1.5" />
+  <name
+    value="Administrative Gender Excluding Nulls" />
+  <status
+    value="active" />
+  <description />
+  <compose>
+    <include>
+      <system
+        value="urn:oid:2.16.840.1.113883.5.1" />
+      <concept>
+        <code
+          value="F" />
+        <display
+          value="Female" />
+      </concept>
+      <concept>
+        <code
+          value="M" />
+        <display
+          value="Male" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

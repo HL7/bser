@@ -1,0 +1,18 @@
+{
+  "PatientRole": {
+    "examples": [
+      {
+        "type": "Patient",
+        "id": "example"
+      }
+    ]
+  },
+  "PractitionerPerson": {
+    "examples": [
+      {
+        "type": "Practitioner",
+        "id": "us-core-practitioner-example"
+      }
+    ]
+  }
+}

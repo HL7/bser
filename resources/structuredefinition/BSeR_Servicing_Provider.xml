@@ -1,0 +1,149 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="BSeR_Servicing_Provider" />
+  <url
+    value="http://hl7.org/phwg/bser/StructureDefinition/servicingProvider" />
+  <name
+    value="BSeR Servicing Provider" />
+  <status
+    value="draft" />
+  <publisher
+    value="Hi3 Solutions" />
+  <contact>
+    <name
+      value="AbdulMalik Shakir" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="6266444491" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="abdulmalik.shakir@hi3solutions.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <kind
+    value="resource" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="PractitionerRole" />
+  <type
+    value="PractitionerRole" />
+  <baseDefinition
+    value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="PractitionerRole">
+      <path
+        value="PractitionerRole" />
+    </element>
+    <element
+      id="practitioner">
+      <path
+        value="PractitionerRole.practitioner" />
+      <short
+        value="practitioner" />
+      <definition
+        value="SHALL contain exactly one [1..1] BSeR Practitioner (identifier: http://hl7.org/fhir/phwg/bser/StructureDefinition/bser-practitioner) (CONF:4383-89)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/phwg/bser/StructureDefinition/bser-practitioner" />
+      </type>
+    </element>
+    <element
+      id="organization">
+      <path
+        value="PractitionerRole.organization" />
+      <short
+        value="organization" />
+      <definition
+        value="SHOULD contain zero or one [0..1] BSeR Organization (identifier: http://hl7.org/phwg/bser/StructureDefinition/bser-organization) (CONF:4383-90)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/phwg/bser/StructureDefinition/bser-organization" />
+      </type>
+    </element>
+    <element
+      id="code">
+      <path
+        value="PractitionerRole.code" />
+      <short
+        value="code" />
+      <definition
+        value="SHOULD contain zero or one [0..1] code (CONF:4383-91)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="code.coding">
+      <path
+        value="PractitionerRole.code.coding" />
+      <short
+        value="coding" />
+      <definition
+        value="The code, if present, SHALL contain exactly one [1..1] coding (CONF:4383-92)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="code.text">
+      <path
+        value="PractitionerRole.code.text" />
+      <short
+        value="text" />
+      <definition
+        value="The code, if present, MAY contain zero or one [0..1] text (CONF:4383-93)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="location">
+      <path
+        value="PractitionerRole.location" />
+      <short
+        value="location" />
+      <definition
+        value="SHOULD contain zero or one [0..1] BSeR Service Delivery Location (identifier: http://hl7.org/phwg/bser/StructureDefinition/bser-service-delivery-location) (CONF:4383-192)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/phwg/bser/StructureDefinition/bser-service-delivery-location" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

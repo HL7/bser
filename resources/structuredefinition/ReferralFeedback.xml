@@ -1,0 +1,567 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="ReferralFeedback" />
+  <url
+    value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralFeedback" />
+  <name
+    value="BSeR Referral Feedback" />
+  <status
+    value="draft" />
+  <publisher
+    value="Hi3 Solutions" />
+  <contact>
+    <name
+      value="AbdulMalik Shakir" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="6266444491" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="abdulmalik.shakir@hi3solutions.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <kind
+    value="resource" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="Composition" />
+  <type
+    value="Composition" />
+  <baseDefinition
+    value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="Composition">
+      <path
+        value="Composition" />
+    </element>
+    <element
+      id="identifier">
+      <path
+        value="Composition.identifier" />
+      <short
+        value="identifier" />
+      <definition
+        value="SHALL contain exactly one [1..1] identifier (CONF:4383-209)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="status">
+      <path
+        value="Composition.status" />
+      <short
+        value="status" />
+      <definition
+        value="SHALL contain exactly one [1..1] status (CONF:4383-210)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="type">
+      <path
+        value="Composition.type" />
+      <short
+        value="type" />
+      <definition
+        value="SHALL contain exactly one [1..1] type (CONF:4383-211)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="subject">
+      <path
+        value="Composition.subject" />
+      <short
+        value="subject" />
+      <definition
+        value="SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-205)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+      </type>
+    </element>
+    <element
+      id="date">
+      <path
+        value="Composition.date" />
+      <short
+        value="date" />
+      <definition
+        value="SHALL contain exactly one [1..1] date (CONF:4383-212)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="author">
+      <path
+        value="Composition.author" />
+      <short
+        value="author" />
+      <definition
+        value="SHALL contain exactly one [1..1] BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-206)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+      </type>
+    </element>
+    <element
+      id="title">
+      <path
+        value="Composition.title" />
+      <short
+        value="title" />
+      <definition
+        value="SHALL contain exactly one [1..1] title (CONF:4383-213)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="relatesTo">
+      <path
+        value="Composition.relatesTo" />
+      <short
+        value="relatesTo" />
+      <definition
+        value="SHALL contain exactly one [1..1] relatesTo (CONF:4383-207)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="relatesTo.code">
+      <path
+        value="Composition.relatesTo.code" />
+      <short
+        value="code" />
+      <definition
+        value="This relatesTo SHALL contain exactly one [1..1] code (CONF:4383-214)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="relatesTo.target[x]">
+      <path
+        value="Composition.relatesTo.target[x]" />
+      <slicing>
+        <discriminator>
+          <type
+            value="value" />
+          <path
+            value="@type" />
+        </discriminator>
+        <rules
+          value="open" />
+      </slicing>
+      <short
+        value="target[x]" />
+      <definition
+        value="This relatesTo SHALL contain exactly one [1..1] target[x], where target[x] is (CONF:4383-208)" />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="relatesTo.target[x].targetIdentifier">
+      <path
+        value="Composition.relatesTo.targetIdentifier" />
+      <label
+        value="Referral Request Document Identifier" />
+      <short
+        value="Referral Request Document Identifier" />
+      <definition
+        value="This relatesTo SHALL contain exactly one [1..1] targetIdentifier (CONF:4383-215)." />
+    </element>
+    <element>
+      <path
+        value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type
+            value="value" />
+          <path
+            value="code" />
+        </discriminator>
+        <rules
+          value="open" />
+      </slicing>
+      <definition
+        value="SHALL contain exactly one [1..1] section (CONF:4383-241) such that it" />
+    </element>
+    <element
+      id="Composition.section:section9">
+      <path
+        value="Composition.section" />
+      <sliceName
+        value="section9" />
+      <label
+        value="Multi-program specific feedback" />
+      <short
+        value="Multi-program specific feedback" />
+      <definition
+        value="SHALL contain exactly one [1..1] section (CONF:4383-230) such that it" />
+      <comment
+        value="Multi-Program Feedback Data" />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="Composition.section:section9.title">
+      <path
+        value="Composition.section.title" />
+      <short
+        value="title" />
+      <definition
+        value="SHALL contain exactly one [1..1] title (CONF:4383-231)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="Composition.section:section9.code">
+      <path
+        value="Composition.section.code" />
+      <short
+        value="code" />
+      <definition
+        value="SHALL contain exactly one [1..1] code (CONF:4383-232)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="Composition.section:section9.text">
+      <path
+        value="Composition.section.text" />
+      <short
+        value="text" />
+      <definition
+        value="SHOULD contain exactly one [1..1] text (CONF:4383-233)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element>
+      <path
+        value="Composition.section.entry" />
+      <slicing>
+        <rules
+          value="open" />
+      </slicing>
+      <definition
+        value="SHOULD contain exactly one [1..1] BSeR Blood Pressure Observation (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation) (CONF:4383-283)." />
+    </element>
+    <element
+      id="section.Composition.section.entry:section9_entry4">
+      <path
+        value="Composition.section.entry" />
+      <sliceName
+        value="section9_entry4" />
+      <short
+        value="entry" />
+      <definition
+        value="SHOULD contain exactly one [1..1] BSeR Body Height Observation (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation) (CONF:4383-240)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation" />
+      </type>
+    </element>
+    <element
+      id="section.Composition.section.entry:section9_entry5">
+      <path
+        value="Composition.section.entry" />
+      <sliceName
+        value="section9_entry5" />
+      <short
+        value="entry" />
+      <definition
+        value="SHOULD contain exactly one [1..1] BSeR Body Weight Observation (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation) (CONF:4383-258)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation" />
+      </type>
+    </element>
+    <element
+      id="section.Composition.section.entry:section9_entry6">
+      <path
+        value="Composition.section.entry" />
+      <sliceName
+        value="section9_entry6" />
+      <short
+        value="entry" />
+      <definition
+        value="SHOULD contain exactly one [1..1] BSeR Body Mass Index Observation (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation) (CONF:4383-269)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation" />
+      </type>
+    </element>
+    <element
+      id="section.Composition.section.entry:section9_entry7">
+      <path
+        value="Composition.section.entry" />
+      <sliceName
+        value="section9_entry7" />
+      <short
+        value="entry" />
+      <definition
+        value="SHOULD contain exactly one [1..1] BSeR Blood Pressure Observation (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation) (CONF:4383-283)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation" />
+      </type>
+    </element>
+    <element
+      id="Composition.section:section10">
+      <path
+        value="Composition.section" />
+      <sliceName
+        value="section10" />
+      <label
+        value="Single-program specific feedback" />
+      <short
+        value="Single-program specific feedback" />
+      <definition
+        value="SHALL contain exactly one [1..1] section (CONF:4383-241) such that it" />
+      <comment
+        value="Program Specific Feedback Data" />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="Composition.section:section10.code">
+      <path
+        value="Composition.section.code" />
+      <short
+        value="code" />
+      <definition
+        value="SHALL contain exactly one [1..1] code (CONF:4383-290)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element>
+      <path
+        value="Composition.section.section" />
+      <slicing>
+        <rules
+          value="open" />
+      </slicing>
+      <definition
+        value="SHOULD contain zero or one [0..1] section (CONF:4383-244)." />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section2">
+      <path
+        value="Composition.section.section" />
+      <sliceName
+        value="section10_section2" />
+      <label
+        value="Arthritis Program Specific Data" />
+      <short
+        value="Arthritis Program Specific Data" />
+      <definition
+        value="SHOULD contain zero or one [0..1] section (CONF:4383-242) such that it" />
+      <comment
+        value="Arthritis Program Feedback Data" />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section2.code">
+      <path
+        value="Composition.section.section.code" />
+      <short
+        value="code" />
+      <definition
+        value="SHALL contain exactly one [1..1] code (CONF:4383-284)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section2.entry">
+      <path
+        value="Composition.section.section.entry" />
+      <label
+        value="Healthy eating" />
+      <short
+        value="Healthy eating" />
+      <definition
+        value="SHOULD contain zero or one [0..1] entry (CONF:4383-285)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section2.entry">
+      <path
+        value="Composition.section.section.entry" />
+      <label
+        value="improving strength, flexibility, and endurance" />
+      <short
+        value="improving strength, flexibility, and endurance" />
+      <definition
+        value="SHOULD contain zero or one [0..1] entry (CONF:4383-286)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section2.entry">
+      <path
+        value="Composition.section.section.entry" />
+      <label
+        value="Appropriate use of medications" />
+      <short
+        value="Appropriate use of medications" />
+      <definition
+        value="SHOULD contain zero or one [0..1] entry (CONF:4383-287)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section2.entry">
+      <path
+        value="Composition.section.section.entry" />
+      <label
+        value="pain, fatigue, frustration and isolation" />
+      <short
+        value="pain, fatigue, frustration and isolation" />
+      <definition
+        value="SHOULD contain zero or one [0..1] entry (CONF:4383-288)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section2.entry">
+      <path
+        value="Composition.section.section.entry" />
+      <label
+        value="Pain Management" />
+      <short
+        value="Pain Management" />
+      <definition
+        value="SHOULD contain zero or one [0..1] entry (CONF:4383-289)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section3">
+      <path
+        value="Composition.section.section" />
+      <sliceName
+        value="section10_section3" />
+      <short
+        value="section" />
+      <definition
+        value="SHOULD contain zero or one [0..1] section (CONF:4383-243)." />
+      <comment
+        value="Early Childhood Nutrition Feedback Data" />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="section.Composition.section.section:section10_section4">
+      <path
+        value="Composition.section.section" />
+      <sliceName
+        value="section10_section4" />
+      <short
+        value="section" />
+      <definition
+        value="SHOULD contain zero or one [0..1] section (CONF:4383-244)." />
+      <comment
+        value="Tobacco Cessation Feedback Data" />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

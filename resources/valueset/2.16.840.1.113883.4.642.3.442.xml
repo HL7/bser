@@ -1,0 +1,14 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id
+    value="2.16.840.1.113883.4.642.3.442" />
+  <meta
+    id="5511" />
+  <url
+    value="http://hl7.org/fhir/phwg/bser/StructureDefinition/Bidirectional-Services-eReferrals/ValueSet/2.16.840.1.113883.4.642.3.442" />
+  <name
+    value="PatientRelationshipType" />
+  <status
+    value="draft" />
+  <description
+    value="A set of codes that can be used to indicate the relationship between a Patient and a Related Person." />
+</ValueSet>
