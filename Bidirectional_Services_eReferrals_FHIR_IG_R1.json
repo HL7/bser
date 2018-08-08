@@ -19,6 +19,16 @@
       "template-base": "instance-template-sd.html"
     }
   },
+"npm-name": "hl7.fhir.us.bser",
+  "license": "CC0-1.0",
+  "version": "3.0.1",
+  "canonicalBase": "http://hl7.org/fhir/us/bser",
+  "dependencyList": [{
+    "name": "uscore",
+    "location": "http://hl7.org/fhir/us/core",
+    "source": "dependencies/uscore",
+    "version": "1.0.1"
+  }],
   "canonicalBase": "http://hl7.org/fhir/us/bser",
   "dependencyList": [],
   "source": "implementationguide/4383.xml",
@@ -64,9 +74,6 @@
     "StructureDefinition/ReferralFeedback": {
       "base": "StructureDefinition-ReferralFeedback.html"
     },
-    "StructureDefinition/BodyHeightObservation": {
-      "base": "StructureDefinition-BodyHeightObservation.html"
-    },
     "StructureDefinition/BodyWeightObservation": {
       "base": "StructureDefinition-BodyWeightObservation.html"
     },
@@ -78,6 +85,42 @@
     },
     "StructureDefinition/PatientAllergy": {
       "base": "StructureDefinition-PatientAllergy.html"
+    },
+    "StructureDefinition/bserMedicationAdministration": {
+      "base": "StructureDefinition-bserMedicationAdministration.html"
+    },
+    "StructureDefinition/Diagnosis": {
+      "base": "StructureDefinition-Diagnosis.html"
+    },
+    "StructureDefinition/ChildhoodNutritionReferralObs": {
+      "base": "StructureDefinition-ChildhoodNutritionReferralObs.html"
+    },
+    "StructureDefinition/HA1cObservation": {
+      "base": "StructureDefinition-HA1cObservation.html"
+    },
+    "StructureDefinition/SmokingStatus": {
+      "base": "StructureDefinition-SmokingStatus.html"
+    },
+    "StructureDefinition/TobaccoCessationReferralObs": {
+      "base": "StructureDefinition-TobaccoCessationReferralObs.html"
+    },
+    "StructureDefinition/ReferralActivityStatus": {
+      "base": "StructureDefinition-ReferralActivityStatus.html"
+    },
+    "StructureDefinition/BodyHeightObservation": {
+      "base": "StructureDefinition-BodyHeightObservation.html"
+    },
+    "StructureDefinition/SessionsAttendedObservation": {
+      "base": "StructureDefinition-SessionsAttendedObservation.html"
+    },
+    "StructureDefinition/ArthristisFeedbackObservation": {
+      "base": "StructureDefinition-ArthristisFeedbackObservation.html"
+    },
+    "StructureDefinition/ChildhoodNutritionFeedbackObs": {
+      "base": "StructureDefinition-ChildhoodNutritionFeedbackObs.html"
+    },
+    "StructureDefinition/TobaccoCessationFeedbackObs": {
+      "base": "StructureDefinition-TobaccoCessationFeedbackObs.html"
     },
     "Patient/example": {
       "base": "Patient-example.html"
