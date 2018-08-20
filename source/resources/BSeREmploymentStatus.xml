@@ -1,0 +1,88 @@
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="EmploymentStatus" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/EmploymentStatus" />
+    <name value="BSeR Employment Status" />
+    <status value="draft" />
+    <publisher value="Hi3 Solutions" />
+    <contact>
+        <name value="AbdulMalik Shakir" />
+        <telecom>
+            <system value="phone" />
+            <value value="6266444491" />
+            <use value="work" />
+        </telecom>
+        <telecom>
+            <system value="email" />
+            <value value="abdulmalik.shakir@hi3solutions.com" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <kind value="resource" />
+    <abstract value="false" />
+    <contextType value="resource" />
+    <context value="Observation" />
+    <type value="Observation" />
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Observation">
+            <path value="Observation" />
+        </element>
+        <element id="status">
+            <path value="Observation.status" />
+            <short value="status" />
+            <definition value="SHALL contain exactly one [1..1] status=&quot;completed&quot; completed (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14) (CONF:4383-101)." />
+            <min value="1" />
+            <max value="1" />
+            <type>
+                <code value="code" />
+            </type>
+            <fixedString value="completed" />
+        </element>
+        <element id="code">
+            <path value="Observation.code" />
+            <short value="code" />
+            <definition value="SHALL contain exactly one [1..1] code=&quot; 74165-2&quot; History of employment status  (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:4383-102)." />
+            <min value="1" />
+            <max value="1" />
+            <type>
+                <code value="CodeableConcept" />
+            </type>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="urn:oid:2.16.840.1.113883.6.1" />
+                    <code value=" 74165-2" />
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="subject">
+            <path value="Observation.subject" />
+            <short value="subject" />
+            <definition value="SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-99)." />
+            <min value="1" />
+            <max value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+            </type>
+        </element>
+        <element id="value[x]">
+            <path value="Observation.value[x]" />
+            <short value="value[x]" />
+            <definition value="SHALL contain exactly one [1..1] value[x], where value[x] is (CONF:4383-100)" />
+            <min value="1" />
+            <max value="1" />
+            <type>
+              <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="dataAbsentReason">
+            <path value="Observation.dataAbsentReason" />
+            <short value="dataAbsentReason" />
+            <definition value="MAY contain zero or one [0..1] dataAbsentReason (CONF:4383-104)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+    </differential>
+</StructureDefinition>

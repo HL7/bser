@@ -1,94 +1,50 @@
 {
+  "no-inactive-codes": "false",
+  "publisher": "HL7 (Public Health)",
   "tool": "jekyll",
   "paths": {
-    "resources": [
-      "resources"
+    "pages": [
+        "framework",
+        "source/pages"
     ],
-    "pages": "pages",
-    "temp": "temp",
+    "specification": "http://hl7.org/fhir/2018Sep/",
+    "temp": "generated_output/temp",
     "output": "output",
-    "qa": "qa",
-    "specification": "http://hl7-fhir.github.io/"
+    "qa": "generated_output/qa",
+    "resources": [
+      "source/resources",
+      "source/examples"
+    ],
+    "txCache": "generated_output/txCache"
   },
   "defaults": {
-    "Any": {
-      "template-format": "instance-template-format.html",
-      "template-base": "instance-template-base.html"
-    },
     "StructureDefinition": {
-      "template-base": "instance-template-sd.html"
+      "template-base": "sd.html",
+      "template-mappings": "sd-mappings.html",
+      "template-defns": "sd-definitions.html"
+    },
+    "Any": {
+      "template-base": "base.html",
+      "template-format": "format.html"
     }
   },
-  "npm-name": "hl7.fhir.us.bser",
-  "license": "CC0-1.0",
-  "version": "3.0.1",
-  "canonicalBase": "http://hl7.org/fhir/us/bser",
   "dependencyList": [{
-    "name": "uscore",
-    "location": "http://hl7.org/fhir/us/core",
-    "source": "dependencies/uscore",
-    "version": "1.0.1"
+    "name" : "uscore",
+    "location" : "http://hl7.org/fhir/us/core",
+    "version"  : "1.0.1"
   }],
-  "source": "implementationguide/4383.xml",
+  "broken-links": "warning",
   "sct-edition": "http://snomed.info/sct/731000124108",
-  "special-urls": [],
+  "fixed-business-version": "0.0.1",
+  "canonicalBase": "http://hl7.org/fhir/us/bser",
+  "version": "3.0.1",
+  "npm-name": "hl7.fhir.us.bser",
+  "html-template": "html-template.html",
+  "status": "draft",
+  "license": "CC0-1.0",
+  "source": "ig.xml",
   "resources": {
-    "StructureDefinition/PatientRole": {
-      "base": "StructureDefinition-PatientRole.html"
-    },
-    "StructureDefinition/ReferringProviderRole": {
-      "base": "StructureDefinition-ReferringProviderRole.html"
-    },
-    "StructureDefinition/PractitionerPerson": {
-      "base": "StructureDefinition-PractitionerPerson.html"
-    },
-    "StructureDefinition/ServicingProviderRole": {
-      "base": "StructureDefinition-ServicingProviderRole.html"
-    },
-    "StructureDefinition/EducationLevel": {
-      "base": "StructureDefinition-EducationLevel.html"
-    },
-    "StructureDefinition/EmploymentStatus": {
-      "base": "StructureDefinition-EmploymentStatus.html"
-    },
-    "StructureDefinition/PatientConsent": {
-      "base": "StructureDefinition-PatientConsent.html"
-    },
-    "StructureDefinition/PatientRelatedPerson": {
-      "base": "StructureDefinition-PatientRelatedPerson.html"
-    },
-    "StructureDefinition/InsuranceCoverage": {
-      "base": "StructureDefinition-InsuranceCoverage.html"
-    },
-    "StructureDefinition/OrganizationEntity": {
-      "base": "StructureDefinition-OrganizationEntity.html"
-    },
-    "StructureDefinition/ServiceDeliveryLocation": {
-      "base": "StructureDefinition-ServiceDeliveryLocation.html"
-    },
-    "StructureDefinition/ReferralRequestTransaction": {
-      "base": "StructureDefinition-ReferralRequestTransaction.html"
-    },
-    "StructureDefinition/ReferralFeedback": {
-      "base": "StructureDefinition-ReferralFeedback.html"
-    },
-    "StructureDefinition/BodyHeightObservation": {
-      "base": "StructureDefinition-BodyHeightObservation.html"
-    },
-    "StructureDefinition/BodyWeightObservation": {
-      "base": "StructureDefinition-BodyWeightObservation.html"
-    },
-    "StructureDefinition/BodyMassIndexObservation": {
-      "base": "StructureDefinition-BodyMassIndexObservation.html"
-    },
-    "StructureDefinition/BloodPressureObservation": {
-      "base": "StructureDefinition-BloodPressureObservation.html"
-    },
-    "Patient/example": {
-      "base": "Patient-example.html"
-    },
-    "Practitioner/us-core-practitioner-example": {
-      "base": "Practitioner-us-core-practitioner-example.html"
-    }
-  }
+    "*" : "*"
+  },
+  "title": "Bidirectional Services eReferrals"
 }

@@ -1,0 +1,122 @@
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="InsuranceCoverage" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/InsuranceCoverage" />
+    <name value="BSeR Coverage" />
+    <status value="draft" />
+    <publisher value="Hi3 Solutions" />
+    <contact>
+        <name value="AbdulMalik Shakir" />
+        <telecom>
+            <system value="phone" />
+            <value value="6266444491" />
+            <use value="work" />
+        </telecom>
+        <telecom>
+            <system value="email" />
+            <value value="abdulmalik.shakir@hi3solutions.com" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <kind value="resource" />
+    <abstract value="false" />
+    <contextType value="resource" />
+    <context value="Coverage" />
+    <type value="Coverage" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Coverage">
+            <path value="Coverage" />
+        </element>
+        <element id="identifier">
+            <path value="Coverage.identifier" />
+            <short value="identifier" />
+            <definition value="SHOULD contain zero or one [0..1] identifier (CONF:4383-155)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="status">
+            <path value="Coverage.status" />
+            <short value="status" />
+            <definition value="SHALL contain exactly one [1..1] status (CONF:4383-151)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="type">
+            <path value="Coverage.type" />
+            <short value="type" />
+            <definition value="SHALL contain exactly one [1..1] type (CONF:4383-152)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="subscriber">
+            <path value="Coverage.subscriber" />
+            <short value="subscriber" />
+            <definition value="SHALL contain exactly one [1..1] BSeR Related Person (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson) (CONF:4383-148)." />
+            <min value="1" />
+            <max value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
+            </type>
+        </element>
+        <element id="beneficiary">
+            <path value="Coverage.beneficiary" />
+            <short value="beneficiary" />
+            <definition value="SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-149)." />
+            <min value="1" />
+            <max value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+            </type>
+        </element>
+        <element id="period">
+            <path value="Coverage.period" />
+            <short value="period" />
+            <definition value="SHOULD contain zero or one [0..1] period (CONF:4383-153)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="period.start">
+            <path value="Coverage.period.start" />
+            <short value="start" />
+            <definition value="The period, if present, SHALL contain exactly one [1..1] start (CONF:4383-156)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="period.end">
+            <path value="Coverage.period.end" />
+            <short value="end" />
+            <definition value="The period, if present, MAY contain zero or one [0..1] end (CONF:4383-157)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="payor">
+            <path value="Coverage.payor" />
+            <short value="payor" />
+            <definition value="SHALL contain exactly one [1..1] BSeR Organization (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity) (CONF:4383-150)." />
+            <min value="1" />
+            <max value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
+            </type>
+        </element>
+        <element id="grouping">
+            <path value="Coverage.grouping" />
+            <short value="grouping" />
+            <definition value="SHOULD contain zero or one [0..1] grouping (CONF:4383-154)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="grouping.planDisplay">
+            <path value="Coverage.grouping.planDisplay" />
+            <short value="planDisplay" />
+            <definition value="The grouping, if present, SHOULD contain zero or one [0..1] planDisplay (CONF:4383-158)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+    </differential>
+</StructureDefinition>

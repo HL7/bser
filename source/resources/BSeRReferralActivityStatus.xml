@@ -1,0 +1,202 @@
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ReferralActivityStatus" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralActivityStatus" />
+    <name value="BSeR Referral Activity Status" />
+    <status value="draft" />
+    <publisher value="Hi3 Solutions" />
+    <contact>
+        <name value="AbdulMalik Shakir" />
+        <telecom>
+            <system value="phone" />
+            <value value="6266444491" />
+            <use value="work" />
+        </telecom>
+        <telecom>
+            <system value="email" />
+            <value value="abdulmalik.shakir@hi3solutions.com" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <kind value="resource" />
+    <abstract value="false" />
+    <contextType value="resource" />
+    <context value="Observation" />
+    <type value="Observation" />
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Observation">
+            <path value="Observation" />
+        </element>
+        <element id="status">
+            <path value="Observation.status" />
+            <short value="status" />
+            <definition value="SHALL contain exactly one [1..1] status (CONF:4383-384)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="category">
+            <path value="Observation.category" />
+            <short value="category" />
+            <definition value="SHOULD contain zero or one [0..1] category (CONF:4383-385)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="code">
+            <path value="Observation.code" />
+            <short value="code" />
+            <definition value="SHALL contain exactly one [1..1] code (CONF:4383-376)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="code.coding">
+            <path value="Observation.code.coding" />
+            <short value="coding" />
+            <definition value="This code SHALL contain exactly one [1..1] coding (CONF:4383-377)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="code.coding.system">
+            <path value="Observation.code.coding.system" />
+            <short value="system" />
+            <definition value="This coding SHALL contain exactly one [1..1] system (CONF:4383-386)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="code.coding.version">
+            <path value="Observation.code.coding.version" />
+            <short value="version" />
+            <definition value="This coding SHOULD contain zero or one [0..1] version (CONF:4383-387)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="code.coding.code">
+            <path value="Observation.code.coding.code" />
+            <short value="code" />
+            <definition value="This coding SHALL contain exactly one [1..1] code (CONF:4383-388)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="code.coding.display">
+            <path value="Observation.code.coding.display" />
+            <short value="display" />
+            <definition value="This coding SHOULD contain zero or one [0..1] display (CONF:4383-389)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="effective[x]">
+            <path value="Observation.effective[x]" />
+            <short value="effective[x]" />
+            <definition value="SHOULD contain zero or one [0..1] effective[x], where effective[x] is (CONF:4383-390)" />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="value[x].valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept" />
+            <short value="valueCodeableConcept" />
+            <definition value="SHALL contain exactly one [1..1] valueCodeableConcept, where value[x] is (CONF:4383-378)" />
+            <type>
+              <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="value[x].valueCodeableConcept.coding">
+            <path value="Observation.valueCodeableConcept.coding" />
+            <short value="coding" />
+            <definition value="SHALL contain exactly one [1..1] coding (CONF:4383-380)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="value[x].valueCodeableConcept.coding.system">
+            <path value="Observation.valueCodeableConcept.coding.system" />
+            <short value="system" />
+            <definition value="This coding SHALL contain exactly one [1..1] system (CONF:4383-391)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="value[x].valueCodeableConcept.coding.version">
+            <path value="Observation.valueCodeableConcept.coding.version" />
+            <short value="version" />
+            <definition value="This coding SHOULD contain zero or one [0..1] version (CONF:4383-392)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="value[x].valueCodeableConcept.coding.code">
+            <path value="Observation.valueCodeableConcept.coding.code" />
+            <short value="code" />
+            <definition value="This coding SHALL contain exactly one [1..1] code (CONF:4383-393)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="value[x].valueCodeableConcept.coding.display">
+            <path value="Observation.valueCodeableConcept.coding.display" />
+            <short value="display" />
+            <definition value="This coding SHOULD contain zero or one [0..1] display (CONF:4383-394)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="dataAbsentReason">
+            <path value="Observation.dataAbsentReason" />
+            <short value="dataAbsentReason" />
+            <definition value="MAY contain zero or one [0..1] dataAbsentReason (CONF:4383-395)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="component">
+            <path value="Observation.component" />
+            <short value="component" />
+            <definition value="SHOULD contain zero or one [0..1] component (CONF:4383-381)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="component.code">
+            <path value="Observation.component.code" />
+            <short value="code" />
+            <definition value="The component, if present, SHALL contain exactly one [1..1] code (CONF:4383-382)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="component.code.coding">
+            <path value="Observation.component.code.coding" />
+            <short value="coding" />
+            <definition value="This code MAY contain exactly one [1..1] coding (CONF:4383-383)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="component.code.coding.system">
+            <path value="Observation.component.code.coding.system" />
+            <short value="system" />
+            <definition value="This coding SHALL contain exactly one [1..1] system (CONF:4383-396)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="component.code.coding.version">
+            <path value="Observation.component.code.coding.version" />
+            <short value="version" />
+            <definition value="This coding SHOULD contain zero or one [0..1] version (CONF:4383-397)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="component.code.coding.code">
+            <path value="Observation.component.code.coding.code" />
+            <short value="code" />
+            <definition value="This coding SHALL contain exactly one [1..1] code (CONF:4383-398)." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="component.code.coding.display">
+            <path value="Observation.component.code.coding.display" />
+            <short value="display" />
+            <definition value="This coding SHOULD contain zero or one [0..1] display (CONF:4383-399)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="component.dataAbsentReason">
+            <path value="Observation.component.dataAbsentReason" />
+            <short value="dataAbsentReason" />
+            <definition value="The component, if present, MAY contain zero or one [0..1] dataAbsentReason (CONF:4383-400)." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+    </differential>
+</StructureDefinition>

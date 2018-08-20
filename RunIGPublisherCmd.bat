@@ -1,1 +1,0 @@
-java -jar org.hl7.fhir.igpublisher.jar -ig %~dp0Bidirectional_Services_eReferrals_FHIR_IG_R1.json
