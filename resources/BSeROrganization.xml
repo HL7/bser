@@ -1,0 +1,137 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="OrganizationEntity" />
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
+  <name value="BSeR Organization" />
+  <status value="draft" />
+  <publisher value="Hi3 Solutions" />
+  <contact>
+    <name value="AbdulMalik Shakir" />
+    <telecom>
+      <system value="phone" />
+      <value value="6266444491" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="abdulmalik.shakir@hi3solutions.com" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <kind value="resource" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Organization" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization">
+      <path value="Organization" />
+    </element>
+    <element id="identifier">
+      <path value="Organization.identifier" />
+      <short value="identifier" />
+      <definition value="SHOULD contain zero or more [0..*] identifier (CONF:4383-162)." />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="type">
+      <path value="Organization.type" />
+      <short value="type" />
+      <definition value="SHOULD contain exactly one [1..1] type (CONF:4383-163)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="name">
+      <path value="Organization.name" />
+      <short value="name" />
+      <definition value="SHALL contain exactly one [1..1] name (CONF:4383-164)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="telecom">
+      <path value="Organization.telecom" />
+      <short value="telecom" />
+      <definition value="SHOULD contain zero or more [0..*] telecom (CONF:4383-160)." />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="telecom.system">
+      <path value="Organization.telecom.system" />
+      <short value="system" />
+      <definition value="The telecom, if present, SHALL contain exactly one [1..1] system (CONF:4383-165)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="telecom.value">
+      <path value="Organization.telecom.value" />
+      <short value="value" />
+      <definition value="The telecom, if present, SHALL contain exactly one [1..1] value (CONF:4383-166)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="telecom.use">
+      <path value="Organization.telecom.use" />
+      <short value="use" />
+      <definition value="The telecom, if present, SHOULD contain zero or one [0..1] use (CONF:4383-167)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="address">
+      <path value="Organization.address" />
+      <short value="address" />
+      <definition value="SHOULD contain zero or more [0..*] address (CONF:4383-161)." />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="address.use">
+      <path value="Organization.address.use" />
+      <short value="use" />
+      <definition value="The address, if present, SHOULD contain zero or one [0..1] use (CONF:4383-168)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="address.text">
+      <path value="Organization.address.text" />
+      <short value="text" />
+      <definition value="The address, if present, MAY contain zero or one [0..1] text (CONF:4383-169)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="address.line">
+      <path value="Organization.address.line" />
+      <short value="line" />
+      <definition value="The address, if present, SHOULD contain zero or more [0..*] line (CONF:4383-170)." />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="address.city">
+      <path value="Organization.address.city" />
+      <short value="city" />
+      <definition value="The address, if present, SHOULD contain zero or one [0..1] city (CONF:4383-171)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="address.state">
+      <path value="Organization.address.state" />
+      <short value="state" />
+      <definition value="The address, if present, SHOULD contain zero or one [0..1] state (CONF:4383-172)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="address.postalCode">
+      <path value="Organization.address.postalCode" />
+      <short value="postalCode" />
+      <definition value="The address, if present, SHOULD contain zero or one [0..1] postalCode (CONF:4383-173)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="address.country">
+      <path value="Organization.address.country" />
+      <short value="country" />
+      <definition value="The address, if present, MAY contain zero or one [0..1] country (CONF:4383-174)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

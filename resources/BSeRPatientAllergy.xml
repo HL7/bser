@@ -1,0 +1,116 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PatientAllergy" />
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
+  <name value="BSeR Patient Allergy" />
+  <status value="draft" />
+  <publisher value="Hi3 Solutions" />
+  <contact>
+    <name value="AbdulMalik Shakir" />
+    <telecom>
+      <system value="phone" />
+      <value value="6266444491" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="abdulmalik.shakir@hi3solutions.com" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <kind value="resource" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="AllergyIntolerance" />
+  <type value="AllergyIntolerance" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="AllergyIntolerance">
+      <path value="AllergyIntolerance" />
+    </element>
+    <element id="verificationStatus">
+      <path value="AllergyIntolerance.verificationStatus" />
+      <short value="verificationStatus" />
+      <definition value="SHALL contain exactly one [1..1] verificationStatus (CONF:4383-294)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="type">
+      <path value="AllergyIntolerance.type" />
+      <short value="type" />
+      <definition value="SHALL contain exactly one [1..1] type (CONF:4383-295)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="code">
+      <path value="AllergyIntolerance.code" />
+      <short value="code" />
+      <definition value="SHALL contain exactly one [1..1] code (CONF:4383-296)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="patient">
+      <path value="AllergyIntolerance.patient" />
+      <short value="patient" />
+      <definition value="SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-292)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+      </type>
+    </element>
+    <element id="onset[x]">
+      <path value="AllergyIntolerance.onset[x]" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="@type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="onset[x]" />
+      <definition value="MAY contain zero or one [0..1] onset[x], where onset[x] is one of (CONF:4383-293)" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="onset[x].onsetDateTime">
+      <path value="AllergyIntolerance.onsetDateTime" />
+      <short value="onsetDateTime" />
+      <definition value="onsetDateTime (CONF:4383-297)" />
+    </element>
+    <element id="onset[x].onsetAge">
+      <path value="AllergyIntolerance.onsetAge" />
+      <short value="onsetAge" />
+      <definition value="or onsetAge (CONF:4383-298)" />
+    </element>
+    <element id="reaction">
+      <path value="AllergyIntolerance.reaction" />
+      <short value="reaction" />
+      <definition value="SHALL contain at least one [1..*] reaction (CONF:4383-299)." />
+      <min value="1" />
+      <max value="*" />
+    </element>
+    <element id="reaction.substance">
+      <path value="AllergyIntolerance.reaction.substance" />
+      <short value="substance" />
+      <definition value="Such reactions SHALL contain exactly one [1..1] substance (CONF:4383-300)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="reaction.manifestation">
+      <path value="AllergyIntolerance.reaction.manifestation" />
+      <short value="manifestation" />
+      <definition value="Such reactions SHALL contain at least one [1..*] manifestation (CONF:4383-301)." />
+      <min value="1" />
+      <max value="*" />
+    </element>
+    <element id="reaction.severity">
+      <path value="AllergyIntolerance.reaction.severity" />
+      <short value="severity" />
+      <definition value="Such reactions SHOULD contain zero or one [0..1] severity (CONF:4383-302)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
