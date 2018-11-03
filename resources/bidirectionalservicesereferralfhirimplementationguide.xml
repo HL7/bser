@@ -8,6 +8,9 @@
   <binary value="BidirectionalServiceseReferralFHIRimplementationguide-TreeTa.css" />
   <page>
     <title value="BSeR FHIR IG" />
+    <source value="Newitem-duplicate-8.md" />
+    <kind value="page" />
+    <format value="text/markdown" />
     <page>
       <source value="Newitem-duplicate-8.md" />
       <title value="Background and Scope" />
