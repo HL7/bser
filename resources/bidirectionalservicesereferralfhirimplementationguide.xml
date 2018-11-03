@@ -1,5 +1,5 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org/fhir/us/bser//ImplementationGuide/bser" />
+  <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser" />
   <version value="0.2" />
   <name value="BSeR FHIR IG" />
   <status value="draft" />
