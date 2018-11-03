@@ -1,2 +1,2 @@
-# vrdr
-Vital Records Death Reporting FHIR IG
+# BSeR
+Bidirectional Services eReferral FHIR implementation guide
