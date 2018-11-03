@@ -1,5 +1,5 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <url value="https://simplifier.net/guide/bidirectionalservicesereferralfhirimplementationguide" />
+  <url value="http://hl7.org/fhir/us/bser//ImplementationGuide/bser" />
   <version value="0.2" />
   <name value="BSeR FHIR IG" />
   <status value="draft" />
@@ -18,7 +18,7 @@
       <format value="text/markdown" />
       <page>
         <source value="Newitem-duplicate-5.md" />
-        <title value=" Notice to Ballot Commenters" />
+        <title value="Notice to Ballot Commenters" />
         <kind value="page" />
         <format value="text/markdown" />
       </page>
@@ -49,7 +49,7 @@
     </page>
     <page>
       <source value="Newitem-duplicate-9.md" />
-      <title value=" Resource Profiles" />
+      <title value="Resource Profiles" />
       <kind value="page" />
       <format value="text/markdown" />
       <page>
