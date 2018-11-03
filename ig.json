@@ -1,50 +1,18 @@
 {
-  "no-inactive-codes": "false",
-  "publisher": "HL7 (Public Health)",
-  "tool": "jekyll",
-  "paths": {
-    "pages": [
-        "framework",
-        "source/pages"
-    ],
-    "specification": "http://hl7.org/fhir/2018Sep/",
-    "temp": "generated_output/temp",
-    "output": "output",
-    "qa": "generated_output/qa",
-    "resources": [
-      "source/resources",
-      "source/examples"
-    ],
-    "txCache": "generated_output/txCache"
-  },
-  "defaults": {
-    "StructureDefinition": {
-      "template-base": "sd.html",
-      "template-mappings": "sd-mappings.html",
-      "template-defns": "sd-definitions.html"
-    },
-    "Any": {
-      "template-base": "base.html",
-      "template-format": "format.html"
-    }
-  },
-  "dependencyList": [{
-    "name" : "uscore",
-    "location" : "http://hl7.org/fhir/us/core",
-    "version"  : "1.0.1"
-  }],
-  "broken-links": "warning",
-  "sct-edition": "http://snomed.info/sct/731000124108",
-  "fixed-business-version": "0.0.1",
-  "canonicalBase": "http://hl7.org/fhir/us/bser",
+  "tool" : "jekyll",
+  "source": "bidirectionalservicesereferralfhirimplementationguide.xml",
   "version": "3.0.1",
-  "npm-name": "hl7.fhir.us.bser",
-  "html-template": "html-template.html",
-  "status": "draft",
   "license": "CC0-1.0",
-  "source": "ig.xml",
-  "resources": {
-    "*" : "*"
+  "npm-name": "hl7.fhir.bser",
+  "canonicalBase": "http://hl7.org/fhir/us/bser/",
+  "paths" : {
+    "resources" : "resources",
+    "pages" : "resources",
+    "temp" : "temp",
+    "qa" : "qa",
+    "output" : "output",
+    "specification" : "http://hl7.org/fhir/"
   },
-  "title": "Bidirectional Services eReferrals"
+  "resources" : {
+  }
 }

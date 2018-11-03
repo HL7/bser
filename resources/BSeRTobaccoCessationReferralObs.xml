@@ -1,0 +1,136 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="TobaccoCessationReferralObs" />
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/TobaccoCessationReferralObs" />
+  <name value="BSeR Tobacco Cessation Referral Obs" />
+  <status value="draft" />
+  <publisher value="Hi3 Solutions" />
+  <contact>
+    <name value="AbdulMalik Shakir" />
+    <telecom>
+      <system value="phone" />
+      <value value="6266444491" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="abdulmalik.shakir@hi3solutions.com" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <kind value="resource" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Observation" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+    </element>
+    <element id="status">
+      <path value="Observation.status" />
+      <short value="status" />
+      <definition value="SHALL contain exactly one [1..1] status (CONF:4383-366)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="code">
+      <path value="Observation.code" />
+      <short value="code" />
+      <definition value="SHALL contain exactly one [1..1] code (CONF:4383-367)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="effective[x]">
+      <path value="Observation.effective[x]" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="@type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="effective[x]" />
+      <definition value="SHOULD contain zero or one [0..1] effective[x], where effective[x] is (CONF:4383-362)" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="effective[x].effectiveDateTime">
+      <path value="Observation.effectiveDateTime" />
+      <short value="effectiveDateTime" />
+      <definition value="effectiveDateTime (CONF:4383-368)" />
+    </element>
+    <element id="value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="@type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="value[x]" />
+      <definition value="SHALL contain exactly one [1..1] value[x], where value[x] is one of (CONF:4383-363)" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="value[x].valueCodeableConcept">
+      <path value="Observation.valueCodeableConcept" />
+      <short value="valueCodeableConcept" />
+      <definition value="valueCodeableConcept (CONF:4383-364)" />
+    </element>
+    <element id="value[x].valueCodeableConcept.coding">
+      <path value="Observation.valueCodeableConcept.coding" />
+      <short value="coding" />
+      <definition value="SHALL contain exactly one [1..1] coding (CONF:4383-365)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="value[x].valueCodeableConcept.coding.system">
+      <path value="Observation.valueCodeableConcept.coding.system" />
+      <short value="system" />
+      <definition value="This coding SHALL contain exactly one [1..1] system (CONF:4383-369)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="value[x].valueCodeableConcept.coding.version">
+      <path value="Observation.valueCodeableConcept.coding.version" />
+      <short value="version" />
+      <definition value="This coding SHOULD contain zero or one [0..1] version (CONF:4383-370)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="value[x].valueCodeableConcept.coding.code">
+      <path value="Observation.valueCodeableConcept.coding.code" />
+      <short value="code" />
+      <definition value="This coding SHALL contain exactly one [1..1] code (CONF:4383-371)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="value[x].valueCodeableConcept.coding.display">
+      <path value="Observation.valueCodeableConcept.coding.display" />
+      <short value="display" />
+      <definition value="This coding SHOULD contain zero or one [0..1] display (CONF:4383-372)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="value[x].valueBoolean">
+      <path value="Observation.valueBoolean" />
+      <short value="valueBoolean" />
+      <definition value="or valueBoolean (CONF:4383-373)" />
+    </element>
+    <element id="value[x].valueRange">
+      <path value="Observation.valueRange" />
+      <short value="valueRange" />
+      <definition value="or valueRange (CONF:4383-374)" />
+    </element>
+    <element id="dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <short value="dataAbsentReason" />
+      <definition value="MAY contain zero or one [0..1] dataAbsentReason (CONF:4383-375)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
