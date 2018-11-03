@@ -4,7 +4,7 @@
   "version": "3.0.1",
   "license": "CC0-1.0",
   "npm-name": "hl7.fhir.bser",
-  "canonicalBase": "https://simplifier.net/guide/bidirectionalservicesereferralfhirimplementationguide",
+  "canonicalBase": "http://hl7.org/fhir/us/bser",
   "paths" : {
     "resources" : "resources",
     "pages" : "resources",
