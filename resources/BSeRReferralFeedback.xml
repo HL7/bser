@@ -28,28 +28,28 @@
     <element id="Composition">
       <path value="Composition" />
     </element>
-    <element id="identifier">
+    <element id="Composition.identifier">
       <path value="Composition.identifier" />
       <short value="identifier" />
       <definition value="SHALL contain exactly one [1..1] identifier (CONF:4383-209)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="status">
+    <element id="Composition.status">
       <path value="Composition.status" />
       <short value="status" />
       <definition value="SHALL contain exactly one [1..1] status (CONF:4383-210)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="type">
+    <element id="Composition.type">
       <path value="Composition.type" />
       <short value="type" />
       <definition value="SHALL contain exactly one [1..1] type (CONF:4383-211)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="subject">
+    <element id="Composition.subject">
       <path value="Composition.subject" />
       <label value="Patient" />
       <short value="Patient" />
@@ -61,7 +61,7 @@
         <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
       </type>
     </element>
-    <element id="date">
+    <element id="Composition.date">
       <path value="Composition.date" />
       <label value="Feedback Report Date" />
       <short value="Feedback Report Date" />
@@ -69,19 +69,15 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="author">
+    <element id="Composition.author">
       <path value="Composition.author" />
       <label value="Referral Request Recipient" />
       <short value="Referral Request Recipient" />
       <definition value="SHALL contain exactly one [1..1] author (CONF:4383-206)." />
       <min value="1" />
       <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRecipientProviderRole" />
-      </type>
     </element>
-    <element id="title">
+    <element id="Composition.title">
       <path value="Composition.title" />
       <short value="title" />
       <definition value="SHALL contain exactly one [1..1] title (CONF:4383-213)." />
@@ -99,9 +95,9 @@
       </slicing>
       <definition value="SHALL contain exactly one [1..1] section (CONF:4383-241) such that it" />
     </element>
-    <element id="Composition.section:CommonFeedbackSupportingInformation">
+    <element id="Composition.section:section1">
       <path value="Composition.section" />
-      <sliceName value="CommonFeedbackSupportingInformation" />
+      <sliceName value="section1" />
       <label value="Common Feedback Supporting Information" />
       <short value="Common Feedback Supporting Information" />
       <definition value="SHALL contain exactly one [1..1] section (CONF:4383-230) such that it" />
@@ -109,35 +105,42 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Composition.section:CommonFeedbackSupportingInformation.code">
+    <element id="Composition.section:section1.code">
       <path value="Composition.section.code" />
+      <sliceName value="section1" />
       <short value="code" />
       <definition value="SHALL contain exactly one [1..1] code (CONF:4383-232)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Composition.section:CommonFeedbackSupportingInformation.text">
+    <element id="Composition.section:section1.text">
       <path value="Composition.section.text" />
+      <sliceName value="section1" />
       <label value="Feedback Report Note" />
       <short value="Feedback Report Note" />
       <definition value="SHOULD contain exactly one [1..1] text (CONF:4383-233)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Composition.section:CommonFeedbackSupportingInformation.entry">
+    <element id="Composition.section:section1.entry">
       <path value="Composition.section.entry" />
+      <sliceName value="section1" />
       <short value="entry" />
       <definition value="SHALL contain exactly one [1..1] entry (CONF:4383-555)." />
       <min value="1" />
       <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/feedbackreferralstatusobservation" />
-      </type>
     </element>
-    <element id="Composition.section:ReferralFeedbackSupportingBundle">
+    <element id="Composition.section:section1.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <sliceName value="section1" />
+      <short value="reference" />
+      <definition value="This entry SHALL contain exactly one [1..1] reference (CONF:4383-557)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:section2">
       <path value="Composition.section" />
-      <sliceName value="ReferralFeedbackSupportingBundle" />
+      <sliceName value="section2" />
       <label value="Single-program specific feedback" />
       <short value="Single-program specific feedback" />
       <definition value="SHALL contain exactly one [1..1] section (CONF:4383-241) such that it" />
@@ -145,23 +148,29 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Composition.section:ReferralFeedbackSupportingBundle.code">
+    <element id="Composition.section:section2.code">
       <path value="Composition.section.code" />
+      <sliceName value="section2" />
       <short value="code" />
       <definition value="SHALL contain exactly one [1..1] code (CONF:4383-290)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Composition.section:ReferralFeedbackSupportingBundle.entry">
+    <element id="Composition.section:section2.entry">
       <path value="Composition.section.entry" />
+      <sliceName value="section2" />
       <short value="entry" />
       <definition value="SHALL contain zero or one [0..1] entry (CONF:4383-556)." />
       <min value="0" />
       <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralFeedbackSupportingBundle" />
-      </type>
+    </element>
+    <element id="Composition.section:section2.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <sliceName value="section2" />
+      <short value="reference" />
+      <definition value="The entry, if present, SHALL contain exactly one [1..1] reference (CONF:4383-558)." />
+      <min value="1" />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>

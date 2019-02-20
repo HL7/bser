@@ -9,7 +9,7 @@ and
 for the Bidirectional Services eReferral (BSeR) project and this BSeR FHIR Implementation Guide (IG). The 
 {{pagelink:  InformationExchangeTransactions }} 
 are illustrated using UML activity and sequence diagrams providing context for the two transactions suppported by this implementation guide: 
-{{pagelink: BSeRReferralRequest }}
+{{pagelink: bserreferralrequest }}
 and
 {{pagelink: BSeRReferralFeedback }}. 
 

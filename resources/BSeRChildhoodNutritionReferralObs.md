@@ -1,25 +1,43 @@
 ### **BSeR Childhood Nutrition Request Obs**
 
-The childhood nutrition request observation is a collection of referral request supporting observation made by the referral initiator regarding the referral subject patient and child such as is the baby latching, what are mom's main concerns, and are nipple shields in use. 
-
-The subject of these observations is a related person, the child or mother. Mother is also the patient. When mother is the subject of the nutrition request observation the relationship to patient is "self".
-
-The childhood nutrition request observation resource profile is unique to the Childhood Nutrition program area and is used in referral request transactions only.
-
-The base definition for this resource profile is the [us-core-observationresults](http://www.hl7.org/fhir/us/core/StructureDefinition-us-core-observationresults.html) profile. 
-___
-## Structure Definition Table
-
-{{table:bidirectionalservice/bserchildhoodnutritionrequestobs}}
-
-___
-## UML Expression
-
-{{render:bserchildhoodnutritionrequestobs.jpg}}
+Decedent Age is a profile of the [FHIR STU3 Observation](http://www.hl7.org/fhir/observation.html) resource. It is used to communicate the decedent's chronological age at the time of death. When present, the effective date of this observation shall be equal to the decedent's date of death. Age (Observation.valueQuantity.value) is derived as the difference in time between the decedent's death date and birth date. When age is less than or equal to one day then unit shall be *"minutes"*, when age is less than or equal to one year then unit shall be *"days"*, otherwise unit shall be *"years"*.
 
 ---
-## Structure Definition Tree
 
-{{tree:bidirectionalservice/bserchildhoodnutritionrequestobs}}
+### **UML Expression**
 
+<center>
 
+{{render:vrdr/vrdrautopsyperformedindicator-duplicate-2}}</center>
+
+---
+
+### **Structure Definition**
+
+{{profile:vrdr/vrdrautopsyperformedindicator, expand}}
+
+---
+
+### **Terminolgy Bindings**
+
+|Element Path|Fixed Value/Value Set|Code System|
+|-
+|Observation.status|"final" - Final|observation-status|
+|Observation.code|"30525-0" - Age|LOINC|
+|Observation.valueQuantity.unit|AgeUnitOfMeasure||
+
+---
+
+### **Element Table**
+
+{{table:vrdr/vrdrautopsyperformedindicator, expand}}
+
+---
+
+### **Requirements Traceability Mappings**
+
+|Element Path|Reference|Location|Data Item|
+|-
+|Observation.valueQuantity:valueQuantity.value|Death Certificate| Item 4 |Age [years, days, or minutes]|
+|Observation.valueQuantity:valueQuantity.value|Vital Records DAM |3.02 Decedent|deathAge|
+|Observation.valueQuantity:valueQuantity.value|Standard Death Record IG|SDR Decedent Profile|Patient.extension:age|

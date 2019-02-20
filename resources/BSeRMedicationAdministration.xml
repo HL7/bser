@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="MedicationAdministration" />
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/MedicationAdministration" />
+  <id value="bserMedicationAdministration" />
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" />
   <name value="BSeR Medication Administration" />
   <status value="draft" />
   <publisher value="Hi3 Solutions" />
@@ -22,25 +22,57 @@
   <contextType value="resource" />
   <context value="MedicationAdministration" />
   <type value="MedicationAdministration" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+  <baseDefinition value="http://hl7.org/fhir/us/StructureDefinition/daf-medicationadministration" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationAdministration">
       <path value="MedicationAdministration" />
     </element>
-    <element id="status">
-      <path value="MedicationAdministration.status" />
-      <short value="status" />
-      <definition value="SHALL contain exactly one [1..1] status (CONF:4383-308)." />
-      <min value="1" />
+    <element id="MedicationAdministration.id">
+      <path value="MedicationAdministration.id" />
+      <short value="id" />
+      <definition value="MAY contain zero or one [0..1] id (CONF:4383-851)." />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="medication[x]">
+    <element id="MedicationAdministration.meta">
+      <path value="MedicationAdministration.meta" />
+      <short value="meta" />
+      <definition value="MAY contain zero or one [0..1] meta (CONF:4383-850)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="MedicationAdministration.meta.profile">
+      <path value="MedicationAdministration.meta.profile" />
+      <short value="profile" />
+      <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration&quot; (CONF:4383-852)." />
+      <min value="1" />
+      <max value="1" />
+      <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" />
+    </element>
+    <element id="MedicationAdministration.status">
+      <path value="MedicationAdministration.status" />
+      <short value="status" />
+      <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Medication-admin-status http://hl7.org/fhir/ValueSet/medication-admin-status (CONF:4383-308)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/medication-admin-status" />
+          <display value="Medication-admin-status" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="MedicationAdministration.medication[x]">
       <path value="MedicationAdministration.medication[x]" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="@type" />
+          <type value="type" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -49,71 +81,80 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="medication[x].medicationCodeableConcept">
+    <element id="MedicationAdministration.medication[x]:medicationCodeableConcept">
       <path value="MedicationAdministration.medicationCodeableConcept" />
+      <sliceName value="medicationCodeableConcept" />
       <short value="medicationCodeableConcept" />
-      <definition value="medicationCodeableConcept (CONF:4383-304)" />
+      <definition value="medicationCodeableConcept, which SHALL be selected from ValueSet medication-codes http://hl7.org/fhir/ValueSet/medication-codes DYNAMIC (CONF:4383-304)" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/medication-codes" />
+          <display value="medication-codes" />
+        </valueSetReference>
+      </binding>
     </element>
-    <element id="medication[x].medicationCodeableConcept.coding">
+    <element id="MedicationAdministration.medication[x]:medicationCodeableConcept.coding">
       <path value="MedicationAdministration.medicationCodeableConcept.coding" />
+      <sliceName value="medicationCodeableConcept" />
       <short value="coding" />
       <definition value="SHALL contain exactly one [1..1] coding (CONF:4383-309)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="medication[x].medicationCodeableConcept.text">
+    <element id="MedicationAdministration.medication[x]:medicationCodeableConcept.text">
       <path value="MedicationAdministration.medicationCodeableConcept.text" />
+      <sliceName value="medicationCodeableConcept" />
       <short value="text" />
       <definition value="SHOULD contain zero or one [0..1] text (CONF:4383-310)." />
       <min value="0" />
       <max value="1" />
     </element>
-    <element id="effective[x]">
-      <path value="MedicationAdministration.effective[x]" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="@type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <short value="effective[x]" />
-      <definition value="SHALL contain exactly one [1..1] effective[x], where effective[x] is (CONF:4383-311)" />
+    <element id="MedicationAdministration.subject">
+      <path value="MedicationAdministration.subject" />
+      <short value="subject" />
+      <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-305)." />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+      </type>
+      <patternString value="BSeR Patient" />
     </element>
-    <element id="dosage">
+    <element id="MedicationAdministration.dosage">
       <path value="MedicationAdministration.dosage" />
       <short value="dosage" />
-      <definition value="SHOULD contain zero or one [0..1] dosage (CONF:4383-306)." />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="dosage.dose">
-      <path value="MedicationAdministration.dosage.dose" />
-      <short value="dose" />
-      <definition value="The dosage, if present, SHALL contain exactly one [1..1] dose (CONF:4383-312)." />
+      <definition value="SHALL contain exactly one [1..1] dosage (CONF:4383-306)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="dosage.rate[x]">
+    <element id="MedicationAdministration.dosage.dose">
+      <path value="MedicationAdministration.dosage.dose" />
+      <short value="dose" />
+      <definition value="This dosage SHALL contain exactly one [1..1] dose (CONF:4383-312)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MedicationAdministration.dosage.rate[x]">
       <path value="MedicationAdministration.dosage.rate[x]" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="@type" />
+          <type value="type" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <short value="rate[x]" />
-      <definition value="The dosage, if present, MAY contain zero or one [0..1] rate[x], where rate[x] is (CONF:4383-307)" />
-      <min value="0" />
+      <definition value="This dosage SHALL contain exactly one [1..1] rate[x], where rate[x] is (CONF:4383-307)" />
+      <min value="1" />
       <max value="1" />
     </element>
-    <element id="dosage.rate[x].rateQuantity">
+    <element id="MedicationAdministration.dosage.rate[x]:rateQuantity">
       <path value="MedicationAdministration.dosage.rateQuantity" />
+      <sliceName value="rateQuantity" />
       <short value="rateQuantity" />
-      <definition value="The dosage, if present, MAY contain zero or one [0..1] rateQuantity (CONF:4383-313)." />
+      <definition value="This dosage SHALL contain exactly one [1..1] rateQuantity (CONF:4383-313)." />
     </element>
   </differential>
 </StructureDefinition>

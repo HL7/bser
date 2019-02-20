@@ -1,16 +1,12 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser" />
-  <version value="0.2" />
+  <url value="https://simplifier.net/guide/bidirectionalservicesereferralfhirimplementationguide" />
+  <version value="0.1" />
   <name value="BSeR FHIR IG" />
   <status value="draft" />
-  <description value="The BSeR FHIR implementation guide provides guidance for using HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for Bidirectional Services eReferral (BSeR). It is a collection of FHIR resource profiles design for use in information exchanges supporting service provider referral and service outcome reporting. &#xD;&#xA;A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Program area referral and feedback transactions contain common transaction data and program specific data. A critical design requirement is to limit the exchange of clinical information to program areas to only that data that pertain to the program. Transaction participant data such as Patient, Referring Provider, and Servicing Provider are common to both referral and feedback transactions. The data content of each transaction type is partitioned into common and program specific data items. Some program specific data items pertain to multiple program areas; others are specific to a single subject area. " />
-  <id value="bser" />
-  <binary value="BidirectionalServiceseReferralFHIRimplementationguide-TreeTa.css" />
+  <description value="The BSeR FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for Bidirectional Services eReferral (BSeR). It is a collection of FHIR resource profiles design for use in information exchanges supporting service provider referral and service outcome reporting. &#xD;&#xA;A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Program area referral and feedback transactions contain common transaction data and program specific data. A critical design requirement is to limit the exchange of clinical information to program areas to only that data that pertain to the program. Transaction participant data such as Patient, Referring Provider, and Servicing Provider are common to both referral and feedback transactions. The data content of each transaction type is partitioned into common and program specific data items. Some program specific data items pertain to multiple program areas; others are specific to a single subject area. " />
+  <fhirVersion value="STU3" />
   <page>
     <title value="BSeR FHIR IG" />
-    <source value="Newitem-duplicate-8.md" />
-    <kind value="page" />
-    <format value="text/markdown" />
     <page>
       <source value="Newitem-duplicate-8.md" />
       <title value="Background and Scope" />
@@ -18,7 +14,13 @@
       <format value="text/markdown" />
       <page>
         <source value="Newitem-duplicate-5.md" />
-        <title value="Notice to Ballot Commenters" />
+        <title value=" Notice to Ballot Commenters" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="NoticetoImplementers.md" />
+        <title value="Notice to Implementers" />
         <kind value="page" />
         <format value="text/markdown" />
       </page>
@@ -49,7 +51,7 @@
     </page>
     <page>
       <source value="Newitem-duplicate-9.md" />
-      <title value="Resource Profiles" />
+      <title value=" Resource Profiles" />
       <kind value="page" />
       <format value="text/markdown" />
       <page>
@@ -215,12 +217,6 @@
         <format value="text/markdown" />
       </page>
       <page>
-        <source value="BSeRReferralFeedback.md" />
-        <title value="BSeR Referral Feedback" />
-        <kind value="page" />
-        <format value="text/markdown" />
-      </page>
-      <page>
         <source value="Newitem-duplicate-13.md" />
         <title value="BSeR Referral Initiator" />
         <kind value="page" />
@@ -229,12 +225,6 @@
       <page>
         <source value="Newitem-duplicate-14.md" />
         <title value="BSeR Referral Recipient" />
-        <kind value="page" />
-        <format value="text/markdown" />
-      </page>
-      <page>
-        <source value="Newitem-duplicate-12.md" />
-        <title value="BSeR Referral Request" />
         <kind value="page" />
         <format value="text/markdown" />
       </page>
@@ -277,6 +267,18 @@
       <page>
         <source value="BSeRReferralStatusObservation.md" />
         <title value="BSeR Referral Status Observation" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="BSeRReferralRequest.md" />
+        <title value="BSeR Referral Request" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="BSeRReferralFeedback-duplicate-2.md" />
+        <title value="BSeR Referral Feedback" />
         <kind value="page" />
         <format value="text/markdown" />
       </page>
