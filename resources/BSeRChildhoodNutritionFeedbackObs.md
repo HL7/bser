@@ -1,22 +1,43 @@
 ### **BSeR Childhood Nutrition Feedback Obs**
 
-The childhood nutrition feedback observation is a collection of findings regarding the referral subject patient and child which pertain to the efficacy of childhood nutrition intervention provided by the referral recipient such as the ourcome of tongue-tie and lip-tie assessment, breastfeeding challenges/symptoms, and lactation support. 
-
-The childhood nutrition feedback observation resource profile is unique to the Childhood Nutrition program area and is used in referral feedback transactions only.
-
-The base definition for this resource profile is the [us-core-observationresults](http://www.hl7.org/fhir/us/core/StructureDefinition-us-core-observationresults.html) profile. 
-___
-## Structure Definition Table
-
-{{table:bidirectionalservice/bserchildhoodnutritionfeedbackobs}}
-
-___
-## UML Expression
-
-{{render:bserchildhoodnutritionfeedbackobs.jpg}}
+Decedent Age is a profile of the [FHIR STU3 Observation](http://www.hl7.org/fhir/observation.html) resource. It is used to communicate the decedent's chronological age at the time of death. When present, the effective date of this observation shall be equal to the decedent's date of death. Age (Observation.valueQuantity.value) is derived as the difference in time between the decedent's death date and birth date. When age is less than or equal to one day then unit shall be *"minutes"*, when age is less than or equal to one year then unit shall be *"days"*, otherwise unit shall be *"years"*.
 
 ---
-## Structure Definition Tree
 
-{{tree:bidirectionalservice/bserchildhoodnutritionfeedbackobs}}
+### **UML Expression**
 
+<center>
+
+{{render:vrdr/vrdrautopsyperformedindicator-duplicate-2}}</center>
+
+---
+
+### **Structure Definition**
+
+{{profile:vrdr/vrdrautopsyperformedindicator, expand}}
+
+---
+
+### **Terminolgy Bindings**
+
+|Element Path|Fixed Value/Value Set|Code System|
+|-
+|Observation.status|"final" - Final|observation-status|
+|Observation.code|"30525-0" - Age|LOINC|
+|Observation.valueQuantity.unit|AgeUnitOfMeasure||
+
+---
+
+### **Element Table**
+
+{{table:vrdr/vrdrautopsyperformedindicator, expand}}
+
+---
+
+### **Requirements Traceability Mappings**
+
+|Element Path|Reference|Location|Data Item|
+|-
+|Observation.valueQuantity:valueQuantity.value|Death Certificate| Item 4 |Age [years, days, or minutes]|
+|Observation.valueQuantity:valueQuantity.value|Vital Records DAM |3.02 Decedent|deathAge|
+|Observation.valueQuantity:valueQuantity.value|Standard Death Record IG|SDR Decedent Profile|Patient.extension:age|
