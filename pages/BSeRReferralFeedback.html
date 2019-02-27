@@ -1,493 +1,536 @@
-
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Windows version 5.6.0">
+<meta charset="utf-8">
+<title>BSeR FHIR IG</title>
+<link rel="icon" href=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/favicon.ico">
 
-    <head>
+<script src=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/jquery/jquery.min.js"></script>
+<script src=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.js"></script>
+<link rel="stylesheet" href=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/main.min.css">
+<link rel="stylesheet" href=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/rendering.min.css">
 
-        <meta charset="utf-8" />
-        <title>BSeR FHIR IG</title>
-
-        <link rel="icon" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/favicon.ico" />
-
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/jquery/jquery.min.js"></script>
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.js"></script>
-
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/main.min.css" />
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/rendering.min.css" />
-
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/stu3TreeTable.min.js"></script>
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/baseTreetable.min.js"></script>
-
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/style.css?v=1d4caca4dea6f00" />
-
-    </head>
-
-    <body>
-
-        <header>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 fhir-logo">
-                        <a href="http://hl7.org/fhir/STU3/">
-                            <img src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/fhir-logo.png?v=1d4caca4dea6f00" alt="logo fhir">
-                        </a>
-                    </div>
-                    <div class="col-md-16 title">
-                        <div>
-                            <a href="/">
-                                BSeR FHIR IG
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 hl7-logo">
-                        <a href="http://www.hl7.org">
-                            <img src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/hl7-logo.png?v=1d4caca4dea6f00" alt="visit the hl7 website" width="42" height="50">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-
+<script src=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+<script src=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/baseTreetable.min.js"></script>
+<link rel="stylesheet" href=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/style.css?v=1d4caca4dea6f00">
+</head>
+<body>
+<header>
+<div class="container">
+<div class="row">
+<div class="col-md-4 fhir-logo"><a href=
+"http://hl7.org/fhir/STU3/"><img src=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/fhir-logo.png?v=1d4caca4dea6f00"
+alt="logo fhir"></a></div>
+<div class="col-md-16 title">
+<div><a href="/">BSeR FHIR IG</a></div>
+</div>
+<div class="col-md-4 hl7-logo"><a href=
+"http://www.hl7.org"><img src=
+"guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/hl7-logo.png?v=1d4caca4dea6f00"
+alt="visit the hl7 website" width="42" height="50"></a></div>
+</div>
+</div>
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Background and Scope <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="Newitem-duplicate-8.html">
-                                            Background and Scope
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="NoticeToBallotCommenters.html">
-                                             Notice to Ballot Commenters
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="NoticetoImplementers.html">
-                                            Notice to Implementers
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Background.html">
-                                            Background
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Scope.html">
-                                            Scope
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="InformationExchangeTransactions.html">
-                                            Information Exchange Transactions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRFHIRIGIndex.html">
-                                            BSeR FHIR IG Index
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                 Resource Profiles <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="ResourceProfile.html">
-                                             Resource Profiles
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="CommonTransactionProfiles.html">
-                                            Common Transaction Profiles
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ReferralRequestTransactionProfiles.html">
-                                            Referral Request Transaction Profiles
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ReferralFeedbackTransactionProfiles.html">
-                                            Referral Feedback Transaction Profiles
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ImplementationProfileBundles.html">
-                                            Implementation Profile Bundles
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Structure Definitions <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="ResourceStructureDefinitions.html">
-                                            Structure Definitions
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="BSeRArthritisFeedbackObservation-duplicate-2.html">
-                                            BSeR Arthritis Feedback Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBloodPressureObservation-duplicate-2.html">
-                                            BSeR Blood Pressure Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBodyHeightObservation-duplicate-2.html">
-                                            BSeR Body Height Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBodyMassIndexObservation-duplicate-2.html">
-                                            BSeR Body Mass Index Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBodyWeightObservation-duplicate-2.html">
-                                            BSeR Body Weight Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRChildhoodNutritionFeedbackObs-duplicate-2.html">
-                                            BSeR Childhood Nutrition Feedback Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRChildhoodNutritionReferralObs-duplicate-2.html">
-                                            BSeR Childhood Nutrition Referral Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRCoverage-duplicate-2.html">
-                                            BSeR Coverage
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiagnosis-duplicate-2.html">
-                                            BSeR Diagnosis
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeREducationLevel-duplicate-2.html">
-                                            BSeR Education Level
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeREmploymentStatus-duplicate-2.html">
-                                            BSeR Employment Status
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHA1cObservation-duplicate-2.html">
-                                            BSeR Hemoglobin A1c Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRMedicationAdministration-duplicate-2.html">
-                                            BSeR Medication Administration
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeROrganization-duplicate-2.html">
-                                            BSeR Organization
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPatient-duplicate-2.html">
-                                            BSeR Patient
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPatientAllergy-duplicate-2.html">
-                                            BSeR Patient Allergy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPatientConsent-duplicate-2.html">
-                                            BSeR Patient Consent
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPractitioner-duplicate-2.html">
-                                            BSeR Practitioner
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralInitiator.html">
-                                            BSeR Referral Initiator
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralRecipient.html">
-                                            BSeR Referral Recipient
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-15.html">
-                                            BSeR Related Person
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-16.html">
-                                            BSeR Service Delivery Location
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRSessionsAttendedObservation-duplicate-2.html">
-                                            BSeR Sessions Attended Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRSmokingStatus-duplicate-2.html">
-                                            BSeR Smoking Status
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoCessationFeedbackObs-duplicate-2.html">
-                                            BSeR Tobacco Cessation Feedback Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoCessationReferralObs-duplicate-2.html">
-                                            BSeR Tobacco Cessation Referral Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralStatusObservation.html">
-                                            BSeR Referral Status Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralRequest.html">
-                                            BSeR Referral Request
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralFeedback.html">
-                                            BSeR Referral Feedback
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Implementation Bundles <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="ImplementationBundles.html">
-                                            Implementation Bundles
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="BSeRObesityRequestSupportBundle-duplicate-2.html">
-                                            BSeR Obesity Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRObesityFeedbackSupportBundle.html">
-                                            BSeR Obesity Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRArthritisRequestSupportBundle-duplicate-2.html">
-                                            BSeR Arthritis Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRArthritisFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Arthritis Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHypertensionRequestSupportBundle-duplicate-2.html">
-                                            BSeR Hypertension Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHypertensionFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Hypertension Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-2.html">
-                                            BSeR Nutrition Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-3.html">
-                                            BSeR Nutrition Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiabetesRequestSupportBundle-duplicate-2.html">
-                                            BSeR Diabetes Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiabetesFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Diabetes Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoRequestSupportBundle-duplicate-2.html">
-                                            BSeR Tobacco Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoFeedbackSupportBundle.html">
-                                            BSeR Tobacco Feedback Support Bundle
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Value Sets <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="Terminologies.html">
-                                            Value Sets
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="PracticeCodes.html">
-                                            Practice Codes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-19.html">
-                                            Request Status
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-18.html">
-                                            Practitioner Role
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Downloads and History <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="Downloads-duplicate-2.html">
-                                            Downloads and History
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="history.html">
-                                            history
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-
-            </ul>
-        </div>
-    </div>
+<div class="container">
+<div class="navbar-header"><button type="button" class=
+"navbar-toggle" data-toggle="collapse" data-target=
+"#bs-example-navbar-collapse-1"><span class="sr-only">Toggle
+navigation</span> </button></div>
+<div class="collapse navbar-collapse" id=
+"bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">Background and Scope</a>
+<ul class="dropdown-menu">
+<li><a href="Newitem-duplicate-8.html">Background and
+Scope</a></li>
+<li><a href="NoticeToBallotCommenters.html">Notice to Ballot
+Commenters</a></li>
+<li><a href="NoticetoImplementers.html">Notice to
+Implementers</a></li>
+<li><a href="Background.html">Background</a></li>
+<li><a href="Scope.html">Scope</a></li>
+<li><a href="InformationExchangeTransactions.html">Information
+Exchange Transactions</a></li>
+<li><a href="BSeRFHIRIGIndex.html">BSeR FHIR IG Index</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">Resource Profiles</a>
+<ul class="dropdown-menu">
+<li><a href="ResourceProfile.html">Resource Profiles</a></li>
+<li><a href="CommonTransactionProfiles.html">Common Transaction
+Profiles</a></li>
+<li><a href="ReferralRequestTransactionProfiles.html">Referral
+Request Transaction Profiles</a></li>
+<li><a href="ReferralFeedbackTransactionProfiles.html">Referral
+Feedback Transaction Profiles</a></li>
+<li><a href="ImplementationProfileBundles.html">Implementation
+Profile Bundles</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">Structure Definitions</a>
+<ul class="dropdown-menu">
+<li><a href="ResourceStructureDefinitions.html">Structure
+Definitions</a></li>
+<li><a href=
+"BSeRArthritisFeedbackObservation-duplicate-2.html">BSeR Arthritis
+Feedback Observation</a></li>
+<li><a href="BSeRBloodPressureObservation-duplicate-2.html">BSeR
+Blood Pressure Observation</a></li>
+<li><a href="BSeRBodyHeightObservation-duplicate-2.html">BSeR Body
+Height Observation</a></li>
+<li><a href="BSeRBodyMassIndexObservation-duplicate-2.html">BSeR
+Body Mass Index Observation</a></li>
+<li><a href="BSeRBodyWeightObservation-duplicate-2.html">BSeR Body
+Weight Observation</a></li>
+<li><a href=
+"BSeRChildhoodNutritionFeedbackObs-duplicate-2.html">BSeR Childhood
+Nutrition Feedback Obs</a></li>
+<li><a href=
+"BSeRChildhoodNutritionReferralObs-duplicate-2.html">BSeR Childhood
+Nutrition Referral Obs</a></li>
+<li><a href="BSeRCoverage-duplicate-2.html">BSeR Coverage</a></li>
+<li><a href="BSeRDiagnosis-duplicate-2.html">BSeR
+Diagnosis</a></li>
+<li><a href="BSeREducationLevel-duplicate-2.html">BSeR Education
+Level</a></li>
+<li><a href="BSeREmploymentStatus-duplicate-2.html">BSeR Employment
+Status</a></li>
+<li><a href="BSeRHA1cObservation-duplicate-2.html">BSeR Hemoglobin
+A1c Observation</a></li>
+<li><a href="BSeRMedicationAdministration-duplicate-2.html">BSeR
+Medication Administration</a></li>
+<li><a href="BSeROrganization-duplicate-2.html">BSeR
+Organization</a></li>
+<li><a href="BSeRPatient-duplicate-2.html">BSeR Patient</a></li>
+<li><a href="BSeRPatientAllergy-duplicate-2.html">BSeR Patient
+Allergy</a></li>
+<li><a href="BSeRPatientConsent-duplicate-2.html">BSeR Patient
+Consent</a></li>
+<li><a href="BSeRPractitioner-duplicate-2.html">BSeR
+Practitioner</a></li>
+<li><a href="BSeRReferralInitiator.html">BSeR Referral
+Initiator</a></li>
+<li><a href="BSeRReferralRecipient.html">BSeR Referral
+Recipient</a></li>
+<li><a href="Newitem-duplicate-15.html">BSeR Related
+Person</a></li>
+<li><a href="Newitem-duplicate-16.html">BSeR Service Delivery
+Location</a></li>
+<li><a href="BSeRSessionsAttendedObservation-duplicate-2.html">BSeR
+Sessions Attended Observation</a></li>
+<li><a href="BSeRSmokingStatus-duplicate-2.html">BSeR Smoking
+Status</a></li>
+<li><a href="BSeRTobaccoCessationFeedbackObs-duplicate-2.html">BSeR
+Tobacco Cessation Feedback Obs</a></li>
+<li><a href="BSeRTobaccoCessationReferralObs-duplicate-2.html">BSeR
+Tobacco Cessation Referral Obs</a></li>
+<li><a href="BSeRReferralStatusObservation.html">BSeR Referral
+Status Observation</a></li>
+<li><a href="BSeRReferralRequest.html">BSeR Referral
+Request</a></li>
+<li><a href="BSeRReferralFeedback.html">BSeR Referral
+Feedback</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">Implementation Bundles</a>
+<ul class="dropdown-menu">
+<li><a href="ImplementationBundles.html">Implementation
+Bundles</a></li>
+<li><a href="BSeRObesityRequestSupportBundle-duplicate-2.html">BSeR
+Obesity Request Support Bundle</a></li>
+<li><a href="BSeRObesityFeedbackSupportBundle.html">BSeR Obesity
+Feedback Support Bundle</a></li>
+<li><a href=
+"BSeRArthritisRequestSupportBundle-duplicate-2.html">BSeR Arthritis
+Request Support Bundle</a></li>
+<li><a href=
+"BSeRArthritisFeedbackSupportBundle-duplicate-2.html">BSeR
+Arthritis Feedback Support Bundle</a></li>
+<li><a href=
+"BSeRHypertensionRequestSupportBundle-duplicate-2.html">BSeR
+Hypertension Request Support Bundle</a></li>
+<li><a href=
+"BSeRHypertensionFeedbackSupportBundle-duplicate-2.html">BSeR
+Hypertension Feedback Support Bundle</a></li>
+<li><a href=
+"BSeRNutritionRequestSupportBundle-duplicate-2.html">BSeR Nutrition
+Request Support Bundle</a></li>
+<li><a href=
+"BSeRNutritionRequestSupportBundle-duplicate-3.html">BSeR Nutrition
+Feedback Support Bundle</a></li>
+<li><a href=
+"BSeRDiabetesRequestSupportBundle-duplicate-2.html">BSeR Diabetes
+Request Support Bundle</a></li>
+<li><a href=
+"BSeRDiabetesFeedbackSupportBundle-duplicate-2.html">BSeR Diabetes
+Feedback Support Bundle</a></li>
+<li><a href="BSeRTobaccoRequestSupportBundle-duplicate-2.html">BSeR
+Tobacco Request Support Bundle</a></li>
+<li><a href="BSeRTobaccoFeedbackSupportBundle.html">BSeR Tobacco
+Feedback Support Bundle</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">Value Sets</a>
+<ul class="dropdown-menu">
+<li><a href="Terminologies.html">Value Sets</a></li>
+<li><a href="PracticeCodes.html">Practice Codes</a></li>
+<li><a href="Newitem-duplicate-19.html">Request Status</a></li>
+<li><a href="Newitem-duplicate-18.html">Practitioner Role</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="#" class="dropdown-toggle"
+data-toggle="dropdown">Downloads and History</a>
+<ul class="dropdown-menu">
+<li><a href="Downloads-duplicate-2.html">Downloads and
+History</a></li>
+<li><a href="history.html">history</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 </nav>
-
-        </header>
-
-        <div class="content container">
-            
-
-    <div class="row">
-
-
-        <div class="col-md-24">
-
-            <div id="preview-content">
-                <h2 id="bser-referral-feedback">BSeR Referral Feedback</h2>
-<p>Decedent Age is a profile of the <a href="http://www.hl7.org/fhir/observation.html">FHIR STU3 Observation</a> resource. It is used to communicate the decedent's chronological age at the time of death. When present, the effective date of this observation shall be equal to the decedent's date of death. Age (Observation.valueQuantity.value) is derived as the difference in time between the decedent's death date and birth date. When age is less than or equal to one day then unit shall be <em>&quot;minutes&quot;</em>, when age is less than or equal to one year then unit shall be <em>&quot;days&quot;</em>, otherwise unit shall be <em>&quot;years&quot;</em>.</p>
-<hr />
+</header>
+<div class="content container">
+<div class="row">
+<div class="col-md-24">
+<div id="preview-content">
+<h2 id="bser-referral-feedback">BSeR Referral Feedback</h2>
+<p>Decedent Age is a profile of the <a href=
+"http://www.hl7.org/fhir/observation.html">FHIR STU3
+Observation</a> resource. It is used to communicate the decedent's
+chronological age at the time of death. When present, the effective
+date of this observation shall be equal to the decedent's date of
+death. Age (Observation.valueQuantity.value) is derived as the
+difference in time between the decedent's death date and birth
+date. When age is less than or equal to one day then unit shall be
+<em>"minutes"</em>, when age is less than or equal to one year then
+unit shall be <em>"days"</em>, otherwise unit shall be
+<em>"years"</em>.</p>
+<hr>
 <h3 id="uml-expression"><strong>UML Expression</strong></h3>
 <center>
-<p><div id="89f95ef169a64a67ae7e34097d7120e7" data-level="1" class="stu3-treetable"><div class="treetable-wrapper snapshot"><div class="treetable-left-panel"><table class="treetable"><tr data-id="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="collapsed"><td><span class="baseIcon resource"></span><span>Composition</span></td><td></td><td></td><td><a title="Type Composition from core specification" href="http://hl7.org/fhir/STU3/composition.html" target="_blank">Composition</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Data Type </b></span><p><a title="Type Composition from core specification" href="http://hl7.org/fhir/STU3/composition.html" target="_blank">Composition</a></p></td></tr><tr id="Composition.identifier" data-id="8204f20f-e659-4ed8-8f29-bf85877288d0" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=""><td><span class="baseIcon primitive"></span><span>identifier</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>identifier</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] identifier (CONF:4383-209).</p>
-</div></td></tr><tr id="Composition.status" data-id="ed81c6de-16ac-4d0d-8a18-8436cac4e9f3" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=""><td><span class="baseIcon primitive"></span><span>status</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>status</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] status (CONF:4383-210).</p>
-</div></td></tr><tr id="Composition.type" data-id="1ff30059-b74e-47d8-b518-ee2d295f5749" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=""><td><span class="baseIcon primitive"></span><span>type</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>type</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] type (CONF:4383-211).</p>
-</div></td></tr><tr id="Composition.subject" data-id="8c2a2c52-a1f1-4a03-be0f-dcfe5cdc7423" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=""><td><span class="baseIcon reference"></span><span>subject</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Patient</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-205).</p>
-</div><span><b>Data Type </b></span><p><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></p></td></tr><tr id="Composition.date" data-id="46544303-e44f-4040-81a5-47bebb9a1a10" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=""><td><span class="baseIcon primitive"></span><span>date</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Feedback Report Date</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] date (CONF:4383-212).</p>
-</div></td></tr><tr id="Composition.author" data-id="1cdc82b4-c521-4aa1-b321-df6d67174de6" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=""><td><span class="baseIcon primitive"></span><span>author</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Referral Request Recipient</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] author (CONF:4383-206).</p>
-</div></td></tr><tr id="Composition.title" data-id="cdb0abfe-9a3f-43e8-9b03-99af653d8d09" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=""><td><span class="baseIcon primitive"></span><span>title</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>title</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] title (CONF:4383-213).</p>
-</div></td></tr><tr id="Composition.section" data-id="20c569a3-a1d6-4597-8212-4a1ea73575f7" data-parentId="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="collapsed sliced"><td><span class="baseIcon slice"></span><span>section</span></td><td></td><td></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] section (CONF:4383-241) such that it</p>
-</div><span><b>Sliced: </b></span><p><span>Unordered, Open, by entry(Value)</span></p></td></tr><tr id="Composition.section:section1" data-id="705ff0fc-620c-4d13-9e21-dc3b9e543b00" data-parentId="20c569a3-a1d6-4597-8212-4a1ea73575f7" class="collapsed"><td><span class="baseIcon individualSlice"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Common Feedback Supporting Information</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] section (CONF:4383-230) such that it</p>
-</div><span><b>Comments </b></span><div class="markdown"><p>Multi-Program Feedback Data</p>
-</div></td></tr><tr id="Composition.section:section1.code" data-id="5639371a-eb74-49df-80a6-a53bd873ff01" data-parentId="705ff0fc-620c-4d13-9e21-dc3b9e543b00" class=""><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>code</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] code (CONF:4383-232).</p>
-</div></td></tr><tr id="Composition.section:section1.text" data-id="c4728101-edff-46d9-a88e-7a1a56fb473c" data-parentId="705ff0fc-620c-4d13-9e21-dc3b9e543b00" class=""><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Feedback Report Note</span></p><span><b>Definition </b></span><div class="markdown"><p>SHOULD contain exactly one [1..1] text (CONF:4383-233).</p>
-</div></td></tr><tr id="Composition.section:section1.entry" data-id="1a23f756-8f81-4879-b86e-e8512af6cf81" data-parentId="705ff0fc-620c-4d13-9e21-dc3b9e543b00" class="collapsed"><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>entry</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] entry (CONF:4383-555).</p>
-</div></td></tr><tr id="Composition.section:section1.entry.reference" data-id="5502d410-731b-4d87-8d26-e6c81909bb8b" data-parentId="1a23f756-8f81-4879-b86e-e8512af6cf81" class=""><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>reference</span></p><span><b>Definition </b></span><div class="markdown"><p>This entry SHALL contain exactly one [1..1] reference (CONF:4383-557).</p>
-</div></td></tr><tr id="Composition.section:section2" data-id="30a95117-3fe3-4f58-be7d-50cac59da015" data-parentId="20c569a3-a1d6-4597-8212-4a1ea73575f7" class="collapsed"><td><span class="baseIcon individualSlice"></span><span>section2</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Single-program specific feedback</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] section (CONF:4383-241) such that it</p>
-</div><span><b>Comments </b></span><div class="markdown"><p>Program Specific Feedback Data</p>
-</div></td></tr><tr id="Composition.section:section2.code" data-id="5f0858c6-2fdf-477a-9484-4991ec9b0540" data-parentId="30a95117-3fe3-4f58-be7d-50cac59da015" class=""><td><span class="baseIcon primitive"></span><span>section2</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>code</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] code (CONF:4383-290).</p>
-</div></td></tr><tr id="Composition.section:section2.entry" data-id="aa305828-b250-41b0-a7b1-aaf5af4c2429" data-parentId="30a95117-3fe3-4f58-be7d-50cac59da015" class="collapsed"><td><span class="baseIcon primitive"></span><span>section2</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>entry</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain zero or one [0..1] entry (CONF:4383-556).</p>
-</div></td></tr><tr id="Composition.section:section2.entry.reference" data-id="de15872d-abf0-4ce8-a36d-33b393c6c3ae" data-parentId="aa305828-b250-41b0-a7b1-aaf5af4c2429" class=""><td><span class="baseIcon primitive"></span><span>section2</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>reference</span></p><span><b>Definition </b></span><div class="markdown"><p>The entry, if present, SHALL contain exactly one [1..1] reference (CONF:4383-558).</p>
-</div></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript">
+<div id="89f95ef169a64a67ae7e34097d7120e7" data-level="1" class=
+"stu3-treetable">
+<div class="treetable-wrapper snapshot">
+<div class="treetable-left-panel">
+<table class="treetable">
+<tr data-id="b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class=
+"collapsed">
+<td><span>Composition</span></td>
+<td></td>
+<td></td>
+<td><a title="Type Composition from core specification" href=
+"http://hl7.org/fhir/STU3/composition.html" target=
+"_blank">Composition</a></td>
+<td class="details hidden"><span><b>Data Type</b></span>
+<p><a title="Type Composition from core specification" href=
+"http://hl7.org/fhir/STU3/composition.html" target=
+"_blank">Composition</a></p>
+</td>
+</tr>
+<tr id="Composition.identifier" data-id=
+"8204f20f-e659-4ed8-8f29-bf85877288d0" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="">
+<td><span>identifier</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>identifier</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] identifier (CONF:4383-209).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.status" data-id=
+"ed81c6de-16ac-4d0d-8a18-8436cac4e9f3" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="">
+<td><span>status</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>status</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] status (CONF:4383-210).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.type" data-id=
+"1ff30059-b74e-47d8-b518-ee2d295f5749" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="">
+<td><span>type</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>type</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] type (CONF:4383-211).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.subject" data-id=
+"8c2a2c52-a1f1-4a03-be0f-dcfe5cdc7423" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="">
+<td><span>subject</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td><a title="Type Reference from core specification" href=
+"http://hl7.org/fhir/STU3/references.html" target=
+"_blank">Reference</a><span>(</span><a title="Profile" href=
+"artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Patient</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] BSeR Patient (identifier:
+http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole)
+(CONF:4383-205).</p>
+</div>
+<span><b>Data Type</b></span>
+<p><a title="Type Reference from core specification" href=
+"http://hl7.org/fhir/STU3/references.html" target=
+"_blank">Reference</a><span>(</span><a title="Profile" href=
+"artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></p>
+</td>
+</tr>
+<tr id="Composition.date" data-id=
+"46544303-e44f-4040-81a5-47bebb9a1a10" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="">
+<td><span>date</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Feedback Report Date</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] date (CONF:4383-212).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.author" data-id=
+"1cdc82b4-c521-4aa1-b321-df6d67174de6" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="">
+<td><span>author</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Referral Request Recipient</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] author (CONF:4383-206).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.title" data-id=
+"cdb0abfe-9a3f-43e8-9b03-99af653d8d09" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="">
+<td><span>title</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>title</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] title (CONF:4383-213).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section" data-id=
+"20c569a3-a1d6-4597-8212-4a1ea73575f7" data-parentid=
+"b0e8340c-9b2d-4cfa-ae30-4f7d6f1e3ed2" class="collapsed sliced">
+<td><span>section</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td class="details hidden"><span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] section (CONF:4383-241) such
+that it</p>
+</div>
+<span><b>Sliced:</b></span>
+<p><span>Unordered, Open, by entry(Value)</span></p>
+</td>
+</tr>
+<tr id="Composition.section:section1" data-id=
+"705ff0fc-620c-4d13-9e21-dc3b9e543b00" data-parentid=
+"20c569a3-a1d6-4597-8212-4a1ea73575f7" class="collapsed">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Common Feedback Supporting Information</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] section (CONF:4383-230) such
+that it</p>
+</div>
+<span><b>Comments</b></span>
+<div class="markdown">
+<p>Multi-Program Feedback Data</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.code" data-id=
+"5639371a-eb74-49df-80a6-a53bd873ff01" data-parentid=
+"705ff0fc-620c-4d13-9e21-dc3b9e543b00" class="">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>code</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] code (CONF:4383-232).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.text" data-id=
+"c4728101-edff-46d9-a88e-7a1a56fb473c" data-parentid=
+"705ff0fc-620c-4d13-9e21-dc3b9e543b00" class="">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Feedback Report Note</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHOULD contain exactly one [1..1] text (CONF:4383-233).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.entry" data-id=
+"1a23f756-8f81-4879-b86e-e8512af6cf81" data-parentid=
+"705ff0fc-620c-4d13-9e21-dc3b9e543b00" class="collapsed">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>entry</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] entry (CONF:4383-555).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.entry.reference" data-id=
+"5502d410-731b-4d87-8d26-e6c81909bb8b" data-parentid=
+"1a23f756-8f81-4879-b86e-e8512af6cf81" class="">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>reference</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>This entry SHALL contain exactly one [1..1] reference
+(CONF:4383-557).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2" data-id=
+"30a95117-3fe3-4f58-be7d-50cac59da015" data-parentid=
+"20c569a3-a1d6-4597-8212-4a1ea73575f7" class="collapsed">
+<td><span>section2</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Single-program specific feedback</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] section (CONF:4383-241) such
+that it</p>
+</div>
+<span><b>Comments</b></span>
+<div class="markdown">
+<p>Program Specific Feedback Data</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2.code" data-id=
+"5f0858c6-2fdf-477a-9484-4991ec9b0540" data-parentid=
+"30a95117-3fe3-4f58-be7d-50cac59da015" class="">
+<td><span>section2</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>code</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] code (CONF:4383-290).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2.entry" data-id=
+"aa305828-b250-41b0-a7b1-aaf5af4c2429" data-parentid=
+"30a95117-3fe3-4f58-be7d-50cac59da015" class="collapsed">
+<td><span>section2</span></td>
+<td></td>
+<td><span>0</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>entry</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain zero or one [0..1] entry (CONF:4383-556).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2.entry.reference" data-id=
+"de15872d-abf0-4ce8-a36d-33b393c6c3ae" data-parentid=
+"aa305828-b250-41b0-a7b1-aaf5af4c2429" class="">
+<td><span>section2</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>reference</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>The entry, if present, SHALL contain exactly one [1..1]
+reference (CONF:4383-558).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="treetable-right-panel"></div>
+</div>
+</div>
+<script type="text/javascript">
 (function() {
 var isTreetableVisible = document.querySelector(".treetable") != null;
 if (isTreetableVisible) {
@@ -495,29 +538,313 @@ var resourceTreeTable89f95ef169a64a67ae7e34097d7120e7 = new Stu3TreeTable(false)
 resourceTreeTable89f95ef169a64a67ae7e34097d7120e7.init("89f95ef169a64a67ae7e34097d7120e7");
 }
 })();
-</script></center></p>
-<hr />
-<h3 id="structure-definition"><strong>Structure Definition</strong></h3>
-<p><div id="4bb988c9b4c142cd9b3bc525c21fe50e" data-level="10" class="stu3-treetable"><div class="treetable-wrapper snapshot"><div class="treetable-left-panel"><table class="treetable"><tr data-id="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="collapsed"><td><span class="baseIcon resource"></span><span>Composition</span></td><td></td><td></td><td><a title="Type Composition from core specification" href="http://hl7.org/fhir/STU3/composition.html" target="_blank">Composition</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Data Type </b></span><p><a title="Type Composition from core specification" href="http://hl7.org/fhir/STU3/composition.html" target="_blank">Composition</a></p></td></tr><tr id="Composition.identifier" data-id="e229180f-ed5f-4028-8519-835817f23e53" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=""><td><span class="baseIcon primitive"></span><span>identifier</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>identifier</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] identifier (CONF:4383-209).</p>
-</div></td></tr><tr id="Composition.status" data-id="cfed4058-6ecb-49c3-8c54-651b7b485bca" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=""><td><span class="baseIcon primitive"></span><span>status</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>status</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] status (CONF:4383-210).</p>
-</div></td></tr><tr id="Composition.type" data-id="4a64dc92-8cd5-4ba0-ad5e-192f55b94f93" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=""><td><span class="baseIcon primitive"></span><span>type</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>type</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] type (CONF:4383-211).</p>
-</div></td></tr><tr id="Composition.subject" data-id="1dc52b80-33ed-4250-b169-ee4d7c3dc87b" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=""><td><span class="baseIcon reference"></span><span>subject</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Patient</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-205).</p>
-</div><span><b>Data Type </b></span><p><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></p></td></tr><tr id="Composition.date" data-id="880b841e-ec2d-4cd2-a5ad-d6c3a51e961f" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=""><td><span class="baseIcon primitive"></span><span>date</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Feedback Report Date</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] date (CONF:4383-212).</p>
-</div></td></tr><tr id="Composition.author" data-id="edea9aa5-7cb9-456a-afce-1ba0cde5c5b1" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=""><td><span class="baseIcon primitive"></span><span>author</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Referral Request Recipient</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] author (CONF:4383-206).</p>
-</div></td></tr><tr id="Composition.title" data-id="75cad8ff-1dcf-439c-8d9d-18f664c63ef0" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=""><td><span class="baseIcon primitive"></span><span>title</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>title</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] title (CONF:4383-213).</p>
-</div></td></tr><tr id="Composition.section" data-id="5e66ee6a-a58e-4a61-a93d-5a8f77f19def" data-parentId="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="collapsed sliced"><td><span class="baseIcon slice"></span><span>section</span></td><td></td><td></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] section (CONF:4383-241) such that it</p>
-</div><span><b>Sliced: </b></span><p><span>Unordered, Open, by entry(Value)</span></p></td></tr><tr id="Composition.section:section1" data-id="841d6540-33ad-49a6-a880-be922294fe5b" data-parentId="5e66ee6a-a58e-4a61-a93d-5a8f77f19def" class="collapsed"><td><span class="baseIcon individualSlice"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Common Feedback Supporting Information</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] section (CONF:4383-230) such that it</p>
-</div><span><b>Comments </b></span><div class="markdown"><p>Multi-Program Feedback Data</p>
-</div></td></tr><tr id="Composition.section:section1.code" data-id="82ed3543-e73e-45d6-b4d6-87212650bd5a" data-parentId="841d6540-33ad-49a6-a880-be922294fe5b" class=""><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>code</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] code (CONF:4383-232).</p>
-</div></td></tr><tr id="Composition.section:section1.text" data-id="070879ec-5e13-4e38-a611-40e137d2eadc" data-parentId="841d6540-33ad-49a6-a880-be922294fe5b" class=""><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Feedback Report Note</span></p><span><b>Definition </b></span><div class="markdown"><p>SHOULD contain exactly one [1..1] text (CONF:4383-233).</p>
-</div></td></tr><tr id="Composition.section:section1.entry" data-id="d49ed34f-1229-4ef3-8df6-0f4c6445cfec" data-parentId="841d6540-33ad-49a6-a880-be922294fe5b" class="collapsed"><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>entry</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] entry (CONF:4383-555).</p>
-</div></td></tr><tr id="Composition.section:section1.entry.reference" data-id="b136fb02-9c39-4d6b-9c91-a1bef38c4d7d" data-parentId="d49ed34f-1229-4ef3-8df6-0f4c6445cfec" class=""><td><span class="baseIcon primitive"></span><span>section1</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>reference</span></p><span><b>Definition </b></span><div class="markdown"><p>This entry SHALL contain exactly one [1..1] reference (CONF:4383-557).</p>
-</div></td></tr><tr id="Composition.section:section2" data-id="ac3f7ae5-7d90-4c66-8ff7-b738c9335115" data-parentId="5e66ee6a-a58e-4a61-a93d-5a8f77f19def" class="collapsed"><td><span class="baseIcon individualSlice"></span><span>section2</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>Single-program specific feedback</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] section (CONF:4383-241) such that it</p>
-</div><span><b>Comments </b></span><div class="markdown"><p>Program Specific Feedback Data</p>
-</div></td></tr><tr id="Composition.section:section2.code" data-id="b0e23723-f993-432d-968a-399baa64f4a8" data-parentId="ac3f7ae5-7d90-4c66-8ff7-b738c9335115" class=""><td><span class="baseIcon primitive"></span><span>section2</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>code</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] code (CONF:4383-290).</p>
-</div></td></tr><tr id="Composition.section:section2.entry" data-id="4754aaf5-8dc9-4406-8d6a-a3aee0dd93f7" data-parentId="ac3f7ae5-7d90-4c66-8ff7-b738c9335115" class="collapsed"><td><span class="baseIcon primitive"></span><span>section2</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>entry</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain zero or one [0..1] entry (CONF:4383-556).</p>
-</div></td></tr><tr id="Composition.section:section2.entry.reference" data-id="0f9ebd0a-e3c4-4af1-a0b9-e74c7e41e47d" data-parentId="4754aaf5-8dc9-4406-8d6a-a3aee0dd93f7" class=""><td><span class="baseIcon primitive"></span><span>section2</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>reference</span></p><span><b>Definition </b></span><div class="markdown"><p>The entry, if present, SHALL contain exactly one [1..1] reference (CONF:4383-558).</p>
-</div></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript">
+</script></center>
+<hr>
+<h3 id="structure-definition"><strong>Structure
+Definition</strong></h3>
+<div id="4bb988c9b4c142cd9b3bc525c21fe50e" data-level="10" class=
+"stu3-treetable">
+<div class="treetable-wrapper snapshot">
+<div class="treetable-left-panel">
+<table class="treetable">
+<tr data-id="b9ad48af-9868-469e-acd2-a23dfcc25f6a" class=
+"collapsed">
+<td><span>Composition</span></td>
+<td></td>
+<td></td>
+<td><a title="Type Composition from core specification" href=
+"http://hl7.org/fhir/STU3/composition.html" target=
+"_blank">Composition</a></td>
+<td class="details hidden"><span><b>Data Type</b></span>
+<p><a title="Type Composition from core specification" href=
+"http://hl7.org/fhir/STU3/composition.html" target=
+"_blank">Composition</a></p>
+</td>
+</tr>
+<tr id="Composition.identifier" data-id=
+"e229180f-ed5f-4028-8519-835817f23e53" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="">
+<td><span>identifier</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>identifier</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] identifier (CONF:4383-209).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.status" data-id=
+"cfed4058-6ecb-49c3-8c54-651b7b485bca" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="">
+<td><span>status</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>status</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] status (CONF:4383-210).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.type" data-id=
+"4a64dc92-8cd5-4ba0-ad5e-192f55b94f93" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="">
+<td><span>type</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>type</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] type (CONF:4383-211).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.subject" data-id=
+"1dc52b80-33ed-4250-b169-ee4d7c3dc87b" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="">
+<td><span>subject</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td><a title="Type Reference from core specification" href=
+"http://hl7.org/fhir/STU3/references.html" target=
+"_blank">Reference</a><span>(</span><a title="Profile" href=
+"artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Patient</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] BSeR Patient (identifier:
+http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole)
+(CONF:4383-205).</p>
+</div>
+<span><b>Data Type</b></span>
+<p><a title="Type Reference from core specification" href=
+"http://hl7.org/fhir/STU3/references.html" target=
+"_blank">Reference</a><span>(</span><a title="Profile" href=
+"artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></p>
+</td>
+</tr>
+<tr id="Composition.date" data-id=
+"880b841e-ec2d-4cd2-a5ad-d6c3a51e961f" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="">
+<td><span>date</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Feedback Report Date</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] date (CONF:4383-212).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.author" data-id=
+"edea9aa5-7cb9-456a-afce-1ba0cde5c5b1" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="">
+<td><span>author</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Referral Request Recipient</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] author (CONF:4383-206).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.title" data-id=
+"75cad8ff-1dcf-439c-8d9d-18f664c63ef0" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="">
+<td><span>title</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>title</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] title (CONF:4383-213).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section" data-id=
+"5e66ee6a-a58e-4a61-a93d-5a8f77f19def" data-parentid=
+"b9ad48af-9868-469e-acd2-a23dfcc25f6a" class="collapsed sliced">
+<td><span>section</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td class="details hidden"><span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] section (CONF:4383-241) such
+that it</p>
+</div>
+<span><b>Sliced:</b></span>
+<p><span>Unordered, Open, by entry(Value)</span></p>
+</td>
+</tr>
+<tr id="Composition.section:section1" data-id=
+"841d6540-33ad-49a6-a880-be922294fe5b" data-parentid=
+"5e66ee6a-a58e-4a61-a93d-5a8f77f19def" class="collapsed">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Common Feedback Supporting Information</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] section (CONF:4383-230) such
+that it</p>
+</div>
+<span><b>Comments</b></span>
+<div class="markdown">
+<p>Multi-Program Feedback Data</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.code" data-id=
+"82ed3543-e73e-45d6-b4d6-87212650bd5a" data-parentid=
+"841d6540-33ad-49a6-a880-be922294fe5b" class="">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>code</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] code (CONF:4383-232).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.text" data-id=
+"070879ec-5e13-4e38-a611-40e137d2eadc" data-parentid=
+"841d6540-33ad-49a6-a880-be922294fe5b" class="">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Feedback Report Note</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHOULD contain exactly one [1..1] text (CONF:4383-233).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.entry" data-id=
+"d49ed34f-1229-4ef3-8df6-0f4c6445cfec" data-parentid=
+"841d6540-33ad-49a6-a880-be922294fe5b" class="collapsed">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>entry</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] entry (CONF:4383-555).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section1.entry.reference" data-id=
+"b136fb02-9c39-4d6b-9c91-a1bef38c4d7d" data-parentid=
+"d49ed34f-1229-4ef3-8df6-0f4c6445cfec" class="">
+<td><span>section1</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>reference</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>This entry SHALL contain exactly one [1..1] reference
+(CONF:4383-557).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2" data-id=
+"ac3f7ae5-7d90-4c66-8ff7-b738c9335115" data-parentid=
+"5e66ee6a-a58e-4a61-a93d-5a8f77f19def" class="collapsed">
+<td><span>section2</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>Single-program specific feedback</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] section (CONF:4383-241) such
+that it</p>
+</div>
+<span><b>Comments</b></span>
+<div class="markdown">
+<p>Program Specific Feedback Data</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2.code" data-id=
+"b0e23723-f993-432d-968a-399baa64f4a8" data-parentid=
+"ac3f7ae5-7d90-4c66-8ff7-b738c9335115" class="">
+<td><span>section2</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>code</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain exactly one [1..1] code (CONF:4383-290).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2.entry" data-id=
+"4754aaf5-8dc9-4406-8d6a-a3aee0dd93f7" data-parentid=
+"ac3f7ae5-7d90-4c66-8ff7-b738c9335115" class="collapsed">
+<td><span>section2</span></td>
+<td></td>
+<td><span>0</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>entry</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>SHALL contain zero or one [0..1] entry (CONF:4383-556).</p>
+</div>
+</td>
+</tr>
+<tr id="Composition.section:section2.entry.reference" data-id=
+"0f9ebd0a-e3c4-4af1-a0b9-e74c7e41e47d" data-parentid=
+"4754aaf5-8dc9-4406-8d6a-a3aee0dd93f7" class="">
+<td><span>section2</span></td>
+<td></td>
+<td><span>1</span><span>..</span><span>1</span></td>
+<td></td>
+<td class="details hidden"><span><b>Short description</b></span>
+<p><span>reference</span></p>
+<span><b>Definition</b></span>
+<div class="markdown">
+<p>The entry, if present, SHALL contain exactly one [1..1]
+reference (CONF:4383-558).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="treetable-right-panel"></div>
+</div>
+</div>
+<script type="text/javascript">
 (function() {
 var isTreetableVisible = document.querySelector(".treetable") != null;
 if (isTreetableVisible) {
@@ -525,9 +852,10 @@ var resourceTreeTable4bb988c9b4c142cd9b3bc525c21fe50e = new Stu3TreeTable(false)
 resourceTreeTable4bb988c9b4c142cd9b3bc525c21fe50e.init("4bb988c9b4c142cd9b3bc525c21fe50e");
 }
 })();
-</script></p>
-<hr />
-<h3 id="terminolgy-bindings"><strong>Terminolgy Bindings</strong></h3>
+</script>
+<hr>
+<h3 id="terminolgy-bindings"><strong>Terminolgy
+Bindings</strong></h3>
 <table class="regular">
 <thead>
 <tr>
@@ -539,12 +867,12 @@ resourceTreeTable4bb988c9b4c142cd9b3bc525c21fe50e.init("4bb988c9b4c142cd9b3bc525
 <tbody>
 <tr>
 <td>Observation.status</td>
-<td>&quot;final&quot; - Final</td>
+<td>"final" - Final</td>
 <td>observation-status</td>
 </tr>
 <tr>
 <td>Observation.code</td>
-<td>&quot;30525-0&quot; - Age</td>
+<td>"30525-0" - Age</td>
 <td>LOINC</td>
 </tr>
 <tr>
@@ -554,11 +882,117 @@ resourceTreeTable4bb988c9b4c142cd9b3bc525c21fe50e.init("4bb988c9b4c142cd9b3bc525
 </tr>
 </tbody>
 </table>
-<hr />
+<hr>
 <h3 id="element-table"><strong>Element Table</strong></h3>
-<p><div class="path"><table><tr><td><span class="field">Composition</span></td><td></td><td>.. </td></tr><tr><td>Composition.<span class="field">identifier</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">status</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">type</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">subject</span></td><td><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">date</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">author</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">title</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">section</span></td><td></td><td>.. </td></tr><tr><td>Composition.<span class="field">section:section1</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.section:section1.<span class="field">code:section1</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.section:section1.<span class="field">text:section1</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.section:section1.<span class="field">entry:section1</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.section:section1.entry:section1.<span class="field">reference:section1</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.<span class="field">section:section2</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.section:section2.<span class="field">code:section2</span></td><td></td><td>1..1 </td></tr><tr><td>Composition.section:section2.<span class="field">entry:section2</span></td><td></td><td>0..1 </td></tr><tr><td>Composition.section:section2.entry:section2.<span class="field">reference:section2</span></td><td></td><td>1..1 </td></tr></table></div><br></br></p>
-<hr />
-<h3 id="requirements-traceability-mappings"><strong>Requirements Traceability Mappings</strong></h3>
+<div class="path">
+<table>
+<tr>
+<td><span class="field">Composition</span></td>
+<td></td>
+<td>..</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">identifier</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">status</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">type</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">subject</span></td>
+<td><a title="Type Reference from core specification" href=
+"http://hl7.org/fhir/STU3/references.html" target=
+"_blank">Reference</a><span>(</span><a title="Profile" href=
+"artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">date</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">author</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">title</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">section</span></td>
+<td></td>
+<td>..</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">section:section1</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.section:section1.<span class=
+"field">code:section1</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.section:section1.<span class=
+"field">text:section1</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.section:section1.<span class=
+"field">entry:section1</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.section:section1.entry:section1.<span class=
+"field">reference:section1</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.<span class="field">section:section2</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.section:section2.<span class=
+"field">code:section2</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>Composition.section:section2.<span class=
+"field">entry:section2</span></td>
+<td></td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>Composition.section:section2.entry:section2.<span class=
+"field">reference:section2</span></td>
+<td></td>
+<td>1..1</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<h3 id="requirements-traceability-mappings"><strong>Requirements
+Traceability Mappings</strong></h3>
 <table class="regular">
 <thead>
 <tr>
@@ -589,31 +1023,21 @@ resourceTreeTable4bb988c9b4c142cd9b3bc525c21fe50e.init("4bb988c9b4c142cd9b3bc525
 </tr>
 </tbody>
 </table>
-
-            </div>
-
-
-        </div>
-    </div>
-
-        </div>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <span>Version: 0.1</span>
-                        <span>FHIR Version: STU3</span>
-                    </div>
-                    <br />
-                    <p>Powered by <b>SIMPLIFIER.NET</b></p>
-                    <div>
-                        HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-    </body>
-
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div><span>Version: 0.1</span> <span>FHIR Version:
+STU3</span></div>
+<br>
+<p>Powered by <b>SIMPLIFIER.NET</b></p>
+<div>HL7<sup>®</sup> and FHIR<sup>®</sup> are the registered
+trademarks of Health Level Seven International</div>
+</div>
+</div>
+</footer>
+</body>
 </html>
