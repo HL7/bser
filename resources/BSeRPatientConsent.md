@@ -8,13 +8,13 @@ Decedent Age is a profile of the [FHIR STU3 Observation](http://www.hl7.org/fhir
 
 <center>
 
-{{render:vrdr/vrdrautopsyperformedindicator-duplicate-2}}</center>
+{{render:BSeRPatientConsentUML}}</center>
 
 ---
 
 ### **Structure Definition**
 
-{{profile:vrdr/vrdrautopsyperformedindicator, expand}}
+{{profile:BSeRPatientConsent, expand}}
 
 ---
 
@@ -30,7 +30,7 @@ Decedent Age is a profile of the [FHIR STU3 Observation](http://www.hl7.org/fhir
 
 ### **Element Table**
 
-{{table:vrdr/vrdrautopsyperformedindicator, expand}}
+{{table:BSeRPatientConsent, expand}}
 
 ---
 
