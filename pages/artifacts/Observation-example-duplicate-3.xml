@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation xmlns="http://hl7.org/fhir">
+<Observation xmlns="http://www.hl7.org/fhir">
     <id value="ArthristisFeedbackObservation Instance Example"/>
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/ArthristisFeedbackObservation"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ArthristisFeedbackObservation"/> 
     </meta>
     <status value="final"/> 
     <category> 
         <coding> 
-            <system value="http://hl7.org/fhir/observation-category"/> 
+            <system value="http://www.hl7.org/fhir/observation-category"/> 
             <code value="therapy"/> 
             <display value="Therapy"/> 
         </coding> 

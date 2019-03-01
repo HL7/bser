@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ValueSet xmlns="http://hl7.org/fhir">
+<ValueSet xmlns="http://www.hl7.org/fhir">
   <id value="substance-code"/>
   <meta>
     <lastUpdated value="2017-04-19T07:44:43.294+10:00"/>
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://www.hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
   <text>
     <status value="generated"/>
@@ -34,16 +34,16 @@
       </ul>
     </div>
   </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
     <valueString value="Informative"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/>
   </extension>
-  <url value="http://hl7.org/fhir/ValueSet/substance-code"/>
+  <url value="http://www.hl7.org/fhir/ValueSet/substance-code"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.3.466"/>
@@ -57,7 +57,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/fhir"/>
     </telecom>
   </contact>
   <description value="This value set contains concept codes for specific substances. It includes codes from [SNOMED](http://snomed.info/sct) where concept is-a 105590001 (Substance (substance)) adn where concept is-a 373873005 (Pharmaceutical / biologic product (product))"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ValueSet xmlns="http://hl7.org/fhir">
+<ValueSet xmlns="http://www.hl7.org/fhir">
   <id value="identifier-type"/>
   <meta>
     <lastUpdated value="2017-04-19T07:44:43.294+10:00"/>
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://www.hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
   <text>
     <status value="generated"/>
@@ -18,7 +18,7 @@
       <ul>
         <li>Include these codes as defined in 
           <a href="v2/0203/index.html">
-            <code>http://hl7.org/fhir/v2/0203</code>
+            <code>http://www.hl7.org/fhir/v2/0203</code>
           </a>
           <table class="none">
             <tr>
@@ -117,25 +117,25 @@
         </li>
         <li>Include all codes defined in 
           <a href="codesystem-identifier-type.html">
-            <code>http://hl7.org/fhir/identifier-type</code>
+            <code>http://www.hl7.org/fhir/identifier-type</code>
           </a>
         </li>
       </ul>
     </div>
   </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/valueset-warning">
     <valueMarkdown value="Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
     <valueString value="Informative"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
-  <url value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+  <url value="http://www.hl7.org/fhir/ValueSet/identifier-type"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.3.44"/>
@@ -149,14 +149,14 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/fhir"/>
     </telecom>
   </contact>
   <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
   <immutable value="true"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/v2/0203"/>
+      <system value="http://www.hl7.org/fhir/v2/0203"/>
       <concept>
         <code value="DL"/>
       </concept>
@@ -195,7 +195,7 @@
       </concept>
     </include>
     <include>
-      <system value="http://hl7.org/fhir/identifier-type"/>
+      <system value="http://www.hl7.org/fhir/identifier-type"/>
     </include>
   </compose>
 </ValueSet>

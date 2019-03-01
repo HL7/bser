@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation xmlns="http://hl7.org/fhir">
+<Observation xmlns="http://www.hl7.org/fhir">
     <id value="BodyMassIndexObservation Instance Example"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation"/>
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation"/>
     </meta>   
     <status value="final"/>
     <category>
         <coding>
-            <system value="http://hl7.org/fhir/observation-category"/>
+            <system value="http://www.hl7.org/fhir/observation-category"/>
             <code value="vital-signs"/>
             <display value="Vital Signs"/>
         </coding>       

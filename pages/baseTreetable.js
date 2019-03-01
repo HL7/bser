@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="generator" content=
-"HTML Tidy for HTML5 for Windows version 5.6.0">
+"HTML Tidy for HTML5 for Windows version 5.6.0" />
 <title></title>
 </head>
 <body>
@@ -62,26 +62,26 @@ identationDictionary[depth - 1] = this.createSpan('base vline'); ;
 } var defaultState = null; var trElement = tdElement.parentElement;
 if (this.hasClass(trElement, 'collapsed')) { defaultState =
 'collapsed'; } while (localDepth - 1 &gt;= 1) { localDepth =
-localDepth - 1; if (localDepth === depth - 1 &amp;& defaultState
-=== 'collapsed' &amp;& hasChildren &amp;& !isLast) {
-tdElement.insertBefore(this.createSpan('base vjoinexpandable'),
-tdElement.childNodes[0]);
+localDepth - 1; if (localDepth === depth - 1 &amp;&amp;
+defaultState === 'collapsed' &amp;&amp; hasChildren &amp;&amp;
+!isLast) { tdElement.insertBefore(this.createSpan('base
+vjoinexpandable'), tdElement.childNodes[0]);
 this.hideUnderlyingElements(trElement.dataset.id); } else if
-(localDepth === depth - 1 &amp;& defaultState === 'collapsed'
-&amp;& hasChildren &amp;& isLast) {
+(localDepth === depth - 1 &amp;&amp; defaultState === 'collapsed'
+&amp;&amp; hasChildren &amp;&amp; isLast) {
 tdElement.insertBefore(this.createSpan('base vjoinendexpandable'),
 tdElement.childNodes[0]);
 this.hideUnderlyingElements(trElement.dataset.id); } else if
-(localDepth === depth - 1 &amp;& hasChildren &amp;& isLast) {
-tdElement.insertBefore(this.createSpan('base vjoinendcollapsible'),
-tdElement.childNodes[0]); } else if (localDepth === depth - 1
-&amp;& hasChildren &amp;& !isLast) {
-tdElement.insertBefore(this.createSpan('base vjoincollapsible'),
-tdElement.childNodes[0]); } else if (localDepth === depth - 1
-&amp;& !hasChildren &amp;& !isLast) {
+(localDepth === depth - 1 &amp;&amp; hasChildren &amp;&amp; isLast)
+{ tdElement.insertBefore(this.createSpan('base
+vjoinendcollapsible'), tdElement.childNodes[0]); } else if
+(localDepth === depth - 1 &amp;&amp; hasChildren &amp;&amp;
+!isLast) { tdElement.insertBefore(this.createSpan('base
+vjoincollapsible'), tdElement.childNodes[0]); } else if (localDepth
+=== depth - 1 &amp;&amp; !hasChildren &amp;&amp; !isLast) {
 tdElement.insertBefore(this.createSpan('base vjoin'),
 tdElement.childNodes[0]); } else if (localDepth === depth - 1
-&amp;& !hasChildren &amp;& isLast) {
+&amp;&amp; !hasChildren &amp;&amp; isLast) {
 tdElement.insertBefore(this.createSpan('base vjoinend'),
 tdElement.childNodes[0]); } else if
 (identationDictionary[localDepth] !== undefined) {
@@ -120,8 +120,8 @@ console.log('vjoinendcollapsible'); var parentId =
 self.getParentElementId(this); self.hideChildren(parentId, this,
 'vjoinendcollapsible', 'vjoinendexpandable'); };
 this.eventHandlerDictionary['pushpinClick'] = function (event) {
-var me = this; var el = this; while ((el = el.parentElement) &amp;&
-!el.classList.contains('popout')) ;
+var me = this; var el = this; while ((el = el.parentElement)
+&amp;&amp; !el.classList.contains('popout')) ;
 el.removeEventListener('mouseout',
 self.eventHandlerDictionary["popOutMouseOut"]); if
 (me.className.indexOf('pinned') &gt; -1) { me.className =

@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="PatientAllergy" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
     <name value="BSeR Patient Allergy" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="AllergyIntolerance" />
     <type value="AllergyIntolerance" />
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance" />
+    <baseDefinition value="http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance" />
     <derivation value="constraint" />
     <differential>
         <element id="AllergyIntolerance">
@@ -46,15 +46,15 @@
         <element id="AllergyIntolerance.meta.profile">
             <path value="AllergyIntolerance.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy&quot; (CONF:4383-820)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy&quot; (CONF:4383-820)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
+            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
         </element>
         <element id="AllergyIntolerance.verificationStatus">
             <path value="AllergyIntolerance.verificationStatus" />
             <short value="verificationStatus" />
-            <definition value="SHALL contain exactly one [1..1] verificationStatus, which SHALL be selected from ValueSet Allergy-verification-status http://hl7.org/fhir/ValueSet/allergy-verification-status DYNAMIC (CONF:4383-294)." />
+            <definition value="SHALL contain exactly one [1..1] verificationStatus, which SHALL be selected from ValueSet Allergy-verification-status http://www.hl7.org/fhir/ValueSet/allergy-verification-status DYNAMIC (CONF:4383-294)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -63,7 +63,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/allergy-verification-status" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/allergy-verification-status" />
                     <display value="Allergy-verification-status" />
                 </valueSetReference>
             </binding>
@@ -71,7 +71,7 @@
         <element id="AllergyIntolerance.type">
             <path value="AllergyIntolerance.type" />
             <short value="type" />
-            <definition value="SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Allergy-intolerance-type http://hl7.org/fhir/ValueSet/allergy-intolerance-type DYNAMIC (CONF:4383-295)." />
+            <definition value="SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Allergy-intolerance-type http://www.hl7.org/fhir/ValueSet/allergy-intolerance-type DYNAMIC (CONF:4383-295)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -80,7 +80,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/allergy-intolerance-type" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/allergy-intolerance-type" />
                     <display value="Allergy-intolerance-type" />
                 </valueSetReference>
             </binding>
@@ -88,7 +88,7 @@
         <element id="AllergyIntolerance.code">
             <path value="AllergyIntolerance.code" />
             <short value="code" />
-            <definition value="SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Allergyintolerance-code http://hl7.org/fhir/ValueSet/allergyintolerance-code DYNAMIC (CONF:4383-296)." />
+            <definition value="SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Allergyintolerance-code http://www.hl7.org/fhir/ValueSet/allergyintolerance-code DYNAMIC (CONF:4383-296)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -97,7 +97,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/allergyintolerance-code" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/allergyintolerance-code" />
                     <display value="Allergyintolerance-code" />
                 </valueSetReference>
             </binding>
@@ -105,12 +105,12 @@
         <element id="AllergyIntolerance.patient">
             <path value="AllergyIntolerance.patient" />
             <short value="patient" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-292)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-292)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
@@ -150,7 +150,7 @@
         <element id="AllergyIntolerance.reaction.substance">
             <path value="AllergyIntolerance.reaction.substance" />
             <short value="substance" />
-            <definition value="Such reactions SHALL contain exactly one [1..1] substance, which SHALL be selected from ValueSet Substance-code http://hl7.org/fhir/ValueSet/substance-code DYNAMIC (CONF:4383-300)." />
+            <definition value="Such reactions SHALL contain exactly one [1..1] substance, which SHALL be selected from ValueSet Substance-code http://www.hl7.org/fhir/ValueSet/substance-code DYNAMIC (CONF:4383-300)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -159,7 +159,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/substance-code" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/substance-code" />
                     <display value="Substance-code" />
                 </valueSetReference>
             </binding>
@@ -167,7 +167,7 @@
         <element id="AllergyIntolerance.reaction.manifestation">
             <path value="AllergyIntolerance.reaction.manifestation" />
             <short value="manifestation" />
-            <definition value="Such reactions SHALL contain at least one [1..*] manifestation, which SHALL be selected from ValueSet Clinical-findings http://hl7.org/fhir/ValueSet/clinical-findings DYNAMIC (CONF:4383-301)." />
+            <definition value="Such reactions SHALL contain at least one [1..*] manifestation, which SHALL be selected from ValueSet Clinical-findings http://www.hl7.org/fhir/ValueSet/clinical-findings DYNAMIC (CONF:4383-301)." />
             <min value="1" />
             <max value="*" />
             <type>
@@ -176,7 +176,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/clinical-findings" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/clinical-findings" />
                     <display value="Clinical-findings" />
                 </valueSetReference>
             </binding>
@@ -184,7 +184,7 @@
         <element id="AllergyIntolerance.reaction.severity">
             <path value="AllergyIntolerance.reaction.severity" />
             <short value="severity" />
-            <definition value="Such reactions SHALL contain exactly one [1..1] severity, which SHALL be selected from ValueSet Reaction-event-severity http://hl7.org/fhir/ValueSet/reaction-event-severity DYNAMIC (CONF:4383-302)." />
+            <definition value="Such reactions SHALL contain exactly one [1..1] severity, which SHALL be selected from ValueSet Reaction-event-severity http://www.hl7.org/fhir/ValueSet/reaction-event-severity DYNAMIC (CONF:4383-302)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -193,7 +193,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/reaction-event-severity" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/reaction-event-severity" />
                     <display value="Reaction-event-severity" />
                 </valueSetReference>
             </binding>

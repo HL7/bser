@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ValueSet xmlns="http://hl7.org/fhir">
+<ValueSet xmlns="http://www.hl7.org/fhir">
   <id value="relatedperson-relationshiptype"/>
   <meta>
     <lastUpdated value="2017-04-19T07:44:43.294+10:00"/>
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://www.hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
   <text>
     <status value="generated"/>
@@ -18,28 +18,28 @@
       <ul>
         <li>Include all codes defined in 
           <a href="v2/0131/index.html">
-            <code>http://hl7.org/fhir/v2/0131</code>
+            <code>http://www.hl7.org/fhir/v2/0131</code>
           </a>
         </li>
         <li>Include codes from 
           <a href="v3/RoleCode/cs.html">
-            <code>http://hl7.org/fhir/v3/RoleCode</code>
+            <code>http://www.hl7.org/fhir/v3/RoleCode</code>
           </a> where concept  is-a  
           <a href="v3/RoleCode/cs.html#v3-RoleCode-_PersonalRelationshipRoleType">_PersonalRelationshipRoleType</a>
         </li>
       </ul>
     </div>
   </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
     <valueString value="Informative"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+  <extension url="http://www.hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/>
   </extension>
-  <url value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"/>
+  <url value="http://www.hl7.org/fhir/ValueSet/relatedperson-relationshiptype"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.3.442"/>
@@ -53,16 +53,16 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/fhir"/>
     </telecom>
   </contact>
   <description value="A set of codes that can be used to indicate the relationship between a Patient and a Related Person."/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/v2/0131"/>
+      <system value="http://www.hl7.org/fhir/v2/0131"/>
     </include>
     <include>
-      <system value="http://hl7.org/fhir/v3/RoleCode"/>
+      <system value="http://www.hl7.org/fhir/v3/RoleCode"/>
       <filter>
         <property value="concept"/>
         <op value="is-a"/>

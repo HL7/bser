@@ -133,7 +133,7 @@
       <definition value="SHALL contain exactly one [1..1] entry (CONF:4383-506) such that it" />
       <min value="1" />
       <max value="1" />
-    </element>
+      </element>
     <element id="Bundle.entry:Diagnosis.resource">
       <path value="Bundle.entry.resource" />
       <label value="Diagnosis" />

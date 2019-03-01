@@ -1,12 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="v2-0066" />
+  <id value="v2-0066"/>
   <meta>
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <text>
-    <status value="additional" />
+    <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       <p>Employment Status</p>
+
       <table class="grid">
         <tr>
           <td>
@@ -30,7 +33,8 @@
         </tr>
         <tr>
           <td>...
-            <a name=".46.46.46"></a></td>
+            <a name=".46.46.46"> </a>
+          </td>
           <td>see chapter 6</td>
           <td></td>
           <td>zie hoofdstuk 6</td>
@@ -39,79 +43,88 @@
         </tr>
         <tr>
           <td>1
-            <a name="1"></a></td>
+            <a name="1"> </a>
+          </td>
           <td>Full time employed</td>
           <td></td>
           <td>Voltijd baan</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>2
-            <a name="2"></a></td>
+            <a name="2"> </a>
+          </td>
           <td>Part time employed</td>
           <td></td>
           <td>Parttime baan</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>3
-            <a name="3"></a></td>
+            <a name="3"> </a>
+          </td>
           <td>Unemployed</td>
           <td></td>
           <td>Werkloos</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>4
-            <a name="4"></a></td>
+            <a name="4"> </a>
+          </td>
           <td>Self-employed,</td>
           <td></td>
           <td>Zelfstandige</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>5
-            <a name="5"></a></td>
+            <a name="5"> </a>
+          </td>
           <td>Retired</td>
           <td></td>
           <td>Gepensioneerd</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>6
-            <a name="6"></a></td>
+            <a name="6"> </a>
+          </td>
           <td>On active military duty</td>
           <td></td>
           <td>In actieve militaire dienst</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>9
-            <a name="9"></a></td>
+            <a name="9"> </a>
+          </td>
           <td>Unknown</td>
           <td>unbekannt</td>
           <td>Onbekend</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>C
-            <a name="C"></a></td>
+            <a name="C"> </a>
+          </td>
           <td>Contract, per diem</td>
           <td></td>
           <td>Contract, per diem</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>D
-            <a name="D"></a></td>
+            <a name="D"> </a>
+          </td>
           <td>Per Diem</td>
           <td></td>
           <td>Per diem</td>
@@ -120,7 +133,8 @@
         </tr>
         <tr>
           <td>F
-            <a name="F"></a></td>
+            <a name="F"> </a>
+          </td>
           <td>Full Time</td>
           <td></td>
           <td>Voltijd</td>
@@ -129,25 +143,28 @@
         </tr>
         <tr>
           <td>L
-            <a name="L"></a></td>
+            <a name="L"> </a>
+          </td>
           <td>Leave of absence (e.g. family leave, sabbatical, etc.)</td>
           <td></td>
           <td>Verlof (bijv. familieomstandigheden, sabbatical, etc.)</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>O
-            <a name="O"></a></td>
+            <a name="O"> </a>
+          </td>
           <td>Other</td>
           <td></td>
           <td>Anders</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
         <tr>
           <td>P
-            <a name="P"></a></td>
+            <a name="P"> </a>
+          </td>
           <td>Part Time</td>
           <td></td>
           <td>Parttime</td>
@@ -156,186 +173,188 @@
         </tr>
         <tr>
           <td>T
-            <a name="T"></a></td>
+            <a name="T"> </a>
+          </td>
           <td>Temporarily unemployed</td>
           <td></td>
           <td>Tijdelijk werkloos</td>
-          <td />
+          <td/>
           <td>added v2.4</td>
         </tr>
       </table>
+
     </div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
-    <valueString value="External" />
+    <valueString value="External"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0" />
+    <valueInteger value="0"/>
   </extension>
-  <url value="http://hl7.org/fhir/v2/0066" />
+  <url value="http://hl7.org/fhir/v2/0066"/>
   <identifier>
-    <system value="urn:ietf:rfc:3986" />
-    <value value="urn:oid:2.16.840.1.113883.18.26" />
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.18.26"/>
   </identifier>
-  <version value="2.8.2" />
-  <name value="v2 Employment Status" />
-  <status value="active" />
-  <experimental value="false" />
-  <publisher value="HL7, Inc" />
+  <version value="2.8.2"/>
+  <name value="v2 Employment Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7, Inc"/>
   <contact>
     <telecom>
-      <system value="url" />
-      <value value="http://hl7.org" />
+      <system value="url"/>
+      <value value="http://hl7.org"/>
     </telecom>
   </contact>
-  <description value="FHIR Value set/code system definition for HL7 v2 table 0066 ( Employment Status)" />
-  <caseSensitive value="false" />
-  <valueSet value="http://hl7.org/fhir/ValueSet/v2-0066" />
-  <content value="complete" />
+  <description value="FHIR Value set/code system definition for HL7 v2 table 0066 ( Employment Status)"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/v2-0066"/>
+  <content value="complete"/>
   <property>
-    <code value="deprecated" />
-    <uri value="http://hl7.org/fhir/concept-properties#deprecated" />
-    <description value="The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged" />
-    <type value="dateTime" />
+    <code value="deprecated"/>
+    <uri value="http://hl7.org/fhir/concept-properties#deprecated"/>
+    <description value="The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged"/>
+    <type value="dateTime"/>
   </property>
   <concept>
-    <code value="..." />
-    <display value="see chapter 6" />
+    <code value="..."/>
+    <display value="see chapter 6"/>
     <designation>
-      <language value="nl" />
-      <value value="zie hoofdstuk 6" />
+      <language value="nl"/>
+      <value value="zie hoofdstuk 6"/>
     </designation>
     <property>
-      <code value="deprecated" />
-      <valueDateTime value="2007-10" />
+      <code value="deprecated"/>
+      <valueDateTime value="2007-10"/>
     </property>
   </concept>
   <concept>
-    <code value="1" />
-    <display value="Full time employed" />
+    <code value="1"/>
+    <display value="Full time employed"/>
     <designation>
-      <language value="nl" />
-      <value value="Voltijd baan" />
+      <language value="nl"/>
+      <value value="Voltijd baan"/>
     </designation>
   </concept>
   <concept>
-    <code value="2" />
-    <display value="Part time employed" />
+    <code value="2"/>
+    <display value="Part time employed"/>
     <designation>
-      <language value="nl" />
-      <value value="Parttime baan" />
+      <language value="nl"/>
+      <value value="Parttime baan"/>
     </designation>
   </concept>
   <concept>
-    <code value="3" />
-    <display value="Unemployed" />
+    <code value="3"/>
+    <display value="Unemployed"/>
     <designation>
-      <language value="nl" />
-      <value value="Werkloos" />
+      <language value="nl"/>
+      <value value="Werkloos"/>
     </designation>
   </concept>
   <concept>
-    <code value="4" />
-    <display value="Self-employed," />
+    <code value="4"/>
+    <display value="Self-employed,"/>
     <designation>
-      <language value="nl" />
-      <value value="Zelfstandige" />
+      <language value="nl"/>
+      <value value="Zelfstandige"/>
     </designation>
   </concept>
   <concept>
-    <code value="5" />
-    <display value="Retired" />
+    <code value="5"/>
+    <display value="Retired"/>
     <designation>
-      <language value="nl" />
-      <value value="Gepensioneerd" />
+      <language value="nl"/>
+      <value value="Gepensioneerd"/>
     </designation>
   </concept>
   <concept>
-    <code value="6" />
-    <display value="On active military duty" />
+    <code value="6"/>
+    <display value="On active military duty"/>
     <designation>
-      <language value="nl" />
-      <value value="In actieve militaire dienst" />
+      <language value="nl"/>
+      <value value="In actieve militaire dienst"/>
     </designation>
   </concept>
   <concept>
-    <code value="9" />
-    <display value="Unknown" />
+    <code value="9"/>
+    <display value="Unknown"/>
     <designation>
-      <language value="de" />
-      <value value="unbekannt" />
+      <language value="de"/>
+      <value value="unbekannt"/>
     </designation>
     <designation>
-      <language value="nl" />
-      <value value="Onbekend" />
-    </designation>
-  </concept>
-  <concept>
-    <code value="C" />
-    <display value="Contract, per diem" />
-    <designation>
-      <language value="nl" />
-      <value value="Contract, per diem" />
+      <language value="nl"/>
+      <value value="Onbekend"/>
     </designation>
   </concept>
   <concept>
-    <code value="D" />
-    <display value="Per Diem" />
+    <code value="C"/>
+    <display value="Contract, per diem"/>
     <designation>
-      <language value="nl" />
-      <value value="Per diem" />
+      <language value="nl"/>
+      <value value="Contract, per diem"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="Per Diem"/>
+    <designation>
+      <language value="nl"/>
+      <value value="Per diem"/>
     </designation>
     <property>
-      <code value="deprecated" />
-      <valueDateTime value="2000-11" />
+      <code value="deprecated"/>
+      <valueDateTime value="2000-11"/>
     </property>
   </concept>
   <concept>
-    <code value="F" />
-    <display value="Full Time" />
+    <code value="F"/>
+    <display value="Full Time"/>
     <designation>
-      <language value="nl" />
-      <value value="Voltijd" />
+      <language value="nl"/>
+      <value value="Voltijd"/>
     </designation>
     <property>
-      <code value="deprecated" />
-      <valueDateTime value="2000-11" />
+      <code value="deprecated"/>
+      <valueDateTime value="2000-11"/>
     </property>
   </concept>
   <concept>
-    <code value="L" />
-    <display value="Leave of absence (e.g. family leave, sabbatical, etc.)" />
+    <code value="L"/>
+    <display value="Leave of absence (e.g. family leave, sabbatical, etc.)"/>
     <designation>
-      <language value="nl" />
-      <value value="Verlof (bijv. familieomstandigheden, sabbatical, etc.)" />
+      <language value="nl"/>
+      <value value="Verlof (bijv. familieomstandigheden, sabbatical, etc.)"/>
     </designation>
   </concept>
   <concept>
-    <code value="O" />
-    <display value="Other" />
+    <code value="O"/>
+    <display value="Other"/>
     <designation>
-      <language value="nl" />
-      <value value="Anders" />
+      <language value="nl"/>
+      <value value="Anders"/>
     </designation>
   </concept>
   <concept>
-    <code value="P" />
-    <display value="Part Time" />
+    <code value="P"/>
+    <display value="Part Time"/>
     <designation>
-      <language value="nl" />
-      <value value="Parttime" />
+      <language value="nl"/>
+      <value value="Parttime"/>
     </designation>
     <property>
-      <code value="deprecated" />
-      <valueDateTime value="2000-11" />
+      <code value="deprecated"/>
+      <valueDateTime value="2000-11"/>
     </property>
   </concept>
   <concept>
-    <code value="T" />
-    <display value="Temporarily unemployed" />
+    <code value="T"/>
+    <display value="Temporarily unemployed"/>
     <designation>
-      <language value="nl" />
-      <value value="Tijdelijk werkloos" />
+      <language value="nl"/>
+      <value value="Tijdelijk werkloos"/>
     </designation>
   </concept>
 </CodeSystem>
