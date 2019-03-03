@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ReferralRequest xmlns="http://www.hl7.org/fhir">
+<ReferralRequest xmlns="http://hl7.org/fhir">
     <id value="ReferralRequestTransaction Instance Example"/>
     <meta>
-        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction"/>
     </meta>
     <identifier> 
         <type value="ACSN"/> 
@@ -17,16 +17,16 @@
         </coding> 
     </serviceRequested> 
     <subject> 
-        <referemce value="http://www.hl7.org/fhir/us/bser/PatientRole/InstanceExample" />
+        <referemce value="http://hl7.org/fhir/us/bser/PatientRole/InstanceExample" />
     </subject> 
     <authoredOn value="2018-09-15"/> 
     <requester> 
         <agent> 
-            <reference value="http://www.hl7.org/fhir/us/bser/ReferralInitiatorProviderRole/InstanceExample"/> 
+            <reference value="http://hl7.org/fhir/us/bser/ReferralInitiatorProviderRole/InstanceExample"/> 
         </agent> 
     </requester> 
     <recipient> 
-        <reference value="http://www.hl7.org/fhir/us/bser/ReferralRecipientProviderRole/InstanceExample"/> 
+        <reference value="http://hl7.org/fhir/us/bser/ReferralRecipientProviderRole/InstanceExample"/> 
     </recipient> 
     <reasonCode> 
         <coding> 
@@ -36,6 +36,6 @@
         </coding>
     </reasonCode> 
     <supportingInfo> 
-        <reference value="http://www.hl7.org/fhir/us/bser/ReferralRequestSupportingBundle/InstanceExample"/> 
+        <reference value="http://hl7.org/fhir/us/bser/ReferralRequestSupportingBundle/InstanceExample"/> 
     </supportingInfo> 
 </ReferralRequest> 

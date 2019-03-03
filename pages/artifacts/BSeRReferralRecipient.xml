@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="BSeR-Referral-Recipient" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient" />
     <name value="BSeR Referral Recipient" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="PractitionerRole" />
     <type value="PractitionerRole" />
-    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/PractitionerRole" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
     <derivation value="constraint" />
     <differential>
         <element id="PractitionerRole">
@@ -46,39 +46,39 @@
         <element id="PractitionerRole.meta.profile">
             <path value="PractitionerRole.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient&quot; (CONF:4383-830)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient&quot; (CONF:4383-830)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient" />
         </element>
         <element id="PractitionerRole.practitioner">
             <path value="PractitionerRole.practitioner" />
             <short value="practitioner" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Practitioner&quot;BSeR Practitioner (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-89)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Practitioner&quot;BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-89)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
             </type>
             <patternString value="BSeR Practitioner" />
         </element>
         <element id="PractitionerRole.organization">
             <path value="PractitionerRole.organization" />
             <short value="organization" />
-            <definition value="SHOULD contain zero or one [0..1] =&quot;BSeR Organization&quot;BSeR Organization (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity) (CONF:4383-90)." />
+            <definition value="SHOULD contain zero or one [0..1] =&quot;BSeR Organization&quot;BSeR Organization (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity) (CONF:4383-90)." />
             <min value="0" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
             </type>
             <patternString value="BSeR Organization" />
         </element>
         <element id="PractitionerRole.code">
             <path value="PractitionerRole.code" />
             <short value="code" />
-            <definition value="SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Practitioner-role http://www.hl7.org/fhir/ValueSet/practitioner-role DYNAMIC (CONF:4383-91)." />
+            <definition value="SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Practitioner-role http://hl7.org/fhir/ValueSet/practitioner-role DYNAMIC (CONF:4383-91)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -87,7 +87,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/practitioner-role" />
+                    <reference value="http://hl7.org/fhir/ValueSet/practitioner-role" />
                     <display value="Practitioner-role" />
                 </valueSetReference>
             </binding>
@@ -95,12 +95,12 @@
         <element id="PractitionerRole.location">
             <path value="PractitionerRole.location" />
             <short value="location" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Service Delivery Location&quot;BSeR Service Delivery Location (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation) (CONF:4383-192)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Service Delivery Location&quot;BSeR Service Delivery Location (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation) (CONF:4383-192)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" />
             </type>
             <patternString value="BSeR Service Delivery Location" />
         </element>

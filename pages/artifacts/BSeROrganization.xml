@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="OrganizationEntity" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
     <name value="BSeR Organization" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Organization" />
     <type value="Organization" />
-    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Organization" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
     <derivation value="constraint" />
     <differential>
         <element id="Organization">
@@ -46,10 +46,10 @@
         <element id="Organization.meta.profile">
             <path value="Organization.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity&quot; (CONF:4383-794)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity&quot; (CONF:4383-794)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
         </element>
         <element id="Organization.identifier">
             <path value="Organization.identifier" />
@@ -82,13 +82,13 @@
         <element id="Organization.telecom.system">
             <path value="Organization.telecom.system" />
             <short value="system" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://www.hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-165)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-165)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-system" />
+                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
                     <display value="Contact-point-system" />
                 </valueSetReference>
             </binding>
@@ -103,13 +103,13 @@
         <element id="Organization.telecom.use">
             <path value="Organization.telecom.use" />
             <short value="use" />
-            <definition value="The telecom, if present, SHOULD contain zero or one [0..1] use, which SHALL be selected from ValueSet Contact-point-use http://www.hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-167)." />
+            <definition value="The telecom, if present, SHOULD contain zero or one [0..1] use, which SHALL be selected from ValueSet Contact-point-use http://hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-167)." />
             <min value="0" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-use" />
+                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-use" />
                     <display value="Contact-point-use" />
                 </valueSetReference>
             </binding>
@@ -124,13 +124,13 @@
         <element id="Organization.address.use">
             <path value="Organization.address.use" />
             <short value="use" />
-            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://www.hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-168)." />
+            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-168)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/address-use" />
+                    <reference value="http://hl7.org/fhir/ValueSet/address-use" />
                     <display value="Address-use" />
                 </valueSetReference>
             </binding>

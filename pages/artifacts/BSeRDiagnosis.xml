@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="Diagnosis" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/Diagnosis" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/Diagnosis" />
     <name value="BSeR Diagnosis" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Condition" />
     <type value="Condition" />
-    <baseDefinition value="http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
     <derivation value="constraint" />
     <differential>
         <element id="Condition">
@@ -46,15 +46,15 @@
         <element id="Condition.meta.profile">
             <path value="Condition.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/Diagnosis&quot; (CONF:4383-849)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/Diagnosis&quot; (CONF:4383-849)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/Diagnosis" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/Diagnosis" />
         </element>
         <element id="Condition.code">
             <path value="Condition.code" />
             <short value="code" />
-            <definition value="SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Condition-code http://www.hl7.org/fhir/ValueSet/Condition-code DYNAMIC (CONF:4383-314)." />
+            <definition value="SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Condition-code http://hl7.org/fhir/ValueSet/Condition-code DYNAMIC (CONF:4383-314)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -63,7 +63,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/Condition-code" />
+                    <reference value="http://hl7.org/fhir/ValueSet/Condition-code" />
                     <display value="Condition-code" />
                 </valueSetReference>
             </binding>
@@ -92,12 +92,12 @@
         <element id="Condition.subject">
             <path value="Condition.subject" />
             <short value="subject" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-316)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-316)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>

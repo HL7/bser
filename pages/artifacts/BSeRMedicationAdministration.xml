@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="bserMedicationAdministration" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" />
     <name value="BSeR Medication Administration" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="MedicationAdministration" />
     <type value="MedicationAdministration" />
-    <baseDefinition value="http://www.hl7.org/fhir/us/StructureDefinition/daf-medicationadministration" />
+    <baseDefinition value="http://hl7.org/fhir/us/StructureDefinition/daf-medicationadministration" />
     <derivation value="constraint" />
     <differential>
         <element id="MedicationAdministration">
@@ -46,15 +46,15 @@
         <element id="MedicationAdministration.meta.profile">
             <path value="MedicationAdministration.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration&quot; (CONF:4383-852)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration&quot; (CONF:4383-852)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" />
         </element>
         <element id="MedicationAdministration.status">
             <path value="MedicationAdministration.status" />
             <short value="status" />
-            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Medication-admin-status http://www.hl7.org/fhir/ValueSet/medication-admin-status (CONF:4383-308)." />
+            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Medication-admin-status http://hl7.org/fhir/ValueSet/medication-admin-status (CONF:4383-308)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -63,7 +63,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/medication-admin-status" />
+                    <reference value="http://hl7.org/fhir/ValueSet/medication-admin-status" />
                     <display value="Medication-admin-status" />
                 </valueSetReference>
             </binding>
@@ -86,11 +86,11 @@
             <path value="MedicationAdministration.medicationCodeableConcept" />
             <sliceName value="medicationCodeableConcept" />
             <short value="medicationCodeableConcept" />
-            <definition value="medicationCodeableConcept, which SHALL be selected from ValueSet medication-codes http://www.hl7.org/fhir/ValueSet/medication-codes DYNAMIC (CONF:4383-304)" />
+            <definition value="medicationCodeableConcept, which SHALL be selected from ValueSet medication-codes http://hl7.org/fhir/ValueSet/medication-codes DYNAMIC (CONF:4383-304)" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/medication-codes" />
+                    <reference value="http://hl7.org/fhir/ValueSet/medication-codes" />
                     <display value="medication-codes" />
                 </valueSetReference>
             </binding>
@@ -114,12 +114,12 @@
         <element id="MedicationAdministration.subject">
             <path value="MedicationAdministration.subject" />
             <short value="subject" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-305)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-305)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>

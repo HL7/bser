@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="PatientConsent" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientConsent" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientConsent" />
     <name value="BSeR Patient Consent" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Consent" />
     <type value="Consent" />
-    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Consent" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
     <derivation value="constraint" />
     <differential>
         <element id="Consent">
@@ -46,15 +46,15 @@
         <element id="Consent.meta.profile">
             <path value="Consent.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientConsent&quot; (CONF:4383-775)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/PatientConsent&quot; (CONF:4383-775)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientConsent" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientConsent" />
         </element>
         <element id="Consent.status">
             <path value="Consent.status" />
             <short value="status" />
-            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Event-status http://www.hl7.org/fhir/ValueSet/event-status DYNAMIC (CONF:4383-119)." />
+            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Event-status http://hl7.org/fhir/ValueSet/event-status DYNAMIC (CONF:4383-119)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -63,7 +63,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/event-status" />
+                    <reference value="http://hl7.org/fhir/ValueSet/event-status" />
                     <display value="Event-status" />
                 </valueSetReference>
             </binding>
@@ -71,7 +71,7 @@
         <element id="Consent.category">
             <path value="Consent.category" />
             <short value="category" />
-            <definition value="SHALL contain exactly one [1..1] category, which SHALL be selected from ValueSet Consent-category http://www.hl7.org/fhir/ValueSet/consent-category DYNAMIC (CONF:4383-124)." />
+            <definition value="SHALL contain exactly one [1..1] category, which SHALL be selected from ValueSet Consent-category http://hl7.org/fhir/ValueSet/consent-category DYNAMIC (CONF:4383-124)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -80,7 +80,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/consent-category" />
+                    <reference value="http://hl7.org/fhir/ValueSet/consent-category" />
                     <display value="Consent-category" />
                 </valueSetReference>
             </binding>
@@ -88,12 +88,12 @@
         <element id="Consent.patient">
             <path value="Consent.patient" />
             <short value="patient" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-120)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-120)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
@@ -107,12 +107,12 @@
         <element id="Consent.consentingParty">
             <path value="Consent.consentingParty" />
             <short value="consentingParty" />
-            <definition value="SHALL contain at least one [1..*] =&quot;BSeR Related Person&quot;BSeR Related Person (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson) (CONF:4383-121)." />
+            <definition value="SHALL contain at least one [1..*] =&quot;BSeR Related Person&quot;BSeR Related Person (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson) (CONF:4383-121)." />
             <min value="1" />
             <max value="*" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
             </type>
             <patternString value="BSeR Related Person" />
         </element>
@@ -126,7 +126,7 @@
         <element id="Consent.actor.role">
             <path value="Consent.actor.role" />
             <short value="role" />
-            <definition value="Such actors SHALL contain exactly one [1..1] role, which SHALL be selected from ValueSet Security-role-type http://www.hl7.org/fhir/ValueSet/security-role-type DYNAMIC (CONF:4383-126)." />
+            <definition value="Such actors SHALL contain exactly one [1..1] role, which SHALL be selected from ValueSet Security-role-type http://hl7.org/fhir/ValueSet/security-role-type DYNAMIC (CONF:4383-126)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -135,7 +135,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/security-role-type" />
+                    <reference value="http://hl7.org/fhir/ValueSet/security-role-type" />
                     <display value="Security-role-type" />
                 </valueSetReference>
             </binding>
@@ -143,12 +143,12 @@
         <element id="Consent.actor.reference">
             <path value="Consent.actor.reference" />
             <short value="reference" />
-            <definition value="Such actors SHALL contain exactly one [1..1] =&quot;BSeR Practitioner&quot;BSeR Practitioner (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-123)." />
+            <definition value="Such actors SHALL contain exactly one [1..1] =&quot;BSeR Practitioner&quot;BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-123)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
             </type>
             <patternString value="BSeR Practitioner" />
         </element>

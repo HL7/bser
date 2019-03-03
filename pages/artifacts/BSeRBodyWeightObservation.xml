@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="BodyWeightObservation" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation" />
     <name value="BSeR Body Weight Observation" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Observation" />
     <type value="Observation" />
-    <baseDefinition value="http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults" />
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults" />
     <derivation value="constraint" />
     <differential>
         <element id="Observation">
@@ -46,10 +46,10 @@
         <element id="Observation.meta.profile">
             <path value="Observation.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation&quot; (CONF:4383-771)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation&quot; (CONF:4383-771)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation" />
         </element>
         <element id="Observation.status">
             <path value="Observation.status" />
@@ -100,19 +100,19 @@
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Patient" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Group" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Device" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Location" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
             </type>
             <patternString value="BSeR Patient" />
         </element>

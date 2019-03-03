@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="BSeR-Referral-Response-Message-Header" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/nullBSeR-Referral-Response-Message-Header" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/nullBSeR-Referral-Response-Message-Header" />
     <name value="BSeR Referral Response Message Header" />
     <status value="draft" />
     <contact>
@@ -22,7 +22,7 @@
     <contextType value="resource" />
     <context value="MessageHeader" />
     <type value="MessageHeader" />
-    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/MessageHeader" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
     <derivation value="constraint" />
     <differential>
         <element id="MessageHeader">
@@ -45,15 +45,15 @@
         <element id="MessageHeader.meta.profile">
             <path value="MessageHeader.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/nullBSeR-Referral-Response-Message-Header&quot; (CONF:4383-702)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/nullBSeR-Referral-Response-Message-Header&quot; (CONF:4383-702)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/nullBSeR-Referral-Response-Message-Header" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/nullBSeR-Referral-Response-Message-Header" />
         </element>
         <element id="MessageHeader.event">
             <path value="MessageHeader.event" />
             <short value="event" />
-            <definition value="SHALL contain exactly one [1..1] event, which SHALL be selected from ValueSet message-events http://www.hl7.org/fhir/ValueSet/message-events DYNAMIC (CONF:4383-707)." />
+            <definition value="SHALL contain exactly one [1..1] event, which SHALL be selected from ValueSet message-events http://hl7.org/fhir/ValueSet/message-events DYNAMIC (CONF:4383-707)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -62,7 +62,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/message-events" />
+                    <reference value="http://hl7.org/fhir/ValueSet/message-events" />
                     <display value="message-events" />
                 </valueSetReference>
             </binding>
@@ -128,7 +128,7 @@
         <element id="MessageHeader.reason">
             <path value="MessageHeader.reason" />
             <short value="reason" />
-            <definition value="SHALL contain exactly one [1..1] reason, which SHALL be selected from ValueSet message-reason-encounter http://www.hl7.org/fhir/ValueSet/message-reason-encounter DYNAMIC (CONF:4383-713)." />
+            <definition value="SHALL contain exactly one [1..1] reason, which SHALL be selected from ValueSet message-reason-encounter http://hl7.org/fhir/ValueSet/message-reason-encounter DYNAMIC (CONF:4383-713)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -137,7 +137,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/message-reason-encounter" />
+                    <reference value="http://hl7.org/fhir/ValueSet/message-reason-encounter" />
                     <display value="message-reason-encounter" />
                 </valueSetReference>
             </binding>
@@ -159,7 +159,7 @@
         <element id="MessageHeader.response.code">
             <path value="MessageHeader.response.code" />
             <short value="code" />
-            <definition value="The response, if present, SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet response-code http://www.hl7.org/fhir/ValueSet/response-code DYNAMIC (CONF:4383-715)." />
+            <definition value="The response, if present, SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet response-code http://hl7.org/fhir/ValueSet/response-code DYNAMIC (CONF:4383-715)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -168,7 +168,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/response-code" />
+                    <reference value="http://hl7.org/fhir/ValueSet/response-code" />
                     <display value="response-code" />
                 </valueSetReference>
             </binding>

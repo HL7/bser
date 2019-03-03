@@ -1,6 +1,6 @@
-<StructureDefinition xmlns="http://www.hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ReferralFeedbackSupportingBundle" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ReferralFeedbackSupportingBundle" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralFeedbackSupportingBundle" />
     <name value="BSeR Referral Feedback Supporting Bundle" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -22,7 +22,7 @@
     <contextType value="resource" />
     <context value="Bundle" />
     <type value="Bundle" />
-    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Bundle" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
     <derivation value="constraint" />
     <differential>
         <element id="Bundle">
@@ -63,7 +63,7 @@
             <max value="1" />
             <type>
                 <code value="Bundle" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ObesityFeedbackSupportBundle" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ObesityFeedbackSupportBundle" />
             </type>
         </element>
         <element id="Bundle.entry:Arthritis">
@@ -83,7 +83,7 @@
             <max value="1" />
             <type>
                 <code value="Bundle" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ArthritisFeedbackSupportBundle" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ArthritisFeedbackSupportBundle" />
             </type>
         </element>
         <element id="Bundle.entry:Hypertension">
@@ -103,7 +103,7 @@
             <max value="1" />
             <type>
                 <code value="Bundle" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/HypertensionFeedbackSupportBundle" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/HypertensionFeedbackSupportBundle" />
             </type>
         </element>
         <element id="Bundle.entry:Nutrition">
@@ -123,7 +123,7 @@
             <max value="1" />
             <type>
                 <code value="Bundle" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/NutritionFeedbackSupportBundle" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/NutritionFeedbackSupportBundle" />
             </type>
         </element>
         <element id="Bundle.entry:Diabetes">
@@ -143,7 +143,7 @@
             <max value="1" />
             <type>
                 <code value="Bundle" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/DiabetesFeedbackSupportBundle" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/DiabetesFeedbackSupportBundle" />
             </type>
         </element>
         <element id="Bundle.entry:Tobacco">
@@ -163,7 +163,7 @@
             <max value="1" />
             <type>
                 <code value="Bundle" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/TobaccoFeedbackSupportBundle" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/TobaccoFeedbackSupportBundle" />
             </type>
         </element>
     </differential>

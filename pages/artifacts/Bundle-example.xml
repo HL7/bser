@@ -1,21 +1,21 @@
-<Bundle xmlns="http://www.hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir">
   <id value="ArthritisFeedbackSupportBundle Instance Example" />
   <meta>
-    <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ArthritisFeedbackSupportBundle" />
+    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/ArthritisFeedbackSupportBundle" />
   </meta>
   <type value="collection" />
   <entry>
     <resource>
       <ArthristisFeedbackObservation>
-        <Observation xmlns="http://www.hl7.org/fhir">
+        <Observation xmlns="http://hl7.org/fhir">
           <id value="ArthristisFeedbackObservation Instance Example" />
           <meta>
-            <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ArthristisFeedbackObservation" />
+            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/ArthristisFeedbackObservation" />
           </meta>
           <status value="final" />
           <category>
             <coding>
-              <system value="http://www.hl7.org/fhir/observation-category" />
+              <system value="http://hl7.org/fhir/observation-category" />
               <code value="social-history" />
               <display value="Social History" />
             </coding>

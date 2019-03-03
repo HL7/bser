@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="InsuranceCoverage" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/InsuranceCoverage" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/InsuranceCoverage" />
     <name value="BSeR Coverage" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Coverage" />
     <type value="Coverage" />
-    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Coverage" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage" />
     <derivation value="constraint" />
     <differential>
         <element id="Coverage">
@@ -46,10 +46,10 @@
         <element id="Coverage.meta.profile">
             <path value="Coverage.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/InsuranceCoverage&quot; (CONF:4383-778)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/InsuranceCoverage&quot; (CONF:4383-778)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/InsuranceCoverage" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/InsuranceCoverage" />
         </element>
         <element id="Coverage.identifier">
             <path value="Coverage.identifier" />
@@ -61,7 +61,7 @@
         <element id="Coverage.status">
             <path value="Coverage.status" />
             <short value="status" />
-            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Fm-status http://www.hl7.org/fhir/ValueSet/fm-status DYNAMIC (CONF:4383-151)." />
+            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Fm-status http://hl7.org/fhir/ValueSet/fm-status DYNAMIC (CONF:4383-151)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -70,7 +70,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/fm-status" />
+                    <reference value="http://hl7.org/fhir/ValueSet/fm-status" />
                     <display value="Fm-status" />
                 </valueSetReference>
             </binding>
@@ -78,7 +78,7 @@
         <element id="Coverage.type">
             <path value="Coverage.type" />
             <short value="type" />
-            <definition value="SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Coverage-type http://www.hl7.org/fhir/ValueSet/coverage-type DYNAMIC (CONF:4383-152)." />
+            <definition value="SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Coverage-type http://hl7.org/fhir/ValueSet/coverage-type DYNAMIC (CONF:4383-152)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -87,7 +87,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/coverage-type" />
+                    <reference value="http://hl7.org/fhir/ValueSet/coverage-type" />
                     <display value="Coverage-type" />
                 </valueSetReference>
             </binding>
@@ -95,24 +95,24 @@
         <element id="Coverage.subscriber">
             <path value="Coverage.subscriber" />
             <short value="subscriber" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Related Person&quot;BSeR Related Person (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson) (CONF:4383-148)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Related Person&quot;BSeR Related Person (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson) (CONF:4383-148)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
             </type>
             <patternString value="BSeR Related Person" />
         </element>
         <element id="Coverage.beneficiary">
             <path value="Coverage.beneficiary" />
             <short value="beneficiary" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-149)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-149)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
@@ -140,12 +140,12 @@
         <element id="Coverage.payor">
             <path value="Coverage.payor" />
             <short value="payor" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Organization&quot;BSeR Organization (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity) (CONF:4383-150)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Organization&quot;BSeR Organization (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity) (CONF:4383-150)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity" />
             </type>
             <patternString value="BSeR Organization" />
         </element>

@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="BSeR-Referral-Request-Task" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task" />
     <name value="BSeR Referral Request Task" />
     <status value="draft" />
     <contact>
@@ -22,7 +22,7 @@
     <contextType value="resource" />
     <context value="Task" />
     <type value="Task" />
-    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Task" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
     <derivation value="constraint" />
     <differential>
         <element id="Task">
@@ -45,10 +45,10 @@
         <element id="Task.meta.profile">
             <path value="Task.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task&quot; (CONF:4383-721)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task&quot; (CONF:4383-721)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task" />
         </element>
         <element id="Task.identifier">
             <path value="Task.identifier" />
@@ -75,7 +75,7 @@
         <element id="Task.status">
             <path value="Task.status" />
             <short value="status" />
-            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet task-status http://www.hl7.org/fhir/ValueSet/task-status (CONF:4383-728)." />
+            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet task-status http://hl7.org/fhir/ValueSet/task-status (CONF:4383-728)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -84,7 +84,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/task-status" />
+                    <reference value="http://hl7.org/fhir/ValueSet/task-status" />
                     <display value="task-status" />
                 </valueSetReference>
             </binding>
@@ -122,7 +122,7 @@
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Resource" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
             </type>
             <patternString value="BSeR Referral Initiator" />
         </element>
@@ -155,23 +155,23 @@
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Device" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Organization" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Patient" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Practitioner" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/RelatedPerson" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
             </type>
             <patternString value="BSeR Referral Initiator" />
         </element>
@@ -183,23 +183,23 @@
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Device" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Organization" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Patient" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Practitioner" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
             </type>
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/RelatedPerson" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
             </type>
             <patternString value="BSeR Referral Initiator" />
         </element>

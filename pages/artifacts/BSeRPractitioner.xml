@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://www.hl7.org/fhir">
+    xmlns="http://hl7.org/fhir">
     <id value="PractitionerPerson" />
-    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
     <name value="BSeR Practitioner" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -24,7 +24,7 @@
     <contextType value="resource" />
     <context value="Practitioner" />
     <type value="Practitioner" />
-    <baseDefinition value="http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
     <derivation value="constraint" />
     <differential>
         <element id="Practitioner">
@@ -47,10 +47,10 @@
         <element id="Practitioner.meta.profile">
             <path value="Practitioner.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson&quot; (CONF:4383-800)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson&quot; (CONF:4383-800)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
         </element>
         <element id="Practitioner.identifier">
             <path value="Practitioner.identifier" />
@@ -111,13 +111,13 @@
         <element id="Practitioner.telecom.system">
             <path value="Practitioner.telecom.system" />
             <short value="system" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://www.hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-159)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-159)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-system" />
+                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
                     <display value="Contact-point-system" />
                 </valueSetReference>
             </binding>
@@ -132,13 +132,13 @@
         <element id="Practitioner.telecom.use">
             <path value="Practitioner.telecom.use" />
             <short value="use" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://www.hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-83)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-83)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-use" />
+                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-use" />
                     <display value="Contact-point-use" />
                 </valueSetReference>
             </binding>
@@ -153,13 +153,13 @@
         <element id="Practitioner.address.use">
             <path value="Practitioner.address.use" />
             <short value="use" />
-            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://www.hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-84)." />
+            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-84)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://www.hl7.org/fhir/ValueSet/address-use" />
+                    <reference value="http://hl7.org/fhir/ValueSet/address-use" />
                     <display value="Address-use" />
                 </valueSetReference>
             </binding>
