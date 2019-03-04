@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://www.hl7.org/fhir">
     <id value="ReferralRequestSupportingBundle Instance Example"/> 
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestSupportingBundle"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestSupportingBundle"/> 
     </meta> 
     <type value="collection"/> 
     <entry> 
-        <Bundle xmlns="http://hl7.org/fhir">
+        <Bundle xmlns="http://www.hl7.org/fhir">
             <id value="ArthritisRequestSupportBundle Instance Example"/> 
             <meta> 
-                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/ArthritisRequestSupportBundle"/> 
+                <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ArthritisRequestSupportBundle"/> 
             </meta> 
             <type value="collection"/> 
             <entry> 
                 <resource> 
-                    <Observation xmlns="http://hl7.org/fhir">
+                    <Observation xmlns="http://www.hl7.org/fhir">
                         <id value="BloodPressureObservation Instance Example"/>
                         <meta>
-                            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation"/>
+                            <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation"/>
                         </meta>
                         <status value="final"/>
                         <category>
                             <coding>
-                                <system value="http://hl7.org/fhir/observation-category"/>
+                                <system value="http://www.hl7.org/fhir/observation-category"/>
                                 <code value="vital-signs"/>
                                 <display value="Vital Signs"/>
                             </coding>
@@ -71,15 +71,15 @@
             </entry>
             <entry> 
                 <resource> 
-                    <Observation xmlns="http://hl7.org/fhir">
+                    <Observation xmlns="http://www.hl7.org/fhir">
                         <id value="BodyHeightObservation Instance Example"/>
                         <meta>
-                            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation"/>
+                            <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation"/>
                         </meta>    
                         <status value="final"/>
                         <category>
                             <coding>
-                                <system value="http://hl7.org/fhir/observation-category"/>
+                                <system value="http://www.hl7.org/fhir/observation-category"/>
                                 <code value="vital-signs"/>
                                 <display value="Vital Signs"/>
                             </coding>       
@@ -103,15 +103,15 @@
             </entry>
             <entry> 
                 <resource> 
-                    <Observation xmlns="http://hl7.org/fhir">
+                    <Observation xmlns="http://www.hl7.org/fhir">
                         <id value="BodyMassIndexObservation Instance Example"/>
                         <meta>
-                            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation"/>
+                            <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation"/>
                         </meta>   
                         <status value="final"/>
                         <category>
                             <coding>
-                                <system value="http://hl7.org/fhir/observation-category"/>
+                                <system value="http://www.hl7.org/fhir/observation-category"/>
                                 <code value="vital-signs"/>
                                 <display value="Vital Signs"/>
                             </coding>       
@@ -135,15 +135,15 @@
             </entry>
             <entry> 
                 <resource> 
-                    <Observation xmlns="http://hl7.org/fhir">
+                    <Observation xmlns="http://www.hl7.org/fhir">
                         <id value="BodyWeightObservation Instance Example"/>
                         <meta>
-                            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation"/>
+                            <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation"/>
                         </meta>    
                         <status value="final"/>
                         <category>
                             <coding>
-                                <system value="http://hl7.org/fhir/observation-category"/>
+                                <system value="http://www.hl7.org/fhir/observation-category"/>
                                 <code value="vital-signs"/>
                                 <display value="Vital Signs"/>
                             </coding>        
@@ -167,10 +167,10 @@
             </entry>
             <entry> 
                 <resource> 
-                    <MedicationAdministration xmlns="http://hl7.org/fhir"> 
+                    <MedicationAdministration xmlns="http://www.hl7.org/fhir"> 
                         <id value="MedicationAdministration Instance Example"/> 
                         <meta>
-                            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/MedicationAdministration"/>
+                            <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/MedicationAdministration"/>
                         </meta> 
                         <status value="completed"/> 
                         <medicationCodeableConcept> 
@@ -185,7 +185,7 @@
                             <dose> 
                                 <value value="2"/> 
                                 <unit value="TAB"/> 
-                                <system value="http://hl7.org/fhir/v3/orderableDrugForm"/> 
+                                <system value="http://www.hl7.org/fhir/v3/orderableDrugForm"/> 
                                 <code value="TAB"/> 
                             </dose> 
                         </dosage> 
@@ -201,11 +201,11 @@
             </entry>
             <entry> 
                 <resource> 
-                    <AllergyIntolerance xmlns="http://hl7.org/fhir">
+                    <AllergyIntolerance xmlns="http://www.hl7.org/fhir">
                         <id value="PatientAllergy Instance Example"/>
                         <meta>
                             <profile
-                                value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy"/>
+                                value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy"/>
                         </meta>    
                         <verificationStatus value="confirmed"/>
                         <type value="allergy"/>    

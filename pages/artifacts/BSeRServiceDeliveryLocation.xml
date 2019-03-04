@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="ServiceDeliveryLocation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" />
     <name value="BSeR Service Delivery Location" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Location" />
     <type value="Location" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
+    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Location" />
     <derivation value="constraint" />
     <differential>
         <element id="Location">
@@ -46,10 +46,10 @@
         <element id="Location.meta.profile">
             <path value="Location.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation&quot; (CONF:4383-809)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation&quot; (CONF:4383-809)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" />
+            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" />
         </element>
         <element id="Location.identifier">
             <path value="Location.identifier" />
@@ -75,7 +75,7 @@
         <element id="Location.type">
             <path value="Location.type" />
             <short value="type" />
-            <definition value="SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet v3-ServiceDeliveryLocationRoleType http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType DYNAMIC (CONF:4383-180)." />
+            <definition value="SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet v3-ServiceDeliveryLocationRoleType http://www.hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType DYNAMIC (CONF:4383-180)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -84,7 +84,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType" />
                     <display value="v3-ServiceDeliveryLocationRoleType" />
                 </valueSetReference>
             </binding>
@@ -99,13 +99,13 @@
         <element id="Location.telecom.system">
             <path value="Location.telecom.system" />
             <short value="system" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-181)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://www.hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-181)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-system" />
                     <display value="Contact-point-system" />
                 </valueSetReference>
             </binding>
@@ -120,13 +120,13 @@
         <element id="Location.telecom.use">
             <path value="Location.telecom.use" />
             <short value="use" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-183)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://www.hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-183)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-use" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-use" />
                     <display value="Contact-point-use" />
                 </valueSetReference>
             </binding>
@@ -141,13 +141,13 @@
         <element id="Location.address.use">
             <path value="Location.address.use" />
             <short value="use" />
-            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-184)." />
+            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://www.hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-184)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/address-use" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/address-use" />
                     <display value="Address-use" />
                 </valueSetReference>
             </binding>

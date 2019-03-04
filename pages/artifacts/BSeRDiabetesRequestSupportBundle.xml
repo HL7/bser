@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="DiabetesRequestSupportBundle" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/DiabetesRequestSupportBundle" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/DiabetesRequestSupportBundle" />
     <name value="BSeR Diabetes Request Support Bundle" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Bundle" />
     <type value="Bundle" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Bundle" />
     <derivation value="constraint" />
     <differential>
         <element id="Bundle">
@@ -64,7 +64,7 @@
             <max value="1" />
             <type>
                 <code value="Observation" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation" />
             </type>
         </element>
         <element id="Bundle.entry:BodyMassIndexObservation">
@@ -84,7 +84,7 @@
             <max value="1" />
             <type>
                 <code value="Observation" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation" />
             </type>
         </element>
         <element id="Bundle.entry:BodyWeightObservation">
@@ -104,7 +104,7 @@
             <max value="1" />
             <type>
                 <code value="Observation" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BodyWeightObservation" />
             </type>
         </element>
         <element id="Bundle.entry:HemoglobinA1cObservation">
@@ -124,7 +124,7 @@
             <max value="1" />
             <type>
                 <code value="Observation" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/HemoglobinA1cObservation" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/HemoglobinA1cObservation" />
             </type>
         </element>
     </differential>

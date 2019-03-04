@@ -1,591 +1,588 @@
-
 <!DOCTYPE html>
-<html>
-
-    <head>
-
-        <meta charset="utf-8" />
-        <title>BSeR FHIR IG</title>
-
-        <link rel="icon" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/favicon.ico" />
-
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/jquery/jquery.min.js"></script>
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.js"></script>
-
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/main.min.css" />
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/rendering.min.css" />
-
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/stu3TreeTable.min.js"></script>
-        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/baseTreetable.min.js"></script>
-
-        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/style.css?v=1d4d1da41f15a00" />
-
-    </head>
-
-    <body>
-
-        <header>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 fhir-logo">
-                        <a href="http://hl7.org/fhir/STU3/">
-                            <img src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/fhir-logo.png?v=1d4d1da41f15a00" alt="logo fhir">
-                        </a>
-                    </div>
-                    <div class="col-md-16 title">
-                        <div>
-                            <a href="/">
-                                BSeR FHIR IG
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 hl7-logo">
-                        <a href="http://www.hl7.org">
-                            <img src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/hl7-logo.png?v=1d4d1da41f15a00" alt="visit the hl7 website" width="42" height="50">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Background and Scope <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="Newitem-duplicate-8.html">
-                                            Background and Scope
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="NoticeToBallotCommenters.html">
-                                             Notice to Ballot Commenters
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="NoticetoImplementers.html">
-                                            Notice to Implementers
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Background.html">
-                                            Background
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Scope.html">
-                                            Scope
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="InformationExchangeTransactions.html">
-                                            Information Exchange Transactions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="MessagingWorkflow.html">
-                                            Messaging Workflow
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                 Resource Profiles <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="ResourceProfile.html">
-                                             Resource Profiles
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="CommonTransactionProfiles.html">
-                                            Common Transaction Profiles
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ReferralRequestTransactionProfiles.html">
-                                            Referral Request Transaction Profiles
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ReferralFeedbackTransactionProfiles.html">
-                                            Referral Feedback Transaction Profiles
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ImplementationProfileBundles.html">
-                                            Implementation Profile Bundles
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Structure Definitions <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="ResourceStructureDefinitions.html">
-                                            Structure Definitions
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="BSeRArthritisFeedbackObservation-duplicate-2.html">
-                                            BSeR Arthritis Feedback Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBloodPressureObservation-duplicate-2.html">
-                                            BSeR Blood Pressure Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBodyHeightObservation-duplicate-2.html">
-                                            BSeR Body Height Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBodyMassIndexObservation-duplicate-2.html">
-                                            BSeR Body Mass Index Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRBodyWeightObservation-duplicate-2.html">
-                                            BSeR Body Weight Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRChildhoodNutritionFeedbackObs-duplicate-2.html">
-                                            BSeR Childhood Nutrition Feedback Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRChildhoodNutritionReferralObs-duplicate-2.html">
-                                            BSeR Childhood Nutrition Referral Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRCoverage-duplicate-2.html">
-                                            BSeR Coverage
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiagnosis-duplicate-2.html">
-                                            BSeR Diagnosis
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeREducationLevel-duplicate-2.html">
-                                            BSeR Education Level
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeREmploymentStatus-duplicate-2.html">
-                                            BSeR Employment Status
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHA1cObservation-duplicate-2.html">
-                                            BSeR Hemoglobin A1c Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRMedicationAdministration-duplicate-2.html">
-                                            BSeR Medication Administration
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeROrganization-duplicate-2.html">
-                                            BSeR Organization
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPatient-duplicate-2.html">
-                                            BSeR Patient
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPatientAllergy-duplicate-2.html">
-                                            BSeR Patient Allergy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPatientConsent-duplicate-2.html">
-                                            BSeR Patient Consent
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRPractitioner-duplicate-2.html">
-                                            BSeR Practitioner
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralInitiator.html">
-                                            BSeR Referral Initiator
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralRecipient.html">
-                                            BSeR Referral Recipient
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-15.html">
-                                            BSeR Related Person
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-16.html">
-                                            BSeR Service Delivery Location
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRSessionsAttendedObservation-duplicate-2.html">
-                                            BSeR Sessions Attended Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRSmokingStatus-duplicate-2.html">
-                                            BSeR Smoking Status
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoCessationFeedbackObs-duplicate-2.html">
-                                            BSeR Tobacco Cessation Feedback Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoCessationReferralObs-duplicate-2.html">
-                                            BSeR Tobacco Cessation Referral Obs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralStatusObservation.html">
-                                            BSeR Referral Status Observation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralRequest.html">
-                                            BSeR Referral Request
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRReferralFeedback.html">
-                                            BSeR Referral Feedback
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Implementation Bundles <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="ImplementationBundles.html">
-                                            Implementation Bundles
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="BSeRObesityRequestSupportBundle-duplicate-2.html">
-                                            BSeR Obesity Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRObesityFeedbackSupportBundle.html">
-                                            BSeR Obesity Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRArthritisRequestSupportBundle-duplicate-2.html">
-                                            BSeR Arthritis Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRArthritisFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Arthritis Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHypertensionRequestSupportBundle-duplicate-2.html">
-                                            BSeR Hypertension Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHypertensionFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Hypertension Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-2.html">
-                                            BSeR Nutrition Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-3.html">
-                                            BSeR Nutrition Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiabetesRequestSupportBundle-duplicate-2.html">
-                                            BSeR Diabetes Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiabetesFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Diabetes Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoRequestSupportBundle-duplicate-2.html">
-                                            BSeR Tobacco Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoFeedbackSupportBundle.html">
-                                            BSeR Tobacco Feedback Support Bundle
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Value Sets <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="Terminologies.html">
-                                            Value Sets
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="PracticeCodes.html">
-                                            Practice Codes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-19.html">
-                                            Request Status
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="Newitem-duplicate-18.html">
-                                            Practitioner Role
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Downloads and History <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="Downloads-duplicate-2.html">
-                                            Downloads and History
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-
-                                    <li>
-                                        <a href="BSeRFHIRIGIndex.html">
-                                            BSeR FHIR IG Index
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="history.html">
-                                            history
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-
-            </ul>
-        </div>
-    </div>
-</nav>
-
-        </header>
-
-        <div class="content container">
-            
-
-    <div class="row">
-
-
-        <div class="col-md-24">
-
-            <div id="preview-content">
+<html xmlns="http://www.w3.org/1999/xhtml">&#13;
+&#13;
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />&#13;
+&#13;
+        <meta charset="utf-8" />&#13;
+        <title>BSeR FHIR IG</title>&#13;
+&#13;
+        <link rel="icon" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/favicon.ico" />&#13;
+&#13;
+        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/jquery/jquery.min.js"></script>&#13;
+        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.js"></script>&#13;
+&#13;
+        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/main.min.css" />&#13;
+        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/bootstrap/bootstrap.min.css" />&#13;
+        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/rendering.min.css" />&#13;
+&#13;
+        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/stu3TreeTable.min.js"></script>&#13;
+        <script src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/common/rendering/baseTreetable.min.js"></script>&#13;
+&#13;
+        <link rel="stylesheet" href="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/style.css" />&#13;
+&#13;
+    </head>&#13;
+&#13;
+    <body>&#13;
+&#13;
+        <header>&#13;
+&#13;
+            <div class="container">&#13;
+                <div class="row">&#13;
+                    <div class="col-md-4 fhir-logo">&#13;
+                        <a href="http://www.hl7.org/fhir/stu3/">&#13;
+                            <img src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/fhir-logo.png" alt="logo fhir" />&#13;
+                        </a>&#13;
+                    </div>&#13;
+                    <div class="col-md-16 title">&#13;
+                        <div>&#13;
+                            <a >&#13;
+                                BSeR FHIR IG&#13;
+                            </a>&#13;
+                        </div>&#13;
+                    </div>&#13;
+                    <div class="col-md-4 hl7-logo">&#13;
+                        <a href="http://www.www.hl7.org">&#13;
+                            <img src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/hl7-logo.png" alt="visit the hl7 website" width="42" height="50" />&#13;
+                        </a>&#13;
+                    </div>&#13;
+                </div>&#13;
+            </div>&#13;
+            &#13;
+&#13;
+<!--status-bar--><nav class="navbar navbar-default" role="navigation">&#13;
+    <div class="container">&#13;
+        <div class="navbar-header">&#13;
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">&#13;
+                <span class="sr-only">Toggle navigation</span>&#13;
+                <span class="icon-bar"></span>&#13;
+                <span class="icon-bar"></span>&#13;
+                <span class="icon-bar"></span>&#13;
+            </button>&#13;
+        </div>&#13;
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">&#13;
+            <ul class="nav navbar-nav">&#13;
+&#13;
+                        <li class="dropdown">&#13;
+&#13;
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">&#13;
+                                Background and Scope <span class="caret"></span>&#13;
+                            </a>&#13;
+&#13;
+                            <ul class="dropdown-menu">&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="Newitem-duplicate-8.html">&#13;
+                                            Background and Scope&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li role="separator" class="divider"></li>&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="NoticeToBallotCommenters.html">&#13;
+                                             Notice to Ballot Commenters&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="NoticetoImplementers.html">&#13;
+                                            Notice to Implementers&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="Background.html">&#13;
+                                            Background&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="Scope.html">&#13;
+                                            Scope&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="InformationExchangeTransactions.html">&#13;
+                                            Information Exchange Transactions&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRFHIRIGIndex.html">&#13;
+                                            BSeR FHIR IG Index&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+&#13;
+                            </ul>&#13;
+                        </li>&#13;
+                        <li class="dropdown">&#13;
+&#13;
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">&#13;
+                                 Resource Profiles <span class="caret"></span>&#13;
+                            </a>&#13;
+&#13;
+                            <ul class="dropdown-menu">&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="ResourceProfile.html">&#13;
+                                             Resource Profiles&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li role="separator" class="divider"></li>&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="CommonTransactionProfiles.html">&#13;
+                                            Common Transaction Profiles&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="ReferralRequestTransactionProfiles.html">&#13;
+                                            Referral Request Transaction Profiles&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="ReferralFeedbackTransactionProfiles.html">&#13;
+                                            Referral Feedback Transaction Profiles&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="ImplementationProfileBundles.html">&#13;
+                                            Implementation Profile Bundles&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+&#13;
+                            </ul>&#13;
+                        </li>&#13;
+                        <li class="dropdown">&#13;
+&#13;
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">&#13;
+                                Structure Definitions <span class="caret"></span>&#13;
+                            </a>&#13;
+&#13;
+                            <ul class="dropdown-menu">&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="ResourceStructureDefinitions.html">&#13;
+                                            Structure Definitions&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li role="separator" class="divider"></li>&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="BSeRArthritisFeedbackObservation-duplicate-2.html">&#13;
+                                            BSeR Arthritis Feedback Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRBloodPressureObservation-duplicate-2.html">&#13;
+                                            BSeR Blood Pressure Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRBodyHeightObservation-duplicate-2.html">&#13;
+                                            BSeR Body Height Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRBodyMassIndexObservation-duplicate-2.html">&#13;
+                                            BSeR Body Mass Index Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRBodyWeightObservation-duplicate-2.html">&#13;
+                                            BSeR Body Weight Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRChildhoodNutritionFeedbackObs-duplicate-2.html">&#13;
+                                            BSeR Childhood Nutrition Feedback Obs&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRChildhoodNutritionReferralObs-duplicate-2.html">&#13;
+                                            BSeR Childhood Nutrition Referral Obs&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRCoverage-duplicate-2.html">&#13;
+                                            BSeR Coverage&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRDiagnosis-duplicate-2.html">&#13;
+                                            BSeR Diagnosis&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeREducationLevel-duplicate-2.html">&#13;
+                                            BSeR Education Level&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeREmploymentStatus-duplicate-2.html">&#13;
+                                            BSeR Employment Status&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRHA1cObservation-duplicate-2.html">&#13;
+                                            BSeR Hemoglobin A1c Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRMedicationAdministration-duplicate-2.html">&#13;
+                                            BSeR Medication Administration&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeROrganization-duplicate-2.html">&#13;
+                                            BSeR Organization&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRPatient-duplicate-2.html">&#13;
+                                            BSeR Patient&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRPatientAllergy-duplicate-2.html">&#13;
+                                            BSeR Patient Allergy&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRPatientConsent-duplicate-2.html">&#13;
+                                            BSeR Patient Consent&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRPractitioner-duplicate-2.html">&#13;
+                                            BSeR Practitioner&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRReferralInitiator.html">&#13;
+                                            BSeR Referral Initiator&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRReferralRecipient.html">&#13;
+                                            BSeR Referral Recipient&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="Newitem-duplicate-15.html">&#13;
+                                            BSeR Related Person&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="Newitem-duplicate-16.html">&#13;
+                                            BSeR Service Delivery Location&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRSessionsAttendedObservation-duplicate-2.html">&#13;
+                                            BSeR Sessions Attended Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRSmokingStatus-duplicate-2.html">&#13;
+                                            BSeR Smoking Status&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRTobaccoCessationFeedbackObs-duplicate-2.html">&#13;
+                                            BSeR Tobacco Cessation Feedback Obs&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRTobaccoCessationReferralObs-duplicate-2.html">&#13;
+                                            BSeR Tobacco Cessation Referral Obs&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRReferralStatusObservation.html">&#13;
+                                            BSeR Referral Status Observation&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRReferralRequest.html">&#13;
+                                            BSeR Referral Request&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRReferralFeedback.html">&#13;
+                                            BSeR Referral Feedback&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+&#13;
+                            </ul>&#13;
+                        </li>&#13;
+                        <li class="dropdown">&#13;
+&#13;
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">&#13;
+                                Implementation Bundles <span class="caret"></span>&#13;
+                            </a>&#13;
+&#13;
+                            <ul class="dropdown-menu">&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="ImplementationBundles.html">&#13;
+                                            Implementation Bundles&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li role="separator" class="divider"></li>&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="BSeRObesityRequestSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Obesity Request Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRObesityFeedbackSupportBundle.html">&#13;
+                                            BSeR Obesity Feedback Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRArthritisRequestSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Arthritis Request Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRArthritisFeedbackSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Arthritis Feedback Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRHypertensionRequestSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Hypertension Request Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRHypertensionFeedbackSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Hypertension Feedback Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Nutrition Request Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-3.html">&#13;
+                                            BSeR Nutrition Feedback Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRDiabetesRequestSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Diabetes Request Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRDiabetesFeedbackSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Diabetes Feedback Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRTobaccoRequestSupportBundle-duplicate-2.html">&#13;
+                                            BSeR Tobacco Request Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="BSeRTobaccoFeedbackSupportBundle.html">&#13;
+                                            BSeR Tobacco Feedback Support Bundle&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+&#13;
+                            </ul>&#13;
+                        </li>&#13;
+                        <li class="dropdown">&#13;
+&#13;
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">&#13;
+                                Value Sets <span class="caret"></span>&#13;
+                            </a>&#13;
+&#13;
+                            <ul class="dropdown-menu">&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="Terminologies.html">&#13;
+                                            Value Sets&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li role="separator" class="divider"></li>&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="PracticeCodes.html">&#13;
+                                            Practice Codes&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="Newitem-duplicate-19.html">&#13;
+                                            Request Status&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li>&#13;
+                                        <a href="Newitem-duplicate-18.html">&#13;
+                                            Practitioner Role&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+&#13;
+                            </ul>&#13;
+                        </li>&#13;
+                        <li class="dropdown">&#13;
+&#13;
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">&#13;
+                                Downloads and History <span class="caret"></span>&#13;
+                            </a>&#13;
+&#13;
+                            <ul class="dropdown-menu">&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="Downloads-duplicate-2.html">&#13;
+                                            Downloads and History&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+                                    <li role="separator" class="divider"></li>&#13;
+&#13;
+                                    <li>&#13;
+                                        <a href="history.html">&#13;
+                                            history&#13;
+                                        </a>&#13;
+                                    </li>&#13;
+&#13;
+                            </ul>&#13;
+                        </li>&#13;
+&#13;
+            </ul>&#13;
+        </div>&#13;
+    </div>&#13;
+</nav>&#13;
+&#13;
+        </header>&#13;
+&#13;
+        <div class="content container">&#13;
+            &#13;
+&#13;
+    <div class="row">&#13;
+&#13;
+&#13;
+        <div class="col-md-24">&#13;
+&#13;
+            <div id="preview-content">&#13;
                 <h3 id="bser-patient-allergy"><strong>BSeR Patient Allergy</strong></h3>
-<p>Decedent Age is a profile of the <a href="http://www.hl7.org/fhir/observation.html">FHIR STU3 Observation</a> resource. It is used to communicate the decedent's chronological age at the time of death. When present, the effective date of this observation shall be equal to the decedent's date of death. Age (Observation.valueQuantity.value) is derived as the difference in time between the decedent's death date and birth date. When age is less than or equal to one day then unit shall be <em>&quot;minutes&quot;</em>, when age is less than or equal to one year then unit shall be <em>&quot;days&quot;</em>, otherwise unit shall be <em>&quot;years&quot;</em>.</p>
+<p>Decedent Age is a profile of the <a href="http://www.www.hl7.org/fhir/observation.html">FHIR stu3 Observation</a> resource. It is used to communicate the decedent's chronological age at the time of death. When present, the effective date of this observation shall be equal to the decedent's date of death. Age (Observation.valueQuantity.value) is derived as the difference in time between the decedent's death date and birth date. When age is less than or equal to one day then unit shall be <em>"minutes"</em>, when age is less than or equal to one year then unit shall be <em>"days"</em>, otherwise unit shall be <em>"years"</em>.</p>
 <hr />
 <h3 id="uml-expression"><strong>UML Expression</strong></h3>
 <center>
-<p><div class='error'>Command 'render' could not render: File was not found for BSeRPatientAllergyUML</div></center></p>
+<p></p><div class="error">Command 'render' could not render: File was not found for BSeRPatientAllergyUML</div></center>
 <hr />
 <h3 id="structure-definition"><strong>Structure Definition</strong></h3>
-<p><div id="ff65f18ff0b14e7abb330a55e2e7ff45" data-level="10" class="stu3-treetable"><div class="treetable-wrapper snapshot"><div class="treetable-left-panel"><table class="treetable"><tr data-id="466723b1-9de1-4582-a734-8cc027482179" class="collapsed"><td><span class="baseIcon resource"></span><span>AllergyIntolerance</span></td><td></td><td></td><td><a title="Type AllergyIntolerance from core specification" href="http://hl7.org/fhir/STU3/allergyintolerance.html" target="_blank">AllergyIntolerance</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Data Type </b></span><p><a title="Type AllergyIntolerance from core specification" href="http://hl7.org/fhir/STU3/allergyintolerance.html" target="_blank">AllergyIntolerance</a></p></td></tr><tr id="AllergyIntolerance.id" data-id="0339fd94-ae09-4134-8bf3-14a282bd9925" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class=""><td><span class="baseIcon primitive"></span><span>id</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>id</span></p><span><b>Definition </b></span><div class="markdown"><p>MAY contain zero or one [0..1] id (CONF:4383-819).</p>
-</div></td></tr><tr id="AllergyIntolerance.meta" data-id="3032723d-8e5c-4ab1-a1f4-2c5f44fa317c" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class="collapsed"><td><span class="baseIcon primitive"></span><span>meta</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>meta</span></p><span><b>Definition </b></span><div class="markdown"><p>MAY contain zero or one [0..1] meta (CONF:4383-818).</p>
-</div></td></tr><tr id="AllergyIntolerance.meta.profile" data-id="fa636ac1-268e-4656-9636-ead0ad14c1da" data-parentId="3032723d-8e5c-4ab1-a1f4-2c5f44fa317c" class=""><td><span class="baseIcon primitive"></span><span>profile</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>profile</span></p><span><b>Definition </b></span><div class="markdown"><p>The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy&quot; (CONF:4383-820).</p>
+<p></p><div id="c4009af2545a45039f6bd621bb1a55ab" data-level="10" class="stu3-treetable"><div class="treetable-wrapper snapshot"><div class="treetable-left-panel"><table class="treetable"><tr data-id="11f16f08-4f15-4244-9ede-acfa4004bd1e" class="collapsed"><td><span class="baseIcon resource"></span><span>AllergyIntolerance</span></td><td></td><td></td><td><a title="Type AllergyIntolerance from core specification" href="http://www.hl7.org/fhir/stu3/allergyintolerance.html" target="_blank">AllergyIntolerance</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Data Type </b></span><p><a title="Type AllergyIntolerance from core specification" href="http://www.hl7.org/fhir/stu3/allergyintolerance.html" target="_blank">AllergyIntolerance</a></p></td></tr><tr id="AllergyIntolerance.id" data-id="d655a2f1-14ca-40da-b8e3-fa32a8e9bd3a" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class=""><td><span class="baseIcon primitive"></span><span>id</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>id</span></p><span><b>Definition </b></span><div class="markdown"><p>MAY contain zero or one [0..1] id (CONF:4383-819).</p>
+</div></td></tr><tr id="AllergyIntolerance.meta" data-id="bf3e2ec6-d6d8-461e-ab91-c2a5d4695c99" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class="collapsed"><td><span class="baseIcon primitive"></span><span>meta</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>meta</span></p><span><b>Definition </b></span><div class="markdown"><p>MAY contain zero or one [0..1] meta (CONF:4383-818).</p>
+</div></td></tr><tr id="AllergyIntolerance.meta.profile" data-id="5893bd60-efaa-4fc8-b74c-deedeb0045db" data-parentid="bf3e2ec6-d6d8-461e-ab91-c2a5d4695c99" class=""><td><span class="baseIcon primitive"></span><span>profile</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>profile</span></p><span><b>Definition </b></span><div class="markdown"><p>The meta, if present, SHALL contain exactly one [1..1] profile="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" (CONF:4383-820).</p>
 </div><span><b>Pattern </b></span><div>
-<pre class="">http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy</pre></div></td></tr><tr id="AllergyIntolerance.verificationStatus" data-id="29da23df-e374-47e5-8d2a-8e3debf27e70" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class=""><td><span class="baseIcon primitive"></span><span>verificationStatus</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>verificationStatus</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] verificationStatus, which SHALL be selected from ValueSet Allergy-verification-status http://hl7.org/fhir/ValueSet/allergy-verification-status DYNAMIC (CONF:4383-294).</p>
-</div><span><b>Data Type </b></span><p><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a></p><span><b>Binding </b></span><p><a title="allergy-verification-status" href="http://hl7.org/fhir/STU3/valueset-allergy-verification-status.html" target="_blank">Allergy-verification-status</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/STU3/terminologies.html#required" >required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.type" data-id="1c9d7f96-962b-4b37-beb6-183bb531c4d4" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class=""><td><span class="baseIcon primitive"></span><span>type</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>type</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Allergy-intolerance-type http://hl7.org/fhir/ValueSet/allergy-intolerance-type DYNAMIC (CONF:4383-295).</p>
-</div><span><b>Data Type </b></span><p><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a></p><span><b>Binding </b></span><p><a title="allergy-intolerance-type" href="http://hl7.org/fhir/STU3/valueset-allergy-intolerance-type.html" target="_blank">Allergy-intolerance-type</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/STU3/terminologies.html#required" >required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.code" data-id="79f9ff81-4329-4d19-9170-5a49d45a7c74" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class=""><td><span class="baseIcon datatype"></span><span>code</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>code</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Allergyintolerance-code http://hl7.org/fhir/ValueSet/allergyintolerance-code DYNAMIC (CONF:4383-296).</p>
-</div><span><b>Data Type </b></span><p><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></p><span><b>Binding </b></span><p><a title="allergyintolerance-code" href="http://hl7.org/fhir/STU3/valueset-allergyintolerance-code.html" target="_blank">Allergyintolerance-code</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/STU3/terminologies.html#required" >required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.patient" data-id="40042f6b-7c94-479a-afdd-0fcd1ff0c6da" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class=""><td><span class="baseIcon reference"></span><span>patient</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>patient</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-292).</p>
-</div><span><b>Data Type </b></span><p><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></p><span><b>Pattern </b></span><div>
-<pre class="">BSeR Patient</pre></div></td></tr><tr id="AllergyIntolerance.onset[x]" data-id="9cd74056-c2f4-45d1-8aa6-9278b9e06eb9" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class="sliced"><td><span class="baseIcon slice"></span><span>onset[x]</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>onset[x]</span></p><span><b>Definition </b></span><div class="markdown"><p>MAY contain zero or one [0..1] onset[x], where onset[x] is one of (CONF:4383-293)</p>
-</div><span><b>Sliced: </b></span><p><span>Unordered, Open, by $this(Type)</span></p></td></tr><tr id="AllergyIntolerance.onset[x]:onsetDateTime" data-id="39715fad-bc87-4064-94a5-42c6f09887d3" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class=""><td><span class="baseIcon primitive"></span><span>onsetDateTime</span></td><td></td><td></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>onsetDateTime</span></p><span><b>Definition </b></span><div class="markdown"><p>onsetDateTime (CONF:4383-297)</p>
-</div></td></tr><tr id="AllergyIntolerance.onset[x]:onsetAge" data-id="96eb0326-0ad1-4a79-bcea-06a594ef9136" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class=""><td><span class="baseIcon primitive"></span><span>onsetAge</span></td><td></td><td></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>onsetAge</span></p><span><b>Definition </b></span><div class="markdown"><p>or onsetAge (CONF:4383-298)</p>
-</div></td></tr><tr id="AllergyIntolerance.reaction" data-id="bf91e553-88df-4ac7-be29-991bf2f40264" data-parentId="466723b1-9de1-4582-a734-8cc027482179" class="collapsed"><td><span class="baseIcon primitive"></span><span>reaction</span></td><td></td><td><span>1</span><span>..</span><span>*</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>reaction</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain at least one [1..*] reaction (CONF:4383-299).</p>
-</div></td></tr><tr id="AllergyIntolerance.reaction.substance" data-id="c61fec29-4625-4caa-917f-09d27d86d064" data-parentId="bf91e553-88df-4ac7-be29-991bf2f40264" class=""><td><span class="baseIcon datatype"></span><span>substance</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>substance</span></p><span><b>Definition </b></span><div class="markdown"><p>Such reactions SHALL contain exactly one [1..1] substance, which SHALL be selected from ValueSet Substance-code http://hl7.org/fhir/ValueSet/substance-code DYNAMIC (CONF:4383-300).</p>
-</div><span><b>Data Type </b></span><p><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></p><span><b>Binding </b></span><p><a title="substance-code" href="http://hl7.org/fhir/STU3/valueset-substance-code.html" target="_blank">Substance-code</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/STU3/terminologies.html#required" >required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.reaction.manifestation" data-id="597b06fa-8519-42f8-a370-e3861de6a7af" data-parentId="bf91e553-88df-4ac7-be29-991bf2f40264" class=""><td><span class="baseIcon datatype"></span><span>manifestation</span></td><td></td><td><span>1</span><span>..</span><span>*</span></td><td><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>manifestation</span></p><span><b>Definition </b></span><div class="markdown"><p>Such reactions SHALL contain at least one [1..*] manifestation, which SHALL be selected from ValueSet Clinical-findings http://hl7.org/fhir/ValueSet/clinical-findings DYNAMIC (CONF:4383-301).</p>
-</div><span><b>Data Type </b></span><p><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></p><span><b>Binding </b></span><p><a title="clinical-findings" href="http://hl7.org/fhir/STU3/valueset-clinical-findings.html" target="_blank">Clinical-findings</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/STU3/terminologies.html#required" >required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.reaction.severity" data-id="1ea449c7-8e10-4e77-a14c-2451b75d0390" data-parentId="bf91e553-88df-4ac7-be29-991bf2f40264" class=""><td><span class="baseIcon primitive"></span><span>severity</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>severity</span></p><span><b>Definition </b></span><div class="markdown"><p>Such reactions SHALL contain exactly one [1..1] severity, which SHALL be selected from ValueSet Reaction-event-severity http://hl7.org/fhir/ValueSet/reaction-event-severity DYNAMIC (CONF:4383-302).</p>
-</div><span><b>Data Type </b></span><p><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a></p><span><b>Binding </b></span><p><a title="reaction-event-severity" href="http://hl7.org/fhir/STU3/valueset-reaction-event-severity.html" target="_blank">Reaction-event-severity</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/STU3/terminologies.html#required" >required</a><span>)</span></p></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript">
+<pre class="">http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy</pre></div></td></tr><tr id="AllergyIntolerance.verificationStatus" data-id="bb218939-4258-44f7-94a0-9f7a7af02b6d" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class=""><td><span class="baseIcon primitive"></span><span>verificationStatus</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>verificationStatus</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] verificationStatus, which SHALL be selected from ValueSet Allergy-verification-status http://www.hl7.org/fhir/ValueSet/allergy-verification-status DYNAMIC (CONF:4383-294).</p>
+</div><span><b>Data Type </b></span><p><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a></p><span><b>Binding </b></span><p><a title="allergy-verification-status" href="http://www.hl7.org/fhir/stu3/valueset-allergy-verification-status.html" target="_blank">Allergy-verification-status</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://www.hl7.org/fhir/stu3/terminologies.html#required">required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.type" data-id="f92955a4-da2e-4144-baff-843366166510" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class=""><td><span class="baseIcon primitive"></span><span>type</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>type</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Allergy-intolerance-type http://www.hl7.org/fhir/ValueSet/allergy-intolerance-type DYNAMIC (CONF:4383-295).</p>
+</div><span><b>Data Type </b></span><p><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a></p><span><b>Binding </b></span><p><a title="allergy-intolerance-type" href="http://www.hl7.org/fhir/stu3/valueset-allergy-intolerance-type.html" target="_blank">Allergy-intolerance-type</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://www.hl7.org/fhir/stu3/terminologies.html#required">required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.code" data-id="d29717b3-d3fd-4523-97f2-eca162456326" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class=""><td><span class="baseIcon datatype"></span><span>code</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>code</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Allergyintolerance-code http://www.hl7.org/fhir/ValueSet/allergyintolerance-code DYNAMIC (CONF:4383-296).</p>
+</div><span><b>Data Type </b></span><p><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></p><span><b>Binding </b></span><p><a title="allergyintolerance-code" href="http://www.hl7.org/fhir/stu3/valueset-allergyintolerance-code.html" target="_blank">Allergyintolerance-code</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://www.hl7.org/fhir/stu3/terminologies.html#required">required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.patient" data-id="78a9e048-d087-4e62-bb06-a53184031c65" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class=""><td><span class="baseIcon reference"></span><span>patient</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type Reference from core specification" href="http://www.hl7.org/fhir/stu3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>patient</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain exactly one [1..1] ="BSeR Patient"BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-292).</p>
+</div><span><b>Data Type </b></span><p><a title="Type Reference from core specification" href="http://www.hl7.org/fhir/stu3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></p><span><b>Pattern </b></span><div>
+<pre class="">BSeR Patient</pre></div></td></tr><tr id="AllergyIntolerance.onset[x]" data-id="186377e1-8156-470a-9212-ee8624483194" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class="sliced"><td><span class="baseIcon slice"></span><span>onset[x]</span></td><td></td><td><span>0</span><span>..</span><span>1</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>onset[x]</span></p><span><b>Definition </b></span><div class="markdown"><p>MAY contain zero or one [0..1] onset[x], where onset[x] is one of (CONF:4383-293)</p>
+</div><span><b>Sliced: </b></span><p><span>Unordered, Open, by $this(Type)</span></p></td></tr><tr id="AllergyIntolerance.onset[x]:onsetDateTime" data-id="aa1a60bb-7ae4-47c9-85bc-030e86984ece" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class=""><td><span class="baseIcon primitive"></span><span>onsetDateTime</span></td><td></td><td></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>onsetDateTime</span></p><span><b>Definition </b></span><div class="markdown"><p>onsetDateTime (CONF:4383-297)</p>
+</div></td></tr><tr id="AllergyIntolerance.onset[x]:onsetAge" data-id="99b89409-ebb2-4a10-8fc8-1ecd73a2c25f" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class=""><td><span class="baseIcon primitive"></span><span>onsetAge</span></td><td></td><td></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>onsetAge</span></p><span><b>Definition </b></span><div class="markdown"><p>or onsetAge (CONF:4383-298)</p>
+</div></td></tr><tr id="AllergyIntolerance.reaction" data-id="340507f5-80e6-429c-84d2-a8262b547209" data-parentid="11f16f08-4f15-4244-9ede-acfa4004bd1e" class="collapsed"><td><span class="baseIcon primitive"></span><span>reaction</span></td><td></td><td><span>1</span><span>..</span><span>*</span></td><td></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>reaction</span></p><span><b>Definition </b></span><div class="markdown"><p>SHALL contain at least one [1..*] reaction (CONF:4383-299).</p>
+</div></td></tr><tr id="AllergyIntolerance.reaction.substance" data-id="8c4b4cea-72ad-4f4e-9178-0022112e4fdc" data-parentid="340507f5-80e6-429c-84d2-a8262b547209" class=""><td><span class="baseIcon datatype"></span><span>substance</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>substance</span></p><span><b>Definition </b></span><div class="markdown"><p>Such reactions SHALL contain exactly one [1..1] substance, which SHALL be selected from ValueSet Substance-code http://www.hl7.org/fhir/ValueSet/substance-code DYNAMIC (CONF:4383-300).</p>
+</div><span><b>Data Type </b></span><p><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></p><span><b>Binding </b></span><p><a title="substance-code" href="http://www.hl7.org/fhir/stu3/valueset-substance-code.html" target="_blank">Substance-code</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://www.hl7.org/fhir/stu3/terminologies.html#required">required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.reaction.manifestation" data-id="19fd9912-48e2-4c54-a195-8227ff2cdc7c" data-parentid="340507f5-80e6-429c-84d2-a8262b547209" class=""><td><span class="baseIcon datatype"></span><span>manifestation</span></td><td></td><td><span>1</span><span>..</span><span>*</span></td><td><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>manifestation</span></p><span><b>Definition </b></span><div class="markdown"><p>Such reactions SHALL contain at least one [1..*] manifestation, which SHALL be selected from ValueSet Clinical-findings http://www.hl7.org/fhir/ValueSet/clinical-findings DYNAMIC (CONF:4383-301).</p>
+</div><span><b>Data Type </b></span><p><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></p><span><b>Binding </b></span><p><a title="clinical-findings" href="http://www.hl7.org/fhir/stu3/valueset-clinical-findings.html" target="_blank">Clinical-findings</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://www.hl7.org/fhir/stu3/terminologies.html#required">required</a><span>)</span></p></td></tr><tr id="AllergyIntolerance.reaction.severity" data-id="92616d8e-623c-4079-b010-bc8de6e25811" data-parentid="340507f5-80e6-429c-84d2-a8262b547209" class=""><td><span class="baseIcon primitive"></span><span>severity</span></td><td></td><td><span>1</span><span>..</span><span>1</span></td><td><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Short description </b></span><p><span>severity</span></p><span><b>Definition </b></span><div class="markdown"><p>Such reactions SHALL contain exactly one [1..1] severity, which SHALL be selected from ValueSet Reaction-event-severity http://www.hl7.org/fhir/ValueSet/reaction-event-severity DYNAMIC (CONF:4383-302).</p>
+</div><span><b>Data Type </b></span><p><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a></p><span><b>Binding </b></span><p><a title="reaction-event-severity" href="http://www.hl7.org/fhir/stu3/valueset-reaction-event-severity.html" target="_blank">Reaction-event-severity</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://www.hl7.org/fhir/stu3/terminologies.html#required">required</a><span>)</span></p></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript"><![CDATA[
 (function() {
 var isTreetableVisible = document.querySelector(".treetable") != null;
 if (isTreetableVisible) {
-var resourceTreeTableff65f18ff0b14e7abb330a55e2e7ff45 = new Stu3TreeTable(false);
-resourceTreeTableff65f18ff0b14e7abb330a55e2e7ff45.init("ff65f18ff0b14e7abb330a55e2e7ff45");
+var resourceTreeTablec4009af2545a45039f6bd621bb1a55ab = new Stu3TreeTable(false);
+resourceTreeTablec4009af2545a45039f6bd621bb1a55ab.init("c4009af2545a45039f6bd621bb1a55ab");
 }
 })();
-</script></p>
+]]></script>
 <hr />
-<h3 id="element-bindings"><strong>Element Bindings</strong></h3>
+<h3 id="terminolgy-bindings"><strong>Terminolgy Bindings</strong></h3>
 <table class="regular">
 <thead>
 <tr>
-<th>Element Name</th>
-<th>Binding Type</th>
-<th>Binding Value</th>
-<th>Fixed Value Code System</th>
+<th>Element Path</th>
+<th>Fixed Value/Value Set</th>
+<th>Code System</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>code</td>
-<td>Value Set</td>
-<td>allergyintolerance-code</td>
-<td></td>
+<td>Observation.status</td>
+<td>"final" - Final</td>
+<td>observation-status</td>
 </tr>
 <tr>
-<td>patient</td>
-<td>Reference</td>
-<td>BSeR Patient</td>
-<td></td>
+<td>Observation.code</td>
+<td>"30525-0" - Age</td>
+<td>LOINC</td>
 </tr>
 <tr>
-<td>reaction.manifestation</td>
-<td>Value Set</td>
-<td>clinical-findings</td>
-<td></td>
-</tr>
-<tr>
-<td>reaction.severity</td>
-<td>Value Set</td>
-<td>reaction-event-severity</td>
-<td></td>
-</tr>
-<tr>
-<td>reaction.substance</td>
-<td>Value Set</td>
-<td>substance-code</td>
-<td></td>
-</tr>
-<tr>
-<td>type</td>
-<td>Value Set</td>
-<td>allergy-intolerance-type</td>
-<td></td>
-</tr>
-<tr>
-<td>verificationStatus</td>
-<td>Value Set</td>
-<td>allergy-verification-status</td>
+<td>Observation.valueQuantity.unit</td>
+<td>AgeUnitOfMeasure</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h3 id="element-table"><strong>Element Table</strong></h3>
-<p><div class="path"><table><tr><td><span class="field">AllergyIntolerance</span></td><td></td><td>.. </td></tr><tr><td>AllergyIntolerance.<span class="field">id</span></td><td></td><td>0..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">meta</span></td><td></td><td>0..1 </td></tr><tr><td>AllergyIntolerance.meta.<span class="field">profile</span></td><td></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">verificationStatus</span></td><td><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">type</span></td><td><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">code</span></td><td><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">patient</span></td><td><a title="Type Reference from core specification" href="http://hl7.org/fhir/STU3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt" >BSeR Patient</a><span>)</span></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">onset[x]</span></td><td></td><td>0..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">onsetDateTime:onsetDateTime</span></td><td></td><td>.. </td></tr><tr><td>AllergyIntolerance.<span class="field">onsetAge:onsetAge</span></td><td></td><td>.. </td></tr><tr><td>AllergyIntolerance.<span class="field">reaction</span></td><td></td><td>1..* </td></tr><tr><td>AllergyIntolerance.reaction.<span class="field">substance</span></td><td><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.reaction.<span class="field">manifestation</span></td><td><a title="Type CodeableConcept from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></td><td>1..* </td></tr><tr><td>AllergyIntolerance.reaction.<span class="field">severity</span></td><td><a title="Type code from core specification" href="http://hl7.org/fhir/STU3/datatypes.html#code" target="_blank">code</a></td><td>1..1 </td></tr></table></div><br></br></p>
+<p></p><div class="path"><table><tr><td><span class="field">AllergyIntolerance</span></td><td></td><td>.. </td></tr><tr><td>AllergyIntolerance.<span class="field">id</span></td><td></td><td>0..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">meta</span></td><td></td><td>0..1 </td></tr><tr><td>AllergyIntolerance.meta.<span class="field">profile</span></td><td></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">verificationStatus</span></td><td><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">type</span></td><td><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">code</span></td><td><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">patient</span></td><td><a title="Type Reference from core specification" href="http://www.hl7.org/fhir/stu3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="artifacts/BSeRPatient.txt">BSeR Patient</a><span>)</span></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">onset[x]</span></td><td></td><td>0..1 </td></tr><tr><td>AllergyIntolerance.<span class="field">onsetDateTime:onsetDateTime</span></td><td></td><td>.. </td></tr><tr><td>AllergyIntolerance.<span class="field">onsetAge:onsetAge</span></td><td></td><td>.. </td></tr><tr><td>AllergyIntolerance.<span class="field">reaction</span></td><td></td><td>1..* </td></tr><tr><td>AllergyIntolerance.reaction.<span class="field">substance</span></td><td><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></td><td>1..1 </td></tr><tr><td>AllergyIntolerance.reaction.<span class="field">manifestation</span></td><td><a title="Type CodeableConcept from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#codeableconcept" target="_blank">CodeableConcept</a></td><td>1..* </td></tr><tr><td>AllergyIntolerance.reaction.<span class="field">severity</span></td><td><a title="Type code from core specification" href="http://www.hl7.org/fhir/stu3/datatypes.html#code" target="_blank">code</a></td><td>1..1 </td></tr></table></div><br />
 <hr />
-
-            </div>
-
-
-        </div>
-    </div>
-
-        </div>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <span>Version: 0.1</span>
-                        <span>FHIR Version: STU3</span>
-                    </div>
-                    <br />
-                    <p>Powered by <b>SIMPLIFIER.NET</b></p>
-                    <div>
-                        HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-    </body>
-
+<h3 id="requirements-traceability-mappings"><strong>Requirements Traceability Mappings</strong></h3>
+<table class="regular">
+<thead>
+<tr>
+<th>Element Path</th>
+<th>Reference</th>
+<th>Location</th>
+<th>Data Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observation.valueQuantity:valueQuantity.value</td>
+<td>Death Certificate</td>
+<td>Item 4</td>
+<td>Age [years, days, or minutes]</td>
+</tr>
+<tr>
+<td>Observation.valueQuantity:valueQuantity.value</td>
+<td>Vital Records DAM</td>
+<td>3.02 Decedent</td>
+<td>deathAge</td>
+</tr>
+<tr>
+<td>Observation.valueQuantity:valueQuantity.value</td>
+<td>Standard Death Record IG</td>
+<td>SDR Decedent Profile</td>
+<td>Patient.extension:age</td>
+</tr>
+</tbody>
+</table>
+&#13;
+            </div>&#13;
+&#13;
+&#13;
+        </div>&#13;
+    </div>&#13;
+&#13;
+        </div>&#13;
+&#13;
+        <footer igtool="footer">&#13;
+            <div class="container">&#13;
+                <div class="row">&#13;
+                    <div>&#13;
+                        <span>Version: 0.1</span>&#13;
+                        <span>FHIR Version: stu3</span>&#13;
+                    </div>&#13;
+                    <br />&#13;
+                    <p>Powered by <b>SIMPLIFIER.NET</b></p>&#13;
+                    <div>&#13;
+                        HL7<sup>®</sup> and FHIR<sup>®</sup> are the registered trademarks of Health Level Seven International&#13;
+                    </div>&#13;
+                </div>&#13;
+            </div>&#13;
+        </footer>&#13;
+&#13;
+    </body>&#13;
+&#13;
 </html>

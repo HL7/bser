@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="PatientRelatedPerson" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
     <name value="BSeR Related Person" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="RelatedPerson" />
     <type value="RelatedPerson" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/RelatedPerson" />
     <derivation value="constraint" />
     <differential>
         <element id="RelatedPerson">
@@ -46,27 +46,27 @@
         <element id="RelatedPerson.meta.profile">
             <path value="RelatedPerson.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson&quot; (CONF:4383-806)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson&quot; (CONF:4383-806)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
+            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRelatedPerson" />
         </element>
         <element id="RelatedPerson.patient">
             <path value="RelatedPerson.patient" />
             <short value="patient" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-129)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-129)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship" />
             <short value="relationship" />
-            <definition value="SHALL contain exactly one [1..1] relationship, which SHALL be selected from ValueSet Relatedperson-relationshiptype http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype DYNAMIC (CONF:4383-133)." />
+            <definition value="SHALL contain exactly one [1..1] relationship, which SHALL be selected from ValueSet Relatedperson-relationshiptype http://www.hl7.org/fhir/ValueSet/relatedperson-relationshiptype DYNAMIC (CONF:4383-133)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -75,7 +75,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/relatedperson-relationshiptype" />
                     <display value="Relatedperson-relationshiptype" />
                 </valueSetReference>
             </binding>
@@ -90,13 +90,13 @@
         <element id="RelatedPerson.name.use">
             <path value="RelatedPerson.name.use" />
             <short value="use" />
-            <definition value="Such names SHOULD contain exactly one [1..1] use, which SHALL be selected from ValueSet Name-use http://hl7.org/fhir/ValueSet/name-use DYNAMIC (CONF:4383-134)." />
+            <definition value="Such names SHOULD contain exactly one [1..1] use, which SHALL be selected from ValueSet Name-use http://www.hl7.org/fhir/ValueSet/name-use DYNAMIC (CONF:4383-134)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/name-use" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/name-use" />
                     <display value="Name-use" />
                 </valueSetReference>
             </binding>
@@ -132,13 +132,13 @@
         <element id="RelatedPerson.telecom.system">
             <path value="RelatedPerson.telecom.system" />
             <short value="system" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-138)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://www.hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-138)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-system" />
                     <display value="Contact-point-system" />
                 </valueSetReference>
             </binding>
@@ -153,13 +153,13 @@
         <element id="RelatedPerson.telecom.use">
             <path value="RelatedPerson.telecom.use" />
             <short value="use" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-140)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://www.hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-140)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-use" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-use" />
                     <display value="Contact-point-use" />
                 </valueSetReference>
             </binding>
@@ -167,7 +167,7 @@
         <element id="RelatedPerson.gender">
             <path value="RelatedPerson.gender" />
             <short value="gender" />
-            <definition value="SHALL contain exactly one [1..1] gender, which SHALL be selected from ValueSet Administrative-gender http://hl7.org/fhir/ValueSet/administrative-gender DYNAMIC (CONF:4383-323)." />
+            <definition value="SHALL contain exactly one [1..1] gender, which SHALL be selected from ValueSet Administrative-gender http://www.hl7.org/fhir/ValueSet/administrative-gender DYNAMIC (CONF:4383-323)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -176,7 +176,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/administrative-gender" />
                     <display value="Administrative-gender" />
                 </valueSetReference>
             </binding>
@@ -198,13 +198,13 @@
         <element id="RelatedPerson.address.use">
             <path value="RelatedPerson.address.use" />
             <short value="use" />
-            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-141)." />
+            <definition value="The address, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Address-use http://www.hl7.org/fhir/ValueSet/address-use DYNAMIC (CONF:4383-141)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/address-use" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/address-use" />
                     <display value="Address-use" />
                 </valueSetReference>
             </binding>

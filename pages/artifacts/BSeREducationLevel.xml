@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="EducationLevel" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/EducationLevel" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/EducationLevel" />
     <name value="BSeR Education Level" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Observation" />
     <type value="Observation" />
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults" />
+    <baseDefinition value="http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults" />
     <derivation value="constraint" />
     <differential>
         <element id="Observation">
@@ -46,10 +46,10 @@
         <element id="Observation.meta.profile">
             <path value="Observation.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/EducationLevel&quot; (CONF:4383-781)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/EducationLevel&quot; (CONF:4383-781)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/EducationLevel" />
+            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/EducationLevel" />
         </element>
         <element id="Observation.status">
             <path value="Observation.status" />
@@ -80,12 +80,12 @@
         <element id="Observation.subject">
             <path value="Observation.subject" />
             <short value="subject" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-95)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-95)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
@@ -107,11 +107,11 @@
             <path value="Observation.valueCodeableConcept" />
             <sliceName value="valueCodeableConcept" />
             <short value="valueCodeableConcept" />
-            <definition value="valueCodeableConcept, which SHALL be selected from ValueSet V2-0066 http://hl7.org/fhir/ValueSet/v2-0066 DYNAMIC (CONF:4383-98)" />
+            <definition value="valueCodeableConcept, which SHALL be selected from ValueSet V2-0066 http://www.hl7.org/fhir/ValueSet/v2-0066 DYNAMIC (CONF:4383-98)" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/v2-0066" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/v2-0066" />
                     <display value="V2-0066" />
                 </valueSetReference>
             </binding>
@@ -119,7 +119,7 @@
         <element id="Observation.dataAbsentReason">
             <path value="Observation.dataAbsentReason" />
             <short value="dataAbsentReason" />
-            <definition value="SHALL contain exactly one [1..1] dataAbsentReason, which SHALL be selected from ValueSet Observation-valueabsentreason http://hl7.org/fhir/ValueSet/observation-valueabsentreason DYNAMIC (CONF:4383-106)." />
+            <definition value="SHALL contain exactly one [1..1] dataAbsentReason, which SHALL be selected from ValueSet Observation-valueabsentreason http://www.hl7.org/fhir/ValueSet/observation-valueabsentreason DYNAMIC (CONF:4383-106)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -128,7 +128,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/observation-valueabsentreason" />
                     <display value="Observation-valueabsentreason" />
                 </valueSetReference>
             </binding>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Composition xmlns="http://hl7.org/fhir">
+<Composition xmlns="http://www.hl7.org/fhir">
     <id value="ReferralFeedback Instance Example"/> 
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole"/> 
     </meta>
     <identifier> 
         <system value="urn:oid:1.3.6.1.4.1.26580.190.12457709"/> 
@@ -11,7 +11,7 @@
     <status value="final"/> 
     <type> 
         <coding> 
-            <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+            <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
             <code value="UNC"/> 
             <display value="Referral Feedback"/> 
         </coding> 
@@ -28,7 +28,7 @@
         <title value="Common Feedback Supporting Information"/> 
         <code> 
             <coding> 
-                <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                 <code value="UNC"/>  
                 <display value="CommonFeedbackSupportingInformation"/> 
             </coding> 
@@ -41,7 +41,7 @@
         <title value="Referral Feedback Supporting Bundle"/> 
         <code> 
             <coding> 
-                <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                 <code value="UNC"/>
                 <display value="ReferralFeedbackSupportingBundle"/> 
             </coding> 

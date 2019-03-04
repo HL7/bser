@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MedicationAdministration xmlns="http://hl7.org/fhir"> 
+<MedicationAdministration xmlns="http://www.hl7.org/fhir"> 
     <id value="MedicationAdministration Instance Example"/> 
     <meta>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/MedicationAdministration"/>
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/MedicationAdministration"/>
     </meta> 
     <status value="completed"/> 
     <medicationCodeableConcept> 
@@ -17,7 +17,7 @@
         <dose> 
             <value value="2"/> 
             <unit value="TAB"/> 
-            <system value="http://hl7.org/fhir/v3/orderableDrugForm"/> 
+            <system value="http://www.hl7.org/fhir/v3/orderableDrugForm"/> 
             <code value="TAB"/> 
         </dose> 
     </dosage> 
