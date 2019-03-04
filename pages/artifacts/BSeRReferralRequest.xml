@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="ReferralRequestTransaction" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction" />
     <name value="BSeR Referral Request" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="ReferralRequest" />
     <type value="ReferralRequest" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/ReferralRequest" />
     <derivation value="constraint" />
     <differential>
         <element id="ReferralRequest">
@@ -46,10 +46,10 @@
         <element id="ReferralRequest.meta.profile">
             <path value="ReferralRequest.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction&quot; (CONF:4383-803)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction&quot; (CONF:4383-803)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction" />
+            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction" />
         </element>
         <element id="ReferralRequest.identifier">
             <path value="ReferralRequest.identifier" />
@@ -61,13 +61,13 @@
         <element id="ReferralRequest.identifier.type">
             <path value="ReferralRequest.identifier.type" />
             <short value="type" />
-            <definition value="This identifier SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Identifier-type http://hl7.org/fhir/ValueSet/identifier-type DYNAMIC (CONF:4383-218)." />
+            <definition value="This identifier SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Identifier-type http://www.hl7.org/fhir/ValueSet/identifier-type DYNAMIC (CONF:4383-218)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/identifier-type" />
                     <display value="Identifier-type" />
                 </valueSetReference>
             </binding>
@@ -82,7 +82,7 @@
         <element id="ReferralRequest.status">
             <path value="ReferralRequest.status" />
             <short value="status" />
-            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Request-status http://hl7.org/fhir/ValueSet/request-status DYNAMIC (CONF:4383-198)." />
+            <definition value="SHALL contain exactly one [1..1] status, which SHALL be selected from ValueSet Request-status http://www.hl7.org/fhir/ValueSet/request-status DYNAMIC (CONF:4383-198)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -91,7 +91,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/request-status" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/request-status" />
                     <display value="Request-status" />
                 </valueSetReference>
             </binding>
@@ -106,7 +106,7 @@
         <element id="ReferralRequest.serviceRequested">
             <path value="ReferralRequest.serviceRequested" />
             <short value="serviceRequested" />
-            <definition value="SHALL contain exactly one [1..1] serviceRequested, which SHALL be selected from ValueSet FHIR c80-practice-codes http://hl7.org/fhir/ValueSet/c80-practice-codes DYNAMIC (CONF:4383-200)." />
+            <definition value="SHALL contain exactly one [1..1] serviceRequested, which SHALL be selected from ValueSet FHIR c80-practice-codes http://www.hl7.org/fhir/ValueSet/c80-practice-codes DYNAMIC (CONF:4383-200)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -115,7 +115,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/c80-practice-codes" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/c80-practice-codes" />
                     <display value="FHIR c80-practice-codes" />
                 </valueSetReference>
             </binding>
@@ -151,12 +151,12 @@
         <element id="ReferralRequest.subject">
             <path value="ReferralRequest.subject" />
             <short value="subject" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-193)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-193)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
@@ -184,31 +184,31 @@
         <element id="ReferralRequest.requester.agent">
             <path value="ReferralRequest.requester.agent" />
             <short value="agent" />
-            <definition value="This requester SHALL contain exactly one [1..1] =&quot;BSeR Referral Initiator&quot;BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-195)." />
+            <definition value="This requester SHALL contain exactly one [1..1] =&quot;BSeR Referral Initiator&quot;BSeR Practitioner (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-195)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
             </type>
             <patternString value="BSeR Referral Initiator" />
         </element>
         <element id="ReferralRequest.recipient">
             <path value="ReferralRequest.recipient" />
             <short value="recipient" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Referral Recipient&quot;BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-196)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Referral Recipient&quot;BSeR Practitioner (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson) (CONF:4383-196)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
             </type>
             <patternString value="BSeR Referral Recipient" />
         </element>
         <element id="ReferralRequest.reasonCode">
             <path value="ReferralRequest.reasonCode" />
             <short value="reasonCode" />
-            <definition value="SHALL contain exactly one [1..1] reasonCode, which SHALL be selected from ValueSet Clinical-findings http://hl7.org/fhir/ValueSet/clinical-findings DYNAMIC (CONF:4383-202)." />
+            <definition value="SHALL contain exactly one [1..1] reasonCode, which SHALL be selected from ValueSet Clinical-findings http://www.hl7.org/fhir/ValueSet/clinical-findings DYNAMIC (CONF:4383-202)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -217,7 +217,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/clinical-findings" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/clinical-findings" />
                     <display value="Clinical-findings" />
                 </valueSetReference>
             </binding>
@@ -272,7 +272,7 @@
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+                <targetProfile value="http://www.hl7.org/fhir/StructureDefinition/Resource" />
             </type>
             <patternString value="BSeR Referral Request Supporting Bundle" />
         </element>

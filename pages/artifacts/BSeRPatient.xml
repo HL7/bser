@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="PatientRole" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
     <name value="BSeR Patient" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -24,7 +24,7 @@
     <contextType value="resource" />
     <context value="Patient" />
     <type value="Patient" />
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+    <baseDefinition value="http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
     <derivation value="constraint" />
     <differential>
         <element id="Patient">
@@ -47,10 +47,10 @@
         <element id="Patient.meta.profile">
             <path value="Patient.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole&quot; (CONF:4383-797)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole&quot; (CONF:4383-797)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
         </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier" />
@@ -62,13 +62,13 @@
         <element id="Patient.identifier.type">
             <path value="Patient.identifier.type" />
             <short value="type" />
-            <definition value="Such identifiers SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Identifier-type http://hl7.org/fhir/ValueSet/identifier-type DYNAMIC (CONF:4383-39)." />
+            <definition value="Such identifiers SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet Identifier-type http://www.hl7.org/fhir/ValueSet/identifier-type DYNAMIC (CONF:4383-39)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/identifier-type" />
                     <display value="Identifier-type" />
                 </valueSetReference>
             </binding>
@@ -97,13 +97,13 @@
         <element id="Patient.name.use">
             <path value="Patient.name.use" />
             <short value="use" />
-            <definition value="Such names SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Name-use http://hl7.org/fhir/ValueSet/name-use DYNAMIC (CONF:4383-110)." />
+            <definition value="Such names SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Name-use http://www.hl7.org/fhir/ValueSet/name-use DYNAMIC (CONF:4383-110)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/name-use" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/name-use" />
                     <display value="Name-use" />
                 </valueSetReference>
             </binding>
@@ -132,13 +132,13 @@
         <element id="Patient.telecom.system">
             <path value="Patient.telecom.system" />
             <short value="system" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-42)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system, which SHALL be selected from ValueSet Contact-point-system http://www.hl7.org/fhir/ValueSet/contact-point-system DYNAMIC (CONF:4383-42)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-system" />
                     <display value="Contact-point-system" />
                 </valueSetReference>
             </binding>
@@ -153,13 +153,13 @@
         <element id="Patient.telecom.use">
             <path value="Patient.telecom.use" />
             <short value="use" />
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-44)." />
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] use, which SHALL be selected from ValueSet Contact-point-use http://www.hl7.org/fhir/ValueSet/contact-point-use DYNAMIC (CONF:4383-44)." />
             <min value="1" />
             <max value="1" />
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/contact-point-use" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/contact-point-use" />
                     <display value="Contact-point-use" />
                 </valueSetReference>
             </binding>
@@ -167,7 +167,7 @@
         <element id="Patient.gender">
             <path value="Patient.gender" />
             <short value="gender" />
-            <definition value="SHALL contain exactly one [1..1] gender, which SHALL be selected from ValueSet Administrative-gender http://hl7.org/fhir/ValueSet/administrative-gender DYNAMIC (CONF:4383-55)." />
+            <definition value="SHALL contain exactly one [1..1] gender, which SHALL be selected from ValueSet Administrative-gender http://www.hl7.org/fhir/ValueSet/administrative-gender DYNAMIC (CONF:4383-55)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -176,7 +176,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/administrative-gender" />
                     <display value="Administrative-gender" />
                 </valueSetReference>
             </binding>
@@ -247,7 +247,7 @@
         <element id="Patient.communication.language">
             <path value="Patient.communication.language" />
             <short value="language" />
-            <definition value="The communication, if present, SHALL contain exactly one [1..1] language, which SHALL be selected from ValueSet Languages http://hl7.org/fhir/ValueSet/languages DYNAMIC (CONF:4383-108)." />
+            <definition value="The communication, if present, SHALL contain exactly one [1..1] language, which SHALL be selected from ValueSet Languages http://www.hl7.org/fhir/ValueSet/languages DYNAMIC (CONF:4383-108)." />
             <min value="1" />
             <max value="1" />
             <type>
@@ -256,7 +256,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/languages" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/languages" />
                     <display value="Languages" />
                 </valueSetReference>
             </binding>

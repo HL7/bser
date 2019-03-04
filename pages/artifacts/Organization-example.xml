@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Organization xmlns="http://hl7.org/fhir">
+<Organization xmlns="http://www.hl7.org/fhir">
     <id value="OrganizationEntity Instance Example"/> 
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/OrganizationEntity"/> 
     </meta> 
     <identifier>
         <system value="urn:oid:2.16.840.1.113883.4.6" />
@@ -11,7 +11,7 @@
     <type>
         <concept>
             <coding>
-                <system value="http://hl7.org/fhir/ValueSet/organization-type" />
+                <system value="http://www.hl7.org/fhir/ValueSet/organization-type" />
                 <code value="prov" />
                 <display value="Healthcare Provider"/> 
             </coding>

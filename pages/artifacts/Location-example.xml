@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Location xmlns="http://hl7.org/fhir">
+<Location xmlns="http://www.hl7.org/fhir">
     <id value="ServiceDeliveryLocation Instance Example"/> 
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation"/> 
     </meta> 
     <identifier>
         <system value="urn:oid:2.16.840.1.113883.4.6" />

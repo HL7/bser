@@ -1,3 +1,0 @@
-## Code Systems
-
-{{index:current}}
