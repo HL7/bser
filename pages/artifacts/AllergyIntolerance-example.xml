@@ -1,7 +1,7 @@
-<AllergyIntolerance xmlns="http://hl7.org/fhir">
+<AllergyIntolerance xmlns="http://www.hl7.org/fhir">
   <id value="PatientAllergy Instance Example" />
   <meta>
-    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
+    <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
   </meta>
   <verificationStatus value="confirmed" />
   <type value="allergy" />

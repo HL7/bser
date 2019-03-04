@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Patient xmlns="http://hl7.org/fhir">
+<Patient xmlns="http://www.hl7.org/fhir">
     <id value="PatientRole Instance Example"/> 
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole"/> 
     </meta>
     <identifier> 
         <type> 
             <coding> 
-                <system value="http://hl7.org/fhir/v2/0203"/> 
+                <system value="http://www.hl7.org/fhir/v2/0203"/> 
                 <code value="MR"/> 
             </coding> 
         </type> 

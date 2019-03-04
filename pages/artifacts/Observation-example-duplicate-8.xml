@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation xmlns="http://hl7.org/fhir">
+<Observation xmlns="http://www.hl7.org/fhir">
     <id value="FeedbackReferralStatusObservation Intance Example"/> 
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/FeedbackReferralStatusObservation"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/FeedbackReferralStatusObservation"/> 
     </meta> 
     <status value="final"/> 
     <code> 
         <coding> 
-            <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+            <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
             <code value="UNC"/> 
             <display value="Feedback Referral Status Observation"/> 
         </coding> 
@@ -16,14 +16,14 @@
          <ReferralActivityStatus>
             <code> 
                 <coding> 
-                    <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                    <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                      <code value="UNC"/> 
                     <display value="Referral Activity Status"/> 
                 </coding> 
             </code>
              <valueCodeableConcept>
                  <coding>
-                     <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                     <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                      <code value="UNC"/> 
                      <display value="Intake Completed"/>
                  </coding>
@@ -34,14 +34,14 @@
         <ReferralActivityStatusReason>
             <code> 
                 <coding> 
-                    <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                    <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                     <code value="UNC"/> 
                     <display value="Referral Activity Status Reason"/> 
                 </coding> 
             </code>
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                    <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                     <code value="UNC"/> 
                     <display value="Patient met all intake requirements"/>
                 </coding>
@@ -52,14 +52,14 @@
         <ReferralType>
             <code> 
                 <coding> 
-                    <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                    <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                     <code value="UNC"/> 
                     <display value="Referral Type"/> 
                 </coding> 
             </code>
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                    <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                     <code value="UNC"/> 
                     <display value="Arthritis"/>
                 </coding>
@@ -70,14 +70,14 @@
         <ReferralStatus>
             <code> 
                 <coding> 
-                    <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                    <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                     <code value="UNC"/> 
                     <display value="Referral Status"/> 
                 </coding> 
             </code>
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/v3/NullFlavor"/> 
+                    <system value="http://www.hl7.org/fhir/v3/NullFlavor"/> 
                     <code value="UNC"/> 
                     <display value="Active"/>
                 </coding>

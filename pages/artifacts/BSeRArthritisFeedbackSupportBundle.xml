@@ -1,6 +1,6 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://www.hl7.org/fhir">
   <id value="ArthritisFeedbackSupportBundle" />
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ArthritisFeedbackSupportBundle" />
+  <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ArthritisFeedbackSupportBundle" />
   <name value="BSeR Arthritis Feedback Support Bundle" />
   <status value="draft" />
   <publisher value="Hi3 Solutions" />
@@ -22,7 +22,7 @@
   <contextType value="resource" />
   <context value="Bundle" />
   <type value="Bundle" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Bundle" />
   <derivation value="constraint" />
   <differential>
     <element id="Bundle">
@@ -63,7 +63,7 @@
       <max value="1" />
       <type>
         <code value="Observation" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ArthristisFeedbackObservation" />
+        <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/ArthristisFeedbackObservation" />
       </type>
     </element>
   </differential>

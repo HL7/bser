@@ -1,7 +1,7 @@
 <StructureDefinition
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://www.hl7.org/fhir">
     <id value="BloodPressureObservation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation" />
+    <url value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation" />
     <name value="BSeR Blood Pressure Observation" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Observation" />
     <type value="Observation" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+    <baseDefinition value="http://www.hl7.org/fhir/StructureDefinition/Observation" />
     <derivation value="constraint" />
     <differential>
         <element id="Observation">
@@ -46,10 +46,10 @@
         <element id="Observation.meta.profile">
             <path value="Observation.meta.profile" />
             <short value="profile" />
-            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation&quot; (CONF:4383-867)." />
+            <definition value="The meta, if present, SHALL contain exactly one [1..1] profile=&quot;http://www.hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation&quot; (CONF:4383-867)." />
             <min value="1" />
             <max value="1" />
-            <patternString value="http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation" />
+            <patternString value="http://www.hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation" />
         </element>
         <element id="Observation.status">
             <path value="Observation.status" />
@@ -95,12 +95,12 @@
         <element id="Observation.subject">
             <path value="Observation.subject" />
             <short value="subject" />
-            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-637)." />
+            <definition value="SHALL contain exactly one [1..1] =&quot;BSeR Patient&quot;BSeR Patient (identifier: http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole) (CONF:4383-637)." />
             <min value="1" />
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
+                <targetProfile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PatientRole" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
@@ -202,7 +202,7 @@
             <path value="Observation.component.dataAbsentReason" />
             <sliceName value="component1" />
             <short value="dataAbsentReason" />
-            <definition value="MAY contain zero or one [0..1] dataAbsentReason, which SHALL be selected from ValueSet Observation-valueabsentreason http://hl7.org/fhir/ValueSet/observation-valueabsentreason DYNAMIC (CONF:4383-571)." />
+            <definition value="MAY contain zero or one [0..1] dataAbsentReason, which SHALL be selected from ValueSet Observation-valueabsentreason http://www.hl7.org/fhir/ValueSet/observation-valueabsentreason DYNAMIC (CONF:4383-571)." />
             <min value="0" />
             <max value="1" />
             <type>
@@ -211,7 +211,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/observation-valueabsentreason" />
                     <display value="Observation-valueabsentreason" />
                 </valueSetReference>
             </binding>
@@ -284,7 +284,7 @@
             <path value="Observation.component.dataAbsentReason" />
             <sliceName value="component2" />
             <short value="dataAbsentReason" />
-            <definition value="MAY contain zero or one [0..1] dataAbsentReason, which SHALL be selected from ValueSet Observation-valueabsentreason http://hl7.org/fhir/ValueSet/observation-valueabsentreason DYNAMIC (CONF:4383-572)." />
+            <definition value="MAY contain zero or one [0..1] dataAbsentReason, which SHALL be selected from ValueSet Observation-valueabsentreason http://www.hl7.org/fhir/ValueSet/observation-valueabsentreason DYNAMIC (CONF:4383-572)." />
             <min value="0" />
             <max value="1" />
             <type>
@@ -293,7 +293,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
+                    <reference value="http://www.hl7.org/fhir/ValueSet/observation-valueabsentreason" />
                     <display value="Observation-valueabsentreason" />
                 </valueSetReference>
             </binding>

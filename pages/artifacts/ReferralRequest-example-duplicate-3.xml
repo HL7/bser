@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ReferralRequest xmlns="http://hl7.org/fhir">
+<ReferralRequest xmlns="http://www.hl7.org/fhir">
     <id value="ReferralRequestTransaction"/> 
     <identifier> 
         <type value="ACSN"/> 
@@ -14,16 +14,16 @@
         </coding> 
     </serviceRequested> 
     <subject> 
-        <referemce value="http://hl7.org/fhir/us/bser/PatientRole/1234567" />
+        <referemce value="http://www.hl7.org/fhir/us/bser/PatientRole/1234567" />
     </subject> 
     <authoredOn value="2018-09-15"/> 
     <requester> 
         <agent> 
-            <reference value="http://hl7.org/fhir/us/bser/ReferralInitiatorProviderRole/9876543"/> 
+            <reference value="http://www.hl7.org/fhir/us/bser/ReferralInitiatorProviderRole/9876543"/> 
         </agent> 
     </requester> 
     <recipient> 
-        <reference value="http://hl7.org/fhir/us/bser/ReferralRecipientProviderRole/5647382"/> 
+        <reference value="http://www.hl7.org/fhir/us/bser/ReferralRecipientProviderRole/5647382"/> 
     </recipient> 
     <reasonCode> 
         <coding> 
@@ -33,6 +33,6 @@
         </coding>
     </reasonCode> 
     <supportingInfo> 
-        <reference value="http://hl7.org/fhir/us/bser/ReferralRequestSupportingBundle/5647382"/> 
+        <reference value="http://www.hl7.org/fhir/us/bser/ReferralRequestSupportingBundle/5647382"/> 
     </supportingInfo> 
 </ReferralRequest> 

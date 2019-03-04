@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Practitioner xmlns="http://hl7.org/fhir">
+<Practitioner xmlns="http://www.hl7.org/fhir">
     <id value="PractitionerPerson Instance Example"/> 
     <meta> 
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson"/> 
+        <profile value="http://www.hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson"/> 
     </meta>  
     <identifier> 
         <system value="urn:oid:2.16.840.1.113883.4.6" />
