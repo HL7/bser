@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DiabetesFeedbackSupportBundle" />
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/DiabetesFeedbackSupportBundle" />
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/DiabetesFeedbackSupportBundle" /><version value="1.0"/>
   <name value="BSeR Diabetes Feedback Support Bundle" />
   <status value="draft" />
   <publisher value="Hi3 Solutions" />

@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BloodPressureObservation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BloodPressureObservation" /><version value="1.0"/>
     <name value="BSeR Blood Pressure Observation" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -238,7 +238,7 @@
             <fixedCodeableConcept>
                 <coding>
                     <code value="&quot;8462-4&quot;" />
-                    <display value=" " />
+                    <display value="Diastolic blood pressure" />
                 </coding>
             </fixedCodeableConcept>
         </element>

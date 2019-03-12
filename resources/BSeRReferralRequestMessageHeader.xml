@@ -2,6 +2,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Referral-Request-Message-Header" />
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Message-Header" />
+    <version value="1.0"/>
     <name value="BSeR Referral Request Message Header" />
     <status value="draft" />
     <contact>

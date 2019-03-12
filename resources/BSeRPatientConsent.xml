@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="PatientConsent" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientConsent" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientConsent" /><version value="1.0"/>
     <name value="BSeR Patient Consent" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />

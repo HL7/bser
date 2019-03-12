@@ -1,7 +1,8 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Referral-Response-Message-Header" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/nullBSeR-Referral-Response-Message-Header" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Response-Message-Header" />
+    <version value="1.0"/>
     <name value="BSeR Referral Response Message Header" />
     <status value="draft" />
     <contact>

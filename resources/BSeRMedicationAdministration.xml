@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="bserMedicationAdministration" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/bserMedicationAdministration" /><version value="1.0"/>
     <name value="BSeR Medication Administration" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="MedicationAdministration" />
     <type value="MedicationAdministration" />
-    <baseDefinition value="http://hl7.org/fhir/us/StructureDefinition/daf-medicationadministration" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
     <derivation value="constraint" />
     <differential>
         <element id="MedicationAdministration">

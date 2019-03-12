@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Diagnosis" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/Diagnosis" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/Diagnosis" /><version value="1.0"/>
     <name value="BSeR Diagnosis" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -63,7 +63,7 @@
             <binding>
                 <strength value="required" />
                 <valueSetReference>
-                    <reference value="http://hl7.org/fhir/ValueSet/Condition-code" />
+                    <reference value="http://hl7.org/fhir/ValueSet/condition-code" />
                     <display value="Condition-code" />
                 </valueSetReference>
             </binding>

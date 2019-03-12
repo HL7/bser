@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="PatientAllergy" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PatientAllergy" /><version value="1.0"/>
     <name value="BSeR Patient Allergy" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />

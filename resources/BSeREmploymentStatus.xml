@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="EmploymentStatus" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/bser-PatientEmploymentStatus" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/EmploymentStatus" /><version value="1.0"/>
     <name value="BSeR Employment Status" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />

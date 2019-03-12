@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BodyHeightObservation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyHeightObservation" /><version value="1.0"/>
     <name value="BSeR Body Height Observation" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -23,7 +23,7 @@
     <contextType value="resource" />
     <context value="Observation" />
     <type value="Observation" />
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-vitalsigns" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
     <derivation value="constraint" />
     <differential>
         <element id="Observation">
@@ -101,18 +101,6 @@
             <type>
                 <code value="Reference" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
             </type>
             <patternString value="BSeR Patient" />
         </element>

@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="ReferralRequestTransaction" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralRequestTransaction" /><version value="1.0"/>
     <name value="BSeR Referral Request" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />

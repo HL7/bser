@@ -2,6 +2,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerPerson" />
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/PractitionerPerson" />
+    <version value="1.0"/>
     <name value="BSeR Practitioner" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -18,7 +19,7 @@
             <use value="work" />
         </telecom>
     </contact>
-    <description value="" />
+    <description value="BSeR Practitioner" />
     <kind value="resource" />
     <abstract value="false" />
     <contextType value="resource" />

@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="FeedbackReferralStatusObservation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/FeedbackReferralStatusObservation" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/FeedbackReferralStatusObservation" /><version value="1.0"/>
     <name value="BSeR Feedback Referral Status Observation" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -71,6 +71,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Feedbackreferralstatusobservation is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -78,6 +79,7 @@
                     <display value="Feedbackreferralstatusobservation" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component">
             <path value="Observation.component" />
@@ -110,6 +112,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referralactivitystatuscode is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -117,6 +120,7 @@
                     <display value="Referralactivitystatuscode" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component1.code.coding">
             <path value="Observation.component.code.coding" />
@@ -178,6 +182,7 @@
             <sliceName value="valueCodeableConcept" />
             <short value="valueCodeableConcept" />
             <definition value="SHALL contain exactly one [1..1] valueCodeableConcept, which SHALL be selected from ValueSet Referralactivitystatuscodevalue http://hl7.org/fhir/us/bser/ValueSet/Referralactivitystatuscodevalue DYNAMIC (CONF:4383-575)." />
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referralactivitystatuscodevalue is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -185,6 +190,7 @@
                     <display value="Referralactivitystatuscodevalue" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component1.value[x]:valueCodeableConcept.coding">
             <path value="Observation.component.valueCodeableConcept.coding" />
@@ -264,6 +270,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referralactivitystatusreasoncode is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -271,6 +278,7 @@
                     <display value="Referralactivitystatusreasoncode" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component2.code.coding">
             <path value="Observation.component.code.coding" />
@@ -332,6 +340,7 @@
             <sliceName value="valueCodeableConcept" />
             <short value="valueCodeableConcept" />
             <definition value="SHALL contain exactly one [1..1] valueCodeableConcept, which SHALL be selected from ValueSet Referralactivitystatusreasonvalue http://hl7.org/fhir/us/bser/ValueSet/Referralactivitystatusreasonvalue DYNAMIC (CONF:4383-592)." />
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referralactivitystatusreasonvalue is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -339,6 +348,7 @@
                     <display value="Referralactivitystatusreasonvalue" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component2.value[x]:valueCodeableConcept.coding">
             <path value="Observation.component.valueCodeableConcept.coding" />
@@ -418,6 +428,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referraltypecode is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -425,6 +436,7 @@
                     <display value="Referraltypecode" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component3.code.coding">
             <path value="Observation.component.code.coding" />
@@ -487,8 +499,8 @@
         <element id="Observation.component:component4">
             <path value="Observation.component" />
             <sliceName value="component4" />
-            <label value="Referral Status " />
-            <short value="Referral Status " />
+            <label value="Referral Status" />
+            <short value="Referral Status" />
             <definition value="SHALL contain exactly one [1..1] component (CONF:4383-586) such that it" />
             <comment value="ReferralStatus" />
             <min value="1" />
@@ -504,6 +516,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referralstatuscode is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -511,6 +524,7 @@
                     <display value="Referralstatuscode" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component4.code.coding">
             <path value="Observation.component.code.coding" />
@@ -572,6 +586,7 @@
             <sliceName value="valueCodeableConcept" />
             <short value="valueCodeableConcept" />
             <definition value="SHALL contain exactly one [1..1] valueCodeableConcept, which SHALL be selected from ValueSet Referralstatusvalue http://hl7.org/fhir/us/bser/ValueSet/Referralstatusvalue DYNAMIC (CONF:4383-599)." />
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referralstatusvalue is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -579,6 +594,7 @@
                     <display value="Referralstatusvalue" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component4.value[x]:valueCodeableConcept.coding">
             <path value="Observation.component.valueCodeableConcept.coding" />
@@ -658,6 +674,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Referralidentifiercode is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -665,6 +682,7 @@
                     <display value="Referralidentifiercode" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.component:component5.code.coding">
             <path value="Observation.component.code.coding" />

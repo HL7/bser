@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="EducationLevel" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/EducationLevel" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/EducationLevel" /><version value="1.0"/>
     <name value="BSeR Education Level" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />

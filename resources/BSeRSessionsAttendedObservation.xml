@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="SessionsAttendedObservation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/SessionsAttendedObservation" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/SessionsAttendedObservation" /><version value="1.0"/>
     <name value="BSeR Sessions Attended Observation" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -86,6 +86,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/ValueSet/Sessions-attended-observation-code is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -93,6 +94,7 @@
                     <display value="Sessions-attended-observation-code" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject" />
@@ -103,18 +105,6 @@
             <type>
                 <code value="Reference" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
             </type>
             <patternString value="BSeR Patient" />
         </element>

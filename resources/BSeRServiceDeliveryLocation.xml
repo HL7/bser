@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="ServiceDeliveryLocation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ServiceDeliveryLocation" /><version value="1.0"/>
     <name value="BSeR Service Delivery Location" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />

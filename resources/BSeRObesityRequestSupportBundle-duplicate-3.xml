@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ObesityFeedbackSupportBundle" />
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ObesityFeedbackSupportBundle" />
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ObesityFeedbackSupportBundle" /><version value="1.0"/>
   <name value="BSeR Obesity Feedback Support Bundle" />
   <status value="draft" />
   <publisher value="Hi3 Solutions" />
