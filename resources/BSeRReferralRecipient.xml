@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Referral-Recipient" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Recipient" /><version value="1.0"/>
     <name value="BSeR Referral Recipient" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />

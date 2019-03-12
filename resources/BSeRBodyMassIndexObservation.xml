@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BodyMassIndexObservation" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BodyMassIndexObservation" /><version value="1.0"/>
     <name value="BSeR Body Mass Index Observation" />
     <status value="draft" />
     <publisher value="Hi3 Solutions" />
@@ -101,18 +101,6 @@
             <type>
                 <code value="Reference" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
             </type>
             <patternString value="BSeR Patient" />
         </element>

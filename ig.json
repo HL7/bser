@@ -12,6 +12,14 @@
     "output": "output",
     "specification": "http://hl7.org/fhir/"
   },
+  "dependencyList": [
+    {
+      "version": "current",
+      "name": "uscore",
+      "location": "http://hl7.org/fhir/us/core"
+    }
+  ],
   "resources": {
+    "*": "*"
   }
 }

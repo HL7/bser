@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Referral-Request-Task" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Referral-Request-Task" /><version value="1.0"/>
     <name value="BSeR Referral Request Task" />
     <status value="draft" />
     <contact>
@@ -155,23 +155,7 @@
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-            <type>
-                <code value="Reference" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
             </type>
             <patternString value="BSeR Referral Initiator" />
         </element>
@@ -183,23 +167,7 @@
             <max value="1" />
             <type>
                 <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-            <type>
-                <code value="Reference" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
             </type>
             <patternString value="BSeR Referral Initiator" />
         </element>

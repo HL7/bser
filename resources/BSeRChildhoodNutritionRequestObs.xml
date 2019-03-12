@@ -1,7 +1,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Childhood-Nutrition-Request-Obs" />
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Childhood-Nutrition-Request-Obs" />
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Childhood-Nutrition-Request-Obs" /><version value="1.0"/>
     <name value="BSeR Childhood Nutrition Request Obs" />
     <status value="draft" />
     <contact>
@@ -74,6 +74,7 @@
             <type>
                 <code value="CodeableConcept" />
             </type>
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Childhoodnutritionrequestobsvalue is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -81,8 +82,9 @@
                     <display value="Childhoodnutritionrequestobscode" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
-        <element id="Observation.subject">
+        <element id="Observation.subjectChild">
             <path value="Observation.subject" />
             <short value="subject" />
             <definition value="SHALL contain exactly one [1..1] subject=&quot;BSeR Related Person&quot; (CONF:4383-842)." />
@@ -93,21 +95,9 @@
                 <code value="Reference" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
             </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
-            </type>
             <patternString value="BSeR Related Person" />
         </element>
-        <element id="Observation.subject">
+        <element id="Observation.subjectMother">
             <path value="Observation.subject" />
             <short value="subject" />
             <definition value="SHALL contain exactly one [1..1] subject=&quot;BSeR Patient&quot; (CONF:4383-843)." />
@@ -117,18 +107,6 @@
             <type>
                 <code value="Reference" />
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-            </type>
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
             </type>
             <patternString value="BSeR Patient" />
         </element>
@@ -171,6 +149,7 @@
             <sliceName value="valueCodeableConcept" />
             <short value="valueCodeableConcept" />
             <definition value="valueCodeableConcept, which SHALL be selected from ValueSet Childhoodnutritionrequestobsvalue http://hl7.org/fhir/us/bser/ValueSet/Childhoodnutritionrequestobsvalue DYNAMIC (CONF:4383-845)" />
+            <!-- Value set http://hl7.org/fhir/us/bser/ValueSet/Childhoodnutritionrequestobsvalue is not available at the time of this publication. Investigation is underway
             <binding>
                 <strength value="required" />
                 <valueSetReference>
@@ -178,6 +157,7 @@
                     <display value="Childhoodnutritionrequestobsvalue" />
                 </valueSetReference>
             </binding>
+            -->
         </element>
         <element id="Observation.value[x]:valueBoolean">
             <path value="Observation.valueBoolean" />

@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="HypertensionFeedbackSupportBundle" />
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/HypertensionFeedbackSupportBundle" />
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/HypertensionFeedbackSupportBundle" /><version value="1.0"/>
   <name value="BSeR Hypertension Feedback Support Bundle" />
   <status value="draft" />
   <publisher value="Hi3 Solutions" />
