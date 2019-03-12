@@ -2,7 +2,7 @@
   "source": "bidirectionalservicesereferralfhirimplementationguide.xml",
   "version": "3.0.1",
   "license": "CC0-1.0",
-  "npm-name": "hl7.fhir.vrdr",
+  "npm-name": "hl7.fhir.bser",
   "canonicalBase": "http://hl7.org/fhir/us/bser",
   "paths": {
     "resources": "resources",
