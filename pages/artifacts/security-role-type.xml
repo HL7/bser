@@ -22,7 +22,7 @@
       <ul>
         <li>Include these codes as defined in 
           <a href="codesystem-contract-signer-type.html">
-            <code>http://www.www.hl7.org/fhir/contractsignertypecodes</code>
+            <code>http://www.hl7.org/fhir/contractsignertypecodes</code>
           </a>
           <table class="none">
             <tr>
@@ -657,7 +657,7 @@
   <extensible value="true"/>
   <compose>
     <include>
-      <system value="http://www.www.hl7.org/fhir/contractsignertypecodes"/>
+      <system value="http://www.hl7.org/fhir/contractsignertypecodes"/>
       <concept>
         <code value="AMENDER"/>
       </concept>

@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 hl7-logo">
-                        <a href="http://www.www.hl7.org">
+                        <a href="http://www.hl7.org">
                             <img src="guide/BidirectionalServiceseReferralFHIRimplementationguide/files/styles/ballotable/hl7-logo.png" alt="visit the hl7 website" width="42" height="50">
                         </a>
                     </div>
@@ -337,83 +337,10 @@
 
                             </ul>
                         </li>
-                        <li class="dropdown">
-
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Implementation Bundles <span class="caret"></span>
+                        <li>
+                            <a href="ImplementationBundles.html">
+                                Implementation Bundles
                             </a>
-
-                            <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a href="ImplementationBundles.html">
-                                            Implementation Bundles
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider">
-
-                                    <li>
-                                        <a href="BSeRObesityRequestSupportBundle-duplicate-2.html">
-                                            BSeR Obesity Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRObesityFeedbackSupportBundle.html">
-                                            BSeR Obesity Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRArthritisRequestSupportBundle-duplicate-2.html">
-                                            BSeR Arthritis Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRArthritisFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Arthritis Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHypertensionRequestSupportBundle-duplicate-2.html">
-                                            BSeR Hypertension Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRHypertensionFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Hypertension Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-2.html">
-                                            BSeR Nutrition Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRNutritionRequestSupportBundle-duplicate-3.html">
-                                            BSeR Nutrition Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiabetesRequestSupportBundle-duplicate-2.html">
-                                            BSeR Diabetes Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRDiabetesFeedbackSupportBundle-duplicate-2.html">
-                                            BSeR Diabetes Feedback Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoRequestSupportBundle-duplicate-2.html">
-                                            BSeR Tobacco Request Support Bundle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="BSeRTobaccoFeedbackSupportBundle.html">
-                                            BSeR Tobacco Feedback Support Bundle
-                                        </a>
-                                    </li>
-
-                            </ul>
                         </li>
                         <li class="dropdown">
 
@@ -493,7 +420,7 @@
         <div class="col-md-24">
 
             <div id="preview-content">
-                <p>Decedent Age is a profile of the <a href="http://www.www.hl7.org/fhir/observation.html">FHIR stu3 Observation</a> resource. It is used to communicate the decedent's chronological age at the time of death. When present, the effective date of this observation shall be equal to the decedent's date of death. Age (Observation.valueQuantity.value) is derived as the difference in time between the decedent's death date and birth date. When age is less than or equal to one day then unit shall be <em>"minutes"</em>, when age is less than or equal to one year then unit shall be <em>"days"</em>, otherwise unit shall be <em>"years"</em>.</p>
+                <h2 id="bser-referral-initiator"><strong>BSeR Referral Initiator</strong></h2>
 <hr>
 <h3 id="uml-expression"><strong>UML Expression</strong></h3>
 <center>
@@ -505,9 +432,9 @@
 <hr>
 <h3 id="structure-definition"><strong>Structure Definition</strong></h3>
 <p></p>
-<div id="c9ccbcb9c5ed410da96b00878a96c2f3" data-level="10" class="stu3-treetable"><div class="treetable-wrapper snapshot">
+<div id="43cca18b301a472c9a437cd85bd3c957" data-level="10" class="stu3-treetable"><div class="treetable-wrapper snapshot">
 <div class="treetable-left-panel"><table class="treetable">
-<tr data-id="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="collapsed">
+<tr data-id="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="collapsed">
 <td>
 <span class="baseIcon resource"></span><span>Observation</span>
 </td>
@@ -518,7 +445,7 @@
 <span class="pin-control"></span><span><b>Data Type </b></span><p><a title="Type Observation from core specification" href="http://www.hl7.org/fhir/stu3/observation.html" target="_blank">Observation</a></p>
 </td>
 </tr>
-<tr id="Observation.id" data-id="375ef021-b108-4363-9741-3186160c4183" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="">
+<tr id="Observation.id" data-id="b82beb06-d349-47ec-9488-22ef1442d082" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="">
 <td>
 <span class="baseIcon primitive"></span><span>id</span>
 </td>
@@ -534,7 +461,7 @@
 </div>
 </td>
 </tr>
-<tr id="Observation.meta" data-id="6f030f14-400c-4d12-b17f-e973d2927d60" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="collapsed">
+<tr id="Observation.meta" data-id="0d863c49-b666-4b60-b402-fda7a3a87cf7" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="collapsed">
 <td>
 <span class="baseIcon primitive"></span><span>meta</span>
 </td>
@@ -550,7 +477,7 @@
 </div>
 </td>
 </tr>
-<tr id="Observation.meta.profile" data-id="e719ce4a-18e3-40f9-b113-ecc05ecc9f94" data-parentid="6f030f14-400c-4d12-b17f-e973d2927d60" class="">
+<tr id="Observation.meta.profile" data-id="2dbec26e-73da-4f15-a220-ae8eb258603e" data-parentid="0d863c49-b666-4b60-b402-fda7a3a87cf7" class="">
 <td>
 <span class="baseIcon reference"></span><span>profile</span>
 </td>
@@ -569,7 +496,7 @@
 <span><b>Data Type </b></span><p><a title="Type Reference from core specification" href="http://www.hl7.org/fhir/stu3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="https://simplifier.net/vrdr/vrdrautopsyperformedindicator">VRDR Autopsy Performed Indicator</a><span>)</span></p>
 </td>
 </tr>
-<tr id="Observation.status" data-id="0340235f-9954-4f95-b4c2-f2216b26d31d" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="">
+<tr id="Observation.status" data-id="774f2397-8bce-47bb-a138-0287bde36bb6" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="">
 <td>
 <span class="baseIcon primitive"></span><span>status</span>
 </td>
@@ -591,7 +518,7 @@
 </div>
 </td>
 </tr>
-<tr id="Observation.code" data-id="0bc5fd76-6c94-4e5c-b714-5dbc253b4141" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="">
+<tr id="Observation.code" data-id="5e4f6a32-de99-4c97-ae18-05f61c47d20b" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="">
 <td>
 <span class="baseIcon datatype"></span><span>code</span>
 </td>
@@ -620,7 +547,7 @@
 </div>
 </td>
 </tr>
-<tr id="Observation.subject" data-id="4c78fa3d-a7d9-4b51-a963-be471246b8f1" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="">
+<tr id="Observation.subject" data-id="08687156-46bb-4643-add2-f087d7da15b9" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="">
 <td>
 <span class="baseIcon reference"></span><span>subject</span>
 </td>
@@ -639,7 +566,7 @@
 <span><b>Data Type </b></span><p><a title="Type Reference from core specification" href="http://www.hl7.org/fhir/stu3/references.html" target="_blank">Reference</a><span>(</span><a title="Profile" href="https://simplifier.net/vrdr/vrdrdecedent">VRDR Decedent</a><span>)</span></p>
 </td>
 </tr>
-<tr id="Observation.value[x]" data-id="4d8844cc-5f32-4704-8231-65fbfc9d95ab" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="sliced">
+<tr id="Observation.value[x]" data-id="1b7b8422-3857-4e2c-8d0d-c35aac24f325" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="sliced">
 <td>
 <span class="baseIcon slice"></span><span>value[x]</span>
 </td>
@@ -656,7 +583,7 @@
 <span><b>Sliced: </b></span><p><span>Unordered, Open, by $this(Type)</span></p>
 </td>
 </tr>
-<tr id="Observation.value[x]:valueCodeableConcept" data-id="5d554587-1aaa-4b12-bad0-2debcfd7785f" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="">
+<tr id="Observation.value[x]:valueCodeableConcept" data-id="fe51a30b-a926-4322-90d6-71713acf0c22" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="">
 <td>
 <span class="baseIcon primitive"></span><span>valueCodeableConcept</span>
 </td>
@@ -671,7 +598,7 @@
 <span><b>Binding </b></span><p><a title="HL7 v2 Value Set 0532" href="http://www.hl7.org/fhir/stu3/v2/0532/index.html" target="_blank">v2-0532</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://www.hl7.org/fhir/stu3/terminologies.html#required">required</a><span>)</span></p>
 </td>
 </tr>
-<tr id="Observation.component" data-id="5ee86b79-714c-437f-b191-ff60de3affb4" data-parentid="d5cd5739-e87a-4dfc-bf10-f9ba7883aa3f" class="collapsed">
+<tr id="Observation.component" data-id="b7007f8b-e049-49dc-845d-5c73547e108b" data-parentid="4e95b86a-8ae2-4eab-9d9f-6103f64982bc" class="collapsed">
 <td>
 <span class="baseIcon primitive"></span><span>component</span>
 </td>
@@ -690,7 +617,7 @@
 </div>
 </td>
 </tr>
-<tr id="Observation.component.code" data-id="f90a6c76-d76e-4a44-84b7-154bfc489667" data-parentid="5ee86b79-714c-437f-b191-ff60de3affb4" class="">
+<tr id="Observation.component.code" data-id="34bd227e-e990-4183-ad2b-826b1ef24262" data-parentid="b7007f8b-e049-49dc-845d-5c73547e108b" class="">
 <td>
 <span class="baseIcon datatype"></span><span>code</span>
 </td>
@@ -717,7 +644,7 @@
 </div>
 </td>
 </tr>
-<tr id="Observation.component.value[x]" data-id="f97d9dfb-7c41-495c-be6e-d1ff14e928a7" data-parentid="5ee86b79-714c-437f-b191-ff60de3affb4" class="sliced">
+<tr id="Observation.component.value[x]" data-id="3df4fcbc-0ed1-430e-b0be-841ff9b7c92f" data-parentid="b7007f8b-e049-49dc-845d-5c73547e108b" class="sliced">
 <td>
 <span class="baseIcon slice"></span><span>value[x]</span>
 </td>
@@ -734,7 +661,7 @@
 <span><b>Sliced: </b></span><p><span>Unordered, Open, by $this(Type)</span></p>
 </td>
 </tr>
-<tr id="Observation.component.value[x]:valueCodeableConcept" data-id="4de2d7d7-b422-4e48-a7d8-02b513db7875" data-parentid="5ee86b79-714c-437f-b191-ff60de3affb4" class="">
+<tr id="Observation.component.value[x]:valueCodeableConcept" data-id="f27ea0f0-4a72-41bc-af12-60fda11befc3" data-parentid="b7007f8b-e049-49dc-845d-5c73547e108b" class="">
 <td>
 <span class="baseIcon primitive"></span><span>valueCodeableConcept</span>
 </td>
@@ -756,8 +683,8 @@
 (function() {
 var isTreetableVisible = document.querySelector(".treetable") != null;
 if (isTreetableVisible) {
-var resourceTreeTablec9ccbcb9c5ed410da96b00878a96c2f3 = new Stu3TreeTable(false);
-resourceTreeTablec9ccbcb9c5ed410da96b00878a96c2f3.init("c9ccbcb9c5ed410da96b00878a96c2f3");
+var resourceTreeTable43cca18b301a472c9a437cd85bd3c957 = new Stu3TreeTable(false);
+resourceTreeTable43cca18b301a472c9a437cd85bd3c957.init("43cca18b301a472c9a437cd85bd3c957");
 }
 })();
 </script>
