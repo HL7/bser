@@ -84,6 +84,7 @@
             </binding>
             -->
         </element>
+		<!--
         <element id="Observation.subjectChild">
             <path value="Observation.subject" />
             <short value="subject" />
@@ -97,6 +98,7 @@
             </type>
             <patternString value="BSeR Related Person" />
         </element>
+		-->
         <element id="Observation.subjectMother">
             <path value="Observation.subject" />
             <short value="subject" />
