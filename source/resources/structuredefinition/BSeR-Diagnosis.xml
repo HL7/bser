@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-Diagnosis"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2019-11-21T16:24:48.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
+    <name value="BSeR_Diagnosis"/>
+    <title value="BSeR Diagnosis"/>
+    <status value="draft"/>
+    <publisher value="Hi3 Solutions"/>
+    <contact>
+        <name value="AbdulMalik Shakir"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="6266444491"/>
+            <use value="work"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="abdulmalik.shakir@hi3solutions.com"/>
+            <use value="work"/>
+        </telecom>
+    </contact>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Condition"/>
+    </context>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <short value="code"/>
+            <definition value="SHALL contain exactly one [1..1] code (CONF:4383-314)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Condition.code.coding">
+            <path value="Condition.code.coding"/>
+            <short value="coding"/>
+            <definition value="This code SHALL contain exactly one [1..1] coding (CONF:4383-315)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Condition.code.coding.code">
+            <path value="Condition.code.coding.code"/>
+            <short value="code"/>
+            <definition value="This coding SHALL contain exactly one [1..1] code (CONF:4383-318)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Condition.code.coding.display">
+            <path value="Condition.code.coding.display"/>
+            <short value="display"/>
+            <definition value="This coding SHOULD contain zero or one [0..1] display (CONF:4383-319)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Condition.subject">
+            <path value="Condition.subject"/>
+            <short value="subject"/>
+            <definition value="SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Patient) (CONF:4383-316)."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Patient"/>
+            </type>
+        </element>
+        <element id="Condition.onset[x]">
+            <path value="Condition.onset[x]"/>
+            <short value="onset[x]"/>
+            <definition value="SHOULD contain zero or one [0..1] onset[x], where onset[x] is one of (CONF:4383-317)"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Age"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

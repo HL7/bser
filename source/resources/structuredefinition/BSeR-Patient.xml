@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-Patient"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2019-11-21T16:54:38.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Patient"/>
+    <name value="BSeR_Patient"/>
+    <title value="BSeR Patient"/>
+    <status value="draft"/>
+    <publisher value="Hi3 Solutions"/>
+    <contact>
+        <name value="AbdulMalik Shakir"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="6266444491"/>
+            <use value="work"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="abdulmalik.shakir@hi3solutions.com"/>
+            <use value="work"/>
+        </telecom>
+    </contact>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Patient"/>
+    </context>
+    <type value="Patient"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Patient">
+            <path value="Patient"/>
+        </element>
+        <element id="Patient.identifier">
+            <path value="Patient.identifier"/>
+            <short value="identifier"/>
+            <definition value="SHALL contain at least one [1..*] identifier (CONF:4383-34)."/>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Patient.identifier.type">
+            <path value="Patient.identifier.type"/>
+            <short value="type"/>
+            <definition value="Such identifiers SHOULD contain zero or one [0..1] type (CONF:4383-39)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.identifier.system">
+            <path value="Patient.identifier.system"/>
+            <short value="system"/>
+            <definition value="Such identifiers SHALL contain exactly one [1..1] system (CONF:4383-40)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.identifier.value">
+            <path value="Patient.identifier.value"/>
+            <short value="value"/>
+            <definition value="Such identifiers SHALL contain exactly one [1..1] value (CONF:4383-41)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.name">
+            <path value="Patient.name"/>
+            <short value="name"/>
+            <definition value="SHALL contain at least one [1..*] name (CONF:4383-54)."/>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Patient.name.use">
+            <path value="Patient.name.use"/>
+            <short value="use"/>
+            <definition value="Such names SHOULD contain zero or one [0..1] use (CONF:4383-110)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.name.family">
+            <path value="Patient.name.family"/>
+            <short value="family"/>
+            <definition value="Such names SHALL contain exactly one [1..1] family (CONF:4383-60)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.name.given">
+            <path value="Patient.name.given"/>
+            <short value="given"/>
+            <definition value="Such names SHALL contain at least one [1..*] given (CONF:4383-61)."/>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Patient.telecom">
+            <path value="Patient.telecom"/>
+            <short value="telecom"/>
+            <definition value="SHOULD contain zero or more [0..*] telecom (CONF:4383-35)."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Patient.telecom.system">
+            <path value="Patient.telecom.system"/>
+            <short value="system"/>
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system (CONF:4383-42)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.telecom.value">
+            <path value="Patient.telecom.value"/>
+            <short value="value"/>
+            <definition value="The telecom, if present, SHALL contain exactly one [1..1] value (CONF:4383-43)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.telecom.use">
+            <path value="Patient.telecom.use"/>
+            <short value="use"/>
+            <definition value="The telecom, if present, SHOULD contain zero or one [0..1] use (CONF:4383-44)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.gender">
+            <path value="Patient.gender"/>
+            <short value="gender"/>
+            <definition value="SHALL contain exactly one [1..1] gender (CONF:4383-55)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.birthDate">
+            <path value="Patient.birthDate"/>
+            <short value="birthDate"/>
+            <definition value="SHALL contain exactly one [1..1] birthDate (CONF:4383-56)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.address">
+            <path value="Patient.address"/>
+            <short value="address"/>
+            <definition value="SHOULD contain zero or more [0..*] address (CONF:4383-36)."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Patient.address.text">
+            <path value="Patient.address.text"/>
+            <short value="text"/>
+            <definition value="The address, if present, MAY contain zero or one [0..1] text (CONF:4383-111)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.address.line">
+            <path value="Patient.address.line"/>
+            <short value="line"/>
+            <definition value="The address, if present, SHOULD contain zero or more [0..*] line (CONF:4383-45)."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Patient.address.city">
+            <path value="Patient.address.city"/>
+            <short value="city"/>
+            <definition value="The address, if present, SHOULD contain zero or one [0..1] city (CONF:4383-46)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.address.state">
+            <path value="Patient.address.state"/>
+            <short value="state"/>
+            <definition value="The address, if present, SHOULD contain zero or one [0..1] state (CONF:4383-47)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.address.postalCode">
+            <path value="Patient.address.postalCode"/>
+            <short value="postalCode"/>
+            <definition value="The address, if present, SHOULD contain zero or one [0..1] postalCode (CONF:4383-48)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.address.country">
+            <path value="Patient.address.country"/>
+            <short value="country"/>
+            <definition value="The address, if present, SHOULD contain zero or one [0..1] country (CONF:4383-49)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.communication">
+            <path value="Patient.communication"/>
+            <short value="communication"/>
+            <definition value="SHOULD contain zero or one [0..1] communication (CONF:4383-107)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.communication.language">
+            <path value="Patient.communication.language"/>
+            <short value="language"/>
+            <definition value="The communication, if present, SHALL contain exactly one [1..1] language (CONF:4383-108)."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.communication.preferred">
+            <path value="Patient.communication.preferred"/>
+            <short value="preferred"/>
+            <definition value="The communication, if present, SHALL contain zero or one [0..1] preferred (CONF:4383-109)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+    </differential>
+</StructureDefinition>

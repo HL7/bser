@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="bser"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2019-11-21T16:22:41.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
+    <version value="1.0.0"/>
+    <name value="BSeR_BidirectionalServices_eReferral"/>
+    <status value="draft"/>
+    <publisher value="Health Level Seven International"/>
+    <description value="The BSeR FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for Bidirectional Services eReferral (BSeR). It is a collection of FHIR resource profiles design for use in information exchanges supporting service provider referral and service outcome reporting. A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Program area referral and feedback transactions contain common transaction data and program specific data. A critical design requirement is to limit the exchange of clinical information to program areas to only that data that pertain to the program. Transaction participant data such as Patient, Referring Provider, and Servicing Provider are common to both referral and feedback transactions. The data content of each transaction type is partitioned into common and program specific data items. Some program specific data items pertain to multiple program areas; others are specific to a single subject area."/>
+    <packageId value="hl7.fhir.us.bser"/>
+    <fhirVersion value="4.0.0"/>
+    <dependsOn>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.0.0"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="3.0.0"/>
+    </dependsOn>
+    <definition>
+        <grouping>
+            <name value="default"/>
+        </grouping>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-BloodPressureObservation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-BodyHeightObservation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-BodyMassIndexObservation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-BodyWeightObservation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ChildhoodNutritionFeedbackObs"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ChildhoodNutritionReferralObs"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-MedicationAdministration"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Diagnosis"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EducationLevel"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EmploymentStatus"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-HA1cObservation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Coverage"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Organization"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-PatientAllergy"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-PatientConsent"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-RelatedPerson"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Patient"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Practitioner"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralActivityStatus"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralFeedback"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferringProvider"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ServiceDeliveryLocation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-PractitionerRole"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-SessionsAttendedObservation"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-SmokingStatus"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoCessationFeedbackObs"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoCessationReferralObs"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+    </definition>
+</ImplementationGuide>
