@@ -12,12 +12,23 @@
         "status": "ci-build"
       },
       {
+        "version": "1.0.0",
+        "date": "2019-12-31",
+        "desc": "FHIR STU Release 1",
+        "path": "http://hl7.org/fhir/us/bser/STU1",
+        "changes": "history.html",
+        "status": "trial-use",
+        "fhirversion": "4.0.1",
+        "sequence": "STU1 on FHIR R4"
+      },
+      {
         "version": "0.2.0",
         "date": "2019-03-21",
         "desc": "STU #1 2nd Ballot",
         "path": "http://hl7.org/fhir/us/bser/2019May",
+        "changes": "history.html",
         "status": "ballot",
-        "sequence": "STU1"
+        "sequence": "STU1 on FHIR STU3"
       },
       {
         "version": "0.1.0",
@@ -25,7 +36,7 @@
         "desc": "STU #1 1st Ballot",
         "path": "http://hl7.org/fhir/us/bser/2018Sep",
         "status": "ballot",
-        "sequence": "STU1"
+        "sequence": "STU1 on FHIR STU3"
       }
    ]
 }
