@@ -1,0 +1,225 @@
+{
+	"tool": "jekyll",
+	"source": "implementationguide/bser.xml",
+	"npm-name": "hl7.fhir.us.bser",
+	"license": "CC0-1.0",
+	"paths": {
+		"history": "http://hl7.org/fhir/us/bser/history.html",
+		"qa": "generated_output/qa",
+		"temp": "generated_output/temp",
+		"output": "output",
+		"txCache": "generated_output/txCache",
+		"specification": "http://hl7.org/fhir/R4/",
+		"pages": [
+			"framework",
+			"source/pages"
+		],
+		"resources": [
+			"source/resources"
+		]
+	},
+	"pages": [
+		"pages"
+	],
+	"version": "4.0.1",
+	"extension-domains": [
+		"https://trifolia-on-fhir.lantanagroup.com"
+	],
+	"allowed-domains": [
+		"https://trifolia-on-fhir.lantanagroup.com"
+	],
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"extraTemplates": [
+		"mappings"
+	],
+	"canonicalBase": "http://hl7.org/fhir/us/bser",
+	"defaults": {
+		"Location": {
+			"template-base": "ex.html"
+		},
+		"ProcedureRequest": {
+			"template-base": "ex.html"
+		},
+		"Organization": {
+			"template-base": "ex.html"
+		},
+		"MedicationStatement": {
+			"template-base": "ex.html"
+		},
+		"SearchParameter": {
+			"template-base": "base.html"
+		},
+		"StructureDefinition": {
+			"template-mappings": "sd-mappings.html",
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html",
+			"mappings": "StructureDefinition-{{[id]}}-mappings.html"
+		},
+		"Immunization": {
+			"template-base": "ex.html"
+		},
+		"Patient": {
+			"template-base": "ex.html"
+		},
+		"StructureMap": {
+			"content": false,
+			"script": false,
+			"template-base": "ex.html",
+			"profiles": false
+		},
+		"ConceptMap": {
+			"template-base": "base.html"
+		},
+		"Practitioner": {
+			"template-base": "ex.html"
+		},
+		"OperationDefinition": {
+			"template-base": "base.html"
+		},
+		"CodeSystem": {
+			"template-base": "base.html"
+		},
+		"Communication": {
+			"template-base": "ex.html"
+		},
+		"Any": {
+			"template-format": "format.html",
+			"template-base": "base.html"
+		},
+		"PractitionerRole": {
+			"template-base": "ex.html"
+		},
+		"ValueSet": {
+			"template-base": "base.html"
+		},
+		"CapabilityStatement": {
+			"template-base": "base.html"
+		},
+		"Observation": {
+			"template-base": "ex.html"
+		}
+	},
+	"resources": {
+		"StructureDefinition/BSeR-BodyWeightObservation": {
+			"base": "StructureDefinition-BSeR-BodyWeightObservation.html",
+			"defns": "StructureDefinition-BSeR-BodyWeightObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-ChildhoodNutritionFeedbackObs": {
+			"base": "StructureDefinition-BSeR-ChildhoodNutritionFeedbackObs.html",
+			"defns": "StructureDefinition-BSeR-ChildhoodNutritionFeedbackObs-definitions.html"
+		},
+		"StructureDefinition/BSeR-ChildhoodNutritionReferralObs": {
+			"base": "StructureDefinition-BSeR-ChildhoodNutritionReferralObs.html",
+			"defns": "StructureDefinition-BSeR-ChildhoodNutritionReferralObs-definitions.html"
+		},
+		"StructureDefinition/BSeR-MedicationAdministration": {
+			"base": "StructureDefinition-BSeR-MedicationAdministration.html",
+			"defns": "StructureDefinition-BSeR-MedicationAdministration-definitions.html"
+		},
+		"StructureDefinition/BSeR-Diagnosis": {
+			"base": "StructureDefinition-BSeR-Diagnosis.html",
+			"defns": "StructureDefinition-BSeR-Diagnosis-definitions.html"
+		},
+		"StructureDefinition/BSeR-EducationLevel": {
+			"base": "StructureDefinition-BSeR-EducationLevel.html",
+			"defns": "StructureDefinition-BSeR-EducationLevel-definitions.html"
+		},
+		"StructureDefinition/BSeR-EmploymentStatus": {
+			"base": "StructureDefinition-BSeR-EmploymentStatus.html",
+			"defns": "StructureDefinition-BSeR-EmploymentStatus-definitions.html"
+		},
+		"StructureDefinition/BSeR-HA1cObservation": {
+			"base": "StructureDefinition-BSeR-HA1cObservation.html",
+			"defns": "StructureDefinition-BSeR-HA1cObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-Coverage": {
+			"base": "StructureDefinition-BSeR-Coverage.html",
+			"defns": "StructureDefinition-BSeR-Coverage-definitions.html"
+		},
+		"StructureDefinition/BSeR-Organization": {
+			"base": "StructureDefinition-BSeR-Organization.html",
+			"defns": "StructureDefinition-BSeR-Organization-definitions.html"
+		},
+		"StructureDefinition/BSeR-PatientAllergy": {
+			"base": "StructureDefinition-BSeR-PatientAllergy.html",
+			"defns": "StructureDefinition-BSeR-PatientAllergy-definitions.html"
+		},
+		"StructureDefinition/BSeR-PatientConsent": {
+			"base": "StructureDefinition-BSeR-PatientConsent.html",
+			"defns": "StructureDefinition-BSeR-PatientConsent-definitions.html"
+		},
+		"StructureDefinition/BSeR-RelatedPerson": {
+			"base": "StructureDefinition-BSeR-RelatedPerson.html",
+			"defns": "StructureDefinition-BSeR-RelatedPerson-definitions.html"
+		},
+		"StructureDefinition/BSeR-Patient": {
+			"base": "StructureDefinition-BSeR-Patient.html",
+			"defns": "StructureDefinition-BSeR-Patient-definitions.html"
+		},
+		"StructureDefinition/BSeR-Practitioner": {
+			"base": "StructureDefinition-BSeR-Practitioner.html",
+			"defns": "StructureDefinition-BSeR-Practitioner-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralActivityStatus": {
+			"base": "StructureDefinition-BSeR-ReferralActivityStatus.html",
+			"defns": "StructureDefinition-BSeR-ReferralActivityStatus-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralFeedback": {
+			"base": "StructureDefinition-BSeR-ReferralFeedback.html",
+			"defns": "StructureDefinition-BSeR-ReferralFeedback-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferringProvider": {
+			"base": "StructureDefinition-BSeR-ReferringProvider.html",
+			"defns": "StructureDefinition-BSeR-ReferringProvider-definitions.html"
+		},
+		"StructureDefinition/BSeR-ServiceDeliveryLocation": {
+			"base": "StructureDefinition-BSeR-ServiceDeliveryLocation.html",
+			"defns": "StructureDefinition-BSeR-ServiceDeliveryLocation-definitions.html"
+		},
+		"StructureDefinition/BSeR-PractitionerRole": {
+			"base": "StructureDefinition-BSeR-PractitionerRole.html",
+			"defns": "StructureDefinition-BSeR-PractitionerRole-definitions.html"
+		},
+		"StructureDefinition/BSeR-SessionsAttendedObservation": {
+			"base": "StructureDefinition-BSeR-SessionsAttendedObservation.html",
+			"defns": "StructureDefinition-BSeR-SessionsAttendedObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-SmokingStatus": {
+			"base": "StructureDefinition-BSeR-SmokingStatus.html",
+			"defns": "StructureDefinition-BSeR-SmokingStatus-definitions.html"
+		},
+		"StructureDefinition/BSeR-TobaccoCessationFeedbackObs": {
+			"base": "StructureDefinition-BSeR-TobaccoCessationFeedbackObs.html",
+			"defns": "StructureDefinition-BSeR-TobaccoCessationFeedbackObs-definitions.html"
+		},
+		"StructureDefinition/BSeR-TobaccoCessationReferralObs": {
+			"base": "StructureDefinition-BSeR-TobaccoCessationReferralObs.html",
+			"defns": "StructureDefinition-BSeR-TobaccoCessationReferralObs-definitions.html"
+		},
+		"StructureDefinition/BSeR-ArthritisFeedbackObservation": {
+			"base": "StructureDefinition-BSeR-ArthritisFeedbackObservation.html",
+			"defns": "StructureDefinition-BSeR-ArthritisFeedbackObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-BloodPressureObservation": {
+			"base": "StructureDefinition-BSeR-BloodPressureObservation.html",
+			"defns": "StructureDefinition-BSeR-BloodPressureObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-BodyHeightObservation": {
+			"base": "StructureDefinition-BSeR-BodyHeightObservation.html",
+			"defns": "StructureDefinition-BSeR-BodyHeightObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-BodyMassIndexObservation": {
+			"base": "StructureDefinition-BSeR-BodyMassIndexObservation.html",
+			"defns": "StructureDefinition-BSeR-BodyMassIndexObservation-definitions.html"
+		}
+	},
+	"fixed-business-version": "1.0.0",
+	"dependencyList": [
+		{
+			"location": "https://www.hl7.org/fhir/us/core",
+			"name": "USCore",
+			"version": "3.0.0",
+			"package": "hl7.fhir.us.core"
+		}
+	]
+}
