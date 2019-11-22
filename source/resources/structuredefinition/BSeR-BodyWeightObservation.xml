@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-BodyWeightObservation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-21T16:23:55.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BodyWeightObservation"/>
     <name value="BSeR_BodyWeightObservation"/>
     <title value="BSeR Body Weight Observation"/>
-    <status value="draft"/>
-    <publisher value="Hi3 Solutions"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
     <contact>
         <name value="AbdulMalik Shakir"/>
         <telecom>
@@ -39,8 +39,6 @@
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
-            <short value="status"/>
-            <definition value="SHALL contain exactly one [1..1] status=&quot;complete&quot; complete (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14 STATIC) (CONF:4383-252)."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -50,15 +48,11 @@
         </element>
         <element id="Observation.category">
             <path value="Observation.category"/>
-            <short value="category"/>
-            <definition value="SHALL contain exactly one [1..1] category (CONF:4383-253)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="code"/>
-            <definition value="SHALL contain exactly one [1..1] code (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:4383-254)."/>
             <min value="1"/>
             <max value="1"/>
         </element>

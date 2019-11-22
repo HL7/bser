@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-PatientConsent"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-21T16:56:17.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
     <name value="BSeR_PatientConsent"/>
     <title value="BSeR Patient Consent"/>
-    <status value="draft"/>
-    <publisher value="Hi3 Solutions"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
     <contact>
         <name value="AbdulMalik Shakir"/>
         <telecom>
@@ -39,22 +39,16 @@
         </element>
         <element id="Consent.status">
             <path value="Consent.status"/>
-            <short value="status"/>
-            <definition value="SHALL contain exactly one [1..1] status (CONF:4383-119)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Consent.category">
             <path value="Consent.category"/>
-            <short value="category"/>
-            <definition value="SHALL contain exactly one [1..1] category (CONF:4383-124)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Consent.patient">
             <path value="Consent.patient"/>
-            <short value="patient"/>
-            <definition value="SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Patient) (CONF:4383-120)."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -64,45 +58,16 @@
         </element>
         <element id="Consent.dateTime">
             <path value="Consent.dateTime"/>
-            <short value="dateTime"/>
-            <definition value="SHALL contain exactly one [1..1] dateTime (CONF:4383-125)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Consent.consentingParty">
-            <path value="Consent.consentingParty"/>
-            <short value="consentingParty"/>
-            <definition value="SHALL contain at least one [1..*] BSeR Related Person (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-RelatedPerson) (CONF:4383-121)."/>
+        <element id="Consent.performer">
+            <path value="Consent.performer"/>
             <min value="1"/>
             <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-RelatedPerson"/>
-            </type>
-        </element>
-        <element id="Consent.actor">
-            <path value="Consent.actor"/>
-            <short value="actor"/>
-            <definition value="SHALL contain at least one [1..*] actor (CONF:4383-122)."/>
-            <min value="1"/>
-            <max value="*"/>
-        </element>
-        <element id="Consent.actor.role">
-            <path value="Consent.actor.role"/>
-            <short value="role"/>
-            <definition value="Such actors SHOULD contain zero or one [0..1] role (CONF:4383-126)."/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Consent.actor.reference">
-            <path value="Consent.actor.reference"/>
-            <short value="reference"/>
-            <definition value="Such actors SHALL contain exactly one [1..1] BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner) (CONF:4383-123)."/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
             </type>
         </element>
     </differential>

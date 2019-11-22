@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ServiceDeliveryLocation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-21T16:33:28.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-11-21T19:26:09.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation"/>
     <name value="BSeR_ServiceDeliveryLocation"/>
     <title value="BSeR Service Delivery Location"/>
-    <status value="draft"/>
-    <publisher value="Hi3 Solutions"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
     <contact>
         <name value="AbdulMalik Shakir"/>
         <telecom>
@@ -39,113 +39,81 @@
         </element>
         <element id="Location.identifier">
             <path value="Location.identifier"/>
-            <short value="identifier"/>
-            <definition value="SHOULD contain zero or more [0..*] identifier (CONF:4383-177)."/>
             <min value="0"/>
             <max value="*"/>
         </element>
         <element id="Location.name">
             <path value="Location.name"/>
-            <short value="name"/>
-            <definition value="SHOULD contain zero or one [0..1] name (CONF:4383-178)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.alias">
             <path value="Location.alias"/>
-            <short value="alias"/>
-            <definition value="MAY contain zero or more [0..*] alias (CONF:4383-179)."/>
             <min value="0"/>
             <max value="*"/>
         </element>
         <element id="Location.type">
             <path value="Location.type"/>
-            <short value="type"/>
-            <definition value="SHOULD contain zero or one [0..1] type (CONF:4383-180)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.telecom">
             <path value="Location.telecom"/>
-            <short value="telecom"/>
-            <definition value="SHOULD contain zero or more [0..*] telecom (CONF:4383-175)."/>
             <min value="0"/>
             <max value="*"/>
         </element>
         <element id="Location.telecom.system">
             <path value="Location.telecom.system"/>
-            <short value="system"/>
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system (CONF:4383-181)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Location.telecom.value">
             <path value="Location.telecom.value"/>
-            <short value="value"/>
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] value (CONF:4383-182)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Location.telecom.use">
             <path value="Location.telecom.use"/>
-            <short value="use"/>
-            <definition value="The telecom, if present, SHOULD contain zero or one [0..1] use (CONF:4383-183)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.address">
             <path value="Location.address"/>
-            <short value="address"/>
-            <definition value="SHOULD contain zero or one [0..1] address (CONF:4383-176)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.address.use">
             <path value="Location.address.use"/>
-            <short value="use"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] use (CONF:4383-184)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.address.text">
             <path value="Location.address.text"/>
-            <short value="text"/>
-            <definition value="The address, if present, MAY contain zero or one [0..1] text (CONF:4383-185)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.address.line">
             <path value="Location.address.line"/>
-            <short value="line"/>
-            <definition value="The address, if present, SHOULD contain zero or more [0..*] line (CONF:4383-186)."/>
             <min value="0"/>
             <max value="*"/>
         </element>
         <element id="Location.address.city">
             <path value="Location.address.city"/>
-            <short value="city"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] city (CONF:4383-187)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.address.state">
             <path value="Location.address.state"/>
-            <short value="state"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] state (CONF:4383-188)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.address.postalCode">
             <path value="Location.address.postalCode"/>
-            <short value="postalCode"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] postalCode (CONF:4383-189)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Location.address.country">
             <path value="Location.address.country"/>
-            <short value="country"/>
-            <definition value="The address, if present, MAY contain zero or one [0..1] country (CONF:4383-190)."/>
             <min value="0"/>
             <max value="1"/>
         </element>

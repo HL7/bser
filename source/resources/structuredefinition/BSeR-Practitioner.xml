@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Practitioner"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-21T16:56:23.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
     <name value="BSeR_Practitioner"/>
     <title value="BSeR Practitioner"/>
-    <status value="draft"/>
-    <publisher value="Hi3 Solutions"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
     <contact>
         <name value="AbdulMalik Shakir"/>
         <telecom>
@@ -39,120 +39,86 @@
         </element>
         <element id="Practitioner.identifier">
             <path value="Practitioner.identifier"/>
-            <short value="identifier"/>
-            <definition value="SHOULD contain zero or more [0..*] identifier (CONF:4383-68)."/>
             <min value="0"/>
             <max value="*"/>
         </element>
         <element id="Practitioner.identifier.value">
             <path value="Practitioner.identifier.value"/>
-            <short value="value"/>
-            <definition value="The identifier, if present, SHALL contain exactly one [1..1] value (CONF:4383-74)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.name">
             <path value="Practitioner.name"/>
-            <short value="name"/>
-            <definition value="SHOULD contain zero or one [0..1] name (CONF:4383-69)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.name.family">
             <path value="Practitioner.name.family"/>
-            <short value="family"/>
-            <definition value="The name, if present, SHALL contain exactly one [1..1] family (CONF:4383-75)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.name.given">
             <path value="Practitioner.name.given"/>
-            <short value="given"/>
-            <definition value="The name, if present, SHOULD contain at least one [1..*] given (CONF:4383-76)."/>
             <min value="1"/>
             <max value="*"/>
         </element>
         <element id="Practitioner.name.prefix">
             <path value="Practitioner.name.prefix"/>
-            <short value="prefix"/>
-            <definition value="The name, if present, MAY contain zero or one [0..1] prefix (CONF:4383-77)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.name.suffix">
             <path value="Practitioner.name.suffix"/>
-            <short value="suffix"/>
-            <definition value="The name, if present, MAY contain zero or one [0..1] suffix (CONF:4383-78)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.telecom">
             <path value="Practitioner.telecom"/>
-            <short value="telecom"/>
-            <definition value="SHOULD contain zero or more [0..*] telecom (CONF:4383-70)."/>
             <min value="0"/>
             <max value="*"/>
         </element>
         <element id="Practitioner.telecom.system">
             <path value="Practitioner.telecom.system"/>
-            <short value="system"/>
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] system (CONF:4383-159)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.telecom.value">
             <path value="Practitioner.telecom.value"/>
-            <short value="value"/>
-            <definition value="The telecom, if present, SHALL contain exactly one [1..1] value (CONF:4383-81)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.telecom.use">
             <path value="Practitioner.telecom.use"/>
-            <short value="use"/>
-            <definition value="The telecom, if present, SHOULD contain zero or one [0..1] use (CONF:4383-83)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.address">
             <path value="Practitioner.address"/>
-            <short value="address"/>
-            <definition value="SHOULD contain zero or one [0..1] address (CONF:4383-82)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.address.use">
             <path value="Practitioner.address.use"/>
-            <short value="use"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] use (CONF:4383-84)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.address.city">
             <path value="Practitioner.address.city"/>
-            <short value="city"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] city (CONF:4383-85)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.address.state">
             <path value="Practitioner.address.state"/>
-            <short value="state"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] state (CONF:4383-86)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.address.postalCode">
             <path value="Practitioner.address.postalCode"/>
-            <short value="postalCode"/>
-            <definition value="The address, if present, SHOULD contain zero or one [0..1] postalCode (CONF:4383-87)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.address.country">
             <path value="Practitioner.address.country"/>
-            <short value="country"/>
-            <definition value="The address, if present, MAY contain zero or one [0..1] country (CONF:4383-88)."/>
             <min value="0"/>
             <max value="1"/>
         </element>

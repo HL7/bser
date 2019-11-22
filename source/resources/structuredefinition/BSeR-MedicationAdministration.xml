@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-MedicationAdministration"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-21T16:54:27.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationAdministration"/>
     <name value="BSeR_MedicationAdministration"/>
     <title value="BSeR Medication Administration"/>
-    <status value="draft"/>
-    <publisher value="Hi3 Solutions"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
     <contact>
         <name value="AbdulMalik Shakir"/>
         <telecom>
@@ -39,8 +39,6 @@
         </element>
         <element id="MedicationAdministration.status">
             <path value="MedicationAdministration.status"/>
-            <short value="status"/>
-            <definition value="SHALL contain exactly one [1..1] status (CONF:4383-308)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
@@ -54,8 +52,6 @@
         </element>
         <element id="MedicationAdministration.subject">
             <path value="MedicationAdministration.subject"/>
-            <short value="subject"/>
-            <definition value="SHALL contain exactly one [1..1] BSeR Patient (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Patient) (CONF:4383-305)."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -65,27 +61,21 @@
         </element>
         <element id="MedicationAdministration.effective[x]">
             <path value="MedicationAdministration.effective[x]"/>
-            <short value="effective[x]"/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="MedicationAdministration.dosage">
             <path value="MedicationAdministration.dosage"/>
-            <short value="dosage"/>
-            <definition value="SHOULD contain zero or one [0..1] dosage (CONF:4383-306)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="MedicationAdministration.dosage.dose">
             <path value="MedicationAdministration.dosage.dose"/>
-            <short value="dose"/>
-            <definition value="The dosage, if present, SHALL contain exactly one [1..1] dose (CONF:4383-312)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="MedicationAdministration.dosage.rate[x]">
             <path value="MedicationAdministration.dosage.rate[x]"/>
-            <short value="rate[x]"/>
             <min value="0"/>
             <max value="1"/>
             <type>

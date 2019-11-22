@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferringProvider"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-21T16:33:14.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferringProvider"/>
     <name value="BSeR_ReferringProvider"/>
     <title value="BSeR Referring Provider"/>
-    <status value="draft"/>
-    <publisher value="Hi3 Solutions"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
     <contact>
         <name value="AbdulMalik Shakir"/>
         <telecom>
@@ -39,8 +39,6 @@
         </element>
         <element id="PractitionerRole.practitioner">
             <path value="PractitionerRole.practitioner"/>
-            <short value="practitioner"/>
-            <definition value="SHALL contain exactly one [1..1] BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner) (CONF:4383-62)."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -50,8 +48,6 @@
         </element>
         <element id="PractitionerRole.organization">
             <path value="PractitionerRole.organization"/>
-            <short value="organization"/>
-            <definition value="SHOULD contain zero or one [0..1] BSeR Organization (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization) (CONF:4383-63)."/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -61,29 +57,21 @@
         </element>
         <element id="PractitionerRole.code">
             <path value="PractitionerRole.code"/>
-            <short value="code"/>
-            <definition value="SHOULD contain zero or one [0..1] code (CONF:4383-64)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="PractitionerRole.code.coding">
             <path value="PractitionerRole.code.coding"/>
-            <short value="coding"/>
-            <definition value="The code, if present, SHALL contain exactly one [1..1] coding (CONF:4383-65)."/>
             <min value="1"/>
             <max value="1"/>
         </element>
         <element id="PractitionerRole.code.text">
             <path value="PractitionerRole.code.text"/>
-            <short value="text"/>
-            <definition value="The code, if present, MAY contain zero or one [0..1] text (CONF:4383-66)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="PractitionerRole.location">
             <path value="PractitionerRole.location"/>
-            <short value="location"/>
-            <definition value="SHOULD contain zero or one [0..1] BSeR Service Delivery Location (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation) (CONF:4383-191)."/>
             <min value="0"/>
             <max value="1"/>
             <type>

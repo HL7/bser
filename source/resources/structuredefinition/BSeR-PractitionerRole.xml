@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-PractitionerRole"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-21T16:56:31.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-11-21T19:26:09.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PractitionerRole"/>
     <name value="BSeR_PractitionerRole"/>
     <title value="Practitioner Role"/>
-    <status value="draft"/>
-    <publisher value="Hi3 Solutions"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
     <contact>
         <name value="AbdulMalik Shakir"/>
         <telecom>
@@ -39,8 +39,6 @@
         </element>
         <element id="PractitionerRole.practitioner">
             <path value="PractitionerRole.practitioner"/>
-            <short value="practitioner"/>
-            <definition value="SHALL contain exactly one [1..1] BSeR Practitioner (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner) (CONF:4383-89)."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -50,8 +48,6 @@
         </element>
         <element id="PractitionerRole.organization">
             <path value="PractitionerRole.organization"/>
-            <short value="organization"/>
-            <definition value="SHOULD contain zero or one [0..1] BSeR Organization (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization) (CONF:4383-90)."/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -61,15 +57,11 @@
         </element>
         <element id="PractitionerRole.code">
             <path value="PractitionerRole.code"/>
-            <short value="code"/>
-            <definition value="SHOULD contain zero or one [0..1] code (CONF:4383-91)."/>
             <min value="0"/>
             <max value="1"/>
         </element>
         <element id="PractitionerRole.location">
             <path value="PractitionerRole.location"/>
-            <short value="location"/>
-            <definition value="SHOULD contain zero or one [0..1] BSeR Service Delivery Location (identifier: http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation) (CONF:4383-192)."/>
             <min value="0"/>
             <max value="1"/>
             <type>
