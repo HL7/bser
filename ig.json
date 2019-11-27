@@ -175,9 +175,17 @@
 			"base": "StructureDefinition-BSeR-PatientAllergy.html",
 			"defns": "StructureDefinition-BSeR-PatientAllergy-definitions.html"
 		},
+		"Organization/organization-us-core-organization-acme-lab": {
+			"base": "Organization-organization-us-core-organization-acme-lab.html",
+			"defns": "Organization-organization-us-core-organization-acme-lab-definitions.html"
+		},
 		"StructureDefinition/BSeR-PatientConsent": {
 			"base": "StructureDefinition-BSeR-PatientConsent.html",
 			"defns": "StructureDefinition-BSeR-PatientConsent-definitions.html"
+		},
+		"Organization/organization-us-core-organization-saint-luke": {
+			"base": "Organization-organization-us-core-organization-saint-luke.html",
+			"defns": "Organization-organization-us-core-organization-saint-luke-definitions.html"
 		},
 		"StructureDefinition/BSeR-RelatedPerson": {
 			"base": "StructureDefinition-BSeR-RelatedPerson.html",

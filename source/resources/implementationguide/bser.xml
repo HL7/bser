@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="57"/>
-        <lastUpdated value="2019-11-26T21:10:03.000-05:00"/>
+        <versionId value="59"/>
+        <lastUpdated value="2019-11-26T21:47:45.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -307,6 +307,22 @@
             </reference>
             <name value="BSeR_ObesityReferralSupportingInformation"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-us-core-organization-acme-lab"/>
+                <display value="Acme Labs"/>
+            </reference>
+            <name value="Acme Labs"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-us-core-organization-saint-luke"/>
+                <display value="Saint Luke's Hospital of Kansas City"/>
+            </reference>
+            <name value="Saint Luke's Hospital of Kansas City"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="toc.md"/>

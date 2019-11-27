@@ -36,6 +36,14 @@ active: other
 <td><a href="Observation-observation-BSeR-HA1cObservation-eve-everywoman.html">observation-BSeR-HA1cObservation-eve-everywoman</a></td>
 </tr>
 <tr>
+<td>Organization</td>
+<td><a href="Organization-organization-us-core-organization-acme-lab.html">Acme Labs</a></td>
+</tr>
+<tr>
+<td>Organization</td>
+<td><a href="Organization-organization-us-core-organization-saint-luke.html">Saint Luke's Hospital of Kansas City</a></td>
+</tr>
+<tr>
 <td>Patient</td>
 <td><a href="Patient-patient-us-core-patient-eve-everywoman.html">patient-us-core-patient-eve-everywoman</a></td>
 </tr>
