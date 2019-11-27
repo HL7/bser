@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ReferralServiceRequest"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2019-11-26T20:21:07.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
+    <name value="BSeR_ReferralServiceRequest"/>
+    <title value="BSeR Referral Service Request"/>
+    <status value="active"/>
+    <description value="TODO"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ServiceRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ServiceRequest">
+            <path value="ServiceRequest"/>
+        </element>
+        <element id="ServiceRequest.identifier">
+            <path value="ServiceRequest.identifier"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="ServiceRequest.status">
+            <path value="ServiceRequest.status"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.intent">
+            <path value="ServiceRequest.intent"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.code">
+            <path value="ServiceRequest.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <binding>
+                <strength value="required"/>
+            </binding>
+        </element>
+        <element id="ServiceRequest.subject">
+            <path value="ServiceRequest.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.occurrence[x]">
+            <path value="ServiceRequest.occurrence[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.requester">
+            <path value="ServiceRequest.requester"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.performer">
+            <path value="ServiceRequest.performer"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.reasonCode">
+            <path value="ServiceRequest.reasonCode"/>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="ServiceRequest.supportingInfo">
+            <path value="ServiceRequest.supportingInfo"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.supportingInfo:ObesityReferralSupportingInformation">
+            <path value="ServiceRequest.supportingInfo"/>
+            <sliceName value="ObesityReferralSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.supportingInfo:ArthritisReferralSupportingInformation">
+            <path value="ServiceRequest.supportingInfo"/>
+            <sliceName value="ArthritisReferralSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.supportingInfo:HypertensionReferralSupportingInformation">
+            <path value="ServiceRequest.supportingInfo"/>
+            <sliceName value="HypertensionReferralSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.supportingInfo:EarlyChildhoodNutritionReferralSupportingInformation">
+            <path value="ServiceRequest.supportingInfo"/>
+            <sliceName value="EarlyChildhoodNutritionReferralSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.supportingInfo:DiabetesPreventionReferralSupportingInformation">
+            <path value="ServiceRequest.supportingInfo"/>
+            <sliceName value="DiabetesPreventionReferralSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.supportingInfo:TobaccoUseCessationReferralSupportingInformation">
+            <path value="ServiceRequest.supportingInfo"/>
+            <sliceName value="TobaccoUseCessationReferralSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.note">
+            <path value="ServiceRequest.note"/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier">
+            <path value="ServiceRequest.identifier"/>
+            <sliceName value="referralInitiatorServiceRequestIdentifier"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.value">
+            <path value="ServiceRequest.identifier.value"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.assigner">
+            <path value="ServiceRequest.identifier.assigner"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier">
+            <path value="ServiceRequest.identifier"/>
+            <sliceName value="referralRecipientServiceRequestIdentifier"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.value">
+            <path value="ServiceRequest.identifier.value"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.assigner">
+            <path value="ServiceRequest.identifier.assigner"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

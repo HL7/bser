@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Coverage"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-11-25T16:37:13.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
     <name value="BSeR_Coverage"/>
@@ -24,6 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
+    <description value="The BSeR Coverage Resource Profile is a collection of referral request supporting observation made by the referral initiator regarding the referral subject patient and child such as is the baby latching, what are mom's main concerns, and are nipple shields in use.&#xA;&#xA;The subject of these observations is a related person, the child or mother. Mother is also the patient. When mother is the subject of the nutrition request observation the relationship to patient is &quot;self&quot;.&#xA;&#xA;The BSeR Coverage Resource Profile resource profile is unique to the Childhood Nutrition program area and is used in referral request transactions only.&#xA;&#xA;The base definition for this resource profile is the us-core-observationresults profile."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>

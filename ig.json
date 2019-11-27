@@ -4,7 +4,6 @@
 	"npm-name": "hl7.fhir.us.bser",
 	"license": "CC0-1.0",
 	"paths": {
-		"history": "http://hl7.org/fhir/us/bser/history.html",
 		"qa": "generated_output/qa",
 		"temp": "generated_output/temp",
 		"output": "output",
@@ -100,17 +99,45 @@
 		}
 	},
 	"resources": {
+		"StructureDefinition/BSeR-ArthritisReferralSupportingInformation": {
+			"base": "StructureDefinition-BSeR-ArthritisReferralSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-ArthritisReferralSupportingInformation-definitions.html"
+		},
+		"StructureDefinition/BSeR-HypertensionReferralSupportingInformation": {
+			"base": "StructureDefinition-BSeR-HypertensionReferralSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-HypertensionReferralSupportingInformation-definitions.html"
+		},
+		"StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation": {
+			"base": "StructureDefinition-BSeR-EarlyChildhoodNutritionReferralSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-EarlyChildhoodNutritionReferralSupportingInformation-definitions.html"
+		},
+		"StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation": {
+			"base": "StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation-definitions.html"
+		},
 		"StructureDefinition/BSeR-BodyWeightObservation": {
 			"base": "StructureDefinition-BSeR-BodyWeightObservation.html",
 			"defns": "StructureDefinition-BSeR-BodyWeightObservation-definitions.html"
+		},
+		"Observation/observation-BSeR-EmploymentStatus-eve-everywoman": {
+			"base": "Observation-observation-BSeR-EmploymentStatus-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-EmploymentStatus-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-ChildhoodNutritionFeedbackObs": {
 			"base": "StructureDefinition-BSeR-ChildhoodNutritionFeedbackObs.html",
 			"defns": "StructureDefinition-BSeR-ChildhoodNutritionFeedbackObs-definitions.html"
 		},
+		"StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation": {
+			"base": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation-definitions.html"
+		},
 		"StructureDefinition/BSeR-ChildhoodNutritionReferralObs": {
 			"base": "StructureDefinition-BSeR-ChildhoodNutritionReferralObs.html",
 			"defns": "StructureDefinition-BSeR-ChildhoodNutritionReferralObs-definitions.html"
+		},
+		"Observation/observation-BSeR-HA1cObservation-eve-everywoman": {
+			"base": "Observation-observation-BSeR-HA1cObservation-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-HA1cObservation-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-MedicationAdministration": {
 			"base": "StructureDefinition-BSeR-MedicationAdministration.html",
@@ -127,6 +154,10 @@
 		"StructureDefinition/BSeR-EmploymentStatus": {
 			"base": "StructureDefinition-BSeR-EmploymentStatus.html",
 			"defns": "StructureDefinition-BSeR-EmploymentStatus-definitions.html"
+		},
+		"StructureDefinition/BSeR-ObesityReferralSupportingInformation": {
+			"base": "StructureDefinition-BSeR-ObesityReferralSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-ObesityReferralSupportingInformation-definitions.html"
 		},
 		"StructureDefinition/BSeR-HA1cObservation": {
 			"base": "StructureDefinition-BSeR-HA1cObservation.html",
@@ -192,6 +223,10 @@
 			"base": "StructureDefinition-BSeR-TobaccoCessationFeedbackObs.html",
 			"defns": "StructureDefinition-BSeR-TobaccoCessationFeedbackObs-definitions.html"
 		},
+		"Practitioner/practitioner-us-core-henry-seven": {
+			"base": "Practitioner-practitioner-us-core-henry-seven.html",
+			"defns": "Practitioner-practitioner-us-core-henry-seven-definitions.html"
+		},
 		"StructureDefinition/BSeR-TobaccoCessationReferralObs": {
 			"base": "StructureDefinition-BSeR-TobaccoCessationReferralObs.html",
 			"defns": "StructureDefinition-BSeR-TobaccoCessationReferralObs-definitions.html"
@@ -211,6 +246,42 @@
 		"StructureDefinition/BSeR-BodyMassIndexObservation": {
 			"base": "StructureDefinition-BSeR-BodyMassIndexObservation.html",
 			"defns": "StructureDefinition-BSeR-BodyMassIndexObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralMessageHeader": {
+			"base": "StructureDefinition-BSeR-ReferralMessageHeader.html",
+			"defns": "StructureDefinition-BSeR-ReferralMessageHeader-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralTask": {
+			"base": "StructureDefinition-BSeR-ReferralTask.html",
+			"defns": "StructureDefinition-BSeR-ReferralTask-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralInitiatorPractitionerRole": {
+			"base": "StructureDefinition-BSeR-ReferralInitiatorPractitionerRole.html",
+			"defns": "StructureDefinition-BSeR-ReferralInitiatorPractitionerRole-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralRecipientPractitionerRole": {
+			"base": "StructureDefinition-BSeR-ReferralRecipientPractitionerRole.html",
+			"defns": "StructureDefinition-BSeR-ReferralRecipientPractitionerRole-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralServiceRequest": {
+			"base": "StructureDefinition-BSeR-ReferralServiceRequest.html",
+			"defns": "StructureDefinition-BSeR-ReferralServiceRequest-definitions.html"
+		},
+		"StructureDefinition/BSeR-ReferralFeedbackComposition": {
+			"base": "StructureDefinition-BSeR-ReferralFeedbackComposition.html",
+			"defns": "StructureDefinition-BSeR-ReferralFeedbackComposition-definitions.html"
+		},
+		"CapabilityStatement/capabilitystatement-bser": {
+			"base": "CapabilityStatement-capabilitystatement-bser.html",
+			"defns": "CapabilityStatement-capabilitystatement-bser-definitions.html"
+		},
+		"Patient/patient-us-core-patient-eve-everywoman": {
+			"base": "Patient-patient-us-core-patient-eve-everywoman.html",
+			"defns": "Patient-patient-us-core-patient-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-BSeR-ArthritisFeedbackObservation-eve-everywoman": {
+			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-ArthritisFeedbackObservation-eve-everywoman-definitions.html"
 		}
 	},
 	"fixed-business-version": "1.0.0",

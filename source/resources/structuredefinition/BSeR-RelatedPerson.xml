@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-RelatedPerson"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-11-21T19:26:09.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-11-25T16:55:49.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-RelatedPerson"/>
     <name value="BSeR_RelatedPerson"/>
@@ -24,6 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
+    <description value="TODO"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>

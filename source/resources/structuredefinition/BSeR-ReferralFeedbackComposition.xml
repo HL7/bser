@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ReferralFeedbackComposition"/>
+    <meta>
+        <versionId value="49"/>
+        <lastUpdated value="2019-11-25T18:44:29.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
+    <name value="BSeR_ReferralFeedbackComposition"/>
+    <title value="BSeR Referral Feedback Composition"/>
+    <status value="active"/>
+    <description value="TODO"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.status">
+            <path value="Composition.status"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+        </element>
+        <element id="Composition.date">
+            <path value="Composition.date"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
+            </type>
+        </element>
+        <element id="Composition.title">
+            <path value="Composition.title"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="2"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSummary">
+            <path value="Composition.section"/>
+            <sliceName value="referralServiceRequestFeedbackSummary"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSummary.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSummary.focus">
+            <path value="Composition.section.focus"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
+            </type>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSummary.text">
+            <path value="Composition.section.text"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSummary.entry">
+            <path value="Composition.section.entry"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
+            </type>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation">
+            <path value="Composition.section"/>
+            <sliceName value="referralServiceRequestFeedbackSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:ObesityReferralFeedbackSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ObesityReferralFeedbackSupportingInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:ArthritisReferralFeedbackSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ArthritisReferralFeedbackSupportingInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:HypertensionReferralFeedbackSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="HypertensionReferralFeedbackSupportingInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:EarlyChildhoodNutritionReferralFeedbackSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:DiabetesPreventionReferralFeedbackSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="DiabetesPreventionReferralFeedbackSupportingInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:TobaccoUseCessationReferralFeedbackSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

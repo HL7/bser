@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-BodyMassIndexObservation"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
+        <versionId value="4"/>
+        <lastUpdated value="2019-11-25T16:34:58.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BodyMassIndexObservation"/>
     <name value="BSeR_BodyMassIndexObservation"/>
@@ -24,6 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
+    <description value="The body mass observation is a type of clinical finding regarding the health condition of the referral subject patient. The body mass observation resource profile is common to multiple program areas and is used in both referral request and referral feedback transactions.&#xA;&#xA;The base definition for this resource profile is the us-core-vitalsigns profile."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>

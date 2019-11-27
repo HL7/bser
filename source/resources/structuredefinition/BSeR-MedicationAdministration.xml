@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-MedicationAdministration"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-11-25T16:50:23.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationAdministration"/>
     <name value="BSeR_MedicationAdministration"/>
@@ -24,6 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
+    <description value="TODO"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>

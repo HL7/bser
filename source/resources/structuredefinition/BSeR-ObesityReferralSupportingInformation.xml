@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ObesityReferralSupportingInformation"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-11-26T21:05:50.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
+    <name value="BSeR_ObesityReferralSupportingInformation"/>
+    <title value="BSeR Obesity Referral Supporting Information"/>
+    <status value="active"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+    </differential>
+</StructureDefinition>

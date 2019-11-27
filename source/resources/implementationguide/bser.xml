@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-11-21T16:22:41.000-05:00"/>
+        <versionId value="57"/>
+        <lastUpdated value="2019-11-26T21:10:03.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
     <name value="BSeR_BidirectionalServices_eReferral"/>
+    <title value="BSeR: Bidirectional Services_eReferral"/>
     <status value="draft"/>
     <publisher value="Health Level Seven International"/>
-    <description value="The BSeR FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for Bidirectional Services eReferral (BSeR). It is a collection of FHIR resource profiles design for use in information exchanges supporting service provider referral and service outcome reporting. A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Program area referral and feedback transactions contain common transaction data and program specific data. A critical design requirement is to limit the exchange of clinical information to program areas to only that data that pertain to the program. Transaction participant data such as Patient, Referring Provider, and Servicing Provider are common to both referral and feedback transactions. The data content of each transaction type is partitioned into common and program specific data items. Some program specific data items pertain to multiple program areas; others are specific to a single subject area."/>
+    <description value="The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. &#xA;&#xA;A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Under the HIPAA minimum necessary standard, covered entities must make reasonable efforts to ensure that access to protected health information (PHI) is limited, per the HIPAA Privacy Rule, to the minimum amount of information necessary to fulfill or satisfy the intended purpose of a particular disclosure, request, or use. &#xA;&#xA;A critical design requirement for BSeR is to limit the exchange of clinical information from initiating providers to recipient providers to only that data necessary to fulfill the service request. To fulfill this design requirement, the BSeR implementation guide separates the designation and profiling of FHIR resources related to the service request workflow from the FHIR resources required to convey the information content necessary for the fulfillment of the service request.&#xA;&#xA;The BSeR IG illustrates the parsimonious design pattern through the inclusion of service request content profiles for six representative areas of focus - Obesity, Arthritis, Hypertension, Early Childhood Nutrition, Diabetes Prevention, and Tobacco Use Cessation. The selected service request focus areas have overlapping information needs that demonstrate well the concepts of parsimonious partitioning and resource profile reuse. A service request content profile constrains the content of supporting information for a service request to the information needs of the service request focus area.&#xA;&#xA;The atomic building blocks for service request content profiles is a clinical statement. A clinical statement is an expression of a discrete item of clinical (or clinically related) information that is recorded because of its relevance to the care of a patient. Clinical statements represented in FHIR resource profiles are grouped into FHIR bundles in accordance with the information requirements of each service request focus area. Clinical statements common to multiple service request focus areas are defined once and reused in supporting information bundles of their respective focus areas. &#xA;"/>
     <packageId value="hl7.fhir.us.bser"/>
     <fhirVersion value="4.0.0"/>
     <dependsOn>
@@ -163,5 +164,214 @@
                 <reference value="StructureDefinition/BSeR-TobaccoCessationReferralObs"/></reference>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralMessageHeader"/>
+                <display value="BSeR_ReferralMessageHeader"/>
+            </reference>
+            <name value="BSeR_ReferralMessageHeader"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralTask"/>
+                <display value="BSeR_ReferralTask"/>
+            </reference>
+            <name value="BSeR_ReferralTask"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+                <display value="BSeR_ReferralInitiatorPractitionerRole"/>
+            </reference>
+            <name value="BSeR_ReferralInitiatorPractitionerRole"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
+                <display value="BSeR-ReferralRecipientPractitionerRole"/>
+            </reference>
+            <name value="BSeR-ReferralRecipientPractitionerRole"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralServiceRequest"/>
+                <display value="BSeR_ReferralServiceRequest"/>
+            </reference>
+            <name value="BSeR_ReferralServiceRequest"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralFeedbackComposition"/>
+                <display value="BSeR_ReferralFeedbackComposition"/>
+            </reference>
+            <name value="BSeR_ReferralFeedbackComposition"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/capabilitystatement-bser"/>
+                <display value="Capability Statement BSeR"/>
+            </reference>
+            <name value="Capability Statement BSeR"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                <display value="Patient Eve L Everywoman"/>
+            </reference>
+            <name value="Patient Eve L Everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
+                <display value="observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+                <display value="Practitioner Seven Henry"/>
+            </reference>
+            <name value="Practitioner Seven Henry"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+                <display value="BSeR_ArthritisReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR_ArthritisReferralSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
+                <display value="BSeR_HypertensionReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR_HypertensionReferralSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+                <display value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation"/>
+                <display value="BSeR_DiabetesPreventionReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR_DiabetesPreventionReferralSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-EmploymentStatus-eve-everywoman"/>
+                <display value="observation-BSeR-EmploymentStatus-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-EmploymentStatus-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
+                <display value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-HA1cObservation-eve-everywoman"/>
+                <display value="observation-BSeR-HA1cObservation-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-HA1cObservation-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
+                <display value="BSeR_ObesityReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR_ObesityReferralSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <page>
+            <nameUrl value="toc.md"/>
+            <title value="Table of Contents"/>
+            <generation value="generated"/>
+            <page>
+                <nameUrl value="Background.html"/>
+                <title value="Background"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Scope.html"/>
+                <title value="Scope"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Resource_Profiles.html"/>
+                <title value="Resource Profiles"/>
+                <generation value="markdown"/>
+                <page>
+                    <nameUrl value="Common_Transaction_Profiles.html"/>
+                    <title value="Common Transaction Profiles"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="Referral_Request_Transaction_Profiles.html"/>
+                    <title value="Referral Request Transaction Profiles"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="Referral_Feedback_Transaction_Profiles.html"/>
+                    <title value="Referral Feedback Transaction Profiles"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="Implementation_Profile_Bundles.html"/>
+                    <title value="Implementation Profile Bundles"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>
+            <page>
+                <nameUrl value="Implementation_Bundles.html"/>
+                <title value="Implementation Bundles"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Transport_Options.html"/>
+                <title value="Transport Options"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Information_Exchange_Transactions.html"/>
+                <title value="Information Exchange Transactions"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="BSeR_Project_Team.html"/>
+                <title value="BSeR Project Team"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Acknowledgements.html"/>
+                <title value="Acknowledgements"/>
+                <generation value="markdown"/>
+            </page>
+        </page>
     </definition>
 </ImplementationGuide>

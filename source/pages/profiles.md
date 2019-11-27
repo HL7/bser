@@ -31,6 +31,10 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-ArthritisFeedbackObservation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-BSeR-ArthritisReferralSupportingInformation.html">BSeR_ArthritisReferralSupportingInformation</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ArthritisReferralSupportingInformation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-BSeR-BloodPressureObservation.html">BSeR_BloodPressureObservation</a></td>
 <td>{% capture profile-intro %}{% include BSeR-BloodPressureObservation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
@@ -59,8 +63,16 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-Coverage-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation.html">BSeR_DiabetesPreventionReferralSupportingInformation</a></td>
+<td>{% capture profile-intro %}{% include BSeR-DiabetesPreventionReferralSupportingInformation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-BSeR-Diagnosis.html">BSeR_Diagnosis</a></td>
 <td>{% capture profile-intro %}{% include BSeR-Diagnosis-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-EarlyChildhoodNutritionReferralSupportingInformation.html">BSeR_EarlyChildhoodNutritionReferralSupportingInformation</a></td>
+<td>{% capture profile-intro %}{% include BSeR-EarlyChildhoodNutritionReferralSupportingInformation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
 <td><a href="StructureDefinition-BSeR-EducationLevel.html">BSeR_EducationLevel</a></td>
@@ -75,8 +87,16 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-HA1cObservation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-BSeR-HypertensionReferralSupportingInformation.html">BSeR_HypertensionReferralSupportingInformation</a></td>
+<td>{% capture profile-intro %}{% include BSeR-HypertensionReferralSupportingInformation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-BSeR-MedicationAdministration.html">BSeR_MedicationAdministration</a></td>
 <td>{% capture profile-intro %}{% include BSeR-MedicationAdministration-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ObesityReferralSupportingInformation.html">BSeR_ObesityReferralSupportingInformation</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ObesityReferralSupportingInformation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
 <td><a href="StructureDefinition-BSeR-Organization.html">BSeR_Organization</a></td>
@@ -111,6 +131,30 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-ReferralFeedback-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-BSeR-ReferralFeedbackComposition.html">BSeR_ReferralFeedbackComposition</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralFeedbackComposition-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ReferralInitiatorPractitionerRole.html">BSeR_ReferralInitiatorPractitionerRole</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralInitiatorPractitionerRole-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR_ReferralMessageHeader</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralMessageHeader-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ReferralRecipientPractitionerRole.html">BSeR_ReferralRecipientPractitionerRole</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralRecipientPractitionerRole-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ReferralServiceRequest.html">BSeR_ReferralServiceRequest</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralServiceRequest-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ReferralTask.html">BSeR_ReferralTask</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralTask-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-BSeR-ReferringProvider.html">BSeR_ReferringProvider</a></td>
 <td>{% capture profile-intro %}{% include BSeR-ReferringProvider-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
@@ -137,6 +181,10 @@ active: profiles
 <tr>
 <td><a href="StructureDefinition-BSeR-TobaccoCessationReferralObs.html">BSeR_TobaccoCessationReferralObs</a></td>
 <td>{% capture profile-intro %}{% include BSeR-TobaccoCessationReferralObs-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation.html">BSeR_TobaccoUseCessationReferralSupportingInformation</a></td>
+<td>{% capture profile-intro %}{% include BSeR-TobaccoUseCessationReferralSupportingInformation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 </tbody>
 </table>

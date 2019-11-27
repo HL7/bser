@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralFeedback"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-11-21T19:26:08.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-11-25T16:54:28.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedback"/>
     <version value="20190915"/>
@@ -26,6 +26,7 @@
             <use value="work"/>
         </telecom>
     </contact>
+    <description value="TODO"/>
     <fhirVersion value="4.0.0"/>
     <kind value="resource"/>
     <abstract value="false"/>

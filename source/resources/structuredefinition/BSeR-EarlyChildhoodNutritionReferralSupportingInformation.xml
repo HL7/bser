@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2019-11-26T20:08:56.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+    <name value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation"/>
+    <title value="BSeR Early Childhood Nutrition Referral Supporting Information"/>
+    <status value="active"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:slice3200">
+            <path value="Bundle.entry"/>
+            <sliceName value="slice3200"/>
+        </element>
+    </differential>
+</StructureDefinition>

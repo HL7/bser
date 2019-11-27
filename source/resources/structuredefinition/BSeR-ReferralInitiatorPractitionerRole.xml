@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ReferralInitiatorPractitionerRole"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2019-11-25T16:42:58.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+    <name value="BSeR_ReferralInitiatorPractitionerRole"/>
+    <title value="BSeR Referral Initiator Practitioner Role"/>
+    <status value="active"/>
+    <description value="TODO"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="PractitionerRole"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="PractitionerRole">
+            <path value="PractitionerRole"/>
+        </element>
+        <element id="PractitionerRole.practitioner">
+            <path value="PractitionerRole.practitioner"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
+            </type>
+        </element>
+        <element id="PractitionerRole.organization">
+            <path value="PractitionerRole.organization"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+            </type>
+        </element>
+        <element id="PractitionerRole.location">
+            <path value="PractitionerRole.location"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

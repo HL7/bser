@@ -13,4 +13,19 @@ active: capstatements
 
 <!-- end TOC -->
 
-**No capability statements are defined for this implementation guide**
+### CapabilityStatements
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="CapabilityStatement-capabilitystatement-bser.html">CapabilityStatement_BSeR</a></td>
+<td>This resource defines the expected capabilities for both client and server participating in BSeR exchange</td>
+</tr>
+</tbody>
+</table>

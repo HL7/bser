@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-SmokingStatus"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2019-11-21T19:29:06.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-11-25T16:56:43.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-SmokingStatus"/>
     <name value="BSeR_SmokingStatus"/>
@@ -24,6 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
+    <description value="TODO"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>
