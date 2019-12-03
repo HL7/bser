@@ -3,34 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ArthritisFeedbackObservation"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2019-11-26T19:59:19.000-05:00"/>
+        <versionId value="14"/>
+        <lastUpdated value="2019-11-30T15:34:44.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     <name value="BSeR_ArthritisFeedbackObservation"/>
     <title value="BSeR Arthritis Feedback Observation"/>
     <status value="active"/>
-    <publisher value="HL7 Public Health Work Group"/>
-    <contact>
-        <name value="AbdulMalik Shakir"/>
-        <telecom>
-            <system value="phone"/>
-            <value value="6266444491"/>
-            <use value="work"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="abdulmalik.shakir@hi3solutions.com"/>
-            <use value="work"/>
-        </telecom>
-    </contact>
-    <description value="The BSeR Arthritis Feedback Observation resource profile constrains the FHIR Observation resource. The purpose of the BSeR Arthritis Feedback Observation resource profile is to enable the Referral Recipient to provide feedback to the Referral Intiator regarding patient observations related to a Arthritis related referral request. Arthritis Feedback Observations include findings related to:&#xA;&#xA;* Healthy eating;&#xA;* Improving strength, flexibility, and endurance;&#xA;* Pain Management;&#xA;* Pain, fatigue, frustration and isolation; and&#xA;* Appropriate use of medications."/>
     <kind value="resource"/>
     <abstract value="false"/>
-    <context>
-        <type value="element"/>
-        <expression value="Observation"/>
-    </context>
     <type value="Observation"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
@@ -42,38 +23,20 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedCode value="final"/>
-        </element>
-        <element id="Observation.category">
-            <path value="Observation.category"/>
-            <min value="0"/>
-            <max value="1"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
             <min value="1"/>
             <max value="1"/>
-        </element>
-        <element id="Observation.subject">
-            <path value="Observation.subject"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            </type>
-        </element>
-        <element id="Observation.effective[x]">
-            <path value="Observation.effective[x]"/>
-            <type>
-                <code value="dateTime"/>
-            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-ArthritisFeedbackObservationVS"/>
+            </binding>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <min value="1"/>
             <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
             <type>
                 <code value="boolean"/>
             </type>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-11-26T20:21:07.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-11-26T23:27:44.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
@@ -41,9 +41,12 @@
             <path value="ServiceRequest.code"/>
             <min value="1"/>
             <max value="1"/>
-            <binding>
-                <strength value="required"/>
-            </binding>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="3457005"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="ServiceRequest.subject">
             <path value="ServiceRequest.subject"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-HypertensionReferralSupportingInformation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-26T20:06:46.000-05:00"/>
+        <versionId value="12"/>
+        <lastUpdated value="2019-11-29T22:51:02.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
     <name value="BSeR_HypertensionReferralSupportingInformation"/>
@@ -36,9 +36,80 @@
             <min value="1"/>
             <max value="*"/>
         </element>
-        <element id="Bundle.entry:slice6367">
+        <element id="Bundle.entry:BloodPressure">
             <path value="Bundle.entry"/>
-            <sliceName value="slice6367"/>
+            <sliceName value="BloodPressure"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BloodPressure.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyHeight">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyHeight"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyHeight.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyMassIndex">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyMassIndex"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyMassIndex.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyWeight">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyWeight"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyWeight.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:Diagnosis">
+            <path value="Bundle.entry"/>
+            <sliceName value="Diagnosis"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:Diagnosis.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>

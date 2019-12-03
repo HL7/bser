@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="59"/>
-        <lastUpdated value="2019-11-26T21:47:45.000-05:00"/>
+        <versionId value="98"/>
+        <lastUpdated value="2019-12-03T16:29:03.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -12,7 +12,7 @@
     <title value="BSeR: Bidirectional Services_eReferral"/>
     <status value="draft"/>
     <publisher value="Health Level Seven International"/>
-    <description value="The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. &#xA;&#xA;A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Under the HIPAA minimum necessary standard, covered entities must make reasonable efforts to ensure that access to protected health information (PHI) is limited, per the HIPAA Privacy Rule, to the minimum amount of information necessary to fulfill or satisfy the intended purpose of a particular disclosure, request, or use. &#xA;&#xA;A critical design requirement for BSeR is to limit the exchange of clinical information from initiating providers to recipient providers to only that data necessary to fulfill the service request. To fulfill this design requirement, the BSeR implementation guide separates the designation and profiling of FHIR resources related to the service request workflow from the FHIR resources required to convey the information content necessary for the fulfillment of the service request.&#xA;&#xA;The BSeR IG illustrates the parsimonious design pattern through the inclusion of service request content profiles for six representative areas of focus - Obesity, Arthritis, Hypertension, Early Childhood Nutrition, Diabetes Prevention, and Tobacco Use Cessation. The selected service request focus areas have overlapping information needs that demonstrate well the concepts of parsimonious partitioning and resource profile reuse. A service request content profile constrains the content of supporting information for a service request to the information needs of the service request focus area.&#xA;&#xA;The atomic building blocks for service request content profiles is a clinical statement. A clinical statement is an expression of a discrete item of clinical (or clinically related) information that is recorded because of its relevance to the care of a patient. Clinical statements represented in FHIR resource profiles are grouped into FHIR bundles in accordance with the information requirements of each service request focus area. Clinical statements common to multiple service request focus areas are defined once and reused in supporting information bundles of their respective focus areas. &#xA;"/>
+    <description value="The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. The goal of the BSeR project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting. &#xA;&#xA;"/>
     <packageId value="hl7.fhir.us.bser"/>
     <fhirVersion value="4.0.0"/>
     <dependsOn>
@@ -24,41 +24,6 @@
         <grouping>
             <name value="default"/>
         </grouping>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-BloodPressureObservation"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-BodyHeightObservation"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-BodyMassIndexObservation"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-BodyWeightObservation"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ChildhoodNutritionFeedbackObs"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ChildhoodNutritionReferralObs"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-MedicationAdministration"/></reference>
@@ -77,11 +42,6 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-EmploymentStatus"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-HA1cObservation"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -106,32 +66,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BSeR-RelatedPerson"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-Patient"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-Practitioner"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralActivityStatus"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ReferralFeedback"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ReferringProvider"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -152,16 +92,6 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-SmokingStatus"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-TobaccoCessationFeedbackObs"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-TobaccoCessationReferralObs"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -324,18 +254,159 @@
             <name value="Saint Luke's Hospital of Kansas City"/>
             <exampleBoolean value="true"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
+                <display value="BSeR-TelcomCommunicationPreferences"/>
+            </reference>
+            <name value="BSeR-TelcomCommunicationPreferences"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
+                <display value="BSeR_EarlyChildhoodNutritionObservation"/>
+            </reference>
+            <name value="BSeR_EarlyChildhoodNutritionObservation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-MedicationStatement"/>
+                <display value="BSeR_MedicationStatement"/>
+            </reference>
+            <name value="BSeR_MedicationStatement"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
+                <display value="BSeR_NRT-AuthorizationStatus"/>
+            </reference>
+            <name value="BSeR_NRT-AuthorizationStatus"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-HA1C-Observation"/>
+                <display value="BSeR_HA1C-Observation"/>
+            </reference>
+            <name value="BSeR_HA1C-Observation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+                <display value="BSeR_ArthritisFeedbackObservation"/>
+            </reference>
+            <name value="BSeR_ArthritisFeedbackObservation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+                <display value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
+            </reference>
+            <name value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
+                <display value="BSeR_ParticipationFeedbackObservation"/>
+            </reference>
+            <name value="BSeR_ParticipationFeedbackObservation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+                <display value="BSeR_TobaccoUseCessationFeedbackObservation"/>
+            </reference>
+            <name value="BSeR_TobaccoUseCessationFeedbackObservation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_ArthritisReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR_ArthritisReferralFeedbackSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_HypertensionReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR_HypertensionReferralFeedbackSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_ObesityReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR_ObesityReferralFeedbackSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR_TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/BSeR-ArthritisFeedbackObservationVS"/>
+                <display value="BSeR Arthritis Feedback Observation Value Set"/>
+            </reference>
+            <name value="BSeR Arthritis Feedback Observation Value Set"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/bser"/>
+                <display value="BSeR"/>
+            </reference>
+            <name value="BSeR"/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="toc.md"/>
             <title value="Table of Contents"/>
             <generation value="generated"/>
             <page>
-                <nameUrl value="Background.html"/>
-                <title value="Background"/>
+                <nameUrl value="Introduction.html"/>
+                <title value="Introduction"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Scope.html"/>
-                <title value="Scope"/>
+                <nameUrl value="BSeR_Project_Team.html"/>
+                <title value="BSeR Project Team"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Acknowledgements.html"/>
+                <title value="Acknowledgements"/>
                 <generation value="markdown"/>
             </page>
             <page>
@@ -343,24 +414,79 @@
                 <title value="Resource Profiles"/>
                 <generation value="markdown"/>
                 <page>
-                    <nameUrl value="Common_Transaction_Profiles.html"/>
-                    <title value="Common Transaction Profiles"/>
+                    <nameUrl value="Common_Resources.html"/>
+                    <title value="Common Resources"/>
                     <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Initiator.html"/>
+                        <title value="Referral Service Request Initiator"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Recipient.html"/>
+                        <title value="Referral Service Request Recipient"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Patient.html"/>
+                        <title value="Referral Service Request Patient"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
                 <page>
-                    <nameUrl value="Referral_Request_Transaction_Profiles.html"/>
-                    <title value="Referral Request Transaction Profiles"/>
+                    <nameUrl value="Workflow_Management_Resources.html"/>
+                    <title value="Workflow Management Resources"/>
                     <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="Message_Bundle_and_Message_Header.html"/>
+                        <title value="Message Bundle and Message Header"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Task.html"/>
+                        <title value="Referral Service Request Task"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
                 <page>
-                    <nameUrl value="Referral_Feedback_Transaction_Profiles.html"/>
-                    <title value="Referral Feedback Transaction Profiles"/>
+                    <nameUrl value="Referral_Service_Request_Resources.html"/>
+                    <title value="Referral Service Request Resources"/>
                     <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="Referral_Service_Request.html"/>
+                        <title value="Referral Service Request"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Clinical_Statements.html"/>
+                        <title value="Referral Service Request Clinical Statements"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Supporting_Information_Bundles.html"/>
+                        <title value="Referral Service Request Supporting Information Bundles"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
                 <page>
-                    <nameUrl value="Implementation_Profile_Bundles.html"/>
-                    <title value="Implementation Profile Bundles"/>
+                    <nameUrl value="Referral_Service_Request_Feedback_Resources.html"/>
+                    <title value="Referral Service Request Feedback Resources"/>
                     <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Feedback.html"/>
+                        <title value="Referral Service Request Feedback"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Feedback_Clinical_Statements.html"/>
+                        <title value="Referral Service Request Feedback Clinical Statements"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="Referral_Service_Request_Feedback_Supporting_Information_Bundles.html"/>
+                        <title value="Referral Service Request Feedback Supporting Information Bundles"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
             </page>
             <page>
@@ -374,18 +500,8 @@
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Information_Exchange_Transactions.html"/>
-                <title value="Information Exchange Transactions"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="BSeR_Project_Team.html"/>
-                <title value="BSeR Project Team"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="Acknowledgements.html"/>
-                <title value="Acknowledgements"/>
+                <nameUrl value="Adaptation_for_Additional_Referral_Use_Cases.html"/>
+                <title value="Adaptation for Additional Referral Use Cases"/>
                 <generation value="markdown"/>
             </page>
         </page>

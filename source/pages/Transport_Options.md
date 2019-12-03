@@ -37,4 +37,4 @@ The following profiles have been defined for the RESTful Submit Option:
 
 The focus of the <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a> is the <a href="StructureDefinition-BSeR-ReferralServiceRequest.html">BSeR Referral ServiceRequest</a>.
 
-[Next Page](Information_Exchange_Transactions.html)
+[Next Page](Adaptation_for_Additional_Referral_Use_Cases.html)

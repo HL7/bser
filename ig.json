@@ -115,29 +115,101 @@
 			"base": "StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation-definitions.html"
 		},
-		"StructureDefinition/BSeR-BodyWeightObservation": {
-			"base": "StructureDefinition-BSeR-BodyWeightObservation.html",
-			"defns": "StructureDefinition-BSeR-BodyWeightObservation-definitions.html"
-		},
 		"Observation/observation-BSeR-EmploymentStatus-eve-everywoman": {
 			"base": "Observation-observation-BSeR-EmploymentStatus-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-EmploymentStatus-eve-everywoman-definitions.html"
-		},
-		"StructureDefinition/BSeR-ChildhoodNutritionFeedbackObs": {
-			"base": "StructureDefinition-BSeR-ChildhoodNutritionFeedbackObs.html",
-			"defns": "StructureDefinition-BSeR-ChildhoodNutritionFeedbackObs-definitions.html"
 		},
 		"StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation-definitions.html"
 		},
-		"StructureDefinition/BSeR-ChildhoodNutritionReferralObs": {
-			"base": "StructureDefinition-BSeR-ChildhoodNutritionReferralObs.html",
-			"defns": "StructureDefinition-BSeR-ChildhoodNutritionReferralObs-definitions.html"
-		},
 		"Observation/observation-BSeR-HA1cObservation-eve-everywoman": {
 			"base": "Observation-observation-BSeR-HA1cObservation-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-HA1cObservation-eve-everywoman-definitions.html"
+		},
+		"StructureDefinition/BSeR-ObesityReferralSupportingInformation": {
+			"base": "StructureDefinition-BSeR-ObesityReferralSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-ObesityReferralSupportingInformation-definitions.html"
+		},
+		"Organization/organization-us-core-organization-acme-lab": {
+			"base": "Organization-organization-us-core-organization-acme-lab.html",
+			"defns": "Organization-organization-us-core-organization-acme-lab-definitions.html"
+		},
+		"Organization/organization-us-core-organization-saint-luke": {
+			"base": "Organization-organization-us-core-organization-saint-luke.html",
+			"defns": "Organization-organization-us-core-organization-saint-luke-definitions.html"
+		},
+		"StructureDefinition/BSeR-TelcomCommunicationPreferences": {
+			"base": "StructureDefinition-BSeR-TelcomCommunicationPreferences.html",
+			"defns": "StructureDefinition-BSeR-TelcomCommunicationPreferences-definitions.html"
+		},
+		"StructureDefinition/BSeR-EarlyChildhoodNutritionObservation": {
+			"base": "StructureDefinition-BSeR-EarlyChildhoodNutritionObservation.html",
+			"defns": "StructureDefinition-BSeR-EarlyChildhoodNutritionObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-MedicationStatement": {
+			"base": "StructureDefinition-BSeR-MedicationStatement.html",
+			"defns": "StructureDefinition-BSeR-MedicationStatement-definitions.html"
+		},
+		"StructureDefinition/BSeR-NRT-AuthorizationStatus": {
+			"base": "StructureDefinition-BSeR-NRT-AuthorizationStatus.html",
+			"defns": "StructureDefinition-BSeR-NRT-AuthorizationStatus-definitions.html"
+		},
+		"StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation": {
+			"base": "StructureDefinition-BSeR-ArthritisReferralFeedbackSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-ArthritisReferralFeedbackSupportingInformation-definitions.html"
+		},
+		"Practitioner/practitioner-us-core-henry-seven": {
+			"base": "Practitioner-practitioner-us-core-henry-seven.html",
+			"defns": "Practitioner-practitioner-us-core-henry-seven-definitions.html"
+		},
+		"StructureDefinition/BSeR-HA1C-Observation": {
+			"base": "StructureDefinition-BSeR-HA1C-Observation.html",
+			"defns": "StructureDefinition-BSeR-HA1C-Observation-definitions.html"
+		},
+		"StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation": {
+			"base": "StructureDefinition-BSeR-EarlyChildhoodNutritionFeedbackObservation.html",
+			"defns": "StructureDefinition-BSeR-EarlyChildhoodNutritionFeedbackObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-ParticipationFeedbackObservation": {
+			"base": "StructureDefinition-BSeR-ParticipationFeedbackObservation.html",
+			"defns": "StructureDefinition-BSeR-ParticipationFeedbackObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation": {
+			"base": "StructureDefinition-BSeR-TobaccoUseCessationFeedbackObservation.html",
+			"defns": "StructureDefinition-BSeR-TobaccoUseCessationFeedbackObservation-definitions.html"
+		},
+		"StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation": {
+			"base": "StructureDefinition-BSeR-DiabetesPreventionReferralFeedbackSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-DiabetesPreventionReferralFeedbackSupportingInformation-definitions.html"
+		},
+		"StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation": {
+			"base": "StructureDefinition-BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation-definitions.html"
+		},
+		"StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation": {
+			"base": "StructureDefinition-BSeR-HypertensionReferralFeedbackSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-HypertensionReferralFeedbackSupportingInformation-definitions.html"
+		},
+		"StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation": {
+			"base": "StructureDefinition-BSeR-ObesityReferralFeedbackSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-ObesityReferralFeedbackSupportingInformation-definitions.html"
+		},
+		"StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation": {
+			"base": "StructureDefinition-BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation.html",
+			"defns": "StructureDefinition-BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation-definitions.html"
+		},
+		"ValueSet/BSeR-ArthritisFeedbackObservationVS": {
+			"base": "ValueSet-BSeR-ArthritisFeedbackObservationVS.html",
+			"defns": "ValueSet-BSeR-ArthritisFeedbackObservationVS-definitions.html"
+		},
+		"CodeSystem/bser": {
+			"base": "CodeSystem-bser.html",
+			"defns": "CodeSystem-bser-definitions.html"
+		},
+		"Media/Activities": {
+			"base": "Media-Activities.html",
+			"defns": "Media-Activities-definitions.html"
 		},
 		"StructureDefinition/BSeR-MedicationAdministration": {
 			"base": "StructureDefinition-BSeR-MedicationAdministration.html",
@@ -155,14 +227,6 @@
 			"base": "StructureDefinition-BSeR-EmploymentStatus.html",
 			"defns": "StructureDefinition-BSeR-EmploymentStatus-definitions.html"
 		},
-		"StructureDefinition/BSeR-ObesityReferralSupportingInformation": {
-			"base": "StructureDefinition-BSeR-ObesityReferralSupportingInformation.html",
-			"defns": "StructureDefinition-BSeR-ObesityReferralSupportingInformation-definitions.html"
-		},
-		"StructureDefinition/BSeR-HA1cObservation": {
-			"base": "StructureDefinition-BSeR-HA1cObservation.html",
-			"defns": "StructureDefinition-BSeR-HA1cObservation-definitions.html"
-		},
 		"StructureDefinition/BSeR-Coverage": {
 			"base": "StructureDefinition-BSeR-Coverage.html",
 			"defns": "StructureDefinition-BSeR-Coverage-definitions.html"
@@ -175,25 +239,9 @@
 			"base": "StructureDefinition-BSeR-PatientAllergy.html",
 			"defns": "StructureDefinition-BSeR-PatientAllergy-definitions.html"
 		},
-		"Organization/organization-us-core-organization-acme-lab": {
-			"base": "Organization-organization-us-core-organization-acme-lab.html",
-			"defns": "Organization-organization-us-core-organization-acme-lab-definitions.html"
-		},
 		"StructureDefinition/BSeR-PatientConsent": {
 			"base": "StructureDefinition-BSeR-PatientConsent.html",
 			"defns": "StructureDefinition-BSeR-PatientConsent-definitions.html"
-		},
-		"Organization/organization-us-core-organization-saint-luke": {
-			"base": "Organization-organization-us-core-organization-saint-luke.html",
-			"defns": "Organization-organization-us-core-organization-saint-luke-definitions.html"
-		},
-		"StructureDefinition/BSeR-RelatedPerson": {
-			"base": "StructureDefinition-BSeR-RelatedPerson.html",
-			"defns": "StructureDefinition-BSeR-RelatedPerson-definitions.html"
-		},
-		"StructureDefinition/BSeR-Patient": {
-			"base": "StructureDefinition-BSeR-Patient.html",
-			"defns": "StructureDefinition-BSeR-Patient-definitions.html"
 		},
 		"StructureDefinition/BSeR-Practitioner": {
 			"base": "StructureDefinition-BSeR-Practitioner.html",
@@ -202,14 +250,6 @@
 		"StructureDefinition/BSeR-ReferralActivityStatus": {
 			"base": "StructureDefinition-BSeR-ReferralActivityStatus.html",
 			"defns": "StructureDefinition-BSeR-ReferralActivityStatus-definitions.html"
-		},
-		"StructureDefinition/BSeR-ReferralFeedback": {
-			"base": "StructureDefinition-BSeR-ReferralFeedback.html",
-			"defns": "StructureDefinition-BSeR-ReferralFeedback-definitions.html"
-		},
-		"StructureDefinition/BSeR-ReferringProvider": {
-			"base": "StructureDefinition-BSeR-ReferringProvider.html",
-			"defns": "StructureDefinition-BSeR-ReferringProvider-definitions.html"
 		},
 		"StructureDefinition/BSeR-ServiceDeliveryLocation": {
 			"base": "StructureDefinition-BSeR-ServiceDeliveryLocation.html",
@@ -227,33 +267,9 @@
 			"base": "StructureDefinition-BSeR-SmokingStatus.html",
 			"defns": "StructureDefinition-BSeR-SmokingStatus-definitions.html"
 		},
-		"StructureDefinition/BSeR-TobaccoCessationFeedbackObs": {
-			"base": "StructureDefinition-BSeR-TobaccoCessationFeedbackObs.html",
-			"defns": "StructureDefinition-BSeR-TobaccoCessationFeedbackObs-definitions.html"
-		},
-		"Practitioner/practitioner-us-core-henry-seven": {
-			"base": "Practitioner-practitioner-us-core-henry-seven.html",
-			"defns": "Practitioner-practitioner-us-core-henry-seven-definitions.html"
-		},
-		"StructureDefinition/BSeR-TobaccoCessationReferralObs": {
-			"base": "StructureDefinition-BSeR-TobaccoCessationReferralObs.html",
-			"defns": "StructureDefinition-BSeR-TobaccoCessationReferralObs-definitions.html"
-		},
 		"StructureDefinition/BSeR-ArthritisFeedbackObservation": {
 			"base": "StructureDefinition-BSeR-ArthritisFeedbackObservation.html",
 			"defns": "StructureDefinition-BSeR-ArthritisFeedbackObservation-definitions.html"
-		},
-		"StructureDefinition/BSeR-BloodPressureObservation": {
-			"base": "StructureDefinition-BSeR-BloodPressureObservation.html",
-			"defns": "StructureDefinition-BSeR-BloodPressureObservation-definitions.html"
-		},
-		"StructureDefinition/BSeR-BodyHeightObservation": {
-			"base": "StructureDefinition-BSeR-BodyHeightObservation.html",
-			"defns": "StructureDefinition-BSeR-BodyHeightObservation-definitions.html"
-		},
-		"StructureDefinition/BSeR-BodyMassIndexObservation": {
-			"base": "StructureDefinition-BSeR-BodyMassIndexObservation.html",
-			"defns": "StructureDefinition-BSeR-BodyMassIndexObservation-definitions.html"
 		},
 		"StructureDefinition/BSeR-ReferralMessageHeader": {
 			"base": "StructureDefinition-BSeR-ReferralMessageHeader.html",

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="bser"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-12-02T23:01:53.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/phwg/bser"/>
+    <name value="BSeR"/>
+    <title value="BSeR"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <publisher value="PHWG"/>
+    <caseSensitive value="false"/>
+    <content value="not-present"/>
+    <concept>
+        <code value="medicationUse"/>
+        <display value="Appropriate use of medications"/>
+    </concept>
+    <concept>
+        <code value="healthyEating"/>
+        <display value="Healthy eating"/>
+    </concept>
+    <concept>
+        <code value="endurance"/>
+        <display value="improving strength, flexibility, and endurance"/>
+    </concept>
+    <concept>
+        <code value="painManagement"/>
+        <display value="Pain Management"/>
+    </concept>
+    <concept>
+        <code value="frustration"/>
+        <display value="pain, fatigue, frustration and isolation"/>
+    </concept>
+</CodeSystem>

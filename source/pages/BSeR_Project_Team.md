@@ -4,7 +4,7 @@ layout: default
 active: BSeR Project Team
 ---
 
-[Previous Page](Information_Exchange_Transactions.html)
+[Previous Page](Introduction.html)
 
 **Project Facilitator**: John W. Loonsk MD, CGI Federal and Consultant to CDC
 

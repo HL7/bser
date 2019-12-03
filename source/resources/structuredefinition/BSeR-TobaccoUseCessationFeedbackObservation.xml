@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-TobaccoUseCessationFeedbackObservation"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-11-30T13:17:25.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+    <name value="BSeR_TobaccoUseCessationFeedbackObservation"/>
+    <status value="active"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+</StructureDefinition>

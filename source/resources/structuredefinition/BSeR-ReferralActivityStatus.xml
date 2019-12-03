@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralActivityStatus"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-11-25T16:53:02.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-11-27T11:12:16.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
     <name value="BSeR_ReferralActivityStatus"/>
@@ -105,6 +105,39 @@
             <path value="Observation.component.code"/>
             <min value="1"/>
             <max value="1"/>
+        </element>
+        <element id="Observation.component.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <type>
+                <code value="integer"/>
+            </type>
+            <type>
+                <code value="Range"/>
+            </type>
+            <type>
+                <code value="Ratio"/>
+            </type>
+            <type>
+                <code value="time"/>
+            </type>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Period"/>
+            </type>
         </element>
         <element id="Observation.component.code.coding">
             <path value="Observation.component.code.coding"/>

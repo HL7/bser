@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2019-11-30T13:14:08.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+    <name value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
+    <title value="BSeR Early Childhood Nutrition Feedback Observation"/>
+    <status value="active"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+    </differential>
+</StructureDefinition>

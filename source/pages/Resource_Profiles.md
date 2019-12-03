@@ -4,7 +4,7 @@ layout: default
 active: Resource Profiles
 ---
 
-[Previous Page](Scope.html)
+[Previous Page](Acknowledgements.html)
 
 The resources profiles defined in this specification are based on the FHIR R4 Standard. Many of the BSeR Resource Profiles have profiles defined in the U.S. Core FHIR Implementation Guide as their base definition.
 
@@ -21,4 +21,4 @@ The table below illustrates how the transaction and program specific profiles ar
 
 **TODO link to graphic here**
 
-[Next Page](Common_Transaction_Profiles.html)
+[Next Page](Common_Resources.html)

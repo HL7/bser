@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralTask"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2019-11-25T18:17:36.000-05:00"/>
+        <versionId value="14"/>
+        <lastUpdated value="2019-12-02T11:33:58.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     <name value="BSeR_ReferralTask"/>
@@ -112,10 +112,6 @@
             <path value="Task.output"/>
             <min value="0"/>
             <max value="1"/>
-            <type>
-                <code value="BackboneElement"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
-            </type>
         </element>
         <element id="Task.output.value[x]">
             <path value="Task.output.value[x]"/>
@@ -123,6 +119,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
             </type>
         </element>
     </differential>

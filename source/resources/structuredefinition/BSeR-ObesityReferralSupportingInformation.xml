@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ObesityReferralSupportingInformation"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2019-11-26T21:05:50.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-12-02T21:02:16.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
     <name value="BSeR_ObesityReferralSupportingInformation"/>
@@ -18,6 +18,99 @@
     <differential>
         <element id="Bundle">
             <path value="Bundle"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="collection"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:Allergyintolerance">
+            <path value="Bundle.entry"/>
+            <sliceName value="Allergyintolerance"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:Allergyintolerance.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BloodPressure">
+            <path value="Bundle.entry"/>
+            <sliceName value="BloodPressure"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BloodPressure.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyHeight">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyHeight"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyHeight.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyMassIndex">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyMassIndex"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyMassIndex.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyWeight">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyWeight"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyWeight.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>

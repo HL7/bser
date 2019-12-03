@@ -13,13 +13,11 @@ active: terminology
 
 ### Value Sets
 
-**No value sets are defined for this implementation guide**
-
+- [BSeR Arthritis Feedback Observation Value Set](ValueSet-BSeR-ArthritisFeedbackObservationVS.html)
 
 
 ### Code Systems
 
-**No code systems are defined for this implementation guide**
-
+- [BSeR](CodeSystem-bser.html)
 
 

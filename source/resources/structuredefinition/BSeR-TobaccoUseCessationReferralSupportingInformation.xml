@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TobaccoUseCessationReferralSupportingInformation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-26T20:14:36.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-02T20:58:38.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
     <name value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
@@ -23,6 +23,7 @@
             <path value="Bundle.type"/>
             <min value="1"/>
             <max value="1"/>
+            <fixedCode value="collection"/>
         </element>
         <element id="Bundle.entry">
             <path value="Bundle.entry"/>
@@ -36,9 +37,50 @@
             <min value="1"/>
             <max value="*"/>
         </element>
-        <element id="Bundle.entry:slice9085">
+        <element id="Bundle.entry:NRT-AuthorizationStatus">
             <path value="Bundle.entry"/>
-            <sliceName value="slice9085"/>
+            <sliceName value="NRT-AuthorizationStatus"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:NRT-AuthorizationStatus.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:Smokingstatus">
+            <path value="Bundle.entry"/>
+            <sliceName value="Smokingstatus"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:Smokingstatus.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:TelcomCommunicationPreferences">
+            <path value="Bundle.entry"/>
+            <sliceName value="TelcomCommunicationPreferences"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:TelcomCommunicationPreferences.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>
