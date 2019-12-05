@@ -223,10 +223,6 @@
 			"base": "StructureDefinition-BSeR-EducationLevel.html",
 			"defns": "StructureDefinition-BSeR-EducationLevel-definitions.html"
 		},
-		"StructureDefinition/BSeR-EmploymentStatus": {
-			"base": "StructureDefinition-BSeR-EmploymentStatus.html",
-			"defns": "StructureDefinition-BSeR-EmploymentStatus-definitions.html"
-		},
 		"StructureDefinition/BSeR-Coverage": {
 			"base": "StructureDefinition-BSeR-Coverage.html",
 			"defns": "StructureDefinition-BSeR-Coverage-definitions.html"

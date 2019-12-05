@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="capabilitystatement-bser"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2019-11-26T00:26:43.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-03T16:47:31.000-05:00"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -1268,19 +1268,15 @@
         <mode value="client"/>
         <resource>
             <type value="Observation"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BodyHeightObservation"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BodyWeightObservation"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1cObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation"/>
             <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
             <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoCessationReferralObs"/>
+            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BSeR-TobaccoUseCessationFeedbackObservation"/>
             <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-SmokingStatus"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralObs"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionFeedbackObs"/>
+            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
             <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-SessionsAttendedObservation"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BloodPressureObservation"/>
             <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EmploymentStatus"/>
-            <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BodyMassIndexObservation"/>
             <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoCessationFeedbackObs"/>
             <supportedProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
             <interaction>

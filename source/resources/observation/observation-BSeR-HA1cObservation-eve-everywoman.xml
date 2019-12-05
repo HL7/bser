@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-HA1cObservation-eve-everywoman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-11-26T21:25:23.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-12-04T22:18:16.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1cObservation"/>
     </meta>
     <text>

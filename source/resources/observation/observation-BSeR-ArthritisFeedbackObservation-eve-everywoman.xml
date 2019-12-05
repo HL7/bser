@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-26T01:11:55.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-04T22:17:48.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     </meta>
     <text>

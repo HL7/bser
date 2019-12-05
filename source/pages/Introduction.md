@@ -10,7 +10,7 @@ The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides g
 
 The scope of the BSeR IG is the placement of a service request referral by a referral initiator and the feedback of a service request outcome report by a referral recipient. The context of the request and feedback activities is depicted in the following activity diagram from the BSeR Domain Analysis Model (BSeR DAM). 
 
-<table><tr><td><img src="Activities.png" /></td></tr></table>
+<table><tr><td><img src="Activities.png" style="width:100%;"/></td></tr></table>
 
 A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Under the HIPAA minimum necessary standard, covered entities must make reasonable efforts to ensure that access to protected health information (PHI) is limited, per the HIPAA Privacy Rule, to the minimum amount of information necessary to fulfill or satisfy the intended purpose of a particular disclosure, request, or use. 
 

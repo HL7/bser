@@ -75,10 +75,6 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-EducationLevel-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-BSeR-EmploymentStatus.html">BSeR_EmploymentStatus</a></td>
-<td>{% capture profile-intro %}{% include BSeR-EmploymentStatus-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
-</tr>
-<tr>
 <td><a href="StructureDefinition-BSeR-HA1C-Observation.html">BSeR_HA1C_Observation</a></td>
 <td>{% capture profile-intro %}{% include BSeR-HA1C-Observation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>

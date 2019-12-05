@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-PatientConsent"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2019-11-25T16:51:57.000-05:00"/>
+        <versionId value="9"/>
+        <lastUpdated value="2019-12-04T00:44:46.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
     <name value="BSeR_PatientConsent"/>
@@ -43,6 +43,11 @@
             <min value="1"/>
             <max value="1"/>
         </element>
+        <element id="Consent.scope">
+            <path value="Consent.scope"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
         <element id="Consent.category">
             <path value="Consent.category"/>
             <min value="1"/>
@@ -64,11 +69,43 @@
         </element>
         <element id="Consent.performer">
             <path value="Consent.performer"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="reference"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
             <min value="1"/>
-            <max value="*"/>
+            <max value="1"/>
+        </element>
+        <element id="Consent.provision">
+            <path value="Consent.provision"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Consent.provision.type">
+            <path value="Consent.provision.type"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Consent.performer:patientPerformer">
+            <path value="Consent.performer"/>
+            <sliceName value="patientPerformer"/>
+            <min value="0"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-RelatedPerson"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="Consent.performer:relatedPersonPerformer">
+            <path value="Consent.performer"/>
+            <sliceName value="relatedPersonPerformer"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
             </type>
         </element>
     </differential>

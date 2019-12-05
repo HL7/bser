@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="98"/>
-        <lastUpdated value="2019-12-03T16:29:03.000-05:00"/>
+        <versionId value="103"/>
+        <lastUpdated value="2019-12-04T00:25:37.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -37,11 +37,6 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-EducationLevel"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-EmploymentStatus"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
