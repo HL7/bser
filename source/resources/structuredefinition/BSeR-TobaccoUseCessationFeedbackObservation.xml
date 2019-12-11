@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TobaccoUseCessationFeedbackObservation"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2019-11-30T13:17:25.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2019-12-10T22:10:25.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
     <name value="BSeR_TobaccoUseCessationFeedbackObservation"/>
@@ -14,4 +14,18 @@
     <type value="Observation"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="false"/>
+        </element>
+    </differential>
 </StructureDefinition>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance
+    xmlns="http://hl7.org/fhir">
+    <id value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2019-12-10T23:24:13.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                <tr>
+                    <td style="font-weight: bold">id</td>
+                    <td>
+                        <span title="id">allergyintolerance-us-core-allergyint-eve-everywoman</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">meta</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">versionId</td>
+                                <td>
+                                    <span title="versionId">1</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">lastUpdated</td>
+                                <td>
+                                    <span title="lastUpdated">2019-12-10T22:03:24.000-05:00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">profile</td>
+                                <td>
+                                    <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">clinicalStatus</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li> (
+                                        <span title="code">active</span> )
+            
+                                    </li>
+                                    <li>
+                                        <span title="system">
+                                            <a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical">http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">verificationStatus</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li> (
+                                        <span title="code">confirmed</span> )
+            
+                                    </li>
+                                    <li>
+                                        <span title="system">
+                                            <a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification">http://terminology.hl7.org/CodeSystem/allergyintolerance-verification</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">category</td>
+                    <td>
+                        <span title="category">medication</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">criticality</td>
+                    <td>
+                        <span title="criticality">high</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">code</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <span title="text">sulfonamide antibacterial</span>
+                            </li>
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <span title="display">Sulfonamide (substance)</span>  (
+                                        <span title="code">387406002</span> )
+          
+                                    </li>
+                                    <li>
+                                        <span title="system">
+                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">reaction</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">manifestation</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">skin rash</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">skin rash</span>  (
+                                                    <span title="code">271807003</span> )
+          
+                                                </li>
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">severity</td>
+                                <td>
+                                    <span title="severity">mild</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+        </coding>
+    </verificationStatus>
+    <category value="medication"/>
+    <criticality value="high"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="387406002"/>
+            <display value="Sulfonamide (substance)"/>
+        </coding>
+        <text value="sulfonamide antibacterial"/>
+    </code>
+    <patient>
+        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+        <display value="Eve Everywoman"/>
+    </patient>
+    <reaction>
+        <manifestation>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="271807003"/>
+                <display value="skin rash"/>
+            </coding>
+            <text value="skin rash"/>
+        </manifestation>
+        <severity value="mild"/>
+    </reaction>
+</AllergyIntolerance>

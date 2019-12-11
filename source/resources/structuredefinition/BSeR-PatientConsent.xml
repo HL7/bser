@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-PatientConsent"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-04T00:44:46.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-12-10T19:11:14.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
     <name value="BSeR_PatientConsent"/>
@@ -59,7 +59,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-              <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
         <element id="Consent.dateTime">

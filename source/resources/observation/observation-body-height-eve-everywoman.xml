@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-us-core-smokingstatus-eve-everywoman"/>
+    <id value="observation-body-height-eve-everywoman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-12-11T00:34:27.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
+        <versionId value="2"/>
+        <lastUpdated value="2019-12-11T01:42:23.000-05:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <span title="id">observation-us-core-smokingstatus-eve-everywoman</span>
+                        <span title="id">observation-body-height-eve-everywoman</span>
                     </td>
                 </tr>
                 <tr>
@@ -24,21 +24,9 @@
                     <td>
                         <table>
                             <tr>
-                                <td style="font-weight: bold">versionId</td>
-                                <td>
-                                    <span title="versionId">1</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">lastUpdated</td>
-                                <td>
-                                    <span title="lastUpdated">2019-12-10T16:59:47.000-05:00</span>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus</span>
+                                    <span title="profile">http://hl7.org/fhir/StructureDefinition/vitalsigns</span>
                                 </td>
                             </tr>
                         </table>
@@ -55,16 +43,14 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="text">Social History</span>
+                                <span title="text">Vital Signs</span>
                             </li>
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <span title="display">Social History</span>  (
-                                        
-                                        <span title="code">social-history</span> )
+                                        <span title="display">Vital Signs</span>  (
+                                        <span title="code">vital-signs</span> )
           
-                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -81,16 +67,14 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="text">Tobacco smoking status NHIS</span>
+                                <span title="text">Body height - lying</span>
                             </li>
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <span title="display">Tobacco smoking status</span>  (
-                                        
-                                        <span title="code">72166-2</span> )
+                                        <span title="display">Body height - lying</span>  (
+                                        <span title="code">8306-3</span> )
           
-                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -108,38 +92,44 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li/>
                             <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                <a href="Patient-patient-us-core-patient-baby-everybaby.html">Baby Everybaby</a>
                             </li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">issued</td>
+                    <td style="font-weight: bold">effectiveDateTime</td>
                     <td>
-                        <span title="issued">2019-01-18T22:33:22Z</span>
+                        <span title="effectiveDateTime">2019-01-17</span>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">valueCodeableConcept</td>
+                    <td style="font-weight: bold">performer</td>
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="text">Current some day smoker</span>
+                                <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">valueQuantity</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <span title="value">21</span>
                             </li>
                             <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        <span title="code">428041000124106</span> )
-            
-                                    
-                                    </li>
-                                    <li>
-                                        <span title="system">
-                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                                        </span>
-                                    </li>
-                                </ul>
+                                <span title="unit">in</span>
+                            </li>
+                            <li>
+                                <span title="system">
+                                    <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span title="code">[in_i]</span>
                             </li>
                         </ul>
                     </td>
@@ -151,29 +141,31 @@
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="social-history"/>
-            <display value="Social History"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
         </coding>
-        <text value="Social History"/>
+        <text value="Vital Signs"/>
     </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="72166-2"/>
-            <display value="Tobacco smoking status"/>
+            <code value="8306-3"/>
+            <display value="Body height - lying"/>
         </coding>
-        <text value="Tobacco smoking status"/>
+        <text value="Body height - lying"/>
     </code>
     <subject>
-        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-        <display value="Eve Everywoman"/>
+        <reference value="Patient/patient-us-core-patient-baby-everybaby"/>
+        <display value="Baby Everybaby"/>
     </subject>
-    <issued value="2019-01-18T22:33:22Z"/>
-    <valueCodeableConcept>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="428041000124106"/>
-        </coding>
-        <text value="Current some day smoker"/>
-    </valueCodeableConcept>
+    <effectiveDateTime value="2019-01-17"/>
+    <performer>
+        <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+    </performer>
+    <valueQuantity>
+        <value value="21"/>
+        <unit value="in"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[in_i]"/>
+    </valueQuantity>
 </Observation>

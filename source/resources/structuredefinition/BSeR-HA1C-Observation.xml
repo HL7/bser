@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-HA1C-Observation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-02T21:03:15.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-10T20:28:15.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation"/>
     <name value="BSeR_HA1C_Observation"/>
@@ -29,13 +29,10 @@
             <path value="Observation.code"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="4548-4"/>
-                    <display value="Hemoglobin A1c"/>
-                </coding>
-            </fixedCodeableConcept>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.4239"/>
+            </binding>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>

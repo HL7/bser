@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Patient
+<RelatedPerson
     xmlns="http://hl7.org/fhir">
-    <id value="patient-us-core-patient-eve-everywoman"/>
+    <id value="relatedperson-mom-everymom"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2019-12-11T01:30:34.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        <lastUpdated value="2019-12-11T01:31:46.000-05:00"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,68 +15,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <span title="id">patient-us-core-patient-eve-everywoman</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">us-core-race</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="display">White</span>
-                            </li>
-                            <li>
-                                <span title="system">urn:oid:2.16.840.1.113883.6.238</span>
-                            </li>
-                            <li>
-                                <span title="code">2106-3</span>
-                            </li>
-                            <li>
-                                <span title="valueString">White</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">us-core-ethnicity</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="display">Not Hispanic or Latino</span>
-                            </li>
-                            <li>
-                                <span title="system">urn:oid:2.16.840.1.113883.6.238</span>
-                            </li>
-                            <li>
-                                <span title="code">2186-5</span>
-                            </li>
-                            <li>
-                                <span title="valueString">Not Hispanic or Latino</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">us-core-birthsex</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="valueCode">F</span>
-                            </li>
-                        </ul>
+                        <span title="id">relatedperson-mom-everymom</span>
                     </td>
                 </tr>
                 <tr>
@@ -85,16 +23,10 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="use">usual</span>
-                            </li>
-                            <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <span title="display">Medical Record Number</span>  (
-                                        
-                                        <span title="code">MR</span> )
-          
-                                    
+                                    <li> (
+                                        <span title="code">SS</span> )
+            
                                     </li>
                                     <li>
                                         <span title="system">
@@ -105,11 +37,11 @@
                             </li>
                             <li>
                                 <span title="system">
-                                    <a href="http://hospital.smarthealthit.org">http://hospital.smarthealthit.org</a>
+                                    <a href="http://hl7.org/fhir/sid/us-ssn">http://hl7.org/fhir/sid/us-ssn</a>
                                 </span>
                             </li>
                             <li>
-                                <span title="value">1032702</span>
+                                <span title="value">444222222</span>
                             </li>
                         </ul>
                     </td>
@@ -121,19 +53,53 @@
                     </td>
                 </tr>
                 <tr>
+                    <td style="font-weight: bold">patient</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <a href="Patient-patient-us-core-patient-baby-everybaby.html">Patient/patient-us-core-patient-baby-everybaby</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">relationship</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <span title="text">Natural Mother</span>
+                            </li>
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <span title="display">natural mother</span>  (
+                                        <span title="code">NMTH</span> )
+          
+                                    </li>
+                                    <li>
+                                        <span title="system">
+                                            <a href="http://terminology.hl7.org/CodeSystem/v3-RoleCode">http://terminology.hl7.org/CodeSystem/v3-RoleCode</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
                     <td style="font-weight: bold">name</td>
                     <td>
                         <table>
                             <tr>
                                 <td style="font-weight: bold">family</td>
                                 <td>
-                                    <span title="family">Everywoman</span>
+                                    <span title="family">Everymom</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold">given</td>
                                 <td>
-                                    <span title="given">Eve</span>
+                                    <span title="given">Mom</span>
                                 </td>
                             </tr>
                             <tr>
@@ -158,7 +124,7 @@
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <span title="value">1-(404)555-1212</span>
+                                    <span title="value">1-(404)555-1313</span>
                                 </td>
                             </tr>
                             <tr>
@@ -183,7 +149,7 @@
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <span title="value">eve.everywoman@example.com</span>
+                                    <span title="value">mom.everymom@example.com</span>
                                 </td>
                             </tr>
                         </table>
@@ -198,7 +164,7 @@
                 <tr>
                     <td style="font-weight: bold">birthDate</td>
                     <td>
-                        <span title="birthDate">1974-11-24</span>
+                        <span title="birthDate">1982-11-24</span>
                     </td>
                 </tr>
                 <tr>
@@ -241,62 +207,44 @@
             </table>
         </div>
     </text>
-    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-        <extension url="ombCategory">
-            <valueCoding>
-                <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="2106-3"/>
-                <display value="White"/>
-            </valueCoding>
-        </extension>
-        <extension url="text">
-            <valueString value="White"/>
-        </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-        <extension url="ombCategory">
-            <valueCoding>
-                <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="2186-5"/>
-                <display value="Not Hispanic or Latino"/>
-            </valueCoding>
-        </extension>
-        <extension url="text">
-            <valueString value="Not Hispanic or Latino"/>
-        </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-        <valueCode value="F"/>
-    </extension>
     <identifier>
-        <use value="usual"/>
         <type>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="MR"/>
-                <display value="Medical Record Number"/>
+                <code value="SS"/>
             </coding>
         </type>
-        <system value="http://hospital.smarthealthit.org"/>
-        <value value="1032702"/>
+        <system value="http://hl7.org/fhir/sid/us-ssn"/>
+        <value value="444222222"/>
     </identifier>
     <active value="true"/>
+    <patient>
+        <reference value="Patient/patient-us-core-patient-baby-everybaby"/>
+    </patient>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="NMTH"/>
+            <display value="natural mother"/>
+        </coding>
+        <text value="Natural Mother"/>
+    </relationship>
     <name>
-        <family value="Everywoman"/>
-        <given value="Eve"/>
+        <family value="Everymom"/>
+        <given value="Mom"/>
         <given value="L"/>
     </name>
     <telecom>
         <system value="phone"/>
-        <value value="1-(404)555-1212"/>
+        <value value="1-(404)555-1313"/>
         <use value="home"/>
     </telecom>
     <telecom>
         <system value="email"/>
-        <value value="eve.everywoman@example.com"/>
+        <value value="mom.everymom@example.com"/>
     </telecom>
     <gender value="female"/>
-    <birthDate value="1974-11-24"/>
+    <birthDate value="1982-11-24"/>
     <address>
         <line value="5101 Peachtree St NE"/>
         <city value="Atlanta"/>
@@ -304,4 +252,4 @@
         <postalCode value="30302"/>
         <country value="US"/>
     </address>
-</Patient>
+</RelatedPerson>

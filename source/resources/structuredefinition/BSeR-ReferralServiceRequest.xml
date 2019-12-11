@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2019-11-26T23:27:44.000-05:00"/>
+        <versionId value="14"/>
+        <lastUpdated value="2019-12-10T22:39:25.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
@@ -23,6 +23,10 @@
         <element id="ServiceRequest.identifier">
             <path value="ServiceRequest.identifier"/>
             <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="value"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
@@ -39,14 +43,14 @@
         </element>
         <element id="ServiceRequest.code">
             <path value="ServiceRequest.code"/>
+            <short value="Referral or specific type of referral"/>
+            <definition value="Referral or specific type of referral. If the code used describes the type of/reason for referral (such as &quot;Referral to diabetes prevention program&quot;) then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."/>
             <min value="1"/>
             <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://snomed.info/sct"/>
-                    <code value="3457005"/>
-                </coding>
-            </patternCodeableConcept>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.56/expansion/Latest"/>
+            </binding>
         </element>
         <element id="ServiceRequest.subject">
             <path value="ServiceRequest.subject"/>
@@ -84,12 +88,22 @@
         </element>
         <element id="ServiceRequest.reasonCode">
             <path value="ServiceRequest.reasonCode"/>
-            <min value="1"/>
+            <short value="Reason for referral"/>
+            <definition value="Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. &quot;Referral&quot;)."/>
             <max value="*"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
+            </binding>
         </element>
         <element id="ServiceRequest.supportingInfo">
             <path value="ServiceRequest.supportingInfo"/>
             <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
             <min value="1"/>

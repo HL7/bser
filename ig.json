@@ -99,9 +99,17 @@
 		}
 	},
 	"resources": {
+		"RelatedPerson/relatedperson-mom-everymom": {
+			"base": "RelatedPerson-relatedperson-mom-everymom.html",
+			"defns": "RelatedPerson-relatedperson-mom-everymom-definitions.html"
+		},
 		"StructureDefinition/BSeR-ArthritisReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-ArthritisReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-ArthritisReferralSupportingInformation-definitions.html"
+		},
+		"Patient/patient-us-core-patient-mom-everymom": {
+			"base": "Patient-patient-us-core-patient-mom-everymom.html",
+			"defns": "Patient-patient-us-core-patient-mom-everymom-definitions.html"
 		},
 		"StructureDefinition/BSeR-HypertensionReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-HypertensionReferralSupportingInformation.html",
@@ -115,17 +123,9 @@
 			"base": "StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation-definitions.html"
 		},
-		"Observation/observation-BSeR-EmploymentStatus-eve-everywoman": {
-			"base": "Observation-observation-BSeR-EmploymentStatus-eve-everywoman.html",
-			"defns": "Observation-observation-BSeR-EmploymentStatus-eve-everywoman-definitions.html"
-		},
 		"StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation-definitions.html"
-		},
-		"Observation/observation-BSeR-HA1cObservation-eve-everywoman": {
-			"base": "Observation-observation-BSeR-HA1cObservation-eve-everywoman.html",
-			"defns": "Observation-observation-BSeR-HA1cObservation-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-ObesityReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-ObesityReferralSupportingInformation.html",
@@ -279,9 +279,25 @@
 			"base": "StructureDefinition-BSeR-ReferralServiceRequest.html",
 			"defns": "StructureDefinition-BSeR-ReferralServiceRequest-definitions.html"
 		},
+		"Observation/observation-odh-EmploymentStatus-eve-everywoman": {
+			"base": "Observation-observation-odh-EmploymentStatus-eve-everywoman.html",
+			"defns": "Observation-observation-odh-EmploymentStatus-eve-everywoman-definitions.html"
+		},
 		"StructureDefinition/BSeR-ReferralFeedbackComposition": {
 			"base": "StructureDefinition-BSeR-ReferralFeedbackComposition.html",
 			"defns": "StructureDefinition-BSeR-ReferralFeedbackComposition-definitions.html"
+		},
+		"Observation/observation-BSeR-HA1c-Observation-eve-everywoman": {
+			"base": "Observation-observation-BSeR-HA1c-Observation-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-HA1c-Observation-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman": {
+			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman": {
+			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman-definitions.html"
 		},
 		"CapabilityStatement/capabilitystatement-bser": {
 			"base": "CapabilityStatement-capabilitystatement-bser.html",
@@ -291,9 +307,37 @@
 			"base": "Patient-patient-us-core-patient-eve-everywoman.html",
 			"defns": "Patient-patient-us-core-patient-eve-everywoman-definitions.html"
 		},
-		"Observation/observation-BSeR-ArthritisFeedbackObservation-eve-everywoman": {
-			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-eve-everywoman.html",
-			"defns": "Observation-observation-BSeR-ArthritisFeedbackObservation-eve-everywoman-definitions.html"
+		"AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman": {
+			"base": "AllergyIntolerance-allergyintolerance-us-core-allergyint-eve-everywoman.html",
+			"defns": "AllergyIntolerance-allergyintolerance-us-core-allergyint-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-blood-pressure-eve-everywoman": {
+			"base": "Observation-observation-blood-pressure-eve-everywoman.html",
+			"defns": "Observation-observation-blood-pressure-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-body-height-eve-everywoman": {
+			"base": "Observation-observation-body-height-eve-everywoman.html",
+			"defns": "Observation-observation-body-height-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-bmi-eve-everywoman": {
+			"base": "Observation-observation-bmi-eve-everywoman.html",
+			"defns": "Observation-observation-bmi-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-body-weight-eve-everywoman": {
+			"base": "Observation-observation-body-weight-eve-everywoman.html",
+			"defns": "Observation-observation-body-weight-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman": {
+			"base": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman-definitions.html"
+		},
+		"Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman": {
+			"base": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman-definitions.html"
+		},
+		"Patient/patient-us-core-patient-baby-everybaby": {
+			"base": "Patient-patient-us-core-patient-baby-everybaby.html",
+			"defns": "Patient-patient-us-core-patient-baby-everybaby-definitions.html"
 		}
 	},
 	"fixed-business-version": "1.0.0",

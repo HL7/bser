@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EducationLevel"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-12-07T16:14:10.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-12-10T19:11:58.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     <name value="BSeR_EducationLevel"/>
@@ -67,7 +67,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-              <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
         <element id="Observation.value[x]">

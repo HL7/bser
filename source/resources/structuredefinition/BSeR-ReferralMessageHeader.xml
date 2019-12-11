@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralMessageHeader"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2019-11-25T16:43:12.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-12-10T23:19:27.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
     <name value="BSeR_ReferralMessageHeader"/>
@@ -30,7 +30,7 @@
             <fixedCoding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0003"/>
                 <code value="I12"/>
-                <display value="Referral Request"/>
+                <display value="REF/RRI - Patient referral"/>
             </fixedCoding>
         </element>
         <element id="MessageHeader.destination">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-BSeR-HA1cObservation-eve-everywoman"/>
+    <id value="observation-body-weight-eve-everywoman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-04T22:18:16.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1cObservation"/>
+        <versionId value="2"/>
+        <lastUpdated value="2019-12-11T00:54:44.000-05:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <span title="id">observation-BSeR-HA1cObservation-eve-everywoman</span>
+                        <span title="id">observation-body-weight-eve-everywoman</span>
                     </td>
                 </tr>
                 <tr>
@@ -24,21 +24,9 @@
                     <td>
                         <table>
                             <tr>
-                                <td style="font-weight: bold">versionId</td>
-                                <td>
-                                    <span title="versionId">3</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">lastUpdated</td>
-                                <td>
-                                    <span title="lastUpdated">2019-11-26T20:55:09.000-05:00</span>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1cObservation</span>
+                                    <span title="profile">http://hl7.org/fhir/StructureDefinition/bodyweight</span>
                                 </td>
                             </tr>
                         </table>
@@ -55,10 +43,14 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
+                                <span title="text">Vital Signs</span>
+                            </li>
+                            <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        <span title="code">laboratory</span> )
-            
+                                    <li>
+                                        <span title="display">Vital Signs</span>  (
+                                        <span title="code">vital-signs</span> )
+          
                                     </li>
                                     <li>
                                         <span title="system">
@@ -75,10 +67,13 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
+                                <span title="text">Body weight</span>
+                            </li>
+                            <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <span title="display">Hemoglobin A1c/Hemoglobin.total in Blood</span>  (
-                                        <span title="code">4548-4</span> )
+                                        <span title="display">Body weight</span>  (
+                                        <span title="code">29463-7</span> )
           
                                     </li>
                                     <li>
@@ -105,7 +100,17 @@
                 <tr>
                     <td style="font-weight: bold">effectiveDateTime</td>
                     <td>
-                        <span title="effectiveDateTime">2019-01-18T22:33:22Z</span>
+                        <span title="effectiveDateTime">2019-01-17</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">performer</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
+                            </li>
+                        </ul>
                     </td>
                 </tr>
                 <tr>
@@ -113,7 +118,10 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="value">85</span>
+                                <span title="value">65</span>
+                            </li>
+                            <li>
+                                <span title="unit">kg</span>
                             </li>
                             <li>
                                 <span title="system">
@@ -121,7 +129,7 @@
                                 </span>
                             </li>
                             <li>
-                                <span title="code">%</span>
+                                <span title="code">kg</span>
                             </li>
                         </ul>
                     </td>
@@ -133,24 +141,31 @@
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="laboratory"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
         </coding>
+        <text value="Vital Signs"/>
     </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="4548-4"/>
-            <display value="Hemoglobin A1c/Hemoglobin.total in Blood"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
         </coding>
+        <text value="Body weight"/>
     </code>
     <subject>
         <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
         <display value="Eve Everywoman"/>
     </subject>
-    <effectiveDateTime value="2019-01-18T22:33:22Z"/>
+    <effectiveDateTime value="2019-01-17"/>
+    <performer>
+        <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+    </performer>
     <valueQuantity>
-        <value value="85"/>
+        <value value="65"/>
+        <unit value="kg"/>
         <system value="http://unitsofmeasure.org"/>
-        <code value="%"/>
+        <code value="kg"/>
     </valueQuantity>
 </Observation>

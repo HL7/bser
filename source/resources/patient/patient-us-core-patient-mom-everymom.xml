@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient
     xmlns="http://hl7.org/fhir">
-    <id value="patient-us-core-patient-eve-everywoman"/>
+    <id value="patient-us-core-patient-mom-everymom"/>
     <meta>
-        <versionId value="2"/>
+        <versionId value="1"/>
         <lastUpdated value="2019-12-11T01:30:34.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
@@ -16,13 +16,25 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <span title="id">patient-us-core-patient-eve-everywoman</span>
+                        <span title="id">patient-us-core-patient-mom-everymom</span>
                     </td>
                 </tr>
                 <tr>
                     <td style="font-weight: bold">meta</td>
                     <td>
                         <table>
+                            <tr>
+                                <td style="font-weight: bold">versionId</td>
+                                <td>
+                                    <span title="versionId">1</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">lastUpdated</td>
+                                <td>
+                                    <span title="lastUpdated">2019-11-26T00:38:27.000-05:00</span>
+                                </td>
+                            </tr>
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
@@ -91,10 +103,8 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <span title="display">Medical Record Number</span>  (
-                                        
                                         <span title="code">MR</span> )
           
-                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -109,7 +119,7 @@
                                 </span>
                             </li>
                             <li>
-                                <span title="value">1032702</span>
+                                <span title="value">5552702</span>
                             </li>
                         </ul>
                     </td>
@@ -127,13 +137,13 @@
                             <tr>
                                 <td style="font-weight: bold">family</td>
                                 <td>
-                                    <span title="family">Everywoman</span>
+                                    <span title="family">Everymom</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold">given</td>
                                 <td>
-                                    <span title="given">Eve</span>
+                                    <span title="given">Mom</span>
                                 </td>
                             </tr>
                             <tr>
@@ -158,7 +168,7 @@
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <span title="value">1-(404)555-1212</span>
+                                    <span title="value">1-(404)555-1313</span>
                                 </td>
                             </tr>
                             <tr>
@@ -183,7 +193,7 @@
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <span title="value">eve.everywoman@example.com</span>
+                                    <span title="value">mom.everymom@example.com</span>
                                 </td>
                             </tr>
                         </table>
@@ -198,7 +208,7 @@
                 <tr>
                     <td style="font-weight: bold">birthDate</td>
                     <td>
-                        <span title="birthDate">1974-11-24</span>
+                        <span title="birthDate">1982-11-24</span>
                     </td>
                 </tr>
                 <tr>
@@ -233,6 +243,29 @@
                                 <td style="font-weight: bold">country</td>
                                 <td>
                                     <span title="country">US</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">link</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">other</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="RelatedPerson-relatedperson-mom-everymom.html">RelatedPerson/relatedperson-mom-everymom</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">type</td>
+                                <td>
+                                    <span title="type">seealso</span>
                                 </td>
                             </tr>
                         </table>
@@ -278,25 +311,25 @@
             </coding>
         </type>
         <system value="http://hospital.smarthealthit.org"/>
-        <value value="1032702"/>
+        <value value="5552702"/>
     </identifier>
     <active value="true"/>
     <name>
-        <family value="Everywoman"/>
-        <given value="Eve"/>
+        <family value="Everymom"/>
+        <given value="Mom"/>
         <given value="L"/>
     </name>
     <telecom>
         <system value="phone"/>
-        <value value="1-(404)555-1212"/>
+        <value value="1-(404)555-1313"/>
         <use value="home"/>
     </telecom>
     <telecom>
         <system value="email"/>
-        <value value="eve.everywoman@example.com"/>
+        <value value="mom.everymom@example.com"/>
     </telecom>
     <gender value="female"/>
-    <birthDate value="1974-11-24"/>
+    <birthDate value="1982-11-24"/>
     <address>
         <line value="5101 Peachtree St NE"/>
         <city value="Atlanta"/>
@@ -304,4 +337,10 @@
         <postalCode value="30302"/>
         <country value="US"/>
     </address>
+    <link>
+        <other>
+            <reference value="RelatedPerson/relatedperson-mom-everymom"/>
+        </other>
+        <type value="seealso"/>
+    </link>
 </Patient>

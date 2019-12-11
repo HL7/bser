@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="112"/>
-        <lastUpdated value="2019-12-10T17:00:18.000-05:00"/>
+        <versionId value="142"/>
+        <lastUpdated value="2019-12-11T01:34:07.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -103,7 +103,7 @@
                 <reference value="StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
                 <display value="BSeR-ReferralRecipientPractitionerRole"/>
             </reference>
-            <name value="BSeR-ReferralRecipientPractitionerRole"/>
+            <name value="BSeR_ReferralRecipientPractitionerRole"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -129,22 +129,6 @@
             </reference>
             <name value="Capability Statement BSeR"/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-                <display value="Patient Eve L Everywoman"/>
-            </reference>
-            <name value="Patient Eve L Everywoman"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
-                <display value="observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
-            </reference>
-            <name value="observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
-            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -188,27 +172,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-BSeR-EmploymentStatus-eve-everywoman"/>
-                <display value="observation-BSeR-EmploymentStatus-eve-everywoman"/>
-            </reference>
-            <name value="observation-BSeR-EmploymentStatus-eve-everywoman"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
                 <display value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
             </reference>
             <name value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-BSeR-HA1cObservation-eve-everywoman"/>
-                <display value="observation-BSeR-HA1cObservation-eve-everywoman"/>
-            </reference>
-            <name value="observation-BSeR-HA1cObservation-eve-everywoman"/>
-            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -376,6 +344,122 @@
                 <display value="observation-us-core-smokingstatus-eve-everywoman"/>
             </reference>
             <name value="observation-us-core-smokingstatus-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-odh-EmploymentStatus-eve-everywoman"/>
+                <display value="observation-odh-EmploymentStatus-eve-everywoman"/>
+            </reference>
+            <name value="observation-odh-EmploymentStatus-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-HA1c-Observation-eve-everywoman"/>
+                <display value="observation-BSeR-HA1c-Observation-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-HA1c-Observation-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
+                <display value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
+                <display value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"/>
+                <display value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
+            </reference>
+            <name value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-blood-pressure-eve-everywoman"/>
+                <display value="observation-blood-pressure-eve-everywoman"/>
+            </reference>
+            <name value="observation-blood-pressure-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-body-height-eve-everywoman"/></reference>
+            <name value="observation-body-height-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-bmi-eve-everywoman"/>
+                <display value="observation-bmi-eve-everywoman"/>
+            </reference>
+            <name value="observation-bmi-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-body-weight-eve-everywoman"/>
+                <display value="observation-body-weight-eve-everywoman"/>
+            </reference>
+            <name value="observation-body-weight-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+                <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+                <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-mom-everymom"/></reference>
+            <name value="RelatedPerson Mom L Everymom"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                <display value="Patient Eve L Everywoman"/>
+            </reference>
+            <name value="Patient Eve L Everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-us-core-patient-baby-everybaby"/>
+                <display value="Patient Baby B Everybaby"/>
+            </reference>
+            <name value="Patient Baby B Everybaby"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-us-core-patient-mom-everymom"/>
+                <display value="Patient Mom L Everymom"/>
+            </reference>
+            <name value="Patient Mom L Everymom"/>
             <exampleBoolean value="true"/>
         </resource>
         <page>

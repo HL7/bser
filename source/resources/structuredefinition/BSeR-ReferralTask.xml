@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralTask"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2019-12-02T11:33:58.000-05:00"/>
+        <versionId value="15"/>
+        <lastUpdated value="2019-12-10T21:33:14.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     <name value="BSeR_ReferralTask"/>
@@ -29,20 +29,6 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-        </element>
-        <element id="Task.identifier:referralInitiatorTaskIdentifier">
-            <path value="Task.identifier"/>
-            <sliceName value="referralInitiatorTaskIdentifier"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Task.identifier:referralInitiatorTaskIdentifier.value">
-            <path value="Task.identifier.value"/>
-            <min value="1"/>
-        </element>
-        <element id="Task.identifier:referralInitiatorTaskIdentifier.assigner">
-            <path value="Task.identifier.assigner"/>
-            <min value="1"/>
         </element>
         <element id="Task.identifier:referralInitiatorTaskIdentifier">
             <path value="Task.identifier"/>

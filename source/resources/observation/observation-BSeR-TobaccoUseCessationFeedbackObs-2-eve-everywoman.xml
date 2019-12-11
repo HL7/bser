@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-12-11T01:00:29.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                <tr>
+                    <td style="font-weight: bold">id</td>
+                    <td>
+                        <span title="id">observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">meta</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">profile</td>
+                                <td>
+                                    <span title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">status</td>
+                    <td>
+                        <span title="status">final</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">code</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <span title="text">Tobacco free duration</span>
+                            </li>
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <span title="display">Time since stopped smoking (observable entity)</span>  (
+                                        <span title="code">228486009</span> )
+          
+                                    </li>
+                                    <li>
+                                        <span title="system">
+                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">subject</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li/>
+                            <li>
+                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">effectiveDateTime</td>
+                    <td>
+                        <span title="effectiveDateTime">2019-01-17</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">performer</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">valueQuantity</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <span title="value">10</span>
+                            </li>
+                            <li>
+                                <span title="unit">month</span>
+                            </li>
+                            <li>
+                                <span title="system">
+                                    <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span title="code">mo</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="228486009"/>
+            <display value="Time since stopped smoking (observable entity)"/>
+        </coding>
+        <text value="Tobacco free duration"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+        <display value="Eve Everywoman"/>
+    </subject>
+    <effectiveDateTime value="2019-01-17"/>
+    <performer>
+        <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+    </performer>
+    <valueQuantity>
+        <value value="10"/>
+        <unit value="month"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mo"/>
+    </valueQuantity>
+</Observation>

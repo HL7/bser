@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-MedicationAdministration"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-11-25T16:50:23.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-10T19:12:14.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationAdministration"/>
     <name value="BSeR_MedicationAdministration"/>
@@ -57,7 +57,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-              <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
         <element id="MedicationAdministration.effective[x]">
