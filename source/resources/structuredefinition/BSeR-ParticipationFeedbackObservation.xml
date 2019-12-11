@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ParticipationFeedbackObservation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-30T13:15:20.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-07T15:48:50.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
     <name value="BSeR_ParticipationFeedbackObservation"/>
@@ -18,6 +18,22 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+        </element>
+        <element id="Observation.status">
+            <path value="Observation.status"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>

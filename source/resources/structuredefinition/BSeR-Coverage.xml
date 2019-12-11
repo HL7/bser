@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Coverage"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2019-11-30T00:21:35.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-07T13:22:35.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
     <name value="BSeR_Coverage"/>
@@ -98,6 +98,16 @@
         <element id="Coverage.class">
             <path value="Coverage.class"/>
             <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Coverage.class.type">
+            <path value="Coverage.class.type"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Coverage.class.value">
+            <path value="Coverage.class.value"/>
+            <min value="1"/>
             <max value="1"/>
         </element>
     </differential>

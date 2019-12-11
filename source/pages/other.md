@@ -36,6 +36,10 @@ active: other
 <td><a href="Observation-observation-BSeR-HA1cObservation-eve-everywoman.html">observation-BSeR-HA1cObservation-eve-everywoman</a></td>
 </tr>
 <tr>
+<td>Observation</td>
+<td><a href="Observation-observation-us-core-smokingstatus-eve-everywoman.html">observation-us-core-smokingstatus-eve-everywoman</a></td>
+</tr>
+<tr>
 <td>Organization</td>
 <td><a href="Organization-organization-us-core-organization-acme-lab.html">Acme Labs</a></td>
 </tr>

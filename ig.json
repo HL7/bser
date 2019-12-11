@@ -231,10 +231,6 @@
 			"base": "StructureDefinition-BSeR-Organization.html",
 			"defns": "StructureDefinition-BSeR-Organization-definitions.html"
 		},
-		"StructureDefinition/BSeR-PatientAllergy": {
-			"base": "StructureDefinition-BSeR-PatientAllergy.html",
-			"defns": "StructureDefinition-BSeR-PatientAllergy-definitions.html"
-		},
 		"StructureDefinition/BSeR-PatientConsent": {
 			"base": "StructureDefinition-BSeR-PatientConsent.html",
 			"defns": "StructureDefinition-BSeR-PatientConsent-definitions.html"
@@ -255,14 +251,6 @@
 			"base": "StructureDefinition-BSeR-PractitionerRole.html",
 			"defns": "StructureDefinition-BSeR-PractitionerRole-definitions.html"
 		},
-		"StructureDefinition/BSeR-SessionsAttendedObservation": {
-			"base": "StructureDefinition-BSeR-SessionsAttendedObservation.html",
-			"defns": "StructureDefinition-BSeR-SessionsAttendedObservation-definitions.html"
-		},
-		"StructureDefinition/BSeR-SmokingStatus": {
-			"base": "StructureDefinition-BSeR-SmokingStatus.html",
-			"defns": "StructureDefinition-BSeR-SmokingStatus-definitions.html"
-		},
 		"StructureDefinition/BSeR-ArthritisFeedbackObservation": {
 			"base": "StructureDefinition-BSeR-ArthritisFeedbackObservation.html",
 			"defns": "StructureDefinition-BSeR-ArthritisFeedbackObservation-definitions.html"
@@ -282,6 +270,10 @@
 		"StructureDefinition/BSeR-ReferralRecipientPractitionerRole": {
 			"base": "StructureDefinition-BSeR-ReferralRecipientPractitionerRole.html",
 			"defns": "StructureDefinition-BSeR-ReferralRecipientPractitionerRole-definitions.html"
+		},
+		"Observation/observation-us-core-smokingstatus-eve-everywoman": {
+			"base": "Observation-observation-us-core-smokingstatus-eve-everywoman.html",
+			"defns": "Observation-observation-us-core-smokingstatus-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-ReferralServiceRequest": {
 			"base": "StructureDefinition-BSeR-ReferralServiceRequest.html",

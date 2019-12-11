@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TelcomCommunicationPreferences"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-11-27T00:10:47.000-05:00"/>
+        <versionId value="4"/>
+        <lastUpdated value="2019-12-07T16:15:13.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
     <name value="BSeR_TelcomCommunicationPreferences"/>
@@ -37,14 +37,6 @@
                 <code value="Reference"/>
             </type>
         </element>
-        <element id="Observation.value[x]">
-            <path value="Observation.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="string"/>
-            </type>
-        </element>
         <element id="Observation.component">
             <path value="Observation.component"/>
             <slicing>
@@ -73,7 +65,7 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="CodeableConcept"/>
+                <code value="string"/>
             </type>
         </element>
         <element id="Observation.component:preferredUseTime">

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-NRT-AuthorizationStatus"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-11-27T00:34:16.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-12-07T15:45:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
     <name value="BSeR_NRT_AuthorizationStatus"/>
@@ -39,7 +39,7 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="CodeableConcept"/>
+                <code value="boolean"/>
             </type>
             <binding>
                 <strength value="required"/>

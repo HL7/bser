@@ -115,10 +115,6 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-ParticipationFeedbackObservation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-BSeR-PatientAllergy.html">BSeR_PatientAllergy</a></td>
-<td>{% capture profile-intro %}{% include BSeR-PatientAllergy-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
-</tr>
-<tr>
 <td><a href="StructureDefinition-BSeR-PatientConsent.html">BSeR_PatientConsent</a></td>
 <td>{% capture profile-intro %}{% include BSeR-PatientConsent-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
@@ -161,14 +157,6 @@ active: profiles
 <tr>
 <td><a href="StructureDefinition-BSeR-ServiceDeliveryLocation.html">BSeR_ServiceDeliveryLocation</a></td>
 <td>{% capture profile-intro %}{% include BSeR-ServiceDeliveryLocation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-BSeR-SessionsAttendedObservation.html">BSeR_SessionsAttendedObservation</a></td>
-<td>{% capture profile-intro %}{% include BSeR-SessionsAttendedObservation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-BSeR-SmokingStatus.html">BSeR_SmokingStatus</a></td>
-<td>{% capture profile-intro %}{% include BSeR-SmokingStatus-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
 <td><a href="StructureDefinition-BSeR-TelcomCommunicationPreferences.html">BSeR_TelcomCommunicationPreferences</a></td>

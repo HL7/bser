@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-ArthritisFeedbackObservation-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-12-04T22:17:48.000-05:00"/>
+        <versionId value="4"/>
+        <lastUpdated value="2019-12-10T16:40:03.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     </meta>
     <text>
@@ -23,6 +23,18 @@
                     <td style="font-weight: bold">meta</td>
                     <td>
                         <table>
+                            <tr>
+                                <td style="font-weight: bold">versionId</td>
+                                <td>
+                                    <span title="versionId">3</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">lastUpdated</td>
+                                <td>
+                                    <span title="lastUpdated">2019-12-04T22:17:48.000-05:00</span>
+                                </td>
+                            </tr>
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
@@ -45,8 +57,8 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <span title="display">Arthritis (disorder)</span>  (
-                                        <span title="code">3723001</span> )
+                                        <span title="display">Pain management (procedure)</span>  (
+                                        <span title="code">278414003</span> )
           
                                     </li>
                                     <li>
@@ -89,8 +101,8 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="3723001"/>
-            <display value="Arthritis (disorder)"/>
+            <code value="278414003"/>
+            <display value="Pain management (procedure)"/>
         </coding>
     </code>
     <subject>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="103"/>
-        <lastUpdated value="2019-12-04T00:25:37.000-05:00"/>
+        <versionId value="112"/>
+        <lastUpdated value="2019-12-10T17:00:18.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -51,11 +51,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BSeR-PatientAllergy"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-PatientConsent"/></reference>
             <exampleBoolean value="false"/>
         </resource>
@@ -77,16 +72,6 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-PractitionerRole"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-SessionsAttendedObservation"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-SmokingStatus"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -384,6 +369,14 @@
             </reference>
             <name value="BSeR"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-us-core-smokingstatus-eve-everywoman"/>
+                <display value="observation-us-core-smokingstatus-eve-everywoman"/>
+            </reference>
+            <name value="observation-us-core-smokingstatus-eve-everywoman"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="toc.md"/>
