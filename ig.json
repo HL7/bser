@@ -199,10 +199,6 @@
 			"base": "StructureDefinition-BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation-definitions.html"
 		},
-		"ValueSet/BSeR-ArthritisFeedbackObservationVS": {
-			"base": "ValueSet-BSeR-ArthritisFeedbackObservationVS.html",
-			"defns": "ValueSet-BSeR-ArthritisFeedbackObservationVS-definitions.html"
-		},
 		"CodeSystem/bser": {
 			"base": "CodeSystem-bser.html",
 			"defns": "CodeSystem-bser-definitions.html"
@@ -359,6 +355,10 @@
 			"base": "ValueSet-BSeR-BreastFeedingObservationValueVS.html",
 			"defns": "ValueSet-BSeR-BreastFeedingObservationValueVS-definitions.html"
 		},
+		"StructureDefinition/BSeR-ReferralMessageBundle": {
+			"base": "StructureDefinition-BSeR-ReferralMessageBundle.html",
+			"defns": "StructureDefinition-BSeR-ReferralMessageBundle-definitions.html"
+		},
 		"Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman": {
 			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman-definitions.html"
@@ -367,9 +367,25 @@
 			"base": "CapabilityStatement-capabilitystatement-bser.html",
 			"defns": "CapabilityStatement-capabilitystatement-bser-definitions.html"
 		},
+		"Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman": {
+			"base": "Bundle-bundle-bser-arthritis-referral-feedback-eve-everywoman.html",
+			"defns": "Bundle-bundle-bser-arthritis-referral-feedback-eve-everywoman-definitions.html"
+		},
+		"Bundle/bundle-bser-arthritis-referral-everywoman": {
+			"base": "Bundle-bundle-bser-arthritis-referral-everywoman.html",
+			"defns": "Bundle-bundle-bser-arthritis-referral-everywoman-definitions.html"
+		},
 		"Patient/patient-us-core-patient-eve-everywoman": {
 			"base": "Patient-patient-us-core-patient-eve-everywoman.html",
 			"defns": "Patient-patient-us-core-patient-eve-everywoman-definitions.html"
+		},
+		"Media/BSeR-Organization": {
+			"base": "Media-BSeR-Organization.html",
+			"defns": "Media-BSeR-Organization-definitions.html"
+		},
+		"ValueSet/BSeR-TelcomCommunicationPreferencesVS": {
+			"base": "ValueSet-BSeR-TelcomCommunicationPreferencesVS.html",
+			"defns": "ValueSet-BSeR-TelcomCommunicationPreferencesVS-definitions.html"
 		},
 		"AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman": {
 			"base": "AllergyIntolerance-allergyintolerance-us-core-allergyint-eve-everywoman.html",
@@ -378,6 +394,10 @@
 		"Observation/observation-blood-pressure-eve-everywoman": {
 			"base": "Observation-observation-blood-pressure-eve-everywoman.html",
 			"defns": "Observation-observation-blood-pressure-eve-everywoman-definitions.html"
+		},
+		"Media/HarmonizedStateTransitions": {
+			"base": "Media-HarmonizedStateTransitions.html",
+			"defns": "Media-HarmonizedStateTransitions-definitions.html"
 		},
 		"Observation/observation-body-height-eve-everywoman": {
 			"base": "Observation-observation-body-height-eve-everywoman.html",
@@ -395,9 +415,17 @@
 			"base": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman-definitions.html"
 		},
+		"CodeSystem/TaskBusinessStatusCS": {
+			"base": "CodeSystem-TaskBusinessStatusCS.html",
+			"defns": "CodeSystem-TaskBusinessStatusCS-definitions.html"
+		},
 		"Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman": {
 			"base": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman-definitions.html"
+		},
+		"ValueSet/TaskBusinessStatusVS": {
+			"base": "ValueSet-TaskBusinessStatusVS.html",
+			"defns": "ValueSet-TaskBusinessStatusVS-definitions.html"
 		},
 		"Patient/patient-us-core-patient-baby-everybaby": {
 			"base": "Patient-patient-us-core-patient-baby-everybaby.html",

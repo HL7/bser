@@ -1,1 +1,1 @@
-TODO
+The FHIR MessageHeader resource is defined as "the header for a message exchange that is either requesting or responding to an action". In BSeR the message header is used to exchange the referral services request or the referral service request feedback.

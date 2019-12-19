@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Practitioner"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-18T15:46:34.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-18T20:12:40.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
     <name value="BSeR_Practitioner"/>
@@ -40,7 +40,7 @@
         </element>
         <element id="Practitioner.identifier">
             <path value="Practitioner.identifier"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="*"/>
         </element>
         <element id="Practitioner.identifier.value">
@@ -50,7 +50,7 @@
         </element>
         <element id="Practitioner.name">
             <path value="Practitioner.name"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
         </element>
         <element id="Practitioner.name.family">

@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralFeedbackComposition"/>
     <meta>
-        <versionId value="49"/>
-        <lastUpdated value="2019-11-25T18:44:29.000-05:00"/>
+        <versionId value="51"/>
+        <lastUpdated value="2019-12-18T21:54:14.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
     <name value="BSeR_ReferralFeedbackComposition"/>
     <title value="BSeR Referral Feedback Composition"/>
     <status value="active"/>
-    <description value="TODO"/>
+    <description value="The structural body and metadata of the referral feedback document."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Composition"/>

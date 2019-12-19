@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2019-12-02T23:01:53.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-19T01:32:33.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/phwg/bser"/>
     <name value="BSeR"/>
@@ -15,23 +15,15 @@
     <caseSensitive value="false"/>
     <content value="not-present"/>
     <concept>
-        <code value="medicationUse"/>
-        <display value="Appropriate use of medications"/>
+        <code value="BDTC"/>
+        <display value="Best Day To Call"/>
     </concept>
     <concept>
-        <code value="healthyEating"/>
-        <display value="Healthy eating"/>
+        <code value="BTTC"/>
+        <display value="Best Time To Call"/>
     </concept>
     <concept>
-        <code value="endurance"/>
-        <display value="improving strength, flexibility, and endurance"/>
-    </concept>
-    <concept>
-        <code value="painManagement"/>
-        <display value="Pain Management"/>
-    </concept>
-    <concept>
-        <code value="frustration"/>
-        <display value="pain, fatigue, frustration and isolation"/>
+        <code value="LMI"/>
+        <display value="Leave Message Indicator"/>
     </concept>
 </CodeSystem>

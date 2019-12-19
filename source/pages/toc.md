@@ -15,6 +15,8 @@ active: toc
             * <a href="Referral_Service_Request_Recipient.html">Referral Service Request Recipient</a>
             * <a href="Referral_Service_Request_Patient.html">Referral Service Request Patient</a>
         * <a href="Workflow_Management_Resources.html">Workflow Management Resources</a>
+            * <a href="Trigger_Events_and_State_Transitions.html">Trigger Events and State Transitions</a>
+            * <a href="State_Machine_and_Business_Status.html">State Machine and Business Status</a>
         * <a href="Referral_Service_Request_Resources.html">Referral Service Request Resources</a>
             * <a href="Referral_Service_Request_Clinical_Statements.html">Referral Service Request Clinical Statements</a>
         * <a href="Referral_Service_Request_Feedback_Resources.html">Referral Service Request Feedback Resources</a>

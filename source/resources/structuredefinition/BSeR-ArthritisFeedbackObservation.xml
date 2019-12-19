@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ArthritisFeedbackObservation"/>
     <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2019-12-18T14:04:42.000-05:00"/>
+        <versionId value="28"/>
+        <lastUpdated value="2019-12-19T02:27:51.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     <name value="BSeR_ArthritisFeedbackObservation"/>
@@ -24,9 +24,7 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
-            <patternCoding>
-                <code value="final"/>
-            </patternCoding>
+            <patternCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -36,7 +34,7 @@
             <max value="1"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-ArthritisFeedbackObservationVS"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.37/expansion/Latest"/>
             </binding>
         </element>
         <element id="Observation.subject">
@@ -72,7 +70,7 @@
             </type>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-ArthritisFeedbackObservationValueVS"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.38/expansion/Latest"/>
             </binding>
         </element>
     </differential>

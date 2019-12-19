@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2019-12-18T14:10:22.000-05:00"/>
+        <versionId value="11"/>
+        <lastUpdated value="2019-12-18T23:00:41.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
     <name value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
@@ -29,7 +29,7 @@
             <path value="Bundle.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="profile"/>
                     <path value="resource"/>
                 </discriminator>
                 <rules value="open"/>

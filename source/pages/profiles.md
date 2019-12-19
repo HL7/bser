@@ -131,6 +131,10 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-ReferralInitiatorPractitionerRole-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-BSeR-ReferralMessageBundle.html">BSeR_ReferralMessageBundle</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralMessageBundle-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR_ReferralMessageHeader</a></td>
 <td>{% capture profile-intro %}{% include BSeR-ReferralMessageHeader-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>

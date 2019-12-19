@@ -3,12 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TobaccoUseCessationFeedbackObservation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-12-10T22:10:25.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-19T01:12:54.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
     <name value="BSeR_TobaccoUseCessationFeedbackObservation"/>
     <status value="active"/>
+    <description value="A collection of observational data points provided by the referral recipient as feedback to the referral initiator. Tobacco use cessation feedback observations include quit Date, session type, and tobacco free duration.&#xA;"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>

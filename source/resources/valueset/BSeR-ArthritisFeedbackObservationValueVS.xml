@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ArthritisFeedbackObservationValueVS"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-12-17T23:04:54.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-12-18T20:17:44.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-ArthritisFeedbackObservationValueVS"/>
     <name value="BSeR_ArthritisFeedbackObservationValueVS"/>
-    <title value="Arthritis Feedback Observation Value "/>
+    <title value="Arthritis Feedback Observation Value"/>
     <status value="draft"/>
     <compose>
         <inactive value="false"/>
@@ -19,7 +19,7 @@
                 <display value="Patient's condition improved (finding)"/>
             </concept>
             <concept>
-                <code value="271299001 "/>
+                <code value="271299001"/>
                 <display value="Patient's condition worsened (finding)"/>
             </concept>
             <concept>

@@ -1,1 +1,1 @@
-TODO
+Service delivery location is physical place used by a referral initiating practitioner or referral recipient practitioner as the location to deliver services.

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2019-12-18T14:11:53.000-05:00"/>
+        <versionId value="12"/>
+        <lastUpdated value="2019-12-18T23:00:53.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
     <name value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation"/>
@@ -29,7 +29,7 @@
             <path value="Bundle.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="profile"/>
                     <path value="resource"/>
                 </discriminator>
                 <description value="Each entry in this bundle is one of the six clinical statements BloodPressure, BodyHeight, Bodyweight, EarlyChildhoodNutritionObservation, or ChildPatient."/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EarlyChildhoodNutritionObservation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-18T14:08:32.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-19T02:26:53.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
     <name value="BSeR_EarlyChildhoodNutritionObservation"/>
@@ -24,14 +24,12 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
+            <patternCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
             <min value="1"/>
             <max value="1"/>
-            <binding>
-                <strength value="required"/>
-            </binding>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>

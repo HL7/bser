@@ -1,1 +1,1 @@
-TODO
+The FHIR R4 PractitionerRole resource covers the recording of the location and types of services that Practitioners are able to provide for an organization. This profile for the PractitionerRole resource represents the practitioner in the role of referral initiator.

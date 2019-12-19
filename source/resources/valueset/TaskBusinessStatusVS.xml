@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="TaskBusinessStatusVS"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-12-19T04:39:02.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR_TaskBusinessStatusVS"/>
+    <name value="BSeR_TaskBusinessStatusVS"/>
+    <title value="Task Business Status VS"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/us/bser/ValueSet/BSeR_TaskBusinessStatusCS"/>
+            <concept>
+                <code value="2.0"/>
+                <display value="Service Request Created"/>
+            </concept>
+            <concept>
+                <code value="3.0"/>
+                <display value="Service Request Accepted"/>
+            </concept>
+            <concept>
+                <code value="4.0"/>
+                <display value="Service Request Declined"/>
+            </concept>
+            <concept>
+                <code value="5.4"/>
+                <display value="Service Request Cancellation Requested"/>
+            </concept>
+            <concept>
+                <code value="5.x"/>
+                <display value="Service Request Event State Change"/>
+            </concept>
+            <concept>
+                <code value="6.0"/>
+                <display value="Service Request Fulfillment Cancelled"/>
+            </concept>
+            <concept>
+                <code value="7.0"/>
+                <display value="Service Request Fulfillment Completed"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

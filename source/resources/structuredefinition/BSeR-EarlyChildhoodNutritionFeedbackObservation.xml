@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-12-18T02:30:26.000-05:00"/>
+        <versionId value="9"/>
+        <lastUpdated value="2019-12-19T16:33:05.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
     <name value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
@@ -24,9 +24,7 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
-            <patternCoding>
-                <code value="final"/>
-            </patternCoding>
+            <patternCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -34,7 +32,7 @@
             <max value="1"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-EarlyChildhoodNutritionFeedbackObservationVS"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.39/expansion/Latest"/>
             </binding>
         </element>
         <element id="Observation.value[x]">

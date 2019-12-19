@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TobaccoUseCessationReferralSupportingInformation"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-12-02T20:58:38.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-12-19T01:16:49.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
     <name value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
     <title value="BSeR Tobacco Use Cessation Referral Supporting Information"/>
     <status value="active"/>
+    <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a tobacco use cessation service request referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>

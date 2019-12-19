@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ServiceDeliveryLocation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-11-25T16:56:09.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-19T01:03:46.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation"/>
     <name value="BSeR_ServiceDeliveryLocation"/>
@@ -24,7 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
-    <description value="TODO"/>
+    <description value="Service delivery location is physical place used by a referral initiating practitioner or referral recipient practitioner as the location to deliver services."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>

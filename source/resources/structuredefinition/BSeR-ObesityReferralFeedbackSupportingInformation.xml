@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ObesityReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-18T15:30:21.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-12-18T23:01:25.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
     <name value="BSeR_ObesityReferralFeedbackSupportingInformation"/>
@@ -29,7 +29,7 @@
             <path value="Bundle.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="profile"/>
                     <path value="resource"/>
                 </discriminator>
                 <rules value="open"/>

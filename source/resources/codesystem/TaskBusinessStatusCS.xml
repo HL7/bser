@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="TaskBusinessStatusCS"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-12-19T04:38:44.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR_TaskBusinessStatusCS"/>
+    <name value="BSeR_TaskBusinessStatusCS"/>
+    <title value="Task Business Status Code System"/>
+    <status value="draft"/>
+    <publisher value="HL7 PHWG"/>
+    <caseSensitive value="false"/>
+    <compositional value="false"/>
+    <versionNeeded value="false"/>
+    <content value="not-present"/>
+    <concept>
+        <code value="2.0"/>
+        <display value="Service Request Created"/>
+    </concept>
+    <concept>
+        <code value="3.0"/>
+        <display value="Service Request Accepted"/>
+    </concept>
+    <concept>
+        <code value="4.0"/>
+        <display value="Service Request Declined"/>
+    </concept>
+    <concept>
+        <code value="5.4"/>
+        <display value="Service Request Cancellation Requested"/>
+    </concept>
+    <concept>
+        <code value="5.x"/>
+        <display value="Service Request Fulfillment Initiated"/>
+    </concept>
+    <concept>
+        <code value="6.0"/>
+        <display value="Service Request Fulfillment Cancelled"/>
+    </concept>
+    <concept>
+        <code value="7.0"/>
+        <display value="Service Request Fulfillment Completed"/>
+    </concept>
+</CodeSystem>

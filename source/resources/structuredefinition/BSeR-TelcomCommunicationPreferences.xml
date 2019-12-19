@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TelcomCommunicationPreferences"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-12-07T16:15:13.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-19T01:46:48.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
     <name value="BSeR_TelcomCommunicationPreferences"/>
     <title value="BSeR Telcom Communication Preferences"/>
     <status value="active"/>
+    <description value="A collection of observations about the patient's preferences with regard to contact via telecommunication (phone/email) such as best Day To Call, best Time To Call, and leave Message Indicator.&#xA;"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -23,11 +24,18 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
+            <patternCoding>
+                <code value="final"/>
+            </patternCoding>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
             <min value="1"/>
             <max value="1"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="leaveMessageleaveMessageIndicatorIndicator"/>
+            </binding>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -35,6 +43,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
         <element id="Observation.component">

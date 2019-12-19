@@ -16,12 +16,12 @@ The following profiles have been defined for the FHIR Messaging Option:
 
 #### Profiles
 <ul>
-  <li><a href="StructureDefinition-BSeR-message-bundle.html">BSeR Message Bundle (TODO)</a></li>
+  <li><a href="StructureDefinition-BSeR-ReferralMessageBundle.html">BSeR Referral Message Bundle</a></li>
   <li><a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR Referral MessageHeader</a></li>
   <li><a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a></li>
 </ul>
 
-The first resource in the <a href="StructureDefinition-BSeR-message-bundle.html">BSeR Message Bundle (TODO)</a> is the <a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR Referral MessageHeader</a> and the focus of the <a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR Referral MessageHeader</a> is the <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a>. The focus of the <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a> is the <a href="StructureDefinition-BSeR-ReferralServiceRequest.html">BSeR Referral ServiceRequest</a>.
+The first resource in the <a href="StructureDefinition-BSeR-ReferralMessageBundle.html">BSeR Referral Message Bundle</a> is the <a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR Referral MessageHeader</a> and the focus of the <a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR Referral MessageHeader</a> is the <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a>. The focus of the <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a> is the <a href="StructureDefinition-BSeR-ReferralServiceRequest.html">BSeR Referral ServiceRequest</a>.
 
 
 ### Basic REST Option

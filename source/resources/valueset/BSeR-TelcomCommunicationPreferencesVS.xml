@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-TelcomCommunicationPreferencesVS"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2019-12-19T01:41:10.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
+    <name value="BSeR_TelcomCommunicationPreferencesVS"/>
+    <title value="BSeR Telcom Communication Preferences VS"/>
+    <status value="draft"/>
+    <compose>
+        <inactive value="false"/>
+        <include>
+            <system value="http://hl7.org/fhir/phwg/bser"/>
+            <concept>
+                <code value="BDTC"/>
+                <display value="Best Day To Call"/>
+            </concept>
+            <concept>
+                <code value="BTTC"/>
+                <display value="Best Time To Call"/>
+            </concept>
+            <concept>
+                <code value="lmi"/>
+                <display value="leave Message Indicator"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

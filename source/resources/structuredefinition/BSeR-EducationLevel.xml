@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EducationLevel"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-18T14:57:07.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-12-18T22:12:11.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     <name value="BSeR_EducationLevel"/>
@@ -45,7 +45,7 @@
             <type>
                 <code value="code"/>
             </type>
-            <fixedString value="completed"/>
+            <fixedCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>

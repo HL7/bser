@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="208"/>
-        <lastUpdated value="2019-12-18T15:47:30.000-05:00"/>
+        <versionId value="227"/>
+        <lastUpdated value="2019-12-19T15:56:10.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -314,14 +314,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/BSeR-ArthritisFeedbackObservationVS"/>
-                <display value="BSeR Arthritis Feedback Observation Value Set"/>
-            </reference>
-            <name value="BSeR Arthritis Feedback Observation Value Set"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="CodeSystem/bser"/>
                 <display value="BSeR"/>
             </reference>
@@ -454,14 +446,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/BSeR-ArthritisFeedbackObservationValueVS"/>
-                <display value="Arthritis Feedback Observation Value "/>
-            </reference>
-            <name value="Arthritis Feedback Observation Value "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/BSeR-EarlyChildhoodNutritionFeedbackObservationVS"/>
                 <display value="BSeR Early Childhood Nutrition Feedback Observation VS"/>
             </reference>
@@ -474,6 +458,62 @@
                 <display value="BSeR Breast Feeding Observation Value VS"/>
             </reference>
             <name value="BSeR Breast Feeding Observation Value VS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralMessageBundle"/>
+                <display value="BSeR Referral Message Bundle"/>
+            </reference>
+            <name value="BSeR Referral Message Bundle"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-arthritis-referral-everywoman"/>
+                <display value="bundle-bser-arthritis-referral-everywoman"/>
+            </reference>
+            <name value="bundle-bser-arthritis-referral-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/BSeR-ArthritisFeedbackObservationValueVS"/>
+                <display value="BSeR_ArthritisFeedbackObservationValueVS"/>
+            </reference>
+            <name value="BSeR_ArthritisFeedbackObservationValueVS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
+                <display value="BSeR Telcom Communication Preferences VS"/>
+            </reference>
+            <name value="BSeR Telcom Communication Preferences VS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/TaskBusinessStatusCS"/>
+                <display value="Task Business Status Code System"/>
+            </reference>
+            <name value="Task Business Status Code System"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/TaskBusinessStatusVS"/>
+                <display value="Task Business Status VS"/>
+            </reference>
+            <name value="Task Business Status VS"/>
             <exampleBoolean value="false"/>
         </resource>
         <page>
@@ -528,6 +568,16 @@
                     <nameUrl value="Workflow_Management_Resources.html"/>
                     <title value="Workflow Management Resources"/>
                     <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="Trigger_Events_and_State_Transitions.html"/>
+                        <title value="Trigger Events and State Transitions"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="State_Machine_and_Business_Status.html"/>
+                        <title value="State Machine and Business Status"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
                 <page>
                     <nameUrl value="Referral_Service_Request_Resources.html"/>

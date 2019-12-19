@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-body-height-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-12-11T01:42:23.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-18T20:28:04.000-05:00"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
     </meta>
     <text>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <span title="id">observation-body-height-eve-everywoman</span>
+                        <div title="id">observation-body-height-eve-everywoman</div>
                     </td>
                 </tr>
                 <tr>
@@ -24,9 +24,21 @@
                     <td>
                         <table>
                             <tr>
+                                <td style="font-weight: bold">versionId</td>
+                                <td>
+                                    <div title="versionId">2</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">lastUpdated</td>
+                                <td>
+                                    <div title="lastUpdated">2019-12-11T01:42:23.000-05:00</div>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/StructureDefinition/vitalsigns</span>
+                                    <div title="profile">http://hl7.org/fhir/StructureDefinition/vitalsigns</div>
                                 </td>
                             </tr>
                         </table>
@@ -35,7 +47,7 @@
                 <tr>
                     <td style="font-weight: bold">status</td>
                     <td>
-                        <span title="status">final</span>
+                        <div title="status">final</div>
                     </td>
                 </tr>
                 <tr>
@@ -43,19 +55,19 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="text">Vital Signs</span>
+                                <div title="text">Vital Signs</div>
                             </li>
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <span title="display">Vital Signs</span>  (
-                                        <span title="code">vital-signs</span> )
+                                        <div title="display">Vital Signs</div>  (
+                                        <div title="code">vital-signs</div> )
           
                                     </li>
                                     <li>
-                                        <span title="system">
+                                        <div title="system">
                                             <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                                        </span>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
@@ -67,19 +79,19 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="text">Body height - lying</span>
+                                <div title="text">Body height lying</div>
                             </li>
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <span title="display">Body height - lying</span>  (
-                                        <span title="code">8306-3</span> )
+                                        <div title="display">Body height lying</div>  (
+                                        <div title="code">8306-3</div> )
           
                                     </li>
                                     <li>
-                                        <span title="system">
+                                        <div title="system">
                                             <a href="http://loinc.org">http://loinc.org</a>
-                                        </span>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
@@ -100,7 +112,7 @@
                 <tr>
                     <td style="font-weight: bold">effectiveDateTime</td>
                     <td>
-                        <span title="effectiveDateTime">2019-01-17</span>
+                        <div title="effectiveDateTime">2019-01-17</div>
                     </td>
                 </tr>
                 <tr>
@@ -118,18 +130,18 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="value">21</span>
+                                <div title="value">21</div>
                             </li>
                             <li>
-                                <span title="unit">in</span>
+                                <div title="unit">in</div>
                             </li>
                             <li>
-                                <span title="system">
+                                <div title="system">
                                     <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                                </span>
+                                </div>
                             </li>
                             <li>
-                                <span title="code">[in_i]</span>
+                                <div title="code">[in_i]</div>
                             </li>
                         </ul>
                     </td>
@@ -150,9 +162,9 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="8306-3"/>
-            <display value="Body height - lying"/>
+            <display value="Body height lying"/>
         </coding>
-        <text value="Body height - lying"/>
+        <text value="Body height lying"/>
     </code>
     <subject>
         <reference value="Patient/patient-us-core-patient-baby-everybaby"/>

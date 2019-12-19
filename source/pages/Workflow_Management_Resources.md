@@ -19,4 +19,4 @@ The electronic exchange of the referral service request and associated referral 
 Task and its associated references are included in general RESTful Submit even if the message header and message bundle are not utilized. 
 
 
-[Next Page](Referral_Service_Request_Resources.html)
+[Next Page](Trigger_Events_and_State_Transitions.html)

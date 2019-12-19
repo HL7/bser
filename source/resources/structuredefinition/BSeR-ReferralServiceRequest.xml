@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2019-12-10T22:39:25.000-05:00"/>
+        <versionId value="15"/>
+        <lastUpdated value="2019-12-18T23:11:32.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
     <title value="BSeR Referral Service Request"/>
     <status value="active"/>
-    <description value="TODO"/>
+    <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="ServiceRequest"/>
