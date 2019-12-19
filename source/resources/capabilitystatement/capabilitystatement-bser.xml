@@ -1322,8 +1322,8 @@
             </interaction>
         </resource>
         <resource>
-            <type value="MedicationAdministration"/>
-            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationAdministration"/>
+            <type value="MedicationStatement"/>
+            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
             <interaction>
                 <code value="create"/>
             </interaction>
@@ -1396,8 +1396,8 @@
             </interaction>
         </resource>
         <resource>
-            <type value="MedicationAdministration"/>
-            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationAdministration"/>
+            <type value="MedicationStatement"/>
+            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
             <interaction>
                 <code value="create"/>
             </interaction>
