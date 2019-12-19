@@ -331,10 +331,6 @@
 			"base": "Observation-observation-odh-EmploymentStatus-eve-everywoman.html",
 			"defns": "Observation-observation-odh-EmploymentStatus-eve-everywoman-definitions.html"
 		},
-		"ValueSet/BSeR-ArthritisFeedbackObservationValueVS": {
-			"base": "ValueSet-BSeR-ArthritisFeedbackObservationValueVS.html",
-			"defns": "ValueSet-BSeR-ArthritisFeedbackObservationValueVS-definitions.html"
-		},
 		"StructureDefinition/BSeR-ReferralFeedbackComposition": {
 			"base": "StructureDefinition-BSeR-ReferralFeedbackComposition.html",
 			"defns": "StructureDefinition-BSeR-ReferralFeedbackComposition-definitions.html"
@@ -343,17 +339,9 @@
 			"base": "Observation-observation-BSeR-HA1c-Observation-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-HA1c-Observation-eve-everywoman-definitions.html"
 		},
-		"ValueSet/BSeR-EarlyChildhoodNutritionFeedbackObservationVS": {
-			"base": "ValueSet-BSeR-EarlyChildhoodNutritionFeedbackObservationVS.html",
-			"defns": "ValueSet-BSeR-EarlyChildhoodNutritionFeedbackObservationVS-definitions.html"
-		},
 		"Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman": {
 			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman-definitions.html"
-		},
-		"ValueSet/BSeR-BreastFeedingObservationValueVS": {
-			"base": "ValueSet-BSeR-BreastFeedingObservationValueVS.html",
-			"defns": "ValueSet-BSeR-BreastFeedingObservationValueVS-definitions.html"
 		},
 		"StructureDefinition/BSeR-ReferralMessageBundle": {
 			"base": "StructureDefinition-BSeR-ReferralMessageBundle.html",

@@ -13,9 +13,6 @@ active: terminology
 
 ### Value Sets
 
-- [Arthritis Feedback Observation Value](ValueSet-BSeR-ArthritisFeedbackObservationValueVS.html)
-- [BSeR Breast Feeding Observation Value VS](ValueSet-BSeR-BreastFeedingObservationValueVS.html)
-- [BSeR Early Childhood Nutrition Feedback Observation VS](ValueSet-BSeR-EarlyChildhoodNutritionFeedbackObservationVS.html)
 - [BSeR Telcom Communication Preferences VS](ValueSet-BSeR-TelcomCommunicationPreferencesVS.html)
 - [Task Business Status VS](ValueSet-TaskBusinessStatusVS.html)
 
