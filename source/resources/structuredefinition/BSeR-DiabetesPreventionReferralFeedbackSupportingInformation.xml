@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-11-30T14:23:13.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-17T22:16:58.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
     <name value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation"/>
     <title value="BSeR Diabetes Prevention Referral Feedback Supporting Information"/>
     <status value="active"/>
+    <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>
@@ -23,6 +24,9 @@
             <path value="Bundle.type"/>
             <min value="1"/>
             <max value="1"/>
+            <patternCoding>
+                <code value="collection"/>
+            </patternCoding>
         </element>
         <element id="Bundle.entry">
             <path value="Bundle.entry"/>

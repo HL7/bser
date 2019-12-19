@@ -1,0 +1,1 @@
+A measure of the amount or percentage of hemoglobin A1c in the patient's blood. This observation is used a supporting information primarily for diabetes prevention referrals.

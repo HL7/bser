@@ -4,16 +4,12 @@ layout: default
 active: Referral Service Request Resources
 ---
 
-[Previous Page](Referral_Service_Request_Task.html)
+[Previous Page](Workflow_Management_Resources.html)
 
-The resource profiles included in this section are used to convey information required for a referral request transaction. In keeping with the concept of parsimony, the profiles in this section are grouped into those common to all referral request transactions and those that are program specific (i.e., included only in referral transactions sent to a referral recipients functioning within the auspices of a given program area).
+Each referral service request includes references to a patient (subject), referral initiator (requester), referral recipient (performer), and a reference to a bundle of supporting information consistent with the scope of the referral use case as designated in ServiceRequest.code. The supporting information bundles are mutually exclusive. Each bundle functions as a use case-specific information content profile.  
+The following diagram depicts referral service requests and the six use cases covered in the BSeR IG. Additional use cases are introduced via the creation of additional use case supporting information bundles. 
+
+<center><table><tr><td><img src="Referral Service Request.png" /></td></tr></table></center>
 
 
------
-
-
-The partitioning of profiles into common and program specific referral request transaction profiles is illustrated in the following chart:
-
-**TODO add link to graphic here**
-
-[Next Page](Referral_Service_Request.html)
+[Next Page](Referral_Service_Request_Clinical_Statements.html)

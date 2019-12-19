@@ -4,16 +4,14 @@ layout: default
 active: Referral Service Request Feedback Resources
 ---
 
-[Previous Page](Referral_Service_Request_Supporting_Information_Bundles.html)
+[Previous Page](Referral_Service_Request_Clinical_Statements.html)
 
-The resource profiles included in this section are used to convey information required for a referral feedback transaction. In keeping with the concept of parsimony, the profiles in this section are grouped into those common to all referral feedback transactions and those that are program specific (i.e., included only in referral feedback transactions sent by referral recipients functioning within the auspices of a given program area).
+Each referral feedback composition includes references to a patient (subject), referral recipient (author), and two composition sections - the feedback summary and feedback supporting information. The feedback summary section includes a reference to the referral service request (focus). The supporting information section includes a reference to a bundle of supporting information consistent with the scope of the referral use case as designated in the referral service request code. 
+
+The following diagram depicts referral feedback composition, its two sections, and the six use cases covered in the BSeR IG. 
+
+<center><table><tr><td><img src="Service Request Feedback.png" style="width:100%;"/></td></tr></table>
+</center>
 
 
------
-
-
-The partitioning of profiles into common and program specific referral feedback transaction profiles is illustrated in the following chart:
-
-**TODO add graphic here**
-
-[Next Page](Referral_Service_Request_Feedback.html)
+[Next Page](Referral_Service_Request_Feedback_Clinical_Statements.html)

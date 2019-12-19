@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ObesityReferralSupportingInformation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-02T21:02:16.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-18T15:32:14.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
     <name value="BSeR_ObesityReferralSupportingInformation"/>
     <title value="BSeR Obesity Referral Supporting Information"/>
     <status value="active"/>
+    <description value="A bundle of clinical statements authored by the referral initiator as supporting information for an obesity referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>

@@ -1,1 +1,1 @@
-TODO
+A observation regarding the consent status of the patient with regard to treatment authorization or protected health information sharing.

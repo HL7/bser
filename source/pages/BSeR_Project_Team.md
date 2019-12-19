@@ -32,6 +32,7 @@ active: BSeR Project Team
 * Salimah Shakir, Hi3 Solutions
 * Rishi Tarar, Northrop Grumman Corporation
 * Adam Holmes, MITRE
+* Sarah Gaunt, Lantana Consulting Group
 
 **BSeR Project Realm**
 

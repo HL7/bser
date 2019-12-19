@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EducationLevel"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2019-12-10T19:11:58.000-05:00"/>
+        <versionId value="9"/>
+        <lastUpdated value="2019-12-18T14:57:07.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     <name value="BSeR_EducationLevel"/>
@@ -24,7 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
-    <description value="TODO"/>
+    <description value="The highest level of education achieved by the patient. This is an optional demographic element of the patient included in all referral types."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>

@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-12-07T15:39:22.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-18T02:30:26.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
     <name value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
     <title value="BSeR Early Childhood Nutrition Feedback Observation"/>
     <status value="active"/>
+    <description value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -23,11 +24,18 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
+            <patternCoding>
+                <code value="final"/>
+            </patternCoding>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
             <min value="1"/>
             <max value="1"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-EarlyChildhoodNutritionFeedbackObservationVS"/>
+            </binding>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -36,6 +44,16 @@
             <type>
                 <code value="string"/>
             </type>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1047.73/expansion/Latest"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

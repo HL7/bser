@@ -4,7 +4,7 @@ layout: default
 active: Transport Options
 ---
 
-[Previous Page](Implementation_Bundles.html)
+[Previous Page](Bi-directional_Service_e-Referral_Transactions.html)
 
 There are two supported transport options that can be used individually or in combination. This flexibility is needed to support point-to-point transport as well as transport through Health Information Exchanges and Health Information Networks.
 

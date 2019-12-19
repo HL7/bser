@@ -1,1 +1,1 @@
-TODO
+An organization resource playing the roles of practitioner affiliated organization, patient coverage payer organization, or patient employer organization.

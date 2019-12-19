@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ParticipationFeedbackObservation"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-12-07T15:48:50.000-05:00"/>
+        <versionId value="4"/>
+        <lastUpdated value="2019-12-18T15:37:56.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
     <name value="BSeR_ParticipationFeedbackObservation"/>
     <title value="BSeR Participation Feedback Observation"/>
     <status value="active"/>
+    <description value="An observation regarding the level of participation in the services provided by the referral recipient, such as the number of sessions attended."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>

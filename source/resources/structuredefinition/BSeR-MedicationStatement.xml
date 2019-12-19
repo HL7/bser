@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-MedicationStatement"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-11-27T00:28:32.000-05:00"/>
+        <versionId value="4"/>
+        <lastUpdated value="2019-12-18T15:19:57.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
     <name value="BSeR_MedicationStatement"/>
     <title value="BSeR Medication Statement"/>
     <status value="active"/>
+    <description value="A statement of a patient medication history used as supporting information for a patient service request referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="MedicationStatement"/>

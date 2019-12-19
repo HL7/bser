@@ -1,1 +1,1 @@
-TODO
+The highest level of education achieved by the patient. This is an optional demographic element of the patient included in all referral types.

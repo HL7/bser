@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-HypertensionReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-11-30T14:49:02.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-12-18T15:12:07.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
     <name value="BSeR_HypertensionReferralFeedbackSupportingInformation"/>
     <title value="BSeR Hypertension Referral Feedback Supporting Information"/>
     <status value="active"/>
+    <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator regarding a hypertension referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>

@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EarlyChildhoodNutritionObservation"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-11-27T00:20:07.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2019-12-18T14:08:32.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
     <name value="BSeR_EarlyChildhoodNutritionObservation"/>
     <title value="BSeR Early Childhood Nutrition Observation"/>
     <status value="active"/>
+    <description value="A collection of observational data points authored by the referral initiator as part of supporting information related to an early childhood nutrition referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="142"/>
-        <lastUpdated value="2019-12-11T01:34:07.000-05:00"/>
+        <versionId value="208"/>
+        <lastUpdated value="2019-12-18T15:47:30.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -24,11 +24,6 @@
         <grouping>
             <name value="default"/>
         </grouping>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-MedicationAdministration"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-Diagnosis"/></reference>
@@ -67,11 +62,6 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ServiceDeliveryLocation"/></reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-PractitionerRole"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -462,6 +452,30 @@
             <name value="Patient Mom L Everymom"/>
             <exampleBoolean value="true"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/BSeR-ArthritisFeedbackObservationValueVS"/>
+                <display value="Arthritis Feedback Observation Value "/>
+            </reference>
+            <name value="Arthritis Feedback Observation Value "/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/BSeR-EarlyChildhoodNutritionFeedbackObservationVS"/>
+                <display value="BSeR Early Childhood Nutrition Feedback Observation VS"/>
+            </reference>
+            <name value="BSeR Early Childhood Nutrition Feedback Observation VS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/BSeR-BreastFeedingObservationValueVS"/>
+                <display value="BSeR Breast Feeding Observation Value VS"/>
+            </reference>
+            <name value="BSeR Breast Feeding Observation Value VS"/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="toc.md"/>
             <title value="Table of Contents"/>
@@ -482,12 +496,17 @@
                 <generation value="markdown"/>
             </page>
             <page>
+                <nameUrl value="Scope_and_Context.html"/>
+                <title value="Scope and Context"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
                 <nameUrl value="Resource_Profiles.html"/>
                 <title value="Resource Profiles"/>
                 <generation value="markdown"/>
                 <page>
-                    <nameUrl value="Common_Resources.html"/>
-                    <title value="Common Resources"/>
+                    <nameUrl value="Referral_Participant_Resources.html"/>
+                    <title value="Referral Participant Resources"/>
                     <generation value="markdown"/>
                     <page>
                         <nameUrl value="Referral_Service_Request_Initiator.html"/>
@@ -509,34 +528,14 @@
                     <nameUrl value="Workflow_Management_Resources.html"/>
                     <title value="Workflow Management Resources"/>
                     <generation value="markdown"/>
-                    <page>
-                        <nameUrl value="Message_Bundle_and_Message_Header.html"/>
-                        <title value="Message Bundle and Message Header"/>
-                        <generation value="markdown"/>
-                    </page>
-                    <page>
-                        <nameUrl value="Referral_Service_Request_Task.html"/>
-                        <title value="Referral Service Request Task"/>
-                        <generation value="markdown"/>
-                    </page>
                 </page>
                 <page>
                     <nameUrl value="Referral_Service_Request_Resources.html"/>
                     <title value="Referral Service Request Resources"/>
                     <generation value="markdown"/>
                     <page>
-                        <nameUrl value="Referral_Service_Request.html"/>
-                        <title value="Referral Service Request"/>
-                        <generation value="markdown"/>
-                    </page>
-                    <page>
                         <nameUrl value="Referral_Service_Request_Clinical_Statements.html"/>
                         <title value="Referral Service Request Clinical Statements"/>
-                        <generation value="markdown"/>
-                    </page>
-                    <page>
-                        <nameUrl value="Referral_Service_Request_Supporting_Information_Bundles.html"/>
-                        <title value="Referral Service Request Supporting Information Bundles"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
@@ -545,25 +544,20 @@
                     <title value="Referral Service Request Feedback Resources"/>
                     <generation value="markdown"/>
                     <page>
-                        <nameUrl value="Referral_Service_Request_Feedback.html"/>
-                        <title value="Referral Service Request Feedback"/>
-                        <generation value="markdown"/>
-                    </page>
-                    <page>
                         <nameUrl value="Referral_Service_Request_Feedback_Clinical_Statements.html"/>
                         <title value="Referral Service Request Feedback Clinical Statements"/>
                         <generation value="markdown"/>
                     </page>
-                    <page>
-                        <nameUrl value="Referral_Service_Request_Feedback_Supporting_Information_Bundles.html"/>
-                        <title value="Referral Service Request Feedback Supporting Information Bundles"/>
-                        <generation value="markdown"/>
-                    </page>
+                </page>
+                <page>
+                    <nameUrl value="Service_Request_and_Referral_Feedback_Supporting_Information_Bundles.html"/>
+                    <title value="Service Request and Referral Feedback Supporting Information Bundles"/>
+                    <generation value="markdown"/>
                 </page>
             </page>
             <page>
-                <nameUrl value="Implementation_Bundles.html"/>
-                <title value="Implementation Bundles"/>
+                <nameUrl value="Bi-directional_Service_e-Referral_Transactions.html"/>
+                <title value="Bi-directional Service e-Referral Transactions"/>
                 <generation value="markdown"/>
             </page>
             <page>

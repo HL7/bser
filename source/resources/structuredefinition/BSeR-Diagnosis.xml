@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Diagnosis"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-10T19:11:43.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-12-17T22:33:41.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     <name value="BSeR_Diagnosis"/>
@@ -24,7 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
-    <description value="TODO"/>
+    <description value="A health condition of the referral patient. "/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>
@@ -55,7 +55,8 @@
             <min value="1"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
             </binding>
         </element>
         <element id="Condition.code.coding">

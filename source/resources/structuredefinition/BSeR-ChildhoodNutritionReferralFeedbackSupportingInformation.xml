@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-01T23:25:38.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-12-18T14:10:22.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
     <name value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
     <title value="BSeR Early Childhood Nutrition Referral Feedback Supporting Information"/>
     <status value="active"/>
+    <description value="A bundle of clinical statements providing supporting information for a referral recipient's feedback on an early childhood nutrition referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>

@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-HA1C-Observation"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-12-10T20:28:15.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-12-18T15:00:42.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation"/>
     <name value="BSeR_HA1C_Observation"/>
     <title value="BSeR HA1C Observation"/>
     <status value="active"/>
+    <description value="A measure of the amount or percentage of hemoglobin A1c in the patient's blood. This observation is used a supporting information primarily for diabetes prevention referrals."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>

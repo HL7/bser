@@ -13,7 +13,10 @@ active: terminology
 
 ### Value Sets
 
+- [Arthritis Feedback Observation Value ](ValueSet-BSeR-ArthritisFeedbackObservationValueVS.html)
 - [BSeR Arthritis Feedback Observation Value Set](ValueSet-BSeR-ArthritisFeedbackObservationVS.html)
+- [BSeR Breast Feeding Observation Value VS](ValueSet-BSeR-BreastFeedingObservationValueVS.html)
+- [BSeR Early Childhood Nutrition Feedback Observation VS](ValueSet-BSeR-EarlyChildhoodNutritionFeedbackObservationVS.html)
 
 
 ### Code Systems

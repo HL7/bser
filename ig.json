@@ -211,17 +211,53 @@
 			"base": "Media-Activities.html",
 			"defns": "Media-Activities-definitions.html"
 		},
-		"StructureDefinition/BSeR-MedicationAdministration": {
-			"base": "StructureDefinition-BSeR-MedicationAdministration.html",
-			"defns": "StructureDefinition-BSeR-MedicationAdministration-definitions.html"
+		"Media/ParticipantResources": {
+			"base": "Media-ParticipantResources.html",
+			"defns": "Media-ParticipantResources-definitions.html"
+		},
+		"Media/ReferralInitiator": {
+			"base": "Media-ReferralInitiator.html",
+			"defns": "Media-ReferralInitiator-definitions.html"
+		},
+		"Media/ReferralRecipient": {
+			"base": "Media-ReferralRecipient.html",
+			"defns": "Media-ReferralRecipient-definitions.html"
+		},
+		"Media/ReferralPatient": {
+			"base": "Media-ReferralPatient.html",
+			"defns": "Media-ReferralPatient-definitions.html"
+		},
+		"Media/WorkflowManagementResources": {
+			"base": "Media-WorkflowManagementResources.html",
+			"defns": "Media-WorkflowManagementResources-definitions.html"
+		},
+		"Media/ReferralServiceRequest": {
+			"base": "Media-ReferralServiceRequest.html",
+			"defns": "Media-ReferralServiceRequest-definitions.html"
+		},
+		"Media/BSeRFHIRIGProilfes": {
+			"base": "Media-BSeRFHIRIGProilfes.html",
+			"defns": "Media-BSeRFHIRIGProilfes-definitions.html"
+		},
+		"Media/Scope": {
+			"base": "Media-Scope.html",
+			"defns": "Media-Scope-definitions.html"
 		},
 		"StructureDefinition/BSeR-Diagnosis": {
 			"base": "StructureDefinition-BSeR-Diagnosis.html",
 			"defns": "StructureDefinition-BSeR-Diagnosis-definitions.html"
 		},
+		"Media/TaskStateMachine": {
+			"base": "Media-TaskStateMachine.html",
+			"defns": "Media-TaskStateMachine-definitions.html"
+		},
 		"StructureDefinition/BSeR-EducationLevel": {
 			"base": "StructureDefinition-BSeR-EducationLevel.html",
 			"defns": "StructureDefinition-BSeR-EducationLevel-definitions.html"
+		},
+		"Media/StateTransitionTriggerEvents": {
+			"base": "Media-StateTransitionTriggerEvents.html",
+			"defns": "Media-StateTransitionTriggerEvents-definitions.html"
 		},
 		"StructureDefinition/BSeR-Coverage": {
 			"base": "StructureDefinition-BSeR-Coverage.html",
@@ -247,17 +283,25 @@
 			"base": "StructureDefinition-BSeR-ServiceDeliveryLocation.html",
 			"defns": "StructureDefinition-BSeR-ServiceDeliveryLocation-definitions.html"
 		},
-		"StructureDefinition/BSeR-PractitionerRole": {
-			"base": "StructureDefinition-BSeR-PractitionerRole.html",
-			"defns": "StructureDefinition-BSeR-PractitionerRole-definitions.html"
-		},
 		"StructureDefinition/BSeR-ArthritisFeedbackObservation": {
 			"base": "StructureDefinition-BSeR-ArthritisFeedbackObservation.html",
 			"defns": "StructureDefinition-BSeR-ArthritisFeedbackObservation-definitions.html"
 		},
+		"Media/ReferralRequestClinicalStatements": {
+			"base": "Media-ReferralRequestClinicalStatements.html",
+			"defns": "Media-ReferralRequestClinicalStatements-definitions.html"
+		},
+		"Media/RequestFeedbackClinicalStatements": {
+			"base": "Media-RequestFeedbackClinicalStatements.html",
+			"defns": "Media-RequestFeedbackClinicalStatements-definitions.html"
+		},
 		"StructureDefinition/BSeR-ReferralMessageHeader": {
 			"base": "StructureDefinition-BSeR-ReferralMessageHeader.html",
 			"defns": "StructureDefinition-BSeR-ReferralMessageHeader-definitions.html"
+		},
+		"Media/SupportingInformationBundles": {
+			"base": "Media-SupportingInformationBundles.html",
+			"defns": "Media-SupportingInformationBundles-definitions.html"
 		},
 		"StructureDefinition/BSeR-ReferralTask": {
 			"base": "StructureDefinition-BSeR-ReferralTask.html",
@@ -266,6 +310,10 @@
 		"StructureDefinition/BSeR-ReferralInitiatorPractitionerRole": {
 			"base": "StructureDefinition-BSeR-ReferralInitiatorPractitionerRole.html",
 			"defns": "StructureDefinition-BSeR-ReferralInitiatorPractitionerRole-definitions.html"
+		},
+		"Media/BSeRIGReferralUseCases": {
+			"base": "Media-BSeRIGReferralUseCases.html",
+			"defns": "Media-BSeRIGReferralUseCases-definitions.html"
 		},
 		"StructureDefinition/BSeR-ReferralRecipientPractitionerRole": {
 			"base": "StructureDefinition-BSeR-ReferralRecipientPractitionerRole.html",
@@ -279,9 +327,17 @@
 			"base": "StructureDefinition-BSeR-ReferralServiceRequest.html",
 			"defns": "StructureDefinition-BSeR-ReferralServiceRequest-definitions.html"
 		},
+		"Media/ServiceRequestFeedback": {
+			"base": "Media-ServiceRequestFeedback.html",
+			"defns": "Media-ServiceRequestFeedback-definitions.html"
+		},
 		"Observation/observation-odh-EmploymentStatus-eve-everywoman": {
 			"base": "Observation-observation-odh-EmploymentStatus-eve-everywoman.html",
 			"defns": "Observation-observation-odh-EmploymentStatus-eve-everywoman-definitions.html"
+		},
+		"ValueSet/BSeR-ArthritisFeedbackObservationValueVS": {
+			"base": "ValueSet-BSeR-ArthritisFeedbackObservationValueVS.html",
+			"defns": "ValueSet-BSeR-ArthritisFeedbackObservationValueVS-definitions.html"
 		},
 		"StructureDefinition/BSeR-ReferralFeedbackComposition": {
 			"base": "StructureDefinition-BSeR-ReferralFeedbackComposition.html",
@@ -291,9 +347,17 @@
 			"base": "Observation-observation-BSeR-HA1c-Observation-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-HA1c-Observation-eve-everywoman-definitions.html"
 		},
+		"ValueSet/BSeR-EarlyChildhoodNutritionFeedbackObservationVS": {
+			"base": "ValueSet-BSeR-EarlyChildhoodNutritionFeedbackObservationVS.html",
+			"defns": "ValueSet-BSeR-EarlyChildhoodNutritionFeedbackObservationVS-definitions.html"
+		},
 		"Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman": {
 			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman.html",
 			"defns": "Observation-observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman-definitions.html"
+		},
+		"ValueSet/BSeR-BreastFeedingObservationValueVS": {
+			"base": "ValueSet-BSeR-BreastFeedingObservationValueVS.html",
+			"defns": "ValueSet-BSeR-BreastFeedingObservationValueVS-definitions.html"
 		},
 		"Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman": {
 			"base": "Observation-observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman.html",

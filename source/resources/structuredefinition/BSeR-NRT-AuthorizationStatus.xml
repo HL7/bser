@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-NRT-AuthorizationStatus"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-07T15:45:08.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-18T15:25:00.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
     <name value="BSeR_NRT_AuthorizationStatus"/>
     <title value="BSeR NRT Authorization Status"/>
     <status value="active"/>
+    <description value="An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy. "/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>

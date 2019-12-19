@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ArthritisFeedbackObservationValueVS"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-17T23:04:54.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-ArthritisFeedbackObservationValueVS"/>
+    <name value="BSeR_ArthritisFeedbackObservationValueVS"/>
+    <title value="Arthritis Feedback Observation Value "/>
+    <status value="draft"/>
+    <compose>
+        <inactive value="false"/>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="268910001"/>
+                <display value="Patient's condition improved (finding)"/>
+            </concept>
+            <concept>
+                <code value="271299001 "/>
+                <display value="Patient's condition worsened (finding)"/>
+            </concept>
+            <concept>
+                <code value="359748005"/>
+                <display value="Patient's condition unchanged (finding)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

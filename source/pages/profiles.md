@@ -87,10 +87,6 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-HypertensionReferralSupportingInformation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-BSeR-MedicationAdministration.html">BSeR_MedicationAdministration</a></td>
-<td>{% capture profile-intro %}{% include BSeR-MedicationAdministration-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
-</tr>
-<tr>
 <td><a href="StructureDefinition-BSeR-MedicationStatement.html">BSeR_MedicationStatement</a></td>
 <td>{% capture profile-intro %}{% include BSeR-MedicationStatement-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
@@ -121,10 +117,6 @@ active: profiles
 <tr>
 <td><a href="StructureDefinition-BSeR-Practitioner.html">BSeR_Practitioner</a></td>
 <td>{% capture profile-intro %}{% include BSeR-Practitioner-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-BSeR-PractitionerRole.html">BSeR_PractitionerRole</a></td>
-<td>{% capture profile-intro %}{% include BSeR-PractitionerRole-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
 <td><a href="StructureDefinition-BSeR-ReferralActivityStatus.html">BSeR_ReferralActivityStatus</a></td>

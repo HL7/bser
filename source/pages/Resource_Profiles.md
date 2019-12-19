@@ -4,21 +4,18 @@ layout: default
 active: Resource Profiles
 ---
 
-[Previous Page](Acknowledgements.html)
+[Previous Page](Scope_and_Context.html)
 
-The resources profiles defined in this specification are based on the FHIR R4 Standard. Many of the BSeR Resource Profiles have profiles defined in the U.S. Core FHIR Implementation Guide as their base definition.
+The FHIR R4 resource profiles defined in the BSeR IG are grouped into the following four packages:
 
-This specification defines two transactions types, a Referral Request and a Referral Feedback. Some resource profiles are common to both transaction types and others are transaction specific. Transaction specific profiles consist of program specific profiles and common non-program specific profiles.
+<center><table><tr><td><img src="BSeR FHIR IG Proilfes.png" style="width:100%;"/></td></tr></table></center>
 
-## Implementation Bundles
-A key concept adopted in the design of the BSeR FHIR Profiles is the concept of parsimony. Program area referral and feedback transactions contain common transaction data and program specific data. A critical design requirement is to limit the exchange of clinical information sent to program areas to only that data that pertain to the program. This is accomplished by grouping clinical content profiles into program specific bundles. Each bundle is a unique collection of the program specific supporting clinical information required for a request or feedback transaction.
+* **Referral Participant Resources** - the set of FHIR resources representing the entities participating in the bi-directional exchange of referral transactions.
 
-**TODO link to graphic here**
+* **Workflow Management Resources** - the set of FHIR resources used to enable the bundling of  resources and managing tasks related to the bi-directional exchange of referral transactions.
 
-This specification defines two transactions types, a Referral Request Transaction and a Referral Feedback Transaction. Some resource profiles are common to both transaction types and others are transaction specific. Transaction specific profiles consist of program-specific profiles and common non-program specific profiles. The Common Transaction Profiles provide information pertaining to the parties involved in the referral process: Referral Initiator, Referral Recipient, Patient, and Funding Source.
+* **Referral Service Request Resources** - the set of FHIR resources used in referral service request transactions.
 
-The table below illustrates how the transaction and program specific profiles are distributed across the six program areas covered in this iteration of the BSeR FHIR IG.
+* **Referral Feedback Document Resources** - the set of FHIR resources used in the service request feedback transactions.
 
-**TODO link to graphic here**
-
-[Next Page](Common_Resources.html)
+[Next Page](Referral_Participant_Resources.html)
