@@ -3,32 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="TaskBusinessStatusVS"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-12-19T23:42:44.000-05:00"/>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="user^dMG-NXHH^read"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^read"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^write"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="user^t395^write"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="user^dMG-NXHH^write"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="user^t395^read"/>
-        </security>
+        <versionId value="5"/>
+        <lastUpdated value="2019-12-20T03:36:14.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ValueSet/TaskBusinessStatusVS"/>
     <name value="TaskBusinessStatusVS"/>

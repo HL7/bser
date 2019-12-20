@@ -159,6 +159,10 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-TelcomCommunicationPreferences-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-BSeR-TobaccoUseCessationFeedbackMedication.html">BSeR_TobaccoUseCessationFeedbackMedication</a></td>
+<td>{% capture profile-intro %}{% include BSeR-TobaccoUseCessationFeedbackMedication-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-BSeR-TobaccoUseCessationFeedbackObservation.html">BSeR_TobaccoUseCessationFeedbackObservation</a></td>
 <td>{% capture profile-intro %}{% include BSeR-TobaccoUseCessationFeedbackObservation-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>

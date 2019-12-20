@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ArthritisFeedbackObservation"/>
     <meta>
-        <versionId value="30"/>
-        <lastUpdated value="2019-12-19T23:25:16.000-05:00"/>
+        <versionId value="31"/>
+        <lastUpdated value="2019-12-20T08:20:42.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     <name value="BSeR_ArthritisFeedbackObservation"/>
@@ -55,7 +55,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="The value of the observation made. Value can be expressed a boolean, code value, or string."/>
+            <short value="The value of the observation made. Value can be expressed as boolean, code value, or string."/>
             <definition value="The value of the observation made. Value can be expressed a boolean, code value, or string."/>
             <min value="1"/>
             <max value="1"/>

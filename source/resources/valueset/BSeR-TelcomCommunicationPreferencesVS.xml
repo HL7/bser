@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TelcomCommunicationPreferencesVS"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-19T23:42:23.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-12-20T03:33:02.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
     <name value="BSeR_TelcomCommunicationPreferencesVS"/>
@@ -23,8 +23,8 @@
                 <display value="Best Time To Call"/>
             </concept>
             <concept>
-                <code value="lmi"/>
-                <display value="leave Message Indicator"/>
+                <code value="LMI"/>
+                <display value="Leave Message Indicator"/>
             </concept>
         </include>
     </compose>

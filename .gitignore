@@ -76,3 +76,5 @@ resources/ig-new.json
 resources/ig-new.xml
 resources/ig-validation-parameters.json
 /bundle
+/active-tables ig.json
+/active-tables-header.html

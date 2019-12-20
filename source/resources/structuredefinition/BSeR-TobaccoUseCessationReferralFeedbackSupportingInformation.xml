@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-19T01:14:29.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-20T09:38:42.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
     <name value="BSeR_TobaccoUseCessationReferralFeedbackSupportingInformation"/>
@@ -49,7 +49,7 @@
             <max value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication"/>
             </type>
         </element>
         <element id="Bundle.entry:TobaccoUseCessationFeedbackObservation">

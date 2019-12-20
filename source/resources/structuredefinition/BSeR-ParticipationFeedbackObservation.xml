@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ParticipationFeedbackObservation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-19T23:30:05.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-12-20T10:25:23.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
     <name value="BSeR_ParticipationFeedbackObservation"/>
@@ -24,6 +24,7 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
+            <patternCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -34,8 +35,19 @@
                 <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.47/expansion/Latest"/>
             </binding>
         </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Quantity"/>
             </type>

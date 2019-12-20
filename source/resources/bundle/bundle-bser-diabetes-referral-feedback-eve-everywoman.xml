@@ -1,796 +1,802 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="bundle-bser-diabetes-referral-feedback-eve-everywoman" />
-  <meta>
-    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation" />
-  </meta>
-  <type value="collection" />
-  <entry>
-    <fullUrl value="Observation/observation-body-height-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-body-height-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <div title="id">observation-body-height-eve-everywoman</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">versionId</td>
-                      <td>
-                        <div title="versionId">2</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">lastUpdated</td>
-                      <td>
-                        <div title="lastUpdated">2019-12-11T01:42:23.000-05:00</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <div title="profile">http://hl7.org/fhir/StructureDefinition/vitalsigns</div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <div title="status">final</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="text">Vital Signs</div>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <div title="display">Vital Signs</div>  (
-                          <div title="code"
-                          >vital-signs</div> )
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2019-12-20T03:41:11.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
+    </meta>
+    <type value="collection"/>
+    <entry>
+        <fullUrl value="Observation/observation-body-height-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-body-height-eve-everywoman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table
+                            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <div title="id">observation-body-height-eve-everywoman</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">versionId</td>
+                                            <td>
+                                                <div title="versionId">2</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">lastUpdated</td>
+                                            <td>
+                                                <div title="lastUpdated">2019-12-11T01:42:23.000-05:00</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <div title="profile">http://hl7.org/fhir/StructureDefinition/vitalsigns</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <div title="status">final</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Vital Signs</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Vital Signs</div>  (
                           
-                        </li>
-                        <li>
-                          <div title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="text">Body height lying</div>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <div title="display">Body height lying</div>  (
-                          <div title="code"
-                          >8306-3</div> )
+                                                    <div title="code">vital-signs</div> )
                           
-                        </li>
-                        <li>
-                          <div title="system">
-                            <a href="http://loinc.org">http://loinc.org</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-baby-everybaby.html">Baby Everybaby</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <div title="effectiveDateTime">2019-01-17</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueQuantity</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="value">21</div>
-                    </li>
-                    <li>
-                      <div title="unit">in</div>
-                    </li>
-                    <li>
-                      <div title="system">
-                        <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div title="code">[in_i]</div>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="vital-signs" />
-            <display value="Vital Signs" />
-          </coding>
-          <text value="Vital Signs" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="8306-3" />
-            <display value="Body height lying" />
-          </coding>
-          <text value="Body height lying" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-baby-everybaby" />
-          <display value="Baby Everybaby" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="Practitioner/practitioner-us-core-henry-seven" />
-        </performer>
-        <valueQuantity>
-          <value value="21" />
-          <unit value="in" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="[in_i]" />
-        </valueQuantity>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-bmi-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-bmi-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <span title="id">observation-bmi-eve-everywoman</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <span title="profile">http://hl7.org/fhir/StructureDefinition/bmi</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <span title="status">final</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Vital Signs</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display">Vital Signs</span>  (
+                        
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Body height lying</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Body height lying</div>  (
                           
-                          <span title="code"
-                            >vital-signs</span> )
+                                                    <div title="code">8306-3</div> )
                           
-                          
-                        </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">BMI</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Body mass index (BMI) [Ratio]</span>  (
-                          
-                          <span title="code"
-                            >39156-5</span> )
+                        
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-baby-everybaby.html">Baby Everybaby</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <div title="effectiveDateTime">2019-01-17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="value">21</div>
+                                        </li>
+                                        <li>
+                                            <div title="unit">in</div>
+                                        </li>
+                                        <li>
+                                            <div title="system">
+                                                <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div title="code">[in_i]</div>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8306-3"/>
+                        <display value="Body height lying"/>
+                    </coding>
+                    <text value="Body height lying"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-baby-everybaby"/>
+                    <display value="Baby Everybaby"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+                </performer>
+                <valueQuantity>
+                    <value value="21"/>
+                    <unit value="in"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="[in_i]"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-bmi-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-bmi-eve-everywoman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table
+                            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <span title="id">observation-bmi-eve-everywoman</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <span title="profile">http://hl7.org/fhir/StructureDefinition/bmi</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <span title="status">final</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Vital Signs</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Vital Signs</span>  (
                           
                           
-                        </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://loinc.org">http://loinc.org</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <span title="effectiveDateTime">2019-01-17</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueQuantity</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="value">16.2</span>
-                    </li>
-                    <li>
-                      <span title="unit">kg/m2</span>
-                    </li>
-                    <li>
-                      <span title="system">
-                        <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                      </span>
-                    </li>
-                    <li>
-                      <span title="code">kg/m2</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="vital-signs" />
-            <display value="Vital Signs" />
-          </coding>
-          <text value="Vital Signs" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="39156-5" />
-            <display value="Body mass index (BMI) [Ratio]" />
-          </coding>
-          <text value="BMI" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="Practitioner/practitioner-us-core-henry-seven" />
-        </performer>
-        <valueQuantity>
-          <value value="16.2" />
-          <unit value="kg/m2" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="kg/m2" />
-        </valueQuantity>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-body-weight-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-body-weight-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <span title="id">observation-body-weight-eve-everywoman</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <span title="profile">http://hl7.org/fhir/StructureDefinition/bodyweight</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <span title="status">final</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Vital Signs</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display">Vital Signs</span>  (
-                          
-                          <span title="code"
-                            >vital-signs</span> )
+                                                    <span title="code">vital-signs</span> )
                           
                           
-                        </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Body weight</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display">Body weight</span>  (
-                          
-                          <span title="code"
-                            >29463-7</span> )
+                        
+                                                </li>
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">BMI</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Body mass index (BMI) [Ratio]</span>  (
                           
                           
-                        </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://loinc.org">http://loinc.org</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <span title="effectiveDateTime">2019-01-17</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueQuantity</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="value">65</span>
-                    </li>
-                    <li>
-                      <span title="unit">kg</span>
-                    </li>
-                    <li>
-                      <span title="system">
-                        <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                      </span>
-                    </li>
-                    <li>
-                      <span title="code">kg</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="vital-signs" />
-            <display value="Vital Signs" />
-          </coding>
-          <text value="Vital Signs" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="29463-7" />
-            <display value="Body weight" />
-          </coding>
-          <text value="Body weight" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="Practitioner/practitioner-us-core-henry-seven" />
-        </performer>
-        <valueQuantity>
-          <value value="65" />
-          <unit value="kg" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="kg" />
-        </valueQuantity>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
-      <resource>
-        <Observation xmlns="http://hl7.org/fhir">
-          <id value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
-          <meta>
-            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
-          </meta>
-          <text>
-            <status value="generated"/>
-            <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-              <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-                <tr>
-                  <td style="font-weight: bold">id</td>
-                  <td>
-                    <div title="id">observation-ParticipationFeedbackObservation-1-eve-everywoman</div> 
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">meta</td>
-                  <td>
-                    <table>
-                      <tr>
-                        <td style="font-weight: bold">profile</td>
-                        <td>
-                          <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation</div> 
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">status</td>
-                  <td>
-                    <div title="status">final</div> 
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">code</td>
-                  <td>
-                    <ul style="list-style:none; padding-left:0; margin:0 0;">
-                      <li>
-                        <div title="text">Number of appointments attended (observable entity)</div> 
-                      </li>
-                      <li>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                          <li>
-                            <div title="display">Number of appointments attended (observable entity)</div>  (<div title="code">298057009</div> )
-                          </li>
-                          <li>
-                            <div title="system">
-                              <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                            </div>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">subject</td>
-                  <td>
-                    <ul style="list-style:none; padding-left:0; margin:0 0;">
-                      <li/>
-                      <li>
-                        <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">effectiveDateTime</td>
-                  <td>
-                    <div title="effectiveDateTime">2019-01-17</div> 
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">performer</td>
-                  <td>
-                    <ul style="list-style:none; padding-left:0; margin:0 0;">
-                      <li>
-                        <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">valueQuantity</td>
-                  <td>
-                    <table>
-                      <tr>
-                        <td style="font-weight: bold">value</td>
-                        <td>
-                          <div title="value">6</div> 
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </text>
-          <status value="final"/>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="298057009"/>
-              <display value="Number of appointments attended (observable entity)"/>
-            </coding>
-            <text value="Number of appointments attended (observable entity)"/>
-          </code>
-          <subject>
-            <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-            <display value="Eve Everywoman"/>
-          </subject>
-          <effectiveDateTime value="2019-01-17"/>
-          <performer>
-            <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
-          </performer>
-          <valueQuantity>
-            <value value="6"/>
-          </valueQuantity>
-        </Observation>
-      </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
-      <resource>
-        <Observation xmlns="http://hl7.org/fhir">
-          <id value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
-          <meta>
-            <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
-          </meta>
-          <text>
-            <status value="generated"/>
-            <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-              <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-                <tr>
-                  <td style="font-weight: bold">id</td>
-                  <td>
-                    <div title="id">observation-ParticipationFeedbackObservation-2-eve-everywoman</div> 
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">meta</td>
-                  <td>
-                    <table>
-                      <tr>
-                        <td style="font-weight: bold">profile</td>
-                        <td>
-                          <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation</div> 
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">status</td>
-                  <td>
-                    <div title="status">final</div> 
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">code</td>
-                  <td>
-                    <ul style="list-style:none; padding-left:0; margin:0 0;">
-                      <li>
-                        <div title="text">Number of appointments missed (observable entity)</div> 
-                      </li>
-                      <li>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                          <li>
-                            <div title="display">Number of appointments missed (observable entity)</div>  (<div title="code">298058004</div> )
-                          </li>
-                          <li>
-                            <div title="system">
-                              <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                            </div>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">subject</td>
-                  <td>
-                    <ul style="list-style:none; padding-left:0; margin:0 0;">
-                      <li/>
-                      <li>
-                        <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">effectiveDateTime</td>
-                  <td>
-                    <div title="effectiveDateTime">2019-01-17</div> 
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">performer</td>
-                  <td>
-                    <ul style="list-style:none; padding-left:0; margin:0 0;">
-                      <li>
-                        <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-weight: bold">valueQuantity</td>
-                  <td>
-                    <table>
-                      <tr>
-                        <td style="font-weight: bold">value</td>
-                        <td>
-                          <div title="value">1</div> 
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </text>
-          <status value="final"/>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="298058004"/>
-              <display value="Number of appointments missed (observable entity)"/>
-            </coding>
-            <text value="Number of appointments missed (observable entity)"/>
-          </code>
-          <subject>
-            <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-            <display value="Eve Everywoman"/>
-          </subject>
-          <effectiveDateTime value="2019-01-17"/>
-          <performer>
-            <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
-          </performer>
-          <valueQuantity>
-            <value value="1"/>
-          </valueQuantity>
-        </Observation>
-      </resource>
-  </entry>
+                                                    <span title="code">39156-5</span> )
+                          
+                          
+                        
+                                                </li>
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <span title="effectiveDateTime">2019-01-17</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="value">16.2</span>
+                                        </li>
+                                        <li>
+                                            <span title="unit">kg/m2</span>
+                                        </li>
+                                        <li>
+                                            <span title="system">
+                                                <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span title="code">kg/m2</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="39156-5"/>
+                        <display value="Body mass index (BMI) [Ratio]"/>
+                    </coding>
+                    <text value="BMI"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+                </performer>
+                <valueQuantity>
+                    <value value="16.2"/>
+                    <unit value="kg/m2"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="kg/m2"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-body-weight-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-body-weight-eve-everywoman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table
+                            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <span title="id">observation-body-weight-eve-everywoman</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <span title="profile">http://hl7.org/fhir/StructureDefinition/bodyweight</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <span title="status">final</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Vital Signs</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Vital Signs</span>  (
+                          
+                          
+                                                    <span title="code">vital-signs</span> )
+                          
+                          
+                        
+                                                </li>
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Body weight</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Body weight</span>  (
+                          
+                          
+                                                    <span title="code">29463-7</span> )
+                          
+                          
+                        
+                                                </li>
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <span title="effectiveDateTime">2019-01-17</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="value">65</span>
+                                        </li>
+                                        <li>
+                                            <span title="unit">kg</span>
+                                        </li>
+                                        <li>
+                                            <span title="system">
+                                                <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span title="code">kg</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="29463-7"/>
+                        <display value="Body weight"/>
+                    </coding>
+                    <text value="Body weight"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+                </performer>
+                <valueQuantity>
+                    <value value="65"/>
+                    <unit value="kg"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="kg"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table
+                            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <div title="id">observation-ParticipationFeedbackObservation-1-eve-everywoman</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <div title="status">final</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Number of appointments attended (observable entity)</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Number of appointments attended (observable entity)</div>  (
+                                                    <div title="code">298057009</div> )
+                          
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <div title="effectiveDateTime">2019-01-17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">value</td>
+                                            <td>
+                                                <div title="value">6</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="298057009"/>
+                        <display value="Number of appointments attended (observable entity)"/>
+                    </coding>
+                    <text value="Number of appointments attended (observable entity)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                </performer>
+                <valueQuantity>
+                    <value value="6"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table
+                            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <div title="id">observation-ParticipationFeedbackObservation-2-eve-everywoman</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <div title="status">final</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Number of appointments missed (observable entity)</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Number of appointments missed (observable entity)</div>  (
+                                                    <div title="code">298058004</div> )
+                          
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <div title="effectiveDateTime">2019-01-17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">value</td>
+                                            <td>
+                                                <div title="value">1</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="298058004"/>
+                        <display value="Number of appointments missed (observable entity)"/>
+                    </coding>
+                    <text value="Number of appointments missed (observable entity)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                </performer>
+                <valueQuantity>
+                    <value value="1"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
 </Bundle>
-

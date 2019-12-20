@@ -1,0 +1,1 @@
+A statement regarding the use of a tobacco cessation medication. Medication.status indicates active or inactive use of the medication indicated in medication.code.
