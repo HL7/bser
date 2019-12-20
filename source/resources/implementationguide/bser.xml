@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="266"/>
-        <lastUpdated value="2019-12-20T09:45:46.000-05:00"/>
+        <versionId value="268"/>
+        <lastUpdated value="2019-12-20T16:42:50.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -575,16 +575,27 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-BSeR-TelcomComm-eve-everywoman"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication"/>
                 <display value="BSeR_TobaccoUseCessationFeedbackMedication"/>
             </reference>
             <name value="BSeR_TobaccoUseCessationFeedbackMedication"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-TelcomComm-eve-everywoman"/>
+                <display value="observation-BSeR-TelcomComm-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-TelcomComm-eve-everywoman"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="toc.md"/>

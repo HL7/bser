@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TobaccoUseCessationReferralSupportingInformation"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2019-12-19T01:16:49.000-05:00"/>
+        <versionId value="9"/>
+        <lastUpdated value="2019-12-20T15:57:27.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
     <name value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
