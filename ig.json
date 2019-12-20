@@ -212,6 +212,10 @@
 			"base": "StructureDefinition-BSeR-TobaccoUseCessationFeedbackMedication.html",
 			"defns": "StructureDefinition-BSeR-TobaccoUseCessationFeedbackMedication-definitions.html"
 		},
+		"Bundle/bundle-bser-nutrition-referral-feedback-eve-everywoman": {
+			"base": "Bundle-bundle-bser-nutrition-referral-feedback-eve-everywoman.html",
+			"defns": "Bundle-bundle-bser-nutrition-referral-feedback-eve-everywoman-definitions.html"
+		},
 		"StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation": {
 			"base": "StructureDefinition-BSeR-ArthritisReferralFeedbackSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-ArthritisReferralFeedbackSupportingInformation-definitions.html"
