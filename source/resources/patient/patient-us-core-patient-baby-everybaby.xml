@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-us-core-patient-baby-everybaby"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-12-11T01:43:13.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-19T21:35:36.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>

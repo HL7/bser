@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-body-height-baby-everybaby"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2019-12-19T22:45:30.000-05:00"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                <tr>
+                    <td style="font-weight: bold">id</td>
+                    <td>
+                        <div title="id">observation-body-height-baby-everybaby</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">status</td>
+                    <td>
+                        <div title="status">final</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">category</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <div title="text">Vital Signs</div>
+                            </li>
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <div title="display">Vital Signs</div>  (
+                                        <div title="code">vital-signs</div> )
+          
+                                    </li>
+                                    <li>
+                                        <div title="system">
+                                            <a href="http://hl7.org/fhir/StructureDefinition/vitalsigns">http://hl7.org/fhir/StructureDefinition/vitalsigns</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">code</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <div title="text">Body height lying</div>
+                            </li>
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <div title="display">Body height lying</div>  (
+                                        <div title="code">8306-3</div> )
+          
+                                    </li>
+                                    <li>
+                                        <div title="system">
+                                            <a href="http://loinc.org">http://loinc.org</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">subject</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li/>
+                            <li>
+                                <a href="Patient-patient-us-core-patient-baby-everybaby.html">Baby Everybaby</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">effectiveDateTime</td>
+                    <td>
+                        <div title="effectiveDateTime">2019-01-17</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">performer</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <a href="Practitioner-practitioner-us-core-henry-seven.html">Practitioner/practitioner-us-core-henry-seven</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">valueQuantity</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <div title="value">21</div>
+                            </li>
+                            <li>
+                                <div title="unit">in</div>
+                            </li>
+                            <li>
+                                <div title="system">
+                                    <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div title="code">[in_i]</div>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="8306-3"/>
+            <display value="Body height lying"/>
+        </coding>
+        <text value="Body height lying"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-us-core-patient-baby-everybaby"/>
+        <display value="Baby Everybaby"/>
+    </subject>
+    <effectiveDateTime value="2019-01-17"/>
+    <performer>
+        <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+    </performer>
+    <valueQuantity>
+        <value value="21"/>
+        <unit value="in"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[in_i]"/>
+    </valueQuantity>
+</Observation>

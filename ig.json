@@ -99,9 +99,21 @@
 		}
 	},
 	"resources": {
+		"Observation/observation-body-height-baby-everybaby": {
+			"base": "Observation-observation-body-height-baby-everybaby.html",
+			"defns": "Observation-observation-body-height-baby-everybaby-definitions.html"
+		},
+		"Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman": {
+			"base": "Observation-observation-ParticipationFeedbackObservation-1-eve-everywoman.html",
+			"defns": "Observation-observation-ParticipationFeedbackObservation-1-eve-everywoman-definitions.html"
+		},
 		"RelatedPerson/relatedperson-mom-everymom": {
 			"base": "RelatedPerson-relatedperson-mom-everymom.html",
 			"defns": "RelatedPerson-relatedperson-mom-everymom-definitions.html"
+		},
+		"Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman": {
+			"base": "Observation-observation-ParticipationFeedbackObservation-2-eve-everywoman.html",
+			"defns": "Observation-observation-ParticipationFeedbackObservation-2-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-ArthritisReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-ArthritisReferralSupportingInformation.html",
@@ -111,6 +123,10 @@
 			"base": "Patient-patient-us-core-patient-mom-everymom.html",
 			"defns": "Patient-patient-us-core-patient-mom-everymom-definitions.html"
 		},
+		"Bundle/bundle-bser-diabetes-referral-feedback-eve-everywoman": {
+			"base": "Bundle-bundle-bser-diabetes-referral-feedback-eve-everywoman.html",
+			"defns": "Bundle-bundle-bser-diabetes-referral-feedback-eve-everywoman-definitions.html"
+		},
 		"StructureDefinition/BSeR-HypertensionReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-HypertensionReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-HypertensionReferralSupportingInformation-definitions.html"
@@ -118,6 +134,10 @@
 		"StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-EarlyChildhoodNutritionReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-EarlyChildhoodNutritionReferralSupportingInformation-definitions.html"
+		},
+		"Media/WorkflowSequence": {
+			"base": "Media-WorkflowSequence.html",
+			"defns": "Media-WorkflowSequence-definitions.html"
 		},
 		"StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-DiabetesPreventionReferralSupportingInformation.html",
@@ -127,6 +147,14 @@
 			"base": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-TobaccoUseCessationReferralSupportingInformation-definitions.html"
 		},
+		"PractitionerRole/practitionerrole-bser-referral-initiator": {
+			"base": "PractitionerRole-practitionerrole-bser-referral-initiator.html",
+			"defns": "PractitionerRole-practitionerrole-bser-referral-initiator-definitions.html"
+		},
+		"PractitionerRole/practitionerrole-bser-referral-recipient": {
+			"base": "PractitionerRole-practitionerrole-bser-referral-recipient.html",
+			"defns": "PractitionerRole-practitionerrole-bser-referral-recipient-definitions.html"
+		},
 		"StructureDefinition/BSeR-ObesityReferralSupportingInformation": {
 			"base": "StructureDefinition-BSeR-ObesityReferralSupportingInformation.html",
 			"defns": "StructureDefinition-BSeR-ObesityReferralSupportingInformation-definitions.html"
@@ -135,25 +163,49 @@
 			"base": "Organization-organization-us-core-organization-acme-lab.html",
 			"defns": "Organization-organization-us-core-organization-acme-lab-definitions.html"
 		},
+		"Bundle/bundle-bser-diabetes-referral-eve-everywoman": {
+			"base": "Bundle-bundle-bser-diabetes-referral-eve-everywoman.html",
+			"defns": "Bundle-bundle-bser-diabetes-referral-eve-everywoman-definitions.html"
+		},
 		"Organization/organization-us-core-organization-saint-luke": {
 			"base": "Organization-organization-us-core-organization-saint-luke.html",
 			"defns": "Organization-organization-us-core-organization-saint-luke-definitions.html"
+		},
+		"Bundle/bundle-bser-tobacco-referral-eve-everywoman": {
+			"base": "Bundle-bundle-bser-tobacco-referral-eve-everywoman.html",
+			"defns": "Bundle-bundle-bser-tobacco-referral-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-TelcomCommunicationPreferences": {
 			"base": "StructureDefinition-BSeR-TelcomCommunicationPreferences.html",
 			"defns": "StructureDefinition-BSeR-TelcomCommunicationPreferences-definitions.html"
 		},
+		"Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman": {
+			"base": "Bundle-bundle-bser-tobacco-referral-feedback-eve-everywoman.html",
+			"defns": "Bundle-bundle-bser-tobacco-referral-feedback-eve-everywoman-definitions.html"
+		},
 		"StructureDefinition/BSeR-EarlyChildhoodNutritionObservation": {
 			"base": "StructureDefinition-BSeR-EarlyChildhoodNutritionObservation.html",
 			"defns": "StructureDefinition-BSeR-EarlyChildhoodNutritionObservation-definitions.html"
+		},
+		"Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman": {
+			"base": "Observation-observation-BSeR-NutritionFeedbackObs-1-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-NutritionFeedbackObs-1-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-MedicationStatement": {
 			"base": "StructureDefinition-BSeR-MedicationStatement.html",
 			"defns": "StructureDefinition-BSeR-MedicationStatement-definitions.html"
 		},
+		"Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman": {
+			"base": "Observation-observation-BSeR-NutritionFeedbackObs-2-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-NutritionFeedbackObs-2-eve-everywoman-definitions.html"
+		},
 		"StructureDefinition/BSeR-NRT-AuthorizationStatus": {
 			"base": "StructureDefinition-BSeR-NRT-AuthorizationStatus.html",
 			"defns": "StructureDefinition-BSeR-NRT-AuthorizationStatus-definitions.html"
+		},
+		"Observation/observation-BSeR-TelcomComm-eve-everywoman": {
+			"base": "Observation-observation-BSeR-TelcomComm-eve-everywoman.html",
+			"defns": "Observation-observation-BSeR-TelcomComm-eve-everywoman-definitions.html"
 		},
 		"StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation": {
 			"base": "StructureDefinition-BSeR-ArthritisReferralFeedbackSupportingInformation.html",
@@ -327,10 +379,6 @@
 			"base": "Media-ServiceRequestFeedback.html",
 			"defns": "Media-ServiceRequestFeedback-definitions.html"
 		},
-		"Observation/observation-odh-EmploymentStatus-eve-everywoman": {
-			"base": "Observation-observation-odh-EmploymentStatus-eve-everywoman.html",
-			"defns": "Observation-observation-odh-EmploymentStatus-eve-everywoman-definitions.html"
-		},
 		"StructureDefinition/BSeR-ReferralFeedbackComposition": {
 			"base": "StructureDefinition-BSeR-ReferralFeedbackComposition.html",
 			"defns": "StructureDefinition-BSeR-ReferralFeedbackComposition-definitions.html"
@@ -425,7 +473,7 @@
 		{
 			"location": "https://www.hl7.org/fhir/us/core",
 			"name": "USCore",
-			"version": "3.0.0",
+			"version": "3.1.0",
 			"package": "hl7.fhir.us.core"
 		}
 	]

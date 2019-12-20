@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Coverage"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2019-12-17T22:12:28.000-05:00"/>
+        <versionId value="12"/>
+        <lastUpdated value="2019-12-19T22:56:17.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
     <name value="BSeR_Coverage"/>
@@ -68,7 +68,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-RelatedPerson"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
             </type>
         </element>
         <element id="Coverage.beneficiary">

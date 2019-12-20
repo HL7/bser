@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-body-weight-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-12-11T00:54:44.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2019-12-19T21:31:09.000-05:00"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
     </meta>
     <text>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="228"/>
-        <lastUpdated value="2019-12-19T16:58:14.000-05:00"/>
+        <versionId value="261"/>
+        <lastUpdated value="2019-12-20T03:18:34.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -15,10 +15,11 @@
     <description value="The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. The goal of the BSeR project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting. &#xA;&#xA;"/>
     <packageId value="hl7.fhir.us.bser"/>
     <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.0"/>
     <dependsOn>
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.0.0"/>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="3.0.0"/>
+        <version value="3.1.0"/>
     </dependsOn>
     <definition>
         <grouping>
@@ -330,14 +331,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-odh-EmploymentStatus-eve-everywoman"/>
-                <display value="observation-odh-EmploymentStatus-eve-everywoman"/>
-            </reference>
-            <name value="observation-odh-EmploymentStatus-eve-everywoman"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/observation-BSeR-HA1c-Observation-eve-everywoman"/>
                 <display value="observation-BSeR-HA1c-Observation-eve-everywoman"/>
             </reference>
@@ -491,6 +484,99 @@
             </reference>
             <name value="Task Business Status VS"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-body-height-baby-everybaby"/>
+                <display value="observation-body-height-baby-everybaby"/>
+            </reference>
+            <name value="observation-body-height-baby-everybaby"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+                <display value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+                <display value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                <display value="practitionerrole-bser-referral-recipient"/>
+            </reference>
+            <name value="practitionerrole-bser-referral-recipient"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
+                <display value="practitionerrole-bser-referral-initiator"/>
+            </reference>
+            <name value="practitionerrole-bser-referral-initiator"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-diabetes-referral-eve-everywoman"/>
+                <display value="bundle-bser-diabetes-referral-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-diabetes-referral-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-tobacco-referral-eve-everywoman"/>
+                <display value="bundle-bser-tobacco-referral-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-tobacco-referral-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
+                <display value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
+                <display value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-TelcomComm-eve-everywoman"/></reference>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="toc.md"/>

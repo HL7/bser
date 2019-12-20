@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TelcomCommunicationPreferencesVS"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-12-19T01:41:10.000-05:00"/>
+        <versionId value="9"/>
+        <lastUpdated value="2019-12-19T23:42:23.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
     <name value="BSeR_TelcomCommunicationPreferencesVS"/>
@@ -13,7 +13,7 @@
     <compose>
         <inactive value="false"/>
         <include>
-            <system value="http://hl7.org/fhir/phwg/bser"/>
+            <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
             <concept>
                 <code value="BDTC"/>
                 <display value="Best Day To Call"/>

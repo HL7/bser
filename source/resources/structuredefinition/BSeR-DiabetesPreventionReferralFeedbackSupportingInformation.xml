@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-18T23:00:20.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2019-12-19T23:51:02.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
     <name value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation"/>
@@ -86,7 +86,7 @@
             <path value="Bundle.entry"/>
             <sliceName value="ParticipationFeedbackObservation"/>
             <min value="0"/>
-            <max value="1"/>
+            <max value="*"/>
         </element>
         <element id="Bundle.entry:ParticipationFeedbackObservation.resource">
             <path value="Bundle.entry.resource"/>

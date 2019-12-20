@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TelcomCommunicationPreferences"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2019-12-19T01:46:48.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2019-12-19T22:53:03.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
     <name value="BSeR_TelcomCommunicationPreferences"/>
@@ -24,9 +24,7 @@
             <path value="Observation.status"/>
             <min value="1"/>
             <max value="1"/>
-            <patternCoding>
-                <code value="final"/>
-            </patternCoding>
+            <fixedCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -34,7 +32,7 @@
             <max value="1"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="leaveMessageleaveMessageIndicatorIndicator"/>
+                <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
             </binding>
         </element>
         <element id="Observation.subject">
@@ -46,72 +44,10 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
-        <element id="Observation.component">
-            <path value="Observation.component"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="code"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <min value="1"/>
-            <max value="*"/>
-        </element>
-        <element id="Observation.component:preferredUseDay">
-            <path value="Observation.component"/>
-            <sliceName value="preferredUseDay"/>
-            <min value="0"/>
-            <max value="*"/>
-        </element>
-        <element id="Observation.component:preferredUseDay.code">
-            <path value="Observation.component.code"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.component:preferredUseDay.value[x]">
-            <path value="Observation.component.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
             <type>
                 <code value="string"/>
-            </type>
-        </element>
-        <element id="Observation.component:preferredUseTime">
-            <path value="Observation.component"/>
-            <sliceName value="preferredUseTime"/>
-            <min value="0"/>
-            <max value="*"/>
-        </element>
-        <element id="Observation.component:preferredUseTime.code">
-            <path value="Observation.component.code"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.component:preferredUseTime.value[x]">
-            <path value="Observation.component.value[x]"/>
-            <min value="1"/>
-            <type>
-                <code value="Range"/>
-            </type>
-        </element>
-        <element id="Observation.component:leaveMessageIndicator">
-            <path value="Observation.component"/>
-            <sliceName value="leaveMessageIndicator"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.component:leaveMessageIndicator.code">
-            <path value="Observation.component.code"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.component:leaveMessageIndicator.value[x]">
-            <path value="Observation.component.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="boolean"/>
             </type>
         </element>
     </differential>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-12-10T21:56:34.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-12-20T02:11:13.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     </meta>
     <text>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <span title="id">observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman</span>
+                        <div title="id">observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman</div>
                     </td>
                 </tr>
                 <tr>
@@ -24,9 +24,21 @@
                     <td>
                         <table>
                             <tr>
+                                <td style="font-weight: bold">versionId</td>
+                                <td>
+                                    <div title="versionId">3</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">lastUpdated</td>
+                                <td>
+                                    <div title="lastUpdated">2019-12-10T21:56:34.000-05:00</div>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation</span>
+                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation</div>
                                 </td>
                             </tr>
                         </table>
@@ -35,7 +47,7 @@
                 <tr>
                     <td style="font-weight: bold">status</td>
                     <td>
-                        <span title="status">final</span>
+                        <div title="status">final</div>
                     </td>
                 </tr>
                 <tr>
@@ -45,14 +57,14 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <span title="display">Pain management (procedure)</span>  (
-                                        <span title="code">278414003</span> )
+                                        <div title="display">Pain management (procedure)</div>  (
+                                        <div title="code">278414003</div> )
           
                                     </li>
                                     <li>
-                                        <span title="system">
+                                        <div title="system">
                                             <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                                        </span>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
@@ -73,13 +85,23 @@
                 <tr>
                     <td style="font-weight: bold">effectiveDateTime</td>
                     <td>
-                        <span title="effectiveDateTime">2019-01-18T22:33:22Z</span>
+                        <div title="effectiveDateTime">2019-01-18T22:33:22Z</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">performer</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
+                            </li>
+                        </ul>
                     </td>
                 </tr>
                 <tr>
                     <td style="font-weight: bold">valueBoolean</td>
                     <td>
-                        <span title="valueBoolean">true</span>
+                        <div title="valueBoolean">true</div>
                     </td>
                 </tr>
             </table>
@@ -98,5 +120,8 @@
         <display value="Eve Everywoman"/>
     </subject>
     <effectiveDateTime value="2019-01-18T22:33:22Z"/>
+    <performer>
+        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+    </performer>
     <valueBoolean value="true"/>
 </Observation>

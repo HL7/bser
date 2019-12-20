@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-PatientConsent"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2019-12-18T15:43:52.000-05:00"/>
+        <versionId value="12"/>
+        <lastUpdated value="2019-12-19T22:57:52.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
     <name value="BSeR_PatientConsent"/>
@@ -69,15 +69,12 @@
         </element>
         <element id="Consent.performer">
             <path value="Consent.performer"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="reference"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+            </type>
         </element>
         <element id="Consent.provision">
             <path value="Consent.provision"/>
@@ -88,25 +85,6 @@
             <path value="Consent.provision.type"/>
             <min value="1"/>
             <max value="1"/>
-        </element>
-        <element id="Consent.performer:patientPerformer">
-            <path value="Consent.performer"/>
-            <sliceName value="patientPerformer"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            </type>
-        </element>
-        <element id="Consent.performer:relatedPersonPerformer">
-            <path value="Consent.performer"/>
-            <sliceName value="relatedPersonPerformer"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-            </type>
         </element>
     </differential>
 </StructureDefinition>

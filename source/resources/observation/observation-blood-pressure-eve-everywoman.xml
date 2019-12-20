@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-blood-pressure-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2019-12-10T23:47:49.000-05:00"/>
+        <versionId value="4"/>
+        <lastUpdated value="2019-12-20T00:42:23.000-05:00"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
     </meta>
     <text>
@@ -49,8 +49,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <span title="display">Vital Signs</span>  (
+                                        
                                         <span title="code">vital-signs</span> )
           
+                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -73,8 +75,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <span title="display">Blood pressure panel with all children optional</span>  (
+                                        
                                         <span title="code">85354-9</span> )
           
+                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -125,8 +129,10 @@
                                             <ul style="list-style:none; padding-left:0; margin:0 0;">
                                                 <li>
                                                     <span title="display">Systolic blood pressure</span>  (
+                                                    
                                                     <span title="code">8480-6</span> )
           
+                                                
                                                 </li>
                                                 <li>
                                                     <span title="system">
@@ -174,8 +180,10 @@
                                             <ul style="list-style:none; padding-left:0; margin:0 0;">
                                                 <li>
                                                     <span title="display">Diastolic blood pressure</span>  (
+                                                    
                                                     <span title="code">8462-4</span> )
           
+                                                
                                                 </li>
                                                 <li>
                                                     <span title="system">

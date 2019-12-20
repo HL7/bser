@@ -12,7 +12,9 @@ The BSeR IG includes specifications to support the information needs of six spec
 
 * **ReferralTask.businessStatus** If the workflow state machine associated with the referral exchange use case differs from the BSeR state machine, then it is necessary to extend the value set bound to the business status element of the referral task to include additional states.
 
-* **ReferralServiceRequest.reasonCode** The value set bound to the reasonCode element of the referral service request needs to be expanded to include the new referral use case as a supported referral reason. Note that this is the same value set as the one bound to the reason element of the referral message header.
+* **ReferralServiceRequest.code** The value set bound to the code element of the referral service request needs to be expanded to include the new referral use case. Note that this is the same value set as the one bound to the reason element of the referral message header.
+
+* **ReferralServiceRequest.reasonCode** The value set bound to the reasonCode element of the referral service request may need to be expanded to include referral reasons for the new referral use case. Note reasonCode is optional and need only be used when the value used in service request code is not pre-coordinated with service request reason.
 
 * **ReferralServiceRequest.supportingInfo** An additional slice needs to be added to the support info element of the referral service request for the new referral use case. Each slice shall include a reference to a newly defined bundle of clinical statements relevant to the new referral use case. Where applicable, newly defined supporting information FHIR bundles should reuse existing clinical statement profiles from the BSeR IG.
 
@@ -23,4 +25,6 @@ The BSeR IG includes specifications to support the information needs of six spec
 When using the BSeR for use cases outside those covered in the IG it may be necessary to define additional supporting information clinical statement profiles and bundles. Care should be taken to avoid the creation of duplicate clinical statement profiles. Reuse of existing clinical statement profiles is the best practice. Revising an existing clinical statement profile to fulfill the data requirement of a new referral use case is preferred to the creation of duplicate or overlapping clinical statements. 
 
 Duplicate and/or overlapping supporting information bundles are expected. Care should be taken when choosing to reuse supporting information bundles; the contents of a bundle are subject to change as use cases are implemented and additional or revised information needs are discovered.
+
+The HL7 Public Health Work Group [(PHWG)](https://confluence.hl7.org/display/PHWG) is the custodian of the BSeR FHIR IG. For advice and guidance with reuse or extension of the BSeR IG for additional referral use cases contact the PHWG.
 null

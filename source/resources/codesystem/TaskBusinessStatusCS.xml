@@ -3,18 +3,18 @@
     xmlns="http://hl7.org/fhir">
     <id value="TaskBusinessStatusCS"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2019-12-19T04:38:44.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2019-12-20T03:02:42.000-05:00"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR_TaskBusinessStatusCS"/>
-    <name value="BSeR_TaskBusinessStatusCS"/>
+    <url value="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS"/>
+    <name value="TaskBusinessStatusCS"/>
     <title value="Task Business Status Code System"/>
-    <status value="draft"/>
+    <status value="active"/>
     <publisher value="HL7 PHWG"/>
     <caseSensitive value="false"/>
     <compositional value="false"/>
     <versionNeeded value="false"/>
-    <content value="not-present"/>
+    <content value="complete"/>
     <concept>
         <code value="2.0"/>
         <display value="Service Request Created"/>
