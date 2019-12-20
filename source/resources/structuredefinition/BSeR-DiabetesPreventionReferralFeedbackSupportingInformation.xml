@@ -31,7 +31,7 @@
             <slicing>
                 <discriminator>
                     <type value="value"/>
-                    <path value="resource.resolve().meta.profile"/>
+                    <path value="resource.Observation.meta.profile"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
