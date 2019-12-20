@@ -30,8 +30,8 @@
             <path value="Bundle.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="profile"/>
-                    <path value="resource.resolve()"/>
+                    <type value="value"/>
+                    <path value="resource.resolve().meta.profile"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -49,7 +49,7 @@
             <max value="1"/>
             <type>
                 <code value="Resource"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
             </type>
         </element>
         <element id="Bundle.entry:BodyMassIndex">
@@ -64,7 +64,7 @@
             <max value="1"/>
             <type>
                 <code value="Resource"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
             </type>
         </element>
         <element id="Bundle.entry:BodyWeight">
@@ -79,7 +79,7 @@
             <max value="1"/>
             <type>
                 <code value="Resource"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
             </type>
         </element>
         <element id="Bundle.entry:ParticipationFeedbackObservation">
@@ -94,7 +94,7 @@
             <max value="1"/>
             <type>
                 <code value="Resource"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
             </type>
         </element>
     </differential>
