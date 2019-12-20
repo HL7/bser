@@ -11,8 +11,6 @@
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-us-core-smokingstatus-eve-everywoman" />
         <meta>
-          <versionId value="4" />
-          <lastUpdated value="2019-12-11T00:34:27.000-05:00" />
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus" />
         </meta>
         <text>
@@ -272,7 +270,7 @@
           <display value="Eve Everywoman" />
         </subject>
         <effectiveDateTime value="2019-01-17" />
-        <valueString>Monday</valueString>
+        <valueString value="Monday"/>
       </Observation>
     </resource>
   </entry>
