@@ -543,7 +543,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman">
+    <fullUrl value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
       <resource>
         <Observation xmlns="http://hl7.org/fhir">
           <id value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
@@ -666,10 +666,9 @@
           </valueQuanity>
         </Observation>
       </resource>
-    </fullUrl>
   </entry>
   <entry>
-    <fullUrl value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman">
+    <fullUrl value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
       <resource>
         <Observation xmlns="http://hl7.org/fhir">
           <id value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
@@ -792,7 +791,6 @@
           </valueQuanity>
         </Observation>
       </resource>
-    </fullUrl>
   </entry>
 </Bundle>
 
