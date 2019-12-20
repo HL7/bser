@@ -90,7 +90,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">valueQuanity</td>
+                    <td style="font-weight: bold">valueQuantity</td>
                     <td>
                         <table>
                             <tr>
@@ -122,4 +122,7 @@
     <performer>
         <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
     </performer>
+  <valueQuantity>
+    <value value="1"/>
+  </valueQuantity>
 </Observation>

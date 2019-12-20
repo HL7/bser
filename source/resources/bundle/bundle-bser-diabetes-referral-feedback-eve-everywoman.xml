@@ -629,7 +629,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="font-weight: bold">valueQuanity</td>
+                  <td style="font-weight: bold">valueQuantity</td>
                   <td>
                     <table>
                       <tr>
@@ -661,9 +661,9 @@
           <performer>
             <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
           </performer>
-          <valueQuanity>
+          <valueQuantity>
             <value value="6"/>
-          </valueQuanity>
+          </valueQuantity>
         </Observation>
       </resource>
   </entry>
@@ -754,7 +754,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="font-weight: bold">valueQuanity</td>
+                  <td style="font-weight: bold">valueQuantity</td>
                   <td>
                     <table>
                       <tr>
@@ -786,9 +786,9 @@
           <performer>
             <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
           </performer>
-          <valueQuanity>
+          <valueQuantity>
             <value value="1"/>
-          </valueQuanity>
+          </valueQuantity>
         </Observation>
       </resource>
   </entry>
