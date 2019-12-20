@@ -5,7 +5,155 @@
     <meta>
         <versionId value="268"/>
         <lastUpdated value="2019-12-20T16:42:50.000-05:00"/>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^read"/>
+        </security>
     </meta>
+    <contained>
+        <Binary>
+            <id value="7807"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIEJpZGlyZWN0aW9uYWwgU2VydmljZXMgZVJlZmVycmFsIChCU2VSKSBGSElSIGltcGxlbWVudGF0aW9uIGd1aWRlIHByb3ZpZGVzIGd1aWRhbmNlIGZvciB1c2luZyB0aGUgSEw3IEZhc3QgSGVhbHRoY2FyZSBJbnRlcm9wZXJhYmlsaXR5IFJlc291cmNlcyAoRkhJUikgc3RhbmRhcmQgYXMgYW4gZXhjaGFuZ2UgZm9ybWF0IGZvciBjbGluaWNhbCBhbmQgbm9uLWNsaW5pY2FsIHNlcnZpY2UgcmVxdWVzdHMuIEl0IGlzIGEgY29sbGVjdGlvbiBvZiBwcm9maWxlZCBGSElSIHJlc291cmNlcyBkZXNpZ25lZCBmb3IgdXNlIGluIGluZm9ybWF0aW9uIGV4Y2hhbmdlcyBzdXBwb3J0aW5nIHRoZSBwbGFjZW1lbnQgb2YgYSBzZXJ2aWNlIHJlcXVlc3QgYnkgYSByZWZlcnJhbCBpbml0aWF0aW5nIHByb3ZpZGVyIGFuZCB0aGUgcmVwb3J0aW5nIG9mIHNlcnZpY2UgZGVsaXZlcnkgb3V0Y29tZXMgYW5kIGZlZWRiYWNrIGJ5IGEgcmVmZXJyYWwgcmVjaXBpZW50IHByb3ZpZGVyLgoKS2V5IGNvbmNlcHRzIGFkb3B0ZWQgaW4gdGhlIGRlc2lnbiBvZiB0aGUgQlNlUiBGSElSIFByb2ZpbGVzIGFyZSBzcGVjaWZpYyBmaXQgdG8gcHVycG9zZSwgcGFyc2ltb255LCBhbmQgY2xvc2VkLWxvb3AgZmVlZGJhY2sgdG8gdGhlIHJlZmVycmFsIGluaXRpYXRpbmcgcHJvdmlkZXIuIFVuZGVyIHRoZSBISVBBQSBtaW5pbXVtIG5lY2Vzc2FyeSBzdGFuZGFyZCwgY292ZXJlZCBlbnRpdGllcyBtdXN0IG1ha2UgcmVhc29uYWJsZSBlZmZvcnRzIHRvIGVuc3VyZSB0aGF0IGFjY2VzcyB0byBwcm90ZWN0ZWQgaGVhbHRoIGluZm9ybWF0aW9uIChQSEkpIGlzIGxpbWl0ZWQsIHBlciB0aGUgSElQQUEgUHJpdmFjeSBSdWxlLCB0byB0aGUgbWluaW11bSBhbW91bnQgb2YgaW5mb3JtYXRpb24gbmVjZXNzYXJ5IHRvIGZ1bGZpbGwgb3Igc2F0aXNmeSB0aGUgaW50ZW5kZWQgcHVycG9zZSBvZiBhIHBhcnRpY3VsYXIgZGlzY2xvc3VyZSwgcmVxdWVzdCwgb3IgdXNlLiBNYW55IGNsaW5pY2FsIGNhcmUgb3JnYW5pemF0aW9ucyBhcmUgcGFydGljdWxhcmx5IHVuY29tZm9ydGFibGUgc2VuZGluZyBhIGZ1bGwgY2xpbmljYWwgc3VtbWFyeSB0byBleHRyYS1jbGluaWNhbCBwcm9ncmFtcyB0aGF0IHN1cHBvcnQgc3BlY2lmaWMgbGlmZXN0eWxlIGNoYW5nZXMgb3IgdmVyeSBzZWxlY3RpdmUgYXJlYXMgb2YgZ2VuZXJhbCBoZWFsdGggbWFuYWdlbWVudC4KCkEgY3JpdGljYWwgZGVzaWduIHJlcXVpcmVtZW50IGZvciBCU2VSIGlzIHRvIGxpbWl0IHRoZSBleGNoYW5nZSBvZiBjbGluaWNhbCBpbmZvcm1hdGlvbiBmcm9tIGluaXRpYXRpbmcgcHJvdmlkZXJzIHRvIHJlY2lwaWVudCBwcm92aWRlcnMgdG8gb25seSB0aGF0IGRhdGEgbmVjZXNzYXJ5IHRvIGZ1bGZpbGwgdGhlIHNlcnZpY2UgcmVxdWVzdC4gVG8gZnVsZmlsbCB0aGlzIGRlc2lnbiByZXF1aXJlbWVudCwgdGhlIEJTZVIgaW1wbGVtZW50YXRpb24gZ3VpZGUgc2VwYXJhdGVzIHRoZSBkZXNpZ25hdGlvbiBhbmQgcHJvZmlsaW5nIG9mIEZISVIgcmVzb3VyY2VzIHJlbGF0ZWQgdG8gdGhlIHNlcnZpY2UgcmVxdWVzdCB3b3JrZmxvdyBmcm9tIHRoZSBGSElSIHJlc291cmNlcyByZXF1aXJlZCB0byBjb252ZXkgdGhlIGluZm9ybWF0aW9uIGNvbnRlbnQgbmVjZXNzYXJ5IGZvciB0aGUgZnVsZmlsbG1lbnQgb2YgdGhlIHNlcnZpY2UgcmVxdWVzdC4KClRoZSBCU2VSIHNwZWNpZmljYXRpb24gYWxzbyBzZWVrcyB0byBmb3N0ZXIgYW5kIHJlaW5mb3JjZSBwcm92aWRlciBlbmdhZ2VtZW50IGluIHBhdGllbnQgb3V0Y29tZXMgdGhyb3VnaCBib3RoIHByYWN0aWNhbCBhbmQgcHJvZ3JhbS1zcGVjaWZpYyBmcm9tIHRoZSByZWZlcnJhbCByZWNpcGllbnQgcHJvdmlkZXIgdG8gdGhlIHJlZmVycmFsIGluaXRpYXRpbmcgcHJvdmlkZXIgcmVsYXRlZCB0byB0aGUgaW5pdGlhdGlvbiwgcHJvZ3Jlc3MsIGFuZCBjb21wbGV0aW9uIG9mIHRoZSByZWZlcnJhbCBhY3Rpdml0aWVzLiBUaGUgZmVlZGJhY2sgdHJhbnNhY3Rpb25zIHRoYXQgY2xvc2UgdGhlIGxvb3AgY2FuIGNvbnRhaW4gcHJhY3RpY2FsIGluZm9ybWF0aW9uIGFib3V0IHN1Y2Nlc3NmdWwgcHJvZ3JhbSBlbnJvbGxtZW50IGFuZCBwYXJ0aWNpcGF0aW9uIGFzIHdlbGwgYXMgaW5mb3JtYXRpb24gYWJvdXQgb3V0Y29tZXMgdGhhdCBtYXkgYmUgYWNoaWV2ZWQuCgpUaGUgQlNlUiB0ZWFtIHdvcmtlZCBpbiBjb25qdW5jdGlvbiB3aXRoIHRoZSBJSEUgUGF0aWVudCBDYXJlIENvb3JkaW5hdGlvbiBUZWNobmljYWwgRnJhbWV3b3JrIFN1cHBsZW1lbnQgMzYwIEV4Y2hhbmdlIENsb3NlZCBMb29wIFJlZmVycmFsICgzNjBYKSBpbml0aWF0aXZlIHRvIG1ha2Ugc3VyZSB0aGF0IHRoZSBicmVhZHRoIGFuZCBudWFuY2VzIG9mIDM2MHggSUhFIHJlZmVycmFsIHRyYW5zYWN0aW9ucyBhcmUgcmVwcmVzZW50YWJsZSBpbiB0aGUgQlNlUiBGSElSIHByb2Nlc3MuIFRoZSAzNjB4IHRlYW0gcGFydGljaXBhdGVkIGV4dGVuc2l2ZWx5IGluIEJTZVIgcHJlcGFyYXRpb24gYW5kIHdlIHRoYW5rIHRoZW0gZm9yIHRoZWlyIGNvbGxhYm9yYXRpb24gYW5kIHN1cHBvcnQuCgpUaGUgQlNlUiB0ZWFtIGFsc28gaGFzIHdvcmtlZCB3aXRoIHRoZSBITDcgR3Jhdml0eSBzb2NpYWwgZGV0ZXJtaW5hbnRzIG9mIGhlYWx0aCB0ZWFtIHRvIGVuYWJsZSB0aGUgdXNlIG9mIHRoZSBCU2VSIHNwZWNpZmljYXRpb24gYnkgR3Jhdml0eSwgYW5kIG90aGVyIGltcGxlbWV0YXRpb24gZ3VpZGVzLiBPdGhlciBpbXBsZW1lbnRhdGlvbiBndWlkZXMgY2FuIHJlZmVyZW5jZSBhbmQgdXNlIHRoZSBCU2VSIHNwZWNpZmljYXRpb24gZm9yIHRoZWlyIHBhcnRpY3VsYXIgcmVmZXJyYWwgdHlwZSBpbiBjb25qdW5jdGlvbiB3aXRoIGV4dGVuc2lvbiBndWlkYW5jZSBmb3VuZCBlbHNld2hlcmUgaW4gdGhpcyBpbXBsZW1lbmF0aW9uIGd1aWRlLiBXZSB3b3VsZCBhbHNvIGxpa2UgdG8gdGhhbmsgdGhlIEdyYXZpdHkgdGVhbSBmb3IgYWxsIG9mIHRoZWlyIGhlbHAgaW4gbWFraW5nIHRoZSBCU2VSIHNwZWNpZmljYXRpb24gbW9yZSB1c2VmdWwgdGhyb3VnaCB0aGUgZGV2ZWxvcG1lbnQgb2YgdGhpcyBnZW5lcmljIGV4dGVuc2lvbiBhcHByb2FjaC4K"/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="8576"/>
+            <contentType value="text/markdown"/>
+            <data value="KipDREMgRXhlY3V0aXZlIFNwb25zb3I6KiogQXJ1bmt1bWFyIFNyaW5pdmFzYW4gUGhELCBTZW5pb3IgSGVhbHRoIFNjaWVudGlzdAoKKipQcm9qZWN0IExlYWQ6KiogSm9obiBXLiBMb29uc2sgTUQsIENvbnN1bHRpbmcgQ01JTyBBUEhMLCBKb2hucyBIb3BraW5zIFVuaXZlcnNpdHkKCioqTW9kZWxpbmcgRmFjaWxpdGF0b3I6KiogQWJkdWxNYWxpayBTaGFraXIsIFByZXNpZGVudCBhbmQgQ2hpZWYgSW5mb3JtYXRpY3MgU2NpZW50aXN0LCBIaTMgU29sdXRpb25zCgoqKkRvbWFpbiBFeHBlcnQgUmVwcmVzZW50YXRpdmVzOioqCgoqICAgICAgICAgIEphc29uIEJvbmFuZGVyLCBEZXB1dHkgQ2hpZWYgSW5mb3JtYXRpb24gT2ZmaWNlcgoKKiAgICAgICAgICBIZWF0aGVyIEhvZGdlLCBZTUNBIG9mIHRoZSBVU0EKCiogICAgICAgICAgS3Jpc3RhIFByb2lhLCBDREMgRGlhYmV0ZXMgUHJldmVudGlvbiBQcm9ncmFtCgoqICAgICAgICAgIEJyZW5uYSBWYW5GcmFuaywgQ0RDIFNtb2tpbmcgYW5kIEhlYWx0aAoKKipCdXNpbmVzcyBSZXF1aXJlbWVudHMgQW5hbHlzdHM6KioKCiogICAgICAgICAgU2FsaW1haCBTaGFraXIsIEhpMyBTb2x1dGlvbnMKCioqU3BlY2lmaWNhdGlvbiBEZXZlbG9wZXJzOioqCgoqICAgICAgICAgIEFiZHVsTWFsaWsgU2hha2lyIFNyLiwgSGkzIFNvbHV0aW9ucwoKKiAgICAgICAgICBBYmR1bE1hbGlrIFNoYWtpciBKci4sIEhpMyBTb2x1dGlvbnMKCiogICAgICAgICAgU2FsaW1haCBTaGFraXIsIEhpMyBTb2x1dGlvbnMKCiogICAgICAgICAgUmlzaGkgVGFyYXIsIE5vcnRocm9wIEdydW1tYW4gQ29ycG9yYXRpb24KCiogICAgICAgICAgQWRhbSBIb2xtZXMsIE1JVFJFCiAKKiAgICAgICAgICBTYXJhaCBHYXVudCwgTGFudGFuYSBDb25zdWx0aW5nIEdyb3VwCgoqICAgICAgICAgIFJpY2sgR2VpbWVyLCBMYW50YW5hIENvbnN1bHRpbmcgR3JvdXAKCioqQlNlUiBQcm9qZWN0IFJlYWxtKioKClRoaXMgaXMgYSBVLlMuIFJlYWxtIFNwZWNpZmljYXRpb24uIFRoaXMgZ3VpZGUgYW5kIHJlbGF0ZWQgbWF0ZXJpYWxzIGFyZSBiYXNlZCBvbiByZXBvcnRpbmcgc3BlY2lmaWNhdGlvbnMgaW4gVS5TLiBqdXJpc2RpY3Rpb25zLg=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="7622"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhpcyBndWlkZSB3YXMgZGV2ZWxvcGVkIHVzaW5nIHRvb2xpbmcgYW5kIHByb2Zlc3Npb25hbCBndWlkYW5jZSBwcm92aWRlZCBieSBbTGFudGFuYSBDb25zdWx0aW5nIEdyb3VwXShodHRwczovL3d3dy5sYW50YW5hZ3JvdXAuY29tLyksIHRoZSBtYWtlcnMgb2YgW1RyaWZvbGlhLW9uLUZISVJdKGh0dHBzOi8vdHJpZm9saWEtZmhpci1kZXYubGFudGFuYWdyb3VwLmNvbS8pCgpUaGUgQlNlUiBwcm9qZWN0IHRlYW0gd291bGQgbGlrZSB0byBhY2tub3dsZWRnZSBhbmQgZXhwcmVzcyBvdXIgc2luY2VyZSBhcHByZWNpYXRpb24gdG8gdGhlIGF1dGhvcnMgb2YgdGhlIElIRSBQYXRpZW50IENhcmUgQ29vcmRpbmF0aW9uIFRlY2huaWNhbCBGcmFtZXdvcmsgU3VwcGxlbWVudCAtIDM2MCBFeGNoYW5nZSBDbG9zZWQgTG9vcCBSZWZlcnJhbCAoMzYwWCkgW2xpbmtdKGh0dHBzOi8vd3d3LmloZS5uZXQvdXBsb2FkZWRGaWxlcy9Eb2N1bWVudHMvUENDL0lIRV9QQ0NfU3VwcGxfMzYwWC5wZGYpLiBUaGUgcmVmZXJyYWwgc3RhdGUgbWFjaGluZSBleHByZXNzZWQgaW4gdGhpcyBzcGVjaWZpY2F0aW9uIGRyYXdzIGhlYXZpbHkgdXBvbiB0aGlzIHdvcmsuCgpUaGUgQlNlUiBwcm9qZWN0IHRlYW0gd291bGQgbGlrZSB0byBhY2tub3dsZWRnZSBhbmQgZXhwcmVzcyBvdXIgc2luY2VyZSBhcHByZWNpYXRpb24gdG8gdGhlIEhMNyBHcmF2aXR5IHNvY2lhbCBkZXRlcm1pbmFudHMgb2YgaGVhbHRoIChTRG9IKSBbbGlua10oaHR0cHM6Ly93d3cuaGw3Lm9yZy9ncmF2aXR5LykgcHJvamVjdCB0ZWFtIGZvciB0aGVpciBhc3Npc3RhbmNlIGluIGRlZmluaW5nIHdheXMgaW4gd2hpY2ggdGhlIEJTZVIgSUcgY2FuIGJlIHJldXNlZCBhbmQgZXh0ZW5kZWQgdG8gY292ZXIgYWRkaXRpb25hbCByZWZlcnJhbCB1c2UgY2FzZXMgLSBjbGluaWNhbCBhbmQgbm9uLWNsaW5pY2FsLgoKVGhlIEJTZVIgRkhJUiBJRyBpcyBhIHdvcmsgcHJvZHVjdCBvZiB0aGUgW0hMNyBQdWJsaWMgSGVhbHRoIFdvcmtncm91cF0oaHR0cDovL3d3dy5obDcub3JnL1NwZWNpYWwvY29tbWl0dGVlcy9waGVyL2luZGV4LmNmbSkuIFRoZSBCU2VSIHByb2plY3QgaXMgY28tc3BvbnNvcmVkIGJ5IHRoZSBbUGF0aWVudCBDYXJlXShodHRwOi8vd3d3LmhsNy5vcmcvU3BlY2lhbC9jb21taXR0ZWVzL3BhdGllbnRjYXJlL2luZGV4LmNmbSkgYW5kIHRoZSBbQ2xpbmljYWwgUXVhbGl0eSBJbmZvcm1hdGlvbl0oaHR0cDovL3d3dy5obDcub3JnL1NwZWNpYWwvY29tbWl0dGVlcy9jcWkvaW5kZXguY2ZtKSB3b3JrZ3JvdXBzLiBUaGUgSEw3IFByb2plY3QgSW5zaWdodCByZWZlcmVuY2UgbnVtYmVyIGZvciB0aGlzIHByb2plY3QgaXMgWzE0MjNdKGh0dHA6Ly93d3cuaGw3Lm9yZy9TcGVjaWFsL2NvbW1pdHRlZXMvcGhlci9wcm9qZWN0cy5jZm0/YWN0aW9uPWVkaXQmUHJvamVjdE51bWJlcj0xNDIzKS4="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="5728"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIHNjb3BlIG9mIHRoZSBCU2VSIElHIGlzIHRoZSBwbGFjZW1lbnQgb2YgYSBzZXJ2aWNlIHJlcXVlc3QgcmVmZXJyYWwgYnkgYSByZWZlcnJhbCBpbml0aWF0b3IgYW5kIHRoZSBmZWVkYmFjayBvZiBhIHNlcnZpY2UgcmVxdWVzdCBvdXRjb21lIHJlcG9ydCBieSBhIHJlZmVycmFsIHJlY2lwaWVudC4gVGhlIGNvbnRleHQgb2YgdGhlIHJlcXVlc3QgYW5kIGZlZWRiYWNrIGFjdGl2aXRpZXMgaXMgZGVwaWN0ZWQgaW4gdGhlIGZvbGxvd2luZyBhY3Rpdml0eSBkaWFncmFtIGZyb20gdGhlIEJTZVIgRG9tYWluIEFuYWx5c2lzIE1vZGVsIChCU2VSIERBTSkuCgo8Y2VudGVyPjx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJBY3Rpdml0aWVzLnBuZyIgc3R5bGU9IndpZHRoOjEwMCU7Ii8+PC90ZD48L3RyPjwvdGFibGU+PC9jZW50ZXI+CgpUaGUgY29udGV4dCBvZiB0aGUgQlNlUiBJRyBpcyB0aGUgcGxhY2VtZW50IG9mIGEgcmVmZXJyYWwgYnkgYSBjbGluaWNhbCBwcmFjdGl0aW9uZXIgdG8gYSBjbGluaWNhbCBvciBleHRyYS1jbGluaWNhbCBwcmFjdGl0aW9uZXIgcmVxdWVzdGluZyBwcmV2ZW50aXZlIG9yIHRoZXJhcGV1dGljIHNlcnZpY2VzIGZvciBhIHBhdGllbnQgd2l0aCBhIGhlYWx0aCByZWxhdGVkIGNvbmRpdGlvbiByZXF1aXJpbmcgaW50ZXJ2ZW50aW9uLiBUaGUgcmVxdWVzdGVkIHNlcnZpY2UgaXMgdHlwaWNhbGx5IGEgY2FyZSByZWdpbWUgb3IgcHJvZ3JhbSBzcGVjaWZpY2FsbHkgZGVzaWduZWQgdG8gYWRkcmVzcyB0aGUgcGF0aWVudHMgY29uZGl0aW9uLiBUaGUgc2l4IGhlYWx0aCByZWxhdGVkIHVzZWQgY2FzZSBjb25kaXRpb25zIHdpdGhpbiB0aGUgc2NvcGUgb2YgdGhpcyBzcGVjaWZpY2F0aW9uIGFyZSBkZXBpY3RlZCBpbiB0aGUgZm9sbG93aW5nIGRpYWdyYW06CjxjZW50ZXI+Cjx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJCU2VSIElHIFJlZmVycmFsIFVzZSBDYXNlcy5wbmciIHN0eWxlPSJ3aWR0aDoxMDAlOyIvPjwvdGQ+PC90cj48L3RhYmxlPgo8L2NlbnRlcj4KClNlZSB0aGUgc2VjdGlvbiAiQWRhcHRhdGlvbiBmb3IgQWRkaXRpb25hbCBSZWZlcnJhbCBVc2UgQ2FzZXMiIGZvciBndWlkYW5jZSBpbiByZXVzaW5nIG9yIGV4dGVuZGluZyB0aGUgdXNlIG9mIHRoZSBCU2VSIHN0YW5kYXJkIGZvciB1c2UgaW4gYWRkaXRpb25hbCByZWZlcnJhbCB1c2UgY2FzZXMuCgo="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="7237"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIEZISVIgUjQgcmVzb3VyY2UgcHJvZmlsZXMgZGVmaW5lZCBpbiB0aGUgQlNlUiBJRyBhcmUgZ3JvdXBlZCBpbnRvIHRoZSBmb2xsb3dpbmcgZm91ciBwYWNrYWdlczoKCjxjZW50ZXI+PHRhYmxlPjx0cj48dGQ+PGltZyBzcmM9IkJTZVIgRkhJUiBJRyBQcm9pbGZlcy5wbmciIHN0eWxlPSJ3aWR0aDoxMDAlOyIvPjwvdGQ+PC90cj48L3RhYmxlPjwvY2VudGVyPgoKKiAqKlJlZmVycmFsIFBhcnRpY2lwYW50IFJlc291cmNlcyoqIC0gdGhlIHNldCBvZiBGSElSIHJlc291cmNlcyByZXByZXNlbnRpbmcgdGhlIGVudGl0aWVzIHBhcnRpY2lwYXRpbmcgaW4gdGhlIGJpLWRpcmVjdGlvbmFsIGV4Y2hhbmdlIG9mIHJlZmVycmFsIHRyYW5zYWN0aW9ucy4KCiogKipXb3JrZmxvdyBNYW5hZ2VtZW50IFJlc291cmNlcyoqIC0gdGhlIHNldCBvZiBGSElSIHJlc291cmNlcyB1c2VkIHRvIGVuYWJsZSB0aGUgYnVuZGxpbmcgb2YgIHJlc291cmNlcyBhbmQgbWFuYWdpbmcgdGFza3MgcmVsYXRlZCB0byB0aGUgYmktZGlyZWN0aW9uYWwgZXhjaGFuZ2Ugb2YgcmVmZXJyYWwgdHJhbnNhY3Rpb25zLgoKKiAqKlJlZmVycmFsIFNlcnZpY2UgUmVxdWVzdCBSZXNvdXJjZXMqKiAtIHRoZSBzZXQgb2YgRkhJUiByZXNvdXJjZXMgdXNlZCBpbiByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3QgdHJhbnNhY3Rpb25zLgoKKiAqKlJlZmVycmFsIEZlZWRiYWNrIERvY3VtZW50IFJlc291cmNlcyoqIC0gdGhlIHNldCBvZiBGSElSIHJlc291cmNlcyB1c2VkIGluIHRoZSBzZXJ2aWNlIHJlcXVlc3QgZmVlZGJhY2sgdHJhbnNhY3Rpb25zLg=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="9422"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIHByaW1hcnkgcGFydGljaXBhbnRzIGluIHJlZmVycmFsIGZ1bmN0aW9ucyB3aXRoaW4gdGhlIHNjb3BlIG9mIHRoZSBCU2VSIEZISVIgSUcgYXJlIHRoZSByZWZlcnJhbCBpbml0aWF0b3IsIHJlZmVycmFsIHJlY2lwaWVudCwgYW5kIHJlZmVycmFsIHBhdGllbnQuIFRoZSByZXNvdXJjZSBwcm9maWxlcyBmb3IgdGhlIHJlZmVycmFsIGluaXRpYXRvciBhbmQgcmVmZXJyYWwgcmVjaXBpZW50IHVzZSB0aGUgRkhJUiBSNCBQcmFjdGl0aW9uZXIgYW5kIFByYWN0aXRpb25lciBSb2xlIGFzIHRoZWlyIGJhc2UgcmVzb3VyY2VzLiBUaGUgcmVmZXJyYWwgcGF0aWVudCB1c2VzIHRoZSBVUyBDb3JlIFBhdGllbnQgcHJvZmlsZSBhcyBpdHMgYmFzZSByZXNvdXJjZS4KPGNlbnRlcj4KPHRhYmxlPjx0cj48dGQ+PGltZyBzcmM9IlBhcnRpY2lwYW50IFJlc291cmNlcy5wbmciIHN0eWxlPSJ3aWR0aDoxMDAlOyIvPjwvdGQ+PC90cj48L3RhYmxlPgoJPC9jZW50ZXI+Cgo="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="8739"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIHJlZmVycmFsIGluaXRpYXRvciBpcyBwcmFjdGl0aW9uZXIgdGhhdCBpbml0aWF0ZXMgdGhlIHJlZmVycmFsIHRhc2sgYnkgc2VuZGluZyB0aGUgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IHRvIHRoZSByZWZlcnJhbCByZWNpcGllbnQuIFRoZSBpbml0aWF0b3IgaXMgcmVsYXRlZCB0byBhbiBvcmdhbml6YXRpb24gYW5kIGEgc2VydmljZSBkZWxpdmVyeSBsb2NhdGlvbi4gCjxjZW50ZXI+PHRhYmxlPjx0cj48dGQ+PGltZyBzcmM9IlJlZmVycmFsIEluaXRpYXRvci5wbmciIHN0eWxlPSJ3aWR0aDoxMDAlOyIvPjwvdGQ+PC90cj48L3RhYmxlPjwvY2VudGVyPg=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="6874"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIHJlZmVycmFsIHJlY2lwaWVudCBpcyB0aGUgcHJhY3RpdGlvbmVyIHRoYXQgcGVyZm9ybXMgc2VydmljZXMgcmVxdWVzdGVkIGluIGEgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IHJlY2VpdmVkIGZyb20gYSByZWZlcnJhbCBpbml0aWF0b3IuIFRoZSByZWZlcnJhbCByZWNpcGllbnQgb3ducyB0aGUgcmVmZXJyYWwgdGFzayBhbmQgYXV0aG9ycyB0aGUgcmVmZXJyYWwgZmVlZGJhY2suIFRoZSByZWNpcGllbnQgaXMgcmVsYXRlZCB0byBhbiBvcmdhbml6YXRpb24gYW5kIGEgc2VydmljZSBkZWxpdmVyeSBsb2NhdGlvbi4gCgo8Y2VudGVyPjx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJSZWZlcnJhbCBSZWNpcGllbnQucG5nIiBzdHlsZT0id2lkdGg6MTAwJTsiLz48L3RkPjwvdHI+PC90YWJsZT48L2NlbnRlcj4="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="7452"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIHJlZmVycmFsIHBhdGllbnQgaXMgdGhlIHN1YmplY3Qgb2YgYSByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3QsIHJlZmVycmFsIGZlZWRiYWNrIGNvbXBvc2l0aW9uLCBhbmQgY2xpbmljYWwgc3RhdGVtZW50cyB1c2VkIGFzIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gZm9yIHJlZmVycmFsIHJlcXVlc3RzIGFuZCBmZWVkYmFjay4gSW4gYWRkaXRpb24gdG8gYmFzaWMgZGVtb2dyYXBoaWNzIHRoZSByZWZlcnJhbCBwYXRpZW50IGlzIHRoZSBiZW5lZmljaWFyeSBvZiBjb3ZlcmFnZSwgdGhlIHN1YmplY3Qgb2YgZWR1Y2F0aW9uIGxldmVsIGFuZCBlbXBsb3ltZW50IHN0YXR1cywgYW5kIHRoZSB0YXJnZXQgcGF0aWVudCBvZiBhIGNvbnNlbnQgcmVzb3VyY2UuCgo8Y2VudGVyPgo8dGFibGU+PHRyPjx0ZD48aW1nIHNyYz0iUmVmZXJyYWwgUGF0aWVudC5wbmciIHN0eWxlPSJ3aWR0aDoxMDAlOyIvPjwvdGQ+PC90cj48L3RhYmxlPgo8L2NlbnRlcj4K"/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="7634"/>
+            <contentType value="text/markdown"/>
+            <data value="QlNlUiBzZXJ2aWNlIHJlcXVlc3Qgd29ya2Zsb3cgcmVzb3VyY2VzIC0gTWVzc2FnZSBCdW5kbGUsIFJlZmVycmFsIE1lc3NhZ2UgSGVhZGVyLCBhbmQgUmVmZXJyYWwgVGFzayAtIGFyZSBkZXBpY3RlZCBpbiB0aGUgZm9sbG93aW5nIGRpYWdyYW06Cgo8dGFibGU+PHRyPjx0ZD48aW1nIHNyYz0iV29ya2Zsb3cgTWFuYWdlbWVudCAgUmVzb3VyY2VzLnBuZyIgc3R5bGU9IndpZHRoOjEwMCU7Ii8+PC90ZD48L3RyPjwvdGFibGU+CgpUaGUgZWxlY3Ryb25pYyBleGNoYW5nZSBvZiB0aGUgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IGFuZCBhc3NvY2lhdGVkIHJlZmVycmFsIGZlZWRiYWNrIGNhbiB1dGlsaXplIEZISVIgTWVzc2FnaW5nIGFuZC9vciBhIGJhc2ljIFJFU1RmdWwgU3VibWl0LiAKCioqQSBtZXNzYWdlIGJ1bmRsZSoqIGlzIHVzZWQgd2hlbiBtZXNzYWdpbmcgaXMgdGhlIG1ldGhvZCBvZiBlbGVjdHJvbmljIGluZm9ybWF0aW9uIGV4Y2hhbmdlLiBJdCBjb250YWlucyBhIG1lc3NhZ2UgaGVhZGVyIGFzIHRoZSBmaXJzdCBlbnRyeSBpbiB0aGUgYnVuZGxlLCBmb2xsb3dlZCBieSB0aGUgcmVzb3VyY2VzIGNvbXByaXNpbmcgdGhlIG1lc3NhZ2UgY29udGVudC4gKipUaGUgbWVzc2FnZSBoZWFkZXIqKiBpbmNsdWRlcyBhIHJlZmVyZW5jZSB0byB0aGUgcmVmZXJyYWwgaW5pdGlhdG9yIGFzIHRoZSBtZXNzYWdlIHNlbmRlciBhbmQgdGhlIHVsdGltYXRlIHJlZmVycmFsIHJlY2lwaWVudCBhcyB0aGUgbWVzc2FnZSByZWNlaXZlci4gQSByZWZlcnJhbCB0YXNrIGlzIGluY2x1ZGVkIGFzIHRoZSBmb2N1cyBvZiB0aGUgbWVzc2FnZSBoZWFkZXIuIAoKKipUaGUgcmVmZXJyYWwgdGFzayoqIGlzIGFuIGVzc2VudGlhbCBjb21wb25lbnQgb2YgdGhlIGVsZWN0cm9uaWMgZXhjaGFuZ2Ugb2YgdGhlIHJlZmVycmFsIHNlcnZpY2UgcmVxdWVzdCBhbmQgaXRzIGFzc29jaWF0ZWQgcmVmZXJyYWwgZmVlZGJhY2suIFJlZmVycmFsIHRhc2sgY29udGFpbnMgdGhlIHN0YXRlIG9mIHRoZSByZWZlcnJhbCB0cmFuc2FjdGlvbiAoZS5nLiwgY3JlYXRlZCwgYWNjZXB0ZWQsIGluIHByb2dyZXNzLCBvciBjb21wbGV0ZWQpLCByZWZlcmVuY2VzIHRvIHRoZSByZWZlcnJhbCBpbml0aWF0b3IgKHRhc2sgcmVxdWVzdGVyKSBhbmQgcmVmZXJyYWwgcmVjaXBpZW50ICh0YXNrIG93bmVyKSwgYSByZWZlcmVuY2UgdG8gdGhlIHJlZmVycmFsIHNlcnZpY2UgcmVxdWVzdCAoZm9jdXMpIGFuZCwgaWYgYXBwbGljYWJsZSwgdGhlIHJlZmVycmFsIHNlcnZpY2UgcmVxdWVzdCBmZWVkYmFjayAob3V0cHV0KS4gCgpUYXNrIGFuZCBpdHMgYXNzb2NpYXRlZCByZWZlcmVuY2VzIGFyZSBpbmNsdWRlZCBpbiBnZW5lcmFsIFJFU1RmdWwgU3VibWl0IGV2ZW4gaWYgdGhlIG1lc3NhZ2UgaGVhZGVyIGFuZCBtZXNzYWdlIGJ1bmRsZSBhcmUgbm90IHV0aWxpemVkLiAK"/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="7741"/>
+            <contentType value="text/markdown"/>
+            <data value="QWN0aW9ucyB0YWtlbiBieSB0aGUgcmVmZXJyYWwgaW5pdGlhdG9yIHN1Y2ggYXMgc2VuZGluZyBhIHJlZmVycmFsIHJlcXVlc3Qgb3Igc2VuZGluZyBhIGNhbmNlbGxhdGlvbiByZXF1ZXN0IGFuZCBhY3Rpb25zIHRha2VuIGJ5IHRoZSByZWZlcnJhbCByZWNpcGllbnQgc3VjaCBhcyBzZW5kIHJlZmVycmFsIGFjY2VwdGFuY2Ugb3Igc2VuZCByZXF1ZXN0IG91dGNvbWUgYXJlIHRyaWdnZXJpbmcgZXZlbnRzIHRoYXQgdHJpZ2dlciBhIGNoYW5nZSBpbiBzdGF0ZSBvZiB0aGUgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IHRhc2suIFRoZSBmdWxsIHNldCBvZiB0cmlnZ2VyaW5nIGV2ZW50cyBieSBhY3RvciBhbmQgdGhlaXIgY29ycmVzcG9uZGluZyBzdGF0ZSB0cmFuc2l0aW9ucyBhcmUgZGVwaWN0ZWQgaW4gdGhlIGZvbGxvd2luZyB0YWJsZToKPGNlbnRlcj4KPHRhYmxlPjx0cj48dGQ+PGltZyBzcmM9Ikhhcm1vbml6ZWQgU3RhdGUgVHJhbnNpdGlvbnMucG5nIiBzdHlsZT0id2lkdGg6MTAwJTsiLz48L3RkPjwvdHI+PC90YWJsZT48L2NlbnRlcj4K"/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="7509"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIGZvbGxvd2luZyBkaWFncmFtIGlzIHRoZSBmdWxsIHJlZmVycmFsIHNlcnZpY2UgcmVxdWVzdCB0YXNrIHN0YXRlIG1hY2hpbmUuIEVhY2ggc3RhdGUgdHJhbnNpdGlvbiBpcyBhZG9ybmVkIHdpdGggYSBudW1lcmljIGlkZW50aWZpZXIgb2YgdGhlIHRyYW5zaXRpb24gdHJpZ2dlcmluZyBldmVudC4gIAoKPHRhYmxlPjx0cj48dGQ+PGltZyBzcmM9IlRhc2sgU3RhdGUgTWFjaGluZS5wbmciIHN0eWxlPSJ3aWR0aDoxMDAlOyIvPjwvdGQ+PC90cj48L3RhYmxlPgoKVGhlIGJ1c2luZXNzIHN0YXRlcyByZWZsZWN0IGEgaGFybW9uaXphdGlvbiBvZiB0aGUgc3RhdGUgbWFjaGluZSByZXF1aXJlZCBieSBCU2VSIGFuZCB0aGUgc3RhdGUgbWFjaGluZWQgZGVmaW5lZCBieSB0aGUgSUhFIFBhdGllbnQgQ2FyZSBDb29yZGluYXRpb24gVGVjaG5pY2FsIEZyYW1ld29yayBTdXBwbGVtZW50IDM2MCBFeGNoYW5nZSBDbG9zZWQgTG9vcCBSZWZlcnJhbCAoMzYwWCkuIFN0YXRlcyByZWZsZWN0ZWQgaW4gdGhlIDM2MHggc3RhdGUgbWFjaGluZSB0aGF0IHJlbGF0ZSB0byB0aGUgaW50ZXJpbSBzdGF0ZXMgb2YgaW4tcHJvZ3Jlc3Mgc2VydmljZSByZXF1ZXN0IGZ1bGZpbGxtZW50IGFjdGl2aXRpZXMgY2FuIGJlIGFkZGVkIGFzIGV4dGVuZGVkIHZhbHVlIHNldHMgZm9yIHRoZSBCU2VSIElHIGFuZCBhcmUgcmVmbGVjdGVkIGluIHRoZSBoYXJtb25pemVkIHN0YXRlIG1hY2hpbmUuIA=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="5503"/>
+            <contentType value="text/markdown"/>
+            <data value="RWFjaCByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3QgaW5jbHVkZXMgcmVmZXJlbmNlcyB0byBhIHBhdGllbnQgKHN1YmplY3QpLCByZWZlcnJhbCBpbml0aWF0b3IgKHJlcXVlc3RlciksIHJlZmVycmFsIHJlY2lwaWVudCAocGVyZm9ybWVyKSwgYW5kIGEgcmVmZXJlbmNlIHRvIGEgYnVuZGxlIG9mIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gY29uc2lzdGVudCB3aXRoIHRoZSBzY29wZSBvZiB0aGUgcmVmZXJyYWwgdXNlIGNhc2UgYXMgZGVzaWduYXRlZCBpbiBTZXJ2aWNlUmVxdWVzdC5jb2RlLiBUaGUgc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBidW5kbGVzIGFyZSBtdXR1YWxseSBleGNsdXNpdmUuIEVhY2ggYnVuZGxlIGZ1bmN0aW9ucyBhcyBhIHVzZSBjYXNlLXNwZWNpZmljIGluZm9ybWF0aW9uIGNvbnRlbnQgcHJvZmlsZS4gIApUaGUgZm9sbG93aW5nIGRpYWdyYW0gZGVwaWN0cyByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3RzIGFuZCB0aGUgc2l4IHVzZSBjYXNlcyBjb3ZlcmVkIGluIHRoZSBCU2VSIElHLiBBZGRpdGlvbmFsIHVzZSBjYXNlcyBhcmUgaW50cm9kdWNlZCB2aWEgdGhlIGNyZWF0aW9uIG9mIGFkZGl0aW9uYWwgdXNlIGNhc2Ugc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBidW5kbGVzLiAKCjxjZW50ZXI+PHRhYmxlPjx0cj48dGQ+PGltZyBzcmM9IlJlZmVycmFsIFNlcnZpY2UgUmVxdWVzdC5wbmciIC8+PC90ZD48L3RyPjwvdGFibGU+PC9jZW50ZXI+Cg=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="9491"/>
+            <contentType value="text/markdown"/>
+            <data value="RWFjaCByZWZlcnJhbCB1c2UgY2FzZSByZXF1aXJlcyB0aGF0IGNlcnRhaW4gaW5mb3JtYXRpb24gaXRlbXMgYWNjb21wYW55IHRoZSBzZXJ2aWNlIHJlcXVlc3QgYXMgc3VwcG9ydGluZyBpbmZvcm1hdGlvbi4gVGhlIGluZm9ybWF0aW9uIGl0ZW1zIGFyZSBzdXBwb3J0aW5nIGluZm9ybWF0aW9uIGZvciBvbmUgb3IgbW9yZSByZWZlcnJhbCB1c2UgY2FzZS4gVGhlIGZvbGxvd2luZyB0YWJsZSBpbmRpY2F0ZXMgaG93IHNlcnZpY2UgcmVxdWVzdCBzdXBwb3J0aW5nIGluZm9ybWF0aW9uIGl0ZW1zIGFyZSBhbGxvY2F0ZWQgdG8gcmVmZXJyYWwgdXNlIGNhc2VzLgoKPGNlbnRlcj4KCTx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJSZWZlcnJhbCBSZXF1ZXN0IENsaW5pY2FsIFN0YXRlbWVudHMucG5nIiBzdHlsZT0id2lkdGg6MTAwJTsiLz48L3RkPjwvdHI+PC90YWJsZT4KCTwvY2VudGVyPgoJCkNsaW5pY2FsIHN0YXRlbWVudCBwcm9maWxlcyB1c2UgRkhJUiByZXNvdXJjZSBwcm9maWxlcyB0byBleHByZXNzIG9uZSBvciBtb3JlIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gaXRlbS4gVGhlIGFib3ZlIHRhYmxlIGluZGljYXRlcyB0aGUgZ3JvdXBpbmcgb2YgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gaXRlbXMgaW50byBjbGluaWNhbCBzdGF0ZW1lbnQgcmVzb3VyY2UgcHJvZmlsZXMu"/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="9107"/>
+            <contentType value="text/markdown"/>
+            <data value="RWFjaCByZWZlcnJhbCBmZWVkYmFjayBjb21wb3NpdGlvbiBpbmNsdWRlcyByZWZlcmVuY2VzIHRvIGEgcGF0aWVudCAoc3ViamVjdCksIHJlZmVycmFsIHJlY2lwaWVudCAoYXV0aG9yKSwgYW5kIHR3byBjb21wb3NpdGlvbiBzZWN0aW9ucyAtIHRoZSBmZWVkYmFjayBzdW1tYXJ5IGFuZCBmZWVkYmFjayBzdXBwb3J0aW5nIGluZm9ybWF0aW9uLiBUaGUgZmVlZGJhY2sgc3VtbWFyeSBzZWN0aW9uIGluY2x1ZGVzIGEgcmVmZXJlbmNlIHRvIHRoZSByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3QgKGZvY3VzKS4gVGhlIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gc2VjdGlvbiBpbmNsdWRlcyBhIHJlZmVyZW5jZSB0byBhIGJ1bmRsZSBvZiBzdXBwb3J0aW5nIGluZm9ybWF0aW9uIGNvbnNpc3RlbnQgd2l0aCB0aGUgc2NvcGUgb2YgdGhlIHJlZmVycmFsIHVzZSBjYXNlIGFzIGRlc2lnbmF0ZWQgaW4gdGhlIHJlZmVycmFsIHNlcnZpY2UgcmVxdWVzdCBjb2RlLiAKClRoZSBmb2xsb3dpbmcgZGlhZ3JhbSBkZXBpY3RzIHJlZmVycmFsIGZlZWRiYWNrIGNvbXBvc2l0aW9uLCBpdHMgdHdvIHNlY3Rpb25zLCBhbmQgdGhlIHNpeCB1c2UgY2FzZXMgY292ZXJlZCBpbiB0aGUgQlNlUiBJRy4gCgo8Y2VudGVyPjx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJTZXJ2aWNlIFJlcXVlc3QgRmVlZGJhY2sucG5nIiBzdHlsZT0id2lkdGg6MTAwJTsiLz48L3RkPjwvdHI+PC90YWJsZT4KPC9jZW50ZXI+Cg=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="6902"/>
+            <contentType value="text/markdown"/>
+            <data value="RWFjaCByZWZlcnJhbCB1c2UgY2FzZSByZXF1aXJlcyB0aGF0IGNlcnRhaW4gaW5mb3JtYXRpb24gaXRlbXMgYWNjb21wYW55IHRoZSBzZXJ2aWNlIHJlcXVlc3QgZmVlZGJhY2sgYXMgc3VwcG9ydGluZyBpbmZvcm1hdGlvbi4gVGhlIGluZm9ybWF0aW9uIGl0ZW1zIGFyZSBzdXBwb3J0aW5nIGluZm9ybWF0aW9uIGZvciBvbmUgb3IgbW9yZSByZWZlcnJhbCB1c2UgY2FzZS4gVGhlIGZvbGxvd2luZyB0YWJsZSBpbmRpY2F0ZXMgaG93IHNlcnZpY2UgcmVxdWVzdCBmZWVkYmFjayBzdXBwb3J0aW5nIGluZm9ybWF0aW9uIGl0ZW1zIGFyZSBhbGxvY2F0ZWQgdG8gcmVmZXJyYWwgdXNlIGNhc2VzLgoKPGNlbnRlcj48dGFibGU+PHRyPjx0ZD48aW1nIHNyYz0iUmVxdWVzdCBGZWVkYmFjayBDbGluaWNhbCBTdGF0ZW1lbnRzLnBuZyIgc3R5bGU9IndpZHRoOjEwMCU7Ii8+PC90ZD48L3RyPjwvdGFibGU+CjwvY2VudGVyPg=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="6532"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIEJTZVIgSUcgaWxsdXN0cmF0ZXMgdGhlIHNwZWNpZmljIGZpdCB0byBwdXJwb3NlIGFuZCBwYXJzaW1vbmlvdXMgZGVzaWduIHBhdHRlcm4gdGhyb3VnaCB0aGUgaW5jbHVzaW9uIG9mIHNlcnZpY2UgcmVxdWVzdCBjb250ZW50IHByb2ZpbGVzIGZvciBzaXggcmVwcmVzZW50YXRpdmUgdXNlIGNhc2VzIGFuZCB0aGUgY29udGV4dCBmb3IgZXh0ZW5zaW9uIG9mIEJTZVIgdXNlIGJ5IG90aGVyIGltcGxlbWVudGF0aW9uIGd1aWRlcyBhcyBkZXRhaWxlZCBlbHNld2hlcmUgaW4gdGhpcyBndWlkZS4gCgpUaGUgc2VsZWN0ZWQgc2VydmljZSByZXF1ZXN0IHVzZSBjYXNlcyBoYXZlIG92ZXJsYXBwaW5nIGluZm9ybWF0aW9uIG5lZWRzIHRoYXQgZGVtb25zdHJhdGUgdGhlIGNvbmNlcHRzIG9mIHBhcnNpbW9uaW91cyBwYXJ0aXRpb25pbmcgYW5kIHJlc291cmNlIHByb2ZpbGUgcmV1c2UuIEEgc2VydmljZSByZXF1ZXN0IGNvbnRlbnQgcHJvZmlsZSBjb25zdHJhaW5zIHRoZSBjb250ZW50IG9mIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gZm9yIGEgc2VydmljZSByZXF1ZXN0IHRvIHRoZSBpbmZvcm1hdGlvbiBuZWVkcyBvZiB0aGUgc2VydmljZSByZXF1ZXN0IHVzZSBjYXNlLgoKRWFjaCByZWZlcnJhbCB1c2UgY2FzZSBpcyBhbiBhZ2dyZWdhdGlvbiBvZiBzdXBwb3J0aW5nIGluZm9ybWF0aW9uIGRhdGEgaXRlbXMuIFN1cHBvcnRlZCBpbmZvcm1hdGlvbiBkYXRhIGl0ZW1zIGFyZSByZXByZXNlbnRlZCBpbiBjbGluaWNhbCBzdGF0ZW1lbnQgcHJvZmlsZXMuIFN1cHBvcnRpbmcgaW5mb3JtYXRpb24gYnVuZGxlcyBhc3NvY2lhdGVkIHdpdGggcmVmZXJyYWwgdXNlIGNhc2VzIGFyZSBhZ2dyZWdhdGlvbnMgb2YgY2xpbmljYWwgc3RhdGVtZW50cy4gU3VwcG9ydGluZyBpbmZvcm1hdGlvbiBidW5kbGVzIGFyZSB1c2VkIGFzIHJlZmVycmFsIHJlcXVlc3RzIGFuZCByZWZlcnJhbCBmZWVkYmFjayBhZ2dyZWdhdGlvbnMgb2YgdXNlIGNhc2Ugc3BlY2lmaWMgc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBkYXRhIGl0ZW1zLgoKVGhlIGZvbGxvd2luZyB0YWJsZSBpZGVudGlmaWVzIHRoZSBhZ2dyZWdhdGlvbiBvZiBjbGluaWNhbCBzdGF0ZW1lbnQgcHJvZmlsZXMgdG8gcmVmZXJyYWwgcmVxdWVzdCBhbmQgcmVmZXJyYWwgZmVlZGJhY2sgc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBidW5kbGVzOgoKPGNlbnRlcj4KCTx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJTdXBwb3J0aW5nIEluZm9ybWF0aW9uIEJ1bmRsZXMucG5nIiBzdHlsZT0id2lkdGg6MTAwJTsiLz48L3RkPjwvdHI+PC90YWJsZT4KCTwvY2VudGVyPgo="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="6441"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhpcyBzcGVjaWZpY2F0aW9uIGRlZmluZXMgdHdvIHRyYW5zYWN0aW9ucyB0eXBlcywgYSBSZWZlcnJhbCBSZXF1ZXN0IFRyYW5zYWN0aW9uIGFuZCBhIFJlZmVycmFsIEZlZWRiYWNrIFRyYW5zYWN0aW9uLiBUaGUgZm9sbG93aW5nIGRpYWdyYW0gaWxsdXN0cmF0ZXMgdGhlIHR3byB0cmFuc2FjdGlvbiBmbG93cyBjb3ZlcmVkIGluIHRoaXMgc3BlY2lmaWNhdGlvbi4gQSByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3QgZmxvd3MgZnJvbSBhIHJlZmVycmFsIGltaXRhdG9yIHRvIGEgcmVmZXJyYWwgcmVjaXBpZW50LiBUaGUgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IHRyYW5zYWN0aW9uIGlzIGNvbXByaXNlZCBvZiB0aGUgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IGFuZCBpdHMgc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBidW5kbGVzIGFuZCBjbGluaWNhbCBzdGF0ZW1lbnRzLiBBIHNlcnZpY2UgcmVxdWVzdCBmZWVkYmFjayB0cmFuc2FjdGlvbiBmbG93cyBmcm9tIHRoZSByZWZlcnJhbCByZWNpcGllbnQgdG8gdGhlIHJlZmVycmFsIGluaXRpYXRvci4gVGhlIHNlcnZpY2UgcmVxdWVzdCBmZWVkYmFjayB0cmFuc2FjdGlvbiBpcyBjb21wcmlzZWQgb2YgdGhlIHJlZmVycmFsIGZlZWRiYWNrIGRvY3VtZW50IGNvbnRhaW5pbmcgdGhlIHJlZmVycmFsIGFjdGl2aXR5IHN0YXR1cywgc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBidW5kbGVzIGFuZCBjbGluaWNhbCBzdGF0ZW1lbnRzLgoKPGNlbnRlcj48dGFibGU+PHRyPjx0ZD48aW1nIHNyYz0iU2NvcGUucG5nIiBzdHlsZT0id2lkdGg6MTAwJTsiLz48L3RkPjwvdHI+PC90YWJsZT48L2NlbnRlcj4KClRoZSBleGNoYW5nZSBvZiBpbmZvcm1hdGlvbiBiZXR3ZWVuIGEgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IGluaXRpYXRvciBhbmQgYSByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3QgcmVjaXBpZW50IGlzIGJpLWRpcmVjdGlvbmFsLiBUaGUgc2VxdWVuY2Ugb2YgZXhjaGFuZ2VzIHN1cHBvcnRlZCBpbiB0aGlzIGd1aWRlIGFyZSBkZXBpY3RlZCBpbiB0aGUgZm9sbG93aW5nIGRpYWdyYW06Cgo8Y2VudGVyPgo8dGFibGU+PHRyPjx0ZD48aW1nIHNyYz0iV29ya2Zsb3cgU2VxdWVuY2UucG5nIiBzdHlsZT0id2lkdGg6MTAwJTsiLz48L3RkPjwvdHI+PC90YWJsZT48L2NlbnRlcj4="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="9788"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlcmUgYXJlIHR3byBzdXBwb3J0ZWQgdHJhbnNwb3J0IG9wdGlvbnMgdGhhdCBjYW4gYmUgdXNlZCBpbmRpdmlkdWFsbHkgb3IgaW4gY29tYmluYXRpb24uIFRoaXMgZmxleGliaWxpdHkgaXMgbmVlZGVkIHRvIHN1cHBvcnQgcG9pbnQtdG8tcG9pbnQgdHJhbnNwb3J0IGFzIHdlbGwgYXMgdHJhbnNwb3J0IHRocm91Z2ggSGVhbHRoIEluZm9ybWF0aW9uIEV4Y2hhbmdlcyBhbmQgSGVhbHRoIEluZm9ybWF0aW9uIE5ldHdvcmtzLgoKIyMjIEZISVIgTWVzc2FnaW5nIE9wdGlvbgoKT25lIG9wdGlvbiBmb3IgdHJhbnNtaXR0aW5nIHRoZSBjb250ZW50IGluIHRoaXMgaW1wbGVtZW50YXRpb24gZ3VpZGUgaXMgdGhlIHVzZSBvZiBGSElSIE1lc3NhZ2luZy4gRkhJUiBNZXNzYWdpbmcgaW52b2x2ZXMgdGhlIHVzZSBvZiBhIHRvcC1sZXZlbCBGSElSIE1lc3NhZ2UgYnVuZGxlIGFuZCB0aGVuIGEgc21hbGwgRkhJUiBNZXNzYWdpbmcgaGVhZGVyLiBGSElSIE1lc3NhZ2luZyBlbmFibGVzIHRoZSBtb3ZlbWVudCBvZiBjb250ZW50IHRocm91Z2ggYW4gaW5mb3JtYXRpb24gZXhjaGFuZ2UgaW50ZXJtZWRpYXJ5IGFuZCBhbGxvd3MsIGJ1dCBkb2VzIG5vdCByZXF1aXJlLCBhIHN0b3JlIGFuZCBmb3J3YXJkIGV4Y2hhbmdlIHBhcmFkaWdtLiBUaGUgRkhJUiBNZXNzYWdlIGhlYWRlciBpbmNsdWRlcyB0aGUgaWRlbnRpdHkgb2YgdGhlIHVsdGltYXRlIGludGVuZGVkIHJlY2lwaWVudCBhbmQgb3RoZXIgaW5mb3JtYXRpb24gaGVscGZ1bCBmb3IgbWVzc2FnZSBleGNoYW5nZS4gQWxsIHJlc291cmNlcyBzaG91bGQgYmUgcG9wdWxhdGVkIGluIHRoZSBGSElSIE1lc3NhZ2UgYnVuZGxlIGJlY2F1c2Ugc3Vic2VxdWVudCByZXRyaWV2YWwgb2YgcmVzb3VyY2VzIGJhY2sgdGhyb3VnaCBhbiBpbnRlcm1lZGlhcnkgbWF5IG5vdCBiZSBlbmFibGVkLgoKVGhlIGZvbGxvd2luZyBwcm9maWxlcyBoYXZlIGJlZW4gZGVmaW5lZCBmb3IgdGhlIEZISVIgTWVzc2FnaW5nIE9wdGlvbjoKCiMjIyMgUHJvZmlsZXMKPHVsPgogIDxsaT48YSBocmVmPSJTdHJ1Y3R1cmVEZWZpbml0aW9uLUJTZVItUmVmZXJyYWxNZXNzYWdlQnVuZGxlLmh0bWwiPkJTZVIgUmVmZXJyYWwgTWVzc2FnZSBCdW5kbGU8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsTWVzc2FnZUhlYWRlci5odG1sIj5CU2VSIFJlZmVycmFsIE1lc3NhZ2VIZWFkZXI8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsVGFzay5odG1sIj5CU2VSIFJlZmVycmFsIFRhc2s8L2E+PC9saT4KPC91bD4KClRoZSBmaXJzdCByZXNvdXJjZSBpbiB0aGUgPGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsTWVzc2FnZUJ1bmRsZS5odG1sIj5CU2VSIFJlZmVycmFsIE1lc3NhZ2UgQnVuZGxlPC9hPiBpcyB0aGUgPGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsTWVzc2FnZUhlYWRlci5odG1sIj5CU2VSIFJlZmVycmFsIE1lc3NhZ2VIZWFkZXI8L2E+IGFuZCB0aGUgZm9jdXMgb2YgdGhlIDxhIGhyZWY9IlN0cnVjdHVyZURlZmluaXRpb24tQlNlUi1SZWZlcnJhbE1lc3NhZ2VIZWFkZXIuaHRtbCI+QlNlUiBSZWZlcnJhbCBNZXNzYWdlSGVhZGVyPC9hPiBpcyB0aGUgPGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsVGFzay5odG1sIj5CU2VSIFJlZmVycmFsIFRhc2s8L2E+LiBUaGUgZm9jdXMgb2YgdGhlIDxhIGhyZWY9IlN0cnVjdHVyZURlZmluaXRpb24tQlNlUi1SZWZlcnJhbFRhc2suaHRtbCI+QlNlUiBSZWZlcnJhbCBUYXNrPC9hPiBpcyB0aGUgPGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsU2VydmljZVJlcXVlc3QuaHRtbCI+QlNlUiBSZWZlcnJhbCBTZXJ2aWNlUmVxdWVzdDwvYT4uCgoKIyMjIEJhc2ljIFJFU1QgT3B0aW9uCgpUaGUgc2Vjb25kIG9wdGlvbiBmb3IgdHJhbnNtaXR0aW5nIHRoZSBjb250ZW50IGluIHRoaXMgaW1wbGVtZW50YXRpb24gZ3VpZGUgaXMgZGVzY3JpYmVkIGhlcmUgYXMgQmFzaWMgUkVTVC4gSW4gdGhpcyBjYXNlLCBhIHBvaW50LXRvLXBvaW50IFJFU1RmdWwgZXhjaGFuZ2UgaXMgc3VwcG9ydGVkLiBJZiB0aGUgaW1tZWRpYXRlIGluY2x1c2lvbiBvZiBhbGwgcmVzb3VyY2UgY29udGVudCBtdXN0IGJlIGVuc3VyZWQsIHRoZW4gYSB0b3AgbGV2ZWwgYnVuZGxlIGFuZCBpbnNpc3RlbmNlIG9uIHRoZWlyIGluY2x1c2lvbiB3aWxsIGJlIHRoZSByZXNwb25zaWJpbGl0eSBvZiB0aGUgdHJhbnNtaXR0aW5nIHNlcnZlci4KClRoZSBmb2xsb3dpbmcgcHJvZmlsZXMgaGF2ZSBiZWVuIGRlZmluZWQgZm9yIHRoZSBSRVNUZnVsIFN1Ym1pdCBPcHRpb246CgojIyMjIFByb2ZpbGVzCjx1bD4KICA8bGk+PGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsVGFzay5odG1sIj5CU2VSIFJlZmVycmFsIFRhc2s8L2E+PC9saT4KPC91bD4KClRoZSBmb2N1cyBvZiB0aGUgPGEgaHJlZj0iU3RydWN0dXJlRGVmaW5pdGlvbi1CU2VSLVJlZmVycmFsVGFzay5odG1sIj5CU2VSIFJlZmVycmFsIFRhc2s8L2E+IGlzIHRoZSA8YSBocmVmPSJTdHJ1Y3R1cmVEZWZpbml0aW9uLUJTZVItUmVmZXJyYWxTZXJ2aWNlUmVxdWVzdC5odG1sIj5CU2VSIFJlZmVycmFsIFNlcnZpY2VSZXF1ZXN0PC9hPi4="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="5115"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIEJTZVIgSUcgaW5jbHVkZXMgc3BlY2lmaWNhdGlvbnMgdG8gc3VwcG9ydCB0aGUgaW5mb3JtYXRpb24gbmVlZHMgb2Ygc2l4IHNwZWNpZmljIGJpLWRpcmVjdGlvbmFsIHJlZmVycmFsIHVzZSBjYXNlcy4gSG93ZXZlciwgdGhlIGd1aWRlIGNhbiBiZSBlYXNpbHkgYWRhcHRlZCB0byBhY2NvbW1vZGF0ZSBhZGRpdGlvbmFsIHJlZmVycmFsIHVzZSBjYXNlcy4gVGhlIGZvbGxvd2luZyBpcyBhIGxpc3Qgb2YgdG91Y2hwb2ludHMgd2l0aGluIHRoZSBCU2VSIHNwZWNpZmljYXRpb24gd2hlcmUgYWRhcHRhdGlvbiBtYXkgYmUgbmVjZXNzYXJ5IHRvIHN1cHBvcnQgYWRkaXRpb25hbCByZWZlcnJhbCB1c2UgY2FzZXMuCgoqICoqUmVmZXJyYWxNZXNzYWdlSGVhZGVyLnJlYXNvbioqIElmIEZISVIgbWVzc2FnaW5nIGlzIHVzZWQgYXMgdGhlIG1lYW5zIG9mIGV4Y2hhbmdlIGZvciB0aGUgcmVmZXJyYWwgdXNlIGNhc2UsIHRoZW4gdGhlIHZhbHVlIHNldCBib3VuZCB0byB0aGUgcmVhc29uIGVsZW1lbnQgb2YgdGhlIHJlZmVycmFsIG1lc3NhZ2UgaGVhZGVyIG5lZWRzIHRvIGJlIGV4cGFuZGluZyB0byBpbmNsdWRlIHRoZSBuZXcgdXNlIGNhc2UgYXMgdGhlIHJlYXNvbiBmb3IgdGhlIHJlZmVycmFsIG1lc3NhZ2UuCgoqICoqUmVmZXJyYWxUYXNrLmJ1c2luZXNzU3RhdHVzKiogSWYgdGhlIHdvcmtmbG93IHN0YXRlIG1hY2hpbmUgYXNzb2NpYXRlZCB3aXRoIHRoZSByZWZlcnJhbCBleGNoYW5nZSB1c2UgY2FzZSBkaWZmZXJzIGZyb20gdGhlIEJTZVIgc3RhdGUgbWFjaGluZSwgdGhlbiBpdCBpcyBuZWNlc3NhcnkgdG8gZXh0ZW5kIHRoZSB2YWx1ZSBzZXQgYm91bmQgdG8gdGhlIGJ1c2luZXNzIHN0YXR1cyBlbGVtZW50IG9mIHRoZSByZWZlcnJhbCB0YXNrIHRvIGluY2x1ZGUgYWRkaXRpb25hbCBzdGF0ZXMuCgoqICoqUmVmZXJyYWxTZXJ2aWNlUmVxdWVzdC5jb2RlKiogVGhlIHZhbHVlIHNldCBib3VuZCB0byB0aGUgY29kZSBlbGVtZW50IG9mIHRoZSByZWZlcnJhbCBzZXJ2aWNlIHJlcXVlc3QgbmVlZHMgdG8gYmUgZXhwYW5kZWQgdG8gaW5jbHVkZSB0aGUgbmV3IHJlZmVycmFsIHVzZSBjYXNlLiBOb3RlIHRoYXQgdGhpcyBpcyB0aGUgc2FtZSB2YWx1ZSBzZXQgYXMgdGhlIG9uZSBib3VuZCB0byB0aGUgcmVhc29uIGVsZW1lbnQgb2YgdGhlIHJlZmVycmFsIG1lc3NhZ2UgaGVhZGVyLgoKKiAqKlJlZmVycmFsU2VydmljZVJlcXVlc3QucmVhc29uQ29kZSoqIFRoZSB2YWx1ZSBzZXQgYm91bmQgdG8gdGhlIHJlYXNvbkNvZGUgZWxlbWVudCBvZiB0aGUgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IG1heSBuZWVkIHRvIGJlIGV4cGFuZGVkIHRvIGluY2x1ZGUgcmVmZXJyYWwgcmVhc29ucyBmb3IgdGhlIG5ldyByZWZlcnJhbCB1c2UgY2FzZS4gTm90ZSByZWFzb25Db2RlIGlzIG9wdGlvbmFsIGFuZCBuZWVkIG9ubHkgYmUgdXNlZCB3aGVuIHRoZSB2YWx1ZSB1c2VkIGluIHNlcnZpY2UgcmVxdWVzdCBjb2RlIGlzIG5vdCBwcmUtY29vcmRpbmF0ZWQgd2l0aCBzZXJ2aWNlIHJlcXVlc3QgcmVhc29uLgoKKiAqKlJlZmVycmFsU2VydmljZVJlcXVlc3Quc3VwcG9ydGluZ0luZm8qKiBBbiBhZGRpdGlvbmFsIHNsaWNlIG5lZWRzIHRvIGJlIGFkZGVkIHRvIHRoZSBzdXBwb3J0IGluZm8gZWxlbWVudCBvZiB0aGUgcmVmZXJyYWwgc2VydmljZSByZXF1ZXN0IGZvciB0aGUgbmV3IHJlZmVycmFsIHVzZSBjYXNlLiBFYWNoIHNsaWNlIHNoYWxsIGluY2x1ZGUgYSByZWZlcmVuY2UgdG8gYSBuZXdseSBkZWZpbmVkIGJ1bmRsZSBvZiBjbGluaWNhbCBzdGF0ZW1lbnRzIHJlbGV2YW50IHRvIHRoZSBuZXcgcmVmZXJyYWwgdXNlIGNhc2UuIFdoZXJlIGFwcGxpY2FibGUsIG5ld2x5IGRlZmluZWQgc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBGSElSIGJ1bmRsZXMgc2hvdWxkIHJldXNlIGV4aXN0aW5nIGNsaW5pY2FsIHN0YXRlbWVudCBwcm9maWxlcyBmcm9tIHRoZSBCU2VSIElHLgoKKiAqKlJlZmVycmFsQWN0aXZpdHlTdGF0dXMuY29tcG9uZW50LmNvZGUqKiBUaGUgdmFsdWUgc2V0IGJvdW5kIHRvIHRoZSBjb2RlIGVsZW1lbnQgb2YgdGhlIHJlZmVycmFsIGFjdGl2aXR5IHN0YXR1cyBvYnNlcnZhdGlvbiBjb21wb25lbnQgbmVlZHMgdG8gYmUgZXhwYW5kZWQgdG8gaW5jbHVkZSBuZXdseS1kZWZpbmVkIHJlZmVycmFsIHN0YXR1cyB0cmFpdHMsIGlmIGFueSwgYXNzb2NpYXRlZCB3aXRoIGEgcmVmZXJyYWwgdXNlIGNhc2UgcmVzcG9uc2UgZmVlZGJhY2sgc3VtbWFyeS4KCiogKipSZWZlcnJhbEZlZWRiYWNrQ29tcG9zaXRpb24uU3VwcG9ydGluZ0luZm9ybWF0aW9uLmVudHJ5KiogQW4gYWRkaXRpb25hbCBzbGljZSBuZWVkcyB0byBiZSBhZGRlZCB0byB0aGUgZW50cnkgZWxlbWVudCBvZiB0aGUgc3VwcG9ydGluZyBpbmZvcm1hdGlvbiBzZWN0aW9uIG9mIHRoZSByZWZlcnJhbCBmZWVkYmFjayBjb21wb3NpdGlvbiBmb3IgdGhlIG5ldyByZWZlcnJhbCB1c2UgY2FzZS4gRWFjaCBzbGljZSBzaGFsbCBpbmNsdWRlIGEgcmVmZXJlbmNlIHRvIGEgbmV3bHkgZGVmaW5lZCBidW5kbGUgb2YgY2xpbmljYWwgc3RhdGVtZW50cyByZWxldmFudCB0byB0aGUgbmV3IHJlZmVycmFsIHVzZSBjYXNlLiBXaGVyZSBhcHBsaWNhYmxlLCBhZGRpdGlvbmFsIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gYnVuZGxlcyBzaG91bGQgcmV1c2UgZXhpc3RpbmcgY2xpbmljYWwgc3RhdGVtZW50IHByb2ZpbGVzIGZyb20gdGhlIEJTZVIgSUcuCgpXaGVuIHVzaW5nIHRoZSBCU2VSIGZvciB1c2UgY2FzZXMgb3V0c2lkZSB0aG9zZSBjb3ZlcmVkIGluIHRoZSBJRyBpdCBtYXkgYmUgbmVjZXNzYXJ5IHRvIGRlZmluZSBhZGRpdGlvbmFsIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gY2xpbmljYWwgc3RhdGVtZW50IHByb2ZpbGVzIGFuZCBidW5kbGVzLiBDYXJlIHNob3VsZCBiZSB0YWtlbiB0byBhdm9pZCB0aGUgY3JlYXRpb24gb2YgZHVwbGljYXRlIGNsaW5pY2FsIHN0YXRlbWVudCBwcm9maWxlcy4gUmV1c2Ugb2YgZXhpc3RpbmcgY2xpbmljYWwgc3RhdGVtZW50IHByb2ZpbGVzIGlzIHRoZSBiZXN0IHByYWN0aWNlLiBSZXZpc2luZyBhbiBleGlzdGluZyBjbGluaWNhbCBzdGF0ZW1lbnQgcHJvZmlsZSB0byBmdWxmaWxsIHRoZSBkYXRhIHJlcXVpcmVtZW50IG9mIGEgbmV3IHJlZmVycmFsIHVzZSBjYXNlIGlzIHByZWZlcnJlZCB0byB0aGUgY3JlYXRpb24gb2YgZHVwbGljYXRlIG9yIG92ZXJsYXBwaW5nIGNsaW5pY2FsIHN0YXRlbWVudHMuIAoKRHVwbGljYXRlIGFuZC9vciBvdmVybGFwcGluZyBzdXBwb3J0aW5nIGluZm9ybWF0aW9uIGJ1bmRsZXMgYXJlIGV4cGVjdGVkLiBDYXJlIHNob3VsZCBiZSB0YWtlbiB3aGVuIGNob29zaW5nIHRvIHJldXNlIHN1cHBvcnRpbmcgaW5mb3JtYXRpb24gYnVuZGxlczsgdGhlIGNvbnRlbnRzIG9mIGEgYnVuZGxlIGFyZSBzdWJqZWN0IHRvIGNoYW5nZSBhcyB1c2UgY2FzZXMgYXJlIGltcGxlbWVudGVkIGFuZCBhZGRpdGlvbmFsIG9yIHJldmlzZWQgaW5mb3JtYXRpb24gbmVlZHMgYXJlIGRpc2NvdmVyZWQuCgpUaGUgSEw3IFB1YmxpYyBIZWFsdGggV29yayBHcm91cCBbKFBIV0cpXShodHRwczovL2NvbmZsdWVuY2UuaGw3Lm9yZy9kaXNwbGF5L1BIV0cpIGlzIHRoZSBjdXN0b2RpYW4gb2YgdGhlIEJTZVIgRkhJUiBJRy4gRm9yIGFkdmljZSBhbmQgZ3VpZGFuY2Ugd2l0aCByZXVzZSBvciBleHRlbnNpb24gb2YgdGhlIEJTZVIgSUcgZm9yIGFkZGl0aW9uYWwgcmVmZXJyYWwgdXNlIGNhc2VzIGNvbnRhY3QgdGhlIFBIV0cuCg=="/>
+        </Binary>
+    </contained>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
     <name value="BSeR_BidirectionalServices_eReferral"/>
@@ -17,6 +165,12 @@
     <fhirVersion value="4.0.0"/>
     <fhirVersion value="4.0.0"/>
     <dependsOn>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-location">
+            <valueString value="https://www.hl7.org/fhir/us/core"/>
+        </extension>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-name">
+            <valueString value="USCore"/>
+        </extension>
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="3.1.0"/>
@@ -122,6 +276,9 @@
             <exampleBoolean value="false"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="practitioner/practitioner-us-core-henry-seven.xml"/>
+            </extension>
             <reference>
                 <reference value="Practitioner/practitioner-us-core-henry-seven"/>
                 <display value="Practitioner Seven Henry"/>
@@ -170,6 +327,9 @@
             <exampleBoolean value="false"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="structuredefinition/BSeR-ObesityReferralSupportingInformation.xml"/>
+            </extension>
             <reference>
                 <reference value="StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
                 <display value="BSeR_ObesityReferralSupportingInformation"/>
@@ -323,6 +483,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Media/Activities"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-us-core-smokingstatus-eve-everywoman.xml"/>
+            </extension>
+            <reference>
                 <reference value="Observation/observation-us-core-smokingstatus-eve-everywoman"/>
                 <display value="observation-us-core-smokingstatus-eve-everywoman"/>
             </reference>
@@ -330,6 +498,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-HA1c-Observation-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-HA1c-Observation-eve-everywoman"/>
                 <display value="observation-BSeR-HA1c-Observation-eve-everywoman"/>
@@ -338,6 +509,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
                 <display value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
@@ -346,6 +520,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
                 <display value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
@@ -354,6 +531,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="allergyintolerance/allergyintolerance-us-core-allergyint-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"/>
                 <display value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
@@ -362,6 +542,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-blood-pressure-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-blood-pressure-eve-everywoman"/>
                 <display value="observation-blood-pressure-eve-everywoman"/>
@@ -376,6 +559,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-bmi-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-bmi-eve-everywoman"/>
                 <display value="observation-bmi-eve-everywoman"/>
@@ -384,6 +570,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-body-weight-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-body-weight-eve-everywoman"/>
                 <display value="observation-body-weight-eve-everywoman"/>
@@ -392,6 +581,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
                 <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
@@ -400,6 +592,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
                 <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
@@ -408,12 +603,18 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="relatedperson/relatedperson-mom-everymom.xml"/>
+            </extension>
             <reference>
                 <reference value="RelatedPerson/relatedperson-mom-everymom"/></reference>
             <name value="RelatedPerson Mom L Everymom"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="patient/patient-us-core-patient-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
                 <display value="Patient Eve L Everywoman"/>
@@ -422,6 +623,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="patient/patient-us-core-patient-baby-everybaby.xml"/>
+            </extension>
             <reference>
                 <reference value="Patient/patient-us-core-patient-baby-everybaby"/>
                 <display value="Patient Baby B Everybaby"/>
@@ -430,12 +634,90 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="patient/patient-us-core-patient-mom-everymom.xml"/>
+            </extension>
             <reference>
                 <reference value="Patient/patient-us-core-patient-mom-everymom"/>
                 <display value="Patient Mom L Everymom"/>
             </reference>
             <name value="Patient Mom L Everymom"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/ParticipantResources"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/ReferralInitiator"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/ReferralRecipient"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/ReferralPatient"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/WorkflowManagementResources"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/ReferralServiceRequest"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/BSeRFHIRIGProilfes"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/Scope"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/TaskStateMachine"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/StateTransitionTriggerEvents"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/ReferralRequestClinicalStatements"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/RequestFeedbackClinicalStatements"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/SupportingInformationBundles"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/BSeRIGReferralUseCases"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/ServiceRequestFeedback"/></reference>
+            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
@@ -446,6 +728,9 @@
             <exampleBoolean value="false"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
                 <display value="bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
@@ -454,6 +739,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="bundle/bundle-bser-arthritis-referral-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Bundle/bundle-bser-arthritis-referral-everywoman"/>
                 <display value="bundle-bser-arthritis-referral-everywoman"/>
@@ -463,10 +751,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Media/BSeR-Organization"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
                 <display value="BSeR Telcom Communication Preferences VS"/>
             </reference>
             <name value="BSeR Telcom Communication Preferences VS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Media/HarmonizedStateTransitions"/></reference>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -486,6 +784,9 @@
             <exampleBoolean value="false"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-body-height-baby-everybaby.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-body-height-baby-everybaby"/>
                 <display value="observation-body-height-baby-everybaby"/>
@@ -494,6 +795,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-ParticipationFeedbackObservation-1-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
                 <display value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
@@ -502,6 +806,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-ParticipationFeedbackObservation-2-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
                 <display value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
@@ -511,6 +818,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Media/WorkflowSequence"/></reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="bundle/bundle-bser-diabetes-referral-feedback-eve-everywoman.xml"/>
+            </extension>
+            <reference>
                 <reference value="Bundle/bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
                 <display value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
             </reference>
@@ -518,6 +833,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="practitionerrole/practitionerrole-bser-referral-recipient.xml"/>
+            </extension>
             <reference>
                 <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
                 <display value="practitionerrole-bser-referral-recipient"/>
@@ -526,6 +844,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="practitionerrole/practitionerrole-bser-referral-initiator.xml"/>
+            </extension>
             <reference>
                 <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
                 <display value="practitionerrole-bser-referral-initiator"/>
@@ -534,6 +855,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="bundle/bundle-bser-diabetes-referral-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Bundle/bundle-bser-diabetes-referral-eve-everywoman"/>
                 <display value="bundle-bser-diabetes-referral-eve-everywoman"/>
@@ -542,14 +866,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
-                <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="bundle/bundle-bser-tobacco-referral-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Bundle/bundle-bser-tobacco-referral-eve-everywoman"/>
                 <display value="bundle-bser-tobacco-referral-eve-everywoman"/>
@@ -558,6 +877,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
                 <display value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
@@ -566,6 +888,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
                 <display value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
@@ -582,6 +907,9 @@
             <exampleBoolean value="false"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
                 <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
@@ -590,6 +918,9 @@
             <exampleBoolean value="true"/>
         </resource>
         <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="observation/observation-BSeR-TelcomComm-eve-everywoman.xml"/>
+            </extension>
             <reference>
                 <reference value="Observation/observation-BSeR-TelcomComm-eve-everywoman"/>
                 <display value="observation-BSeR-TelcomComm-eve-everywoman"/>
@@ -597,107 +928,181 @@
             <name value="observation-BSeR-TelcomComm-eve-everywoman"/>
             <exampleBoolean value="true"/>
         </resource>
+        <resource>
+            <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-resource-file-path">
+                <valueString value="bundle/bundle-bser-nutrition-referral-feedback-eve-everywoman.xml"/>
+            </extension>
+            <reference>
+                <reference value="Bundle/bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
         <page>
+            <extension url="https://trifolia-on-fhir.lantanagroup.com/StructureDefinition/extension-ig-page-auto-generate-toc">
+                <valueBoolean value="true"/>
+            </extension>
             <nameUrl value="toc.md"/>
             <title value="Table of Contents"/>
             <generation value="generated"/>
             <page>
-                <nameUrl value="Introduction.html"/>
+                <nameReference>
+                    <reference value="#7807"/>
+                    <display value="Page content 7807"/>
+                </nameReference>
                 <title value="Introduction"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="BSeR_Project_Team.html"/>
+                <nameReference>
+                    <reference value="#8576"/>
+                    <display value="Page content 8576"/>
+                </nameReference>
                 <title value="BSeR Project Team"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Acknowledgements.html"/>
+                <nameReference>
+                    <reference value="#7622"/>
+                    <display value="Page content 7622"/>
+                </nameReference>
                 <title value="Acknowledgements"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Scope_and_Context.html"/>
+                <nameReference>
+                    <reference value="#5728"/>
+                    <display value="Page content 5728"/>
+                </nameReference>
                 <title value="Scope and Context"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Resource_Profiles.html"/>
+                <nameReference>
+                    <reference value="#7237"/>
+                    <display value="Page content 7237"/>
+                </nameReference>
                 <title value="Resource Profiles"/>
                 <generation value="markdown"/>
                 <page>
-                    <nameUrl value="Referral_Participant_Resources.html"/>
+                    <nameReference>
+                        <reference value="#9422"/>
+                        <display value="Page content 9422"/>
+                    </nameReference>
                     <title value="Referral Participant Resources"/>
                     <generation value="markdown"/>
                     <page>
-                        <nameUrl value="Referral_Service_Request_Initiator.html"/>
+                        <nameReference>
+                            <reference value="#8739"/>
+                            <display value="Page content 8739"/>
+                        </nameReference>
                         <title value="Referral Service Request Initiator"/>
                         <generation value="markdown"/>
                     </page>
                     <page>
-                        <nameUrl value="Referral_Service_Request_Recipient.html"/>
+                        <nameReference>
+                            <reference value="#6874"/>
+                            <display value="Page content 6874"/>
+                        </nameReference>
                         <title value="Referral Service Request Recipient"/>
                         <generation value="markdown"/>
                     </page>
                     <page>
-                        <nameUrl value="Referral_Service_Request_Patient.html"/>
+                        <nameReference>
+                            <reference value="#7452"/>
+                            <display value="Page content 7452"/>
+                        </nameReference>
                         <title value="Referral Service Request Patient"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
                 <page>
-                    <nameUrl value="Workflow_Management_Resources.html"/>
+                    <nameReference>
+                        <reference value="#7634"/>
+                        <display value="Page content 7634"/>
+                    </nameReference>
                     <title value="Workflow Management Resources"/>
                     <generation value="markdown"/>
                     <page>
-                        <nameUrl value="Trigger_Events_and_State_Transitions.html"/>
+                        <nameReference>
+                            <reference value="#7741"/>
+                            <display value="Page content 7741"/>
+                        </nameReference>
                         <title value="Trigger Events and State Transitions"/>
                         <generation value="markdown"/>
                     </page>
                     <page>
-                        <nameUrl value="State_Machine_and_Business_Status.html"/>
+                        <nameReference>
+                            <reference value="#7509"/>
+                            <display value="Page content 7509"/>
+                        </nameReference>
                         <title value="State Machine and Business Status"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
                 <page>
-                    <nameUrl value="Referral_Service_Request_Resources.html"/>
+                    <nameReference>
+                        <reference value="#5503"/>
+                        <display value="Page content 5503"/>
+                    </nameReference>
                     <title value="Referral Service Request Resources"/>
                     <generation value="markdown"/>
                     <page>
-                        <nameUrl value="Referral_Service_Request_Clinical_Statements.html"/>
+                        <nameReference>
+                            <reference value="#9491"/>
+                            <display value="Page content 9491"/>
+                        </nameReference>
                         <title value="Referral Service Request Clinical Statements"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
                 <page>
-                    <nameUrl value="Referral_Service_Request_Feedback_Resources.html"/>
+                    <nameReference>
+                        <reference value="#9107"/>
+                        <display value="Page content 9107"/>
+                    </nameReference>
                     <title value="Referral Service Request Feedback Resources"/>
                     <generation value="markdown"/>
                     <page>
-                        <nameUrl value="Referral_Service_Request_Feedback_Clinical_Statements.html"/>
+                        <nameReference>
+                            <reference value="#6902"/>
+                            <display value="Page content 6902"/>
+                        </nameReference>
                         <title value="Referral Service Request Feedback Clinical Statements"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
                 <page>
-                    <nameUrl value="Service_Request_and_Referral_Feedback_Supporting_Information_Bundles.html"/>
+                    <nameReference>
+                        <reference value="#6532"/>
+                        <display value="Page content 6532"/>
+                    </nameReference>
                     <title value="Service Request and Referral Feedback Supporting Information Bundles"/>
                     <generation value="markdown"/>
                 </page>
             </page>
             <page>
-                <nameUrl value="Bi-directional_Service_e-Referral_Transactions.html"/>
+                <nameReference>
+                    <reference value="#6441"/>
+                    <display value="Page content 6441"/>
+                </nameReference>
                 <title value="Bi-directional Service e-Referral Transactions"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Transport_Options.html"/>
+                <nameReference>
+                    <reference value="#9788"/>
+                    <display value="Page content 9788"/>
+                </nameReference>
                 <title value="Transport Options"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Adaptation_for_Additional_Referral_Use_Cases.html"/>
+                <nameReference>
+                    <reference value="#5115"/>
+                    <display value="Page content 5115"/>
+                </nameReference>
                 <title value="Adaptation for Additional Referral Use Cases"/>
                 <generation value="markdown"/>
             </page>
