@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2019-12-18T23:11:32.000-05:00"/>
+        <versionId value="16"/>
+        <lastUpdated value="2019-12-19T18:27:42.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
@@ -49,7 +49,7 @@
             <max value="1"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.56/expansion/Latest"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.45/expansion/Latest"/>
             </binding>
         </element>
         <element id="ServiceRequest.subject">
@@ -94,7 +94,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.46/expansion/Latest"/>
             </binding>
         </element>
         <element id="ServiceRequest.supportingInfo">

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ArthritisReferralSupportingInformation"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2019-12-18T22:58:18.000-05:00"/>
+        <versionId value="15"/>
+        <lastUpdated value="2019-12-19T20:12:55.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
     <name value="BSeR_ArthritisReferralSupportingInformation"/>
@@ -24,7 +24,7 @@
             <path value="Bundle.type"/>
             <min value="1"/>
             <max value="1"/>
-            <patternCode value="collection"/>
+            <fixedCode value="collection"/>
         </element>
         <element id="Bundle.entry">
             <path value="Bundle.entry"/>
