@@ -301,7 +301,7 @@
       <Observation>
         <id value="observation-body-height-eve-everywoman" />
         <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
         </meta>
         <text>
           <status value="generated" />

@@ -5,7 +5,7 @@
     <meta>
         <versionId value="3"/>
         <lastUpdated value="2019-12-18T20:28:04.000-05:00"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
     </meta>
     <text>
         <status value="generated"/>
