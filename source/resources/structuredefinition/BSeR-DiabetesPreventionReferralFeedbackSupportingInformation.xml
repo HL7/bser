@@ -52,6 +52,13 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight" />
       </type>
     </element>
+    <element id="Bundle.entry:BodyHeight.resource.meta">
+      <path value="Bundle.entry.resource.meta" />
+    </element>
+    <element id="Bundle.entry:BodyHeight.resource.meta.profile">
+      <path value="Bundle.entry.resource.meta.profile" />
+      <valueCanonical value="http://hl7.org/fhir/StructureDefinition/bodyheight" />
+    </element>
     <element id="Bundle.entry:BodyMassIndex">
       <path value="Bundle.entry" />
       <sliceName value="BodyMassIndex" />
