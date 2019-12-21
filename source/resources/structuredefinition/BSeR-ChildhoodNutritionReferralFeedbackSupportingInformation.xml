@@ -29,7 +29,7 @@
             <path value="Bundle.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="profile"/>
+                    <type value="value"/>
                     <path value="resource.meta.profile"/>
                 </discriminator>
                 <rules value="open"/>
