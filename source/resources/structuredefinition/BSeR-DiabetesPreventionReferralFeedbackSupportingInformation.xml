@@ -30,7 +30,7 @@
             <path value="Bundle.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="profile"/>
+                    <type value="type"/>
                     <path value="resource"/>
                 </discriminator>
                 <rules value="open"/>
@@ -48,7 +48,7 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="Observation"/>
+                <code value="Resource"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
             </type>
         </element>
