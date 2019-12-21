@@ -12,9 +12,9 @@
     <resource>
       <Observation>
         <id value="observation-blood-pressure-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bp" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -300,9 +300,9 @@
     <resource>
       <Observation>
         <id value="observation-body-height-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -484,9 +484,9 @@
     <resource>
       <Observation>
         <id value="observation-bmi-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -661,9 +661,9 @@
     <resource>
       <Observation>
         <id value="observation-body-weight-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -837,9 +837,9 @@
     <resource>
       <AllergyIntolerance>
         <id value="allergyintolerance-us-core-allergyint-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">

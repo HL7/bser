@@ -10,11 +10,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-blood-pressure-eve-everywoman" />
-        <meta>
-          <versionId value="4" />
-          <lastUpdated value="2019-12-20T00:42:23.000-05:00" />
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bp" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -295,9 +293,9 @@
     <resource>
       <Observation>
         <id value="observation-body-height-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -479,9 +477,9 @@
     <resource>
       <Observation>
         <id value="observation-bmi-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bmi" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -655,9 +653,9 @@
     <resource>
       <Observation>
         <id value="observation-body-weight-eve-everywoman" />
-        <meta>
+        <!--<meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -831,11 +829,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-BSeR-HA1c-Observation-eve-everywoman" />
-        <meta>
-          <versionId value="2" />
-          <lastUpdated value="2019-12-10T21:56:46.000-05:00" />
+        <!--<meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">

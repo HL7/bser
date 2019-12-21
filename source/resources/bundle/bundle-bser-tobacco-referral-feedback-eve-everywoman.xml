@@ -10,11 +10,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
-        <meta>
-          <versionId value="2" />
-          <lastUpdated value="2019-12-11T00:37:10.000-05:00" />
+        <!--<meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
@@ -141,11 +139,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
-        <meta>
-          <versionId value="1" />
-          <lastUpdated value="2019-12-11T01:00:29.000-05:00" />
+        <!--<meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-        </meta>
+        </meta>-->
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
