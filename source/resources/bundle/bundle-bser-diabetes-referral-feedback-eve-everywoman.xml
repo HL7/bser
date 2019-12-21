@@ -10,9 +10,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-body-height-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -182,9 +182,9 @@
     <resource>
       <Observation>
         <id value="observation-bmi-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bmi" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -358,9 +358,9 @@
     <resource>
       <Observation>
         <id value="observation-body-weight-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -534,9 +534,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-ParticipationFeedbackObservation-1-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
@@ -660,9 +660,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-ParticipationFeedbackObservation-2-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
