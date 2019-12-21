@@ -5,7 +5,7 @@
     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation" />
   </meta>
   <type value="collection" />
-  <!--<entry>
+  <entry>
     <fullUrl value="Observation/observation-body-height-eve-everywoman" />
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
@@ -177,8 +177,7 @@
       </Observation>
     </resource>
   </entry>
-  -->
-  <!--<entry>
+  <entry>
     <fullUrl value="Observation/observation-bmi-eve-everywoman" />
     <resource>
       <Observation>
@@ -353,8 +352,8 @@
         </valueQuantity>
       </Observation>
     </resource>
-  </entry>-->
-  <!--<entry>
+  </entry>
+  <entry>
     <fullUrl value="Observation/observation-body-weight-eve-everywoman" />
     <resource>
       <Observation>
@@ -530,7 +529,7 @@
       </Observation>
     </resource>
   </entry>
-  -->
+  
   <entry>
     <fullUrl value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman" />
     <resource>
