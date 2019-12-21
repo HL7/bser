@@ -48,7 +48,7 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="Resource"/>
+                <code value="Observation"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
             </type>
         </element>
