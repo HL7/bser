@@ -12,9 +12,9 @@
     <resource>
       <Observation>
         <id value="observation-blood-pressure-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/StructureDefinition/bp" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -298,11 +298,11 @@
   <entry>
     <fullUrl value="Observation/observation-body-height-eve-everywoman" />
     <resource>
-      <Observation>
+      <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-body-height-eve-everywoman" />
-        <!--<meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
-        </meta>-->
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight" />
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -318,21 +318,9 @@
                 <td>
                   <table>
                     <tr>
-                      <td style="font-weight: bold">versionId</td>
-                      <td>
-                        <div title="versionId">2</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">lastUpdated</td>
-                      <td>
-                        <div title="lastUpdated">2019-12-11T01:42:23.000-05:00</div>
-                      </td>
-                    </tr>
-                    <tr>
                       <td style="font-weight: bold">profile</td>
                       <td>
-                        <div title="profile">http://hl7.org/fhir/StructureDefinition/vitalsigns</div>
+                        <div title="profile">http://hl7.org/fhir/StructureDefinition/bodyheight</div>
                       </td>
                     </tr>
                   </table>
@@ -355,10 +343,10 @@
                       <ul style="list-style:none; padding-left:0; margin:0 0;">
                         <li>
                           <div title="display">Vital Signs</div>  (
-                                                    <div title="code"
+                          <div title="code"
                           >vital-signs</div> )
                           
-                                                </li>
+                        </li>
                         <li>
                           <div title="system">
                             <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
@@ -374,16 +362,16 @@
                 <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
-                      <div title="text">Body height lying</div>
+                      <div title="text">Body height</div>
                     </li>
                     <li>
                       <ul style="list-style:none; padding-left:0; margin:0 0;">
                         <li>
-                          <div title="display">Body height lying</div>  (
-                                                    <div title="code"
-                          >8306-3</div> )
+                          <div title="display">Body height</div>  (
+                          <div title="code"
+                          >8302-2</div> )
                           
-                                                </li>
+                        </li>
                         <li>
                           <div title="system">
                             <a href="http://loinc.org">http://loinc.org</a>
@@ -400,7 +388,7 @@
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li />
                     <li>
-                      <a href="Patient-patient-us-core-patient-baby-everybaby.html">Baby Everybaby</a>
+                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
                     </li>
                   </ul>
                 </td>
@@ -457,14 +445,14 @@
         <code>
           <coding>
             <system value="http://loinc.org" />
-            <code value="8306-3" />
-            <display value="Body height lying" />
+            <code value="8302-2" />
+            <display value="Body height" />
           </coding>
-          <text value="Body height lying" />
+          <text value="Body height" />
         </code>
         <subject>
-          <reference value="Patient/patient-us-core-patient-baby-everybaby" />
-          <display value="Baby Everybaby" />
+          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+          <display value="Eve Everywoman" />
         </subject>
         <effectiveDateTime value="2019-01-17" />
         <performer>
@@ -661,9 +649,9 @@
     <resource>
       <Observation>
         <id value="observation-body-weight-eve-everywoman" />
-        <!--<meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
-        </meta>-->
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight" />
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -837,9 +825,9 @@
     <resource>
       <AllergyIntolerance>
         <id value="allergyintolerance-us-core-allergyint-eve-everywoman" />
-        <!--<meta>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
-        </meta>-->
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance" />
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml">
