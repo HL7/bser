@@ -10,9 +10,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
-        </meta>-->
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
@@ -149,9 +149,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
-        </meta>-->
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">

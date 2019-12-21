@@ -10,9 +10,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-us-core-smokingstatus-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
@@ -176,9 +176,9 @@
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-BSeR-TelcomComm-eve-everywoman" />
-        <!--<meta>
+        <meta>
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences" />
-        </meta>-->
+        </meta>
         <text>
           <status value="generated" />
           <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
