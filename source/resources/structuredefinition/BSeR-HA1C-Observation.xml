@@ -20,6 +20,17 @@
         <element id="Observation">
             <path value="Observation"/>
         </element>
+      <element id="Observation.meta">
+        <path value="Observation.meta"/>
+        <min value="1"/>
+        <max value="1"/>
+      </element>
+      <element id="Observation.meta.profile">
+        <path value="Observation.meta.profile"/>
+        <min value="1"/>
+        <max value="1"/>
+        <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation"/>
+      </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
             <min value="1"/>
