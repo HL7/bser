@@ -32,7 +32,7 @@
         <expression value="Observation"/>
     </context>
     <type value="Observation"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
