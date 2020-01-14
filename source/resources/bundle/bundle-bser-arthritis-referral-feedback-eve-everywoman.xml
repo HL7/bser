@@ -156,7 +156,7 @@
   </entry>
   <entry>
     <fullUrl value="Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
-    <resource>
+    <r.esource>
       <Observation>
         <id value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
         <meta>
@@ -279,6 +279,6 @@
         </performer>
         <valueBoolean value="true" />
       </Observation>
-    </resource>
+    </r.esource>
   </entry>
 </Bundle>
