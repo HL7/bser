@@ -2,8 +2,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="bundle-bser-arthritis-referral-feedback-eve-everywoman" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2019-12-20T02:10:37.000-05:00" />
     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation" />
   </meta>
   <type value="collection" />

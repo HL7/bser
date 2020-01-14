@@ -4,6 +4,7 @@
 	"npm-name": "hl7.fhir.us.bser",
 	"license": "CC0-1.0",
 	"paths": {
+	  "history": "http://hl7.org/fhir/us/bser/history.html",
 		"qa": "generated_output/qa",
 		"temp": "generated_output/temp",
 		"output": "output",
@@ -507,6 +508,12 @@
 			"name": "USCore",
 			"version": "3.1.0",
 			"package": "hl7.fhir.us.core"
+		},
+		{
+			"location": "http://hl7.org/fhir/us/odh",
+			"name": "ODH",
+			"version": "1.0.0",
+			"package": "hl7.fhir.us.odh"
 		}
 	]
 }
