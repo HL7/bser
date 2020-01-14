@@ -1,0 +1,11 @@
+---
+title: UML rendering of the BSeR IG
+layout: default
+active: UML rendering of the BSeR IG
+---
+
+[Previous Page](Adaptation_for_Additional_Referral_Use_Cases.html)
+
+The following class diagram is a UML rendering of the primary BSeR IG profiles.
+
+<center><table><tr><td><img src="BSeR FHIR R4 IG.png" style="width:100%"/></td></tr></table></center>null

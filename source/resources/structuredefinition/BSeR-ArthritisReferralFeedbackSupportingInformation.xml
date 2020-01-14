@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ArthritisReferralFeedbackSupportingInformation"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2019-12-19T20:17:49.000-05:00"/>
+        <versionId value="22"/>
+        <lastUpdated value="2020-01-13T19:58:57.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
     <name value="BSeR_ArthritisReferralFeedbackSupportingInformation"/>
@@ -41,6 +41,7 @@
         <element id="Bundle.entry:ArthritisFeedbackObservation">
             <path value="Bundle.entry"/>
             <sliceName value="ArthritisFeedbackObservation"/>
+            <min value="1"/>
         </element>
         <element id="Bundle.entry:ArthritisFeedbackObservation.resource">
             <path value="Bundle.entry.resource"/>

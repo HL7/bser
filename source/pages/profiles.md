@@ -127,6 +127,10 @@ active: profiles
 <td>{% capture profile-intro %}{% include BSeR-ReferralFeedbackComposition-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-BSeR-ReferralFeedbackDocumentBundle.html">BSeR_ReferralFeedbackDocumentBundle</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralFeedbackDocumentBundle-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-BSeR-ReferralInitiatorPractitionerRole.html">BSeR_ReferralInitiatorPractitionerRole</a></td>
 <td>{% capture profile-intro %}{% include BSeR-ReferralInitiatorPractitionerRole-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
@@ -141,6 +145,14 @@ active: profiles
 <tr>
 <td><a href="StructureDefinition-BSeR-ReferralRecipientPractitionerRole.html">BSeR_ReferralRecipientPractitionerRole</a></td>
 <td>{% capture profile-intro %}{% include BSeR-ReferralRecipientPractitionerRole-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ReferralRequestComposition.html">BSeR_ReferralRequestComposition</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralRequestComposition-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-BSeR-ReferralRequestDocumentBundle.html">BSeR_ReferralRequestDocumentBundle</a></td>
+<td>{% capture profile-intro %}{% include BSeR-ReferralRequestDocumentBundle-intro.md id="{{[id]}}" %}{% endcapture %}{{ profile-intro | markdownify }}</td>
 </tr>
 <tr>
 <td><a href="StructureDefinition-BSeR-ReferralServiceRequest.html">BSeR_ReferralServiceRequest</a></td>

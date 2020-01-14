@@ -25,3 +25,4 @@ active: toc
     * <a href="Bi-directional_Service_e-Referral_Transactions.html">Bi-directional Service e-Referral Transactions</a>
     * <a href="Transport_Options.html">Transport Options</a>
     * <a href="Adaptation_for_Additional_Referral_Use_Cases.html">Adaptation for Additional Referral Use Cases</a>
+    * <a href="UML_rendering_of_the_BSeR_IG.html">UML rendering of the BSeR IG</a>

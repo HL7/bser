@@ -1,0 +1,1 @@
+This Bundle profile represents an BSeR Referral Request Document Bundle. It contains the BSeR Referral Request Composition.

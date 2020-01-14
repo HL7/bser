@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EarlyChildhoodNutritionObservation"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-20T10:18:54.000-05:00"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-01-02T20:18:50.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
     <name value="BSeR_EarlyChildhoodNutritionObservation"/>
@@ -20,17 +20,17 @@
         <element id="Observation">
             <path value="Observation"/>
         </element>
-      <element id="Observation.meta">
-        <path value="Observation.meta"/>
-        <min value="1"/>
-        <max value="1"/>
-      </element>
-      <element id="Observation.meta.profile">
-        <path value="Observation.meta.profile"/>
-        <min value="1"/>
-        <max value="1"/>
-        <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
-      </element>
+        <element id="Observation.meta">
+            <path value="Observation.meta"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.meta.profile">
+            <path value="Observation.meta.profile"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
+        </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
             <min value="1"/>

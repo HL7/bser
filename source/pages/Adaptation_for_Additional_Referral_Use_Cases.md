@@ -27,4 +27,6 @@ When using the BSeR for use cases outside those covered in the IG it may be nece
 Duplicate and/or overlapping supporting information bundles are expected. Care should be taken when choosing to reuse supporting information bundles; the contents of a bundle are subject to change as use cases are implemented and additional or revised information needs are discovered.
 
 The HL7 Public Health Work Group [(PHWG)](https://confluence.hl7.org/display/PHWG) is the custodian of the BSeR FHIR IG. For advice and guidance with reuse or extension of the BSeR IG for additional referral use cases contact the PHWG.
-null
+
+
+[Next Page](UML_rendering_of_the_BSeR_IG.html)

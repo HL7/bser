@@ -1,1 +1,2 @@
 The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed.
+<center><table><tr><td><img src="BSeR_ReferralServiceRequest.png" style="width:100%"/></td></tr></table></center>

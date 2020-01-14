@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralActivityStatus"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-18T15:51:19.000-05:00"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-01-06T16:36:45.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
     <name value="BSeR_ReferralActivityStatus"/>
@@ -32,7 +32,7 @@
         <expression value="Observation"/>
     </context>
     <type value="Observation"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

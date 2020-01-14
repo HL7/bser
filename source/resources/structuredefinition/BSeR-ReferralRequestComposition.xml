@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ReferralRequestComposition"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-01-13T19:49:57.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+    <name value="BSeR_ReferralRequestComposition"/>
+    <title value="BSeR Referral Request Composition"/>
+    <status value="active"/>
+    <description value="The structural body and metadata of the referral request document."/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.status">
+            <path value="Composition.status"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="Composition.date">
+            <path value="Composition.date"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+            </type>
+        </element>
+        <element id="Composition.title">
+            <path value="Composition.title"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="2"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation">
+            <path value="Composition.section"/>
+            <sliceName value="referralServiceRequestSupportingInformation"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.entry:ObesityReferralSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ObesityReferralSupportingInformation"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.entry:ArthritisReferralSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ArthritisReferralSupportingInformation"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.entry:HypertensionReferralSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="HypertensionReferralSupportingInformation"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.entry:EarlyChildhoodNutritionReferralSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="EarlyChildhoodNutritionReferralSupportingInformation"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.entry:DiabetesPreventionReferralSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="DiabetesPreventionReferralSupportingInformation"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:referralServiceRequestSupportingInformation.entry:TobaccoUseCessationReferralSupportingInformation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="TobaccoUseCessationReferralSupportingInformation"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

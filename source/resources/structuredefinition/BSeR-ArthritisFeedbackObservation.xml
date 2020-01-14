@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BSeR-ArthritisFeedbackObservation" />
-  <meta>
-    <versionId value="31" />
-    <lastUpdated value="2019-12-20T08:20:42.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
-  <name value="BSeR_ArthritisFeedbackObservation" />
-  <title value="BSeR Arthritis Feedback Observation" />
-  <status value="active" />
-  <description
-    value="A collection of observational data points concerning the patient arthritic condition provided by the referral recipient as feedback to the referral initiator." />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Observation">
-      <path value="Observation" />
-    </element>
-    <element id="Observation.meta">
-      <path value="Observation.meta" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Observation.meta.profile">
-      <path value="Observation.meta.profile" />
-      <min value="1" />
-      <max value="1" />
-      <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
-    </element>
-    <element id="Observation.status">
-      <path value="Observation.status" />
-      <min value="1" />
-      <max value="1" />
-      <patternCode value="final" />
-    </element>
-    <element id="Observation.code">
-      <path value="Observation.code" />
-      <short value="A code value or text identifying the type of observation made." />
-      <definition value="A code value or text identifying the type of observation made." />
-      <min value="1" />
-      <max value="1" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.37/expansion/Latest" />
-      </binding>
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-      </type>
-    </element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <definition value="The date and time the observation was made. " />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <short value="The value of the observation made. Value can be expressed as boolean, code value, or string." />
-      <definition value="The value of the observation made. Value can be expressed a boolean, code value, or string." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="boolean" />
-      </type>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.38/expansion/Latest" />
-      </binding>
-    </element>
-  </differential>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ArthritisFeedbackObservation"/>
+    <meta>
+        <versionId value="32"/>
+        <lastUpdated value="2020-01-02T20:18:50.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+    <name value="BSeR_ArthritisFeedbackObservation"/>
+    <title value="BSeR Arthritis Feedback Observation"/>
+    <status value="active"/>
+    <description value="A collection of observational data points concerning the patient arthritic condition provided by the referral recipient as feedback to the referral initiator."/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.meta">
+            <path value="Observation.meta"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.meta.profile">
+            <path value="Observation.meta.profile"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+        </element>
+        <element id="Observation.status">
+            <path value="Observation.status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCode value="final"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="A code value or text identifying the type of observation made."/>
+            <definition value="A code value or text identifying the type of observation made."/>
+            <min value="1"/>
+            <max value="1"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.37/expansion/Latest"/>
+            </binding>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="Observation.effective[x]">
+            <path value="Observation.effective[x]"/>
+            <definition value="The date and time the observation was made. "/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <short value="The value of the observation made. Value can be expressed as boolean, code value, or string."/>
+            <definition value="The value of the observation made. Value can be expressed a boolean, code value, or string."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.38/expansion/Latest"/>
+            </binding>
+        </element>
+    </differential>
 </StructureDefinition>

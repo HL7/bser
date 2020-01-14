@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralFeedbackComposition"/>
     <meta>
-        <versionId value="51"/>
-        <lastUpdated value="2019-12-18T21:54:14.000-05:00"/>
+        <versionId value="53"/>
+        <lastUpdated value="2020-01-13T19:49:46.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
     <name value="BSeR_ReferralFeedbackComposition"/>
@@ -36,6 +36,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
         <element id="Composition.date">
@@ -124,36 +125,60 @@
             <path value="Composition.section.entry"/>
             <sliceName value="ObesityReferralFeedbackSupportingInformation"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:ArthritisReferralFeedbackSupportingInformation">
             <path value="Composition.section.entry"/>
             <sliceName value="ArthritisReferralFeedbackSupportingInformation"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:HypertensionReferralFeedbackSupportingInformation">
             <path value="Composition.section.entry"/>
             <sliceName value="HypertensionReferralFeedbackSupportingInformation"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:EarlyChildhoodNutritionReferralFeedbackSupportingInformation">
             <path value="Composition.section.entry"/>
             <sliceName value="EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:DiabetesPreventionReferralFeedbackSupportingInformation">
             <path value="Composition.section.entry"/>
             <sliceName value="DiabetesPreventionReferralFeedbackSupportingInformation"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry:TobaccoUseCessationReferralFeedbackSupportingInformation">
             <path value="Composition.section.entry"/>
             <sliceName value="TobaccoUseCessationReferralFeedbackSupportingInformation"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+            </type>
             <mustSupport value="true"/>
         </element>
     </differential>
