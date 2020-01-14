@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-MedicationStatement"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2019-12-18T15:19:57.000-05:00"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-01-13T20:16:48.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
     <name value="BSeR_MedicationStatement"/>
@@ -37,6 +37,10 @@
             <path value="MedicationStatement.subject"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
         </element>
         <element id="MedicationStatement.dosage">
             <path value="MedicationStatement.dosage"/>
