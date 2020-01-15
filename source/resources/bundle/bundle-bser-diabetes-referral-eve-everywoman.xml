@@ -13,7 +13,7 @@
       <Observation>
         <id value="observation-blood-pressure-eve-everywoman" />
         <meta>
-          <profile value="xxx" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/bp" />
         </meta>
         <text>
           <status value="generated" />
@@ -312,7 +312,7 @@
       <Observation>
         <id value="observation-body-height-eve-everywoman" />
         <meta>
-          <profile value="xxx" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight" />
         </meta>
         <text>
           <status value="generated" />
@@ -488,7 +488,7 @@
       <Observation>
         <id value="observation-bmi-eve-everywoman" />
         <meta>
-          <profile value="xxx" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/bmi" />
         </meta>
         <text>
           <status value="generated" />
@@ -672,7 +672,7 @@
       <Observation>
         <id value="observation-body-weight-eve-everywoman" />
         <meta>
-          <profile value="xxx" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight" />
         </meta>
         <text>
           <status value="generated" />
@@ -856,7 +856,7 @@
       <Observation>
         <id value="observation-BSeR-HA1c-Observation-eve-everywoman" />
         <meta>
-          <profile value="xxx" />
+          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation" />
         </meta>
         <text>
           <status value="generated" />
