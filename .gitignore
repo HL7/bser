@@ -79,6 +79,3 @@ resources/ig-validation-parameters.json
 /active-tables ig.json
 /active-tables-header.html
 /USE - ig.json
-/_gencontinuous.bat
-/_genonce.bat
-/_updatePublisher.bat
