@@ -66,9 +66,7 @@ Log-FHIR.xlsx
 ####################
 ~*.docx
 ~*.xlsx
-
 .DS_Store
-ig.ini
 output/
 temp
 resources/ig-expansion-parameters.json
