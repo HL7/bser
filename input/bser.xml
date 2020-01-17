@@ -583,7 +583,7 @@
                 <display value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
             </reference>
             <name value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
         </resource>
         <resource>
             <reference>
