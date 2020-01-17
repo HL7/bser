@@ -1,1 +1,0 @@
-An observation regarding the level of participation in the services provided by the referral recipient, such as the number of sessions attended.

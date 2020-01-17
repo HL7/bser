@@ -1,1 +1,0 @@
-This Bundle profile represents a BSeR Referral Message Bundle. It contains the BSeR Referral MessageHeader and is for use in the BSeR messaging paradigm.

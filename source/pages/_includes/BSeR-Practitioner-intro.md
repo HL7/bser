@@ -1,1 +1,0 @@
-An individual who are engaged in the health care process or health care-related services as part of their formal responsibilities.

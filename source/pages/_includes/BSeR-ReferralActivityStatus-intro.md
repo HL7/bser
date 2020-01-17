@@ -1,1 +1,0 @@
-An observation made by the referral recipient regarding the state of the referral service request. This observation is included as part of the referral feedback as a further elaboration of the business state in task.

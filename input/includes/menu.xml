@@ -1,0 +1,28 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="Introduction.html">Introduction</a></li>
+      <li><a href="BSeRProjectTeam.html">BSeR Project Team</a></li>
+      <li><a href="Acknowledgements.html">Acknowledgements</a></li>
+      <li><a href="ScopeandContext.html">Scope and Context</a></li>
+      <li><a href="UMLrenderingoftheBSeRIG.html">UML rendering of the BSeR IG</a></li>    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resource Profile Information<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="ResourceProfiles.html">Resource Profiles</a></li>
+      <li><a href="ReferralParticipantResources.html">Referral Participant Resources</a></li>
+      <li><a href="Bi-directionalServicee-ReferralTransactions.html">Bi-directional Service e-Referral Transactions</a></li>
+      <li><a href="TransportOptions.html">Transport Options</a></li>
+      <li><a href="AdaptationforAdditionalReferralUseCases.html">Adaptation for Additional Referral Use Cases</a></li>    </ul>
+  </li>
+  <li><a href="Downloads.html">Downloads</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+</ul>

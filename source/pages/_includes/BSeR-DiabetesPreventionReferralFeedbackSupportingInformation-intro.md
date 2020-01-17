@@ -1,1 +1,0 @@
-A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator.

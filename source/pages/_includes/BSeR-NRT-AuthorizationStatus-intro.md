@@ -1,1 +1,0 @@
-An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy. 

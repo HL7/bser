@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ReferralMessageBundle"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-01-14T23:41:13.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
+    <version value="1.0.0"/>
+    <name value="BSeR_ReferralMessageBundle"/>
+    <title value="BSeR Referral Message Bundle"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Bundle profile represents a BSeR Referral Message Bundle. It contains the BSeR Referral MessageHeader and is for use in the BSeR messaging paradigm."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="message"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceMessageHeader">
+            <path value="Bundle.entry"/>
+            <sliceName value="sliceMessageHeader"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceMessageHeader.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

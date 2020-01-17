@@ -1,1 +1,0 @@
-A health condition of the referral patient. 

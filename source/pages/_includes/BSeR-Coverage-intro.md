@@ -1,1 +1,0 @@
-Coverage high-level identifiers and descriptors of an insurance plan underwriting some or all of the cost of the referral services provided.

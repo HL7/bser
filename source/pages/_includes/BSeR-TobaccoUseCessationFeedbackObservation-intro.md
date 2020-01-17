@@ -1,1 +1,0 @@
-A collection of observational data points provided by the referral recipient as feedback to the referral initiator. Tobacco use cessation feedback observations include quit Date, session type, and tobacco free duration.

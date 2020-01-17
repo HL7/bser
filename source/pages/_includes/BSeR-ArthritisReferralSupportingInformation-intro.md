@@ -1,2 +1,0 @@
-A bundle of clinical statements authored by the referral initiator as supporting information for a arthritis related service request referral.
-<center><table><tr><td><img src="BSeR_ArthritisReferralSupportingInformation.png" style="width:100%"/></td></tr></table></center>
