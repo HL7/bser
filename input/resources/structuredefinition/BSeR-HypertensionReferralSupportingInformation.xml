@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-HypertensionReferralSupportingInformation"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2020-01-15T23:00:32.000-05:00"/>
+        <versionId value="17"/>
+        <lastUpdated value="2020-01-16T22:18:24.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
     <name value="BSeR_HypertensionReferralSupportingInformation"/>
@@ -31,7 +31,7 @@
             <slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="resource"/>
+                    <path value="$this.resource"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>

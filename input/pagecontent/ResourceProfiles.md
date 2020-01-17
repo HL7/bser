@@ -10,6 +10,6 @@ The FHIR R4 resource profiles defined in the BSeR IG are grouped into the follow
 
 * **[Referral Service Request Resources](ReferralServiceRequestResources.html)** - the set of FHIR resources used in referral service request transactions.
 
-* **[Referral Service Request Feedback Resources](ReferralServiceRequestFeedbackResources.html)** - the set of FHIR resources used in the service request feedback transactions.
+* **[Referral Feedback Document Resources](ReferralFeedbackDocumentResources.html)** - the set of FHIR resources used in the service request feedback transactions.
 
 [Next Page - Referral Participant Resources](ReferralParticipantResources.html)

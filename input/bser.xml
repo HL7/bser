@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="324"/>
-        <lastUpdated value="2020-01-16T21:24:07.000-05:00"/>
+        <versionId value="331"/>
+        <lastUpdated value="2020-01-16T23:33:40.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -583,7 +583,7 @@
                 <display value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
             </reference>
             <name value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
         </resource>
         <resource>
             <reference>
@@ -724,6 +724,20 @@
             </reference>
             <name value="observation-BSeR-NutritionObs-eve-everywoman"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-self-eve-everywoman"/></reference>
+            <name value="RelatedPerson Self Eve Everywoman"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Coverage/coverage-BSeR-Coverage-eve-everywoman"/>
+                <display value="coverage-BSeR-Coverage-eve-everywoman"/>
+            </reference>
+            <name value="coverage-BSeR-Coverage-eve-everywoman"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
