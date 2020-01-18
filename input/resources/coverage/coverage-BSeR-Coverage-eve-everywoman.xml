@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="coverage-BSeR-Coverage-eve-everywoman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-01-16T23:29:37.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-01-17T22:08:12.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
     </meta>
     <text>
@@ -61,8 +61,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">extended healthcare</div>  (
+                                        
                                         <div title="code">EHCPOL</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -103,8 +105,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">self</div> )
             
+                                    
                                     </li>
                                 </ul>
                             </li>
@@ -147,8 +151,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">group</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -173,8 +179,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">subgroup</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -199,8 +207,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">plan</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -225,8 +235,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">subplan</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -251,8 +263,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">class</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -277,8 +291,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">subclass</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -303,8 +319,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">sequence</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -326,8 +344,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">rxid</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -349,8 +369,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">rxbin</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -372,8 +394,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">rxgroup</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -395,8 +419,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">rxpcn</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -418,8 +444,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">sequence</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">

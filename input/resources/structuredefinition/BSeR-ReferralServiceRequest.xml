@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="20"/>
-        <lastUpdated value="2020-01-13T19:00:08.000-05:00"/>
+        <versionId value="21"/>
+        <lastUpdated value="2020-01-16T23:39:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
@@ -97,6 +97,26 @@
                 <strength value="extensible"/>
                 <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.46/expansion/Latest"/>
             </binding>
+        </element>
+        <element id="ServiceRequest.insurance">
+            <path value="ServiceRequest.insurance"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.insurance:sliceInsuranceBSeRCoverage">
+            <path value="ServiceRequest.insurance"/>
+            <sliceName value="sliceInsuranceBSeRCoverage"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.supportingInfo">
             <path value="ServiceRequest.supportingInfo"/>
