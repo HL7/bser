@@ -3,27 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Practitioner"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2019-12-18T20:12:40.000-05:00"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-01-18T00:07:12.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
     <name value="BSeR_Practitioner"/>
     <title value="BSeR Practitioner"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <contact>
-        <name value="AbdulMalik Shakir"/>
-        <telecom>
-            <system value="phone"/>
-            <value value="6266444491"/>
-            <use value="work"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="abdulmalik.shakir@hi3solutions.com"/>
-            <use value="work"/>
-        </telecom>
-    </contact>
     <description value="An individual who are engaged in the health care process or health care-related services as part of their formal responsibilities."/>
     <kind value="resource"/>
     <abstract value="false"/>

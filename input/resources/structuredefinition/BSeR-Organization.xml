@@ -3,27 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Organization"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2019-12-18T15:35:44.000-05:00"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-01-18T00:05:43.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
     <name value="BSeR_Organization"/>
     <title value="BSeR Organization"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <contact>
-        <name value="AbdulMalik Shakir"/>
-        <telecom>
-            <system value="phone"/>
-            <value value="6266444491"/>
-            <use value="work"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="abdulmalik.shakir@hi3solutions.com"/>
-            <use value="work"/>
-        </telecom>
-    </contact>
     <description value="An organization resource playing the roles of practitioner affiliated organization, patient coverage payer organization, or patient employer organization."/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -32,24 +19,14 @@
         <expression value="Organization"/>
     </context>
     <type value="Organization"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Organization">
             <path value="Organization"/>
         </element>
-        <element id="Organization.identifier">
-            <path value="Organization.identifier"/>
-            <min value="0"/>
-            <max value="*"/>
-        </element>
         <element id="Organization.type">
             <path value="Organization.type"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Organization.name">
-            <path value="Organization.name"/>
             <min value="1"/>
             <max value="1"/>
         </element>
@@ -57,61 +34,43 @@
             <path value="Organization.telecom"/>
             <min value="0"/>
             <max value="*"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Organization.telecom.system">
             <path value="Organization.telecom.system"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Organization.telecom.value">
             <path value="Organization.telecom.value"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Organization.telecom.use">
             <path value="Organization.telecom.use"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Organization.address">
             <path value="Organization.address"/>
             <min value="0"/>
             <max value="*"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Organization.address.use">
             <path value="Organization.address.use"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Organization.address.text">
             <path value="Organization.address.text"/>
             <min value="0"/>
             <max value="1"/>
-        </element>
-        <element id="Organization.address.line">
-            <path value="Organization.address.line"/>
-            <min value="0"/>
-            <max value="*"/>
-        </element>
-        <element id="Organization.address.city">
-            <path value="Organization.address.city"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Organization.address.state">
-            <path value="Organization.address.state"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Organization.address.postalCode">
-            <path value="Organization.address.postalCode"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Organization.address.country">
-            <path value="Organization.address.country"/>
-            <min value="0"/>
-            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

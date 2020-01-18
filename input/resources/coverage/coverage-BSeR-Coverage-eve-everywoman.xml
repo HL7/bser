@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="coverage-BSeR-Coverage-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-01-17T22:08:12.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-01-18T00:10:51.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
     </meta>
     <text>
@@ -62,8 +62,10 @@
                                     <li>
                                         <div title="display">extended healthcare</div>  (
                                         
+                                        
                                         <div title="code">EHCPOL</div> )
           
+                                    
                                     
                                     </li>
                                     <li>
@@ -106,8 +108,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">self</div> )
             
+                                    
                                     
                                     </li>
                                 </ul>
@@ -139,7 +143,7 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <a href="Organization-organization-us-core-organization-saint-luke.html">Organization/organization-us-core-organization-saint-luke</a>
+                                <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
                             </li>
                         </ul>
                     </td>
@@ -152,8 +156,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">group</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -180,8 +186,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">subgroup</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -208,8 +216,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">plan</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -236,8 +246,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">subplan</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -264,8 +276,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">class</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -292,8 +306,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">subclass</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -320,8 +336,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">sequence</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -345,8 +363,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">rxid</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -370,8 +390,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">rxbin</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -395,8 +417,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">rxgroup</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -420,8 +444,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">rxpcn</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -445,8 +471,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
                                         
+                                        
                                         <div title="code">sequence</div> )
             
+                                    
                                     
                                     </li>
                                     <li>
@@ -495,7 +523,7 @@
         <end value="2020-05-23"/>
     </period>
     <payor>
-        <reference value="Organization/organization-us-core-organization-saint-luke"/>
+        <reference value="Organization/organization-bser-organization-saint-luke"/>
     </payor>
     <class>
         <type>

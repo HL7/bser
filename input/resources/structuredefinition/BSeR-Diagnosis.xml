@@ -3,27 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Diagnosis"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2019-12-19T22:18:18.000-05:00"/>
+        <versionId value="15"/>
+        <lastUpdated value="2020-01-18T00:05:43.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     <name value="BSeR_Diagnosis"/>
     <title value="BSeR Diagnosis"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <contact>
-        <name value="AbdulMalik Shakir"/>
-        <telecom>
-            <system value="phone"/>
-            <value value="6266444491"/>
-            <use value="work"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="abdulmalik.shakir@hi3solutions.com"/>
-            <use value="work"/>
-        </telecom>
-    </contact>
     <description value="A health condition of the referral patient. "/>
     <fhirVersion value="4.0.0"/>
     <kind value="resource"/>

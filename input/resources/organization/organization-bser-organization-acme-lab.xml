@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Organization
     xmlns="http://hl7.org/fhir">
-    <id value="organization-us-core-organization-saint-luke"/>
+    <id value="organization-bser-organization-acme-lab"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2019-12-19T21:35:13.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <lastUpdated value="2020-01-18T00:12:37.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/bser-organization"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <span title="id">organization-us-core-organization-saint-luke</span>
+                        <span title="id">organization-bser-organization-acme-lab</span>
                     </td>
                 </tr>
                 <tr>
@@ -26,7 +26,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization</span>
+                                    <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/bser-organization</span>
                                 </td>
                             </tr>
                         </table>
@@ -38,11 +38,11 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
                                 <span title="system">
-                                    <a href="http://example.org/fhir/sid/us-npi">http://example.org/fhir/sid/us-npi</a>
+                                    <a href="http://hl7.org.fhir/sid/us-npi">http://hl7.org.fhir/sid/us-npi</a>
                                 </span>
                             </li>
                             <li>
-                                <span title="value">1063494177</span>
+                                <span title="value">1144221847</span>
                             </li>
                         </ul>
                     </td>
@@ -52,12 +52,10 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <span title="system">
-                                    <a href="http://example.org/fhir/us/argo/sid/us-ein">http://example.org/fhir/us/argo/sid/us-ein</a>
-                                </span>
+                                <span title="system">urn:oid:2.16.840.1.113883.4.7</span>
                             </li>
                             <li>
-                                <span title="value">00-0000000</span>
+                                <span title="value">12D4567890</span>
                             </li>
                         </ul>
                     </td>
@@ -69,9 +67,32 @@
                     </td>
                 </tr>
                 <tr>
+                    <td style="font-weight: bold">type</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <span title="display">Healthcare Provider</span>  (
+                                        
+                                        <span title="code">prov</span> )
+          
+                                    
+                                    </li>
+                                    <li>
+                                        <span title="system">
+                                            <a href="http://terminology.hl7.org/CodeSystem/organization-type">http://terminology.hl7.org/CodeSystem/organization-type</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
                     <td style="font-weight: bold">name</td>
                     <td>
-                        <span title="name">Saint Luke's Hospital of Kansas City</span>
+                        <span title="name">Acme Labs</span>
                     </td>
                 </tr>
                 <tr>
@@ -87,13 +108,7 @@
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <span title="value">(816)932-2000</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">use</td>
-                                <td>
-                                    <span title="use">work</span>
+                                    <span title="value">(+1) 734-677-7777</span>
                                 </td>
                             </tr>
                         </table>
@@ -106,19 +121,13 @@
                             <tr>
                                 <td style="font-weight: bold">system</td>
                                 <td>
-                                    <span title="system">other</span>
+                                    <span title="system">email</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <span title="value">http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">use</td>
-                                <td>
-                                    <span title="use">work</span>
+                                    <span title="value">hq@acme.org</span>
                                 </td>
                             </tr>
                         </table>
@@ -131,7 +140,7 @@
                             <tr>
                                 <td style="font-weight: bold">line</td>
                                 <td>
-                                    <span title="line">4401 Wornall Rd,</span>
+                                    <span title="line">3300 Washtenaw Avenue, Suite 227</span>
                                 </td>
                             </tr>
                             <tr>
@@ -149,7 +158,13 @@
                             <tr>
                                 <td style="font-weight: bold">postalCode</td>
                                 <td>
-                                    <span title="postalCode">64111</span>
+                                    <span title="postalCode">01002</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">country</td>
+                                <td>
+                                    <span title="country">USA</span>
                                 </td>
                             </tr>
                         </table>
@@ -159,29 +174,35 @@
         </div>
     </text>
     <identifier>
-        <system value="http://example.org/fhir/sid/us-npi"/>
-        <value value="1063494177"/>
+        <system value="http://hl7.org.fhir/sid/us-npi"/>
+        <value value="1144221847"/>
     </identifier>
     <identifier>
-        <system value="http://example.org/fhir/us/argo/sid/us-ein"/>
-        <value value="00-0000000"/>
+        <system value="urn:oid:2.16.840.1.113883.4.7"/>
+        <value value="12D4567890"/>
     </identifier>
     <active value="true"/>
-    <name value="Saint Luke's Hospital of Kansas City"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="prov"/>
+            <display value="Healthcare Provider"/>
+        </coding>
+    </type>
+    <name value="Acme Labs"/>
     <telecom>
         <system value="phone"/>
-        <value value="(816)932-2000"/>
-        <use value="work"/>
+        <value value="(+1) 734-677-7777"/>
     </telecom>
     <telecom>
-        <system value="other"/>
-        <value value="http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city"/>
-        <use value="work"/>
+        <system value="email"/>
+        <value value="hq@acme.org"/>
     </telecom>
     <address>
-        <line value="4401 Wornall Rd,"/>
+        <line value="3300 Washtenaw Avenue, Suite 227"/>
         <city value="Amherst"/>
         <state value="MA"/>
-        <postalCode value="64111"/>
+        <postalCode value="01002"/>
+        <country value="USA"/>
     </address>
 </Organization>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-body-height-eve-everywoman"/>
+    <id value="observation-BSeR-EducationLevel-eve-everywoman"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-01-17T23:56:10.000-05:00"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-01-17T23:18:13.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <div title="id">observation-body-height-eve-everywoman</div>
+                        <div title="id">observation-BSeR_EducationLevel-eve-everywoman</div>
                     </td>
                 </tr>
                 <tr>
@@ -26,7 +26,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <div title="profile">http://hl7.org/fhir/StructureDefinition/bodyheight</div>
+                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel</div>
                                 </td>
                             </tr>
                         </table>
@@ -39,46 +39,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">category</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Vital Signs</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Vital Signs</div>  (
-                                        
-                                        <div title="code">vital-signs</div> )
-          
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
                     <td style="font-weight: bold">code</td>
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <div title="text">Body height</div>
+                                <div title="text">Highest level of education</div>
                             </li>
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <div title="display">Body height</div>  (
-                                        
-                                        <div title="code">8302-2</div> )
+                                        <div title="display">Highest level of education</div>  (
+                                        <div title="code">80913-7</div> )
           
-                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -112,28 +84,31 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
+                                <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
                             </li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">valueQuantity</td>
+                    <td style="font-weight: bold">valueCoding</td>
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <div title="value">21</div>
+                                <div title="text">Elementary School</div>
                             </li>
                             <li>
-                                <div title="unit">in</div>
-                            </li>
-                            <li>
-                                <div title="system">
-                                    <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div title="code">[in_i]</div>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <div title="display">Elementary School</div>  (
+                                        <div title="code">ELEM</div> )
+          
+                                    </li>
+                                    <li>
+                                        <div title="system">
+                                            <a href="http://terminology.hl7.org/CodeSystem/v3-EducationLevel">http://terminology.hl7.org/CodeSystem/v3-EducationLevel</a>
+                                        </div>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </td>
@@ -142,21 +117,13 @@
         </div>
     </text>
     <status value="final"/>
-    <category>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="vital-signs"/>
-            <display value="Vital Signs"/>
-        </coding>
-        <text value="Vital Signs"/>
-    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="8302-2"/>
-            <display value="Body height"/>
+            <code value="80913-7"/>
+            <display value="Highest level of education"/>
         </coding>
-        <text value="Body height"/>
+        <text value="Highest level of education"/>
     </code>
     <subject>
         <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
@@ -164,12 +131,14 @@
     </subject>
     <effectiveDateTime value="2019-01-17"/>
     <performer>
-        <reference value="Practitioner/practitioner-bser-henry-seven"/>
+        <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
     </performer>
-    <valueQuantity>
-        <value value="21"/>
-        <unit value="in"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="[in_i]"/>
-    </valueQuantity>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-EducationLevel"/>
+            <code value="ELEM"/>
+            <display value="Elementary School"/>
+        </coding>
+        <text value="Elementary School"/>
+    </valueCodeableConcept>
 </Observation>

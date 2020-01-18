@@ -3,27 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralActivityStatus"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-01-06T16:36:45.000-05:00"/>
+        <versionId value="12"/>
+        <lastUpdated value="2020-01-18T00:07:12.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
     <name value="BSeR_ReferralActivityStatus"/>
     <title value="BSeR Referral Activity Status"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <contact>
-        <name value="AbdulMalik Shakir"/>
-        <telecom>
-            <system value="phone"/>
-            <value value="6266444491"/>
-            <use value="work"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="abdulmalik.shakir@hi3solutions.com"/>
-            <use value="work"/>
-        </telecom>
-    </contact>
     <description value="An observation made by the referral recipient regarding the state of the referral service request. This observation is included as part of the referral feedback as a further elaboration of the business state in task."/>
     <kind value="resource"/>
     <abstract value="false"/>

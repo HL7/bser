@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement
+    xmlns="http://hl7.org/fhir">
+    <id value="medicationstatement-BSeR-eve-everywoman"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-01-18T00:15:15.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                <tr>
+                    <td style="font-weight: bold">id</td>
+                    <td>
+                        <div title="id">medicationstatement-BSeR-MedicationStatement-eve-everywoman</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">meta</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">profile</td>
+                                <td>
+                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">status</td>
+                    <td>
+                        <div title="status">active</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">medicationCodeableConcept</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <div title="display">Amoxicillin (product)</div>  (
+                                        <div title="code">27658006</div> )
+          
+                                    </li>
+                                    <li>
+                                        <div title="system">
+                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">subject</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li/>
+                            <li>
+                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Donald Duck</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">effectiveDateTime</td>
+                    <td>
+                        <div title="effectiveDateTime">2019-01-17</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">dateAsserted</td>
+                    <td>
+                        <div title="dateAsserted">2019-01-17</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">dosage</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">timing</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">repeat</td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td style="font-weight: bold">frequency</td>
+                                                        <td>
+                                                            <div title="frequency">3</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: bold">period</td>
+                                                        <td>
+                                                            <div title="period">1</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: bold">periodUnit</td>
+                                                        <td>
+                                                            <div title="periodUnit">d</div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">asNeededBoolean</td>
+                                <td>
+                                    <div title="asNeededBoolean">false</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">route</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Oral</div>  (
+                                                    <div title="code">260548002</div> )
+          
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">doseAndRate</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">type</td>
+                                            <td>
+                                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                    <li>
+                                                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                            <li>
+                                                                <div title="display">Ordered</div>  (
+                                                                <div title="code">ordered</div> )
+          
+                                                            </li>
+                                                            <li>
+                                                                <div title="system">
+                                                                    <a href="http://terminology.hl7.org/CodeSystem/dose-rate-type">http://terminology.hl7.org/CodeSystem/dose-rate-type</a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">doseRange</td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td style="font-weight: bold">low</td>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">value</td>
+                                                                    <td>
+                                                                        <div title="value">1</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">unit</td>
+                                                                    <td>
+                                                                        <div title="unit">TAB</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">system</td>
+                                                                    <td>
+                                                                        <div title="system">
+                                                                            <a href="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm">http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm</a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">code</td>
+                                                                    <td>
+                                                                        <div title="code">TAB</div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: bold">high</td>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">value</td>
+                                                                    <td>
+                                                                        <div title="value">2</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">unit</td>
+                                                                    <td>
+                                                                        <div title="unit">TAB</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">system</td>
+                                                                    <td>
+                                                                        <div title="system">
+                                                                            <a href="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm">http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm</a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight: bold">code</td>
+                                                                    <td>
+                                                                        <div title="code">TAB</div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <status value="active"/>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="27658006"/>
+            <display value="Amoxicillin (product)"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+        <display value="Donald Duck"/>
+    </subject>
+    <effectiveDateTime value="2019-01-17"/>
+    <dateAsserted value="2019-01-17"/>
+    <dosage>
+        <timing>
+            <repeat>
+                <frequency value="3"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <asNeededBoolean value="false"/>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="260548002"/>
+                <display value="Oral"/>
+            </coding>
+        </route>
+        <doseAndRate>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                    <code value="ordered"/>
+                    <display value="Ordered"/>
+                </coding>
+            </type>
+            <doseRange>
+                <low>
+                    <value value="1"/>
+                    <unit value="TAB"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+                    <code value="TAB"/>
+                </low>
+                <high>
+                    <value value="2"/>
+                    <unit value="TAB"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+                    <code value="TAB"/>
+                </high>
+            </doseRange>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>

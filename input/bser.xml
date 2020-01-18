@@ -2,8 +2,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="bser" />
   <meta>
-    <versionId value="336" />
-    <lastUpdated value="2020-01-17T22:32:25.000-05:00" />
+    <versionId value="360" />
+    <lastUpdated value="2020-01-18T00:21:08.000-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser" />
   <version value="1.0.0" />
@@ -419,6 +419,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CapabilityStatement/capabilitystatement-bser" />
+        <display value="Capability Statement BSeR" />
+      </reference>
+      <name value="Capability Statement BSeR" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/bser" />
         <display value="BSeR" />
       </reference>
@@ -448,14 +456,6 @@
       </reference>
       <name value="Task Business Status VS" />
       <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman" />
-        <display value="allergyintolerance-us-core-allergyint-eve-everywoman" />
-      </reference>
-      <name value="allergyintolerance-us-core-allergyint-eve-everywoman" />
-      <exampleBoolean value="true" />
     </resource>
     <resource>
       <reference>
@@ -515,11 +515,11 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/capabilitystatement-bser" />
-        <display value="Capability Statement BSeR" />
+        <reference value="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman" />
+        <display value="allergyintolerance-us-core-allergyint-eve-everywoman" />
       </reference>
-      <name value="Capability Statement BSeR" />
-      <exampleBoolean value="false" />
+      <name value="allergyintolerance-us-core-allergyint-eve-everywoman" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
       <reference>
@@ -536,6 +536,14 @@
       </reference>
       <name value="coverage-BSeR-Coverage-eve-everywoman" />
       <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/medicationstatement-BSeR-eve-everywoman" />
+        <display value="medicationstatement-BSeR-eve-everywoman" />
+      </reference>
+      <name value="medicationstatement-BSeR-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement" />
     </resource>
     <resource>
       <reference>
@@ -594,11 +602,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Observation/observation-BSeR-EducationLevel-eve-everywoman" />
+        <display value="observation-BSeR-EducationLevel-eve-everywoman" />
+      </reference>
+      <name value="observation-BSeR-EducationLevel-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/observation-BSeR-HA1c-Observation-eve-everywoman" />
         <display value="observation-BSeR-HA1c-Observation-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-HA1c-Observation-eve-everywoman" />
       <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
+        <display value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
+      </reference>
+      <name value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus" />
     </resource>
     <resource>
       <reference>
@@ -674,19 +698,19 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/organization-us-core-organization-acme-lab" />
+        <reference value="Organization/organization-bser-organization-acme-lab" />
         <display value="Acme Labs" />
       </reference>
       <name value="Acme Labs" />
-      <exampleBoolean value="true" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/organization-us-core-organization-saint-luke" />
-        <display value="Saint Luke's Hospital of Kansas City" />
+        <reference value="Organization/organization-bser-organization-saint-luke" />
+        <display value="organization-bser-organization-saint-luke" />
       </reference>
       <name value="Saint Luke's Hospital of Kansas City" />
-      <exampleBoolean value="true" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
     </resource>
     <resource>
       <reference>
@@ -714,19 +738,19 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Practitioner/practitioner-us-core-hailey-eight" />
+        <reference value="Practitioner/practitioner-bser-hailey-eight" />
         <display value="Practitioner Eight Hailey" />
       </reference>
       <name value="Practitioner Eight Hailey" />
-      <exampleBoolean value="true" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner" />
     </resource>
     <resource>
       <reference>
-        <reference value="Practitioner/practitioner-us-core-henry-seven" />
+        <reference value="Practitioner/practitioner-bser-henry-seven" />
         <display value="Practitioner Seven Henry" />
       </reference>
       <name value="Practitioner Seven Henry" />
-      <exampleBoolean value="true" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner" />
     </resource>
     <resource>
       <reference>
