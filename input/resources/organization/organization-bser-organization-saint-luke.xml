@@ -1,187 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Organization
-    xmlns="http://hl7.org/fhir">
-    <id value="organization-bser-organization-saint-luke"/>
-    <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-01-18T00:12:24.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/bser-organization"/>
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <span title="id">organization-bser-organization-saint-luke</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/bser-organization</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">identifier</td>
-                    <td>
+<Organization xmlns="http://hl7.org/fhir">
+   <id value="organization-bser-organization-saint-luke"/>
+   <meta>
+      <versionId value="4"/>
+      <lastUpdated value="2020-01-18T00:12:24.000-05:00"/>
+      <profile value="http://hl7.org/fhir/us/core/StructureDefinition/BSeR-Organization"/>
+   </meta>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <tr>
+               <td style="font-weight: bold">id</td>
+               <td>
+                  <div title="id">organization-bser-organization-saint-luke</div> 
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">meta</td>
+               <td>
+                  <table>
+                     <tr>
+                        <td style="font-weight: bold">versionId</td>
+                        <td>
+                           <div title="versionId">4</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">lastUpdated</td>
+                        <td>
+                           <div title="lastUpdated">2020-01-18T00:12:24.000-05:00</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">profile</td>
+                        <td>
+                           <div title="profile">http://hl7.org/fhir/us/core/StructureDefinition/BSeR-Organization</div> 
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">identifier</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
+                        <div title="system">
+                           <a href="http://example.org/fhir/sid/us-npi">http://example.org/fhir/sid/us-npi</a>
+                        </div>
+                     </li>
+                     <li>
+                        <div title="value">1063494177</div> 
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">identifier</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
+                        <div title="system">
+                           <a href="http://example.org/fhir/us/argo/sid/us-ein">http://example.org/fhir/us/argo/sid/us-ein</a>
+                        </div>
+                     </li>
+                     <li>
+                        <div title="value">00-0000000</div> 
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">active</td>
+               <td>
+                  <div title="active">true</div> 
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">type</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="system">
-                                    <a href="http://example.org/fhir/sid/us-npi">http://example.org/fhir/sid/us-npi</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span title="value">1063494177</span>
-                            </li>
+                           <li>
+                              <div title="display">Healthcare Provider</div>  (<div title="code">prov</div> )
+          </li>
+                           <li>
+                              <div title="system">
+                                 <a href="http://terminology.hl7.org/CodeSystem/organization-type">http://terminology.hl7.org/CodeSystem/organization-type</a>
+                              </div>
+                           </li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">identifier</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="system">
-                                    <a href="http://example.org/fhir/us/argo/sid/us-ein">http://example.org/fhir/us/argo/sid/us-ein</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span title="value">00-0000000</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">active</td>
-                    <td>
-                        <span title="active">true</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">name</td>
-                    <td>
-                        <span title="name">Saint Luke's Hospital of Kansas City</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">telecom</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">system</td>
-                                <td>
-                                    <span title="system">phone</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">value</td>
-                                <td>
-                                    <span title="value">(816)932-2000</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">use</td>
-                                <td>
-                                    <span title="use">work</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">telecom</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">system</td>
-                                <td>
-                                    <span title="system">other</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">value</td>
-                                <td>
-                                    <span title="value">http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">use</td>
-                                <td>
-                                    <span title="use">work</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">address</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">line</td>
-                                <td>
-                                    <span title="line">4401 Wornall Rd,</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">city</td>
-                                <td>
-                                    <span title="city">Amherst</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">state</td>
-                                <td>
-                                    <span title="state">MA</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">postalCode</td>
-                                <td>
-                                    <span title="postalCode">64111</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
-    <identifier>
-        <system value="http://example.org/fhir/sid/us-npi"/>
-        <value value="1063494177"/>
-    </identifier>
-    <identifier>
-        <system value="http://example.org/fhir/us/argo/sid/us-ein"/>
-        <value value="00-0000000"/>
-    </identifier>
-    <active value="true"/>
-    <name value="Saint Luke's Hospital of Kansas City"/>
-    <telecom>
-        <system value="phone"/>
-        <value value="(816)932-2000"/>
-        <use value="work"/>
-    </telecom>
-    <telecom>
-        <system value="other"/>
-        <value value="http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city"/>
-        <use value="work"/>
-    </telecom>
-    <address>
-        <line value="4401 Wornall Rd,"/>
-        <city value="Amherst"/>
-        <state value="MA"/>
-        <postalCode value="64111"/>
-    </address>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">name</td>
+               <td>
+                  <div title="name">Saint Luke's Hospital of Kansas City</div> 
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">telecom</td>
+               <td>
+                  <table>
+                     <tr>
+                        <td style="font-weight: bold">system</td>
+                        <td>
+                           <div title="system">phone</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">value</td>
+                        <td>
+                           <div title="value">(816)932-2000</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">use</td>
+                        <td>
+                           <div title="use">work</div> 
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">telecom</td>
+               <td>
+                  <table>
+                     <tr>
+                        <td style="font-weight: bold">system</td>
+                        <td>
+                           <div title="system">other</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">value</td>
+                        <td>
+                           <div title="value">http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">use</td>
+                        <td>
+                           <div title="use">work</div> 
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">address</td>
+               <td>
+                  <table>
+                     <tr>
+                        <td style="font-weight: bold">line</td>
+                        <td>
+                           <div title="line">4401 Wornall Rd,</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">city</td>
+                        <td>
+                           <div title="city">Amherst</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">state</td>
+                        <td>
+                           <div title="state">MA</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">postalCode</td>
+                        <td>
+                           <div title="postalCode">64111</div> 
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <identifier>
+      <system value="http://example.org/fhir/sid/us-npi"/>
+      <value value="1063494177"/>
+   </identifier>
+   <identifier>
+      <system value="http://example.org/fhir/us/argo/sid/us-ein"/>
+      <value value="00-0000000"/>
+   </identifier>
+   <active value="true"/>
+   <type>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+         <code value="prov"/>
+         <display value="Healthcare Provider"/>
+      </coding>
+   </type>
+   <name value="Saint Luke's Hospital of Kansas City"/>
+   <telecom>
+      <system value="phone"/>
+      <value value="(816)932-2000"/>
+      <use value="work"/>
+   </telecom>
+   <telecom>
+      <system value="other"/>
+      <value value="http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city"/>
+      <use value="work"/>
+   </telecom>
+   <address>
+      <line value="4401 Wornall Rd,"/>
+      <city value="Amherst"/>
+      <state value="MA"/>
+      <postalCode value="64111"/>
+   </address>
 </Organization>
