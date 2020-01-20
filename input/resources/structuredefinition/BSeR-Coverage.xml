@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Coverage"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-01-18T00:05:43.000-05:00"/>
+        <versionId value="15"/>
+        <lastUpdated value="2020-01-20T12:16:34.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
     <name value="BSeR_Coverage"/>
@@ -50,7 +50,7 @@
         </element>
         <element id="Coverage.subscriber">
             <path value="Coverage.subscriber"/>
-            <definition value="The subscriber is the policy holder of the insurance plan. The role of subscriber is played by a related person. When the patient is the scriber the relationship of related person to patient is 'self'."/>
+            <definition value="The subscriber is the policy holder of the insurance plan. The role of subscriber is played by a related person. When the patient is the subscriber the relationship of related person to patient is 'self'."/>
             <min value="1"/>
             <max value="1"/>
             <type>

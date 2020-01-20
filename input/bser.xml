@@ -463,7 +463,7 @@
         <display value="bundle-bser-arthritis-referral-everywoman" />
       </reference>
       <name value="bundle-bser-arthritis-referral-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
+      <exampleCanonical value="StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
     </resource>
     <resource>
       <reference>
@@ -471,7 +471,7 @@
         <display value="bundle-bser-arthritis-referral-feedback-eve-everywoman" />
       </reference>
       <name value="bundle-bser-arthritis-referral-feedback-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation" />
+      <exampleCanonical value="StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation" />
     </resource>
     <resource>
       <reference>
@@ -479,7 +479,7 @@
         <display value="bundle-bser-diabetes-referral-eve-everywoman" />
       </reference>
       <name value="bundle-bser-diabetes-referral-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation" />
+      <exampleCanonical value="StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation" />
     </resource>
     <resource>
       <reference>
@@ -487,7 +487,7 @@
         <display value="bundle-bser-diabetes-referral-feedback-eve-everywoman" />
       </reference>
       <name value="bundle-bser-diabetes-referral-feedback-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation" />
+      <exampleCanonical value="StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation" />
     </resource>
     <resource>
       <reference>
@@ -495,7 +495,7 @@
         <display value="bundle-bser-nutrition-referral-feedback-eve-everywoman" />
       </reference>
       <name value="bundle-bser-nutrition-referral-feedback-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation" />
+      <exampleCanonical value="StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation" />
     </resource>
     <resource>
       <reference>
@@ -503,7 +503,7 @@
         <display value="bundle-bser-tobacco-referral-eve-everywoman" />
       </reference>
       <name value="bundle-bser-tobacco-referral-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation" />
+      <exampleCanonical value="StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation" />
     </resource>
     <resource>
       <reference>
@@ -511,7 +511,7 @@
         <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman" />
       </reference>
       <name value="bundle-bser-tobacco-referral-feedback-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation" />
+      <exampleCanonical value="StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation" />
     </resource>
     <resource>
       <reference>
@@ -527,7 +527,7 @@
         <display value="condition-BSeR-Diagnosis-eve-everywoman-diabetes" />
       </reference>
       <name value="condition-BSeR-Diagnosis-eve-everywoman-diabetes" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis" />
+      <exampleCanonical value="StructureDefinition/BSeR-Diagnosis" />
     </resource>
     <resource>
       <reference>
@@ -535,7 +535,7 @@
         <display value="coverage-BSeR-Coverage-eve-everywoman" />
       </reference>
       <name value="coverage-BSeR-Coverage-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage" />
+      <exampleCanonical value="StructureDefinition/BSeR-Coverage" />
     </resource>
     <resource>
       <reference>
@@ -543,7 +543,7 @@
         <display value="medicationstatement-BSeR-eve-everywoman" />
       </reference>
       <name value="medicationstatement-BSeR-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement" />
+      <exampleCanonical value="StructureDefinition/BSeR-MedicationStatement" />
     </resource>
     <resource>
       <reference>
@@ -590,7 +590,7 @@
         <display value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-ArthritisFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -598,7 +598,7 @@
         <display value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-ArthritisFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -606,7 +606,7 @@
         <display value="observation-BSeR-EducationLevel-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-EducationLevel-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel" />
+      <exampleCanonical value="StructureDefinition/BSeR-EducationLevel" />
     </resource>
     <resource>
       <reference>
@@ -614,7 +614,7 @@
         <display value="observation-BSeR-HA1c-Observation-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-HA1c-Observation-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation" />
+      <exampleCanonical value="StructureDefinition/BSeR-HA1C-Observation" />
     </resource>
     <resource>
       <reference>
@@ -622,7 +622,7 @@
         <display value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus" />
+      <exampleCanonical value="StructureDefinition/BSeR-NRT-AuthorizationStatus" />
     </resource>
     <resource>
       <reference>
@@ -630,7 +630,7 @@
         <display value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -638,7 +638,7 @@
         <display value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -646,7 +646,7 @@
         <display value="observation-BSeR-NutritionObs-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-NutritionObs-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-EarlyChildhoodNutritionObservation" />
     </resource>
     <resource>
       <reference>
@@ -654,7 +654,7 @@
         <display value="observation-BSeR-TelcomComm-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-TelcomComm-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences" />
+      <exampleCanonical value="StructureDefinition/BSeR-TelcomCommunicationPreferences" />
     </resource>
     <resource>
       <reference>
@@ -662,7 +662,7 @@
         <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -670,7 +670,7 @@
         <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
       </reference>
       <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -678,7 +678,7 @@
         <display value="observation-ParticipationFeedbackObservation-1-eve-everywoman" />
       </reference>
       <name value="observation-ParticipationFeedbackObservation-1-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-ParticipationFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -686,7 +686,7 @@
         <display value="observation-ParticipationFeedbackObservation-2-eve-everywoman" />
       </reference>
       <name value="observation-ParticipationFeedbackObservation-2-eve-everywoman" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" />
+      <exampleCanonical value="StructureDefinition/BSeR-ParticipationFeedbackObservation" />
     </resource>
     <resource>
       <reference>
@@ -702,7 +702,7 @@
         <display value="Acme Labs" />
       </reference>
       <name value="Acme Labs" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
+      <exampleCanonical value="StructureDefinition/BSeR-Organization" />
     </resource>
     <resource>
       <reference>
@@ -710,7 +710,7 @@
         <display value="organization-bser-organization-saint-luke" />
       </reference>
       <name value="Saint Luke's Hospital of Kansas City" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
+      <exampleCanonical value="StructureDefinition/BSeR-Organization" />
     </resource>
     <resource>
       <reference>
@@ -742,7 +742,7 @@
         <display value="Practitioner Eight Hailey" />
       </reference>
       <name value="Practitioner Eight Hailey" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner" />
+      <exampleCanonical value="StructureDefinition/BSeR-Practitioner" />
     </resource>
     <resource>
       <reference>
@@ -750,7 +750,7 @@
         <display value="Practitioner Seven Henry" />
       </reference>
       <name value="Practitioner Seven Henry" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner" />
+      <exampleCanonical value="StructureDefinition/BSeR-Practitioner" />
     </resource>
     <resource>
       <reference>

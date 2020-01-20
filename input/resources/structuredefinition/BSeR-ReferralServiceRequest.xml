@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2020-01-16T23:39:08.000-05:00"/>
+        <versionId value="23"/>
+        <lastUpdated value="2020-01-20T13:34:55.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
@@ -40,6 +40,7 @@
             <path value="ServiceRequest.intent"/>
             <min value="1"/>
             <max value="1"/>
+            <patternCode value="order"/>
         </element>
         <element id="ServiceRequest.code">
             <path value="ServiceRequest.code"/>
@@ -91,7 +92,8 @@
             <path value="ServiceRequest.reasonCode"/>
             <short value="Reason for referral"/>
             <definition value="Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. &quot;Referral&quot;)."/>
-            <max value="*"/>
+            <min value="0"/>
+            <max value="1"/>
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>

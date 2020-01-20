@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-NRT-AuthorizationStatus"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-01-15T22:14:16.000-05:00"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-01-20T12:12:59.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
     <name value="BSeR_NRT_AuthorizationStatus"/>
@@ -56,7 +56,7 @@
             </type>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/event-status"/>
+                <valueSet value="http://terminology.hl7.org/ValueSet/v2-0149"/>
             </binding>
         </element>
     </differential>

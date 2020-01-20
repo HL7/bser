@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralTask"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2020-01-13T19:28:26.000-05:00"/>
+        <versionId value="24"/>
+        <lastUpdated value="2020-01-20T14:44:08.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     <name value="BSeR_ReferralTask"/>
@@ -22,27 +22,8 @@
         </element>
         <element id="Task.identifier">
             <path value="Task.identifier"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="value"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Task.identifier:referralInitiatorTaskIdentifier">
-            <path value="Task.identifier"/>
-            <sliceName value="referralInitiatorTaskIdentifier"/>
             <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Task.identifier:referralInitiatorTaskIdentifier.value">
-            <path value="Task.identifier.value"/>
-            <min value="1"/>
-        </element>
-        <element id="Task.identifier:referralInitiatorTaskIdentifier.assigner">
-            <path value="Task.identifier.assigner"/>
-            <min value="1"/>
+            <max value="2"/>
         </element>
         <element id="Task.status">
             <path value="Task.status"/>
@@ -53,6 +34,10 @@
             <path value="Task.businessStatus"/>
             <min value="1"/>
             <max value="1"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/TaskBusinessStatusVS"/>
+            </binding>
         </element>
         <element id="Task.focus">
             <path value="Task.focus"/>

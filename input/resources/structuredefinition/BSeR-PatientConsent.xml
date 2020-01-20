@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-PatientConsent"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2019-12-19T22:57:52.000-05:00"/>
+        <versionId value="14"/>
+        <lastUpdated value="2020-01-20T12:25:25.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
     <name value="BSeR_PatientConsent"/>
@@ -24,7 +24,7 @@
             <use value="work"/>
         </telecom>
     </contact>
-    <description value="A observation regarding the consent status of the patient with regard to treatment authorization or protected health information sharing."/>
+    <description value="A record regarding the consent status of the patient with regard to treatment authorization or protected health information sharing."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <context>
@@ -69,6 +69,7 @@
         </element>
         <element id="Consent.performer">
             <path value="Consent.performer"/>
+            <definition value="Performer is the person responding to the consent request. The role of performer is played by a related person. When the patient is the performer the relationship of related person to patient is 'self'."/>
             <min value="1"/>
             <max value="1"/>
             <type>
