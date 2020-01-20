@@ -80,7 +80,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li/>
                             <li>
-                                <a href="Patient-patient-ecr-eve-everywoman.html">Eve Everywoman</a>
+                              <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
                             </li>
                         </ul>
                     </td>
@@ -120,7 +120,7 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-ecr-eve-everywoman"/>
+      <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
         <display value="Eve Everywoman"/>
     </subject>
     <onsetDateTime value="2017-08-23"/>
