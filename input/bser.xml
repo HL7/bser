@@ -787,9 +787,9 @@
       <title value="IG Home Page" />
       <generation value="markdown" />
       <page>
-        <extension url="https://trifolia-on-fhir.lantanagroup.com/StructureDefinition/extension-ig-page-auto-generate-toc">
+        <!--<extension url="https://trifolia-on-fhir.lantanagroup.com/StructureDefinition/extension-ig-page-auto-generate-toc">
           <valueBoolean value="true" />
-        </extension>
+        </extension>-->
         <nameUrl value="toc.html" />
         <title value="Table of Contents" />
         <generation value="generated" />
