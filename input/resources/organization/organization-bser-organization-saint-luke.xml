@@ -4,7 +4,7 @@
    <meta>
       <versionId value="4"/>
       <lastUpdated value="2020-01-18T00:12:24.000-05:00"/>
-      <profile value="http://hl7.org/fhir/us/core/StructureDefinition/BSeR-Organization"/>
+     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
    </meta>
    <text>
       <status value="generated"/>
@@ -35,7 +35,7 @@
                      <tr>
                         <td style="font-weight: bold">profile</td>
                         <td>
-                           <div title="profile">http://hl7.org/fhir/us/core/StructureDefinition/BSeR-Organization</div> 
+                          <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization</div> 
                         </td>
                      </tr>
                   </table>

@@ -45,7 +45,7 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <div title="display">Amoxicillin (product)</div>  (
+                                        <div title="display">Amoxicillin-containing product</div>  (
                                         <div title="code">27658006</div> )
           
                                     </li>
@@ -257,7 +257,7 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="27658006"/>
-            <display value="Amoxicillin (product)"/>
+            <display value="Amoxicillin-containing product"/>
         </coding>
     </medicationCodeableConcept>
     <subject>
