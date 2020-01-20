@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-ReferralMessageHeader"/>
-    <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2019-12-18T23:05:29.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
-    <name value="BSeR_ReferralMessageHeader"/>
-    <title value="BSeR Referral Message Header"/>
-    <status value="active"/>
-    <description value="The FHIR MessageHeader resource is defined as &quot;the header for a message exchange that is either requesting or responding to an action&quot;. In BSeR the message header is used to exchange the referral services request or the referral service request feedback."/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="MessageHeader"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="MessageHeader">
-            <path value="MessageHeader"/>
-        </element>
-        <element id="MessageHeader.event[x]">
-            <path value="MessageHeader.event[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Coding"/>
-            </type>
-            <fixedCoding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0003"/>
-                <code value="I12"/>
-                <display value="REF/RRI - Patient referral"/>
-            </fixedCoding>
-        </element>
-        <element id="MessageHeader.destination">
-            <path value="MessageHeader.destination"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="MessageHeader.sender">
-            <path value="MessageHeader.sender"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
-            </type>
-        </element>
-        <element id="MessageHeader.reason">
-            <path value="MessageHeader.reason"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="MessageHeader.focus">
-            <path value="MessageHeader.focus"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
-            </type>
-        </element>
-        <element id="MessageHeader.destination.receiver">
-            <path value="MessageHeader.destination.receiver"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
-            </type>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BSeR-ReferralMessageHeader" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2019-12-18T23:05:29.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader" />
+  <name value="BSeR_ReferralMessageHeader" />
+  <title value="BSeR Referral Message Header" />
+  <status value="active" />
+  <description
+    value="The FHIR MessageHeader resource is defined as &quot;the header for a message exchange that is either requesting or responding to an action&quot;. In BSeR the message header is used to exchange the referral services request or the referral service request feedback." />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MessageHeader" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MessageHeader">
+      <path value="MessageHeader" />
+    </element>
+    <element id="MessageHeader.event[x]">
+      <path value="MessageHeader.event[x]" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0003" />
+        <code value="I12" />
+        <display value="REF/RRI - Patient referral" />
+      </fixedCoding>
+    </element>
+    <element id="MessageHeader.destination">
+      <path value="MessageHeader.destination" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MessageHeader.destination.receiver">
+      <path value="MessageHeader.destination.receiver" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole" />
+      </type>
+    </element>
+    <element id="MessageHeader.sender">
+      <path value="MessageHeader.sender" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
+      </type>
+    </element>
+    <element id="MessageHeader.reason">
+      <path value="MessageHeader.reason" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MessageHeader.focus">
+      <path value="MessageHeader.focus" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
