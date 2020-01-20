@@ -121,9 +121,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="80913-7"/>
-            <display value="Highest level of education"/>
         </coding>
-        <text value="Highest level of education"/>
     </code>
     <subject>
         <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
