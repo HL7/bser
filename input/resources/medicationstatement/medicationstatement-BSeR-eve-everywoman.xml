@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="medicationstatement-BSeR-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-01-18T00:15:15.000-05:00"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-01-20T22:22:21.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
     </meta>
     <text>
@@ -46,8 +46,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Amoxicillin-containing product</div>  (
+                                        
                                         <div title="code">27658006</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -132,8 +134,10 @@
                                             <ul style="list-style:none; padding-left:0; margin:0 0;">
                                                 <li>
                                                     <div title="display">Oral</div>  (
+                                                    
                                                     <div title="code">260548002</div> )
           
+                                                
                                                 </li>
                                                 <li>
                                                     <div title="system">
@@ -157,8 +161,10 @@
                                                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                                                             <li>
                                                                 <div title="display">Ordered</div>  (
+                                                                
                                                                 <div title="code">ordered</div> )
           
+                                                            
                                                             </li>
                                                             <li>
                                                                 <div title="system">
@@ -262,7 +268,7 @@
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-        <display value="Donald Duck"/>
+        <display value="Eve Everywoman"/>
     </subject>
     <effectiveDateTime value="2019-01-17"/>
     <dateAsserted value="2019-01-17"/>

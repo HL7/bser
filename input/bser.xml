@@ -2,8 +2,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="bser" />
   <meta>
-    <versionId value="360" />
-    <lastUpdated value="2020-01-18T00:21:08.000-05:00" />
+    <versionId value="380" />
+    <lastUpdated value="2020-01-20T22:23:39.000-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser" />
   <version value="1.0.0" />
@@ -499,6 +499,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Bundle/bundle-bser-referral-message-bundle-eve-everywoman" />
+        <display value="bundle-bser-referral-message-bundle-eve-everywoman" />
+      </reference>
+      <name value="bundle-bser-referral-message-bundle-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="Bundle/bundle-bser-tobacco-referral-eve-everywoman" />
         <display value="bundle-bser-tobacco-referral-eve-everywoman" />
       </reference>
@@ -531,6 +539,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Consent/consent-BSeR-PatientConsent-eve-everywoman" />
+        <display value="consent-BSeR-PatientConsent-eve-everywoman" />
+      </reference>
+      <name value="consent-BSeR-PatientConsent-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="Coverage/coverage-BSeR-Coverage-eve-everywoman" />
         <display value="coverage-BSeR-Coverage-eve-everywoman" />
       </reference>
@@ -539,11 +555,35 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Location/location-bser-service-delivery-location-st-luke" />
+        <display value="Referral Center A, St. Lukes" />
+      </reference>
+      <name value="Referral Center A, St. Lukes" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman" />
+        <display value="medication-bser-tobacco-use-cessation-feedback-eve-everywoman" />
+      </reference>
+      <name value="medication-bser-tobacco-use-cessation-feedback-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="MedicationStatement/medicationstatement-BSeR-eve-everywoman" />
         <display value="medicationstatement-BSeR-eve-everywoman" />
       </reference>
       <name value="medicationstatement-BSeR-eve-everywoman" />
       <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageHeader/messageheader-BSeR-ReferralMessageHeader" />
+        <display value="messageheader-BSeR-ReferralMessageHeader" />
+      </reference>
+      <name value="messageheader-BSeR-ReferralMessageHeader" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader" />
     </resource>
     <resource>
       <reference>
@@ -650,6 +690,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman" />
+        <display value="observation-BSeR-ReferralActivityStatus-eve-everywoman" />
+      </reference>
+      <name value="observation-BSeR-ReferralActivityStatus-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/observation-BSeR-TelcomComm-eve-everywoman" />
         <display value="observation-BSeR-TelcomComm-eve-everywoman" />
       </reference>
@@ -671,6 +719,14 @@
       </reference>
       <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
       <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-odh-employment-status-eve-everywoman" />
+        <display value="observation-odh-employment-status-eve-everywoman" />
+      </reference>
+      <name value="observation-odh-employment-status-eve-everywoman" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
       <reference>
@@ -758,7 +814,7 @@
         <display value="practitionerrole-bser-referral-initiator" />
       </reference>
       <name value="practitionerrole-bser-referral-initiator" />
-      <exampleBoolean value="true" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
     </resource>
     <resource>
       <reference>
@@ -766,7 +822,7 @@
         <display value="practitionerrole-bser-referral-recipient" />
       </reference>
       <name value="practitionerrole-bser-referral-recipient" />
-      <exampleBoolean value="true" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole" />
     </resource>
     <resource>
       <reference>
@@ -782,14 +838,27 @@
       <name value="RelatedPerson Self Eve Everywoman" />
       <exampleBoolean value="true" />
     </resource>
+    <resource>
+      <reference>
+        <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" />
+        <display value="servicerequest-BSeR-ReferralServiceRequest" />
+      </reference>
+      <name value="servicerequest-BSeR-ReferralServiceRequest" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Task/task-BSeR-ReferralTask" />
+        <display value="task-BSeR-ReferralTask" />
+      </reference>
+      <name value="task-BSeR-ReferralTask" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask" />
+    </resource>
     <page>
       <nameUrl value="index.html" />
       <title value="IG Home Page" />
       <generation value="markdown" />
       <page>
-        <extension url="https://trifolia-on-fhir.lantanagroup.com/StructureDefinition/extension-ig-page-auto-generate-toc">
-          <valueBoolean value="true" />
-        </extension>
         <nameUrl value="toc.html" />
         <title value="Table of Contents" />
         <generation value="generated" />

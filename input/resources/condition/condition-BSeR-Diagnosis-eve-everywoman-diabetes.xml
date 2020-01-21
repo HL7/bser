@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-01-17T22:31:55.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-01-20T17:07:56.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     </meta>
     <text>
@@ -40,8 +40,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Problem List Item</div>  (
+                                        
                                         <div title="code">problem-list-item</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -61,8 +63,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Diabetes mellitus (disorder)</div>  (
+                                        
                                         <div title="code">73211009</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -80,7 +84,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li/>
                             <li>
-                              <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
                             </li>
                         </ul>
                     </td>
@@ -120,7 +124,7 @@
         </coding>
     </code>
     <subject>
-      <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
         <display value="Eve Everywoman"/>
     </subject>
     <onsetDateTime value="2017-08-23"/>

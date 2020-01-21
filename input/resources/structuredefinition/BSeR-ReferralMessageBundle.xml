@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralMessageBundle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-14T23:41:13.000-05:00"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-01-20T20:16:42.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
     <version value="1.0.0"/>
@@ -34,7 +34,7 @@
             <slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="resolve()"/>
+                    <path value="$this.resource"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -52,6 +52,42 @@
             <type>
                 <code value="Resource"/>
                 <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:sliceEmploymentStatus">
+            <path value="Bundle.entry"/>
+            <sliceName value="sliceEmploymentStatus"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceEmploymentStatus.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:slicePatientConsent">
+            <path value="Bundle.entry"/>
+            <sliceName value="slicePatientConsent"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:slicePatientConsent.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:sliceEducationLevel">
+            <path value="Bundle.entry"/>
+            <sliceName value="sliceEducationLevel"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceEducationLevel.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
             </type>
         </element>
     </differential>

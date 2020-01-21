@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-bser-referral-message-bundle-eve-everywoman" />
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
+  </meta>
+  <type value="collection" />
+  <!-- sliceMessageHeader -->
+  <entry>
+    <fullUrl value="MessageHeader/messageheader-BSeR-ReferralMessageHeader" />
+    <resource>
+      <MessageHeader xmlns="http://hl7.org/fhir">
+        <id value="messageheader-BSeR-ReferralMessageHeader" />
+        <meta>
+          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader" />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+              <tr>
+                <td style="font-weight: bold">id</td>
+                <td>
+                  <div title="id">messageheader-ecr-requested-eicr</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">meta</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">versionId</td>
+                      <td>
+                        <div title="versionId">7</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">lastUpdated</td>
+                      <td>
+                        <div title="lastUpdated">2019-10-05T01:19:11.000-04:00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">profile</td>
+                      <td>
+                        <div title="profile">http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-messageheader</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">tag</td>
+                      <td>
+                        <table>
+                          <tr>
+                            <td style="font-weight: bold">system</td>
+                            <td>
+                              <div title="system">
+                                <a href="http://terminology.hl7.org/CodeSystem/v3-ObservationValue">http://terminology.hl7.org/CodeSystem/v3-ObservationValue</a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="font-weight: bold">code</td>
+                            <td>
+                              <div title="code">SUBSETTED</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="font-weight: bold">display</td>
+                            <td>
+                              <div title="display">subsetted</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">eventCoding</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">system</td>
+                      <td>
+                        <div title="system">
+                          <a href="http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-messageHeader-event">http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-messageHeader-event</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">code</td>
+                      <td>
+                        <div title="code">process-eicr</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">display</td>
+                      <td>
+                        <div title="display">Process eICR</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">destination</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">name</td>
+                      <td>
+                        <div title="name">YMCA Acme Message Gateway</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">target</td>
+                      <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                          <li>
+                            <a href="Device-device-ecr-software-ymca.html">Device/device-ecr-software-ymca</a>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">endpoint</td>
+                      <td>
+                        <div title="endpoint">http://example.org/ymca/fhir</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">sender</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <a href="Organization-organization-ecr-salem-medical-center.html">Organization/organization-ecr-salem-medical-center</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">source</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">name</td>
+                      <td>
+                        <div title="name">Acme Central Patient Registry</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">software</td>
+                      <td>
+                        <div title="software">FooBar Patient Manager</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">version</td>
+                      <td>
+                        <div title="version">3.1.45.AABB</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">contact</td>
+                      <td>
+                        <table>
+                          <tr>
+                            <td style="font-weight: bold">system</td>
+                            <td>
+                              <div title="system">phone</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="font-weight: bold">value</td>
+                            <td>
+                              <div title="value">+1 (555) 123 4567</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">endpoint</td>
+                      <td>
+                        <div title="endpoint">http://example.org/salem-medical-center/fhir</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">focus</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <a href="Task-task-ecr-ehr-requested-eicr.html">Task/task-ecr-ehr-requested-eicr</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <eventCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0003" />
+          <code value="I12" />
+          <display value="REF/RRI - Patient referral" />
+        </eventCoding>
+        <destination>
+          <receiver value="PractitionerRole/practitionerrole-bser-referral-recipient" />
+        </destination>
+        <sender>
+          <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
+        </sender>
+        <focus>
+          <reference value="Task/task-BSeR-ReferralTask" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <!-- sliceEmploymentStatus -->
+  <entry>
+    <fullUrl value="Observation/observation-odh-employment-status-eve-everywoman" />
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="observation-odh-employment-status-eve-everywoman" />
+        <meta>
+          <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus" />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+              <tr>
+                <td style="font-weight: bold">id</td>
+                <td>
+                  <div title="id">observation-odh-employment-status-eve-everywoman</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">meta</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">profile</td>
+                      <td>
+                        <div title="profile">http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">status</td>
+                <td>
+                  <div title="status">final</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">category</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li> (<div title="code">74165-2</div> )
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://loinc.org">http://loinc.org</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">code</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li> (<div title="code">80913-7</div> )
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://loinc.org">http://loinc.org</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">subject</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li />
+                    <li>
+                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">effectivePeriod</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">start</td>
+                      <td>
+                        <div title="start">2014-01-17</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">performer</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">valueCodeableConcept</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li>
+                          <div title="display">Employed</div>  (<div title="code">Employed</div> )
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://terminology.hl7.org/CodeSystem/v3-ObservationValue">http://terminology.hl7.org/CodeSystem/v3-ObservationValue</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="74165-2" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="80913-7" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+          <display value="Eve Everywoman" />
+        </subject>
+        <effectivePeriod>
+          <start value="2014-01-17" />
+        </effectivePeriod>
+        <performer>
+          <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" />
+            <code value="Employed" />
+            <display value="Employed" />
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <!-- slicePatientConsent -->
+  <entry>
+    <fullUrl value="Concsent/consent-BSeR-PatientConsent-eve-everywoman" />
+    <resource>
+      <Consent xmlns="http://hl7.org/fhir">
+        <id value="consent-BSeR-PatientConsent-eve-everywoman" />
+        <meta>
+          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent" />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+              <tr>
+                <td style="font-weight: bold">id</td>
+                <td>
+                  <div title="id">consent-BSeR-PatientConsent-eve-everywoman</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">meta</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">profile</td>
+                      <td>
+                        <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">status</td>
+                <td>
+                  <div title="status">active</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">scope</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li> (<div title="code">patient-privacy</div> )
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://terminology.hl7.org/CodeSystem/consentscope">http://terminology.hl7.org/CodeSystem/consentscope</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">patient</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li />
+                    <li>
+                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">dateTime</td>
+                <td>
+                  <div title="dateTime">2019-05-23</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">performer</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li />
+                    <li>
+                      <a href="RelatedPerson-relatedperson-self-eve-everywoman.html">Eve Everywoman</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">provision</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">period</td>
+                      <td>
+                        <table>
+                          <tr>
+                            <td style="font-weight: bold">start</td>
+                            <td>
+                              <div title="start">2000-01-01</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="font-weight: bold">end</td>
+                            <td>
+                              <div title="end">2021-01-01</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="active" />
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope" />
+            <code value="patient-privacy" />
+          </coding>
+        </scope>
+        <patient>
+          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+          <display value="Eve Everywoman" />
+        </patient>
+        <dateTime value="2019-05-23" />
+        <performer>
+          <reference value="RelatedPerson/relatedperson-self-eve-everywoman" />
+          <display value="Eve Everywoman" />
+        </performer>
+        <policyRule>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+            <code value="OPTIN" />
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit" />
+          <actor>
+            <role>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+                <code value="CST" />
+              </coding>
+            </role>
+            <reference>
+              <reference value="Organization/organization-bser-organization-saint-luke" />
+            </reference>
+          </actor>
+          <action>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/consentaction" />
+              <code value="access" />
+            </coding>
+          </action>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <!-- sliceEducationLevel -->
+  <entry>
+    <fullUrl value="Observation/observation-BSeR-EducationLevel-eve-everywoman" />
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="observation-BSeR-EducationLevel-eve-everywoman" />
+        <meta>
+          <versionId value="2" />
+          <lastUpdated value="2020-01-17T23:18:13.000-05:00" />
+          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel" />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+              <tr>
+                <td style="font-weight: bold">id</td>
+                <td>
+                  <div title="id">observation-BSeR_EducationLevel-eve-everywoman</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">meta</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="font-weight: bold">profile</td>
+                      <td>
+                        <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">status</td>
+                <td>
+                  <div title="status">final</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">code</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <div title="text">Highest level of education</div>
+                    </li>
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li>
+                          <div title="display">Highest level of education</div>  (
+                          <div title="code">80913-7</div> )
+                          
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://loinc.org">http://loinc.org</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">subject</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li />
+                    <li>
+                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">effectiveDateTime</td>
+                <td>
+                  <div title="effectiveDateTime">2019-01-17</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">performer</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">valueCoding</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <div title="text">Elementary School</div>
+                    </li>
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li>
+                          <div title="display">Elementary School</div>  (
+                          <div title="code">ELEM</div> )
+                          
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://terminology.hl7.org/CodeSystem/v3-EducationLevel">http://terminology.hl7.org/CodeSystem/v3-EducationLevel</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="80913-7" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+          <display value="Eve Everywoman" />
+        </subject>
+        <effectiveDateTime value="2019-01-17" />
+        <performer>
+          <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-EducationLevel" />
+            <code value="ELEM" />
+            <display value="Elementary School" />
+          </coding>
+          <text value="Elementary School" />
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+
+</Bundle>

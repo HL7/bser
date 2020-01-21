@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Organization
+<Location
     xmlns="http://hl7.org/fhir">
-    <id value="organization-bser-organization-saint-luke"/>
+    <id value="location-bser-service-delivery-location-st-luke"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-01-20T17:34:47.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-01-20T22:06:32.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <div title="id">organization-bser-organization-saint-luke</div>
+                        <div title="id">location-bser-service-delivery-location-st-luke</div>
                     </td>
                 </tr>
                 <tr>
@@ -24,60 +24,24 @@
                     <td>
                         <table>
                             <tr>
-                                <td style="font-weight: bold">versionId</td>
-                                <td>
-                                    <div title="versionId">4</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">lastUpdated</td>
-                                <td>
-                                    <div title="lastUpdated">2020-01-18T00:12:24.000-05:00</div>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization</div>
+                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation</div>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">identifier</td>
+                    <td style="font-weight: bold">status</td>
                     <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="system">
-                                    <a href="http://example.org/fhir/sid/us-npi">http://example.org/fhir/sid/us-npi</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div title="value">1063494177</div>
-                            </li>
-                        </ul>
+                        <div title="status">active</div>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">identifier</td>
+                    <td style="font-weight: bold">name</td>
                     <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="system">
-                                    <a href="http://example.org/fhir/us/argo/sid/us-ein">http://example.org/fhir/us/argo/sid/us-ein</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div title="value">00-0000000</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">active</td>
-                    <td>
-                        <div title="active">true</div>
+                        <div title="name">Referral Center A, St. Lukes</div>
                     </td>
                 </tr>
                 <tr>
@@ -87,24 +51,18 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <div title="display">Healthcare Provider</div>  (
-                                        <div title="code">prov</div> )
+                                        <div title="display">Hospital</div>  (
+                                        <div title="code">HOSP</div> )
           
                                     </li>
                                     <li>
                                         <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/organization-type">http://terminology.hl7.org/CodeSystem/organization-type</a>
+                                            <a href="http://terminology.hl7.org/CodeSystem/v3-RoleCode">http://terminology.hl7.org/CodeSystem/v3-RoleCode</a>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">name</td>
-                    <td>
-                        <div title="name">Saint Luke's Hospital of Kansas City</div>
                     </td>
                 </tr>
                 <tr>
@@ -120,13 +78,7 @@
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <div title="value">(816)932-2000</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">use</td>
-                                <td>
-                                    <div title="use">work</div>
+                                    <div title="value">(+1) (555)555-3001</div>
                                 </td>
                             </tr>
                         </table>
@@ -139,19 +91,32 @@
                             <tr>
                                 <td style="font-weight: bold">system</td>
                                 <td>
-                                    <div title="system">other</div>
+                                    <div title="system">fax</div>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold">value</td>
                                 <td>
-                                    <div title="value">http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city</div>
+                                    <div title="value">(+1) (555)555-3002</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">telecom</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">system</td>
+                                <td>
+                                    <div title="system">email</div>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold">use</td>
+                                <td style="font-weight: bold">value</td>
                                 <td>
-                                    <div title="use">work</div>
+                                    <div title="value">mail@smc.org</div>
                                 </td>
                             </tr>
                         </table>
@@ -188,35 +153,39 @@
                         </table>
                     </td>
                 </tr>
+                <tr>
+                    <td style="font-weight: bold">managingOrganization</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <a href="Organization-organization-ecr-salem-medical-center.html">Organization/organization-ecr-salem-medical-center</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
             </table>
         </div>
     </text>
-    <identifier>
-        <system value="http://example.org/fhir/sid/us-npi"/>
-        <value value="1063494177"/>
-    </identifier>
-    <identifier>
-        <system value="http://example.org/fhir/us/argo/sid/us-ein"/>
-        <value value="00-0000000"/>
-    </identifier>
-    <active value="true"/>
+    <status value="active"/>
+    <name value="Referral Center A, St. Lukes"/>
     <type>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-            <code value="prov"/>
-            <display value="Healthcare Provider"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="HOSP"/>
+            <display value="Hospital"/>
         </coding>
     </type>
-    <name value="Saint Luke's Hospital of Kansas City"/>
     <telecom>
         <system value="phone"/>
-        <value value="(816)932-2000"/>
-        <use value="work"/>
+        <value value="(+1) (555)555-3001"/>
     </telecom>
     <telecom>
-        <system value="other"/>
-        <value value="http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city"/>
-        <use value="work"/>
+        <system value="fax"/>
+        <value value="(+1) (555)555-3002"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="mail@smc.org"/>
     </telecom>
     <address>
         <line value="4401 Wornall Rd,"/>
@@ -224,4 +193,7 @@
         <state value="MA"/>
         <postalCode value="64111"/>
     </address>
-</Organization>
+    <managingOrganization>
+        <reference value="Organization/organization-ecr-salem-medical-center"/>
+    </managingOrganization>
+</Location>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralTask"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2020-01-20T14:44:08.000-05:00"/>
+        <versionId value="28"/>
+        <lastUpdated value="2020-01-20T22:26:00.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     <name value="BSeR_ReferralTask"/>
@@ -22,8 +22,62 @@
         </element>
         <element id="Task.identifier">
             <path value="Task.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="use"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
             <min value="1"/>
-            <max value="2"/>
+        </element>
+        <element id="Task.identifier:referralInitiatorTaskIdentifier">
+            <path value="Task.identifier"/>
+            <sliceName value="referralInitiatorTaskIdentifier"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Task.identifier:referralInitiatorTaskIdentifier.use">
+            <path value="Task.identifier.use"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Task.identifier:referralInitiatorTaskIdentifier.value">
+            <path value="Task.identifier.value"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Task.identifier:referralInitiatorTaskIdentifier.assigner">
+            <path value="Task.identifier.assigner"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+            </type>
+        </element>
+        <element id="Task.identifier:referralRecipientTaskIdentifier">
+            <path value="Task.identifier"/>
+            <sliceName value="referralRecipientTaskIdentifier"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Task.identifier:referralInitiatorTaskIdentifier.use">
+            <path value="Task.identifier.use"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Task.identifier:referralRecipientTaskIdentifier.value">
+            <path value="Task.identifier.value"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Task.identifier:referralRecipientTaskIdentifier.assigner">
+            <path value="Task.identifier.assigner"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+            </type>
         </element>
         <element id="Task.status">
             <path value="Task.status"/>

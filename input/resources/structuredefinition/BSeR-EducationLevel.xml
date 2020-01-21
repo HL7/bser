@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EducationLevel"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-01-18T00:05:43.000-05:00"/>
+        <versionId value="16"/>
+        <lastUpdated value="2020-01-20T17:09:39.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     <name value="BSeR_EducationLevel"/>
@@ -40,7 +40,7 @@
             </type>
             <fixedCodeableConcept>
                 <coding>
-                  <system value="http://loinc.org"/>
+                    <system value="http://loinc.org"/>
                     <code value="80913-7"/>
                 </coding>
             </fixedCodeableConcept>

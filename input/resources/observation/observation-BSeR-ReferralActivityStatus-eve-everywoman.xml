@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-BSeR-EducationLevel-eve-everywoman"/>
+    <id value="observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-20T17:17:04.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-01-20T18:21:50.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <div title="id">observation-BSeR_EducationLevel-eve-everywoman</div>
+                        <div title="id">observation-BSeR_ReferralActivityStatus-eve-everywoman</div>
                     </td>
                 </tr>
                 <tr>
@@ -26,7 +26,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel</div>
+                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus</div>
                                 </td>
                             </tr>
                         </table>
@@ -43,20 +43,15 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <div title="text">Highest level of education</div>
-                            </li>
-                            <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <div title="display">Highest level of education</div>  (
-                                        
-                                        <div title="code">80913-7</div> )
+                                        <div title="display">Action status</div>  (
+                                        <div title="code">385641008</div> )
           
-                                    
                                     </li>
                                     <li>
                                         <div title="system">
-                                            <a href="http://loinc.org">http://loinc.org</a>
+                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -86,35 +81,15 @@
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
+                                <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
                             </li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">valueCoding</td>
+                    <td style="font-weight: bold">valueString</td>
                     <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Elementary School</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Elementary School</div>  (
-                                        
-                                        <div title="code">ELEM</div> )
-          
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/v3-EducationLevel">http://terminology.hl7.org/CodeSystem/v3-EducationLevel</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <div title="valueString">Referral accepted</div>
                     </td>
                 </tr>
             </table>
@@ -123,8 +98,9 @@
     <status value="final"/>
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="80913-7"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="385641008"/>
+            <display value="Action status"/>
         </coding>
     </code>
     <subject>
@@ -133,14 +109,7 @@
     </subject>
     <effectiveDateTime value="2019-01-17"/>
     <performer>
-        <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
+        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
     </performer>
-    <valueCodeableConcept>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-EducationLevel"/>
-            <code value="ELEM"/>
-            <display value="Elementary School"/>
-        </coding>
-        <text value="Elementary School"/>
-    </valueCodeableConcept>
+    <valueString value="Referral accepted"/>
 </Observation>

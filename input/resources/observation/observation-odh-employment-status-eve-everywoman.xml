@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-BSeR-EducationLevel-eve-everywoman"/>
+    <id value="observation-odh-employment-status-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-20T17:17:04.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-01-20T21:11:53.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
-                        <div title="id">observation-BSeR_EducationLevel-eve-everywoman</div>
+                        <div title="id">observation-odh-employment-status-eve-everywoman</div>
                     </td>
                 </tr>
                 <tr>
@@ -26,7 +26,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel</div>
+                                    <div title="profile">http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus</div>
                                 </td>
                             </tr>
                         </table>
@@ -39,20 +39,34 @@
                     </td>
                 </tr>
                 <tr>
+                    <td style="font-weight: bold">category</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li> (
+                                        <div title="code">74165-2</div> )
+            
+                                    </li>
+                                    <li>
+                                        <div title="system">
+                                            <a href="http://loinc.org">http://loinc.org</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
                     <td style="font-weight: bold">code</td>
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <div title="text">Highest level of education</div>
-                            </li>
-                            <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Highest level of education</div>  (
-                                        
+                                    <li> (
                                         <div title="code">80913-7</div> )
-          
-                                    
+            
                                     </li>
                                     <li>
                                         <div title="system">
@@ -76,9 +90,16 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">effectiveDateTime</td>
+                    <td style="font-weight: bold">effectivePeriod</td>
                     <td>
-                        <div title="effectiveDateTime">2019-01-17</div>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">start</td>
+                                <td>
+                                    <div title="start">2014-01-17</div>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
                 <tr>
@@ -92,24 +113,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-weight: bold">valueCoding</td>
+                    <td style="font-weight: bold">valueCodeableConcept</td>
                     <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
-                                <div title="text">Elementary School</div>
-                            </li>
-                            <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <div title="display">Elementary School</div>  (
-                                        
-                                        <div title="code">ELEM</div> )
+                                        <div title="display">Employed</div>  (
+                                        <div title="code">Employed</div> )
           
-                                    
                                     </li>
                                     <li>
                                         <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/v3-EducationLevel">http://terminology.hl7.org/CodeSystem/v3-EducationLevel</a>
+                                            <a href="http://terminology.hl7.org/CodeSystem/v3-ObservationValue">http://terminology.hl7.org/CodeSystem/v3-ObservationValue</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -121,6 +137,12 @@
         </div>
     </text>
     <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="74165-2"/>
+        </coding>
+    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
@@ -131,16 +153,17 @@
         <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
         <display value="Eve Everywoman"/>
     </subject>
-    <effectiveDateTime value="2019-01-17"/>
+    <effectivePeriod>
+        <start value="2014-01-17"/>
+    </effectivePeriod>
     <performer>
         <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
     </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-EducationLevel"/>
-            <code value="ELEM"/>
-            <display value="Elementary School"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+            <code value="Employed"/>
+            <display value="Employed"/>
         </coding>
-        <text value="Elementary School"/>
     </valueCodeableConcept>
 </Observation>

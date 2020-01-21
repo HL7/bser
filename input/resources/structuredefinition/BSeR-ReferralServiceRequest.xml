@@ -1,178 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BSeR-ReferralServiceRequest" />
-  <meta>
-    <versionId value="23" />
-    <lastUpdated value="2020-01-20T13:34:55.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest" />
-  <name value="BSeR_ReferralServiceRequest" />
-  <title value="BSeR Referral Service Request" />
-  <status value="active" />
-  <description
-    value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed.&#xA;&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;BSeR_ReferralServiceRequest.png&quot; style=&quot;width:100%&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="ServiceRequest" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="ServiceRequest">
-      <path value="ServiceRequest" />
-    </element>
-    <element id="ServiceRequest.identifier">
-      <path value="ServiceRequest.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="value" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier">
-      <path value="ServiceRequest.identifier" />
-      <sliceName value="referralInitiatorServiceRequestIdentifier" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.value">
-      <path value="ServiceRequest.identifier.value" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.assigner">
-      <path value="ServiceRequest.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier">
-      <path value="ServiceRequest.identifier" />
-      <sliceName value="referralRecipientServiceRequestIdentifier" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.value">
-      <path value="ServiceRequest.identifier.value" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.assigner">
-      <path value="ServiceRequest.identifier.assigner" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
-      </type>
-    </element>
-    <element id="ServiceRequest.status">
-      <path value="ServiceRequest.status" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="ServiceRequest.intent">
-      <path value="ServiceRequest.intent" />
-      <min value="1" />
-      <max value="1" />
-      <patternCode value="order" />
-    </element>
-    <element id="ServiceRequest.code">
-      <path value="ServiceRequest.code" />
-      <short value="Referral or specific type of referral" />
-      <definition
-        value="Referral or specific type of referral. If the code used describes the type of/reason for referral (such as &quot;Referral to diabetes prevention program&quot;) then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value." />
-      <min value="1" />
-      <max value="1" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.45/expansion/Latest" />
-      </binding>
-    </element>
-    <element id="ServiceRequest.subject">
-      <path value="ServiceRequest.subject" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-      </type>
-    </element>
-    <element id="ServiceRequest.occurrence[x]">
-      <path value="ServiceRequest.occurrence[x]" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-    <element id="ServiceRequest.requester">
-      <path value="ServiceRequest.requester" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
-      </type>
-    </element>
-    <element id="ServiceRequest.performer">
-      <path value="ServiceRequest.performer" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole" />
-      </type>
-    </element>
-    <element id="ServiceRequest.reasonCode">
-      <path value="ServiceRequest.reasonCode" />
-      <short value="Reason for referral" />
-      <definition value="Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. &quot;Referral&quot;)." />
-      <min value="0" />
-      <max value="1" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.46/expansion/Latest" />
-      </binding>
-    </element>
-    <element id="ServiceRequest.insurance">
-      <path value="ServiceRequest.insurance" />
-      <slicing>
-        <discriminator>
-          <type value="profile" />
-          <path value="resolve()" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.insurance:sliceInsuranceBSeRCoverage">
-      <path value="ServiceRequest.insurance" />
-      <sliceName value="sliceInsuranceBSeRCoverage" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.supportingInfo">
-      <path value="ServiceRequest.supportingInfo" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.note">
-      <path value="ServiceRequest.note" />
-      <min value="0" />
-      <max value="*" />
-    </element>
-  </differential>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ReferralServiceRequest"/>
+    <meta>
+        <versionId value="26"/>
+        <lastUpdated value="2020-01-20T19:36:50.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
+    <name value="BSeR_ReferralServiceRequest"/>
+    <title value="BSeR Referral Service Request"/>
+    <status value="active"/>
+    <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed.&#xA;&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;BSeR_ReferralServiceRequest.png&quot; style=&quot;width:100%&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ServiceRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ServiceRequest">
+            <path value="ServiceRequest"/>
+        </element>
+        <element id="ServiceRequest.identifier">
+            <path value="ServiceRequest.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="value"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier">
+            <path value="ServiceRequest.identifier"/>
+            <sliceName value="referralInitiatorServiceRequestIdentifier"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.use">
+            <path value="ServiceRequest.identifier.use"/>
+            <min value="1"/>
+            <fixedCode value="PLAC"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.value">
+            <path value="ServiceRequest.identifier.value"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.assigner">
+            <path value="ServiceRequest.identifier.assigner"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier">
+            <path value="ServiceRequest.identifier"/>
+            <sliceName value="referralRecipientServiceRequestIdentifier"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.use">
+            <path value="ServiceRequest.identifier.use"/>
+            <min value="1"/>
+            <fixedCode value="FILL"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.value">
+            <path value="ServiceRequest.identifier.value"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.assigner">
+            <path value="ServiceRequest.identifier.assigner"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.status">
+            <path value="ServiceRequest.status"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="ServiceRequest.intent">
+            <path value="ServiceRequest.intent"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCode value="order"/>
+        </element>
+        <element id="ServiceRequest.code">
+            <path value="ServiceRequest.code"/>
+            <short value="Referral or specific type of referral"/>
+            <definition value="Referral or specific type of referral. If the code used describes the type of/reason for referral (such as &quot;Referral to diabetes prevention program&quot;) then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."/>
+            <min value="1"/>
+            <max value="1"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.45/expansion/Latest"/>
+            </binding>
+        </element>
+        <element id="ServiceRequest.subject">
+            <path value="ServiceRequest.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.occurrence[x]">
+            <path value="ServiceRequest.occurrence[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.requester">
+            <path value="ServiceRequest.requester"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.performer">
+            <path value="ServiceRequest.performer"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.reasonCode">
+            <path value="ServiceRequest.reasonCode"/>
+            <short value="Reason for referral"/>
+            <definition value="Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. &quot;Referral&quot;)."/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.46/expansion/Latest"/>
+            </binding>
+        </element>
+        <element id="ServiceRequest.insurance">
+            <path value="ServiceRequest.insurance"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.insurance:sliceInsuranceBSeRCoverage">
+            <path value="ServiceRequest.insurance"/>
+            <sliceName value="sliceInsuranceBSeRCoverage"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.supportingInfo">
+            <path value="ServiceRequest.supportingInfo"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.note">
+            <path value="ServiceRequest.note"/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+    </differential>
 </StructureDefinition>

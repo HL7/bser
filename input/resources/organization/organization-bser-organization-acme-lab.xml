@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="organization-bser-organization-acme-lab"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-01-18T00:12:37.000-05:00"/>
-      <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-01-20T17:34:47.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -26,7 +26,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                  <span title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization</span>
+                                    <span title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization</span>
                                 </td>
                             </tr>
                         </table>
@@ -75,8 +75,10 @@
                                     <li>
                                         <span title="display">Healthcare Provider</span>  (
                                         
+                                        
                                         <span title="code">prov</span> )
           
+                                    
                                     
                                     </li>
                                     <li>
