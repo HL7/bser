@@ -1,160 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Task
-    xmlns="http://hl7.org/fhir">
-    <id value="task-BSeR-ReferralTask"/>
-    <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-20T21:45:11.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">task-ecr-ehr-requested-eicr</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">versionId</td>
-                                <td>
-                                    <div title="versionId">9</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">lastUpdated</td>
-                                <td>
-                                    <div title="lastUpdated">2019-10-05T03:15:42.000-04:00</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-task</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">status</td>
-                    <td>
-                        <div title="status">requested</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">businessStatus</td>
-                    <td>
+<Task xmlns="http://hl7.org/fhir">
+   <id value="task-BSeR-ReferralTask"/>
+   <meta>
+      <versionId value="3"/>
+      <lastUpdated value="2020-01-20T21:45:11.000-05:00"/>
+      <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
+   </meta>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <tr>
+               <td style="font-weight: bold">id</td>
+               <td>
+                  <div title="id">task-BSeR-ReferralTask</div> 
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">meta</td>
+               <td>
+                  <table>
+                     <tr>
+                        <td style="font-weight: bold">versionId</td>
+                        <td>
+                           <div title="versionId">3</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">lastUpdated</td>
+                        <td>
+                           <div title="lastUpdated">2020-01-20T21:45:11.000-05:00</div> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">profile</td>
+                        <td>
+                           <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask</div> 
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">identifier</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Send eICR</div>  (
-                                        <div title="code">sent-eicr</div> )
-          
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-task-businessStatus">http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-task-businessStatus</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
+                           <li> (<div title="code">PLAC</div> )
+            </li>
+                           <li>
+                              <div title="system">
+                                 <a href="http://terminology.hl7.org/CodeSystem/v2-0203">http://terminology.hl7.org/CodeSystem/v2-0203</a>
+                              </div>
+                           </li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">intent</td>
-                    <td>
-                        <div title="intent">order</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">focus</td>
-                    <td>
+                     </li>
+                     <li>
+                        <div title="value">66666666</div> 
+                     </li>
+                     <li>
+                        <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">identifier</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <a href="Bundle-bundle-eicr-document-zika.html">Bundle/bundle-eicr-document-zika</a>
-                            </li>
+                           <li> (<div title="code">FILL</div> )
+            </li>
+                           <li>
+                              <div title="system">
+                                 <a href="http://terminology.hl7.org/CodeSystem/v2-0203">http://terminology.hl7.org/CodeSystem/v2-0203</a>
+                              </div>
+                           </li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">authoredOn</td>
-                    <td>
-                        <div title="authoredOn">2019-05-04T14:43:32-04:00</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">owner</td>
-                    <td>
+                     </li>
+                     <li>
+                        <div title="value">77777777</div> 
+                     </li>
+                     <li>
+                        <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">status</td>
+               <td>
+                  <div title="status">requested</div> 
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">businessStatus</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <a href="Organization-organization-ecr-ymca-center.html">Organization/organization-ecr-ymca-center</a>
-                            </li>
+                           <li>
+                              <div title="display">Service Request Fulfillment Completed</div>  (<div title="code">7.0</div> )
+          </li>
+                           <li>
+                              <div title="system">
+                                 <a href="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS">http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS</a>
+                              </div>
+                           </li>
                         </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
-    <identifier>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="PLAC"/>
-            </coding>
-        </type>
-        <value value="66666666"/>
-        <assigner>
-            <reference value="Organization/organization-bser-organization-saint-luke"/>
-        </assigner>
-    </identifier>
-    <identifier>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="FILL"/>
-            </coding>
-        </type>
-        <value value="77777777"/>
-        <assigner>
-            <reference value="Organization/organization-bser-organization-saint-luke"/>
-        </assigner>
-    </identifier>
-    <status value="requested"/>
-    <businessStatus>
-        <coding>
-            <system value="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS"/>
-            <code value="7.0"/>
-            <display value="Service Request Fulfillment Completed"/>
-        </coding>
-    </businessStatus>
-    <intent value="order"/>
-    <focus>
-        <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
-    </focus>
-    <authoredOn value="2020-01-15T14:43:32-04:00"/>
-    <requester>
-        <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
-    </requester>
-    <owner>
-        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
-    </owner>
-    <output>
-        <type>
-            <text value="arthritis referral feedback"/>
-        </type>
-        <valueReference>
-            <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
-        </valueReference>
-    </output>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">intent</td>
+               <td>
+                  <div title="intent">order</div> 
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">focus</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
+                        <a href="ServiceRequest-servicerequest-BSeR-ReferralServiceRequest.html">ServiceRequest/servicerequest-BSeR-ReferralServiceRequest</a>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">authoredOn</td>
+               <td>
+                  <div title="authoredOn">2020-01-15T14:43:32-04:00</div> 
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">requester</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
+                        <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">owner</td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>
+                        <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <td style="font-weight: bold">output</td>
+               <td>
+                  <table>
+                     <tr>
+                        <td style="font-weight: bold">type</td>
+                        <td>Arthritis referral feedback</td>
+                     </tr>
+                     <tr>
+                        <td style="font-weight: bold">valueReference</td>
+                        <td>
+                           <ul style="list-style:none; padding-left:0; margin:0 0;">
+                              <li>
+                                 <a href="Bundle-bundle-bser-arthritis-referral-feedback-eve-everywoman.html">Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman</a>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <identifier>
+      <type>
+         <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="PLAC"/>
+         </coding>
+      </type>
+      <value value="66666666"/>
+      <assigner>
+         <reference value="Organization/organization-bser-organization-saint-luke"/>
+      </assigner>
+   </identifier>
+   <identifier>
+      <type>
+         <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="FILL"/>
+         </coding>
+      </type>
+      <value value="77777777"/>
+      <assigner>
+         <reference value="Organization/organization-bser-organization-saint-luke"/>
+      </assigner>
+   </identifier>
+   <status value="requested"/>
+   <businessStatus>
+      <coding>
+         <system value="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS"/>
+         <code value="7.0"/>
+         <display value="Service Request Fulfillment Completed"/>
+      </coding>
+   </businessStatus>
+   <intent value="order"/>
+   <focus>
+      <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
+   </focus>
+   <authoredOn value="2020-01-15T14:43:32-04:00"/>
+   <requester>
+      <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
+   </requester>
+   <owner>
+      <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+   </owner>
+   <output>
+      <type>
+        <text value="Arthritis referral feedback"/>
+      </type>
+      <valueReference>
+         <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+      </valueReference>
+   </output>
 </Task>
