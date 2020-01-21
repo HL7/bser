@@ -12,16 +12,18 @@
       <MessageHeader xmlns="http://hl7.org/fhir">
         <id value="messageheader-BSeR-ReferralMessageHeader" />
         <meta>
+          <versionId value="2" />
+          <lastUpdated value="2020-01-20T21:45:31.000-05:00" />
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader" />
         </meta>
         <text>
           <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+          <div xmlns="http://www.w3.org/1999/xhtml">
             <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <tr>
                 <td style="font-weight: bold">id</td>
                 <td>
-                  <div title="id">messageheader-ecr-requested-eicr</div>
+                  <div title="id">messageheader-BSeR-ReferralMessageHeader</div>
                 </td>
               </tr>
               <tr>
@@ -29,48 +31,9 @@
                 <td>
                   <table>
                     <tr>
-                      <td style="font-weight: bold">versionId</td>
-                      <td>
-                        <div title="versionId">7</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">lastUpdated</td>
-                      <td>
-                        <div title="lastUpdated">2019-10-05T01:19:11.000-04:00</div>
-                      </td>
-                    </tr>
-                    <tr>
                       <td style="font-weight: bold">profile</td>
                       <td>
-                        <div title="profile">http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-messageheader</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">tag</td>
-                      <td>
-                        <table>
-                          <tr>
-                            <td style="font-weight: bold">system</td>
-                            <td>
-                              <div title="system">
-                                <a href="http://terminology.hl7.org/CodeSystem/v3-ObservationValue">http://terminology.hl7.org/CodeSystem/v3-ObservationValue</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="font-weight: bold">code</td>
-                            <td>
-                              <div title="code">SUBSETTED</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="font-weight: bold">display</td>
-                            <td>
-                              <div title="display">subsetted</div>
-                            </td>
-                          </tr>
-                        </table>
+                        <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader</div>
                       </td>
                     </tr>
                   </table>
@@ -84,20 +47,20 @@
                       <td style="font-weight: bold">system</td>
                       <td>
                         <div title="system">
-                          <a href="http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-messageHeader-event">http://hl7.org/fhir/us/ecr/CodeSystem/codesystem-messageHeader-event</a>
+                          <a href="http://terminology.hl7.org/CodeSystem/v2-0003">http://terminology.hl7.org/CodeSystem/v2-0003</a>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td style="font-weight: bold">code</td>
                       <td>
-                        <div title="code">process-eicr</div>
+                        <div title="code">I12</div>
                       </td>
                     </tr>
                     <tr>
                       <td style="font-weight: bold">display</td>
                       <td>
-                        <div title="display">Process eICR</div>
+                        <div title="display">REF/RRI - Patient referral</div>
                       </td>
                     </tr>
                   </table>
@@ -108,25 +71,19 @@
                 <td>
                   <table>
                     <tr>
-                      <td style="font-weight: bold">name</td>
+                      <td style="font-weight: bold">endpoint</td>
                       <td>
-                        <div title="name">YMCA Acme Message Gateway</div>
+                        <div title="endpoint">http://www.saintlukeshealthsystem.org/fhir/endpoint</div>
                       </td>
                     </tr>
                     <tr>
-                      <td style="font-weight: bold">target</td>
+                      <td style="font-weight: bold">receiver</td>
                       <td>
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                           <li>
-                            <a href="Device-device-ecr-software-ymca.html">Device/device-ecr-software-ymca</a>
+                            <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
                           </li>
                         </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">endpoint</td>
-                      <td>
-                        <div title="endpoint">http://example.org/ymca/fhir</div>
                       </td>
                     </tr>
                   </table>
@@ -137,7 +94,7 @@
                 <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
-                      <a href="Organization-organization-ecr-salem-medical-center.html">Organization/organization-ecr-salem-medical-center</a>
+                      <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
                     </li>
                   </ul>
                 </td>
@@ -186,7 +143,7 @@
                     <tr>
                       <td style="font-weight: bold">endpoint</td>
                       <td>
-                        <div title="endpoint">http://example.org/salem-medical-center/fhir</div>
+                        <div title="endpoint">http://www.saintlukeshealthsystem.org/fhir</div>
                       </td>
                     </tr>
                   </table>
@@ -197,7 +154,7 @@
                 <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
-                      <a href="Task-task-ecr-ehr-requested-eicr.html">Task/task-ecr-ehr-requested-eicr</a>
+                      <a href="Task-task-BSeR-ReferralTask.html">Task/task-BSeR-ReferralTask</a>
                     </li>
                   </ul>
                 </td>
@@ -211,11 +168,24 @@
           <display value="REF/RRI - Patient referral" />
         </eventCoding>
         <destination>
-          <receiver value="PractitionerRole/practitionerrole-bser-referral-recipient" />
+          <endpoint value="http://www.saintlukeshealthsystem.org/fhir/endpoint" />
+          <receiver>
+            <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
+          </receiver>
         </destination>
         <sender>
           <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
         </sender>
+        <source>
+          <name value="Acme Central Patient Registry" />
+          <software value="FooBar Patient Manager" />
+          <version value="3.1.45.AABB" />
+          <contact>
+            <system value="phone" />
+            <value value="+1 (555) 123 4567" />
+          </contact>
+          <endpoint value="http://www.saintlukeshealthsystem.org/fhir" />
+        </source>
         <focus>
           <reference value="Task/task-BSeR-ReferralTask" />
         </focus>
@@ -687,5 +657,4 @@
       </Observation>
     </resource>
   </entry>
-
 </Bundle>
