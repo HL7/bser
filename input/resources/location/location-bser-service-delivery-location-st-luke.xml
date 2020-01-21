@@ -165,7 +165,7 @@
                <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                      <li>
-                        <a href="Organization-organization-ecr-salem-medical-center.html">Organization/organization-ecr-salem-medical-center</a>
+                        <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
                      </li>
                   </ul>
                </td>
@@ -201,6 +201,6 @@
       <postalCode value="64111"/>
    </address>
    <managingOrganization>
-      <reference value="Organization/organization-ecr-salem-medical-center"/>
+      <reference value="Organization/organization-bser-organization-saint-luke"/>
    </managingOrganization>
 </Location>
