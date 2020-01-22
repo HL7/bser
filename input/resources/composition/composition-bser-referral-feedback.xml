@@ -130,7 +130,7 @@
         <title value="Arthritis referral request feedback summary"/>
         <code>
             <coding>
-                <system value=" http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
+                <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
                 <code value="RSRFS"/>
                 <display value="CompositionSectionReferralServiceRequestFeedbackSummary"/>
             </coding>
