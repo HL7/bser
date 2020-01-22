@@ -1,138 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BSeR-ArthritisReferralSupportingInformation" />
-  <meta>
-    <versionId value="19" />
-    <lastUpdated value="2020-01-21T12:29:36.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
-  <name value="BSeR_ArthritisReferralSupportingInformation" />
-  <title value="BSeR Arthritis Referral Supporting Information" />
-  <status value="active" />
-  <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a arthritis related service request referral." />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Bundle" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Bundle">
-      <path value="Bundle" />
-    </element>
-    <element id="Bundle.meta">
-      <path value="Bundle.meta" />
-    </element>
-    <element id="Bundle.meta.profile">
-      <path value="Bundle.meta.profile" />
-      <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
-    </element>
-    <element id="Bundle.type">
-      <path value="Bundle.type" />
-      <min value="1" />
-      <max value="1" />
-      <fixedCode value="collection" />
-    </element>
-    <element id="Bundle.entry">
-      <path value="Bundle.entry" />
-      <slicing>
-        <discriminator>
-          <type value="profile" />
-          <path value="$this.resource" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-      <max value="*" />
-    </element>
-    <element id="Bundle.entry:BloodPressure">
-      <path value="Bundle.entry" />
-      <sliceName value="BloodPressure" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:BloodPressure.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/bp" />
-      </type>
-    </element>
-    <element id="Bundle.entry:BodyHeight">
-      <path value="Bundle.entry" />
-      <sliceName value="BodyHeight" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:BodyHeight.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight" />
-      </type>
-    </element>
-    <element id="Bundle.entry:BodyMassIndex">
-      <path value="Bundle.entry" />
-      <sliceName value="BodyMassIndex" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:BodyMassIndex.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/bmi" />
-      </type>
-    </element>
-    <element id="Bundle.entry:BodyWeight">
-      <path value="Bundle.entry" />
-      <sliceName value="BodyWeight" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:BodyWeight.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight" />
-      </type>
-    </element>
-    <element id="Bundle.entry:medicationHistory">
-      <path value="Bundle.entry" />
-      <sliceName value="medicationHistory" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:medicationHistory.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
-      </type>
-    </element>
-    <element id="Bundle.entry:Allergyintolerance">
-      <path value="Bundle.entry" />
-      <sliceName value="Allergyintolerance" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:Allergyintolerance.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance" />
-      </type>
-    </element>
-  </differential>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ArthritisReferralSupportingInformation"/>
+    <meta>
+        <versionId value="20"/>
+        <lastUpdated value="2020-01-22T01:13:35.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+    <name value="BSeR_ArthritisReferralSupportingInformation"/>
+    <title value="BSeR Arthritis Referral Supporting Information"/>
+    <status value="active"/>
+    <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a arthritis related service request referral."/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.meta">
+            <path value="Bundle.meta"/>
+        </element>
+        <element id="Bundle.meta.profile">
+            <path value="Bundle.meta.profile"/>
+            <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="collection"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:BloodPressure">
+            <path value="Bundle.entry"/>
+            <sliceName value="BloodPressure"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BloodPressure.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyHeight">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyHeight"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyHeight.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyMassIndex">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyMassIndex"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyMassIndex.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:BodyWeight">
+            <path value="Bundle.entry"/>
+            <sliceName value="BodyWeight"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:BodyWeight.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:medicationHistory">
+            <path value="Bundle.entry"/>
+            <sliceName value="medicationHistory"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:medicationHistory.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:Allergyintolerance">
+            <path value="Bundle.entry"/>
+            <sliceName value="Allergyintolerance"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Bundle.entry:Allergyintolerance.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
+            </type>
+        </element>
+    </differential>
 </StructureDefinition>

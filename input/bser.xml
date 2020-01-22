@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="390"/>
-        <lastUpdated value="2020-01-22T00:29:30.000-05:00"/>
+        <versionId value="399"/>
+        <lastUpdated value="2020-01-22T02:39:06.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -874,6 +874,46 @@
             </reference>
             <name value="Referral feedback"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
+                <display value="bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-nutrition-referral-eve-everywoman"/>
+                <display value="bundle-bser-nutrition-referral-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-nutrition-referral-eve-everywoman"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-hypertensions-referral-eve-everywoman"/></reference>
+            <name value="bundle-bser-hypertensions-referral-eve-everywoman"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-obesity-feedback-eve-everywoman"/></reference>
+            <name value="bundle-bser-obesity-feedback-eve-everywoman"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-hypertensions-feedback-eve-everywoman"/></reference>
+            <name value="bundle-bser-hypertensions-feedback-eve-everywoman"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-obesity-referral-eve-everywoman"/></reference>
+            <name value="bundle-bser-obesity-referral-eve-everywoman"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

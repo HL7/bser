@@ -5,7 +5,7 @@
     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
   </meta>
   <type value="message" />
-  <!-- sliceMessageHeader -->
+  <!--<!-\- sliceMessageHeader -\->
   <entry>
     <fullUrl value="MessageHeader/messageheader-BSeR-ReferralMessageHeader" />
     <resource>
@@ -192,7 +192,7 @@
       </MessageHeader>
     </resource>
   </entry>
-  <!-- sliceEmploymentStatus -->
+  <!-\- sliceEmploymentStatus -\->
   <entry>
     <fullUrl value="Observation/observation-odh-employment-status-eve-everywoman" />
     <resource>
@@ -370,7 +370,7 @@
       </Observation>
     </resource>
   </entry>
-  <!-- slicePatientConsent -->
+  <!-\- slicePatientConsent -\->
   <entry>
     <fullUrl value="Consent/consent-BSeR-PatientConsent-eve-everywoman" />
     <resource>
@@ -624,7 +624,7 @@
       </Consent>
     </resource>
   </entry>
-  <!-- sliceEducationLevel -->
+  <!-\- sliceEducationLevel -\->
   <entry>
     <fullUrl value="Observation/observation-BSeR-EducationLevel-eve-everywoman" />
     <resource>
@@ -768,6 +768,7 @@
       </Observation>
     </resource>
   </entry>
+  -->
   <entry>
     <fullUrl value="Task/task-BSeR-ReferralTask" />
     <resource>
