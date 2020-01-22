@@ -25,11 +25,12 @@
             <slicing>
                 <discriminator>
                     <type value="value"/>
-                    <path value="value"/>
+                    <path value="type"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
+          <max value="2"/>
         </element>
         <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier">
             <path value="ServiceRequest.identifier"/>
