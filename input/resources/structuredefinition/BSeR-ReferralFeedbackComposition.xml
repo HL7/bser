@@ -114,11 +114,13 @@
     <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.code">
       <path value="Composition.section.code" />
       <min value="1" />
-      <coding>
-        <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
-        <code value="RSRFSI" />
-        <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation" />
-      </coding>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
+          <code value="RSRFSI" />
+          <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry">
       <path value="Composition.section.entry" />
