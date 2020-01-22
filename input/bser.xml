@@ -57,7 +57,6 @@
     <grouping id="other-resources">
       <name value="Other Resources" />
     </grouping>
-
     <resource>
       <reference>
         <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation" />

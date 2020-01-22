@@ -72,7 +72,7 @@
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                    <code value="PLAC"/>
+                    <code value="FILL"/>
                 </coding>
             </patternCodeableConcept>
         </element>
