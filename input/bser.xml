@@ -1043,5 +1043,9 @@
         </page>
       </page>
     </page>
+  <parameter>
+    <code value="path-history"/>
+    <value value="http://hl7.org/fhir/us/bser/history.html"/>
+  </parameter>
   </definition>
 </ImplementationGuide>
