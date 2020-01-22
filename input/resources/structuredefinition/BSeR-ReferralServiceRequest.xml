@@ -10,7 +10,7 @@
     <name value="BSeR_ReferralServiceRequest"/>
     <title value="BSeR Referral Service Request"/>
     <status value="active"/>
-    <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed.&#xA;&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;BSeR_ReferralServiceRequest.png&quot; style=&quot;width:100%&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;"/>
+    <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="ServiceRequest"/>
