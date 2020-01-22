@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="composition-bser-referral-request"/>
+    <id value="composition-bser-referral-feedback"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-01-22T00:15:29.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-01-22T00:16:01.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -24,9 +24,21 @@
                     <td>
                         <table>
                             <tr>
+                                <td style="font-weight: bold">versionId</td>
+                                <td>
+                                    <div title="versionId">2</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">lastUpdated</td>
+                                <td>
+                                    <div title="lastUpdated">2020-01-21T22:46:41.000-05:00</div>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition</div>
+                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition</div>
                                 </td>
                             </tr>
                         </table>
@@ -46,10 +58,8 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Referral note</div>  (
-                                        
                                         <div title="code">57133-1</div> )
           
-                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -75,7 +85,7 @@
                 <tr>
                     <td style="font-weight: bold">date</td>
                     <td>
-                        <div title="date">2020-01-02T22:13:23Z</div>
+                        <div title="date">2020-01-03T11:15:23Z</div>
                     </td>
                 </tr>
                 <tr>
@@ -84,7 +94,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li/>
                             <li>
-                                <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">Henry Seven, MD</a>
+                                <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">Hailey Eight, MD</a>
                             </li>
                         </ul>
                     </td>
@@ -92,43 +102,7 @@
                 <tr>
                     <td style="font-weight: bold">title</td>
                     <td>
-                        <div title="title">Referral request</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">section</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">title</td>
-                                <td>
-                                    <div title="title">Arthritis referral request supporting information</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">code</td>
-                                <td>
-                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                        <li>
-                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                                <li>
-                                                    <div title="display">CompositionSectionReferralServiceRequestSupportingInformation</div>  (
-                                                    
-                                                    <div title="code">RSRSI</div> )
-          
-                                                
-                                                </li>
-                                                <li>
-                                                    <div title="system">
-                                                        <a href=" http://hl7.org/fhir/us/bser/CodeSystem/bser"> http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
+                        <div title="title">Referral feedback</div>
                     </td>
                 </tr>
             </table>
@@ -146,23 +120,36 @@
         <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
         <display value="Eve Everywoman"/>
     </subject>
-    <date value="2020-01-02T22:13:23Z"/>
+    <date value="2020-01-03T11:15:23Z"/>
     <author>
-        <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
-        <display value="Henry Seven, MD"/>
+        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+        <display value="Hailey Eight, MD"/>
     </author>
-    <title value="Referral request"/>
+    <title value="Referral feedback"/>
     <section>
-        <title value="Arthritis referral request supporting information"/>
+        <title value="Arthritis referral request feedback summary"/>
         <code>
             <coding>
                 <system value=" http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
-                <code value="RSRSI"/>
-                <display value="CompositionSectionReferralServiceRequestSupportingInformation"/>
+                <code value="RSRFS"/>
+                <display value="CompositionSectionReferralServiceRequestFeedbackSummary"/>
             </coding>
         </code>
         <entry>
-            <reference value="Bundle/bundle-bser-arthritis-referral-everywoman"/>
+            <reference value="Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Arthritis referral feedback supporting information"/>
+        <code>
+            <coding>
+                <system value=" http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
+                <code value="RSRFSI"/>
+                <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
         </entry>
     </section>
 </Composition>

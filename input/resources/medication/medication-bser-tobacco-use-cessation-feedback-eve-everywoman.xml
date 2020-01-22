@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-21T02:13:38.000-05:00"/>
-      <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-01-21T23:37:57.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -28,8 +28,10 @@
                                     <li>
                                         <div title="display">bupropion HCl 150 MG Smoking Cessation 12 HR Extended Release Oral Tablet</div>  (
                                         
+                                        
                                         <div title="code">1801289</div> )
           
+                                    
                                     
                                     </li>
                                     <li>
