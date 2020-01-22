@@ -4,7 +4,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
   </meta>
-  <type value="message"/>
+  <type value="message" />
   <!-- sliceMessageHeader -->
   <entry>
     <fullUrl value="MessageHeader/messageheader-BSeR-ReferralMessageHeader" />
@@ -199,11 +199,13 @@
       <Observation xmlns="http://hl7.org/fhir">
         <id value="observation-odh-employment-status-eve-everywoman" />
         <meta>
+          <versionId value="3" />
+          <lastUpdated value="2020-01-21T02:18:09.000-05:00" />
           <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus" />
         </meta>
         <text>
           <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+          <div xmlns="http://www.w3.org/1999/xhtml">
             <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <tr>
                 <td style="font-weight: bold">id</td>
@@ -236,7 +238,11 @@
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
                       <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li> (<div title="code">74165-2</div> )
+                        <li> (
+                          
+                          <div title="code">74165-2</div> )
+                          
+                          
                         </li>
                         <li>
                           <div title="system">
@@ -254,7 +260,11 @@
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
                       <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li> (<div title="code">80913-7</div> )
+                        <li> (
+                          
+                          <div title="code">80913-7</div> )
+                          
+                          
                         </li>
                         <li>
                           <div title="system">
@@ -307,7 +317,12 @@
                     <li>
                       <ul style="list-style:none; padding-left:0; margin:0 0;">
                         <li>
-                          <div title="display">Employed</div>  (<div title="code">Employed</div> )
+                          <div title="display">Employed</div>  (
+                          
+                          <div title="code"
+                          >Employed</div> )
+                          
+                          
                         </li>
                         <li>
                           <div title="system">
@@ -325,14 +340,14 @@
         <status value="final" />
         <category>
           <coding>
-            <system value="http://loinc.org" />
-            <code value="74165-2" />
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="social-history" />
           </coding>
         </category>
         <code>
           <coding>
             <system value="http://loinc.org" />
-            <code value="80913-7" />
+            <code value="74165-2" />
           </coding>
         </code>
         <subject>
@@ -343,7 +358,7 @@
           <start value="2014-01-17" />
         </effectivePeriod>
         <performer>
-          <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
+          <reference value="Practitioner/practitioner-bser-henry-seven" />
         </performer>
         <valueCodeableConcept>
           <coding>
@@ -357,7 +372,7 @@
   </entry>
   <!-- slicePatientConsent -->
   <entry>
-    <fullUrl value="Consent/consent-BSeR-PatientConsent-eve-everywoman"/>
+    <fullUrl value="Consent/consent-BSeR-PatientConsent-eve-everywoman" />
     <resource>
       <Consent xmlns="http://hl7.org/fhir">
         <id value="consent-BSeR-PatientConsent-eve-everywoman" />
@@ -660,20 +675,17 @@
   <entry>
     <fullUrl value="Task/task-BSeR-ReferralTask" />
     <resource>
-      <Task
-        xmlns="http://hl7.org/fhir">
-        <id value="task-BSeR-ReferralTask"/>
+      <Task xmlns="http://hl7.org/fhir">
+        <id value="task-BSeR-ReferralTask" />
         <meta>
-          <versionId value="4"/>
-          <lastUpdated value="2020-01-21T01:16:05.000-05:00"/>
-          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
+          <versionId value="4" />
+          <lastUpdated value="2020-01-21T01:16:05.000-05:00" />
+          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask" />
         </meta>
         <text>
-          <status value="generated"/>
-          <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table
-              xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <tr>
                 <td style="font-weight: bold">id</td>
                 <td>
@@ -853,52 +865,52 @@
         <identifier>
           <type>
             <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="PLAC"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+              <code value="PLAC" />
             </coding>
           </type>
-          <value value="66666666"/>
+          <value value="66666666" />
           <assigner>
-            <reference value="Organization/organization-bser-organization-saint-luke"/>
+            <reference value="Organization/organization-bser-organization-saint-luke" />
           </assigner>
         </identifier>
         <identifier>
           <type>
             <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-              <code value="FILL"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+              <code value="FILL" />
             </coding>
           </type>
-          <value value="77777777"/>
+          <value value="77777777" />
           <assigner>
-            <reference value="Organization/organization-bser-organization-saint-luke"/>
+            <reference value="Organization/organization-bser-organization-saint-luke" />
           </assigner>
         </identifier>
-        <status value="requested"/>
+        <status value="requested" />
         <businessStatus>
           <coding>
-            <system value="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS"/>
-            <code value="7.0"/>
-            <display value="Service Request Fulfillment Completed"/>
+            <system value="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS" />
+            <code value="7.0" />
+            <display value="Service Request Fulfillment Completed" />
           </coding>
         </businessStatus>
-        <intent value="order"/>
+        <intent value="order" />
         <focus>
-          <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
+          <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" />
         </focus>
-        <authoredOn value="2020-01-15T14:43:32-04:00"/>
+        <authoredOn value="2020-01-15T14:43:32-04:00" />
         <requester>
-          <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
+          <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
         </requester>
         <owner>
-          <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+          <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
         </owner>
         <output>
           <type>
-            <text value="Arthritis referral feedback"/>
+            <text value="Arthritis referral feedback" />
           </type>
           <valueReference>
-            <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+            <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman" />
           </valueReference>
         </output>
       </Task>
