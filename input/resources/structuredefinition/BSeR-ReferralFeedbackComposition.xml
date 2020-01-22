@@ -128,7 +128,7 @@
             <slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="$this"/>
+                    <path value="reference"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
