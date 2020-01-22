@@ -126,7 +126,7 @@
                                              </li>
                               <li>
                                 <div title="system">
-                                  <a href=" http://hl7.org/fhir/us/bser/CodeSystem/bser"> http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
+                                  <a href="http://hl7.org/fhir/us/bser/CodeSystem/bser">http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
                                 </div>
                               </li>
                             </ul>
@@ -162,7 +162,7 @@
           <title value="Arthritis referral request supporting information" />
           <code>
             <coding>
-              <system value=" http://hl7.org/fhir/us/bser/CodeSystem/bser" />
+              <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
               <code value="RSRSI" />
               <display value="CompositionSectionReferralServiceRequestSupportingInformation" />
             </coding>
@@ -273,7 +273,7 @@
                                                 </li>
                                 <li>
                                   <div title="system">
-                                    <a href=" http://hl7.org/fhir/us/bser/CodeSystem/bser"> http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
+                                    <a href="http://hl7.org/fhir/us/bser/CodeSystem/bser">http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
                                   </div>
                                 </li>
                               </ul>

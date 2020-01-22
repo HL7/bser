@@ -80,7 +80,7 @@
       <min value="1" />
       <fixedCodeableConcept>
         <coding>
-          <system value=" http://hl7.org/fhir/us/bser/CodeSystem/bser" />
+          <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
           <code value="RSRFS" />
           <display value="CompositionSectionReferralServiceRequestFeedbackSummary" />
         </coding>
@@ -115,7 +115,7 @@
       <path value="Composition.section.code" />
       <min value="1" />
       <coding>
-        <system value=" http://hl7.org/fhir/us/bser/CodeSystem/bser" />
+        <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
         <code value="RSRFSI" />
         <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation" />
       </coding>
