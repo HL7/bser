@@ -5,7 +5,7 @@
     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
   </meta>
   <type value="message" />
-  <!--<!-\- sliceMessageHeader -\->
+  <!-- sliceMessageHeader -->
   <entry>
     <fullUrl value="MessageHeader/messageheader-BSeR-ReferralMessageHeader" />
     <resource>
@@ -192,8 +192,8 @@
       </MessageHeader>
     </resource>
   </entry>
-  <!-\- sliceEmploymentStatus -\->
-  <entry>
+  <!-- sliceEmploymentStatus -->
+  <!--<entry>
     <fullUrl value="Observation/observation-odh-employment-status-eve-everywoman" />
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
@@ -768,7 +768,7 @@
       </Observation>
     </resource>
   </entry>
-  -->
+  
   <entry>
     <fullUrl value="Task/task-BSeR-ReferralTask" />
     <resource>
@@ -1012,5 +1012,5 @@
         </output>
       </Task>
     </resource>
-  </entry>
+  </entry>-->
 </Bundle>
