@@ -1,0 +1,13 @@
+// The following value sets are external and not supported by terminology server
+ValueSet https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.4239 not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1047.73/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.37/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.38/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.39/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.39/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.40/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.41/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.45/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.46/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.47/expansion/Latest not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.95/expansion/Latest not found by validator
