@@ -4,7 +4,12 @@
   <meta>
     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle" />
   </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986" />
+    <value value="urn:uuid:2be4b4e4-6df1-4cb2-a947-c70fa0eda54c" />
+  </identifier>
   <type value="document" />
+  <timestamp value="2020-01-06T22:13:23Z" />
   <entry>
     <fullUrl value="Composition/composition-bser-referral-request" />
     <resource>
@@ -14,14 +19,6 @@
           <versionId value="2" />
           <lastUpdated value="2020-01-21T22:46:41.000-05:00" />
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition" />
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^read" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^write" />
-          </security>
         </meta>
         <text>
           <status value="generated" />
@@ -306,22 +303,6 @@
           <versionId value="3" />
           <lastUpdated value="2019-12-19T21:35:47.000-05:00" />
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^read" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^write" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="user^s7DIn2HM^read" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="user^s7DIn2HM^write" />
-          </security>
         </meta>
         <text>
           <status value="generated" />
@@ -627,14 +608,6 @@
           <versionId value="6" />
           <lastUpdated value="2020-01-17T23:54:54.000-05:00" />
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^read" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^write" />
-          </security>
         </meta>
         <type value="collection" />
         <entry>
@@ -1611,14 +1584,6 @@
           <versionId value="6" />
           <lastUpdated value="2020-01-18T00:10:51.000-05:00" />
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^read" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^write" />
-          </security>
         </meta>
         <text>
           <status value="generated" />
@@ -1782,14 +1747,6 @@
           <versionId value="2" />
           <lastUpdated value="2020-01-17T23:52:20.000-05:00" />
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^read" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^write" />
-          </security>
         </meta>
         <text>
           <status value="generated" />
@@ -1964,14 +1921,6 @@
           <versionId value="6" />
           <lastUpdated value="2020-01-20T17:34:47.000-05:00" />
           <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^read" />
-          </security>
-          <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security" />
-            <code value="everyone^write" />
-          </security>
         </meta>
         <text>
           <status value="generated" />
