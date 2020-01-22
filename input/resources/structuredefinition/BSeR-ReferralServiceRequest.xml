@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="30"/>
-        <lastUpdated value="2020-01-21T19:31:50.000-05:00"/>
+        <versionId value="32"/>
+        <lastUpdated value="2020-01-21T21:49:44.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
@@ -30,7 +30,7 @@
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
-          <max value="2"/>
+            <max value="2"/>
         </element>
         <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier">
             <path value="ServiceRequest.identifier"/>

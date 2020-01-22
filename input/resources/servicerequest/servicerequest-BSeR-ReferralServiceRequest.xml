@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="servicerequest-BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-01-20T21:45:57.000-05:00"/>
-      <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-01-21T23:02:38.000-05:00"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -26,8 +26,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">PLAC</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -52,8 +54,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">FILL</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -91,8 +95,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Patient referral</div>  (
+                                        
                                         <div title="code">3457005</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -157,8 +163,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Arthritis (disorder)</div>  (
+                                        
                                         <div title="code">3723001</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -227,4 +235,10 @@
             <display value="Arthritis (disorder)"/>
         </coding>
     </reasonCode>
+    <insurance>
+        <reference value="Coverage/coverage-BSeR-Coverage-eve-everywoman"/>
+    </insurance>
+    <supportingInfo>
+        <reference value="Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman"/>
+    </supportingInfo>
 </ServiceRequest>

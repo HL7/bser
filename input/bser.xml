@@ -2,8 +2,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="bser" />
   <meta>
-    <versionId value="382" />
-    <lastUpdated value="2020-01-21T02:16:16.000-05:00" />
+    <versionId value="387" />
+    <lastUpdated value="2020-01-21T23:00:55.000-05:00" />
   </meta>
   <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser" />
   <version value="1.0.0" />
@@ -57,6 +57,7 @@
     <grouping id="other-resources">
       <name value="Other Resources" />
     </grouping>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation" />
@@ -507,6 +508,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman" />
+        <display value="bundle-bser-referral-request-document-bundle-eve-everywoman" />
+      </reference>
+      <name value="bundle-bser-referral-request-document-bundle-eve-everywoman" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="Bundle/bundle-bser-tobacco-referral-eve-everywoman" />
         <display value="bundle-bser-tobacco-referral-eve-everywoman" />
       </reference>
@@ -528,6 +537,14 @@
       </reference>
       <name value="allergyintolerance-us-core-allergyint-eve-everywoman" />
       <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/composition-bser-referral-request" />
+        <display value="Referral request" />
+      </reference>
+      <name value="Referral request" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition" />
     </resource>
     <resource>
       <reference>
@@ -854,6 +871,7 @@
       <name value="task-BSeR-ReferralTask" />
       <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask" />
     </resource>
+
     <page>
       <nameUrl value="index.html" />
       <title value="IG Home Page" />

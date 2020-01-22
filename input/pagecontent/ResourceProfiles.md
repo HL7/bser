@@ -6,7 +6,7 @@ The FHIR R4 resource profiles defined in the BSeR IG are grouped into the follow
 
 * **[Referral Participant Resources](ReferralParticipantResources.html)** - the set of FHIR resources representing the entities participating in the bi-directional exchange of referral transactions.
 
-* **[Workflow Management Resources](WorkflowManagementResources.html)** - the set of FHIR resources used to enable the bundling of  resources and managing tasks related to the bi-directional exchange of referral transactions.
+* **[Workflow Management Resources](WorkflowManagementResources.html)** - the set of FHIR resources used to enable the bundling of resources and managing tasks related to the bi-directional exchange of referral transactions.
 
 * **[Referral Service Request Resources](ReferralServiceRequestResources.html)** - the set of FHIR resources used in referral service request transactions.
 

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="practitionerrole-bser-referral-recipient"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-01-18T00:10:51.000-05:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-01-21T21:27:01.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
     </meta>
     <text>
@@ -78,8 +78,10 @@
                                         <div title="display">Primary Care</div>  (
                                         
                                         
+                                        
                                         <div title="code">261QP2300X</div> )
           
+                                    
                                     
                                     
                                     </li>
@@ -103,8 +105,10 @@
                                         <div title="display">Family Practice</div>  (
                                         
                                         
+                                        
                                         <div title="code">419772000</div> )
           
+                                    
                                     
                                     
                                     </li>
