@@ -194,6 +194,9 @@
         <display value="CompositionSectionReferralServiceRequestFeedbackSummary" />
       </coding>
     </code>
+    <focus>
+      <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
+    </focus>
     <entry>
       <reference value="Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman" />
     </entry>
