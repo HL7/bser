@@ -5,7 +5,7 @@
     <meta>
         <versionId value="6"/>
         <lastUpdated value="2020-01-18T00:10:51.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
     </meta>
     <text>
         <status value="generated"/>
