@@ -374,15 +374,20 @@
   <entry>
     <fullUrl value="Consent/consent-BSeR-PatientConsent-eve-everywoman" />
     <resource>
-      <Consent xmlns="http://hl7.org/fhir">
-        <id value="consent-BSeR-PatientConsent-eve-everywoman" />
+      <Consent
+        xmlns="http://hl7.org/fhir">
+        <id value="consent-BSeR-PatientConsent-eve-everywoman"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent" />
+          <versionId value="4"/>
+          <lastUpdated value="2020-01-21T02:03:52.000-05:00"/>
+          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
         </meta>
         <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <status value="generated"/>
+          <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table
+              xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <tr>
                 <td style="font-weight: bold">id</td>
                 <td>
@@ -393,6 +398,18 @@
                 <td style="font-weight: bold">meta</td>
                 <td>
                   <table>
+                    <tr>
+                      <td style="font-weight: bold">versionId</td>
+                      <td>
+                        <div title="versionId">3</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">lastUpdated</td>
+                      <td>
+                        <div title="lastUpdated">2020-01-20T20:44:56.000-05:00</div>
+                      </td>
+                    </tr>
                     <tr>
                       <td style="font-weight: bold">profile</td>
                       <td>
@@ -414,7 +431,9 @@
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
                       <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li> (<div title="code">patient-privacy</div> )
+                        <li> (
+                          <div title="code">patient-privacy</div> )
+                          
                         </li>
                         <li>
                           <div title="system">
@@ -427,10 +446,31 @@
                 </td>
               </tr>
               <tr>
+                <td style="font-weight: bold">category</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li>
+                          <div title="display">information access</div>  (
+                          <div title="code">INFA</div> )
+                          
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://terminology.hl7.org/CodeSystem/v3-ActCode">http://terminology.hl7.org/CodeSystem/v3-ActCode</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
                 <td style="font-weight: bold">patient</td>
                 <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
+                    <li/>
                     <li>
                       <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
                     </li>
@@ -447,9 +487,29 @@
                 <td style="font-weight: bold">performer</td>
                 <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
+                    <li/>
                     <li>
                       <a href="RelatedPerson-relatedperson-self-eve-everywoman.html">Eve Everywoman</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">policyRule</td>
+                <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                    <li>
+                      <ul style="list-style:none; padding-left:0; margin:0 0;">
+                        <li> (
+                          <div title="code">OPTIN</div> )
+                          
+                        </li>
+                        <li>
+                          <div title="system">
+                            <a href="http://terminology.hl7.org/CodeSystem/v3-ActCode">http://terminology.hl7.org/CodeSystem/v3-ActCode</a>
+                          </div>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </td>
@@ -459,22 +519,52 @@
                 <td>
                   <table>
                     <tr>
-                      <td style="font-weight: bold">period</td>
+                      <td style="font-weight: bold">type</td>
                       <td>
-                        <table>
-                          <tr>
-                            <td style="font-weight: bold">start</td>
-                            <td>
-                              <div title="start">2000-01-01</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="font-weight: bold">end</td>
-                            <td>
-                              <div title="end">2021-01-01</div>
-                            </td>
-                          </tr>
-                        </table>
+                        <div title="type">permit</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">actor</td>
+                      <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                          <li>
+                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                              <li> (
+                                <div title="code">CST</div> )
+                                
+                              </li>
+                              <li>
+                                <div title="system">
+                                  <a href="http://terminology.hl7.org/CodeSystem/v3-ParticipationType">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold">action</td>
+                      <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                          <li>
+                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                              <li> (
+                                <div title="code">access</div> )
+                                
+                              </li>
+                              <li>
+                                <div title="system">
+                                  <a href="http://terminology.hl7.org/CodeSystem/consentaction">http://terminology.hl7.org/CodeSystem/consentaction</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
                       </td>
                     </tr>
                   </table>
@@ -483,45 +573,51 @@
             </table>
           </div>
         </text>
-        <status value="active" />
+        <status value="active"/>
         <scope>
           <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/consentscope" />
-            <code value="patient-privacy" />
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="patient-privacy"/>
           </coding>
         </scope>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="INFA"/>
+            <display value="information access"/>
+          </coding>
+        </category>
         <patient>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
+          <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+          <display value="Eve Everywoman"/>
         </patient>
-        <dateTime value="2019-05-23" />
+        <dateTime value="2019-05-23"/>
         <performer>
-          <reference value="RelatedPerson/relatedperson-self-eve-everywoman" />
-          <display value="Eve Everywoman" />
+          <reference value="RelatedPerson/relatedperson-self-eve-everywoman"/>
+          <display value="Eve Everywoman"/>
         </performer>
         <policyRule>
           <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
-            <code value="OPTIN" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="OPTIN"/>
           </coding>
         </policyRule>
         <provision>
-          <type value="permit" />
+          <type value="permit"/>
           <actor>
             <role>
               <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
-                <code value="CST" />
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="CST"/>
               </coding>
             </role>
             <reference>
-              <reference value="Organization/organization-bser-organization-saint-luke" />
-            </reference>
+              <reference value="Organization/organization-bser-organization-saint-luke"/></reference>
           </actor>
           <action>
             <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/consentaction" />
-              <code value="access" />
+              <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+              <code value="access"/>
             </coding>
           </action>
         </provision>
