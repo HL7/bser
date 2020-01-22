@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralTask"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2020-01-20T22:26:00.000-05:00"/>
+        <versionId value="30"/>
+        <lastUpdated value="2020-01-21T02:25:21.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     <name value="BSeR_ReferralTask"/>
@@ -25,7 +25,7 @@
             <slicing>
                 <discriminator>
                     <type value="value"/>
-                    <path value="use"/>
+                    <path value="type"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>

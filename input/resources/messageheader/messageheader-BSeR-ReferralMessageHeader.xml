@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="messageheader-BSeR-ReferralMessageHeader"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-01-20T21:45:31.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-01-21T02:25:51.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
     </meta>
     <text>
@@ -179,6 +179,13 @@
         </contact>
         <endpoint value="http://www.saintlukeshealthsystem.org/fhir"/>
     </source>
+    <reason>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0003"/>
+            <code value="I12"/>
+            <display value="REF/RRI - Patient referral"/>
+        </coding>
+    </reason>
     <focus>
         <reference value="Task/task-BSeR-ReferralTask"/>
     </focus>

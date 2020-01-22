@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2020-01-20T19:36:50.000-05:00"/>
+        <versionId value="30"/>
+        <lastUpdated value="2020-01-21T19:31:50.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>
@@ -37,10 +37,15 @@
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.use">
-            <path value="ServiceRequest.identifier.use"/>
+        <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.type">
+            <path value="ServiceRequest.identifier.type"/>
             <min value="1"/>
-            <fixedCode value="PLAC"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="PLAC"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.value">
             <path value="ServiceRequest.identifier.value"/>
@@ -60,10 +65,15 @@
             <min value="0"/>
             <max value="1"/>
         </element>
-        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.use">
-            <path value="ServiceRequest.identifier.use"/>
+        <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.type">
+            <path value="ServiceRequest.identifier.type"/>
             <min value="1"/>
-            <fixedCode value="FILL"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="FILL"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.value">
             <path value="ServiceRequest.identifier.value"/>

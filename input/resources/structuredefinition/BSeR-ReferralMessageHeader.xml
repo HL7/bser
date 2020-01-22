@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralMessageHeader"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-01-20T18:33:26.000-05:00"/>
+        <versionId value="12"/>
+        <lastUpdated value="2020-01-21T02:12:46.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
     <name value="BSeR_ReferralMessageHeader"/>
@@ -58,8 +58,7 @@
         </element>
         <element id="MessageHeader.reason">
             <path value="MessageHeader.reason"/>
-            <min value="1"/>
-            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="MessageHeader.focus">
             <path value="MessageHeader.focus"/>

@@ -1,5 +1,0 @@
-// Add warning and/or information messages here after you've confirmed that they aren't really a problem
-// (And include comments like this justifying why)
-
-// Grahame has stated that the following warnings are about the base spec and won't be fixed until the next technical correction (they are all on the snapshot)
-WARNING: http://hl7.org/fhir/us/bser/StructureDefinition/StructureDefinition/BSeR-EducationLevel: value should not start or finish with whitespace

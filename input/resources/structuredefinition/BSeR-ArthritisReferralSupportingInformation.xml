@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ArthritisReferralSupportingInformation"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2020-01-16T22:18:00.000-05:00"/>
+        <versionId value="19"/>
+        <lastUpdated value="2020-01-21T12:29:36.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
     <name value="BSeR_ArthritisReferralSupportingInformation"/>
     <title value="BSeR Arthritis Referral Supporting Information"/>
     <status value="active"/>
-    <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a arthritis related service request referral.&#xA;&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;BSeR_ArthritisReferralSupportingInformation.png&quot; style=&quot;width:100%&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;"/>
+    <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a arthritis related service request referral."/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>
