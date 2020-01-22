@@ -699,6 +699,9 @@
           <resource>
             <Observation xmlns="http://hl7.org/fhir">
               <id value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
+              <meta>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
+              </meta>
               <text>
                 <status value="generated" />
                 <div xmlns="http://www.w3.org/1999/xhtml">
@@ -2614,24 +2617,21 @@
       </Coverage>
     </resource>
   </entry>
-  
-  <entry>
-    <fullUrl value="Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"></fullUrl>
+
+  <!--<entry>
+    <fullUrl value="Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
     <resource>
-      <Observation
-        xmlns="http://hl7.org/fhir">
-        <id value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
         <meta>
-          <versionId value="7"/>
-          <lastUpdated value="2019-12-20T02:10:56.000-05:00"/>
-          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+          <versionId value="7" />
+          <lastUpdated value="2019-12-20T02:10:56.000-05:00" />
+          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
         </meta>
         <text>
-          <status value="generated"/>
-          <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table
-              xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <tr>
                 <td style="font-weight: bold">id</td>
                 <td>
@@ -2694,7 +2694,7 @@
                 <td style="font-weight: bold">subject</td>
                 <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li/>
+                    <li />
                     <li>
                       <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
                     </li>
@@ -2725,7 +2725,8 @@
                       <ul style="list-style:none; padding-left:0; margin:0 0;">
                         <li>
                           <div title="display">Patient's condition improved (finding)</div>  (
-                          <div title="code">268910001</div> )
+                          <div title="code"
+                          >268910001</div> )
                           
                         </li>
                         <li>
@@ -2741,31 +2742,31 @@
             </table>
           </div>
         </text>
-        <status value="final"/>
+        <status value="final" />
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="406203001"/>
-            <display value="Endurance (observable entity)"/>
+            <system value="http://snomed.info/sct" />
+            <code value="406203001" />
+            <display value="Endurance (observable entity)" />
           </coding>
         </code>
         <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-          <display value="Eve Everywoman"/>
+          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+          <display value="Eve Everywoman" />
         </subject>
-        <effectiveDateTime value="2019-01-18T22:33:22Z"/>
+        <effectiveDateTime value="2019-01-18T22:33:22Z" />
         <performer>
-          <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+          <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
         </performer>
         <valueCodeableConcept>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="268910001"/>
-            <display value="Patient's condition improved (finding)"/>
+            <system value="http://snomed.info/sct" />
+            <code value="268910001" />
+            <display value="Patient's condition improved (finding)" />
           </coding>
         </valueCodeableConcept>
       </Observation>
     </resource>
   </entry>
-
+-->
 </Bundle>
