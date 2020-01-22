@@ -959,7 +959,7 @@
             <nameUrl value="ReferralParticipantResources.html" />
             <title value="Referral Participant Resources" />
             <generation value="markdown" />
-            <page>
+            <!--<page>
               <nameUrl value="ReferralServiceRequestInitiator.html" />
               <title value="Referral Service Request Initiator" />
               <generation value="markdown" />
@@ -973,7 +973,7 @@
               <nameUrl value="ReferralServiceRequestPatient.html" />
               <title value="Referral Service Request Patient" />
               <generation value="markdown" />
-            </page>
+            </page>-->
           </page>
           <page>
             <nameUrl value="WorkflowManagementResources.html" />
