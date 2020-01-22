@@ -20,7 +20,14 @@
         <element id="Bundle">
             <path value="Bundle"/>
         </element>
-        <element id="Bundle.type">
+      <element id="Bundle.meta">
+        <path value="Bundle.meta" />
+      </element>
+      <element id="Bundle.meta.profile">
+        <path value="Bundle.meta.profile" />
+        <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation" />
+      </element>
+      <element id="Bundle.type">
             <path value="Bundle.type"/>
             <min value="1"/>
             <max value="1"/>
