@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-bser-referral-feedback"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-01-22T00:16:01.000-05:00"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-01-22T00:31:00.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
     </meta>
     <text>
@@ -58,8 +58,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Referral note</div>  (
+                                        
                                         <div title="code">57133-1</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
