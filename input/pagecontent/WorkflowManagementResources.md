@@ -1,4 +1,4 @@
-[Previous Page - Referral Service Request Patient](ReferralServiceRequestPatient.html)
+[Previous Page - Referral Participant Resources](ReferralParticipantResources.html)
 
 BSeR service request workflow resources - Message Bundle, Referral Message Header, and Referral Task - are depicted in the following diagram:
 
@@ -14,6 +14,7 @@ Task and its associated references are included in general RESTful Submit even i
 
 * [Trigger Events and State Transitions](TriggerEventsandStateTransitions.html)
 * [State Machine and Business Status](StateMachineandBusinessStatus.html)
-
+		
+		
 
 [Next Page - Trigger Events and State Transitions](TriggerEventsandStateTransitions.html)
