@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1801289",
+  "display" : "bupropion HCl 150 MG Smoking Cessation 12 HR Extended Release Oral Tablet"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "buPROPion HCl 150 MG Smoking Cessation 12 HR Extended Release Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
