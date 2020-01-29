@@ -1043,9 +1043,17 @@
         </page>
       </page>
     </page>
-  <parameter>
-    <code value="path-history"/>
-    <value value="http://hl7.org/fhir/us/bser/history.html"/>
-  </parameter>
+	<parameter>
+		<code value="path-history"/>
+		<value value="http://hl7.org/fhir/us/bser/history.html"/>
+	</parameter>
+	<parameter>
+		<code value="releaselabel"/>
+		<value value="CI Build"/>
+	</parameter>
+	<parameter>
+		<code value="copyrightyear"/>
+		<value value="2019+"/>
+	</parameter>
   </definition>
 </ImplementationGuide>

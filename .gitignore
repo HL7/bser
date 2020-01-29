@@ -81,3 +81,5 @@ resources/ig-validation-parameters.json
 /manual_fixes
 /input/resources/narrative
 /template/content/assets/css
+input-cache/
+template/
