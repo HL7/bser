@@ -649,8 +649,8 @@
         <display value="Referral Center A, St. Lukes" />
       </reference>
       <name value="Referral Center A, St. Lukes" />
-      <description value="Example of BSeR-Coverage profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage" />
+      <description value="Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation" />
     </resource>
     <resource>
       <reference>
@@ -882,8 +882,8 @@
         <display value="organization-bser-organization-saint-luke" />
       </reference>
       <name value="Saint Luke's Hospital of Kansas City" />
-      <description value="Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation" />
+      <description value="Example of BSeR-Organization profile as used in the BSeR IG" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
     </resource>
     <resource>
       <reference>
