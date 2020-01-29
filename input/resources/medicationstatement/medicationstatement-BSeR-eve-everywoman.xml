@@ -296,20 +296,12 @@
                     <display value="Ordered"/>
                 </coding>
             </type>
-            <doseRange>
-                <low>
-                    <value value="1"/>
-                    <unit value="TAB"/>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
-                    <code value="TAB"/>
-                </low>
-                <high>
-                    <value value="2"/>
-                    <unit value="TAB"/>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
-                    <code value="TAB"/>
-                </high>
-            </doseRange>
+            <doseQuantity>
+				<value value="1"/>
+				<unit value="TAB"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+				<code value="TAB"/>
+            </doseQuantity>
         </doseAndRate>
     </dosage>
 </MedicationStatement>
