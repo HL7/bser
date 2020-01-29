@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-TelcomCommunicationPreferencesVS"/>
-    <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2019-12-20T03:33:02.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
-    <name value="BSeR_TelcomCommunicationPreferencesVS"/>
-    <title value="BSeR Telcom Communication Preferences VS"/>
-    <status value="draft"/>
-    <compose>
-        <inactive value="false"/>
-        <include>
-            <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
-            <concept>
-                <code value="BDTC"/>
-                <display value="Best Day To Call"/>
-            </concept>
-            <concept>
-                <code value="BTTC"/>
-                <display value="Best Time To Call"/>
-            </concept>
-            <concept>
-                <code value="LMI"/>
-                <display value="Leave Message Indicator"/>
-            </concept>
-        </include>
-    </compose>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BSeR-TelcomCommunicationPreferencesVS" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2019-12-20T03:33:02.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS" />
+  <name value="BSeR_TelcomCommunicationPreferencesVS" />
+  <title value="BSeR Telcom Communication Preferences VS" />
+  <status value="draft" />
+  <description value="BSeR Telcom Communication Preferences value set" />
+  <compose>
+    <inactive value="false" />
+    <include>
+      <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
+      <concept>
+        <code value="BDTC" />
+        <display value="Best Day To Call" />
+      </concept>
+      <concept>
+        <code value="BTTC" />
+        <display value="Best Time To Call" />
+      </concept>
+      <concept>
+        <code value="LMI" />
+        <display value="Leave Message Indicator" />
+      </concept>
+    </include>
+  </compose>
 </ValueSet>

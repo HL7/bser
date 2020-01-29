@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeSystem
-    xmlns="http://hl7.org/fhir">
-    <id value="bser"/>
-    <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-01-21T22:35:39.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
-    <name value="BSeR"/>
-    <title value="BSeR"/>
-    <status value="active"/>
-    <publisher value="PHWG"/>
-    <caseSensitive value="false"/>
-    <content value="complete"/>
-    <concept>
-        <code value="BDTC"/>
-        <display value="Best Day To Call"/>
-    </concept>
-    <concept>
-        <code value="BTTC"/>
-        <display value="Best Time To Call"/>
-    </concept>
-    <concept>
-        <code value="LMI"/>
-        <display value="Leave Message Indicator"/>
-    </concept>
-    <concept>
-        <code value="RSRFS"/>
-        <display value="CompositionSectionReferralServiceRequestFeedbackSummary"/>
-    </concept>
-    <concept>
-        <code value="RSRFSI"/>
-        <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation"/>
-    </concept>
-    <concept>
-        <code value="RSRSI"/>
-        <display value="CompositionSectionReferralServiceRequestSupportingInformation"/>
-    </concept>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="bser" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2020-01-21T22:35:39.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
+  <name value="BSeR" />
+  <title value="BSeR" />
+  <status value="active" />
+  <publisher value="PHWG" />
+  <description value="BSeR code system" />
+  <caseSensitive value="false" />
+  <content value="complete" />
+  <concept>
+    <code value="BDTC" />
+    <display value="Best Day To Call" />
+  </concept>
+  <concept>
+    <code value="BTTC" />
+    <display value="Best Time To Call" />
+  </concept>
+  <concept>
+    <code value="LMI" />
+    <display value="Leave Message Indicator" />
+  </concept>
+  <concept>
+    <code value="RSRFS" />
+    <display value="CompositionSectionReferralServiceRequestFeedbackSummary" />
+  </concept>
+  <concept>
+    <code value="RSRFSI" />
+    <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation" />
+  </concept>
+  <concept>
+    <code value="RSRSI" />
+    <display value="CompositionSectionReferralServiceRequestSupportingInformation" />
+  </concept>
 </CodeSystem>

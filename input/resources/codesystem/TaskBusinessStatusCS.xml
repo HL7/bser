@@ -11,6 +11,7 @@
     <title value="Task Business Status Code System"/>
     <status value="active"/>
     <publisher value="HL7 PHWG"/>
+  <description value="BSeR Task Business Status code system" />
     <caseSensitive value="false"/>
     <compositional value="false"/>
     <versionNeeded value="false"/>
