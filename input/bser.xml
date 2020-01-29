@@ -882,8 +882,8 @@
         <display value="organization-bser-organization-saint-luke" />
       </reference>
       <name value="Saint Luke's Hospital of Kansas City" />
-      <description value="Example of SeR-Organization profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
+      <description value="Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG" />
+      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation" />
     </resource>
     <resource>
       <reference>
