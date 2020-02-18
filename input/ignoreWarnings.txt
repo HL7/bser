@@ -11,3 +11,5 @@ ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.45/expansi
 ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.46/expansion/Latest not found by validator
 ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.47/expansion/Latest not found by validator
 ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.95/expansion/Latest not found by validator
+// These are all confirmed base specification issues and will not be fixed until the next technical correction
+value should not start or finish with whitespace
