@@ -189,6 +189,15 @@
         <focus>
           <reference value="Task/task-BSeR-ReferralTask" />
         </focus>
+        <focus>
+          <reference value="Observation/observation-odh-employment-status-eve-everywoman" />
+        </focus>
+        <focus>
+          <reference value="Consent/consent-BSeR-PatientConsent-eve-everywoman" />
+        </focus>
+        <focus>
+          <reference value="Observation/observation-BSeR-EducationLevel-eve-everywoman" />
+        </focus>
       </MessageHeader>
     </resource>
   </entry>
