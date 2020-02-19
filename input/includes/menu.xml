@@ -18,7 +18,7 @@
     <ul class="dropdown-menu">
       <li><a href="ResourceProfiles.html">Resource Profiles</a></li>
       
-      <li class="dropdown">
+      <li class="dropdown-menu">
         <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resource Profile Groups<b class="caret"> </b></a>
 <!--        <a class="test" tabindex="-1" href="#">Resource Profile Groups <span class="caret"></span></a>-->
         <ul class="dropdown-menu">
