@@ -193,7 +193,7 @@
     </resource>
   </entry>
   <!-- sliceEmploymentStatus -->
-  <!--<entry>
+  <entry>
     <fullUrl value="Observation/observation-odh-employment-status-eve-everywoman" />
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
@@ -369,9 +369,9 @@
         </valueCodeableConcept>
       </Observation>
     </resource>
-  </entry>-->
+  </entry>
   <!-- slicePatientConsent -->
-  <!--<entry>
+  <entry>
     <fullUrl value="Consent/consent-BSeR-PatientConsent-eve-everywoman" />
     <resource>
       <Consent
@@ -623,9 +623,9 @@
         </provision>
       </Consent>
     </resource>
-  </entry>-->
+  </entry>
   <!-- sliceEducationLevel -->
-  <!--<entry>
+  <entry>
     <fullUrl value="Observation/observation-BSeR-EducationLevel-eve-everywoman" />
     <resource>
       <Observation xmlns="http://hl7.org/fhir">
@@ -767,8 +767,8 @@
         </valueCodeableConcept>
       </Observation>
     </resource>
-  </entry>-->
-  
+  </entry>
+  <!-- slice -->
   <entry>
     <fullUrl value="Task/task-BSeR-ReferralTask" />
     <resource>
