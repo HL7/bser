@@ -38,7 +38,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
                                 <span title="system">
-                                    <a href="http://hl7.org.fhir/sid/us-npi">http://hl7.org.fhir/sid/us-npi</a>
+                                  <a href="http://hl7.org/fhir/sid/us-npi">http://hl7.org/fhir/sid/us-npi</a>
                                 </span>
                             </li>
                             <li>

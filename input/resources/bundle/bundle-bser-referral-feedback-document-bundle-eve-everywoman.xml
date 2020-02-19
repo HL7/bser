@@ -1213,7 +1213,6 @@
                 <td>
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
-                      <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
                     </li>
                   </ul>
                 </td>
@@ -1537,26 +1536,11 @@
                   <ul style="list-style:none; padding-left:0; margin:0 0;">
                     <li>
                       <div title="system">
-                        <a href="http://example.org/fhir/sid/us-npi">http://example.org/fhir/sid/us-npi</a>
+                        <a href="http://hl7.org/fhir/sid/us-npi">http://hl7.org/fhir/sid/us-npi</a>
                       </div>
                     </li>
                     <li>
                       <div title="value">1063494177</div>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">identifier</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="system">
-                        <a href="http://example.org/fhir/us/argo/sid/us-ein">http://example.org/fhir/us/argo/sid/us-ein</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div title="value">00-0000000</div>
                     </li>
                   </ul>
                 </td>
@@ -1678,12 +1662,8 @@
           </div>
         </text>
         <identifier>
-          <system value="http://example.org/fhir/sid/us-npi" />
+          <system value="http://hl7.org/fhir/sid/us-npi" />
           <value value="1063494177" />
-        </identifier>
-        <identifier>
-          <system value="http://example.org/fhir/us/argo/sid/us-ein" />
-          <value value="00-0000000" />
         </identifier>
         <active value="true" />
         <type>
