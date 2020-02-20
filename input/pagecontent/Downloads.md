@@ -29,3 +29,5 @@ All the examples that are used in this Implementation Guide available for downlo
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
 * [TTl](examples.ttl.zip)
+
+[Next Page - Artifact Index](artifacts.html)
