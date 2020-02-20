@@ -1,12 +1,18 @@
 [Previous Page - Introduction](Introduction.html)
 
-**CDC Executive Sponsor:** Arunkumar Srinivasan PhD, Senior Health Scientist
+## CDC Executive Sponsor
 
-**Project Lead:** John W. Loonsk MD, Consulting CMIO APHL, Johns Hopkins University
+Arunkumar Srinivasan PhD, Senior Health Scientist
 
-**Modeling Facilitator:** AbdulMalik Shakir, President and Chief Informatics Scientist, Hi3 Solutions
+## Project Lead
 
-**Domain Expert Representatives:**
+John W. Loonsk MD, Consulting CMIO APHL, Johns Hopkins University
+
+## Modeling Facilitator
+
+AbdulMalik Shakir, President and Chief Informatics Scientist, Hi3 Solutions
+
+## Domain Expert Representatives
 
 *          Jason Bonander, Deputy Chief Information Officer
 
@@ -16,11 +22,11 @@
 
 *          Brenna VanFrank, CDC Smoking and Health
 
-**Business Requirements Analysts:**
+## Business Requirements Analysts
 
 *          Salimah Shakir, Hi3 Solutions
 
-**Specification Developers:**
+## Specification Developers
 
 *          AbdulMalik Shakir Sr., Hi3 Solutions
 
@@ -36,7 +42,7 @@
 
 *          Rick Geimer, Lantana Consulting Group
 
-**BSeR Project Realm**
+## BSeR Project Realm
 
 This is a U.S. Realm Specification. This guide and related materials are based on reporting specifications in U.S. jurisdictions.
 

@@ -1,5 +1,7 @@
 [Previous Page - Transport Options](TransportOptions.html)
 
+## Additional Referral Use Case Adaptation Touchpoints
+
 The BSeR IG includes specifications to support the information needs of six specific bi-directional referral use cases. However, the guide can be easily adapted to accommodate additional referral use cases. The following is a list of touchpoints within the BSeR specification where adaptation may be necessary to support additional referral use cases.
 
 * **[BSeR_ReferralMessageHeader.reason](StructureDefinition-BSeR-ReferralMessageHeader-definitions.html#MessageHeader.reason)** If FHIR messaging is used as the means of exchange for the referral use case, then the value set bound to the reason element of the referral message header needs to be expanding to include the new use case as the reason for the referral message.
@@ -15,6 +17,9 @@ The BSeR IG includes specifications to support the information needs of six spec
 * **BSeR_ReferralActivityStatus.component.code** The value set bound to the code element of the referral activity status observation component needs to be expanded to include newly-defined referral status traits, if any, associated with a referral use case response feedback summary.
 
 * **[BSeR_ReferralFeedbackComposition.referralServiceRequestFeedbackSupportingInformation.entry](StructureDefinition-BSeR-ReferralFeedbackComposition-definitions.html#Composition.section:referralServiceRequestFeedbackSupportingInformation.entry)** An additional slice needs to be added to the entry element of the supporting information section of the referral feedback composition for the new referral use case. Each slice shall include a reference to a newly defined bundle of clinical statements relevant to the new referral use case. Where applicable, additional supporting information bundles should reuse existing clinical statement profiles from the BSeR IG.
+
+
+## Further Adapatation Guidance
 
 When using the BSeR for use cases outside those covered in the IG it may be necessary to define additional supporting information clinical statement profiles and bundles. Care should be taken to avoid the creation of duplicate clinical statement profiles. Reuse of existing clinical statement profiles is the best practice. Revising an existing clinical statement profile to fulfill the data requirement of a new referral use case is preferred to the creation of duplicate or overlapping clinical statements. 
 

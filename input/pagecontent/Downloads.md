@@ -1,10 +1,10 @@
 [Previous Page - UML rendering of the BSeR IG](UMLrenderingoftheBSeRIG.html)
 
-**Full Implementation Guide**
+## Full Implementation Guide
 
 The entire implementation guide (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).
 
-**Validator Pack and Definitions**
+## Validator Pack and Definitions
 
 The validator.pack file is a zip file that contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this Implementation Guides.
 
@@ -22,7 +22,9 @@ In addition there are format specific definitions files.
 * [JSON](definitions.json.zip)
 * [TTL](definitions.ttl.zip)
 
-**Examples:** all the examples that are used in this Implementation Guide available for download:
+## Examples
+
+All the examples that are used in this Implementation Guide available for download:
 
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
