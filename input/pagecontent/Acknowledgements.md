@@ -1,5 +1,7 @@
 [Previous Page - BSeR Project Team](BSeRProjectTeam.html)
 
+### IG Development Guidance and Tooling
+
 This guide was developed using tooling and professional guidance provided by [Lantana Consulting Group](https://www.lantanagroup.com/), the makers of [Trifolia-on-FHIR](https://trifolia-fhir.lantanagroup.com/)
 
 The BSeR project team would like to acknowledge and express our sincere appreciation to the authors of the IHE Patient Care Coordination Technical Framework Supplement - 360 Exchange Closed Loop Referral (360X) [link](https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_360X.pdf). The referral state machine expressed in this specification draws heavily upon this work.
