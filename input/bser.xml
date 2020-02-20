@@ -1063,11 +1063,11 @@
             <nameUrl value="ReferralServiceRequestFeedbackResources.html" />
             <title value="Referral Service Request Feedback Resources" />
             <generation value="markdown" />
-            <page>
+            <!--<page>
               <nameUrl value="ReferralServiceRequestFeedbackClinicalStatements.html" />
               <title value="Referral Service Request Feedback Clinical Statements" />
               <generation value="markdown" />
-            </page>
+            </page>-->
           </page>
           <page>
             <nameUrl value="ServiceRequestandReferralFeedbackSupportingInformationBundles.html" />
