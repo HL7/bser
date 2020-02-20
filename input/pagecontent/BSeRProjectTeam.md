@@ -22,7 +22,7 @@ AbdulMalik Shakir, President and Chief Informatics Scientist, Hi3 Solutions
 
 *          Brenna VanFrank, CDC Smoking and Health
 
-## Business Requirements Analysts
+## Business Requirements Analyst
 
 *          Salimah Shakir, Hi3 Solutions
 

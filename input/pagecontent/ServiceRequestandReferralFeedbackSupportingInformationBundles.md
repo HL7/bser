@@ -6,7 +6,7 @@ The selected service request use cases have overlapping information needs that d
 
 Each referral use case is an aggregation of supporting information data items. Supported information data items are represented in clinical statement profiles. Supporting information bundles associated with referral use cases are aggregations of clinical statements. Supporting information bundles are used as referral requests and referral feedback aggregations of use case specific supporting information data items.
 
-## Aggregation of Clinical Statement Profiles
+### Aggregation of Clinical Statement Profiles
 
 The following table identifies the aggregation of clinical statement profiles to referral request and referral feedback supporting information bundles:
 

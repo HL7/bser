@@ -7,7 +7,7 @@ The following diagram depicts referral feedback composition, its two sections, a
 <center><table><tr><td><img src="Service Request Feedback.png" style="width:100%;"/></td></tr></table>
 </center>
 
-## Referral Service Request Feedback Clinical Statements
+### Referral Service Request Feedback Clinical Statements
 
 Each referral use case requires that certain information items accompany the service request feedback as supporting information. The information items are supporting information for one or more referral use case. The following table indicates how service request feedback supporting information items are allocated to referral use cases.
 

@@ -1,6 +1,6 @@
 [Previous Page - Adaptation for Additional Referral Use Cases](AdaptationforAdditionalReferralUseCases.html)
 
-## Class Diagram
+### Class Diagram
 
 The following class diagram is a UML rendering of the primary BSeR IG profiles.
 

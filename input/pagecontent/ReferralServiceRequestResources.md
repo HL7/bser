@@ -5,7 +5,7 @@ The following diagram depicts referral service requests and the six use cases co
 
 <center><table><tr><td><img src="Referral Service Request.png" style="width:100%;"/></td></tr></table></center>
 
-## Referral Service Request Clinical Statements
+### Referral Service Request Clinical Statements
 
 Each referral use case requires that certain information items accompany the service request as supporting information. The information items are supporting information for one or more referral use case. The following table indicates how service request supporting information items are allocated to referral use cases.
 
