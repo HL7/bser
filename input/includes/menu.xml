@@ -15,7 +15,7 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resource Profile Information<b class="caret"> </b>
     </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-submenu">
       <li><a href="ResourceProfiles.html">Resource Profiles</a></li>
       <li><a href="ReferralParticipantResources.html">Referral Participant Resources</a></li>
       <li><a href="WorkflowManagementResources.html">Workflow Management Resources</a></li>
