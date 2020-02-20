@@ -1018,56 +1018,21 @@
             <nameUrl value="ReferralParticipantResources.html" />
             <title value="Referral Participant Resources" />
             <generation value="markdown" />
-            <!--<page>
-              <nameUrl value="ReferralServiceRequestInitiator.html" />
-              <title value="Referral Service Request Initiator" />
-              <generation value="markdown" />
-            </page>
-            <page>
-              <nameUrl value="ReferralServiceRequestRecipient.html" />
-              <title value="Referral Service Request Recipient" />
-              <generation value="markdown" />
-            </page>
-            <page>
-              <nameUrl value="ReferralServiceRequestPatient.html" />
-              <title value="Referral Service Request Patient" />
-              <generation value="markdown" />
-            </page>-->
           </page>
           <page>
             <nameUrl value="WorkflowManagementResources.html" />
             <title value="Workflow Management Resources" />
             <generation value="markdown" />
-            <!--<page>
-              <nameUrl value="TriggerEventsandStateTransitions.html" />
-              <title value="Trigger Events and State Transitions" />
-              <generation value="markdown" />
-            </page>
-            <page>
-              <nameUrl value="StateMachineandBusinessStatus.html" />
-              <title value="State Machine and Business Status" />
-              <generation value="markdown" />
-            </page>-->
           </page>
           <page>
             <nameUrl value="ReferralServiceRequestResources.html" />
             <title value="Referral Service Request Resources" />
             <generation value="markdown" />
-            <!--<page>
-              <nameUrl value="ReferralServiceRequestClinicalStatements.html" />
-              <title value="Referral Service Request Clinical Statements" />
-              <generation value="markdown" />
-            </page>-->
           </page>
           <page>
             <nameUrl value="ReferralServiceRequestFeedbackResources.html" />
             <title value="Referral Service Request Feedback Resources" />
             <generation value="markdown" />
-            <!--<page>
-              <nameUrl value="ReferralServiceRequestFeedbackClinicalStatements.html" />
-              <title value="Referral Service Request Feedback Clinical Statements" />
-              <generation value="markdown" />
-            </page>-->
           </page>
           <page>
             <nameUrl value="ServiceRequestandReferralFeedbackSupportingInformationBundles.html" />
