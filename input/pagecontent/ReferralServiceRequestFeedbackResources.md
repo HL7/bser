@@ -1,4 +1,4 @@
-[Previous Page - Referral Service Request Clinical Statements](ReferralServiceRequestClinicalStatements.html)
+[Previous Page - Referral Service Request Resources](ReferralServiceRequestResources.html)
 
 Each referral feedback composition includes references to a patient (subject), referral recipient (author), and two composition sections - the feedback summary and feedback supporting information. The feedback summary section includes a reference to the referral service request (focus). The supporting information section includes a reference to a bundle of supporting information consistent with the scope of the referral use case as designated in the referral service request code. 
 

@@ -1,4 +1,4 @@
-[Previous Page - Referral Service Request Feedback Clinical Statements](ReferralServiceRequestFeedbackClinicalStatements.html)
+[Previous Page - Referral Service Request Feedback Resources](ReferralServiceRequestFeedbackResources.html)
 
 The BSeR IG illustrates the specific fit to purpose and parsimonious design pattern through the inclusion of service request content profiles for six representative use cases and the context for extension of BSeR use by other implementation guides as detailed elsewhere in this guide. 
 
