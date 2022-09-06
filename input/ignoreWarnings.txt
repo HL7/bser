@@ -35,3 +35,6 @@ INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
 
 #  Not matching is expected behaviour - Task is the focus of the MessageHeader which is a required slice of BSeR_ReferralMessageBundle and is included in the bundle
 INFORMATION: Bundle/bundle-bser-referral-message-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle
+
+# US Core Variance - need to find when (if) these were approved
+US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
