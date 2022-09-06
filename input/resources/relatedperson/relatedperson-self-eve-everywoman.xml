@@ -73,8 +73,8 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <div title="display">self</div>  (
-                                        <div title="code">SELF</div> )
+                                        <div title="display">oneself</div>  (
+                                        <div title="code">ONESELF</div> )
           
                                     </li>
                                     <li>
@@ -226,10 +226,10 @@
     <relationship>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-            <code value="SELF"/>
-            <display value="self"/>
+            <code value="ONESELF"/>
+            <display value="oneself"/>
         </coding>
-        <text value="self"/>
+        <text value="oneself"/>
     </relationship>
     <name>
         <family value="Everywoman"/>
