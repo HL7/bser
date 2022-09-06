@@ -43,7 +43,7 @@
             <max value="1"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.39/expansion/Latest"/>
+              <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.39"/>
             </binding>
         </element>
         <element id="Observation.subject">
@@ -68,7 +68,7 @@
             </type>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1047.73/expansion/Latest"/>
+              <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.73"/>
             </binding>
         </element>
     </differential>
