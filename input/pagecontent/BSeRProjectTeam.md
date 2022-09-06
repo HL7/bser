@@ -1,5 +1,3 @@
-[Previous Page - Introduction](Introduction.html)
-
 ### CDC Executive Sponsor
 
 Arunkumar Srinivasan PhD, Senior Health Scientist
@@ -45,5 +43,3 @@ AbdulMalik Shakir, President and Chief Informatics Scientist, Hi3 Solutions
 ### BSeR Project Realm
 
 This is a U.S. Realm Specification. This guide and related materials are based on reporting specifications in U.S. jurisdictions.
-
-[Next Page - Acknowledgements](Acknowledgements.html)

@@ -1,5 +1,3 @@
-[Previous Page - Bi-directional Service e-Referral Transactions](Bi-directionalServicee-ReferralTransactions.html)
-
 There are two supported transport options that can be used individually or in combination. This flexibility is needed to support point-to-point transport as well as transport through Health Information Exchanges and Health Information Networks.
 
 ### FHIR Messaging Option
@@ -30,5 +28,3 @@ The following profiles have been defined for the RESTful Submit Option:
 </ul>
 
 The focus of the <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a> is the <a href="StructureDefinition-BSeR-ReferralServiceRequest.html">BSeR Referral ServiceRequest</a>.
-
-[Next Page - Adaptation for Additional Referral Use Cases](AdaptationforAdditionalReferralUseCases.html)

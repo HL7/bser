@@ -1,5 +1,3 @@
-[Previous Page - Acknowledgements](Acknowledgements.html)
-
 ### Scope
 
 The scope of the BSeR IG is the placement of a service request referral by a referral initiator and the feedback of a service request outcome report by a referral recipient. The context of the request and feedback activities is depicted in the following activity diagram from the BSeR Domain Analysis Model (BSeR DAM).
@@ -16,6 +14,3 @@ The context of the BSeR IG is the placement of a referral by a clinical practiti
 ### Additional Referral Use Cases
 
 See the section "Adaptation for Additional Referral Use Cases" for guidance in reusing or extending the use of the BSeR standard for use in additional referral use cases.
-
-
-[Next Page - Resource Profiles](ResourceProfiles.html)

@@ -1,5 +1,3 @@
-[Previous Page - Workflow Management Resources](WorkflowManagementResources.html)
-
 Each referral service request includes references to a patient (subject), referral initiator (requester), referral recipient (performer), and a reference to a bundle of supporting information consistent with the scope of the referral use case as designated in ServiceRequest.code. The supporting information bundles are mutually exclusive. Each bundle functions as a use case-specific information content profile.  
 The following diagram depicts referral service requests and the six use cases covered in the BSeR IG. Additional use cases are introduced via the creation of additional use case supporting information bundles. 
 
@@ -14,5 +12,3 @@ Each referral use case requires that certain information items accompany the ser
 	</center>
 	
 Clinical statement profiles use FHIR resource profiles to express one or more supporting information item. The above table indicates the grouping of referral service request supporting information items into clinical statement resource profiles.
-
-[Next Page - Referral Service Request Feedback Resources](ReferralServiceRequestFeedbackResources.html)

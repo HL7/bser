@@ -1,5 +1,3 @@
-[Previous Page - Transport Options](TransportOptions.html)
-
 ### Additional Referral Use Case Adaptation Touchpoints
 
 The BSeR IG includes specifications to support the information needs of six specific bi-directional referral use cases. However, the guide can be easily adapted to accommodate additional referral use cases. The following is a list of touchpoints within the BSeR specification where adaptation may be necessary to support additional referral use cases.
@@ -26,5 +24,3 @@ When using the BSeR for use cases outside those covered in the IG it may be nece
 Duplicate and/or overlapping supporting information bundles are expected. Care should be taken when choosing to reuse supporting information bundles; the contents of a bundle are subject to change as use cases are implemented and additional or revised information needs are discovered.
 
 The HL7 Public Health Work Group [(PHWG)](https://confluence.hl7.org/display/PHWG) is the custodian of the BSeR FHIR IG. For advice and guidance with reuse or extension of the BSeR IG for additional referral use cases contact the PHWG.
-
-[Next Page - UML rendering of the BSeR IG](UMLrenderingoftheBSeRIG.html)

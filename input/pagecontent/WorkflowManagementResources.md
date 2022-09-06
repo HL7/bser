@@ -1,5 +1,3 @@
-[Previous Page - Referral Participant Resources](ReferralParticipantResources.html)
-
 BSeR service request workflow resources - Message Bundle, Referral Message Header, and Referral Task - are depicted in the following diagram:
 
 <table><tr><td><img src="Workflow Management  Resources.png" style="width:100%;"/></td></tr></table>
@@ -25,5 +23,3 @@ The following diagram is the full referral service request task state machine. E
 <table><tr><td><img src="Task State Machine.png" style="width:100%;"/></td></tr></table>
 
 The business states reflect a harmonization of the state machine required by BSeR and the state machined defined by the IHE Patient Care Coordination Technical Framework Supplement 360 Exchange Closed Loop Referral (360X). States reflected in the 360x state machine that relate to the interim states of in-progress service request fulfillment activities can be added as extended value sets for the BSeR IG and are reflected in the harmonized state machine.
-
-[Next Page - Referral Service Request Resources](ReferralServiceRequestResources.html)
