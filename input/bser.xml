@@ -10,16 +10,24 @@
   <name value="BSeR_BidirectionalServices_eReferral" />
   <title value="BSeR: Bidirectional Services_eReferral" />
   <status value="draft" />
-  <publisher value="HL7 International - Public Health Work Group" />
+  <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)" />
   <contact>
-    <name value="HL7 International - Public Health Work Group" />
+    <name value="HL7 International - Public Health" />
     <telecom>
-      <system value="other" />
-      <value value="https://www.hl7.org/Special/committees/pher" />
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/pher" />
     </telecom>
   </contact>
   <description
     value="The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. The goal of the BSeR project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
   <packageId value="hl7.fhir.us.bser" />
   <fhirVersion value="4.0.1" />
   <dependsOn>
