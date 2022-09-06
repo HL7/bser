@@ -7,120 +7,15 @@
         <lastUpdated value="2020-01-20T17:17:04.000-05:00"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">observation-BSeR_EducationLevel-eve-everywoman</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">status</td>
-                    <td>
-                        <div title="status">final</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">code</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Highest level of education</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Highest level of education</div>  (
-                                        
-                                        <div title="code">80913-7</div> )
-          
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://loinc.org">http://loinc.org</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">subject</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">effectiveDateTime</td>
-                    <td>
-                        <div title="effectiveDateTime">2019-01-17</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">performer</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">valueCoding</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Elementary School</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Elementary School</div>  (
-                                        
-                                        <div title="code">ELEM</div> )
-          
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/v3-EducationLevel">http://terminology.hl7.org/CodeSystem/v3-EducationLevel</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+    <text value="Social History"/>
+  </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
