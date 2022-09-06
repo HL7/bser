@@ -73,7 +73,7 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
-                                        <div title="display">oneself</div>  (
+                                        <div title="display">self</div>  (
                                         <div title="code">ONESELF</div> )
           
                                     </li>
@@ -227,7 +227,7 @@
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
             <code value="ONESELF"/>
-            <display value="oneself"/>
+            <display value="self"/>
         </coding>
         <text value="oneself"/>
     </relationship>

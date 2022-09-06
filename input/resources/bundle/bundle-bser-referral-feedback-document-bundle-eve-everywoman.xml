@@ -1294,7 +1294,7 @@
           <coding>
             <system value="http://nucc.org/provider-taxonomy" />
             <code value="261QP2300X" />
-            <display value="Primary Care" />
+            <display value="Primary Care Clinic/Center" />
           </coding>
         </code>
         <specialty>
@@ -2470,8 +2470,11 @@
         </beneficiary>
         <relationship>
           <coding>
-            <code value="self" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="ONESELF"/>
+            <display value="self"/>
           </coding>
+          <text value="self"/>
         </relationship>
         <period>
           <start value="2019-05-23" />

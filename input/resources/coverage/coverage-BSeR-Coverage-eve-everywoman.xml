@@ -1,642 +1,544 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Coverage
-    xmlns="http://hl7.org/fhir">
-    <id value="coverage-BSeR-Coverage-eve-everywoman"/>
-    <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-18T00:10:51.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">coverage-BSeR-Coverage-eve-everywoman</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">identifier</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="system">
-                                    <a href="http://benefitsinc.com/certificate">http://benefitsinc.com/certificate</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div title="value">12345</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">status</td>
-                    <td>
-                        <div title="status">active</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">type</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">extended healthcare</div>  (
-                                        
-                                        
-                                        <div title="code">EHCPOL</div> )
-          
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/v3-ActCode">http://terminology.hl7.org/CodeSystem/v3-ActCode</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">subscriber</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="RelatedPerson-relatedperson-self-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">beneficiary</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">relationship</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">self</div> )
-            
-                                    
-                                    
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">period</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">start</td>
-                                <td>
-                                    <div title="start">2019-05-23</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">end</td>
-                                <td>
-                                    <div title="end">2020-05-23</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">payor</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">group</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">CB135</div>
-                            </li>
-                            <li>
-                                <div title="name">Corporate Baker's Inc. Local #35</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">subgroup</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">123</div>
-                            </li>
-                            <li>
-                                <div title="name">Trainee Part-time Benefits</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">plan</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">B37FC</div>
-                            </li>
-                            <li>
-                                <div title="name">Full Coverage: Medical, Dental, Pharmacy, Vision, EHC</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">subplan</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">P7</div>
-                            </li>
-                            <li>
-                                <div title="name">Includes afterlife benefits</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">class</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">SILVER</div>
-                            </li>
-                            <li>
-                                <div title="name">Silver: Family Plan spouse only</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">subclass</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">Tier2</div>
-                            </li>
-                            <li>
-                                <div title="name">Low deductable, max $20 copay</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">sequence</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">9</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">rxid</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">MDF12345</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">rxbin</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">987654</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">rxgroup</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">M35PT</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">rxpcn</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">234516</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">class</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        
-                                        
-                                        <div title="code">sequence</div> )
-            
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div title="value">9</div>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="coverage-BSeR-Coverage-eve-everywoman" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2020-01-18T00:10:51.000-05:00" />
+    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <tr>
+          <td style="font-weight: bold">id</td>
+          <td>
+            <div title="id">coverage-BSeR-Coverage-eve-everywoman</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">meta</td>
+          <td>
+            <table>
+              <tr>
+                <td style="font-weight: bold">profile</td>
+                <td>
+                  <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage</div>
+                </td>
+              </tr>
             </table>
-        </div>
-    </text>
-    <identifier>
-        <system value="http://benefitsinc.com/certificate"/>
-        <value value="12345"/>
-    </identifier>
-    <status value="active"/>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">identifier</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <div title="system">
+                  <a href="http://benefitsinc.com/certificate">http://benefitsinc.com/certificate</a>
+                </div>
+              </li>
+              <li>
+                <div title="value">12345</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">status</td>
+          <td>
+            <div title="status">active</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">type</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li>
+                    <div title="display">extended healthcare</div> ( <div title="code">EHCPOL</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/v3-ActCode">http://terminology.hl7.org/CodeSystem/v3-ActCode</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">subscriber</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li />
+              <li>
+                <a href="RelatedPerson-relatedperson-self-eve-everywoman.html">Eve Everywoman</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">beneficiary</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li />
+              <li>
+                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">relationship</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">oneself</div> ) </li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">period</td>
+          <td>
+            <table>
+              <tr>
+                <td style="font-weight: bold">start</td>
+                <td>
+                  <div title="start">2019-05-23</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">end</td>
+                <td>
+                  <div title="end">2020-05-23</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">payor</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <a href="Organization-organization-bser-organization-saint-luke.html">Organization/organization-bser-organization-saint-luke</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">group</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">CB135</div>
+              </li>
+              <li>
+                <div title="name">Corporate Baker's Inc. Local #35</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">subgroup</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">123</div>
+              </li>
+              <li>
+                <div title="name">Trainee Part-time Benefits</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">plan</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">B37FC</div>
+              </li>
+              <li>
+                <div title="name">Full Coverage: Medical, Dental, Pharmacy, Vision, EHC</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">subplan</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">P7</div>
+              </li>
+              <li>
+                <div title="name">Includes afterlife benefits</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">class</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">SILVER</div>
+              </li>
+              <li>
+                <div title="name">Silver: Family Plan spouse only</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">subclass</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">Tier2</div>
+              </li>
+              <li>
+                <div title="name">Low deductable, max $20 copay</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">sequence</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">9</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">rxid</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">MDF12345</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">rxbin</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">987654</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">rxgroup</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">M35PT</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">rxpcn</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">234516</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">class</td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>
+                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  <li> ( <div title="code">sequence</div> ) </li>
+                  <li>
+                    <div title="system">
+                      <a href="http://terminology.hl7.org/CodeSystem/coverage-class">http://terminology.hl7.org/CodeSystem/coverage-class</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div title="value">9</div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <identifier>
+    <system value="http://benefitsinc.com/certificate" />
+    <value value="12345" />
+  </identifier>
+  <status value="active" />
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+      <code value="EHCPOL" />
+      <display value="extended healthcare" />
+    </coding>
+  </type>
+  <subscriber>
+    <reference value="RelatedPerson/relatedperson-self-eve-everywoman" />
+    <display value="Eve Everywoman" />
+  </subscriber>
+  <beneficiary>
+    <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+    <display value="Eve Everywoman" />
+  </beneficiary>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="ONESELF" />
+      <display value="self" />
+    </coding>
+    <text value="self" />
+  </relationship>
+  <period>
+    <start value="2019-05-23" />
+    <end value="2020-05-23" />
+  </period>
+  <payor>
+    <reference value="Organization/organization-bser-organization-saint-luke" />
+  </payor>
+  <class>
     <type>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-            <code value="EHCPOL"/>
-            <display value="extended healthcare"/>
-        </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="group" />
+      </coding>
     </type>
-    <subscriber>
-        <reference value="RelatedPerson/relatedperson-self-eve-everywoman"/>
-        <display value="Eve Everywoman"/>
-    </subscriber>
-    <beneficiary>
-        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-        <display value="Eve Everywoman"/>
-    </beneficiary>
-    <relationship>
-        <coding>
-            <code value="self"/>
-        </coding>
-    </relationship>
-    <period>
-        <start value="2019-05-23"/>
-        <end value="2020-05-23"/>
-    </period>
-    <payor>
-        <reference value="Organization/organization-bser-organization-saint-luke"/>
-    </payor>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="group"/>
-            </coding>
-        </type>
-        <value value="CB135"/>
-        <name value="Corporate Baker's Inc. Local #35"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="subgroup"/>
-            </coding>
-        </type>
-        <value value="123"/>
-        <name value="Trainee Part-time Benefits"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="plan"/>
-            </coding>
-        </type>
-        <value value="B37FC"/>
-        <name value="Full Coverage: Medical, Dental, Pharmacy, Vision, EHC"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="subplan"/>
-            </coding>
-        </type>
-        <value value="P7"/>
-        <name value="Includes afterlife benefits"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="class"/>
-            </coding>
-        </type>
-        <value value="SILVER"/>
-        <name value="Silver: Family Plan spouse only"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="subclass"/>
-            </coding>
-        </type>
-        <value value="Tier2"/>
-        <name value="Low deductable, max $20 copay"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="sequence"/>
-            </coding>
-        </type>
-        <value value="9"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="rxid"/>
-            </coding>
-        </type>
-        <value value="MDF12345"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="rxbin"/>
-            </coding>
-        </type>
-        <value value="987654"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="rxgroup"/>
-            </coding>
-        </type>
-        <value value="M35PT"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="rxpcn"/>
-            </coding>
-        </type>
-        <value value="234516"/>
-    </class>
-    <class>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-                <code value="sequence"/>
-            </coding>
-        </type>
-        <value value="9"/>
-    </class>
+    <value value="CB135" />
+    <name value="Corporate Baker's Inc. Local #35" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="subgroup" />
+      </coding>
+    </type>
+    <value value="123" />
+    <name value="Trainee Part-time Benefits" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="plan" />
+      </coding>
+    </type>
+    <value value="B37FC" />
+    <name value="Full Coverage: Medical, Dental, Pharmacy, Vision, EHC" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="subplan" />
+      </coding>
+    </type>
+    <value value="P7" />
+    <name value="Includes afterlife benefits" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="class" />
+      </coding>
+    </type>
+    <value value="SILVER" />
+    <name value="Silver: Family Plan spouse only" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="subclass" />
+      </coding>
+    </type>
+    <value value="Tier2" />
+    <name value="Low deductable, max $20 copay" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="sequence" />
+      </coding>
+    </type>
+    <value value="9" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="rxid" />
+      </coding>
+    </type>
+    <value value="MDF12345" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="rxbin" />
+      </coding>
+    </type>
+    <value value="987654" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="rxgroup" />
+      </coding>
+    </type>
+    <value value="M35PT" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="rxpcn" />
+      </coding>
+    </type>
+    <value value="234516" />
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class" />
+        <code value="sequence" />
+      </coding>
+    </type>
+    <value value="9" />
+  </class>
 </Coverage>

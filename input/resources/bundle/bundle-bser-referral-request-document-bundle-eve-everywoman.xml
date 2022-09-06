@@ -1721,7 +1721,7 @@
           <coding>
             <system value="http://nucc.org/provider-taxonomy" />
             <code value="261QP2300X" />
-            <display value="Primary Care" />
+            <display value="Primary Care Clinic/Center" />
           </coding>
         </code>
         <specialty>
