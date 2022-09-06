@@ -1,76 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-Organization"/>
-    <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-01-18T00:05:43.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
-    <name value="BSeR_Organization"/>
-    <title value="BSeR Organization"/>
-    <status value="active"/>
-    <publisher value="HL7 Public Health Work Group"/>
-    <description value="An organization resource playing the roles of practitioner affiliated organization, patient coverage payer organization, or patient employer organization."/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <context>
-        <type value="element"/>
-        <expression value="Organization"/>
-    </context>
-    <type value="Organization"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Organization">
-            <path value="Organization"/>
-        </element>
-        <element id="Organization.type">
-            <path value="Organization.type"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Organization.telecom">
-            <path value="Organization.telecom"/>
-            <min value="0"/>
-            <max value="*"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Organization.telecom.system">
-            <path value="Organization.telecom.system"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Organization.telecom.value">
-            <path value="Organization.telecom.value"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Organization.telecom.use">
-            <path value="Organization.telecom.use"/>
-            <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Organization.address">
-            <path value="Organization.address"/>
-            <min value="0"/>
-            <max value="*"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Organization.address.use">
-            <path value="Organization.address.use"/>
-            <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Organization.address.text">
-            <path value="Organization.address.text"/>
-            <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BSeR-Organization" />
+  <meta>
+    <versionId value="9" />
+    <lastUpdated value="2020-01-18T00:05:43.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
+  <name value="BSeR_Organization" />
+  <title value="BSeR Organization" />
+  <status value="active" />
+  <publisher value="HL7 Public Health Work Group" />
+  <description value="An organization resource playing the roles of practitioner affiliated organization, patient coverage payer organization, or patient employer organization." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Organization" />
+  </context>
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization">
+      <path value="Organization" />
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <min value="0" />
+      <max value="*" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom.system">
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom.use">
+      <path value="Organization.telecom.use" />
+      <min value="0" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <min value="0" />
+      <max value="*" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.use">
+      <path value="Organization.address.use" />
+      <min value="0" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.text">
+      <path value="Organization.address.text" />
+      <min value="0" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>

@@ -1,80 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-Diagnosis"/>
-    <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-01-18T00:05:43.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
-    <name value="BSeR_Diagnosis"/>
-    <title value="BSeR Diagnosis"/>
-    <status value="active"/>
-    <publisher value="HL7 Public Health Work Group"/>
-    <description value="A health condition of the referral patient. "/>
-    <fhirVersion value="4.0.0"/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <context>
-        <type value="element"/>
-        <expression value="Condition"/>
-    </context>
-    <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Condition">
-            <path value="Condition"/>
-        </element>
-        <element id="Condition.category">
-            <path value="Condition.category"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-                    <code value="problem-list-item"/>
-                    <display value="Problem List Item"/>
-                </coding>
-            </fixedCodeableConcept>
-        </element>
-        <element id="Condition.code">
-            <path value="Condition.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <binding>
-                <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
-            </binding>
-        </element>
-        <element id="Condition.code.coding">
-            <path value="Condition.code.coding"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Condition.code.coding.code">
-            <path value="Condition.code.coding.code"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Condition.code.coding.display">
-            <path value="Condition.code.coding.display"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Condition.onset[x]">
-            <path value="Condition.onset[x]"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="dateTime"/>
-            </type>
-            <type>
-                <code value="Age"/>
-            </type>
-            <type>
-                <code value="string"/>
-            </type>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BSeR-Diagnosis" />
+  <meta>
+    <versionId value="15" />
+    <lastUpdated value="2020-01-18T00:05:43.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis" />
+  <name value="BSeR_Diagnosis" />
+  <title value="BSeR Diagnosis" />
+  <status value="active" />
+  <publisher value="HL7 Public Health Work Group" />
+  <description value="A health condition of the referral patient. " />
+  <fhirVersion value="4.0.0" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Condition" />
+  </context>
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition">
+      <path value="Condition" />
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
+          <code value="problem-list-item" />
+          <display value="Problem List Item" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code" />
+      </binding>
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.code.coding.code">
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.code.coding.display">
+      <path value="Condition.code.coding.display" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Condition.onset[x]">
+      <path value="Condition.onset[x]" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Age" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>

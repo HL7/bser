@@ -1,63 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-NRT-AuthorizationStatus"/>
-    <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-01-20T12:12:59.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
-    <name value="BSeR_NRT_AuthorizationStatus"/>
-    <title value="BSeR NRT Authorization Status"/>
-    <status value="active"/>
-    <description value="An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy."/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Observation">
-            <path value="Observation"/>
-        </element>
-        <element id="Observation.status">
-            <path value="Observation.status"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCode value="final"/>
-        </element>
-        <element id="Observation.code">
-            <path value="Observation.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://snomed.info/sct"/>
-                    <code value="313396002"/>
-                    <display value="Nicotine replacement therapy (situation)"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Observation.subject">
-            <path value="Observation.subject"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            </type>
-        </element>
-        <element id="Observation.value[x]">
-            <path value="Observation.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <binding>
-                <strength value="extensible"/>
-                <valueSet value="http://terminology.hl7.org/ValueSet/v2-0149"/>
-            </binding>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BSeR-NRT-AuthorizationStatus" />
+  <meta>
+    <versionId value="11" />
+    <lastUpdated value="2020-01-20T12:12:59.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus" />
+  <name value="BSeR_NRT_AuthorizationStatus" />
+  <title value="BSeR NRT Authorization Status" />
+  <status value="active" />
+  <publisher value="HL7 Public Health Work Group"/>
+  <description value="An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <min value="1" />
+      <max value="1" />
+      <patternCode value="final" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="313396002" />
+          <display value="Nicotine replacement therapy (situation)" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0149" />
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>

@@ -1,68 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-ReferralFeedbackDocumentBundle"/>
-    <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-01-22T02:46:01.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle"/>
-    <version value="1.0.0"/>
-    <name value="BSeR_ReferralFeedbackDocumentBundle"/>
-    <title value="BSeR Referral Feedback Document Bundle"/>
-    <status value="active"/>
-    <experimental value="false"/>
-    <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Bundle profile represents an BSeR Referral Feedback Document Bundle. It contains the BSeR Referral Feedback Composition."/>
-    <fhirVersion value="4.0.0"/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="Bundle"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Bundle">
-            <path value="Bundle"/>
-        </element>
-        <element id="Bundle.id">
-            <path value="Bundle.id"/>
-            <short value="BSeR Referral Feedback Document Bundle id"/>
-            <definition value="BSeR Referral Feedback Document Bundle id"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.type">
-            <path value="Bundle.type"/>
-            <fixedCode value="document"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry">
-            <path value="Bundle.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="$this.resource"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry:sliceBSeRComposition">
-            <path value="Bundle.entry"/>
-            <sliceName value="sliceBSeRComposition"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry:sliceBSeRComposition.resource">
-            <path value="Bundle.entry.resource"/>
-            <min value="1"/>
-            <type>
-                <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BSeR-ReferralFeedbackDocumentBundle" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2020-01-22T02:46:01.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle" />
+  <version value="1.0.0" />
+  <name value="BSeR_ReferralFeedbackDocumentBundle" />
+  <title value="BSeR Referral Feedback Document Bundle" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="HL7 Public Health Work Group" />
+  <description value="This Bundle profile represents an BSeR Referral Feedback Document Bundle. It contains the BSeR Referral Feedback Composition." />
+  <fhirVersion value="4.0.0" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle" />
+    </element>
+    <element id="Bundle.id">
+      <path value="Bundle.id" />
+      <short value="BSeR Referral Feedback Document Bundle id" />
+      <definition value="BSeR Referral Feedback Document Bundle id" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="document" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="$this.resource" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry:sliceBSeRComposition">
+      <path value="Bundle.entry" />
+      <sliceName value="sliceBSeRComposition" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry:sliceBSeRComposition.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>

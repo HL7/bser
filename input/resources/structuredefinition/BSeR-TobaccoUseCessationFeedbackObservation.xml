@@ -1,78 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-TobaccoUseCessationFeedbackObservation"/>
-    <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-01-15T22:15:29.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
-    <name value="BSeR_TobaccoUseCessationFeedbackObservation"/>
-    <status value="active"/>
-    <description value="A collection of observational data points provided by the referral recipient as feedback to the referral initiator. Tobacco use cessation feedback observations include quit Date, session type, and tobacco free duration."/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Observation">
-            <path value="Observation"/>
-        </element>
-        <element id="Observation.meta">
-            <path value="Observation.meta"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.meta.profile">
-            <path value="Observation.meta.profile"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
-        </element>
-        <element id="Observation.status">
-            <path value="Observation.status"/>
-            <patternCode value="final"/>
-        </element>
-        <element id="Observation.code">
-            <path value="Observation.code"/>
-            <short value="A code representing the type of tobacco cessation observation."/>
-            <definition value="A code representing the type of tobacco cessation observation. quitDateSetIndicator, sessionType, or&#xA;tobaccoFreeDuration.&#xA;"/>
-            <binding>
-                <strength value="extensible"/>
-                <description value="Tobacco Use Cessation Feedback Observation Type"/>
-              <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.41"/>
-            </binding>
-        </element>
-        <element id="Observation.subject">
-            <path value="Observation.subject"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            </type>
-        </element>
-        <element id="Observation.value[x]">
-            <path value="Observation.value[x]"/>
-            <short value="The tobacco cessation observation. "/>
-            <definition value="The tobacco cessation observation. Expressed as quantity, code, or boolean depending upon the value of observation.code. quitDateSetIndicator is boolean, sessionType is coded concept, and tobaccoFreeDuration is a time quantity.&#xA;"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="boolean"/>
-            </type>
-            <type>
-                <code value="dateTime"/>
-            </type>
-            <type>
-                <code value="Quantity"/>
-            </type>
-            <mustSupport value="false"/>
-            <binding>
-                <strength value="extensible"/>
-              <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.44"/>
-            </binding>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BSeR-TobaccoUseCessationFeedbackObservation" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2020-01-15T22:15:29.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
+  <name value="BSeR_TobaccoUseCessationFeedbackObservation" />
+  <status value="active" />
+  <publisher value="HL7 Public Health Work Group"/>
+  <description value="A collection of observational data points provided by the referral recipient as feedback to the referral initiator. Tobacco use cessation feedback observations include quit Date, session type, and tobacco free duration." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+    </element>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <patternCode value="final" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <short value="A code representing the type of tobacco cessation observation." />
+      <definition value="A code representing the type of tobacco cessation observation. quitDateSetIndicator, sessionType, or&#xA;tobaccoFreeDuration.&#xA;" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Tobacco Use Cessation Feedback Observation Type" />
+        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.41" />
+      </binding>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <short value="The tobacco cessation observation. " />
+      <definition value="The tobacco cessation observation. Expressed as quantity, code, or boolean depending upon the value of observation.code. quitDateSetIndicator is boolean, sessionType is coded concept, and tobaccoFreeDuration is a time quantity.&#xA;" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="false" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.44" />
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>

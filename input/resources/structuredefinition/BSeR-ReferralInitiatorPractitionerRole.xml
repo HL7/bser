@@ -1,51 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="BSeR-ReferralInitiatorPractitionerRole"/>
-    <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-12-18T22:59:49.000-05:00"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
-    <name value="BSeR_ReferralInitiatorPractitionerRole"/>
-    <title value="BSeR Referral Initiator Practitioner Role"/>
-    <status value="active"/>
-    <description value="The FHIR R4 PractitionerRole resource covers the recording of the location and types of services that Practitioners are able to provide for an organization. This profile for the PractitionerRole resource represents the practitioner in the role of referral initiator."/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="PractitionerRole"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="PractitionerRole">
-            <path value="PractitionerRole"/>
-        </element>
-        <element id="PractitionerRole.practitioner">
-            <path value="PractitionerRole.practitioner"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
-            </type>
-        </element>
-        <element id="PractitionerRole.organization">
-            <path value="PractitionerRole.organization"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
-            </type>
-        </element>
-        <element id="PractitionerRole.location">
-            <path value="PractitionerRole.location"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation"/>
-            </type>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BSeR-ReferralInitiatorPractitionerRole" />
+  <meta>
+    <versionId value="7" />
+    <lastUpdated value="2019-12-18T22:59:49.000-05:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
+  <name value="BSeR_ReferralInitiatorPractitionerRole" />
+  <title value="BSeR Referral Initiator Practitioner Role" />
+  <status value="active" />
+  <publisher value="HL7 Public Health Work Group"/>
+  <description value="The FHIR R4 PractitionerRole resource covers the recording of the location and types of services that Practitioners are able to provide for an organization. This profile for the PractitionerRole resource represents the practitioner in the role of referral initiator." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PractitionerRole" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole" />
+    </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner" />
+      </type>
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
+      </type>
+    </element>
+    <element id="PractitionerRole.location">
+      <path value="PractitionerRole.location" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
