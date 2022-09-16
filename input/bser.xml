@@ -699,10 +699,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Observation/observation-blood-pressure-eve-everywoman" />
-        <display value="observation-blood-pressure-eve-everywoman" />
+        <reference value="Observation/observation-blood-pressure-eve-everywoman-bser" />
+        <display value="observation-blood-pressure-eve-everywoman-bser" />
       </reference>
-      <name value="observation-blood-pressure-eve-everywoman" />
+      <name value="observation-blood-pressure-eve-everywoman-bser" />
       <description value="Example of FHIR Blood Pressure profile as used in the BSeR IG" />
       <exampleBoolean value="true" />
     </resource>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bundle-bser-hypertensions-feedback-eve-everywoman" />
+  <id value="bundle-bser-hypertension-feedback-eve-everywoman" />
   <meta>
     <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation" />
   </meta>
