@@ -43,7 +43,7 @@
   <dependsOn id="uscdcphinvads">
     <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads" />
     <packageId value="us.cdc.phinvads" />
-    <version value="0.10.0" />
+    <version value="0.12.0" />
   </dependsOn>
   <dependsOn>
     <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh" />
