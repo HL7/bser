@@ -30,7 +30,7 @@
   </jurisdiction>
   <packageId value="hl7.fhir.us.bser" />
   <fhirVersion value="4.0.1" />
-  <dependsOn>
+  <dependsOn id="hl7fhiruscore">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core" />
     <packageId value="hl7.fhir.us.core" />
     <version value="5.0.1" />
@@ -45,7 +45,7 @@
     <packageId value="us.cdc.phinvads" />
     <version value="0.12.0" />
   </dependsOn>
-  <dependsOn>
+  <dependsOn id="hl7fhirusodh">
     <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh" />
     <packageId value="hl7.fhir.us.odh" />
     <version value="1.1.0" />
