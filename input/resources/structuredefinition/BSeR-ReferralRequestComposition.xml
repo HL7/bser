@@ -86,7 +86,7 @@
     </element>
     <element id="Composition.section:referralServiceRequestSupportingInformation.code">
       <path value="Composition.section.code" />
-      <display value="CompositionSectionReferralServiceRequestSupportingInformation" />
+      <short value="CompositionSectionReferralServiceRequestSupportingInformation" />
       <min value="1" />
       <patternCodeableConcept>
         <coding>
