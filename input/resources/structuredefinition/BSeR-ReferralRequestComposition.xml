@@ -86,14 +86,14 @@
     </element>
     <element id="Composition.section:referralServiceRequestSupportingInformation.code">
       <path value="Composition.section.code" />
+      <display value="CompositionSectionReferralServiceRequestSupportingInformation" />
       <min value="1" />
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <coding>
           <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
           <code value="RSRSI" />
-          <display value="CompositionSectionReferralServiceRequestSupportingInformation" />
         </coding>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.section:referralServiceRequestSupportingInformation.entry">
       <path value="Composition.section.entry" />

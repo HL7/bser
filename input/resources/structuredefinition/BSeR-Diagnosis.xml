@@ -36,15 +36,15 @@
     </element>
     <element id="Condition.category">
       <path value="Condition.category" />
+      <short value="Problem List Item" />
       <min value="1" />
       <max value="1" />
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
           <code value="problem-list-item" />
-          <display value="Problem List Item" />
         </coding>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
     <element id="Condition.code">
       <path value="Condition.code" />

@@ -123,14 +123,14 @@
     </element>
     <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.code">
       <path value="Composition.section.code" />
+      <short value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation" />
       <min value="1" />
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <coding>
           <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
           <code value="RSRFSI" />
-          <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation" />
         </coding>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.section:referralServiceRequestFeedbackSupportingInformation.entry">
       <path value="Composition.section.entry" />
