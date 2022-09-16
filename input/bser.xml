@@ -514,17 +514,17 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/bundle-bser-hypertensions-feedback-eve-everywoman" />
+        <reference value="Bundle/bundle-bser-hypertension-feedback-eve-everywoman" />
       </reference>
-      <name value="bundle-bser-hypertensions-feedback-eve-everywoman" />
+      <name value="bundle-bser-hypertension-feedback-eve-everywoman" />
       <description value="Example of BSeR-HypertensionReferralFeedbackSupportingInformation profile as used in the BSeR IG" />
       <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation" />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/bundle-bser-hypertensions-referral-eve-everywoman" />
+        <reference value="Bundle/bundle-bser-hypertension-referral-eve-everywoman" />
       </reference>
-      <name value="bundle-bser-hypertensions-referral-eve-everywoman" />
+      <name value="bundle-bser-hypertension-referral-eve-everywoman" />
       <description value="Example of BSeR-HypertensionReferralSupportingInformation profile as used in the BSeR IG" />
       <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation" />
     </resource>
