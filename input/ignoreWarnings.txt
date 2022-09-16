@@ -38,3 +38,6 @@ INFORMATION: Bundle/bundle-bser-referral-message-bundle-eve-everywoman: Bundle.e
 
 # US Core Variance - need to find when (if) these were approved
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# Core Spec issue detailed here: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/IG.20Publication.20Validation.20issue.20-.20Consent.20Profile
+if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
