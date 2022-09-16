@@ -1,173 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-us-core-smokingstatus-eve-everywoman"/>
-    <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2019-12-20T02:14:02.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">observation-us-core-smokingstatus-eve-everywoman</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">versionId</td>
-                                <td>
-                                    <div title="versionId">4</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">lastUpdated</td>
-                                <td>
-                                    <div title="lastUpdated">2019-12-11T00:34:27.000-05:00</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">status</td>
-                    <td>
-                        <div title="status">final</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">category</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Social History</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Social History</div>  (
-                                        <div title="code">social-history</div> )
-          
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">code</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Tobacco smoking status</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Tobacco smoking status</div>  (
-                                        <div title="code">72166-2</div> )
-          
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://loinc.org">http://loinc.org</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">subject</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">effectiveDateTime</td>
-                    <td>
-                        <div title="effectiveDateTime">2019-01-17</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">valueCodeableConcept</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Current some day smoker</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li> (
-                                        <div title="code">428041000124106</div> )
-            
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
-    <status value="final"/>
-    <category>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="social-history"/>
-            <display value="Social History"/>
-        </coding>
-        <text value="Social History"/>
-    </category>
-    <code>
-        <coding>
-            <system value="http://loinc.org"/>
-            <code value="72166-2"/>
-            <display value="Tobacco smoking status"/>
-        </coding>
-        <text value="Tobacco smoking status"/>
-    </code>
-    <subject>
-        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
-        <display value="Eve Everywoman"/>
-    </subject>
-    <issued value="2019-01-18T05:27:04Z"/>
-    <valueCodeableConcept>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="428041000124106"/>
-        </coding>
-        <text value="Current some day smoker"/>
-    </valueCodeableConcept>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-us-core-smokingstatus-eve-everywoman" />
+  <meta>
+    <versionId value="8" />
+    <lastUpdated value="2019-12-20T02:14:02.000-05:00" />
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus" />
+  </meta>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="social-history" />
+      <display value="Social History" />
+    </coding>
+    <text value="Social History" />
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="72166-2" />
+      <display value="Tobacco smoking status" />
+    </coding>
+    <text value="Tobacco smoking status" />
+  </code>
+  <subject>
+    <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+    <display value="Eve Everywoman" />
+  </subject>
+  <effectiveDateTime value="2019-01-17" />
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="428041000124106" />
+    </coding>
+    <text value="Current some day smoker" />
+  </valueCodeableConcept>
 </Observation>
