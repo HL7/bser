@@ -87,14 +87,14 @@
     </element>
     <element id="Composition.section:referralServiceRequestFeedbackSummary.code">
       <path value="Composition.section.code" />
+      <short value="CompositionSectionReferralServiceRequestFeedbackSummary"/>
       <min value="1" />
-      <fixedCodeableConcept>
+      <patternCodeableConcept>
         <coding>
           <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
           <code value="RSRFS" />
-          <display value="CompositionSectionReferralServiceRequestFeedbackSummary" />
         </coding>
-      </fixedCodeableConcept>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.section:referralServiceRequestFeedbackSummary.focus">
       <path value="Composition.section.focus" />
