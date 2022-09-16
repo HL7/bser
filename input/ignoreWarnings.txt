@@ -1,21 +1,4 @@
 == Suppressed Messages ==
-# The following value sets are external and not supported by terminology server
-ValueSet https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.4239 not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1047.73/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.37/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.38/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.39/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.39/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.40/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.41/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.45/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.46/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.47/expansion/Latest not found by validator
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.95/expansion/Latest not found by validator
-
-# These are all confirmed base specification issues and will not be fixed until the next technical correction
-value should not start or finish with whitespace
-
 #  Not matching is expected behaviour - the only slice defined in the BSeR-ReferralRequestDocumentBundle is the required Composition
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle
