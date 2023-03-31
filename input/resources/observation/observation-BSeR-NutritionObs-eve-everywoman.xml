@@ -3,103 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-NutritionObs-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T16:45:19.494+00:00"/>
-        <source value="#aLFvoR5LM0fQ8fhO"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-31T04:46:33.799+00:00"/>
+        <source value="#e32r3XFYNodbNsv1"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">observation-BSeR-NutritionObs-eve-everywoman</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">status</td>
-                    <td>
-                        <div title="status">final</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">code</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Able to latch on to breast for feeding (finding)</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Able to latch on to breast for feeding (finding)</div>  (
-                                        
-                                        <div title="code">288988007</div> )
-          
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">subject</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">effectiveDateTime</td>
-                    <td>
-                        <div title="effectiveDateTime">2019-01-17</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">performer</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">valueBoolean</td>
-                    <td>
-                        <div title="valueBoolean">true</div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <status value="final"/>
     <code>
         <coding>

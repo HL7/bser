@@ -3,245 +3,41 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-us-core-patient-baby-everybaby"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:03:58.556+00:00"/>
-        <source value="#9DZPHErcq33IQmvJ"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-31T04:46:51.931+00:00"/>
+        <source value="#lXHTzAy8WX07lxai"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <span title="id">patient-us-core-patient-eve-everywoman</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">us-core-race</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="display">White</span>
-                            </li>
-                            <li>
-                                <span title="system">urn:oid:2.16.840.1.113883.6.238</span>
-                            </li>
-                            <li>
-                                <span title="code">2106-3</span>
-                            </li>
-                            <li>
-                                <span title="valueString">White</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">us-core-ethnicity</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="display">Not Hispanic or Latino</span>
-                            </li>
-                            <li>
-                                <span title="system">urn:oid:2.16.840.1.113883.6.238</span>
-                            </li>
-                            <li>
-                                <span title="code">2186-5</span>
-                            </li>
-                            <li>
-                                <span title="valueString">Not Hispanic or Latino</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">us-core-birthsex</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="valueCode">F</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">identifier</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <span title="use">usual</span>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <span title="display">Medical Record Number</span>  (
-                                        
-                                        
-                                        
-                                        <span title="code">MR</span> )
-          
-                                    
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <span title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/v2-0203">http://terminology.hl7.org/CodeSystem/v2-0203</a>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span title="system">
-                                    <a href="http://hospital.smarthealthit.org">http://hospital.smarthealthit.org</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span title="value">1032702</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">active</td>
-                    <td>
-                        <span title="active">true</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">name</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">family</td>
-                                <td>
-                                    <span title="family">Everywoman</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">given</td>
-                                <td>
-                                    <span title="given">Eve</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">given</td>
-                                <td>
-                                    <span title="given">L</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">telecom</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">system</td>
-                                <td>
-                                    <span title="system">phone</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">value</td>
-                                <td>
-                                    <span title="value">1-(404)555-1212</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">use</td>
-                                <td>
-                                    <span title="use">home</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">telecom</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">system</td>
-                                <td>
-                                    <span title="system">email</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">value</td>
-                                <td>
-                                    <span title="value">eve.everywoman@example.com</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">gender</td>
-                    <td>
-                        <span title="gender">female</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">birthDate</td>
-                    <td>
-                        <span title="birthDate">1974-11-24</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">address</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">line</td>
-                                <td>
-                                    <span title="line">5101 Peachtree St NE</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">city</td>
-                                <td>
-                                    <span title="city">Atlanta</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">state</td>
-                                <td>
-                                    <span title="state">GA</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">postalCode</td>
-                                <td>
-                                    <span title="postalCode">30302</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">country</td>
-                                <td>
-                                    <span title="country">US</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+            <div class="hapiHeaderText">Baby B 
+                <b>EVERYBABY </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>9932702</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <span>5101 Peachtree St NE </span>
+                            <br/>
+                            <span>Atlanta </span>
+                            <span>GA </span>
+                            <span>US </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>15 January 2019</span>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </text>

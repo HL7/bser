@@ -3,105 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-TelcomComm-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T16:45:19.557+00:00"/>
-        <source value="#r6WgvNP7WMj4ipzQ"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-31T04:46:33.901+00:00"/>
+        <source value="#gk9qkQym3oqsEoB1"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">observation-BSeR-TelcomComm-eve-everywoman</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">versionId</td>
-                                <td>
-                                    <div title="versionId">1</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">lastUpdated</td>
-                                <td>
-                                    <div title="lastUpdated">2019-12-20T03:18:34.000-05:00</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">status</td>
-                    <td>
-                        <div title="status">final</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">code</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Best Day To Call</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Best Day To Call</div>  (
-                                        
-                                        <div title="code">BDTC</div> )
-          
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://hl7.org/fhir/us/bser/CodeSystem/bser">http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">subject</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">effectiveDateTime</td>
-                    <td>
-                        <div title="effectiveDateTime">2019-01-17</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">valueString</td>
-                    <td>
-                        <div title="valueString">Monday</div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <status value="final"/>
     <code>
         <coding>

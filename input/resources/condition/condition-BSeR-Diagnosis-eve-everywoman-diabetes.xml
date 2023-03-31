@@ -3,116 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T16:43:12.305+00:00"/>
-        <source value="#vBX536FJRrsd9i7r"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-31T04:46:06.291+00:00"/>
+        <source value="#TxkVVn6m6foHMrnf"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">condition-BSeR-Diagnosis-eve-everywoman-diabetes</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">category</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Problem List Item</div>  (
-                                        
-                                        
-                                        <div title="code">problem-list-item</div> )
-          
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://terminology.hl7.org/CodeSystem/condition-category">http://terminology.hl7.org/CodeSystem/condition-category</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">code</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Diabetes mellitus (disorder)</div>  (
-                                        
-                                        
-                                        <div title="code">73211009</div> )
-          
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">subject</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">onsetDateTime</td>
-                    <td>
-                        <div title="onsetDateTime">2017-08-23</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">asserter</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">Hailey Eight, MD</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>

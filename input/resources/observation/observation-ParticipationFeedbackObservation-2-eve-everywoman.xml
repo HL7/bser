@@ -3,112 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T16:45:19.573+00:00"/>
-        <source value="#KnblhN9z89uSTftc"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-31T04:46:34.089+00:00"/>
+        <source value="#6XBFjBCHSkAE93pb"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-                <tr>
-                    <td style="font-weight: bold">id</td>
-                    <td>
-                        <div title="id">observation-ParticipationFeedbackObservation-2-eve-everywoman</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">meta</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">profile</td>
-                                <td>
-                                    <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">status</td>
-                    <td>
-                        <div title="status">final</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">code</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <div title="text">Number of appointments missed (observable entity)</div>
-                            </li>
-                            <li>
-                                <ul style="list-style:none; padding-left:0; margin:0 0;">
-                                    <li>
-                                        <div title="display">Number of appointments missed (observable entity)</div>  (
-                                        
-                                        
-                                        <div title="code">298058004</div> )
-          
-                                    
-                                    
-                                    </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">subject</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li/>
-                            <li>
-                                <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">effectiveDateTime</td>
-                    <td>
-                        <div title="effectiveDateTime">2019-01-17</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">performer</td>
-                    <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                            <li>
-                                <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold">valueQuantity</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td style="font-weight: bold">value</td>
-                                <td>
-                                    <div title="value">1</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <status value="final"/>
     <code>
         <coding>
