@@ -1,102 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BSeR-ReferralMessageBundle" />
-  <meta>
-    <versionId value="6" />
-    <lastUpdated value="2020-01-20T20:16:42.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
-  <version value="1.0.0" />
-  <name value="BSeR_ReferralMessageBundle" />
-  <title value="BSeR Referral Message Bundle" />
-  <status value="active" />
-  <experimental value="false" />
-  <publisher value="HL7 Public Health Work Group" />
-  <description value="This Bundle profile represents a BSeR Referral Message Bundle. It contains the BSeR Referral MessageHeader and is for use in the BSeR messaging paradigm." />
-  <fhirVersion value="4.0.0" />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-      <display value="United States of America" />
-    </coding>
-    <text value="United States of America" />
-  </jurisdiction>
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Bundle" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Bundle">
-      <path value="Bundle" />
-    </element>
-    <element id="Bundle.type">
-      <path value="Bundle.type" />
-      <fixedCode value="message" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Bundle.entry">
-      <path value="Bundle.entry" />
-      <slicing>
-        <discriminator>
-          <type value="profile" />
-          <path value="$this.resource" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="Bundle.entry:sliceMessageHeader">
-      <path value="Bundle.entry" />
-      <sliceName value="sliceMessageHeader" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Bundle.entry:sliceMessageHeader.resource">
-      <path value="Bundle.entry.resource" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader" />
-      </type>
-    </element>
-    <element id="Bundle.entry:sliceEmploymentStatus">
-      <path value="Bundle.entry" />
-      <sliceName value="sliceEmploymentStatus" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Bundle.entry:sliceEmploymentStatus.resource">
-      <path value="Bundle.entry.resource" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus" />
-      </type>
-    </element>
-    <element id="Bundle.entry:slicePatientConsent">
-      <path value="Bundle.entry" />
-      <sliceName value="slicePatientConsent" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Bundle.entry:slicePatientConsent.resource">
-      <path value="Bundle.entry.resource" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent" />
-      </type>
-    </element>
-    <element id="Bundle.entry:sliceEducationLevel">
-      <path value="Bundle.entry" />
-      <sliceName value="sliceEducationLevel" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Bundle.entry:sliceEducationLevel.resource">
-      <path value="Bundle.entry.resource" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel" />
-      </type>
-    </element>
-  </differential>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ReferralMessageBundle"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:05:38.107+00:00"/>
+        <source value="#IaQRT9RAIehc2vLm"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
+    <version value="1.0.0"/>
+    <name value="BSeR_ReferralMessageBundle"/>
+    <title value="BSeR Referral Message Bundle"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Bundle profile represents a BSeR Referral Message Bundle. It contains the BSeR Referral MessageHeader and is for use in the BSeR messaging paradigm."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="message"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceMessageHeader">
+            <path value="Bundle.entry"/>
+            <sliceName value="sliceMessageHeader"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceMessageHeader.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:sliceEmploymentStatus">
+            <path value="Bundle.entry"/>
+            <sliceName value="sliceEmploymentStatus"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceEmploymentStatus.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:slicePatientConsent">
+            <path value="Bundle.entry"/>
+            <sliceName value="slicePatientConsent"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:slicePatientConsent.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:sliceEducationLevel">
+            <path value="Bundle.entry"/>
+            <sliceName value="sliceEducationLevel"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:sliceEducationLevel.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
+            </type>
+        </element>
+    </differential>
 </StructureDefinition>

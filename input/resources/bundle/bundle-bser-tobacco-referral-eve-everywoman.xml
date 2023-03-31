@@ -1,187 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="bundle-bser-tobacco-referral-eve-everywoman" />
-  <meta>
-    <versionId value="5" />
-    <lastUpdated value="2019-12-20T18:12:45.000-05:00" />
-    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation" />
-  </meta>
-  <type value="collection" />
-  <entry>
-    <fullUrl value="Observation/observation-us-core-smokingstatus-eve-everywoman" />
-    <resource>
-      <Observation xmlns="http://hl7.org/fhir">
-        <id value="observation-us-core-smokingstatus-eve-everywoman" />
-        <meta>
-          <versionId value="8" />
-          <lastUpdated value="2019-12-20T02:14:02.000-05:00" />
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative: Observation</b>
-              <a name="observation-us-core-smokingstatus-eve-everywoman"> </a>
-            </p>
-            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-              <p style="margin-bottom: 0px">Resource Observation "observation-us-core-smokingstatus-eve-everywoman" Version "8" Updated "2019-12-20 02:14:02-0500" </p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></p>
-            </div>
-            <p><b>status</b>: final</p>
-            <p><b>category</b>: Social History <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p>
-            <p><b>code</b>: Tobacco smoking status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#72166-2)</span></p>
-            <p><b>subject</b>: <a href="Patient-patient-us-core-patient-eve-everywoman.html">Patient/patient-us-core-patient-eve-everywoman: Eve Everywoman</a> " EVERYWOMAN"</p>
-            <p><b>effective</b>: 2019-01-17</p>
-            <p><b>value</b>: Current some day smoker <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#428041000124106)</span></p>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="social-history" />
-            <display value="Social History" />
-          </coding>
-          <text value="Social History" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="72166-2" />
-            <display value="Tobacco smoking status" />
-          </coding>
-          <text value="Tobacco smoking status" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="428041000124106" />
-          </coding>
-          <text value="Current some day smoker" />
-        </valueCodeableConcept>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-BSeR-TelcomComm-eve-everywoman" />
-    <resource>
-      <Observation xmlns="http://hl7.org/fhir">
-        <id value="observation-BSeR-TelcomComm-eve-everywoman" />
-        <meta>
-          <versionId value="2" />
-          <lastUpdated value="2019-12-20T15:26:07.000-05:00" />
-          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <div title="id">observation-BSeR-TelcomComm-eve-everywoman</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">versionId</td>
-                      <td>
-                        <div title="versionId">1</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">lastUpdated</td>
-                      <td>
-                        <div title="lastUpdated">2019-12-20T03:18:34.000-05:00</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences</div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <div title="status">final</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="text">Best Day To Call</div>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <div title="display">Best Day To Call</div> ( <div title="code">BDTC</div> ) </li>
-                        <li>
-                          <div title="system">
-                            <a href="http://hl7.org/fhir/us/bser/CodeSystem/bser">http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <div title="effectiveDateTime">2019-01-17</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueString</td>
-                <td>
-                  <div title="valueString">Monday</div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <code>
-          <coding>
-            <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser" />
-            <code value="BDTC" />
-            <display value="Best Day To Call" />
-          </coding>
-          <text value="Best Day To Call" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <valueString value="Monday" />
-      </Observation>
-    </resource>
-  </entry>
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="bundle-bser-tobacco-referral-eve-everywoman"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-09-16T18:05:40.495+00:00"/>
+        <source value="#GBFdgqdqBxULXBmZ"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
+    </meta>
+    <type value="collection"/>
+    <entry>
+        <fullUrl value="Observation/observation-us-core-smokingstatus-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-us-core-smokingstatus-eve-everywoman"/>
+                <meta>
+                    <versionId value="8"/>
+                    <lastUpdated value="2019-12-20T02:14:02.000-05:00"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative: Observation</b>
+                            <a name="observation-us-core-smokingstatus-eve-everywoman"/>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource Observation "observation-us-core-smokingstatus-eve-everywoman" Version "8" Updated "2019-12-20 02:14:02-0500" </p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>category</b>: Social History 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)
+                            </span>
+                        </p>
+                        <p>
+                            <b>code</b>: Tobacco smoking status 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#72166-2)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Patient/patient-us-core-patient-eve-everywoman: Eve Everywoman</a> " EVERYWOMAN"
+                        </p>
+                        <p>
+                            <b>effective</b>: 2019-01-17
+                        </p>
+                        <p>
+                            <b>value</b>: Current some day smoker 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#428041000124106)
+                            </span>
+                        </p>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="social-history"/>
+                        <display value="Social History"/>
+                    </coding>
+                    <text value="Social History"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="72166-2"/>
+                        <display value="Tobacco smoking status"/>
+                    </coding>
+                    <text value="Tobacco smoking status"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="428041000124106"/>
+                    </coding>
+                    <text value="Current some day smoker"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-BSeR-TelcomComm-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-BSeR-TelcomComm-eve-everywoman"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2019-12-20T15:26:07.000-05:00"/>
+                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <div title="id">observation-BSeR-TelcomComm-eve-everywoman</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">versionId</td>
+                                            <td>
+                                                <div title="versionId">1</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">lastUpdated</td>
+                                            <td>
+                                                <div title="lastUpdated">2019-12-20T03:18:34.000-05:00</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <div title="status">final</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Best Day To Call</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Best Day To Call</div> ( 
+                                                    <div title="code">BDTC</div> ) 
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://hl7.org/fhir/us/bser/CodeSystem/bser">http://hl7.org/fhir/us/bser/CodeSystem/bser</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <div title="effectiveDateTime">2019-01-17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueString</td>
+                                <td>
+                                    <div title="valueString">Monday</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
+                        <code value="BDTC"/>
+                        <display value="Best Day To Call"/>
+                    </coding>
+                    <text value="Best Day To Call"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <valueString value="Monday"/>
+            </Observation>
+        </resource>
+    </entry>
 </Bundle>

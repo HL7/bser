@@ -1,0 +1,10 @@
+{
+	"package-id": "hl7.fhir.us.bser",
+	"mode": "working",
+	"category": "Public Health",
+	"version": "current",
+	"sequence": "STU 1",
+	"desc": "FHIR STU Release 1",
+	"path": "http://hl7.org/fhir/us/bser/",
+	"status": "draft"
+}

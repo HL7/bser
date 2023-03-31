@@ -1,70 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BSeR-ArthritisReferralFeedbackSupportingInformation" />
-  <meta>
-    <versionId value="25" />
-    <lastUpdated value="2020-01-22T01:58:57.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation" />
-  <name value="BSeR_ArthritisReferralFeedbackSupportingInformation" />
-  <title value="BSeR Arthritis Referral Feedback Supporting Information" />
-  <status value="active" />
-  <publisher value="HL7 Public Health Work Group"/>
-  <description value="A bundle of clinical statements providing supporting information for a referral recipients feedback on a arthritis referral." />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-      <display value="United States of America" />
-    </coding>
-    <text value="United States of America" />
-  </jurisdiction>
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Bundle" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Bundle">
-      <path value="Bundle" />
-    </element>
-    <element id="Bundle.meta">
-      <path value="Bundle.meta" />
-    </element>
-    <element id="Bundle.meta.profile">
-      <path value="Bundle.meta.profile" />
-      <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation" />
-    </element>
-    <element id="Bundle.type">
-      <path value="Bundle.type" />
-      <min value="1" />
-      <max value="1" />
-      <fixedCode value="collection" />
-    </element>
-    <element id="Bundle.entry">
-      <path value="Bundle.entry" />
-      <slicing>
-        <discriminator>
-          <type value="profile" />
-          <path value="$this.resource" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-      <max value="*" />
-    </element>
-    <element id="Bundle.entry:ArthritisFeedbackObservation">
-      <path value="Bundle.entry" />
-      <sliceName value="ArthritisFeedbackObservation" />
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:ArthritisFeedbackObservation.resource">
-      <path value="Bundle.entry.resource" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
-      </type>
-    </element>
-  </differential>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ArthritisReferralFeedbackSupportingInformation"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:05:37.701+00:00"/>
+        <source value="#qSNGvjjX2Q8Z6vTz"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
+    <name value="BSeR_ArthritisReferralFeedbackSupportingInformation"/>
+    <title value="BSeR Arthritis Referral Feedback Supporting Information"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="A bundle of clinical statements providing supporting information for a referral recipients feedback on a arthritis referral."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.meta">
+            <path value="Bundle.meta"/>
+        </element>
+        <element id="Bundle.meta.profile">
+            <path value="Bundle.meta.profile"/>
+            <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="collection"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:ArthritisFeedbackObservation">
+            <path value="Bundle.entry"/>
+            <sliceName value="ArthritisFeedbackObservation"/>
+            <min value="1"/>
+        </element>
+        <element id="Bundle.entry:ArthritisFeedbackObservation.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+            </type>
+        </element>
+    </differential>
 </StructureDefinition>

@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-us-core-patient-baby-everybaby"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-01-09T18:32:11.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:03:58.556+00:00"/>
+        <source value="#9DZPHErcq33IQmvJ"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -93,8 +93,10 @@
                                         <span title="display">Medical Record Number</span>  (
                                         
                                         
+                                        
                                         <span title="code">MR</span> )
           
+                                    
                                     
                                     
                                     </li>

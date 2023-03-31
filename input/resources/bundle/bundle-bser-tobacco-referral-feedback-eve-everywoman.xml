@@ -1,293 +1,298 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="bundle-bser-tobacco-referral-feedback-eve-everywoman" />
-  <meta>
-    <versionId value="4" />
-    <lastUpdated value="2019-12-20T16:36:37.000-05:00" />
-    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation" />
-  </meta>
-  <type value="collection" />
-  <entry>
-    <fullUrl value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <div title="id">observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">versionId</td>
-                      <td>
-                        <div title="versionId">2</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">lastUpdated</td>
-                      <td>
-                        <div title="lastUpdated">2019-12-11T00:37:10.000-05:00</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation</div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <div title="status">final</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="text">Quit date set indicator</div>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <div title="display"
-                            >Negotiated date for cessation of smoking (observable entity)</div>  (
-                                                    <div title="code"
-                            >390901002</div> )
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:42:27.839+00:00"/>
+        <source value="#h7m5POBks5SI1511"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+    </meta>
+    <type value="collection"/>
+    <entry>
+        <fullUrl value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <div title="id">observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">versionId</td>
+                                            <td>
+                                                <div title="versionId">2</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">lastUpdated</td>
+                                            <td>
+                                                <div title="lastUpdated">2019-12-11T00:37:10.000-05:00</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <div title="status">final</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Quit date set indicator</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Negotiated date for cessation of smoking (observable entity)</div>  (
+                                                    
+                                                    <div title="code">390901002</div> )
                         
+                                                
                                                 </li>
-                        <li>
-                          <div title="system">
-                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <div title="effectiveDateTime">2019-01-17</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueBoolean</td>
-                <td>
-                  <div title="valueBoolean">true</div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="390901002" />
-            <display value="Negotiated date for cessation of smoking (observable entity)" />
-          </coding>
-          <text value="Quit date set indicator" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
-        </performer>
-        <valueBoolean value="true" />
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <div title="id">observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">versionId</td>
-                      <td>
-                        <div title="versionId">1</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">lastUpdated</td>
-                      <td>
-                        <div title="lastUpdated">2019-12-11T01:00:29.000-05:00</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation</div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <div title="status">final</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="text">Tobacco free duration</div>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <div title="display">Time since stopped smoking (observable entity)</div>  (
-                                                    <div
-                            title="code">228486009</div> )
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <div title="effectiveDateTime">2019-01-17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueBoolean</td>
+                                <td>
+                                    <div title="valueBoolean">true</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="390901002"/>
+                        <display value="Negotiated date for cessation of smoking (observable entity)"/>
+                    </coding>
+                    <text value="Quit date set indicator"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                </performer>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <div title="id">observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">versionId</td>
+                                            <td>
+                                                <div title="versionId">1</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">lastUpdated</td>
+                                            <td>
+                                                <div title="lastUpdated">2019-12-11T01:00:29.000-05:00</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <div title="profile">http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <div title="status">final</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Tobacco free duration</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Time since stopped smoking (observable entity)</div>  (
+                                                    
+                                                    <div title="code">228486009</div> )
                         
+                                                
                                                 </li>
-                        <li>
-                          <div title="system">
-                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <div title="effectiveDateTime">2019-01-17</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueQuantity</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="value">10</div>
-                    </li>
-                    <li>
-                      <div title="unit">month</div>
-                    </li>
-                    <li>
-                      <div title="system">
-                        <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div title="code">mo</div>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="228486009" />
-            <display value="Time since stopped smoking (observable entity)" />
-          </coding>
-          <text value="Tobacco free duration" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
-        </performer>
-        <valueQuantity>
-          <value value="10" />
-          <unit value="month" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="mo" />
-        </valueQuantity>
-      </Observation>
-    </resource>
-  </entry>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <div title="effectiveDateTime">2019-01-17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="value">10</div>
+                                        </li>
+                                        <li>
+                                            <div title="unit">month</div>
+                                        </li>
+                                        <li>
+                                            <div title="system">
+                                                <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div title="code">mo</div>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="228486009"/>
+                        <display value="Time since stopped smoking (observable entity)"/>
+                    </coding>
+                    <text value="Tobacco free duration"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                </performer>
+                <valueQuantity>
+                    <value value="10"/>
+                    <unit value="month"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mo"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
 </Bundle>

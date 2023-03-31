@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2019-12-20T02:10:56.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:45:19.317+00:00"/>
+        <source value="#d8hgDD3bEuRAmD9A"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -58,8 +58,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Endurance (observable entity)</div>  (
+                                        
                                         <div title="code">406203001</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -106,8 +108,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Patient's condition improved (finding)</div>  (
+                                        
                                         <div title="code">268910001</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">

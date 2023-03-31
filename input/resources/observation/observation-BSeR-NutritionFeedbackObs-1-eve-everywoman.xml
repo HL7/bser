@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2019-12-20T03:07:43.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:45:19.319+00:00"/>
+        <source value="#xyPU3F2ArrV9EgFg"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -49,8 +49,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Finding related to ability to perform breast-feeding (finding)</div>  (
+                                        
                                         <div title="code">364826005</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -100,8 +102,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Decreased lactation (finding)</div>  (
+                                        
                                         <div title="code">199004</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">

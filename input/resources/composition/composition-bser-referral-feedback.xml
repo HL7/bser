@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-bser-referral-feedback"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-01-22T00:48:15.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:43:03.758+00:00"/>
+        <source value="#E7vMC2Us7RCEWNkA"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -58,8 +58,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Referral note</div>  (
+                                        
                                         <div title="code">57133-1</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -123,8 +125,10 @@
                                             <ul style="list-style:none; padding-left:0; margin:0 0;">
                                                 <li>
                                                     <div title="display">CompositionSectionReferralServiceRequestFeedbackSummary</div>  (
+                                                    
                                                     <div title="code">RSRFS</div> )
           
+                                                
                                                 </li>
                                                 <li>
                                                     <div title="system">
@@ -157,8 +161,10 @@
                                             <ul style="list-style:none; padding-left:0; margin:0 0;">
                                                 <li>
                                                     <div title="display">CompositionSectionReferralServiceRequestFeedbackSupportingInformation</div>  (
+                                                    
                                                     <div title="code">RSRFSI</div> )
           
+                                                
                                                 </li>
                                                 <li>
                                                     <div title="system">

@@ -1,1080 +1,1077 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
-  <id value="bundle-bser-arthritis-referral-everywoman" />
-  <meta>
-    <versionId value="5" />
-    <lastUpdated value="2019-12-20T21:49:54.000-05:00" />
-    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
-  </meta>
-  <type value="collection" />
-  <entry>
-    <fullUrl value="Observation/observation-blood-pressure-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-blood-pressure-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/bp" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <span title="id">observation-blood-pressure-eve-everywoman</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <span title="profile">http://hl7.org/fhir/StructureDefinition/bp</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <span title="status">final</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Vital Signs</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Vital Signs</span>  (
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="bundle-bser-arthritis-referral-everywoman"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-09-16T16:42:27.848+00:00"/>
+        <source value="#scFDMJsoFIPLCxEq"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+    </meta>
+    <type value="collection"/>
+    <entry>
+        <fullUrl value="Observation/observation-blood-pressure-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-blood-pressure-eve-everywoman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <span title="id">observation-blood-pressure-eve-everywoman</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <span title="profile">http://hl7.org/fhir/StructureDefinition/bp</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <span title="status">final</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Vital Signs</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Vital Signs</span>  (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >vital-signs</span> )
+                                                    
+                                                    <span title="code">vital-signs</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Blood pressure systolic &amp; diastolic</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Blood pressure panel with all children optional</span>  (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Blood pressure systolic &amp; diastolic</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Blood pressure panel with all children optional</span>  (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >85354-9</span> )
+                                                    
+                                                    <span title="code">85354-9</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://loinc.org">http://loinc.org</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <span title="effectiveDateTime">2019-01-17</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">component</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">code</td>
-                      <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                          <li>
-                            <ul style="list-style:none; padding-left:0; margin:0 0;">
-                              <li>
-                                <span title="display"
-                                  >Systolic blood pressure</span>  (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <span title="effectiveDateTime">2019-01-17</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">component</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">code</td>
+                                            <td>
+                                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                    <li>
+                                                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                            <li>
+                                                                <span title="display">Systolic blood pressure</span>  (
                                   
                                                                 
-                                                                <span
-                                  title="code"
-                                >8480-6</span> )
+                                                                
+                                                                <span title="code">8480-6</span> )
                                   
                                 
                                                             
+                                                            
                                                             </li>
-                              <li>
-                                <span title="system">
-                                  <a href="http://loinc.org">http://loinc.org</a>
-                                </span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">valueQuantity</td>
-                      <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                          <li>
-                            <span title="value">107</span>
-                          </li>
-                          <li>
-                            <span title="unit">mmHg</span>
-                          </li>
-                          <li>
-                            <span title="system">
-                              <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                            </span>
-                          </li>
-                          <li>
-                            <span title="code">mm[Hg]</span>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">component</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">code</td>
-                      <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                          <li>
-                            <ul style="list-style:none; padding-left:0; margin:0 0;">
-                              <li>
-                                <span title="display"
-                                  >Diastolic blood pressure</span>  (
+                                                            <li>
+                                                                <span title="system">
+                                                                    <a href="http://loinc.org">http://loinc.org</a>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">valueQuantity</td>
+                                            <td>
+                                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                    <li>
+                                                        <span title="value">107</span>
+                                                    </li>
+                                                    <li>
+                                                        <span title="unit">mmHg</span>
+                                                    </li>
+                                                    <li>
+                                                        <span title="system">
+                                                            <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span title="code">mm[Hg]</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">component</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">code</td>
+                                            <td>
+                                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                    <li>
+                                                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                            <li>
+                                                                <span title="display">Diastolic blood pressure</span>  (
                                   
                                                                 
-                                                                <span
-                                  title="code"
-                                >8462-4</span> )
+                                                                
+                                                                <span title="code">8462-4</span> )
                                   
                                 
                                                             
+                                                            
                                                             </li>
-                              <li>
-                                <span title="system">
-                                  <a href="http://loinc.org">http://loinc.org</a>
-                                </span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">valueQuantity</td>
-                      <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                          <li>
-                            <span title="value">60</span>
-                          </li>
-                          <li>
-                            <span title="unit">mmHg</span>
-                          </li>
-                          <li>
-                            <span title="system">
-                              <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                            </span>
-                          </li>
-                          <li>
-                            <span title="code">mm[Hg]</span>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="vital-signs" />
-            <display value="Vital Signs" />
-          </coding>
-          <text value="Vital Signs" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="85354-9" />
-            <display value="Blood pressure panel with all children optional" />
-          </coding>
-          <text value="Blood pressure systolic &amp; diastolic" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="Practitioner/practitioner-bser-henry-seven" />
-        </performer>
-        <component>
-          <code>
-            <coding>
-              <system value="http://loinc.org" />
-              <code value="8480-6" />
-              <display value="Systolic blood pressure" />
-            </coding>
-          </code>
-          <valueQuantity>
-            <value value="107" />
-            <unit value="mmHg" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="mm[Hg]" />
-          </valueQuantity>
-        </component>
-        <component>
-          <code>
-            <coding>
-              <system value="http://loinc.org" />
-              <code value="8462-4" />
-              <display value="Diastolic blood pressure" />
-            </coding>
-          </code>
-          <valueQuantity>
-            <value value="60" />
-            <unit value="mmHg" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="mm[Hg]" />
-          </valueQuantity>
-        </component>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-body-height-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-body-height-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <div title="id">observation-body-height-eve-everywoman</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <div title="profile">http://hl7.org/fhir/StructureDefinition/bodyheight</div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <div title="status">final</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="text">Vital Signs</div>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <div title="display">Vital Signs</div>  (
+                                                            <li>
+                                                                <span title="system">
+                                                                    <a href="http://loinc.org">http://loinc.org</a>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">valueQuantity</td>
+                                            <td>
+                                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                    <li>
+                                                        <span title="value">60</span>
+                                                    </li>
+                                                    <li>
+                                                        <span title="unit">mmHg</span>
+                                                    </li>
+                                                    <li>
+                                                        <span title="system">
+                                                            <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span title="code">mm[Hg]</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="85354-9"/>
+                        <display value="Blood pressure panel with all children optional"/>
+                    </coding>
+                    <text value="Blood pressure systolic &amp; diastolic"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="Practitioner/practitioner-bser-henry-seven"/>
+                </performer>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="8480-6"/>
+                            <display value="Systolic blood pressure"/>
+                        </coding>
+                    </code>
+                    <valueQuantity>
+                        <value value="107"/>
+                        <unit value="mmHg"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mm[Hg]"/>
+                    </valueQuantity>
+                </component>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="8462-4"/>
+                            <display value="Diastolic blood pressure"/>
+                        </coding>
+                    </code>
+                    <valueQuantity>
+                        <value value="60"/>
+                        <unit value="mmHg"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mm[Hg]"/>
+                    </valueQuantity>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-body-height-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-body-height-eve-everywoman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <div title="id">observation-body-height-eve-everywoman</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <div title="profile">http://hl7.org/fhir/StructureDefinition/bodyheight</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <div title="status">final</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Vital Signs</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Vital Signs</div>  (
                           
-                                                    <div title="code"
-                            >vital-signs</div> )
+                                                    
+                                                    <div title="code">vital-signs</div> )
                           
                         
+                                                
                                                 </li>
-                        <li>
-                          <div title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="text">Body height</div>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <div title="display">Body height</div>  (
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="text">Body height</div>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Body height</div>  (
                           
-                                                    <div title="code"
-                            >8302-2</div> )
+                                                    
+                                                    <div title="code">8302-2</div> )
                           
                         
+                                                
                                                 </li>
-                        <li>
-                          <div title="system">
-                            <a href="http://loinc.org">http://loinc.org</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <div title="effectiveDateTime">2019-01-17</div>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueQuantity</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <div title="value">21</div>
-                    </li>
-                    <li>
-                      <div title="unit">in</div>
-                    </li>
-                    <li>
-                      <div title="system">
-                        <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div title="code">[in_i]</div>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="vital-signs" />
-            <display value="Vital Signs" />
-          </coding>
-          <text value="Vital Signs" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="8302-2" />
-            <display value="Body height" />
-          </coding>
-          <text value="Body height" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="Practitioner/practitioner-bser-henry-seven" />
-        </performer>
-        <valueQuantity>
-          <value value="21" />
-          <unit value="in" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="[in_i]" />
-        </valueQuantity>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-bmi-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-bmi-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/bmi" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <span title="id">observation-bmi-eve-everywoman</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <span title="profile">http://hl7.org/fhir/StructureDefinition/bmi</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <span title="status">final</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Vital Signs</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Vital Signs</span>  (
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <div title="effectiveDateTime">2019-01-17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="value">21</div>
+                                        </li>
+                                        <li>
+                                            <div title="unit">in</div>
+                                        </li>
+                                        <li>
+                                            <div title="system">
+                                                <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div title="code">[in_i]</div>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8302-2"/>
+                        <display value="Body height"/>
+                    </coding>
+                    <text value="Body height"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="Practitioner/practitioner-bser-henry-seven"/>
+                </performer>
+                <valueQuantity>
+                    <value value="21"/>
+                    <unit value="in"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="[in_i]"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-bmi-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-bmi-eve-everywoman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <span title="id">observation-bmi-eve-everywoman</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <span title="profile">http://hl7.org/fhir/StructureDefinition/bmi</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <span title="status">final</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Vital Signs</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Vital Signs</span>  (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >vital-signs</span> )
+                                                    
+                                                    <span title="code">vital-signs</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">BMI</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Body mass index (BMI) [Ratio]</span>  (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">BMI</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Body mass index (BMI) [Ratio]</span>  (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >39156-5</span> )
+                                                    
+                                                    <span title="code">39156-5</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://loinc.org">http://loinc.org</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <span title="effectiveDateTime">2019-01-17</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueQuantity</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="value">16.2</span>
-                    </li>
-                    <li>
-                      <span title="unit">kg/m2</span>
-                    </li>
-                    <li>
-                      <span title="system">
-                        <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                      </span>
-                    </li>
-                    <li>
-                      <span title="code">kg/m2</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="vital-signs" />
-            <display value="Vital Signs" />
-          </coding>
-          <text value="Vital Signs" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="39156-5" />
-            <display value="Body mass index (BMI) [Ratio]" />
-          </coding>
-          <text value="BMI" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="Practitioner/practitioner-bser-henry-seven" />
-        </performer>
-        <valueQuantity>
-          <value value="16.2" />
-          <unit value="kg/m2" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="kg/m2" />
-        </valueQuantity>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/observation-body-weight-eve-everywoman" />
-    <resource>
-      <Observation>
-        <id value="observation-body-weight-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <span title="id">observation-body-weight-eve-everywoman</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <span title="profile">http://hl7.org/fhir/StructureDefinition/bodyweight</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">status</td>
-                <td>
-                  <span title="status">final</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Vital Signs</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Vital Signs</span>  (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <span title="effectiveDateTime">2019-01-17</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="value">16.2</span>
+                                        </li>
+                                        <li>
+                                            <span title="unit">kg/m2</span>
+                                        </li>
+                                        <li>
+                                            <span title="system">
+                                                <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span title="code">kg/m2</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="39156-5"/>
+                        <display value="Body mass index (BMI) [Ratio]"/>
+                    </coding>
+                    <text value="BMI"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="Practitioner/practitioner-bser-henry-seven"/>
+                </performer>
+                <valueQuantity>
+                    <value value="16.2"/>
+                    <unit value="kg/m2"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="kg/m2"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-body-weight-eve-everywoman"/>
+        <resource>
+            <Observation>
+                <id value="observation-body-weight-eve-everywoman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <span title="id">observation-body-weight-eve-everywoman</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <span title="profile">http://hl7.org/fhir/StructureDefinition/bodyweight</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">status</td>
+                                <td>
+                                    <span title="status">final</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Vital Signs</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Vital Signs</span>  (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >vital-signs</span> )
+                                                    
+                                                    <span title="code">vital-signs</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">Body weight</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Body weight</span>  (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">Body weight</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Body weight</span>  (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >29463-7</span> )
+                                                    
+                                                    <span title="code">29463-7</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://loinc.org">http://loinc.org</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">subject</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li />
-                    <li>
-                      <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">effectiveDateTime</td>
-                <td>
-                  <span title="effectiveDateTime">2019-01-17</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">performer</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">valueQuantity</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="value">65</span>
-                    </li>
-                    <li>
-                      <span title="unit">kg</span>
-                    </li>
-                    <li>
-                      <span title="system">
-                        <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
-                      </span>
-                    </li>
-                    <li>
-                      <span title="code">kg</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="final" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-            <code value="vital-signs" />
-            <display value="Vital Signs" />
-          </coding>
-          <text value="Vital Signs" />
-        </category>
-        <code>
-          <coding>
-            <system value="http://loinc.org" />
-            <code value="29463-7" />
-            <display value="Body weight" />
-          </coding>
-          <text value="Body weight" />
-        </code>
-        <subject>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </subject>
-        <effectiveDateTime value="2019-01-17" />
-        <performer>
-          <reference value="Practitioner/practitioner-bser-henry-seven" />
-        </performer>
-        <valueQuantity>
-          <value value="65" />
-          <unit value="kg" />
-          <system value="http://unitsofmeasure.org" />
-          <code value="kg" />
-        </valueQuantity>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="Observation/allergyintolerance-us-core-allergyint-eve-everywoman" />
-    <resource>
-      <AllergyIntolerance>
-        <id value="allergyintolerance-us-core-allergyint-eve-everywoman" />
-        <meta>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-              <tr>
-                <td style="font-weight: bold">id</td>
-                <td>
-                  <span title="id">allergyintolerance-us-core-allergyint-eve-everywoman</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">meta</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">versionId</td>
-                      <td>
-                        <span title="versionId">1</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">lastUpdated</td>
-                      <td>
-                        <span title="lastUpdated">2019-12-10T22:03:24.000-05:00</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">profile</td>
-                      <td>
-                        <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">clinicalStatus</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li> (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">subject</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li/>
+                                        <li>
+                                            <a href="Patient-patient-us-core-patient-eve-everywoman.html">Eve Everywoman</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">effectiveDateTime</td>
+                                <td>
+                                    <span title="effectiveDateTime">2019-01-17</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">performer</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <a href="Practitioner-practitioner-bser-henry-seven.html">Practitioner/practitioner-bser-henry-seven</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueQuantity</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="value">65</span>
+                                        </li>
+                                        <li>
+                                            <span title="unit">kg</span>
+                                        </li>
+                                        <li>
+                                            <span title="system">
+                                                <a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span title="code">kg</span>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="29463-7"/>
+                        <display value="Body weight"/>
+                    </coding>
+                    <text value="Body weight"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </subject>
+                <effectiveDateTime value="2019-01-17"/>
+                <performer>
+                    <reference value="Practitioner/practitioner-bser-henry-seven"/>
+                </performer>
+                <valueQuantity>
+                    <value value="65"/>
+                    <unit value="kg"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="kg"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/allergyintolerance-us-core-allergyint-eve-everywoman"/>
+        <resource>
+            <AllergyIntolerance>
+                <id value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">id</td>
+                                <td>
+                                    <span title="id">allergyintolerance-us-core-allergyint-eve-everywoman</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">meta</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">versionId</td>
+                                            <td>
+                                                <span title="versionId">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">lastUpdated</td>
+                                            <td>
+                                                <span title="lastUpdated">2019-12-10T22:03:24.000-05:00</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">profile</td>
+                                            <td>
+                                                <span title="profile">http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">clinicalStatus</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li> (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >active</span> )
+                                                    
+                                                    <span title="code">active</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
-                              >http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">verificationStatus</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li> (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical">http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">verificationStatus</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li> (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >confirmed</span> )
+                                                    
+                                                    <span title="code">confirmed</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
-                              >http://terminology.hl7.org/CodeSystem/allergyintolerance-verification</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">category</td>
-                <td>
-                  <span title="category">medication</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">criticality</td>
-                <td>
-                  <span title="criticality">high</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">code</td>
-                <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                    <li>
-                      <span title="text">sulfonamide antibacterial</span>
-                    </li>
-                    <li>
-                      <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>
-                          <span title="display"
-                            >Sulfonamide (substance)</span>  (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification">http://terminology.hl7.org/CodeSystem/allergyintolerance-verification</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">category</td>
+                                <td>
+                                    <span title="category">medication</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">criticality</td>
+                                <td>
+                                    <span title="criticality">high</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <span title="text">sulfonamide antibacterial</span>
+                                        </li>
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <span title="display">Sulfonamide (substance)</span>  (
                             
                                                     
-                                                    <span
-                            title="code"
-                          >387406002</span> )
+                                                    
+                                                    <span title="code">387406002</span> )
                             
                           
                                                 
+                                                
                                                 </li>
-                        <li>
-                          <span title="system">
-                            <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                          </span>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold">reaction</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td style="font-weight: bold">manifestation</td>
-                      <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                          <li>
-                            <span title="text">skin rash</span>
-                          </li>
-                          <li>
-                            <ul style="list-style:none; padding-left:0; margin:0 0;">
-                              <li>
-                                <span title="display"
-                                  >skin rash</span>  (
+                                                <li>
+                                                    <span title="system">
+                                                        <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">reaction</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="font-weight: bold">manifestation</td>
+                                            <td>
+                                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                    <li>
+                                                        <span title="text">skin rash</span>
+                                                    </li>
+                                                    <li>
+                                                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                            <li>
+                                                                <span title="display">skin rash</span>  (
                                   
                                                                 
-                                                                <span
-                                  title="code"
-                                >271807003</span> )
+                                                                
+                                                                <span title="code">271807003</span> )
                                   
                                 
                                                             
+                                                            
                                                             </li>
-                              <li>
-                                <span title="system">
-                                  <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                                </span>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: bold">severity</td>
-                      <td>
-                        <span title="severity">mild</span>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <clinicalStatus>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
-            <code value="active" />
-          </coding>
-        </clinicalStatus>
-        <verificationStatus>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
-            <code value="confirmed" />
-          </coding>
-        </verificationStatus>
-        <category value="medication" />
-        <criticality value="high" />
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="387406002" />
-            <display value="Sulfonamide (substance)" />
-          </coding>
-          <text value="sulfonamide antibacterial" />
-        </code>
-        <patient>
-          <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-          <display value="Eve Everywoman" />
-        </patient>
-        <reaction>
-          <manifestation>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="271807003" />
-              <display value="skin rash" />
-            </coding>
-            <text value="skin rash" />
-          </manifestation>
-          <severity value="mild" />
-        </reaction>
-      </AllergyIntolerance>
-    </resource>
-  </entry>
+                                                            <li>
+                                                                <span title="system">
+                                                                    <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold">severity</td>
+                                            <td>
+                                                <span title="severity">mild</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+                        <code value="active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+                        <code value="confirmed"/>
+                    </coding>
+                </verificationStatus>
+                <category value="medication"/>
+                <criticality value="high"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="387406002"/>
+                        <display value="Sulfonamide (substance)"/>
+                    </coding>
+                    <text value="sulfonamide antibacterial"/>
+                </code>
+                <patient>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                    <display value="Eve Everywoman"/>
+                </patient>
+                <reaction>
+                    <manifestation>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="271807003"/>
+                            <display value="skin rash"/>
+                        </coding>
+                        <text value="skin rash"/>
+                    </manifestation>
+                    <severity value="mild"/>
+                </reaction>
+            </AllergyIntolerance>
+        </resource>
+    </entry>
 </Bundle>

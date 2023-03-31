@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2019-12-20T03:42:29.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:45:19.662+00:00"/>
+        <source value="#HHrAPEJD3E2OI4sg"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -50,8 +50,10 @@
                                     <li>
                                         <div title="display">Number of appointments attended (observable entity)</div>  (
                                         
+                                        
                                         <div title="code">298057009</div> )
           
+                                    
                                     
                                     </li>
                                     <li>

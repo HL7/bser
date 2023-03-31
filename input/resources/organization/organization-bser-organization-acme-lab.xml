@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="organization-bser-organization-acme-lab"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-01-20T17:34:47.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:03:47.224+00:00"/>
+        <source value="#pnBgKqzYP4VIoHr0"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -38,7 +37,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
                                 <span title="system">
-                                  <a href="http://hl7.org/fhir/sid/us-npi">http://hl7.org/fhir/sid/us-npi</a>
+                                    <a href="http://hl7.org/fhir/sid/us-npi">http://hl7.org/fhir/sid/us-npi</a>
                                 </span>
                             </li>
                             <li>
@@ -76,8 +75,10 @@
                                         <span title="display">Healthcare Provider</span>  (
                                         
                                         
+                                        
                                         <span title="code">prov</span> )
           
+                                    
                                     
                                     
                                     </li>
@@ -176,7 +177,7 @@
         </div>
     </text>
     <identifier>
-      <system value="http://hl7.org/fhir/sid/us-npi"/>
+        <system value="http://hl7.org/fhir/sid/us-npi"/>
         <value value="1144221847"/>
     </identifier>
     <identifier>

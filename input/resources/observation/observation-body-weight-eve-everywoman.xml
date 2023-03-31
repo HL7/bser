@@ -3,7 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-body-weight-eve-everywoman"/>
     <meta>
-      <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-23T07:09:27.314+00:00"/>
+        <source value="#RRamooNKXxoD5ilQ"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
     </meta>
     <status value="final"/>
     <category>

@@ -4,15 +4,15 @@
     <id value="observation-BSeR-HA1c-Observation-eve-everywoman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2019-12-10T21:56:46.000-05:00"/>
+        <lastUpdated value="2022-09-16T16:45:19.321+00:00"/>
+        <source value="#T0gv7hC49av1FaeR"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -45,8 +45,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <span title="code">laboratory</span> )
             
+                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -66,8 +68,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <span title="display">Hemoglobin A1c/Hemoglobin.total in Blood</span>  (
+                                        
                                         <span title="code">4548-4</span> )
           
+                                    
                                     </li>
                                     <li>
                                         <span title="system">

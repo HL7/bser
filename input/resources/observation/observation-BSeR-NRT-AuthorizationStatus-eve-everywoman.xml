@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-20T17:19:48.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:45:19.318+00:00"/>
+        <source value="#glNwjh4eU7mB5OzQ"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -58,8 +58,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Nicotine replacement therapy (situation)</div>  (
+                                        
                                         <div title="code">313396002</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -106,8 +108,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Approved</div>  (
+                                        
                                         <div title="code">AP</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">

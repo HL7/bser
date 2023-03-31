@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="BSeR-ReferralTask"/>
+    <id value="ReferralTask"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:38.241+00:00"/>
-        <source value="#ZJBpkjD8jfPCaDRK"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-03-31T01:37:39.926+00:00"/>
+        <source value="#1ENNfasiZx61n3bi"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
-    <name value="BSeR_ReferralTask"/>
-    <title value="BSeR Referral Task"/>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralTask"/>
+    <name value="ReferralTask"/>
+    <title value="Referral Task"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is used in BSeR to track the performance and state of completion of the referral service request."/>
+    <description value="A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is used in a referral to track the performance and state of completion of the referral service request."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -42,12 +42,14 @@
             </slicing>
             <min value="1"/>
             <max value="2"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.identifier:referralInitiatorTaskIdentifier">
             <path value="Task.identifier"/>
             <sliceName value="referralInitiatorTaskIdentifier"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.identifier:referralInitiatorTaskIdentifier.type">
             <path value="Task.identifier.type"/>
@@ -58,24 +60,39 @@
                     <code value="PLAC"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.identifier:referralInitiatorTaskIdentifier.value">
             <path value="Task.identifier.value"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.identifier:referralInitiatorTaskIdentifier.assigner">
             <path value="Task.identifier.assigner"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.identifier:referralRecipientTaskIdentifier">
             <path value="Task.identifier"/>
             <sliceName value="referralRecipientTaskIdentifier"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Task.partOf">
+            <path value="Task.partOf"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Task.partOf:supportedPartOf">
+            <path value="Task.partOf"/>
+            <sliceName value="supportedPartOf"/>
         </element>
         <element id="Task.identifier:referralRecipientTaskIdentifier.type">
             <path value="Task.identifier.type"/>
@@ -86,11 +103,13 @@
                     <code value="FILL"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.identifier:referralRecipientTaskIdentifier.value">
             <path value="Task.identifier.value"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.identifier:referralRecipientTaskIdentifier.assigner">
             <path value="Task.identifier.assigner"/>
@@ -98,22 +117,46 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.status">
             <path value="Task.status"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Task.statusReason">
+            <path value="Task.statusReason"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.businessStatus">
             <path value="Task.businessStatus"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
                 <valueSet value="http://hl7.org/fhir/us/bser/ValueSet/TaskBusinessStatusVS"/>
             </binding>
+        </element>
+        <element id="Task.intent">
+            <path value="Task.intent"/>
+            <fixedCode value="order"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Task.code">
+            <path value="Task.code"/>
+            <short value="Fulfill the focal request"/>
+            <min value="1"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+                    <code value="fulfill"/>
+                </coding>
+            </fixedCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.focus">
             <path value="Task.focus"/>
@@ -121,13 +164,25 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest"/>
             </type>
+        </element>
+        <element id="Task.for">
+            <path value="Task.for"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.authoredOn">
             <path value="Task.authoredOn"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.requester">
             <path value="Task.requester"/>
@@ -135,17 +190,16 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.owner">
             <path value="Task.owner"/>
             <min value="1"/>
             <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
-            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Task.note">
             <path value="Task.note"/>
@@ -163,7 +217,6 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle"/>
             </type>
         </element>
     </differential>

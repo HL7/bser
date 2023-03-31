@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-12-19T21:26:06.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-06T04:55:07.386+00:00"/>
+        <source value="#EkehsUzxmA9eWJCT"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -51,8 +51,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <span title="code">active</span> )
             
+                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -71,8 +73,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <span title="code">confirmed</span> )
             
+                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -107,8 +111,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <span title="display">Sulfonamide (substance)</span>  (
+                                        
                                         <span title="code">387406002</span> )
           
+                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -135,8 +141,10 @@
                                             <ul style="list-style:none; padding-left:0; margin:0 0;">
                                                 <li>
                                                     <span title="display">skin rash</span>  (
+                                                    
                                                     <span title="code">271807003</span> )
           
+                                                
                                                 </li>
                                                 <li>
                                                     <span title="system">

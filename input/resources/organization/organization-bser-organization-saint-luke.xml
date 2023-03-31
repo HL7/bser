@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="organization-bser-organization-saint-luke"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-01-20T17:34:47.000-05:00"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:03:47.225+00:00"/>
+        <source value="#5aA2o9Jur2uS9rAu"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -50,7 +49,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>
                                 <div title="system">
-                                  <a href="http://hl7.org/fhir/sid/us-npi">http://hl7.org/fhir/sid/us-npi</a>
+                                    <a href="http://hl7.org/fhir/sid/us-npi">http://hl7.org/fhir/sid/us-npi</a>
                                 </div>
                             </li>
                             <li>
@@ -73,8 +72,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Healthcare Provider</div>  (
+                                        
                                         <div title="code">prov</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -177,7 +178,7 @@
         </div>
     </text>
     <identifier>
-      <system value="http://hl7.org/fhir/sid/us-npi"/>
+        <system value="http://hl7.org/fhir/sid/us-npi"/>
         <value value="1063494177"/>
     </identifier>
     <active value="true"/>

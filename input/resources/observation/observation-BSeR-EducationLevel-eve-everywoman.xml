@@ -3,23 +3,24 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-BSeR-EducationLevel-eve-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-20T17:17:04.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:45:19.320+00:00"/>
+        <source value="#DFJEDlrrXqT24eUf"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     </meta>
     <status value="final"/>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-      <code value="social-history"/>
-      <display value="Social History"/>
-    </coding>
-    <text value="Social History"/>
-  </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+        </coding>
+        <text value="Social History"/>
+    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
-          <code value="82589-3"/>
+            <code value="82589-3"/>
         </coding>
     </code>
     <subject>

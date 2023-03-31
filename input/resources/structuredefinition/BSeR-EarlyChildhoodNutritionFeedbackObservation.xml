@@ -1,84 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BSeR-EarlyChildhoodNutritionFeedbackObservation" />
-  <meta>
-    <versionId value="11" />
-    <lastUpdated value="2019-12-20T21:52:26.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
-  <name value="BSeR_EarlyChildhoodNutritionFeedbackObservation" />
-  <title value="BSeR Early Childhood Nutrition Feedback Observation" />
-  <status value="active" />
-  <publisher value="HL7 Public Health Work Group"/>
-  <description value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral." />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-      <display value="United States of America" />
-    </coding>
-    <text value="United States of America" />
-  </jurisdiction>
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Observation">
-      <path value="Observation" />
-    </element>
-    <element id="Observation.meta">
-      <path value="Observation.meta" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Observation.meta.profile">
-      <path value="Observation.meta.profile" />
-      <min value="1" />
-      <max value="1" />
-      <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
-    </element>
-    <element id="Observation.status">
-      <path value="Observation.status" />
-      <min value="1" />
-      <max value="1" />
-      <patternCode value="final" />
-    </element>
-    <element id="Observation.code">
-      <path value="Observation.code" />
-      <min value="1" />
-      <max value="1" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.39" />
-      </binding>
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-      </type>
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="boolean" />
-      </type>
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.73" />
-      </binding>
-    </element>
-  </differential>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:05:37.705+00:00"/>
+        <source value="#I5BWI6UNSvTwVeHI"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+    <name value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
+    <title value="BSeR Early Childhood Nutrition Feedback Observation"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.meta">
+            <path value="Observation.meta"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.meta.profile">
+            <path value="Observation.meta.profile"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+        </element>
+        <element id="Observation.status">
+            <path value="Observation.status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCode value="final"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.39"/>
+            </binding>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.73"/>
+            </binding>
+        </element>
+    </differential>
 </StructureDefinition>

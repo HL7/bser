@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="relatedperson-mom-everymom"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2019-12-19T21:36:45.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:04:17.996+00:00"/>
+        <source value="#ELPlZH9fHvRsAlcs"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -25,8 +25,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <span title="code">SS</span> )
             
+                                    
                                     </li>
                                     <li>
                                         <span title="system">
@@ -73,8 +75,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <span title="display">natural mother</span>  (
+                                        
                                         <span title="code">NMTH</span> )
           
+                                    
                                     </li>
                                     <li>
                                         <span title="system">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-EducationLevel"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-06T06:01:54.849+00:00"/>
-        <source value="#BwdyfGVffLjrRtRx"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-09-06T06:03:41.873+00:00"/>
+        <source value="#JhvHRjcwtTDa59Xo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     <name value="BSeR_EducationLevel"/>

@@ -1,1101 +1,1219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="bser" />
-  <meta>
-    <versionId value="399" />
-    <lastUpdated value="2020-01-22T02:39:06.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser" />
-  <version value="1.0.0" />
-  <name value="BSeR_BidirectionalServices_eReferral" />
-  <title value="BSeR: Bidirectional Services_eReferral" />
-  <status value="draft" />
-  <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)" />
-  <contact>
-    <name value="HL7 International - Public Health" />
-    <telecom>
-      <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/pher" />
-    </telecom>
-  </contact>
-  <description
-    value="The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. The goal of the BSeR project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting." />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-      <display value="United States of America" />
-    </coding>
-    <text value="United States of America" />
-  </jurisdiction>
-  <packageId value="hl7.fhir.us.bser" />
-  <fhirVersion value="4.0.1" />
-  <dependsOn id="hl7fhiruscore">
-    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core" />
-    <packageId value="hl7.fhir.us.core" />
-    <version value="5.0.1" />
-  </dependsOn>
-  <dependsOn id="usnlmvsac">
-    <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />
-    <packageId value="us.nlm.vsac" />
-    <version value="0.7.0" />
-  </dependsOn>
-  <dependsOn id="uscdcphinvads">
-    <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads" />
-    <packageId value="us.cdc.phinvads" />
-    <version value="0.12.0" />
-  </dependsOn>
-  <dependsOn id="hl7fhirusodh">
-    <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh" />
-    <packageId value="hl7.fhir.us.odh" />
-    <version value="1.1.0" />
-  </dependsOn>
-  <definition>
-    <grouping>
-      <name value="default" />
-    </grouping>
-    <grouping id="referral-participant-resources">
-      <name value="Referral Participant Resources" />
-    </grouping>
-    <grouping id="workflow-management-resources">
-      <name value="Workflow Management Resources" />
-    </grouping>
-    <grouping id="referral-service-request-resources">
-      <name value="Referral Service Request Resources" />
-    </grouping>
-    <grouping id="referral-service-request-feedback-resources">
-      <name value="Referral Service Request Feedback Resources" />
-    </grouping>
-    <grouping id="supporting-information-bundles">
-      <name value="Service Request and Referral Feedback Supporting Information Bundles" />
-    </grouping>
-    <grouping id="supporting-information-resources">
-      <name value="Supporting Information Resources" />
-    </grouping>
-    <grouping id="other-resources">
-      <name value="Other Resources" />
-    </grouping>
-
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation" />
-        <display value="BSeR_ArthritisFeedbackObservation" />
-      </reference>
-      <name value="BSeR_ArthritisFeedbackObservation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation" />
-        <display value="BSeR_ArthritisReferralFeedbackSupportingInformation" />
-      </reference>
-      <name value="BSeR_ArthritisReferralFeedbackSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
-        <display value="BSeR_ArthritisReferralSupportingInformation" />
-      </reference>
-      <name value="BSeR_ArthritisReferralSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation" />
-        <display value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation" />
-      </reference>
-      <name value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-Coverage" />
-        <display value="BSeR_Coverage" />
-      </reference>
-      <name value="BSeR_Coverage" />
-      <exampleBoolean value="false" />
-      <groupingId value="other-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation" />
-        <display value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation" />
-      </reference>
-      <name value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation" />
-        <display value="BSeR_DiabetesPreventionReferralSupportingInformation" />
-      </reference>
-      <name value="BSeR_DiabetesPreventionReferralSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-Diagnosis" />
-        <display value="BSeR_Diagnosis" />
-      </reference>
-      <name value="BSeR_Diagnosis" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
-        <display value="BSeR_EarlyChildhoodNutritionFeedbackObservation" />
-      </reference>
-      <name value="BSeR_EarlyChildhoodNutritionFeedbackObservation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionObservation" />
-        <display value="BSeR_EarlyChildhoodNutritionObservation" />
-      </reference>
-      <name value="BSeR_EarlyChildhoodNutritionObservation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation" />
-        <display value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation" />
-      </reference>
-      <name value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-EducationLevel" />
-        <display value="BSeR_EducationLevel" />
-      </reference>
-      <name value="BSeR_EducationLevel" />
-      <exampleBoolean value="false" />
-      <groupingId value="other-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-HA1C-Observation" />
-        <display value="BSeR_HA1C-Observation" />
-      </reference>
-      <name value="BSeR_HA1C-Observation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation" />
-        <display value="BSeR_HypertensionReferralFeedbackSupportingInformation" />
-      </reference>
-      <name value="BSeR_HypertensionReferralFeedbackSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-HypertensionReferralSupportingInformation" />
-        <display value="BSeR_HypertensionReferralSupportingInformation" />
-      </reference>
-      <name value="BSeR_HypertensionReferralSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-MedicationStatement" />
-        <display value="BSeR_MedicationStatement" />
-      </reference>
-      <name value="BSeR_MedicationStatement" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-NRT-AuthorizationStatus" />
-        <display value="BSeR_NRT-AuthorizationStatus" />
-      </reference>
-      <name value="BSeR_NRT-AuthorizationStatus" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation" />
-        <display value="BSeR_ObesityReferralFeedbackSupportingInformation" />
-      </reference>
-      <name value="BSeR_ObesityReferralFeedbackSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ObesityReferralSupportingInformation" />
-        <display value="BSeR_ObesityReferralSupportingInformation" />
-      </reference>
-      <name value="BSeR_ObesityReferralSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-Organization" />
-        <display value="BSeR_Organization" />
-      </reference>
-      <name value="BSeR_Organization" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-participant-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ParticipationFeedbackObservation" />
-        <display value="BSeR_ParticipationFeedbackObservation" />
-      </reference>
-      <name value="BSeR_ParticipationFeedbackObservation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-PatientConsent" />
-        <display value="BSeR_PatientConsent" />
-      </reference>
-      <name value="BSeR_PatientConsent" />
-      <exampleBoolean value="false" />
-      <groupingId value="other-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-Practitioner" />
-        <display value="BSeR_Practitioner" />
-      </reference>
-      <name value="BSeR_Practitioner" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-participant-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralActivityStatus" />
-        <display value="BSeR_ReferralActivityStatus" />
-      </reference>
-      <name value="BSeR_ReferralActivityStatus" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-service-request-feedback-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralFeedbackComposition" />
-        <display value="BSeR_ReferralFeedbackComposition" />
-      </reference>
-      <name value="BSeR_ReferralFeedbackComposition" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-service-request-feedback-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralFeedbackDocumentBundle" />
-        <display value="BSeR_ReferralFeedbackDocumentBundle" />
-      </reference>
-      <name value="BSeR_ReferralFeedbackDocumentBundle" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-service-request-feedback-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
-        <display value="BSeR_ReferralInitiatorPractitionerRole" />
-      </reference>
-      <name value="BSeR_ReferralInitiatorPractitionerRole" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-participant-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralMessageBundle" />
-        <display value="BSeR Referral Message Bundle" />
-      </reference>
-      <name value="BSeR Referral Message Bundle" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-service-request-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralMessageHeader" />
-        <display value="BSeR_ReferralMessageHeader" />
-      </reference>
-      <name value="BSeR_ReferralMessageHeader" />
-      <exampleBoolean value="false" />
-      <groupingId value="workflow-management-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralRecipientPractitionerRole" />
-        <display value="BSeR-ReferralRecipientPractitionerRole" />
-      </reference>
-      <name value="BSeR_ReferralRecipientPractitionerRole" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-participant-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralRequestComposition" />
-        <display value="BSeR_ReferralRequestComposition" />
-      </reference>
-      <name value="BSeR_ReferralRequestComposition" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-service-request-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralRequestDocumentBundle" />
-        <display value="BSeR_ReferralRequestDocumentBundle" />
-      </reference>
-      <name value="BSeR_ReferralRequestDocumentBundle" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-service-request-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralServiceRequest" />
-        <display value="BSeR_ReferralServiceRequest" />
-      </reference>
-      <name value="BSeR_ReferralServiceRequest" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-service-request-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ReferralTask" />
-        <display value="BSeR_ReferralTask" />
-      </reference>
-      <name value="BSeR_ReferralTask" />
-      <exampleBoolean value="false" />
-      <groupingId value="workflow-management-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-ServiceDeliveryLocation" />
-        <display value="BSeR_ServiceDeliveryLocation" />
-      </reference>
-      <name value="BSeR_ServiceDeliveryLocation" />
-      <exampleBoolean value="false" />
-      <groupingId value="referral-participant-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-TelcomCommunicationPreferences" />
-        <display value="BSeR-TelcomCommunicationPreferences" />
-      </reference>
-      <name value="BSeR-TelcomCommunicationPreferences" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication" />
-        <display value="BSeR_TobaccoUseCessationFeedbackMedication" />
-      </reference>
-      <name value="BSeR_TobaccoUseCessationFeedbackMedication" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-        <display value="BSeR_TobaccoUseCessationFeedbackObservation" />
-      </reference>
-      <name value="BSeR_TobaccoUseCessationFeedbackObservation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-resources" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation" />
-        <display value="BSeR_TobaccoUseCessationReferralFeedbackSupportingInformation" />
-      </reference>
-      <name value="BSeR_TobaccoUseCessationReferralFeedbackSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation" />
-        <display value="BSeR_TobaccoUseCessationReferralSupportingInformation" />
-      </reference>
-      <name value="BSeR_TobaccoUseCessationReferralSupportingInformation" />
-      <exampleBoolean value="false" />
-      <groupingId value="supporting-information-bundles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CapabilityStatement/capabilitystatement-bser" />
-        <display value="Capability Statement BSeR" />
-      </reference>
-      <name value="Capability Statement BSeR" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/bser" />
-        <display value="BSeR" />
-      </reference>
-      <name value="BSeR" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/TaskBusinessStatusCS" />
-        <display value="Task Business Status Code System" />
-      </reference>
-      <name value="Task Business Status Code System" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/BSeR-TelcomCommunicationPreferencesVS" />
-        <display value="BSeR Telcom Communication Preferences VS" />
-      </reference>
-      <name value="BSeR Telcom Communication Preferences VS" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/TaskBusinessStatusVS" />
-        <display value="Task Business Status VS" />
-      </reference>
-      <name value="Task Business Status VS" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-arthritis-referral-everywoman" />
-        <display value="bundle-bser-arthritis-referral-everywoman" />
-      </reference>
-      <name value="bundle-bser-arthritis-referral-everywoman" />
-      <description value="Example of BSeR-ArthritisReferralSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman" />
-        <display value="bundle-bser-arthritis-referral-feedback-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-arthritis-referral-feedback-eve-everywoman" />
-      <description value="Example of BSeR-ArthritisReferralFeedbackSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-diabetes-referral-eve-everywoman" />
-        <display value="bundle-bser-diabetes-referral-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-diabetes-referral-eve-everywoman" />
-      <description value="Example of BSeR-DiabetesPreventionReferralSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-diabetes-referral-feedback-eve-everywoman" />
-        <display value="bundle-bser-diabetes-referral-feedback-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-diabetes-referral-feedback-eve-everywoman" />
-      <description value="Example of BSeR-DiabetesPreventionReferralFeedbackSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-hypertension-feedback-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-hypertension-feedback-eve-everywoman" />
-      <description value="Example of BSeR-HypertensionReferralFeedbackSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-hypertension-referral-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-hypertension-referral-eve-everywoman" />
-      <description value="Example of BSeR-HypertensionReferralSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-nutrition-referral-eve-everywoman" />
-        <display value="bundle-bser-nutrition-referral-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-nutrition-referral-eve-everywoman" />
-      <description value="Example of BSeR-EarlyChildhoodNutritionReferralSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-nutrition-referral-feedback-eve-everywoman" />
-        <display value="bundle-bser-nutrition-referral-feedback-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-nutrition-referral-feedback-eve-everywoman" />
-      <description value="Example of BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-obesity-feedback-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-obesity-feedback-eve-everywoman" />
-      <description value="Example of BSeR-ObesityReferralFeedbackSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-obesity-referral-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-obesity-referral-eve-everywoman" />
-      <description value="Example of BSeR-ObesityReferralSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman" />
-        <display value="bundle-bser-referral-feedback-document-bundle-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-referral-feedback-document-bundle-eve-everywoman" />
-      <description value="Example of BSeR-ReferralFeedbackDocumentBundle profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-referral-message-bundle-eve-everywoman" />
-        <display value="bundle-bser-referral-message-bundle-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-referral-message-bundle-eve-everywoman" />
-      <description value="Example of BSeR-ReferralMessageBundle profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman" />
-        <display value="bundle-bser-referral-request-document-bundle-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-referral-request-document-bundle-eve-everywoman" />
-      <description value="Example of BSeR-ReferralRequestDocumentBundle profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-tobacco-referral-eve-everywoman" />
-        <display value="bundle-bser-tobacco-referral-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-tobacco-referral-eve-everywoman" />
-      <description value="Example of BSeR-TobaccoUseCessationReferralSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman" />
-        <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman" />
-      </reference>
-      <name value="bundle-bser-tobacco-referral-feedback-eve-everywoman" />
-      <description value="Example of BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Composition/composition-bser-referral-feedback" />
-        <display value="Referral feedback" />
-      </reference>
-      <name value="Referral feedback" />
-      <description value="Example of StructureDefinition/BSeR-ReferralFeedbackComposition profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Composition/composition-bser-referral-request" />
-        <display value="Referral request" />
-      </reference>
-      <name value="Referral request" />
-      <description value="Example of BSeR-ReferralRequestComposition profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman" />
-        <display value="allergyintolerance-us-core-allergyint-eve-everywoman" />
-      </reference>
-      <name value="allergyintolerance-us-core-allergyint-eve-everywoman" />
-      <description value="Example of US Core AllergyIntolerance profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Condition/condition-BSeR-Diagnosis-eve-everywoman-diabetes" />
-        <display value="condition-BSeR-Diagnosis-eve-everywoman-diabetes" />
-      </reference>
-      <name value="condition-BSeR-Diagnosis-eve-everywoman-diabetes" />
-      <description value="Example of BSeR-Diagnosis profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Consent/consent-BSeR-PatientConsent-eve-everywoman" />
-        <display value="consent-BSeR-PatientConsent-eve-everywoman" />
-      </reference>
-      <name value="consent-BSeR-PatientConsent-eve-everywoman" />
-      <description value="Example of BSeR-PatientConsent profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Coverage/coverage-BSeR-Coverage-eve-everywoman" />
-        <display value="coverage-BSeR-Coverage-eve-everywoman" />
-      </reference>
-      <name value="coverage-BSeR-Coverage-eve-everywoman" />
-      <description value="Example of BSeR-Coverage profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Location/location-bser-service-delivery-location-st-luke" />
-        <display value="Referral Center A, St. Lukes" />
-      </reference>
-      <name value="Referral Center A, St. Lukes" />
-      <description value="Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman" />
-        <display value="medication-bser-tobacco-use-cessation-feedback-eve-everywoman" />
-      </reference>
-      <name value="medication-bser-tobacco-use-cessation-feedback-eve-everywoman" />
-      <description value="Example of BSeR-TobaccoUseCessationFeedbackMedication profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MedicationStatement/medicationstatement-BSeR-eve-everywoman" />
-        <display value="medicationstatement-BSeR-eve-everywoman" />
-      </reference>
-      <name value="medicationstatement-BSeR-eve-everywoman" />
-      <description value="Example of BSeR-MedicationStatement profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MessageHeader/messageheader-BSeR-ReferralMessageHeader" />
-        <display value="messageheader-BSeR-ReferralMessageHeader" />
-      </reference>
-      <name value="messageheader-BSeR-ReferralMessageHeader" />
-      <description value="Example of BSeR-ReferralMessageHeader profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-blood-pressure-eve-everywoman-bser" />
-        <display value="observation-blood-pressure-eve-everywoman-bser" />
-      </reference>
-      <name value="observation-blood-pressure-eve-everywoman-bser" />
-      <description value="Example of FHIR Blood Pressure profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-bmi-eve-everywoman" />
-        <display value="observation-bmi-eve-everywoman" />
-      </reference>
-      <name value="observation-bmi-eve-everywoman" />
-      <description value="Example of FHIR BMI profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-body-height-baby-everybaby" />
-        <display value="observation-body-height-baby-everybaby" />
-      </reference>
-      <name value="observation-body-height-baby-everybaby" />
-      <description value="Example of FHIR Vital Sign Observation as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-body-height-eve-everywoman" />
-      </reference>
-      <name value="observation-body-height-eve-everywoman" />
-      <description value="Example of FHIR Body Height profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-body-weight-eve-everywoman" />
-        <display value="observation-body-weight-eve-everywoman" />
-      </reference>
-      <name value="observation-body-weight-eve-everywoman" />
-      <description value="Example of FHIR Body Weight profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
-        <display value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
-      <description value="Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
-        <display value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
-      <description value="Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-EducationLevel-eve-everywoman" />
-        <display value="observation-BSeR-EducationLevel-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-EducationLevel-eve-everywoman" />
-      <description value="Example of BSeR-EducationLevel profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-HA1c-Observation-eve-everywoman" />
-        <display value="observation-BSeR-HA1c-Observation-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-HA1c-Observation-eve-everywoman" />
-      <description value="Example of BSeR-HA1C-Observation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
-        <display value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" />
-      <description value="Example of BSeR-NRT-AuthorizationStatus profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman" />
-        <display value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman" />
-      <description value="Example of BSeR-EarlyChildhoodNutritionFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman" />
-        <display value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman" />
-      <description value="Example of BSeR-EarlyChildhoodNutritionFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-NutritionObs-eve-everywoman" />
-        <display value="observation-BSeR-NutritionObs-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-NutritionObs-eve-everywoman" />
-      <description value="Example of BSeR-EarlyChildhoodNutritionObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman" />
-        <display value="observation-BSeR-ReferralActivityStatus-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-ReferralActivityStatus-eve-everywoman" />
-      <description value="Example of BSeR-ReferralActivityStatus profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-TelcomComm-eve-everywoman" />
-        <display value="observation-BSeR-TelcomComm-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-TelcomComm-eve-everywoman" />
-      <description value="Example of BSeR-TelcomCommunicationPreferences profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
-        <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" />
-      <description value="Example of BSeR-TobaccoUseCessationFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
-        <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
-      </reference>
-      <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" />
-      <description value="Example of BSeR-TobaccoUseCessationFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-odh-employment-status-eve-everywoman" />
-        <display value="observation-odh-employment-status-eve-everywoman" />
-      </reference>
-      <name value="observation-odh-employment-status-eve-everywoman" />
-      <description value="Example of ODH Employment Status profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman" />
-        <display value="observation-ParticipationFeedbackObservation-1-eve-everywoman" />
-      </reference>
-      <name value="observation-ParticipationFeedbackObservation-1-eve-everywoman" />
-      <description value="Example of BSeR-ParticipationFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman" />
-        <display value="observation-ParticipationFeedbackObservation-2-eve-everywoman" />
-      </reference>
-      <name value="observation-ParticipationFeedbackObservation-2-eve-everywoman" />
-      <description value="Example of BSeR-ParticipationFeedbackObservation profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-us-core-smokingstatus-eve-everywoman" />
-        <display value="observation-us-core-smokingstatus-eve-everywoman" />
-      </reference>
-      <name value="observation-us-core-smokingstatus-eve-everywoman" />
-      <description value="Example of US Core Smoking Status profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Organization/organization-bser-organization-acme-lab" />
-        <display value="Acme Labs" />
-      </reference>
-      <name value="Acme Labs" />
-      <description value="Example of BSeR-Organization profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Organization/organization-bser-organization-saint-luke" />
-        <display value="organization-bser-organization-saint-luke" />
-      </reference>
-      <name value="Saint Luke's Hospital of Kansas City" />
-      <description value="Example of BSeR-Organization profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/patient-us-core-patient-baby-everybaby" />
-        <display value="Patient Baby B Everybaby" />
-      </reference>
-      <name value="Patient Baby B Everybaby" />
-      <description value="Example of US Core Patient profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/patient-us-core-patient-eve-everywoman" />
-        <display value="Patient Eve L Everywoman" />
-      </reference>
-      <name value="Patient Eve L Everywoman" />
-      <description value="Example of US Core Patient profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/patient-us-core-patient-mom-everymom" />
-        <display value="Patient Mom L Everymom" />
-      </reference>
-      <name value="Patient Mom L Everymom" />
-      <description value="Example of US Core Patient profile as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Practitioner/practitioner-bser-hailey-eight" />
-        <display value="Practitioner Eight Hailey" />
-      </reference>
-      <name value="Practitioner Eight Hailey" />
-      <description value="Example of BSeR-Practitioner profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Practitioner/practitioner-bser-henry-seven" />
-        <display value="Practitioner Seven Henry" />
-      </reference>
-      <name value="Practitioner Seven Henry" />
-      <description value="Example of BSeR-Practitioner profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
-        <display value="practitionerrole-bser-referral-initiator" />
-      </reference>
-      <name value="practitionerrole-bser-referral-initiator" />
-      <description value="Example of BSeR-ReferralInitiatorPractitionerRole profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
-        <display value="practitionerrole-bser-referral-recipient" />
-      </reference>
-      <name value="practitionerrole-bser-referral-recipient" />
-      <description value="Example of BSeR-ReferralRecipientPractitionerRole profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="RelatedPerson/relatedperson-mom-everymom" />
-      </reference>
-      <name value="RelatedPerson Mom L Everymom" />
-      <description value="Example of FHIR RelatedPerson resource as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="RelatedPerson/relatedperson-self-eve-everywoman" />
-      </reference>
-      <name value="RelatedPerson Self Eve Everywoman" />
-      <description value="Example of FHIR RelatedPerson resource as used in the BSeR IG" />
-      <exampleBoolean value="true" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" />
-        <display value="servicerequest-BSeR-ReferralServiceRequest" />
-      </reference>
-      <name value="servicerequest-BSeR-ReferralServiceRequest" />
-      <description value="Example of BSeR-ReferralServiceRequest profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Task/task-BSeR-ReferralTask" />
-        <display value="task-BSeR-ReferralTask" />
-      </reference>
-      <name value="task-BSeR-ReferralTask" />
-      <description value="Example of BSeR-ReferralTask profile as used in the BSeR IG" />
-      <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask" />
-    </resource>
-    <page>
-      <nameUrl value="index.html" />
-      <title value="IG Home Page" />
-      <generation value="markdown" />
-      <page>
-        <nameUrl value="toc.html" />
-        <title value="Table of Contents" />
-        <generation value="generated" />
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="bser"/>
+    <meta>
+        <versionId value="68"/>
+        <lastUpdated value="2023-03-31T03:43:10.557+00:00"/>
+        <source value="#k1sA70yuRYO6BuvC"/>
+    </meta>
+    <contained>
+        <DocumentReference>
+            <id value="8snBFszE"/>
+            <status value="current"/>
+            <type>
+                <coding>
+                    <code value="custom-menu"/>
+                </coding>
+            </type>
+            <content>
+                <attachment>
+                    <contentType value="application/xml"/>
+                    <data value="PHVsIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBjbGFzcz0ibmF2IG5hdmJhci1uYXYiPgogIDxsaT48YSBocmVmPSJpbmRleC5odG1sIj5JRyBIb21lPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9InRvYy5odG1sIj5UYWJsZSBvZiBDb250ZW50czwvYT48L2xpPgogIDxsaSBjbGFzcz0iZHJvcGRvd24iPgogICAgPGEgZGF0YS10b2dnbGU9ImRyb3Bkb3duIiBocmVmPSIjIiBjbGFzcz0iZHJvcGRvd24tdG9nZ2xlIj5CYWNrZ3JvdW5kPGIgY2xhc3M9ImNhcmV0Ij4gPC9iPgogICAgPC9hPgogICAgPHVsIGNsYXNzPSJkcm9wZG93bi1tZW51Ij4KICAgICAgPGxpPjxhIGhyZWY9IkludHJvZHVjdGlvbi5odG1sIj5JbnRyb2R1Y3Rpb248L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IkJTZVJQcm9qZWN0VGVhbS5odG1sIj5CU2VSIFByb2plY3QgVGVhbTwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iQWNrbm93bGVkZ2VtZW50cy5odG1sIj5BY2tub3dsZWRnZW1lbnRzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJTY29wZWFuZENvbnRleHQuaHRtbCI+U2NvcGUgYW5kIENvbnRleHQ8L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IlVNTHJlbmRlcmluZ29mdGhlQlNlUklHLmh0bWwiPlVNTCByZW5kZXJpbmcgb2YgdGhlIEJTZVIgSUc8L2E+PC9saT4KICAgIDwvdWw+CiAgPC9saT4KICA8bGkgY2xhc3M9ImRyb3Bkb3duIj4KICAgIDxhIGRhdGEtdG9nZ2xlPSJkcm9wZG93biIgaHJlZj0iIyIgY2xhc3M9ImRyb3Bkb3duLXRvZ2dsZSI+UmVzb3VyY2UgUHJvZmlsZSBJbmZvcm1hdGlvbjxiIGNsYXNzPSJjYXJldCI+IDwvYj4KICAgIDwvYT4KICAgIDx1bCBjbGFzcz0iZHJvcGRvd24tbWVudSI+CiAgICAgIDxsaT48YSBocmVmPSJSZXNvdXJjZVByb2ZpbGVzLmh0bWwiPlJlc291cmNlIFByb2ZpbGVzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJSZWZlcnJhbFBhcnRpY2lwYW50UmVzb3VyY2VzLmh0bWwiPlJlZmVycmFsIFBhcnRpY2lwYW50IFJlc291cmNlczwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iV29ya2Zsb3dNYW5hZ2VtZW50UmVzb3VyY2VzLmh0bWwiPldvcmtmbG93IE1hbmFnZW1lbnQgUmVzb3VyY2VzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJSZWZlcnJhbFNlcnZpY2VSZXF1ZXN0UmVzb3VyY2VzLmh0bWwiPlJlZmVycmFsIFNlcnZpY2UgUmVxdWVzdCBSZXNvdXJjZXM8L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IlJlZmVycmFsU2VydmljZVJlcXVlc3RGZWVkYmFja1Jlc291cmNlcy5odG1sIj5SZWZlcnJhbCBTZXJ2aWNlIFJlcXVlc3QgRmVlZGJhY2sgUmVzb3VyY2VzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJTZXJ2aWNlUmVxdWVzdGFuZFJlZmVycmFsRmVlZGJhY2tTdXBwb3J0aW5nSW5mb3JtYXRpb25CdW5kbGVzLmh0bWwiPlNlcnZpY2UgUmVxdWVzdCBhbmQgUmVmZXJyYWwgRmVlZGJhY2sgU3VwcG9ydGluZyBJbmZvcm1hdGlvbiBCdW5kbGVzPC9hPjwvbGk+CiAgICAgIDxsaSBjbGFzcz0iZGl2aWRlciI+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IkJpLWRpcmVjdGlvbmFsU2VydmljZWUtUmVmZXJyYWxUcmFuc2FjdGlvbnMuaHRtbCI+QmktZGlyZWN0aW9uYWwgU2VydmljZSBlLVJlZmVycmFsIFRyYW5zYWN0aW9uczwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iVHJhbnNwb3J0T3B0aW9ucy5odG1sIj5UcmFuc3BvcnQgT3B0aW9uczwvYT48L2xpPgogICAgICA8bGkgY2xhc3M9ImRpdmlkZXIiPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJBZGFwdGF0aW9uZm9yQWRkaXRpb25hbFJlZmVycmFsVXNlQ2FzZXMuaHRtbCI+QWRhcHRhdGlvbiBmb3IgQWRkaXRpb25hbCBSZWZlcnJhbCBVc2UgQ2FzZXM8L2E+PC9saT4KICAgIDwvdWw+CiAgPC9saT4KICA8bGk+PGEgaHJlZj0iRG93bmxvYWRzLmh0bWwiPkRvd25sb2FkczwvYT48L2xpPgogIDxsaT48YSBocmVmPSJhcnRpZmFjdHMuaHRtbCI+QXJ0aWZhY3QgSW5kZXg8L2E+PC9saT4KPC91bD4="/>
+                    <title value="menu.xml"/>
+                </attachment>
+            </content>
+        </DocumentReference>
+    </contained>
+    <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
+    <version value="1.0.0"/>
+    <name value="BSeR_BidirectionalServices_eReferral"/>
+    <title value="BSeR: Bidirectional Services_eReferral"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. The goal of the BSeR project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <packageId value="hl7.fhir.us.bser"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn id="uscdcphinvads">
+        <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
+        <packageId value="us.cdc.phinvads"/>
+        <version value="0.12.0"/>
+    </dependsOn>
+    <dependsOn id="usnlmvsac">
+        <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
+        <packageId value="us.nlm.vsac"/>
+        <version value="0.7.0"/>
+    </dependsOn>
+    <dependsOn id="hl7fhiruscore">
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="5.0.1"/>
+    </dependsOn>
+    <dependsOn id="hl7fhirusodh">
+        <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
+        <packageId value="hl7.fhir.us.odh"/>
+        <version value="1.1.0"/>
+    </dependsOn>
+    <definition>
+        <grouping id="core-referral-architecture-profiles">
+            <name value="Core Referral Architecture Profiles"/>
+        </grouping>
+        <grouping id="referral-participant-resources">
+            <name value="Referral Participant Resources"/>
+        </grouping>
+        <grouping id="workflow-management-resources">
+            <name value="Workflow Management Resources"/>
+        </grouping>
+        <grouping id="referral-service-request-resources">
+            <name value="Referral Service Request Resources"/>
+        </grouping>
+        <grouping id="referral-service-request-feedback-resources">
+            <name value="Referral Service Request Feedback Resources"/>
+        </grouping>
+        <grouping id="supporting-information-bundles">
+            <name value="Service Request and Referral Feedback Supporting Information Bundles"/>
+        </grouping>
+        <grouping id="supporting-information-resources">
+            <name value="Supporting Information Resources"/>
+        </grouping>
+        <grouping id="other-resources">
+            <name value="Other Resources"/>
+        </grouping>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-bser-organization-acme-lab"/>
+                <display value="Acme Labs"/>
+            </reference>
+            <name value="Acme Labs"/>
+            <description value="Example of BSeR-Organization profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"/>
+                <display value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
+            </reference>
+            <name value="allergyintolerance-us-core-allergyint-eve-everywoman"/>
+            <description value="Example of US Core AllergyIntolerance profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/bser"/>
+                <display value="BSeR"/>
+            </reference>
+            <name value="BSeR"/>
+            <description value="BSeR code system"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EducationLevel"/>
+                <display value="BSeR_EducationLevel"/>
+            </reference>
+            <name value="BSeR Education Level"/>
+            <description value="The highest level of education achieved by the patient. This is an optional demographic element of the patient included in all referral types."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="other-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralMessageBundle"/>
+                <display value="BSeR Referral Message Bundle"/>
+            </reference>
+            <name value="BSeR Referral Message Bundle"/>
+            <description value="This Bundle profile represents a BSeR Referral Message Bundle. It contains the BSeR Referral MessageHeader and is for use in the BSeR messaging paradigm."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-service-request-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
+                <display value="BSeR Telcom Communication Preferences VS"/>
+            </reference>
+            <name value="BSeR Telcom Communication Preferences VS"/>
+            <description value="BSeR Telcom Communication Preferences value set"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+                <display value="BSeR_ArthritisFeedbackObservation"/>
+            </reference>
+            <name value="BSeR Arthritis Feedback Observation"/>
+            <description value="A collection of observational data points concerning the patient arthritic condition provided by the referral recipient as feedback to the referral initiator."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_ArthritisReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR Arthritis Referral Feedback Supporting Information"/>
+            <description value="A bundle of clinical statements providing supporting information for a referral recipients feedback on a arthritis referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+                <display value="BSeR_ArthritisReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR Arthritis Referral Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a arthritis related service request referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Coverage"/>
+                <display value="BSeR_Coverage"/>
+            </reference>
+            <name value="BSeR Coverage"/>
+            <description value="Coverage high-level identifiers and descriptors of an insurance plan underwriting some or all of the cost of the referral services provided."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="other-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR Diabetes Prevention Referral Feedback Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation"/>
+                <display value="BSeR_DiabetesPreventionReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR Diabetes Prevention Referral Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a diabetes prevention related referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Diagnosis"/>
+                <display value="BSeR_Diagnosis"/>
+            </reference>
+            <name value="BSeR Diagnosis"/>
+            <description value="A health condition of the referral patient. "/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+                <display value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
+            </reference>
+            <name value="BSeR Early Childhood Nutrition Feedback Observation"/>
+            <description value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
+                <display value="BSeR_EarlyChildhoodNutritionObservation"/>
+            </reference>
+            <name value="BSeR Early Childhood Nutrition Observation"/>
+            <description value="A collection of observational data points authored by the referral initiator as part of supporting information related to an early childhood nutrition referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR Early Childhood Nutrition Referral Feedback Supporting Information"/>
+            <description value="A bundle of clinical statements providing supporting information for a referral recipient's feedback on an early childhood nutrition referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+                <display value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR Early Childhood Nutrition Referral Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for early childhood nutrition referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-HA1C-Observation"/>
+                <display value="BSeR_HA1C-Observation"/>
+            </reference>
+            <name value="BSeR HA1C Observation"/>
+            <description value="A measure of the amount or percentage of hemoglobin A1c in the patient's blood. This observation is used a supporting information primarily for diabetes prevention referrals."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_HypertensionReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR Hypertension Referral Feedback Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator regarding a hypertension referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
+                <display value="BSeR_HypertensionReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR Hypertension Referral Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a hypertension referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-MedicationStatement"/>
+                <display value="BSeR_MedicationStatement"/>
+            </reference>
+            <name value="BSeR MedicationStatement"/>
+            <description value="A statement of a patient medication history used as supporting information for a patient service request referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
+                <display value="BSeR_NRT-AuthorizationStatus"/>
+            </reference>
+            <name value="BSeR NRT Authorization Status"/>
+            <description value="An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_ObesityReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR Obesity Referral Feedback Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator regarding a obesity referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
+                <display value="BSeR_ObesityReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR Obesity Referral Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for an obesity referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Organization"/>
+                <display value="BSeR_Organization"/>
+            </reference>
+            <name value="BSeR Organization"/>
+            <description value="An organization resource playing the roles of practitioner affiliated organization, patient coverage payer organization, or patient employer organization."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-participant-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
+                <display value="BSeR_ParticipationFeedbackObservation"/>
+            </reference>
+            <name value="BSeR Participation Feedback Observation"/>
+            <description value="An observation regarding the level of participation in the services provided by the referral recipient, such as the number of sessions attended."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-PatientConsent"/>
+                <display value="BSeR_PatientConsent"/>
+            </reference>
+            <name value="BSeR Patient Consent"/>
+            <description value="A record regarding the consent status of the patient with regard to treatment authorization or protected health information sharing."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="other-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-Practitioner"/>
+                <display value="BSeR_Practitioner"/>
+            </reference>
+            <name value="BSeR Practitioner"/>
+            <description value="An individual who are engaged in the health care process or health care-related services as part of their formal responsibilities."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-participant-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralActivityStatus"/>
+                <display value="BSeR_ReferralActivityStatus"/>
+            </reference>
+            <name value="BSeR Referral Activity Status"/>
+            <description value="An observation made by the referral recipient regarding the state of the referral service request. This observation is included as part of the referral feedback as a further elaboration of the business state in task."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-service-request-feedback-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralFeedbackComposition"/>
+                <display value="BSeR_ReferralFeedbackComposition"/>
+            </reference>
+            <name value="BSeR Referral Feedback Composition"/>
+            <description value="The structural body and metadata of the referral feedback document."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-service-request-feedback-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralFeedbackDocumentBundle"/>
+                <display value="BSeR_ReferralFeedbackDocumentBundle"/>
+            </reference>
+            <name value="BSeR Referral Feedback Document Bundle"/>
+            <description value="This Bundle profile represents an BSeR Referral Feedback Document Bundle. It contains the BSeR Referral Feedback Composition."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-service-request-feedback-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+                <display value="BSeR_ReferralInitiatorPractitionerRole"/>
+            </reference>
+            <name value="BSeR Referral Initiator PractitionerRole"/>
+            <description value="The FHIR R4 PractitionerRole resource covers the recording of the location and types of services that Practitioners are able to provide for an organization. This profile for the PractitionerRole resource represents the practitioner in the role of referral initiator."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-participant-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralMessageHeader"/>
+                <display value="BSeR_ReferralMessageHeader"/>
+            </reference>
+            <name value="BSeR Referral MessageHeader"/>
+            <description value="The FHIR MessageHeader resource is defined as &quot;the header for a message exchange that is either requesting or responding to an action&quot;. In BSeR the message header is used to exchange the referral services request or the referral service request feedback."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="workflow-management-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
+                <display value="BSeR-ReferralRecipientPractitionerRole"/>
+            </reference>
+            <name value="BSeR Referral Recipient Practitioner Role"/>
+            <description value="The FHIR R4 PractitionerRole resource covers the recording of the location and types of services that Practitioners are able to provide for an organization. This profile for the PractitionerRole resource represents the practitioner in the role of referral recipient."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-participant-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralRequestComposition"/>
+                <display value="BSeR_ReferralRequestComposition"/>
+            </reference>
+            <name value="BSeR Referral Request Composition"/>
+            <description value="The structural body and metadata of the referral request document."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-service-request-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralRequestDocumentBundle"/>
+                <display value="BSeR_ReferralRequestDocumentBundle"/>
+            </reference>
+            <name value="BSeR Referral Request Document Bundle"/>
+            <description value="This Bundle profile represents an BSeR Referral Request Document Bundle. It contains the BSeR Referral Request Composition."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-service-request-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralServiceRequest"/>
+                <display value="BSeR_ReferralServiceRequest"/>
+            </reference>
+            <name value="BSeR Referral Service Request"/>
+            <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-service-request-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ReferralTask"/>
+                <display value="BSeR_ReferralTask"/>
+            </reference>
+            <name value="BSeR Referral Task"/>
+            <description value="A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is used in BSeR to track the performance and state of completion of the referral service request."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="workflow-management-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-ServiceDeliveryLocation"/>
+                <display value="BSeR_ServiceDeliveryLocation"/>
+            </reference>
+            <name value="BSeR Service Delivery Location"/>
+            <description value="Service delivery location is physical place used by a referral initiating practitioner or referral recipient practitioner as the location to deliver services."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="referral-participant-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication"/>
+                <display value="BSeR_TobaccoUseCessationFeedbackMedication"/>
+            </reference>
+            <name value="BSeR Tobacco Use Cessation Feedback Medication"/>
+            <description value="A statement regarding the use of a tobacco cessation medication. Medication.status indicates active or inactive use of the medication indicated in medication.code."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+                <display value="BSeR_TobaccoUseCessationFeedbackObservation"/>
+            </reference>
+            <name value="BSeR Tobacco Use Cessation Feedback Observation"/>
+            <description value="A collection of observational data points provided by the referral recipient as feedback to the referral initiator. Tobacco use cessation feedback observations include quit Date, session type, and tobacco free duration."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+                <display value="BSeR_TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+            </reference>
+            <name value="BSeR Tobacco Use Cessation Referral FeedbackSupportingInformation"/>
+            <description value="A bundle of clinical statements providing supporting information for a referral recipients feedback on a tobacco use cessation referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
+                <display value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
+            </reference>
+            <name value="BSeR Tobacco Use Cessation Referral Supporting Information"/>
+            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a tobacco use cessation service request referral."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-bundles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
+                <display value="BSeR-TelcomCommunicationPreferences"/>
+            </reference>
+            <name value="BSeR Telcom Communication Preferences"/>
+            <description value="A collection of observations about the patient's preferences with regard to contact via telecommunication (phone/email) such as best Day To Call, best Time To Call, and leave Message Indicator."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="supporting-information-resources"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-arthritis-referral-everywoman"/>
+                <display value="bundle-bser-arthritis-referral-everywoman"/>
+            </reference>
+            <name value="bundle-bser-arthritis-referral-everywoman"/>
+            <description value="Example of BSeR-ArthritisReferralSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+            <description value="Example of BSeR-ArthritisReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-diabetes-referral-eve-everywoman"/>
+                <display value="bundle-bser-diabetes-referral-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-diabetes-referral-eve-everywoman"/>
+            <description value="Example of BSeR-DiabetesPreventionReferralSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
+            <description value="Example of BSeR-DiabetesPreventionReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-hypertension-feedback-eve-everywoman"/></reference>
+            <name value="bundle-bser-hypertension-feedback-eve-everywoman"/>
+            <description value="Example of BSeR-HypertensionReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-hypertension-referral-eve-everywoman"/></reference>
+            <name value="bundle-bser-hypertension-referral-eve-everywoman"/>
+            <description value="Example of BSeR-HypertensionReferralSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-nutrition-referral-eve-everywoman"/>
+                <display value="bundle-bser-nutrition-referral-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-nutrition-referral-eve-everywoman"/>
+            <description value="Example of BSeR-EarlyChildhoodNutritionReferralSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
+            <description value="Example of BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-obesity-feedback-eve-everywoman"/></reference>
+            <name value="bundle-bser-obesity-feedback-eve-everywoman"/>
+            <description value="Example of BSeR-ObesityReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-obesity-referral-eve-everywoman"/></reference>
+            <name value="bundle-bser-obesity-referral-eve-everywoman"/>
+            <description value="Example of BSeR-ObesityReferralSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
+                <display value="bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
+            <description value="Example of BSeR-ReferralFeedbackDocumentBundle profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-referral-message-bundle-eve-everywoman"/>
+                <display value="bundle-bser-referral-message-bundle-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-referral-message-bundle-eve-everywoman"/>
+            <description value="Example of BSeR-ReferralMessageBundle profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman"/>
+                <display value="bundle-bser-referral-request-document-bundle-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-referral-request-document-bundle-eve-everywoman"/>
+            <description value="Example of BSeR-ReferralRequestDocumentBundle profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-tobacco-referral-eve-everywoman"/>
+                <display value="bundle-bser-tobacco-referral-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-tobacco-referral-eve-everywoman"/>
+            <description value="Example of BSeR-TobaccoUseCessationReferralSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+                <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+            </reference>
+            <name value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
+            <description value="Example of BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/capabilitystatement-bser"/>
+                <display value="CapabilityStatement_BSeR"/>
+            </reference>
+            <name value="Capability Statement BSeR"/>
+            <description value="This resource defines the expected capabilities for both client and server participating in BSeR exchange"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
+                <display value="condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
+            </reference>
+            <name value="condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
+            <description value="Example of BSeR-Diagnosis profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Consent/consent-BSeR-PatientConsent-eve-everywoman"/>
+                <display value="consent-BSeR-PatientConsent-eve-everywoman"/>
+            </reference>
+            <name value="consent-BSeR-PatientConsent-eve-everywoman"/>
+            <description value="Example of BSeR-PatientConsent profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Coverage/coverage-BSeR-Coverage-eve-everywoman"/>
+                <display value="coverage-BSeR-Coverage-eve-everywoman"/>
+            </reference>
+            <name value="coverage-BSeR-Coverage-eve-everywoman"/>
+            <description value="Example of BSeR-Coverage profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
+                <display value="medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
+            </reference>
+            <name value="medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
+            <description value="Example of BSeR-TobaccoUseCessationFeedbackMedication profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/medicationstatement-BSeR-eve-everywoman"/>
+                <display value="medicationstatement-BSeR-eve-everywoman"/>
+            </reference>
+            <name value="medicationstatement-BSeR-eve-everywoman"/>
+            <description value="Example of BSeR-MedicationStatement profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageHeader/messageheader-BSeR-ReferralMessageHeader"/>
+                <display value="messageheader-BSeR-ReferralMessageHeader"/>
+            </reference>
+            <name value="messageheader-BSeR-ReferralMessageHeader"/>
+            <description value="Example of BSeR-ReferralMessageHeader profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-blood-pressure-eve-everywoman-bser"/></reference>
+            <name value="observation-blood-pressure-eve-everywoman-bser"/>
+            <description value="Example of FHIR Blood Pressure profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/bp"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-bmi-eve-everywoman"/>
+                <display value="observation-bmi-eve-everywoman"/>
+            </reference>
+            <name value="observation-bmi-eve-everywoman"/>
+            <description value="Example of FHIR BMI profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-body-height-baby-everybaby"/>
+                <display value="observation-body-height-baby-everybaby"/>
+            </reference>
+            <name value="observation-body-height-baby-everybaby"/>
+            <description value="Example of FHIR Vital Sign Observation as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-body-height-eve-everywoman"/></reference>
+            <name value="observation-body-height-eve-everywoman"/>
+            <description value="Example of FHIR Body Height profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-body-weight-eve-everywoman"/>
+                <display value="observation-body-weight-eve-everywoman"/>
+            </reference>
+            <name value="observation-body-weight-eve-everywoman"/>
+            <description value="Example of FHIR Body Weight profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
+                <display value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
+            <description value="Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
+                <display value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"/>
+            <description value="Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-EducationLevel-eve-everywoman"/>
+                <display value="observation-BSeR-EducationLevel-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-EducationLevel-eve-everywoman"/>
+            <description value="Example of BSeR-EducationLevel profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-HA1c-Observation-eve-everywoman"/>
+                <display value="observation-BSeR-HA1c-Observation-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-HA1c-Observation-eve-everywoman"/>
+            <description value="Example of BSeR-HA1C-Observation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-NRT-AuthorizationStatus-eve-everywoman"/>
+                <display value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman"/>
+            <description value="Example of BSeR-NRT-AuthorizationStatus profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
+                <display value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
+            <description value="Example of BSeR-EarlyChildhoodNutritionFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
+                <display value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
+            <description value="Example of BSeR-EarlyChildhoodNutritionFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-NutritionObs-eve-everywoman"/>
+                <display value="observation-BSeR-NutritionObs-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-NutritionObs-eve-everywoman"/>
+            <description value="Example of BSeR-EarlyChildhoodNutritionObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
+                <display value="observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
+            <description value="Example of BSeR-ReferralActivityStatus profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-TelcomComm-eve-everywoman"/>
+                <display value="observation-BSeR-TelcomComm-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-TelcomComm-eve-everywoman"/>
+            <description value="Example of BSeR-TelcomCommunicationPreferences profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+                <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+            <description value="Example of BSeR-TobaccoUseCessationFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+                <display value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
+            <description value="Example of BSeR-TobaccoUseCessationFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-odh-employment-status-eve-everywoman"/>
+                <display value="observation-odh-employment-status-eve-everywoman"/>
+            </reference>
+            <name value="observation-odh-employment-status-eve-everywoman"/>
+            <description value="Example of ODH Employment Status profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+                <display value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+            </reference>
+            <name value="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+            <description value="Example of BSeR-ParticipationFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+                <display value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+            </reference>
+            <name value="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+            <description value="Example of BSeR-ParticipationFeedbackObservation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-us-core-smokingstatus-eve-everywoman"/>
+                <display value="observation-us-core-smokingstatus-eve-everywoman"/>
+            </reference>
+            <name value="observation-us-core-smokingstatus-eve-everywoman"/>
+            <description value="Example of US Core Smoking Status profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-us-core-patient-baby-everybaby"/>
+                <display value="Patient Baby B Everybaby"/>
+            </reference>
+            <name value="Patient Baby B Everybaby"/>
+            <description value="Example of US Core Patient profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+                <display value="Patient Eve L Everywoman"/>
+            </reference>
+            <name value="Patient Eve L Everywoman"/>
+            <description value="Example of US Core Patient profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-us-core-patient-mom-everymom"/>
+                <display value="Patient Mom L Everymom"/>
+            </reference>
+            <name value="Patient Mom L Everymom"/>
+            <description value="Example of US Core Patient profile as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-bser-hailey-eight"/>
+                <display value="Practitioner Eight Hailey"/>
+            </reference>
+            <name value="Practitioner Eight Hailey"/>
+            <description value="Example of BSeR-Practitioner profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-bser-henry-seven"/>
+                <display value="Practitioner Seven Henry"/>
+            </reference>
+            <name value="Practitioner Seven Henry"/>
+            <description value="Example of BSeR-Practitioner profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
+                <display value="practitionerrole-bser-referral-initiator"/>
+            </reference>
+            <name value="practitionerrole-bser-referral-initiator"/>
+            <description value="Example of BSeR-ReferralInitiatorPractitionerRole profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                <display value="practitionerrole-bser-referral-recipient"/>
+            </reference>
+            <name value="practitionerrole-bser-referral-recipient"/>
+            <description value="Example of BSeR-ReferralRecipientPractitionerRole profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-bser-service-delivery-location-st-luke"/>
+                <display value="Referral Center A, St. Lukes"/>
+            </reference>
+            <name value="Referral Center A, St. Lukes"/>
+            <description value="Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-bser-referral-feedback"/>
+                <display value="Referral feedback"/>
+            </reference>
+            <name value="Referral feedback"/>
+            <description value="Example of StructureDefinition/BSeR-ReferralFeedbackComposition profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-bser-referral-request"/>
+                <display value="Referral request"/>
+            </reference>
+            <name value="Referral request"/>
+            <description value="Example of BSeR-ReferralRequestComposition profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-mom-everymom"/></reference>
+            <name value="RelatedPerson Mom L Everymom"/>
+            <description value="Example of FHIR RelatedPerson resource as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-self-eve-everywoman"/></reference>
+            <name value="RelatedPerson Self Eve Everywoman"/>
+            <description value="Example of FHIR RelatedPerson resource as used in the BSeR IG"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-bser-organization-saint-luke"/>
+                <display value="organization-bser-organization-saint-luke"/>
+            </reference>
+            <name value="Saint Luke's Hospital of Kansas City"/>
+            <description value="Example of BSeR-Organization profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
+                <display value="servicerequest-BSeR-ReferralServiceRequest"/>
+            </reference>
+            <name value="servicerequest-BSeR-ReferralServiceRequest"/>
+            <description value="Example of BSeR-ReferralServiceRequest profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/TaskBusinessStatusCS"/>
+                <display value="Task Business Status Code System"/>
+            </reference>
+            <name value="Task Business Status Code System"/>
+            <description value="BSeR Task Business Status code system"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/TaskBusinessStatusVS"/>
+                <display value="Task Business Status VS"/>
+            </reference>
+            <name value="Task Business Status VS"/>
+            <description value="BSeR Task Business Status value set"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Task/task-BSeR-ReferralTask"/>
+                <display value="task-BSeR-ReferralTask"/>
+            </reference>
+            <name value="task-BSeR-ReferralTask"/>
+            <description value="Example of BSeR-ReferralTask profile as used in the BSeR IG"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/b3e9d5abdc714dc6a8f0f41c1ea95a8a"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ReferralServiceRequest"/>
+                <display value="Referral Service Request"/>
+            </reference>
+            <name value="Referral Service Request"/>
+            <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for services such as diagnostic investigations, treatments, or operations to be performed."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="core-referral-architecture-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ReferralTask"/>
+                <display value="Referral Task"/>
+            </reference>
+            <name value="Referral Task"/>
+            <description value="A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is used in a referral to track the performance and state of completion of the referral service request."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="core-referral-architecture-profiles"/>
+        </resource>
         <page>
-          <nameUrl value="Introduction.html" />
-          <title value="Introduction" />
-          <generation value="markdown" />
+            <nameUrl value="index.html"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
+            <page>
+                <nameUrl value="Introduction.html"/>
+                <title value="Introduction"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="BSeRProjectTeam.html"/>
+                <title value="BSeR Project Team"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Acknowledgements.html"/>
+                <title value="Acknowledgements"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="ScopeandContext.html"/>
+                <title value="Scope and Context"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="ResourceProfiles.html"/>
+                <title value="Resource Profiles"/>
+                <generation value="markdown"/>
+                <page>
+                    <nameUrl value="ReferralParticipantResources.html"/>
+                    <title value="Referral Participant Resources"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="WorkflowManagementResources.html"/>
+                    <title value="Workflow Management Resources"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="ReferralServiceRequestResources.html"/>
+                    <title value="Referral Service Request Resources"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="ReferralServiceRequestFeedbackResources.html"/>
+                    <title value="Referral Service Request Feedback Resources"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="ServiceRequestandReferralFeedbackSupportingInformationBundles.html"/>
+                    <title value="Service Request and Referral Feedback Supporting Information Bundles"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>
+            <page>
+                <nameUrl value="Bi-directionalServicee-ReferralTransactions.html"/>
+                <title value="Bi-directional Service e-Referral Transactions"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="TransportOptions.html"/>
+                <title value="Transport Options"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="AdaptationforAdditionalReferralUseCases.html"/>
+                <title value="Adaptation for Additional Referral Use Cases"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="UMLrenderingoftheBSeRIG.html"/>
+                <title value="UML rendering of the BSeR IG"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="Downloads.html"/>
+                <title value="Downloads"/>
+                <generation value="markdown"/>
+            </page>
         </page>
-        <page>
-          <nameUrl value="BSeRProjectTeam.html" />
-          <title value="BSeR Project Team" />
-          <generation value="markdown" />
-        </page>
-        <page>
-          <nameUrl value="Acknowledgements.html" />
-          <title value="Acknowledgements" />
-          <generation value="markdown" />
-        </page>
-        <page>
-          <nameUrl value="ScopeandContext.html" />
-          <title value="Scope and Context" />
-          <generation value="markdown" />
-        </page>
-        <page>
-          <nameUrl value="ResourceProfiles.html" />
-          <title value="Resource Profiles" />
-          <generation value="markdown" />
-          <page>
-            <nameUrl value="ReferralParticipantResources.html" />
-            <title value="Referral Participant Resources" />
-            <generation value="markdown" />
-          </page>
-          <page>
-            <nameUrl value="WorkflowManagementResources.html" />
-            <title value="Workflow Management Resources" />
-            <generation value="markdown" />
-          </page>
-          <page>
-            <nameUrl value="ReferralServiceRequestResources.html" />
-            <title value="Referral Service Request Resources" />
-            <generation value="markdown" />
-          </page>
-          <page>
-            <nameUrl value="ReferralServiceRequestFeedbackResources.html" />
-            <title value="Referral Service Request Feedback Resources" />
-            <generation value="markdown" />
-          </page>
-          <page>
-            <nameUrl value="ServiceRequestandReferralFeedbackSupportingInformationBundles.html" />
-            <title value="Service Request and Referral Feedback Supporting Information Bundles" />
-            <generation value="markdown" />
-          </page>
-        </page>
-        <page>
-          <nameUrl value="Bi-directionalServicee-ReferralTransactions.html" />
-          <title value="Bi-directional Service e-Referral Transactions" />
-          <generation value="markdown" />
-        </page>
-        <page>
-          <nameUrl value="TransportOptions.html" />
-          <title value="Transport Options" />
-          <generation value="markdown" />
-        </page>
-        <page>
-          <nameUrl value="AdaptationforAdditionalReferralUseCases.html" />
-          <title value="Adaptation for Additional Referral Use Cases" />
-          <generation value="markdown" />
-        </page>
-        <page>
-          <nameUrl value="UMLrenderingoftheBSeRIG.html" />
-          <title value="UML rendering of the BSeR IG" />
-          <generation value="markdown" />
-        </page>
-        <page>
-          <nameUrl value="Downloads.html" />
-          <title value="Downloads" />
-          <generation value="markdown" />
-        </page>
-      </page>
-    </page>
-    <parameter>
-      <code value="path-history" />
-      <value value="http://hl7.org/fhir/us/bser/history.html" />
-    </parameter>
-    <parameter>
-      <code value="releaselabel" />
-      <value value="CI Build" />
-    </parameter>
-    <parameter>
-      <code value="copyrightyear" />
-      <value value="2019+" />
-    </parameter>
-  </definition>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
+        </parameter>
+    </definition>
 </ImplementationGuide>

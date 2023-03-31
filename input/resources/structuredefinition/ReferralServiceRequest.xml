@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="BSeR-ReferralServiceRequest"/>
+    <id value="ReferralServiceRequest"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:38.110+00:00"/>
-        <source value="#icKH9vypCNrSgkHJ"/>
+        <versionId value="17"/>
+        <lastUpdated value="2023-03-31T04:31:11.644+00:00"/>
+        <source value="#ykN5TcEr3JfKJtJX"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
-    <name value="BSeR_ReferralServiceRequest"/>
-    <title value="BSeR Referral Service Request"/>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest"/>
+    <name value="ReferralServiceRequest"/>
+    <title value="Referral Service Request"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed."/>
+    <description value="The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for services such as diagnostic investigations, treatments, or operations to be performed."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -31,6 +31,30 @@
         <element id="ServiceRequest">
             <path value="ServiceRequest"/>
         </element>
+        <element id="ServiceRequest.extension">
+            <path value="ServiceRequest.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="ServiceRequest.extension:pertainsToGoal">
+            <path value="ServiceRequest.extension"/>
+            <sliceName value="pertainsToGoal"/>
+            <short value="Pertains to SDOH goal"/>
+            <definition value="Indicates that the resource is related to either the measurement, achievement or progress towards the referenced goal.  For example, a ServiceRequest to provide food vouchers pertainsToGoal of achieving food security."/>
+            <requirements value="Indicates that the service request is related to the referenced SDOHCC Goal."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="ServiceRequest.identifier">
             <path value="ServiceRequest.identifier"/>
             <slicing>
@@ -42,12 +66,14 @@
             </slicing>
             <min value="1"/>
             <max value="2"/>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier">
             <path value="ServiceRequest.identifier"/>
             <sliceName value="referralInitiatorServiceRequestIdentifier"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.type">
             <path value="ServiceRequest.identifier.type"/>
@@ -58,17 +84,19 @@
                     <code value="PLAC"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.value">
             <path value="ServiceRequest.identifier.value"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.identifier:referralInitiatorServiceRequestIdentifier.assigner">
             <path value="ServiceRequest.identifier.assigner"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
         </element>
         <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier">
@@ -76,6 +104,15 @@
             <sliceName value="referralRecipientServiceRequestIdentifier"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.basedOn">
+            <path value="ServiceRequest.basedOn"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.type">
             <path value="ServiceRequest.identifier.type"/>
@@ -86,11 +123,13 @@
                     <code value="FILL"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.value">
             <path value="ServiceRequest.identifier.value"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.assigner">
             <path value="ServiceRequest.identifier.assigner"/>
@@ -98,19 +137,26 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.status">
             <path value="ServiceRequest.status"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.intent">
             <path value="ServiceRequest.intent"/>
             <min value="1"/>
             <max value="1"/>
             <patternCode value="order"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.category">
+            <path value="ServiceRequest.category"/>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.code">
             <path value="ServiceRequest.code"/>
@@ -118,9 +164,11 @@
             <definition value="Referral or specific type of referral. If the code used describes the type of/reason for referral (such as &quot;Referral to diabetes prevention program&quot;) then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.45"/>
+                <description value="US Core Procedure Codes"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
             </binding>
         </element>
         <element id="ServiceRequest.subject">
@@ -131,6 +179,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.occurrence[x]">
             <path value="ServiceRequest.occurrence[x]"/>
@@ -139,6 +188,7 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.requester">
             <path value="ServiceRequest.requester"/>
@@ -146,8 +196,14 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.performer">
             <path value="ServiceRequest.performer"/>
@@ -155,20 +211,29 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRecipientPractitionerRole"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.reasonCode">
             <path value="ServiceRequest.reasonCode"/>
-            <short value="Reason for referral"/>
-            <definition value="Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. &quot;Referral&quot;)."/>
-            <min value="0"/>
-            <max value="1"/>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="extensible"/>
-                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.46"/>
-            </binding>
+        </element>
+        <element id="ServiceRequest.reasonReference">
+            <path value="ServiceRequest.reasonReference"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.insurance">
             <path value="ServiceRequest.insurance"/>
@@ -186,24 +251,23 @@
             <sliceName value="sliceInsuranceBSeRCoverage"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Coverage"/>
             </type>
             <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.supportingInfo">
             <path value="ServiceRequest.supportingInfo"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
             </type>
-            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.note">
             <path value="ServiceRequest.note"/>
             <min value="0"/>
             <max value="*"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

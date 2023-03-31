@@ -1,103 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation" />
-  <meta>
-    <versionId value="15" />
-    <lastUpdated value="2020-01-22T01:59:24.000-05:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation" />
-  <name value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation" />
-  <title value="BSeR Early Childhood Nutrition Referral Feedback Supporting Information" />
-  <status value="active" />
-  <publisher value="HL7 Public Health Work Group"/>
-  <description value="A bundle of clinical statements providing supporting information for a referral recipient's feedback on an early childhood nutrition referral." />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-      <display value="United States of America" />
-    </coding>
-    <text value="United States of America" />
-  </jurisdiction>
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Bundle" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Bundle">
-      <path value="Bundle" />
-    </element>
-    <element id="Bundle.meta">
-      <path value="Bundle.meta" />
-    </element>
-    <element id="Bundle.meta.profile">
-      <path value="Bundle.meta.profile" />
-      <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation" />
-    </element>
-    <element id="Bundle.type">
-      <path value="Bundle.type" />
-      <min value="1" />
-      <max value="1" />
-      <fixedCode value="collection" />
-    </element>
-    <element id="Bundle.entry">
-      <path value="Bundle.entry" />
-      <slicing>
-        <discriminator>
-          <type value="profile" />
-          <path value="$this.resource" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-      <max value="*" />
-    </element>
-    <element id="Bundle.entry:EarlyChildhoodNutritionFeedbackObservation">
-      <path value="Bundle.entry" />
-      <sliceName value="EarlyChildhoodNutritionFeedbackObservation" />
-      <min value="0" />
-      <max value="*" />
-    </element>
-    <element id="Bundle.entry:EarlyChildhoodNutritionFeedbackObservation.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" />
-      </type>
-    </element>
-    <element id="Bundle.entry:medicationHistory">
-      <path value="Bundle.entry" />
-      <sliceName value="medicationHistory" />
-      <min value="0" />
-      <max value="*" />
-    </element>
-    <element id="Bundle.entry:medicationHistory.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
-      </type>
-    </element>
-    <element id="Bundle.entry:ParticipationFeedbackObservation">
-      <path value="Bundle.entry" />
-      <sliceName value="ParticipationFeedbackObservation" />
-      <min value="0" />
-      <max value="*" />
-    </element>
-    <element id="Bundle.entry:ParticipationFeedbackObservation.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" />
-      </type>
-    </element>
-  </differential>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T17:05:37.704+00:00"/>
+        <source value="#0uXMOHn3VREryyrI"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
+    <name value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
+    <title value="BSeR Early Childhood Nutrition Referral Feedback Supporting Information"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="A bundle of clinical statements providing supporting information for a referral recipient's feedback on an early childhood nutrition referral."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.meta">
+            <path value="Bundle.meta"/>
+        </element>
+        <element id="Bundle.meta.profile">
+            <path value="Bundle.meta.profile"/>
+            <fixedCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="collection"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:EarlyChildhoodNutritionFeedbackObservation">
+            <path value="Bundle.entry"/>
+            <sliceName value="EarlyChildhoodNutritionFeedbackObservation"/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:EarlyChildhoodNutritionFeedbackObservation.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:medicationHistory">
+            <path value="Bundle.entry"/>
+            <sliceName value="medicationHistory"/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:medicationHistory.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:ParticipationFeedbackObservation">
+            <path value="Bundle.entry"/>
+            <sliceName value="ParticipationFeedbackObservation"/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Bundle.entry:ParticipationFeedbackObservation.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
+            </type>
+        </element>
+    </differential>
 </StructureDefinition>

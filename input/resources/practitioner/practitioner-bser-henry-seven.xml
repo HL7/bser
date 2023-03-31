@@ -4,15 +4,15 @@
     <id value="practitioner-bser-henry-seven"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2020-01-17T23:52:20.000-05:00"/>
-      <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
+        <lastUpdated value="2022-09-16T17:05:00.429+00:00"/>
+        <source value="#LP0znDuENhaV56wy"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>

@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-bser-referral-request"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-01-22T00:37:44.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:43:03.758+00:00"/>
+        <source value="#KJ9YP6c8qCTfVX6C"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -48,8 +48,10 @@
                                         <div title="display">Referral note</div>  (
                                         
                                         
+                                        
                                         <div title="code">57133-1</div> )
           
+                                    
                                     
                                     
                                     </li>
@@ -117,8 +119,10 @@
                                                     <div title="display">CompositionSectionReferralServiceRequestSupportingInformation</div>  (
                                                     
                                                     
+                                                    
                                                     <div title="code">RSRSI</div> )
           
+                                                
                                                 
                                                 
                                                 </li>

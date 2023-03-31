@@ -3,14 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-body-height-baby-everybaby"/>
     <meta>
-      <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-23T07:11:51.923+00:00"/>
+        <source value="#NsQDiRdUKibBrgE1"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -35,8 +37,10 @@
                                     <li>
                                         <div title="display">Vital Signs</div>  (
                                         
+                                        
                                         <div title="code">vital-signs</div> )
           
+                                    
                                     
                                     </li>
                                     <li>
@@ -61,8 +65,10 @@
                                     <li>
                                         <div title="display">Body height lying</div>  (
                                         
+                                        
                                         <div title="code">8306-3</div> )
           
+                                    
                                     
                                     </li>
                                     <li>

@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="task-BSeR-ReferralTask"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-01-21T01:16:05.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-06T04:55:42.509+00:00"/>
+        <source value="#86zHhSri1p8FxAzR"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -51,8 +51,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">PLAC</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -77,8 +79,10 @@
                             <li>
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li> (
+                                        
                                         <div title="code">FILL</div> )
             
+                                    
                                     </li>
                                     <li>
                                         <div title="system">
@@ -110,8 +114,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Service Request Fulfillment Completed</div>  (
+                                        
                                         <div title="code">7.0</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">

@@ -2,6 +2,11 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralInitiatorPractitionerRole"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2023-03-23T06:22:08.482+00:00"/>
+        <source value="#2YvQgGnOZnr7RzIU"/>
+    </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
     <name value="BSeR_ReferralInitiatorPractitionerRole"/>
     <title value="BSeR Referral Initiator Practitioner Role"/>

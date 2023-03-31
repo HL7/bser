@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="messageheader-BSeR-ReferralMessageHeader"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-21T02:25:51.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:44:00.322+00:00"/>
+        <source value="#zJNWKTeCpJ9bhHgx"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>

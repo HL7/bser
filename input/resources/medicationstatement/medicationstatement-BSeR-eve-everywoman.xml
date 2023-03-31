@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="medicationstatement-BSeR-eve-everywoman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-01-20T22:22:21.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:43:52.475+00:00"/>
+        <source value="#TUFTwDqETGGQ6FY1"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -47,8 +47,10 @@
                                     <li>
                                         <div title="display">Amoxicillin-containing product</div>  (
                                         
+                                        
                                         <div title="code">27658006</div> )
           
+                                    
                                     
                                     </li>
                                     <li>
@@ -135,8 +137,10 @@
                                                 <li>
                                                     <div title="display">Oral</div>  (
                                                     
+                                                    
                                                     <div title="code">260548002</div> )
           
+                                                
                                                 
                                                 </li>
                                                 <li>
@@ -162,8 +166,10 @@
                                                             <li>
                                                                 <div title="display">Ordered</div>  (
                                                                 
+                                                                
                                                                 <div title="code">ordered</div> )
           
+                                                            
                                                             
                                                             </li>
                                                             <li>
@@ -297,10 +303,10 @@
                 </coding>
             </type>
             <doseQuantity>
-				<value value="1"/>
-				<unit value="TAB"/>
-				<system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
-				<code value="TAB"/>
+                <value value="1"/>
+                <unit value="TAB"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+                <code value="TAB"/>
             </doseQuantity>
         </doseAndRate>
     </dosage>

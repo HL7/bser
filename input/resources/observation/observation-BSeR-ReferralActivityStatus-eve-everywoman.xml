@@ -4,15 +4,15 @@
     <id value="observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2020-01-20T18:21:50.000-05:00"/>
+        <lastUpdated value="2022-09-16T16:45:19.563+00:00"/>
+        <source value="#7PTX94nuV0psIB0u"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -46,8 +46,10 @@
                                 <ul style="list-style:none; padding-left:0; margin:0 0;">
                                     <li>
                                         <div title="display">Action status</div>  (
+                                        
                                         <div title="code">385641008</div> )
           
+                                    
                                     </li>
                                     <li>
                                         <div title="system">

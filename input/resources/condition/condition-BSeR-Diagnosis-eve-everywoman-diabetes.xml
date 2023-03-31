@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-01-20T17:07:56.000-05:00"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-09-16T16:43:12.305+00:00"/>
+        <source value="#vBX536FJRrsd9i7r"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-weight: bold">id</td>
                     <td>
@@ -41,8 +41,10 @@
                                     <li>
                                         <div title="display">Problem List Item</div>  (
                                         
+                                        
                                         <div title="code">problem-list-item</div> )
           
+                                    
                                     
                                     </li>
                                     <li>
@@ -64,8 +66,10 @@
                                     <li>
                                         <div title="display">Diabetes mellitus (disorder)</div>  (
                                         
+                                        
                                         <div title="code">73211009</div> )
           
+                                    
                                     
                                     </li>
                                     <li>

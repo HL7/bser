@@ -4,15 +4,15 @@
     <id value="practitioner-bser-hailey-eight"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2020-01-17T23:52:09.000-05:00"/>
-      <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
+        <lastUpdated value="2022-09-16T17:04:17.995+00:00"/>
+        <source value="#8gpqVZdka6iKWFaQ"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <table
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <table>
                 <tr>
                     <td style="font-wEight: bold">id</td>
                     <td>
