@@ -83,3 +83,5 @@ resources/ig-validation-parameters.json
 /template/content/assets/css
 input-cache/
 template/
+/fhir_validator.bat
+/validation.xml
