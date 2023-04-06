@@ -1,1 +1,1 @@
-While in development see the [Change Log GoogleSheet](https://docs.google.com/spreadsheets/d/135955mMIYtMSDVfUZx_5tg0OJEykZI2sUUh4lQ83wok/edit?usp=sharing) for a list of changes (this page will be moved inside the IG prior to publication).
+While IG is in development see the [Change Log GoogleSheet](https://docs.google.com/spreadsheets/d/135955mMIYtMSDVfUZx_5tg0OJEykZI2sUUh4lQ83wok/edit?usp=sharing) for a list of changes (this page will be moved inside the IG prior to publication).
