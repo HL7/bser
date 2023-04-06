@@ -3,28 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="69"/>
-        <lastUpdated value="2023-04-05T22:16:41.198+00:00"/>
-        <source value="#ou3LprDmXivs5wf7"/>
+        <versionId value="74"/>
+        <lastUpdated value="2023-04-06T06:19:44.423+00:00"/>
+        <source value="#wazhTNClxFlMSvVb"/>
     </meta>
-    <contained>
-        <DocumentReference>
-            <id value="8snBFszE"/>
-            <status value="current"/>
-            <type>
-                <coding>
-                    <code value="custom-menu"/>
-                </coding>
-            </type>
-            <content>
-                <attachment>
-                    <contentType value="application/xml"/>
-                    <data value="PHVsIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBjbGFzcz0ibmF2IG5hdmJhci1uYXYiPgogIDxsaT48YSBocmVmPSJpbmRleC5odG1sIj5JRyBIb21lPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9InRvYy5odG1sIj5UYWJsZSBvZiBDb250ZW50czwvYT48L2xpPgogIDxsaSBjbGFzcz0iZHJvcGRvd24iPgogICAgPGEgZGF0YS10b2dnbGU9ImRyb3Bkb3duIiBocmVmPSIjIiBjbGFzcz0iZHJvcGRvd24tdG9nZ2xlIj5CYWNrZ3JvdW5kPGIgY2xhc3M9ImNhcmV0Ij4gPC9iPgogICAgPC9hPgogICAgPHVsIGNsYXNzPSJkcm9wZG93bi1tZW51Ij4KICAgICAgPGxpPjxhIGhyZWY9IkludHJvZHVjdGlvbi5odG1sIj5JbnRyb2R1Y3Rpb248L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IkJTZVJQcm9qZWN0VGVhbS5odG1sIj5CU2VSIFByb2plY3QgVGVhbTwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iQWNrbm93bGVkZ2VtZW50cy5odG1sIj5BY2tub3dsZWRnZW1lbnRzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJTY29wZWFuZENvbnRleHQuaHRtbCI+U2NvcGUgYW5kIENvbnRleHQ8L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IlVNTHJlbmRlcmluZ29mdGhlQlNlUklHLmh0bWwiPlVNTCByZW5kZXJpbmcgb2YgdGhlIEJTZVIgSUc8L2E+PC9saT4KICAgIDwvdWw+CiAgPC9saT4KICA8bGkgY2xhc3M9ImRyb3Bkb3duIj4KICAgIDxhIGRhdGEtdG9nZ2xlPSJkcm9wZG93biIgaHJlZj0iIyIgY2xhc3M9ImRyb3Bkb3duLXRvZ2dsZSI+UmVzb3VyY2UgUHJvZmlsZSBJbmZvcm1hdGlvbjxiIGNsYXNzPSJjYXJldCI+IDwvYj4KICAgIDwvYT4KICAgIDx1bCBjbGFzcz0iZHJvcGRvd24tbWVudSI+CiAgICAgIDxsaT48YSBocmVmPSJSZXNvdXJjZVByb2ZpbGVzLmh0bWwiPlJlc291cmNlIFByb2ZpbGVzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJSZWZlcnJhbFBhcnRpY2lwYW50UmVzb3VyY2VzLmh0bWwiPlJlZmVycmFsIFBhcnRpY2lwYW50IFJlc291cmNlczwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iV29ya2Zsb3dNYW5hZ2VtZW50UmVzb3VyY2VzLmh0bWwiPldvcmtmbG93IE1hbmFnZW1lbnQgUmVzb3VyY2VzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJSZWZlcnJhbFNlcnZpY2VSZXF1ZXN0UmVzb3VyY2VzLmh0bWwiPlJlZmVycmFsIFNlcnZpY2UgUmVxdWVzdCBSZXNvdXJjZXM8L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IlJlZmVycmFsU2VydmljZVJlcXVlc3RGZWVkYmFja1Jlc291cmNlcy5odG1sIj5SZWZlcnJhbCBTZXJ2aWNlIFJlcXVlc3QgRmVlZGJhY2sgUmVzb3VyY2VzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJTZXJ2aWNlUmVxdWVzdGFuZFJlZmVycmFsRmVlZGJhY2tTdXBwb3J0aW5nSW5mb3JtYXRpb25CdW5kbGVzLmh0bWwiPlNlcnZpY2UgUmVxdWVzdCBhbmQgUmVmZXJyYWwgRmVlZGJhY2sgU3VwcG9ydGluZyBJbmZvcm1hdGlvbiBCdW5kbGVzPC9hPjwvbGk+CiAgICAgIDxsaSBjbGFzcz0iZGl2aWRlciI+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IkJpLWRpcmVjdGlvbmFsU2VydmljZWUtUmVmZXJyYWxUcmFuc2FjdGlvbnMuaHRtbCI+QmktZGlyZWN0aW9uYWwgU2VydmljZSBlLVJlZmVycmFsIFRyYW5zYWN0aW9uczwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iVHJhbnNwb3J0T3B0aW9ucy5odG1sIj5UcmFuc3BvcnQgT3B0aW9uczwvYT48L2xpPgogICAgICA8bGkgY2xhc3M9ImRpdmlkZXIiPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJBZGFwdGF0aW9uZm9yQWRkaXRpb25hbFJlZmVycmFsVXNlQ2FzZXMuaHRtbCI+QWRhcHRhdGlvbiBmb3IgQWRkaXRpb25hbCBSZWZlcnJhbCBVc2UgQ2FzZXM8L2E+PC9saT4KICAgIDwvdWw+CiAgPC9saT4KICA8bGk+PGEgaHJlZj0iRG93bmxvYWRzLmh0bWwiPkRvd25sb2FkczwvYT48L2xpPgogIDxsaT48YSBocmVmPSJhcnRpZmFjdHMuaHRtbCI+QXJ0aWZhY3QgSW5kZXg8L2E+PC9saT4KPC91bD4="/>
-                    <title value="menu.xml"/>
-                </attachment>
-            </content>
-        </DocumentReference>
-    </contained>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
     <name value="BSeR_BidirectionalServices_eReferral"/>
@@ -99,7 +81,7 @@
                 <reference value="Organization/organization-bser-organization-acme-lab"/>
                 <display value="Acme Labs"/>
             </reference>
-            <name value="Acme Labs"/>
+            <name value="BSeR"/>
             <description value="Example of BSeR-Organization profile as used in the BSeR IG"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
@@ -173,16 +155,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
-                <display value="BSeR_ArthritisReferralSupportingInformation"/>
-            </reference>
-            <name value="BSeR Arthritis Referral Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a arthritis related service request referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-Coverage"/>
                 <display value="BSeR_Coverage"/>
             </reference>
@@ -198,16 +170,6 @@
             </reference>
             <name value="BSeR Diabetes Prevention Referral Feedback Supporting Information"/>
             <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation"/>
-                <display value="BSeR_DiabetesPreventionReferralSupportingInformation"/>
-            </reference>
-            <name value="BSeR Diabetes Prevention Referral Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a diabetes prevention related referral."/>
             <exampleBoolean value="false"/>
             <groupingId value="supporting-information-bundles"/>
         </resource>
@@ -253,16 +215,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
-                <display value="BSeR_EarlyChildhoodNutritionReferralSupportingInformation"/>
-            </reference>
-            <name value="BSeR Early Childhood Nutrition Referral Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for early childhood nutrition referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-HA1C-Observation"/>
                 <display value="BSeR_HA1C-Observation"/>
             </reference>
@@ -278,16 +230,6 @@
             </reference>
             <name value="BSeR Hypertension Referral Feedback Supporting Information"/>
             <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator regarding a hypertension referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
-                <display value="BSeR_HypertensionReferralSupportingInformation"/>
-            </reference>
-            <name value="BSeR Hypertension Referral Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a hypertension referral."/>
             <exampleBoolean value="false"/>
             <groupingId value="supporting-information-bundles"/>
         </resource>
@@ -318,16 +260,6 @@
             </reference>
             <name value="BSeR Obesity Referral Feedback Supporting Information"/>
             <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator regarding a obesity referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
-                <display value="BSeR_ObesityReferralSupportingInformation"/>
-            </reference>
-            <name value="BSeR Obesity Referral Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for an obesity referral."/>
             <exampleBoolean value="false"/>
             <groupingId value="supporting-information-bundles"/>
         </resource>
@@ -508,16 +440,6 @@
             </reference>
             <name value="BSeR Tobacco Use Cessation Referral FeedbackSupportingInformation"/>
             <description value="A bundle of clinical statements providing supporting information for a referral recipients feedback on a tobacco use cessation referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
-                <display value="BSeR_TobaccoUseCessationReferralSupportingInformation"/>
-            </reference>
-            <name value="BSeR Tobacco Use Cessation Referral Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral initiator as supporting information for a tobacco use cessation service request referral."/>
             <exampleBoolean value="false"/>
             <groupingId value="supporting-information-bundles"/>
         </resource>

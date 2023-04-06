@@ -2,7 +2,8 @@
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"> </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
+      </b>
     </a>
     <ul class="dropdown-menu">
       <li><a href="Introduction.html">Introduction</a></li>
@@ -10,24 +11,18 @@
       <li><a href="Acknowledgements.html">Acknowledgements</a></li>
       <li><a href="ScopeandContext.html">Scope and Context</a></li>
       <li><a href="UMLrenderingoftheBSeRIG.html">UML rendering of the BSeR IG</a></li>
-    </ul>
+      <li><a href="change_log.html">Change Log</a></li>    </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resource Profile Information<b class="caret"> </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resource Profile Information<b class="caret">
+      </b>
     </a>
     <ul class="dropdown-menu">
       <li><a href="ResourceProfiles.html">Resource Profiles</a></li>
       <li><a href="ReferralParticipantResources.html">Referral Participant Resources</a></li>
-      <li><a href="WorkflowManagementResources.html">Workflow Management Resources</a></li>
-      <li><a href="ReferralServiceRequestResources.html">Referral Service Request Resources</a></li>
-      <li><a href="ReferralServiceRequestFeedbackResources.html">Referral Service Request Feedback Resources</a></li>
-      <li><a href="ServiceRequestandReferralFeedbackSupportingInformationBundles.html">Service Request and Referral Feedback Supporting Information Bundles</a></li>
-      <li class="divider"></li>
       <li><a href="Bi-directionalServicee-ReferralTransactions.html">Bi-directional Service e-Referral Transactions</a></li>
       <li><a href="TransportOptions.html">Transport Options</a></li>
-      <li class="divider"></li>
-      <li><a href="AdaptationforAdditionalReferralUseCases.html">Adaptation for Additional Referral Use Cases</a></li>
-    </ul>
+      <li><a href="AdaptationforAdditionalReferralUseCases.html">Adaptation for Additional Referral Use Cases</a></li>    </ul>
   </li>
   <li><a href="Downloads.html">Downloads</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>

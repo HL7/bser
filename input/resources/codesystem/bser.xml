@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T16:42:56.571+00:00"/>
-        <source value="#aq9dOoFRnJ2Cs6lP"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-04-06T05:29:35.005+00:00"/>
+        <source value="#bj4ZZEAwsjksVcWm"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
     <name value="BSeR"/>
@@ -46,5 +46,29 @@
     <concept>
         <code value="RSRSI"/>
         <display value="CompositionSectionReferralServiceRequestSupportingInformation"/>
+    </concept>
+    <concept>
+        <code value="ORSI"/>
+        <display value="Obesity Referral Supporting Information"/>
+    </concept>
+    <concept>
+        <code value="ARSI"/>
+        <display value="Arthritis Referral Supporting Information"/>
+    </concept>
+    <concept>
+        <code value="HRSI"/>
+        <display value="Hypertension Referral Supporting Information"/>
+    </concept>
+    <concept>
+        <code value="ECNRSI"/>
+        <display value="Early Childhood Nutrition Referral Supporting Information"/>
+    </concept>
+    <concept>
+        <code value="DPRSI"/>
+        <display value="Diabetes Prevention Referral Supporting Information"/>
+    </concept>
+    <concept>
+        <code value="TUCRSI"/>
+        <display value="Tobacco Use Cessation Referral Supporting Information"/>
     </concept>
 </CodeSystem>

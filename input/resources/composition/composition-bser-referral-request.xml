@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-bser-referral-request"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-03-31T04:46:06.304+00:00"/>
-        <source value="#yd04uoJVoDW8Zn8S"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-04-05T23:06:07.700+00:00"/>
+        <source value="#ORJ0qQQx37uOPm3l"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>
@@ -36,7 +36,22 @@
             </coding>
         </code>
         <entry>
-            <reference value="Bundle/bundle-bser-arthritis-referral-everywoman"/>
+            <reference value="Observation/observation-blood-pressure-eve-everywoman-bser"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-body-height-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-bmi-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-body-weight-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/medicationstatement-BSeR-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/allergyintolerance-us-core-allergyint-eve-everywoman"/>
         </entry>
     </section>
 </Composition>
