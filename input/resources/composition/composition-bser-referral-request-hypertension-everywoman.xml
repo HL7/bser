@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="composition-bser-referral-request"/>
+    <id value="composition-bser-referral-request-hypertension-everywoman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-05T23:06:07.700+00:00"/>
-        <source value="#ORJ0qQQx37uOPm3l"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-12T07:00:48.409+00:00"/>
+        <source value="#15PZal8HbxUMfnGk"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>
@@ -27,14 +27,17 @@
     </author>
     <title value="Referral request"/>
     <section>
-        <title value="Arthritis Referral Request Supporting Information"/>
+        <title value="Hypertension Referral Request Supporting Information"/>
         <code>
             <coding>
                 <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
-                <code value="ARSI"/>
-                <display value="Arthritis Referral Supporting Information"/>
+                <code value="HRSI"/>
+                <display value="Hypertension Referral Supporting Information"/>
             </coding>
         </code>
+        <entry>
+            <reference value="Condition/condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
+        </entry>
         <entry>
             <reference value="Observation/observation-blood-pressure-eve-everywoman-bser"/>
         </entry>
@@ -46,12 +49,6 @@
         </entry>
         <entry>
             <reference value="Observation/observation-body-weight-eve-everywoman"/>
-        </entry>
-        <entry>
-            <reference value="Observation/medicationstatement-BSeR-eve-everywoman"/>
-        </entry>
-        <entry>
-            <reference value="Observation/allergyintolerance-us-core-allergyint-eve-everywoman"/>
         </entry>
     </section>
 </Composition>

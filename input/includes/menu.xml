@@ -3,7 +3,7 @@
   <li><a href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
-      </b>
+    </b>
     </a>
     <ul class="dropdown-menu">
       <li><a href="Introduction.html">Introduction</a></li>
@@ -15,13 +15,19 @@
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resource Profile Information<b class="caret">
-      </b>
+    </b>
     </a>
     <ul class="dropdown-menu">
       <li><a href="ResourceProfiles.html">Resource Profiles</a></li>
       <li><a href="ReferralParticipantResources.html">Referral Participant Resources</a></li>
+      <li><a href="WorkflowManagementResources.html">Workflow Management Resources</a></li>
+      <li><a href="ReferralServiceRequestResources.html">Referral Service Request Resources</a></li>
+      <li><a href="ReferralServiceRequestFeedbackResources.html">Referral Service Request Feedback Resources</a></li>
+      <li><a href="ServiceRequestandReferralFeedbackSupportingInformationBundles.html">Service Request and Referral Feedback Supporting Information Bundles</a></li>
+      <li class="divider"></li>
       <li><a href="Bi-directionalServicee-ReferralTransactions.html">Bi-directional Service e-Referral Transactions</a></li>
       <li><a href="TransportOptions.html">Transport Options</a></li>
+      <li class="divider"></li>
       <li><a href="AdaptationforAdditionalReferralUseCases.html">Adaptation for Additional Referral Use Cases</a></li>    </ul>
   </li>
   <li><a href="Downloads.html">Downloads</a></li>

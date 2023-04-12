@@ -3,12 +3,30 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="78"/>
-        <lastUpdated value="2023-04-12T05:19:01.519+00:00"/>
-        <source value="#wznj99h7RGynY0Yq"/>
+        <versionId value="87"/>
+        <lastUpdated value="2023-04-12T07:14:39.081+00:00"/>
+        <source value="#uPmidWoIAZhPFuAs"/>
     </meta>
+    <contained>
+        <DocumentReference>
+            <id value="a41WwXAB"/>
+            <status value="current"/>
+            <type>
+                <coding>
+                    <code value="custom-menu"/>
+                </coding>
+            </type>
+            <content>
+                <attachment>
+                    <contentType value="application/xml"/>
+                    <data value="PHVsIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBjbGFzcz0ibmF2IG5hdmJhci1uYXYiPgogIDxsaT48YSBocmVmPSJpbmRleC5odG1sIj5JRyBIb21lPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9InRvYy5odG1sIj5UYWJsZSBvZiBDb250ZW50czwvYT48L2xpPgogIDxsaSBjbGFzcz0iZHJvcGRvd24iPgogICAgPGEgZGF0YS10b2dnbGU9ImRyb3Bkb3duIiBocmVmPSIjIiBjbGFzcz0iZHJvcGRvd24tdG9nZ2xlIj5CYWNrZ3JvdW5kPGIgY2xhc3M9ImNhcmV0Ij4KICAgIDwvYj4KICAgIDwvYT4KICAgIDx1bCBjbGFzcz0iZHJvcGRvd24tbWVudSI+CiAgICAgIDxsaT48YSBocmVmPSJJbnRyb2R1Y3Rpb24uaHRtbCI+SW50cm9kdWN0aW9uPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJCU2VSUHJvamVjdFRlYW0uaHRtbCI+QlNlUiBQcm9qZWN0IFRlYW08L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IkFja25vd2xlZGdlbWVudHMuaHRtbCI+QWNrbm93bGVkZ2VtZW50czwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iU2NvcGVhbmRDb250ZXh0Lmh0bWwiPlNjb3BlIGFuZCBDb250ZXh0PC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJVTUxyZW5kZXJpbmdvZnRoZUJTZVJJRy5odG1sIj5VTUwgcmVuZGVyaW5nIG9mIHRoZSBCU2VSIElHPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJjaGFuZ2VfbG9nLmh0bWwiPkNoYW5nZSBMb2c8L2E+PC9saT4gICAgPC91bD4KICA8L2xpPgogIDxsaSBjbGFzcz0iZHJvcGRvd24iPgogICAgPGEgZGF0YS10b2dnbGU9ImRyb3Bkb3duIiBocmVmPSIjIiBjbGFzcz0iZHJvcGRvd24tdG9nZ2xlIj5SZXNvdXJjZSBQcm9maWxlIEluZm9ybWF0aW9uPGIgY2xhc3M9ImNhcmV0Ij4KICAgIDwvYj4KICAgIDwvYT4KICAgIDx1bCBjbGFzcz0iZHJvcGRvd24tbWVudSI+CiAgICAgIDxsaT48YSBocmVmPSJSZXNvdXJjZVByb2ZpbGVzLmh0bWwiPlJlc291cmNlIFByb2ZpbGVzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJSZWZlcnJhbFBhcnRpY2lwYW50UmVzb3VyY2VzLmh0bWwiPlJlZmVycmFsIFBhcnRpY2lwYW50IFJlc291cmNlczwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iV29ya2Zsb3dNYW5hZ2VtZW50UmVzb3VyY2VzLmh0bWwiPldvcmtmbG93IE1hbmFnZW1lbnQgUmVzb3VyY2VzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJSZWZlcnJhbFNlcnZpY2VSZXF1ZXN0UmVzb3VyY2VzLmh0bWwiPlJlZmVycmFsIFNlcnZpY2UgUmVxdWVzdCBSZXNvdXJjZXM8L2E+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IlJlZmVycmFsU2VydmljZVJlcXVlc3RGZWVkYmFja1Jlc291cmNlcy5odG1sIj5SZWZlcnJhbCBTZXJ2aWNlIFJlcXVlc3QgRmVlZGJhY2sgUmVzb3VyY2VzPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJTZXJ2aWNlUmVxdWVzdGFuZFJlZmVycmFsRmVlZGJhY2tTdXBwb3J0aW5nSW5mb3JtYXRpb25CdW5kbGVzLmh0bWwiPlNlcnZpY2UgUmVxdWVzdCBhbmQgUmVmZXJyYWwgRmVlZGJhY2sgU3VwcG9ydGluZyBJbmZvcm1hdGlvbiBCdW5kbGVzPC9hPjwvbGk+CiAgICAgIDxsaSBjbGFzcz0iZGl2aWRlciI+PC9saT4KICAgICAgPGxpPjxhIGhyZWY9IkJpLWRpcmVjdGlvbmFsU2VydmljZWUtUmVmZXJyYWxUcmFuc2FjdGlvbnMuaHRtbCI+QmktZGlyZWN0aW9uYWwgU2VydmljZSBlLVJlZmVycmFsIFRyYW5zYWN0aW9uczwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iVHJhbnNwb3J0T3B0aW9ucy5odG1sIj5UcmFuc3BvcnQgT3B0aW9uczwvYT48L2xpPgogICAgICA8bGkgY2xhc3M9ImRpdmlkZXIiPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJBZGFwdGF0aW9uZm9yQWRkaXRpb25hbFJlZmVycmFsVXNlQ2FzZXMuaHRtbCI+QWRhcHRhdGlvbiBmb3IgQWRkaXRpb25hbCBSZWZlcnJhbCBVc2UgQ2FzZXM8L2E+PC9saT4gICAgPC91bD4KICA8L2xpPgogIDxsaT48YSBocmVmPSJEb3dubG9hZHMuaHRtbCI+RG93bmxvYWRzPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9ImFydGlmYWN0cy5odG1sIj5BcnRpZmFjdCBJbmRleDwvYT48L2xpPgo8L3VsPg=="/>
+                    <title value="menu.xml"/>
+                </attachment>
+            </content>
+        </DocumentReference>
+    </contained>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
-    <version value="1.0.0"/>
+    <version value="2.0.0-connectathon"/>
     <name value="BSeR_BidirectionalServices_eReferral"/>
     <title value="BSeR: Bidirectional Services_eReferral"/>
     <status value="active"/>
@@ -75,6 +93,9 @@
         </grouping>
         <grouping id="other-resources">
             <name value="Other Resources"/>
+        </grouping>
+        <grouping id="supporting-information-composition-examples">
+            <name value="Supporting Information Composition Examples"/>
         </grouping>
         <resource>
             <reference>
@@ -395,98 +416,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/bundle-bser-arthritis-referral-everywoman"/>
-                <display value="bundle-bser-arthritis-referral-everywoman"/>
-            </reference>
-            <name value="bundle-bser-arthritis-referral-everywoman"/>
-            <description value="Example of BSeR-ArthritisReferralSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
-                <display value="bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
-            <description value="Example of BSeR-ArthritisReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-diabetes-referral-eve-everywoman"/>
-                <display value="bundle-bser-diabetes-referral-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-diabetes-referral-eve-everywoman"/>
-            <description value="Example of BSeR-DiabetesPreventionReferralSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
-                <display value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-diabetes-referral-feedback-eve-everywoman"/>
-            <description value="Example of BSeR-DiabetesPreventionReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-hypertension-feedback-eve-everywoman"/></reference>
-            <name value="bundle-bser-hypertension-feedback-eve-everywoman"/>
-            <description value="Example of BSeR-HypertensionReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-hypertension-referral-eve-everywoman"/></reference>
-            <name value="bundle-bser-hypertension-referral-eve-everywoman"/>
-            <description value="Example of BSeR-HypertensionReferralSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HypertensionReferralSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-nutrition-referral-eve-everywoman"/>
-                <display value="bundle-bser-nutrition-referral-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-nutrition-referral-eve-everywoman"/>
-            <description value="Example of BSeR-EarlyChildhoodNutritionReferralSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionReferralSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
-                <display value="bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-nutrition-referral-feedback-eve-everywoman"/>
-            <description value="Example of BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-obesity-feedback-eve-everywoman"/></reference>
-            <name value="bundle-bser-obesity-feedback-eve-everywoman"/>
-            <description value="Example of BSeR-ObesityReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-obesity-referral-eve-everywoman"/></reference>
-            <name value="bundle-bser-obesity-referral-eve-everywoman"/>
-            <description value="Example of BSeR-ObesityReferralSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ObesityReferralSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
                 <display value="bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
             </reference>
@@ -514,26 +443,6 @@
             <description value="Example of BSeR-ReferralRequestDocumentBundle profile as used in the BSeR IG"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-tobacco-referral-eve-everywoman"/>
-                <display value="bundle-bser-tobacco-referral-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-tobacco-referral-eve-everywoman"/>
-            <description value="Example of BSeR-TobaccoUseCessationReferralSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralSupportingInformation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
-                <display value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
-            </reference>
-            <name value="bundle-bser-tobacco-referral-feedback-eve-everywoman"/>
-            <description value="Example of BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
         </resource>
         <resource>
             <reference>
@@ -893,16 +802,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Composition/composition-bser-referral-request"/>
-                <display value="Referral request"/>
-            </reference>
-            <name value="Referral request"/>
-            <description value="Example of BSeR-ReferralRequestComposition profile as used in the BSeR IG"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="RelatedPerson/relatedperson-mom-everymom"/></reference>
             <name value="RelatedPerson Mom L Everymom"/>
             <description value="Example of FHIR RelatedPerson resource as used in the BSeR IG"/>
@@ -965,12 +864,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/b3e9d5abdc714dc6a8f0f41c1ea95a8a"/></reference>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/ReferralServiceRequest"/>
                 <display value="Referral Service Request"/>
             </reference>
@@ -988,6 +881,61 @@
             <description value="A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is used in a referral to track the performance and state of completion of the referral service request."/>
             <exampleBoolean value="false"/>
             <groupingId value="core-referral-architecture-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-bser-referral-request-hypertension-everywoman"/>
+                <display value="Referral request"/>
+            </reference>
+            <name value="Referral request"/>
+            <description value="Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+            <groupingId value="supporting-information-composition-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-bser-referral-request-diabetes-everywoman"/>
+                <display value="Referral request"/>
+            </reference>
+            <name value="Referral request"/>
+            <description value="Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+            <groupingId value="supporting-information-composition-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-bser-referral-request-obesity-everywoman"/>
+                <display value="Referral request"/>
+            </reference>
+            <name value="Referral request"/>
+            <description value="Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+            <groupingId value="supporting-information-composition-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-bser-referral-request-tobacco-everywoman"/>
+                <display value="Referral request"/>
+            </reference>
+            <name value="Referral request"/>
+            <description value="Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+            <groupingId value="supporting-information-composition-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-bser-referral-request-arthritis-everywoman"/>
+                <display value="Referral request"/>
+            </reference>
+            <name value="Referral request"/>
+            <description value="Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
+            <groupingId value="supporting-information-composition-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

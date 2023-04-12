@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-TelcomCommunicationPreferencesVS"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-06T04:55:26.685+00:00"/>
-        <source value="#iyM0SvaF6SOD3yd0"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-04-12T06:44:00.045+00:00"/>
+        <source value="#HtCY4PiMX30Zme2M"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
     <name value="BSeR_TelcomCommunicationPreferencesVS"/>
     <title value="BSeR Telcom Communication Preferences VS"/>
     <status value="draft"/>
+    <experimental value="false"/>
     <description value="BSeR Telcom Communication Preferences value set"/>
     <compose>
         <inactive value="false"/>
