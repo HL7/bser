@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="75"/>
-        <lastUpdated value="2023-04-06T07:00:16.785+00:00"/>
-        <source value="#99L41z1hIXsDy6PZ"/>
+        <versionId value="78"/>
+        <lastUpdated value="2023-04-12T05:19:01.519+00:00"/>
+        <source value="#wznj99h7RGynY0Yq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="1.0.0"/>
@@ -67,11 +67,11 @@
         <grouping id="referral-service-request-feedback-resources">
             <name value="Referral Service Request Feedback Resources"/>
         </grouping>
-        <grouping id="supporting-information-bundles">
-            <name value="Service Request and Referral Feedback Supporting Information Bundles"/>
-        </grouping>
         <grouping id="supporting-information-resources">
             <name value="Supporting Information Resources"/>
+        </grouping>
+        <grouping id="supporting-information-feedback-resources">
+            <name value="Supporting Information Feedback Resources"/>
         </grouping>
         <grouping id="other-resources">
             <name value="Other Resources"/>
@@ -141,17 +141,7 @@
             <name value="BSeR Arthritis Feedback Observation"/>
             <description value="A collection of observational data points concerning the patient arthritic condition provided by the referral recipient as feedback to the referral initiator."/>
             <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-resources"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ArthritisReferralFeedbackSupportingInformation"/>
-                <display value="BSeR_ArthritisReferralFeedbackSupportingInformation"/>
-            </reference>
-            <name value="BSeR Arthritis Referral Feedback Supporting Information"/>
-            <description value="A bundle of clinical statements providing supporting information for a referral recipients feedback on a arthritis referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
+            <groupingId value="supporting-information-feedback-resources"/>
         </resource>
         <resource>
             <reference>
@@ -162,16 +152,6 @@
             <description value="Coverage high-level identifiers and descriptors of an insurance plan underwriting some or all of the cost of the referral services provided."/>
             <exampleBoolean value="false"/>
             <groupingId value="other-resources"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-DiabetesPreventionReferralFeedbackSupportingInformation"/>
-                <display value="BSeR_DiabetesPreventionReferralFeedbackSupportingInformation"/>
-            </reference>
-            <name value="BSeR Diabetes Prevention Referral Feedback Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
         </resource>
         <resource>
             <reference>
@@ -191,7 +171,7 @@
             <name value="BSeR Early Childhood Nutrition Feedback Observation"/>
             <description value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral."/>
             <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-resources"/>
+            <groupingId value="supporting-information-feedback-resources"/>
         </resource>
         <resource>
             <reference>
@@ -205,16 +185,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BSeR-ChildhoodNutritionReferralFeedbackSupportingInformation"/>
-                <display value="BSeR_EarlyChildhoodNutritionReferralFeedbackSupportingInformation"/>
-            </reference>
-            <name value="BSeR Early Childhood Nutrition Referral Feedback Supporting Information"/>
-            <description value="A bundle of clinical statements providing supporting information for a referral recipient's feedback on an early childhood nutrition referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-HA1C-Observation"/>
                 <display value="BSeR_HA1C-Observation"/>
             </reference>
@@ -225,23 +195,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BSeR-HypertensionReferralFeedbackSupportingInformation"/>
-                <display value="BSeR_HypertensionReferralFeedbackSupportingInformation"/>
-            </reference>
-            <name value="BSeR Hypertension Referral Feedback Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator regarding a hypertension referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/BSeR-MedicationStatement"/>
                 <display value="BSeR_MedicationStatement"/>
             </reference>
             <name value="BSeR MedicationStatement"/>
             <description value="A statement of a patient medication history used as supporting information for a patient service request referral."/>
             <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-resources"/>
+            <groupingId value="supporting-information-feedback-resources"/>
         </resource>
         <resource>
             <reference>
@@ -252,16 +212,6 @@
             <description value="An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy."/>
             <exampleBoolean value="false"/>
             <groupingId value="supporting-information-resources"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-ObesityReferralFeedbackSupportingInformation"/>
-                <display value="BSeR_ObesityReferralFeedbackSupportingInformation"/>
-            </reference>
-            <name value="BSeR Obesity Referral Feedback Supporting Information"/>
-            <description value="A bundle of clinical statements authored by the referral recipient as supporting information for feedback provided to a referral initiator regarding a obesity referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
         </resource>
         <resource>
             <reference>
@@ -281,7 +231,7 @@
             <name value="BSeR Participation Feedback Observation"/>
             <description value="An observation regarding the level of participation in the services provided by the referral recipient, such as the number of sessions attended."/>
             <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-resources"/>
+            <groupingId value="supporting-information-feedback-resources"/>
         </resource>
         <resource>
             <reference>
@@ -421,7 +371,7 @@
             <name value="BSeR Tobacco Use Cessation Feedback Medication"/>
             <description value="A statement regarding the use of a tobacco cessation medication. Medication.status indicates active or inactive use of the medication indicated in medication.code."/>
             <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-resources"/>
+            <groupingId value="supporting-information-feedback-resources"/>
         </resource>
         <resource>
             <reference>
@@ -431,17 +381,7 @@
             <name value="BSeR Tobacco Use Cessation Feedback Observation"/>
             <description value="A collection of observational data points provided by the referral recipient as feedback to the referral initiator. Tobacco use cessation feedback observations include quit Date, session type, and tobacco free duration."/>
             <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-resources"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-TobaccoUseCessationReferralFeedbackSupportingInformation"/>
-                <display value="BSeR_TobaccoUseCessationReferralFeedbackSupportingInformation"/>
-            </reference>
-            <name value="BSeR Tobacco Use Cessation Referral FeedbackSupportingInformation"/>
-            <description value="A bundle of clinical statements providing supporting information for a referral recipients feedback on a tobacco use cessation referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-bundles"/>
+            <groupingId value="supporting-information-feedback-resources"/>
         </resource>
         <resource>
             <reference>
