@@ -6,9 +6,9 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="Introduction.html">Introduction</a></li>
       <li><a href="bser_project_team.html">BSeR Project Team</a></li>
-      <li><a href="acknowledgements.html">Acknowledgements</a></li>
+      <li><a href="Acknowledgements.html">Acknowledgements</a></li>
       <li><a href="scope_and_context.html">Scope and Context</a></li>
       <li><a href="uml_rendering_of_the_bser_ig.html">UML rendering of the BSeR IG</a></li>
       <li><a href="change_log.html">Change Log</a></li>    </ul>
@@ -28,6 +28,6 @@
       <li><a href="transport_options.html">Transport Options</a></li>
       <li><a href="adaptation_for_additional_referral_use_cases.html">Adaptation for Additional Referral Use Cases</a></li>    </ul>
   </li>
-  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="Downloads.html">Downloads</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>
