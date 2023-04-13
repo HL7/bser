@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralFeedbackComposition"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-04-12T06:42:25.840+00:00"/>
-        <source value="#ZT1EqNKPr6UwN5kt"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-04-13T04:51:31.016+00:00"/>
+        <source value="#m70Md3MnbOGSEo44"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
     <name value="BSeR_ReferralFeedbackComposition"/>
@@ -148,7 +148,6 @@
         <element id="Composition.section:obesityReferralFeedbackSupportingInformation.entry:participationFeedbackObservation">
             <path value="Composition.section.entry"/>
             <sliceName value="participationFeedbackObservation"/>
-            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
@@ -217,8 +216,8 @@
         </element>
         <element id="Composition.section:arthritisReferralFeedbackSupportingInformation.entry:arthritisFeedbackObservation">
             <path value="Composition.section.entry"/>
-            <sliceName value="allergyIntolerance"/>
-            <max value="1"/>
+            <sliceName value="arthritisFeedbackObservation"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
@@ -313,7 +312,7 @@
         <element id="Composition.section:earlyChildhoodNutritionReferralFeedbackSupportingInformation.entry:earlyChildhoodNutritionFeedbackObservation">
             <path value="Composition.section.entry"/>
             <sliceName value="earlyChildhoodNutritionFeedbackObservation"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
@@ -322,7 +321,7 @@
         <element id="Composition.section:earlyChildhoodNutritionReferralFeedbackSupportingInformation.entry:medicationHistory">
             <path value="Composition.section.entry"/>
             <sliceName value="medicationHistory"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
@@ -331,7 +330,7 @@
         <element id="Composition.section:earlyChildhoodNutritionReferralFeedbackSupportingInformation.entry:participationFeedbackObservation">
             <path value="Composition.section.entry"/>
             <sliceName value="participationFeedbackObservation"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
@@ -365,7 +364,7 @@
         <element id="Composition.section:diabetesPreventionReferralFeedbackSupportingInformation.entry:participationFeedbackObservation">
             <path value="Composition.section.entry"/>
             <sliceName value="participationFeedbackObservation"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
@@ -426,7 +425,7 @@
         <element id="Composition.section:tobaccoUseCessationReferralFeedbackSupportingInformation.entry:tobaccoUseCessationFeedbackMedication">
             <path value="Composition.section.entry"/>
             <sliceName value="tobaccoUseCessationFeedbackMedication"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication"/>
@@ -435,7 +434,7 @@
         <element id="Composition.section:tobaccoUseCessationReferralFeedbackSupportingInformation.entry:tobaccoUseCessationFeedbackObservation">
             <path value="Composition.section.entry"/>
             <sliceName value="tobaccoUseCessationFeedbackObservation"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="composition-bser-referral-feedback"/>
+    <id value="composition-bser-referral-feedback-obesity-everywoman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-03-31T04:46:06.324+00:00"/>
-        <source value="#4xzUt0DMOpKmmHrV"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-04-13T04:57:28.720+00:00"/>
+        <source value="#eDVHK3YxnvyylZ3L"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
     </meta>
     <status value="final"/>
     <type>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="57133-1"/>
-            <display value="Referral note"/>
+            <code value="11488-4"/>
+            <display value="Consult note"/>
         </coding>
     </type>
     <subject>
@@ -27,7 +27,7 @@
     </author>
     <title value="Referral feedback"/>
     <section>
-        <title value="Arthritis referral request feedback summary"/>
+        <title value="Referral Service Request Feedback Summary"/>
         <code>
             <coding>
                 <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
@@ -43,16 +43,28 @@
         </entry>
     </section>
     <section>
-        <title value="Arthritis referral feedback supporting information"/>
+        <title value="Obesity Referral Feedback Supporting Information"/>
         <code>
             <coding>
                 <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
-                <code value="RSRFSI"/>
-                <display value="CompositionSectionReferralServiceRequestFeedbackSupportingInformation"/>
+                <code value="ORFSI"/>
+                <display value="Obesity Referral Feedback Supporting Information"/>
             </coding>
         </code>
         <entry>
-            <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+            <reference value="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-blood-pressure-eve-everywoman-bser"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-body-height-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-bmi-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-body-weight-eve-everywoman"/>
         </entry>
     </section>
 </Composition>

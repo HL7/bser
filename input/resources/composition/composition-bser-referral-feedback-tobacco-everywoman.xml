@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-bser-referral-feedback-tobacco-everywoman"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-12T23:57:32.211+00:00"/>
+        <source value="#RVCB2KB5NN5wn0Sq"/>
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
+    </meta>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="11488-4"/>
+            <display value="Consult note"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+        <display value="Eve Everywoman"/>
+    </subject>
+    <date value="2020-01-03T11:15:23Z"/>
+    <author>
+        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+        <display value="Hailey Eight, MD"/>
+    </author>
+    <title value="Referral feedback"/>
+    <section>
+        <title value="Referral Service Request Feedback Summary"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
+                <code value="RSRFS"/>
+                <display value="CompositionSectionReferralServiceRequestFeedbackSummary"/>
+            </coding>
+        </code>
+        <focus>
+            <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
+        </focus>
+        <entry>
+            <reference value="Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Tobacco Use Cessation Referral Feedback Supporting Information"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
+                <code value="TUCRFSI"/>
+                <display value="Tobacco Use Cessation Referral Feedback Supporting Information"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
+        </entry>
+    </section>
+</Composition>

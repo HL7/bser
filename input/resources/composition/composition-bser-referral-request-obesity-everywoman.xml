@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-bser-referral-request-obesity-everywoman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-04-12T07:00:48.408+00:00"/>
-        <source value="#FSdVArMNXbJSUIfF"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-04-13T05:28:20.043+00:00"/>
+        <source value="#BS2JekeReStu9fcM"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>
@@ -36,7 +36,7 @@
             </coding>
         </code>
         <entry>
-            <reference value="Observation/allergyintolerance-us-core-allergyint-eve-everywoman"/>
+            <reference value="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"/>
         </entry>
         <entry>
             <reference value="Observation/observation-blood-pressure-eve-everywoman-bser"/>

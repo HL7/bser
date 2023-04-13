@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralRequestComposition"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2023-04-06T06:02:59.663+00:00"/>
-        <source value="#HrMZmuYHjTqpliGW"/>
+        <versionId value="14"/>
+        <lastUpdated value="2023-04-13T05:51:40.036+00:00"/>
+        <source value="#CPw1zOWkUEUlYJgd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     <name value="BSeR_ReferralRequestComposition"/>
@@ -112,7 +112,7 @@
         <element id="Composition.section:obesityReferralSupportingInformation.entry:allergyIntolerance">
             <path value="Composition.section.entry"/>
             <sliceName value="allergyIntolerance"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
@@ -182,7 +182,7 @@
         <element id="Composition.section:arthritisReferralSupportingInformation.entry:allergyIntolerance">
             <path value="Composition.section.entry"/>
             <sliceName value="allergyIntolerance"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
@@ -191,10 +191,10 @@
         <element id="Composition.section:arthritisReferralSupportingInformation.entry:medicationStatement">
             <path value="Composition.section.entry"/>
             <sliceName value="medicationStatement"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
             </type>
         </element>
         <element id="Composition.section:arthritisReferralSupportingInformation.entry:bloodPressure">
@@ -261,7 +261,7 @@
         <element id="Composition.section:hypertensionReferralSupportingInformation.entry:diagnosis">
             <path value="Composition.section.entry"/>
             <sliceName value="diagnosis"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
@@ -331,7 +331,7 @@
         <element id="Composition.section:earlyChildhoodNutritionReferralSupportingInformation.entry:earlyChildhoodNutritionObservation">
             <path value="Composition.section.entry"/>
             <sliceName value="earlyChildhoodNutritionObservation"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
@@ -462,7 +462,7 @@
         <element id="Composition.section:tobaccoUseCessationReferralSupportingInformation.entry:nrtAuthorizationStatus">
             <path value="Composition.section.entry"/>
             <sliceName value="nrtAuthorizationStatus"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ReferralServiceRequest"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2023-03-31T04:31:11.644+00:00"/>
-        <source value="#ykN5TcEr3JfKJtJX"/>
+        <versionId value="18"/>
+        <lastUpdated value="2023-04-13T05:18:39.414+00:00"/>
+        <source value="#JsAh1L3PWdC0NZfD"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest"/>
     <name value="ReferralServiceRequest"/>
@@ -106,14 +106,6 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="ServiceRequest.basedOn">
-            <path value="ServiceRequest.basedOn"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="ServiceRequest.identifier:referralRecipientServiceRequestIdentifier.type">
             <path value="ServiceRequest.identifier.type"/>
             <min value="1"/>
@@ -138,6 +130,14 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.basedOn">
+            <path value="ServiceRequest.basedOn"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest"/>
             </type>
             <mustSupport value="true"/>
         </element>

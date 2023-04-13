@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Diagnosis"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-04-05T22:33:35.843+00:00"/>
-        <source value="#iolz2Z9iCHVX0vUo"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-04-13T05:22:36.756+00:00"/>
+        <source value="#TBr3lUr3yhWipvKx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     <name value="BSeR_Diagnosis"/>
     <title value="BSeR Diagnosis"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="A health condition of the referral patient. "/>
+    <description value="A health condition of the referral patient."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

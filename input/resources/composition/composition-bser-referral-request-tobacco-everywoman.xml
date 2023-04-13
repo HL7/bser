@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-bser-referral-request-tobacco-everywoman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-04-12T07:00:48.409+00:00"/>
-        <source value="#dx42REf9P9TqOWUz"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-04-13T05:28:59.860+00:00"/>
+        <source value="#vVmr43SMZqX5c6XW"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>
@@ -31,8 +31,8 @@
         <code>
             <coding>
                 <system value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
-                <code value="TCRSI"/>
-                <display value="Tobacco Cessation Referral Supporting Information"/>
+                <code value="TUCRSI"/>
+                <display value="Tobacco Use Cessation Referral Supporting Information"/>
             </coding>
         </code>
         <entry>
