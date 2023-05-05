@@ -1,128 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle
-    xmlns="http://hl7.org/fhir">
-    <id value="bundle-bser-referral-message-bundle-eve-everywoman"/>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="bundle-bser-referral-message-bundle-eve-everywoman" />
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T16:42:27.821+00:00"/>
-        <source value="#rO6rTw6vDZiVlQ1w"/>
-        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
+        <versionId value="2" />
+        <lastUpdated value="2022-09-16T16:42:27.821+00:00" />
+        <source value="#rO6rTw6vDZiVlQ1w" />
+        <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle" />
     </meta>
-    <type value="message"/>
+    <type value="message" />
     <entry>
-        <fullUrl value="MessageHeader/messageheader-BSeR-ReferralMessageHeader"/>
+        <fullUrl value="MessageHeader/messageheader-BSeR-ReferralMessageHeader" />
         <resource>
             <MessageHeader xmlns="http://hl7.org/fhir">
-                <id value="messageheader-BSeR-ReferralMessageHeader"/>
+                <id value="messageheader-BSeR-ReferralMessageHeader" />
                 <meta>
-                    <versionId value="3"/>
-                    <lastUpdated value="2023-03-31T04:46:33.319+00:00"/>
-                    <source value="#lBNtKfbea7oSBukP"/>
-                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader"/>
+                    <versionId value="3" />
+                    <lastUpdated value="2023-03-31T04:46:33.319+00:00" />
+                    <source value="#lBNtKfbea7oSBukP" />
+                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageHeader" />
                 </meta>
                 <text>
-                    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="messageheader-BSeR-ReferralMessageHeader"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;messageheader-BSeR-ReferralMessageHeader&quot; Version &quot;3&quot; Updated &quot;2023-03-31 04:46:33+0000&quot; </p><p style="margin-bottom: 0px">Information Source: #lBNtKfbea7oSBukP!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR Referral Message Header</a></p></div><p><b>event</b>: REF/RRI - Patient referral (Details: http://terminology.hl7.org/CodeSystem/v2-0003 code I12 = 'REF/RRI - Patient referral', stated as 'REF/RRI - Patient referral')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td><a href="http://www.saintlukeshealthsystem.org/fhir/endpoint">http://www.saintlukeshealthsystem.org/fhir/endpoint</a></td><td><a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a></td></tr></table><p><b>sender</b>: <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Software</b></td><td><b>Version</b></td><td><b>Contact</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Acme Central Patient Registry</td><td>FooBar Patient Manager</td><td>3.1.45.AABB</td><td><a href="tel:+1(555)1234567">+1 (555) 123 4567</a></td><td><a href="http://www.saintlukeshealthsystem.org/fhir">http://www.saintlukeshealthsystem.org/fhir</a></td></tr></table><p><b>reason</b>: REF/RRI - Patient referral <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0003.html">eventType</a>#I12)</span></p><p><b>focus</b>: <a href="Task-task-BSeR-ReferralTask.html">Task/task-BSeR-ReferralTask</a></p></div>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative: MessageHeader</b>
+                            <a name="messageheader-BSeR-ReferralMessageHeader"> </a>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource MessageHeader &quot;messageheader-BSeR-ReferralMessageHeader&quot; Version &quot;3&quot; Updated &quot;2023-03-31 04:46:33+0000&quot; </p>
+                            <p style="margin-bottom: 0px">Information Source: #lBNtKfbea7oSBukP!</p>
+                            <p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BSeR-ReferralMessageHeader.html">BSeR Referral Message Header</a></p>
+                        </div>
+                        <p><b>event</b>: REF/RRI - Patient referral (Details: http://terminology.hl7.org/CodeSystem/v2-0003 code I12 = 'REF/RRI - Patient referral', stated as 'REF/RRI - Patient referral')</p>
+                        <h3>Destinations</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Endpoint</b>
+                                </td>
+                                <td>
+                                    <b>Receiver</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>
+                                    <a href="http://www.saintlukeshealthsystem.org/fhir/endpoint">http://www.saintlukeshealthsystem.org/fhir/endpoint</a>
+                                </td>
+                                <td>
+                                    <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <p><b>sender</b>: <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a></p>
+                        <h3>Sources</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Name</b>
+                                </td>
+                                <td>
+                                    <b>Software</b>
+                                </td>
+                                <td>
+                                    <b>Version</b>
+                                </td>
+                                <td>
+                                    <b>Contact</b>
+                                </td>
+                                <td>
+                                    <b>Endpoint</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Acme Central Patient Registry</td>
+                                <td>FooBar Patient Manager</td>
+                                <td>3.1.45.AABB</td>
+                                <td>
+                                    <a href="tel:+1(555)1234567">+1 (555) 123 4567</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.saintlukeshealthsystem.org/fhir">http://www.saintlukeshealthsystem.org/fhir</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <p><b>reason</b>: REF/RRI - Patient referral <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0003.html">eventType</a>#I12)</span></p>
+                        <p><b>focus</b>: <a href="Task-task-BSeR-ReferralTask.html">Task/task-BSeR-ReferralTask</a></p>
+                    </div>
                 </text>
                 <eventCoding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v2-0003"/>
-                    <code value="I12"/>
-                    <display value="REF/RRI - Patient referral"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0003" />
+                    <code value="I12" />
+                    <display value="REF/RRI - Patient referral" />
                 </eventCoding>
                 <destination>
-                    <endpoint value="http://www.saintlukeshealthsystem.org/fhir/endpoint"/>
+                    <endpoint value="http://www.saintlukeshealthsystem.org/fhir/endpoint" />
                     <receiver>
-                        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                        <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
                     </receiver>
                 </destination>
                 <sender>
-                    <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
                 </sender>
                 <source>
-                    <name value="Acme Central Patient Registry"/>
-                    <software value="FooBar Patient Manager"/>
-                    <version value="3.1.45.AABB"/>
+                    <name value="Acme Central Patient Registry" />
+                    <software value="FooBar Patient Manager" />
+                    <version value="3.1.45.AABB" />
                     <contact>
-                        <system value="phone"/>
-                        <value value="+1 (555) 123 4567"/>
+                        <system value="phone" />
+                        <value value="+1 (555) 123 4567" />
                     </contact>
-                    <endpoint value="http://www.saintlukeshealthsystem.org/fhir"/>
+                    <endpoint value="http://www.saintlukeshealthsystem.org/fhir" />
                 </source>
                 <reason>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/v2-0003"/>
-                        <code value="I12"/>
-                        <display value="REF/RRI - Patient referral"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0003" />
+                        <code value="I12" />
+                        <display value="REF/RRI - Patient referral" />
                     </coding>
                 </reason>
                 <focus>
-                    <reference value="Task/task-BSeR-ReferralTask"/>
+                    <reference value="Task/task-BSeR-ReferralTask" />
                 </focus>
             </MessageHeader>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Task/task-BSeR-ReferralTask"/>
+        <fullUrl value="Task/task-BSeR-ReferralTask" />
         <resource>
             <Task xmlns="http://hl7.org/fhir">
-                <id value="task-BSeR-ReferralTask"/>
+                <id value="task-BSeR-ReferralTask" />
                 <meta>
-                    <versionId value="3"/>
-                    <lastUpdated value="2023-03-31T04:47:04.203+00:00"/>
-                    <source value="#I9By9Gn4GPBQ3o0S"/>
-                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
+                    <versionId value="3" />
+                    <lastUpdated value="2023-03-31T04:47:04.203+00:00" />
+                    <source value="#I9By9Gn4GPBQ3o0S" />
+                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask" />
                 </meta>
                 <text>
-                    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Task</b><a name="task-BSeR-ReferralTask"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Task &quot;task-BSeR-ReferralTask&quot; Version &quot;3&quot; Updated &quot;2023-03-31 04:47:04+0000&quot; </p><p style="margin-bottom: 0px">Information Source: #I9By9Gn4GPBQ3o0S!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a></p></div><p><b>identifier</b>: Placer Identifier: 66666666, Filler Identifier: 77777777</p><p><b>status</b>: requested</p><p><b>businessStatus</b>: Service Request Fulfillment Completed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-TaskBusinessStatusCS.html">Task Business Status Code System</a>#7.0)</span></p><p><b>intent</b>: order</p><p><b>focus</b>: <a href="ServiceRequest-servicerequest-BSeR-ReferralServiceRequest.html">ServiceRequest/servicerequest-BSeR-ReferralServiceRequest</a></p><p><b>authoredOn</b>: 2020-01-15 14:43:32-0400</p><p><b>requester</b>: <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a></p><p><b>owner</b>: <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a></p><h3>Outputs</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Arthritis referral feedback <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td><a href="??phinvads??">Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman</a></td></tr></table></div>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative: Task</b>
+                            <a name="task-BSeR-ReferralTask"> </a>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource Task &quot;task-BSeR-ReferralTask&quot; Version &quot;3&quot; Updated &quot;2023-03-31 04:47:04+0000&quot; </p>
+                            <p style="margin-bottom: 0px">Information Source: #I9By9Gn4GPBQ3o0S!</p>
+                            <p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BSeR-ReferralTask.html">BSeR Referral Task</a></p>
+                        </div>
+                        <p><b>identifier</b>: Placer Identifier: 66666666, Filler Identifier: 77777777</p>
+                        <p><b>status</b>: requested</p>
+                        <p><b>businessStatus</b>: Service Request Fulfillment Completed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-TaskBusinessStatusCS.html">Task Business Status Code System</a>#7.0)</span></p>
+                        <p><b>intent</b>: order</p>
+                        <p><b>focus</b>: <a href="ServiceRequest-servicerequest-BSeR-ReferralServiceRequest.html">ServiceRequest/servicerequest-BSeR-ReferralServiceRequest</a></p>
+                        <p><b>authoredOn</b>: 2020-01-15 14:43:32-0400</p>
+                        <p><b>requester</b>: <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html">PractitionerRole/practitionerrole-bser-referral-initiator</a></p>
+                        <p><b>owner</b>: <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html">PractitionerRole/practitionerrole-bser-referral-recipient</a></p>
+                        <h3>Outputs</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Type</b>
+                                </td>
+                                <td>
+                                    <b>Value[x]</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Arthritis referral feedback <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td>
+                                <td>
+                                    <a href="Bundle-bundle-bser-referral-feedback-document-bundle-eve-everywoman.html">Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </text>
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="PLAC"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="PLAC" />
                         </coding>
                     </type>
-                    <value value="66666666"/>
+                    <value value="66666666" />
                     <assigner>
-                        <reference value="Organization/organization-bser-organization-saint-luke"/>
+                        <reference value="Organization/organization-bser-organization-saint-luke" />
                     </assigner>
                 </identifier>
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="FILL"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="FILL" />
                         </coding>
                     </type>
-                    <value value="77777777"/>
+                    <value value="77777777" />
                     <assigner>
-                        <reference value="Organization/organization-bser-organization-saint-luke"/>
+                        <reference value="Organization/organization-bser-organization-saint-luke" />
                     </assigner>
                 </identifier>
-                <status value="requested"/>
+                <status value="requested" />
                 <businessStatus>
                     <coding>
-                        <system value="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS"/>
-                        <code value="7.0"/>
-                        <display value="Service Request Fulfillment Completed"/>
+                        <system value="http://hl7.org/fhir/us/bser/CodeSystem/TaskBusinessStatusCS" />
+                        <code value="7.0" />
+                        <display value="Service Request Fulfillment Completed" />
                     </coding>
                 </businessStatus>
-                <intent value="order"/>
+                <intent value="order" />
                 <focus>
-                    <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
+                    <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" />
                 </focus>
-                <authoredOn value="2020-01-15T14:43:32-04:00"/>
+                <authoredOn value="2020-01-15T14:43:32-04:00" />
                 <requester>
-                    <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
                 </requester>
                 <owner>
-                    <reference value="PractitionerRole/practitionerrole-bser-referral-recipient"/>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
                 </owner>
                 <output>
                     <type>
-                        <text value="Arthritis referral feedback"/>
+                        <text value="Arthritis referral feedback" />
                     </type>
                     <valueReference>
-                        <reference value="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
+                        <reference value="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman" />
                     </valueReference>
                 </output>
             </Task>
