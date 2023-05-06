@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralTask"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:38.241+00:00"/>
-        <source value="#ZJBpkjD8jfPCaDRK"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-05-06T21:42:31.168+00:00"/>
+        <source value="#oKFlthDzm1Hxck9G"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     <name value="BSeR_ReferralTask"/>
@@ -122,6 +122,14 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
+            </type>
+        </element>
+        <element id="Task.for">
+            <path value="Task.for"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
         <element id="Task.authoredOn">

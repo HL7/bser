@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-ReferralActivityStatus"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:38.045+00:00"/>
-        <source value="#d9fSVtv2bIbrFWYb"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-05-05T17:56:10.943+00:00"/>
+        <source value="#ao428NCbpkJnbTxN"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"/>
     <name value="BSeR_ReferralActivityStatus"/>

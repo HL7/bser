@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="109"/>
-        <lastUpdated value="2023-04-13T07:13:38.021+00:00"/>
-        <source value="#yJca6sSoFMa6NG5q"/>
+        <versionId value="110"/>
+        <lastUpdated value="2023-05-05T17:58:03.176+00:00"/>
+        <source value="#C8JKDPOwFM78pjTX"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="2.0.0-connectathon"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Organization"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.948+00:00"/>
-        <source value="#Y8VpmN6kmxjK06GM"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-05-05T17:58:03.140+00:00"/>
+        <source value="#OH4HgYRz9emUzDZU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
     <name value="BSeR_Organization"/>

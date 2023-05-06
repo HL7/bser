@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-PatientConsent"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.962+00:00"/>
-        <source value="#OTR4Ib26ALmlbA8x"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-05-05T17:57:12.566+00:00"/>
+        <source value="#o9wCqzoNJ656wXjT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
     <name value="BSeR_PatientConsent"/>

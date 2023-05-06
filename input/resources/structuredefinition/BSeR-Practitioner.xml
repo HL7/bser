@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BSeR-Practitioner"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.971+00:00"/>
-        <source value="#LuuLeNg2TUQtOyEK"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-05-05T17:56:39.546+00:00"/>
+        <source value="#I59MdLigGnR6bol7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Practitioner"/>
     <name value="BSeR_Practitioner"/>
