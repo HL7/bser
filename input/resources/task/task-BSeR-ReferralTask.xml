@@ -44,6 +44,9 @@
     <focus>
         <reference value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"/>
     </focus>
+    <focus>
+        <reference value="Patient/patient-us-core-patient-eve-everywoman"/>
+    </focus>
     <authoredOn value="2020-01-15T14:43:32-04:00"/>
     <requester>
         <reference value="PractitionerRole/practitionerrole-bser-referral-initiator"/>
