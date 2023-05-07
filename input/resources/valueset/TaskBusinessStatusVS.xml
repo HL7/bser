@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="TaskBusinessStatusVS"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-12T06:44:00.044+00:00"/>
-        <source value="#L2FqYXymsDDT6ruh"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-05-07T16:36:12.298+00:00"/>
+        <source value="#q9YOK3WkWcRurxJp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ValueSet/TaskBusinessStatusVS"/>
     <name value="TaskBusinessStatusVS"/>
@@ -29,12 +29,12 @@
                 <display value="Service Request Declined"/>
             </concept>
             <concept>
-                <code value="5.4"/>
+                <code value="5.2"/>
                 <display value="Service Request Cancellation Requested"/>
             </concept>
             <concept>
-                <code value="5.x"/>
-                <display value="Service Request Event State Change"/>
+                <code value="5.1.1"/>
+                <display value="Serivce Request Event Scheduled"/>
             </concept>
             <concept>
                 <code value="6.0"/>
@@ -43,6 +43,18 @@
             <concept>
                 <code value="7.0"/>
                 <display value="Service Request Fulfillment Completed"/>
+            </concept>
+            <concept>
+                <code value="5.1.2"/>
+                <display value="Scheduled Service Request Event Unattended"/>
+            </concept>
+            <concept>
+                <code value="5.1.3"/>
+                <display value="Scheduled Service Request Event Cancelled"/>
+            </concept>
+            <concept>
+                <code value="5.1.4"/>
+                <display value="Service Request Event Completed"/>
             </concept>
         </include>
     </compose>
