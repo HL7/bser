@@ -30,18 +30,6 @@
         <element id="Condition">
             <path value="Condition"/>
         </element>
-        <element id="Condition.category">
-            <path value="Condition.category"/>
-            <short value="Problem List Item"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-                    <code value="problem-list-item"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
         <element id="Condition.onset[x]">
             <path value="Condition.onset[x]"/>
             <min value="0"/>
