@@ -58,7 +58,7 @@
             <text value="Arthritis referral feedback"/>
         </type>
         <valueReference>
-            <reference value="Bundle/bundle-bser-arthritis-referral-feedback-eve-everywoman"/>
+            <reference value="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman"/>
         </valueReference>
     </output>
 </Task>
