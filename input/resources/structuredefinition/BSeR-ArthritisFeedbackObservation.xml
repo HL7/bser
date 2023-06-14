@@ -4,8 +4,7 @@
     <id value="BSeR-ArthritisFeedbackObservation"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.701+00:00"/>
-        <source value="#wv4SqCY420gCVS93"/>
+        <lastUpdated value="2022-09-16T21:05:37.701Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     <name value="BSeR_ArthritisFeedbackObservation"/>

@@ -4,8 +4,7 @@
     <id value="BSeR-ReferralServiceRequest"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:38.110+00:00"/>
-        <source value="#icKH9vypCNrSgkHJ"/>
+        <lastUpdated value="2022-09-16T21:05:38.110Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest"/>
     <name value="BSeR_ReferralServiceRequest"/>

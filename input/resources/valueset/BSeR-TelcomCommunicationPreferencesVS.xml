@@ -4,8 +4,7 @@
     <id value="BSeR-TelcomCommunicationPreferencesVS"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-04-12T06:44:00.045+00:00"/>
-        <source value="#HtCY4PiMX30Zme2M"/>
+        <lastUpdated value="2023-04-12T10:44:00.045Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ValueSet/BSeR-TelcomCommunicationPreferencesVS"/>
     <name value="BSeR_TelcomCommunicationPreferencesVS"/>

@@ -4,8 +4,7 @@
     <id value="observation-body-height-eve-everywoman"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-03-23T07:09:15.380+00:00"/>
-        <source value="#o2InuSlQFGDh8zMV"/>
+        <lastUpdated value="2023-03-23T11:09:15.380Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"/>
     </meta>
     <status value="final"/>

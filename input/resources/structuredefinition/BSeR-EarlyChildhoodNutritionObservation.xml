@@ -4,8 +4,7 @@
     <id value="BSeR-EarlyChildhoodNutritionObservation"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.703+00:00"/>
-        <source value="#X7RoxDLJyrJgZHsv"/>
+        <lastUpdated value="2022-09-16T21:05:37.703Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"/>
     <name value="BSeR_EarlyChildhoodNutritionObservation"/>

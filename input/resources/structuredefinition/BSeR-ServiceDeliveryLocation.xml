@@ -4,8 +4,7 @@
     <id value="BSeR-ServiceDeliveryLocation"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2023-05-05T17:55:15.881+00:00"/>
-        <source value="#AkBGCOE7ReBcl4kX"/>
+        <lastUpdated value="2023-05-05T21:55:15.881Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ServiceDeliveryLocation"/>
     <name value="BSeR_ServiceDeliveryLocation"/>

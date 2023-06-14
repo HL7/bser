@@ -4,8 +4,7 @@
     <id value="composition-bser-referral-request-hypertension-everywoman"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2023-04-12T07:00:48.409+00:00"/>
-        <source value="#15PZal8HbxUMfnGk"/>
+        <lastUpdated value="2023-04-12T11:00:48.409Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>

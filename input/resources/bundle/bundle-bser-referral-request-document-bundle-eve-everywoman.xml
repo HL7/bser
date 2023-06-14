@@ -4,8 +4,7 @@
     <id value="bundle-bser-referral-request-document-bundle-eve-everywoman"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2023-04-13T06:57:40.119+00:00"/>
-        <source value="#EBdPERAvAaTDwR3x"/>
+        <lastUpdated value="2023-04-13T10:57:40.119Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle"/>
     </meta>
     <identifier>

@@ -4,8 +4,7 @@
     <id value="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-03-31T04:46:34.005+00:00"/>
-        <source value="#iuxg0jXCbjGfBvh9"/>
+        <lastUpdated value="2023-03-31T08:46:34.005Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
     </meta>
     <status value="final"/>

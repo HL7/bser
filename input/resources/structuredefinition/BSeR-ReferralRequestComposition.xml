@@ -4,8 +4,7 @@
     <id value="BSeR-ReferralRequestComposition"/>
     <meta>
         <versionId value="14"/>
-        <lastUpdated value="2023-04-13T05:51:40.036+00:00"/>
-        <source value="#CPw1zOWkUEUlYJgd"/>
+        <lastUpdated value="2023-04-13T09:51:40.036Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     <name value="BSeR_ReferralRequestComposition"/>

@@ -4,8 +4,7 @@
     <id value="BSeR-PatientConsent"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-05-05T17:57:12.566+00:00"/>
-        <source value="#o9wCqzoNJ656wXjT"/>
+        <lastUpdated value="2023-05-05T21:57:12.566Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-PatientConsent"/>
     <name value="BSeR_PatientConsent"/>

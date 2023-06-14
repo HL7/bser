@@ -4,8 +4,7 @@
     <id value="observation-BSeR-EducationLevel-eve-everywoman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T16:45:19.320+00:00"/>
-        <source value="#DFJEDlrrXqT24eUf"/>
+        <lastUpdated value="2022-09-16T20:45:19.320Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     </meta>
     <status value="final"/>

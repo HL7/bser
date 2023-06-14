@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bser"/>
     <meta>
-        <versionId value="110"/>
-        <lastUpdated value="2023-05-05T17:58:03.176+00:00"/>
-        <source value="#C8JKDPOwFM78pjTX"/>
+        <versionId value="112"/>
+        <lastUpdated value="2023-05-23T02:35:39.791Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
     <version value="2.0.0-connectathon"/>
@@ -168,16 +167,6 @@
             <description value="A health condition of the referral patient."/>
             <exampleBoolean value="false"/>
             <groupingId value="supporting-information-resources"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
-                <display value="BSeR_EarlyChildhoodNutritionFeedbackObservation"/>
-            </reference>
-            <name value="BSeR Early Childhood Nutrition Feedback Observation"/>
-            <description value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="supporting-information-feedback-resources"/>
         </resource>
         <resource>
             <reference>
@@ -966,6 +955,15 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackComposition"/>
             <groupingId value="referral-feedback-supporting-information-composition-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"/>
+                <display value="BSeR Early Childhood Nutrition Feedback Observation"/>
+            </reference>
+            <name value="BSeR Early Childhood Nutrition Feedback Observation"/>
+            <description value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

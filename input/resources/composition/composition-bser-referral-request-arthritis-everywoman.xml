@@ -4,8 +4,7 @@
     <id value="composition-bser-referral-request-arthritis-everywoman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-13T05:27:36.275+00:00"/>
-        <source value="#UabNeSfKfNq7b6Gv"/>
+        <lastUpdated value="2023-04-13T09:27:36.275Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>

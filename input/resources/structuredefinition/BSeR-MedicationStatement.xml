@@ -4,8 +4,7 @@
     <id value="BSeR-MedicationStatement"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.933+00:00"/>
-        <source value="#EZxmX0q1IIwPQbg8"/>
+        <lastUpdated value="2022-09-16T21:05:37.933Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-MedicationStatement"/>
     <name value="BSeR_MedicationStatement"/>

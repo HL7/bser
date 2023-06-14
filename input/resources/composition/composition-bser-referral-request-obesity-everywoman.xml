@@ -4,8 +4,7 @@
     <id value="composition-bser-referral-request-obesity-everywoman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-13T05:28:20.043+00:00"/>
-        <source value="#BS2JekeReStu9fcM"/>
+        <lastUpdated value="2023-04-13T09:28:20.043Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>

@@ -4,8 +4,7 @@
     <id value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-03-31T04:46:33.577+00:00"/>
-        <source value="#pO0kvhrqvU8E7xY9"/>
+        <lastUpdated value="2023-03-31T08:46:33.577Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation"/>
     </meta>
     <status value="final"/>

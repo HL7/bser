@@ -4,8 +4,7 @@
     <id value="BSeR-NRT-AuthorizationStatus"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.933+00:00"/>
-        <source value="#8oQav4WcYg0hKd1d"/>
+        <lastUpdated value="2022-09-16T21:05:37.933Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus"/>
     <name value="BSeR_NRT_AuthorizationStatus"/>

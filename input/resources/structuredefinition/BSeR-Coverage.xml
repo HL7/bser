@@ -4,8 +4,7 @@
     <id value="BSeR-Coverage"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-05-05T17:59:29.751+00:00"/>
-        <source value="#olqbDQ4yqiBBt9fW"/>
+        <lastUpdated value="2023-05-05T21:59:29.751Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage"/>
     <name value="BSeR_Coverage"/>

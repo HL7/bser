@@ -4,8 +4,7 @@
     <id value="BSeR-TobaccoUseCessationFeedbackObservation"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-09-17T15:37:36.984+00:00"/>
-        <source value="#UsrrfO9PmaGQrOOf"/>
+        <lastUpdated value="2022-09-17T19:37:36.984Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"/>
     <name value="BSeR_TobaccoUseCessationFeedbackObservation"/>

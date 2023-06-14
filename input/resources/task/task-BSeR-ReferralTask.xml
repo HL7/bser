@@ -4,8 +4,7 @@
     <id value="task-BSeR-ReferralTask"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2023-05-07T15:30:58.065+00:00"/>
-        <source value="#da9rWYCDOZX6Y27M"/>
+        <lastUpdated value="2023-05-07T19:30:58.065Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralTask"/>
     </meta>
     <identifier>

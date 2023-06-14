@@ -4,8 +4,7 @@
     <id value="observation-bmi-eve-everywoman"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-03-23T07:08:38.879+00:00"/>
-        <source value="#fgoWJZySAKpgvC8q"/>
+        <lastUpdated value="2023-03-23T11:08:38.879Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"/>
     </meta>
     <status value="final"/>

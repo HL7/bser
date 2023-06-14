@@ -4,8 +4,7 @@
     <id value="bser"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2023-04-12T06:40:11.758+00:00"/>
-        <source value="#NRzN47wgVy0VPR6l"/>
+        <lastUpdated value="2023-04-12T10:40:11.758Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/CodeSystem/bser"/>
     <name value="BSeR"/>

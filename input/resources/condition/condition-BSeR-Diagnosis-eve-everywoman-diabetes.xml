@@ -4,8 +4,7 @@
     <id value="condition-BSeR-Diagnosis-eve-everywoman-diabetes"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-03-31T04:46:06.291+00:00"/>
-        <source value="#TxkVVn6m6foHMrnf"/>
+        <lastUpdated value="2023-03-31T08:46:06.291Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     </meta>
     <category>

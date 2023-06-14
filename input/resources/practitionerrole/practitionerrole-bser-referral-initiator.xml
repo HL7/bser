@@ -4,8 +4,7 @@
     <id value="practitionerrole-bser-referral-initiator"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-03-31T04:46:51.935+00:00"/>
-        <source value="#KWz9t9gDu5KkckaW"/>
+        <lastUpdated value="2023-03-31T08:46:51.935Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralInitiatorPractitionerRole"/>
     </meta>
     <identifier>

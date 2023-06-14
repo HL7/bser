@@ -4,8 +4,7 @@
     <id value="BSeR-Organization"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2023-05-05T17:58:03.140+00:00"/>
-        <source value="#OH4HgYRz9emUzDZU"/>
+        <lastUpdated value="2023-05-05T21:58:03.140Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Organization"/>
     <name value="BSeR_Organization"/>

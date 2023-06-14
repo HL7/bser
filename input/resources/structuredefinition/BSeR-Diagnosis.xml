@@ -4,8 +4,7 @@
     <id value="BSeR-Diagnosis"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2023-05-05T17:59:03.143+00:00"/>
-        <source value="#CD9UXoYyYURh0ik2"/>
+        <lastUpdated value="2023-05-05T21:59:03.143Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"/>
     <name value="BSeR_Diagnosis"/>

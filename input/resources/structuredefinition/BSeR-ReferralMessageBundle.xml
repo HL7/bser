@@ -4,8 +4,7 @@
     <id value="BSeR-ReferralMessageBundle"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:38.107+00:00"/>
-        <source value="#IaQRT9RAIehc2vLm"/>
+        <lastUpdated value="2022-09-16T21:05:38.107Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle"/>
     <version value="1.0.0"/>

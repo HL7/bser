@@ -4,8 +4,7 @@
     <id value="BSeR-EducationLevel"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2023-05-05T17:58:31.238+00:00"/>
-        <source value="#2fo4vdhrQYuSa0OW"/>
+        <lastUpdated value="2023-05-05T21:58:31.238Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel"/>
     <name value="BSeR_EducationLevel"/>

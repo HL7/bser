@@ -4,8 +4,7 @@
     <id value="patient-us-core-patient-mom-everymom"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2023-03-31T04:46:51.931+00:00"/>
-        <source value="#bxIqz7uRklUcKgOB"/>
+        <lastUpdated value="2023-03-31T08:46:51.931Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>

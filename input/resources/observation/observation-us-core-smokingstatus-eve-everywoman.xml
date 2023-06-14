@@ -4,8 +4,7 @@
     <id value="observation-us-core-smokingstatus-eve-everywoman"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2022-09-16T17:50:48.821+00:00"/>
-        <source value="#hongMWqPe5L1dgrq"/>
+        <lastUpdated value="2022-09-16T21:50:48.821Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
     </meta>
     <status value="final"/>

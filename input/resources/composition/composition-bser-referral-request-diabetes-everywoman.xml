@@ -4,8 +4,7 @@
     <id value="composition-bser-referral-request-diabetes-everywoman"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2023-04-12T07:00:48.408+00:00"/>
-        <source value="#ITCykHQR7ehLCqb8"/>
+        <lastUpdated value="2023-04-12T11:00:48.408Z"/>
         <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestComposition"/>
     </meta>
     <status value="final"/>

@@ -4,8 +4,7 @@
     <id value="BSeR-ParticipationFeedbackObservation"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-09-16T17:05:37.951+00:00"/>
-        <source value="#Km3DiHLT4Ap85DgU"/>
+        <lastUpdated value="2022-09-16T21:05:37.951Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"/>
     <name value="BSeR_ParticipationFeedbackObservation"/>
