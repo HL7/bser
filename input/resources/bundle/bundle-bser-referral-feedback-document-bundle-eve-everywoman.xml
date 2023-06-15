@@ -372,4 +372,134 @@
             </Practitioner>
         </resource>
     </entry>
+    <entry>
+        <fullUrl value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" />
+        <resource>
+            <ServiceRequest>
+                <id value="servicerequest-BSeR-ReferralServiceRequest" />
+                <meta>
+                    <versionId value="3" />
+                    <lastUpdated value="2023-03-31T04:47:04.215+00:00" />
+                    <source value="#geEcyuymdeHKb4ph" />
+                    <profile value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative: ServiceRequest</b>
+                            <a name="servicerequest-BSeR-ReferralServiceRequest" />
+                        </p>
+                        <div
+                            style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource ServiceRequest "servicerequest-BSeR-ReferralServiceRequest" Version "3" Updated
+                                "2023-03-31 04:47:04+0000" </p>
+                            <p style="margin-bottom: 0px">Information Source: #geEcyuymdeHKb4ph!</p>
+                            <p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BSeR-ReferralServiceRequest.html">BSeR Referral
+                                Service Request</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: Placer Identifier: 88888888, Filler Identifier: 99999999 </p>
+                        <p>
+                            <b>status</b>: active </p>
+                        <p>
+                            <b>intent</b>: order </p>
+                        <p>
+                            <b>code</b>: Patient referral <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ( <a
+                                href="https://browser.ihtsdotools.org/">SNOMED CT</a>#3457005) </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: <a href="Patient-patient-us-core-patient-eve-everywoman.html"
+                                >Patient/patient-us-core-patient-eve-everywoman: Eve Everywoman</a> " EVERYWOMAN" </p>
+                        <p>
+                            <b>occurrence</b>: 2020-01-09 </p>
+                        <p>
+                            <b>authoredOn</b>: 2020-02-14 </p>
+                        <p>
+                            <b>requester</b>: <a href="PractitionerRole-practitionerrole-bser-referral-initiator.html"
+                                >PractitionerRole/practitionerrole-bser-referral-initiator: Henry Seven, MD</a>
+                        </p>
+                        <p>
+                            <b>performer</b>: <a href="PractitionerRole-practitionerrole-bser-referral-recipient.html"
+                                >PractitionerRole/practitionerrole-bser-referral-recipient: Hailey Eight, MD</a>
+                        </p>
+                        <p>
+                            <b>reasonCode</b>: Arthritis (disorder) <span
+                                style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ( <a
+                                    href="https://browser.ihtsdotools.org/">SNOMED CT</a>#3723001) </span>
+                        </p>
+                        <p>
+                            <b>insurance</b>: <a href="Coverage-coverage-BSeR-Coverage-eve-everywoman.html"
+                                >Coverage/coverage-BSeR-Coverage-eve-everywoman</a>
+                        </p>
+                        <p>
+                            <b>supportingInfo</b>: <a href="Bundle-bundle-bser-referral-request-document-bundle-eve-everywoman.html"
+                                >Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman</a>
+                        </p>
+                    </div>
+                </text>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="PLAC" />
+                        </coding>
+                    </type>
+                    <value value="88888888" />
+                    <assigner>
+                        <reference value="Organization/organization-bser-organization-saint-luke" />
+                    </assigner>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="FILL" />
+                        </coding>
+                    </type>
+                    <value value="99999999" />
+                    <assigner>
+                        <reference value="Organization/organization-bser-organization-saint-luke" />
+                    </assigner>
+                </identifier>
+                <status value="active" />
+                <intent value="order" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="3457005" />
+                        <display value="Patient referral" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-us-core-patient-eve-everywoman" />
+                    <display value="Eve Everywoman" />
+                </subject>
+                <occurrenceDateTime value="2020-01-09" />
+                <authoredOn value="2020-02-14" />
+                <requester>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-initiator" />
+                    <display value="Henry Seven, MD" />
+                </requester>
+                <performer>
+                    <reference value="PractitionerRole/practitionerrole-bser-referral-recipient" />
+                    <display value="Hailey Eight, MD" />
+                </performer>
+                <reasonCode>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="3723001" />
+                        <display value="Arthritis (disorder)" />
+                    </coding>
+                </reasonCode>
+                <insurance>
+                    <reference value="Coverage/coverage-BSeR-Coverage-eve-everywoman" />
+                </insurance>
+                <supportingInfo>
+                    <reference value="Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman" />
+                </supportingInfo>
+            </ServiceRequest>
+        </resource>
+    </entry>
 </Bundle>
