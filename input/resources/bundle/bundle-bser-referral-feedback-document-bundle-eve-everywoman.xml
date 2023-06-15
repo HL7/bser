@@ -373,7 +373,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" />
+        <fullUrl value="http://example.org/fhir/ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" />
         <resource>
             <ServiceRequest>
                 <id value="servicerequest-BSeR-ReferralServiceRequest" />
