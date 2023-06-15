@@ -123,7 +123,7 @@
             <name value="US Core AllergyIntolerance - Sulfonamide - Eve Everywoman" />
             <description value="US Core AllergyIntolerance: Sulfonamide - Eve Everywoman example" />
             <exampleBoolean value="true" />
-            <groupingId value="supporting-information-examples"/>
+            <groupingId value="supporting-information-examples" />
         </resource>
         <resource>
             <reference>
@@ -552,7 +552,7 @@
             <name value="observation-bmi-eve-everywoman" />
             <description value="Example of FHIR BMI profile as used in the BSeR IG" />
             <exampleBoolean value="true" />
-            <groupingId value="supporting-information-examples"/>
+            <groupingId value="supporting-information-examples" />
         </resource>
         <resource>
             <reference>
@@ -562,7 +562,7 @@
             <name value="observation-body-height-baby-everybaby" />
             <description value="Example of FHIR Vital Sign Observation as used in the BSeR IG" />
             <exampleBoolean value="true" />
-            <groupingId value="supporting-information-examples"/>
+            <groupingId value="supporting-information-examples" />
         </resource>
         <resource>
             <reference>
@@ -571,7 +571,7 @@
             <name value="observation-body-height-eve-everywoman" />
             <description value="Example of FHIR Body Height profile as used in the BSeR IG" />
             <exampleBoolean value="true" />
-            <groupingId value="supporting-information-examples"/>
+            <groupingId value="supporting-information-examples" />
         </resource>
         <resource>
             <reference>
@@ -581,7 +581,7 @@
             <name value="observation-body-weight-eve-everywoman" />
             <description value="Example of FHIR Body Weight profile as used in the BSeR IG" />
             <exampleBoolean value="true" />
-            <groupingId value="supporting-information-examples"/>
+            <groupingId value="supporting-information-examples" />
         </resource>
         <resource>
             <reference>
@@ -711,7 +711,7 @@
             <name value="observation-odh-employment-status-eve-everywoman" />
             <description value="Example of ODH Employment Status profile as used in the BSeR IG" />
             <exampleBoolean value="true" />
-            <groupingId value="supporting-information-examples"/>
+            <groupingId value="supporting-information-examples" />
         </resource>
         <resource>
             <reference>
@@ -741,7 +741,7 @@
             <name value="observation-us-core-smokingstatus-eve-everywoman" />
             <description value="Example of US Core Smoking Status profile as used in the BSeR IG" />
             <exampleBoolean value="true" />
-            <groupingId value="supporting-information-examples"/>
+            <groupingId value="supporting-information-examples" />
         </resource>
         <resource>
             <reference>
@@ -1020,6 +1020,7 @@
             <description
                 value="A collection of observational data points authored by the referral recipient providing feedback to the referral initiator concerning an early childhood nutrition referral." />
             <exampleBoolean value="false" />
+            <groupingId value="supporting-information-feedback-profiles" />
         </resource>
         <page>
             <nameUrl value="index.html" />
