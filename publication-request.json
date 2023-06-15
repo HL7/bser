@@ -1,7 +1,7 @@
 {
 	"package-id": "hl7.fhir.us.bser",
-	"version": "2.0.0-connectathon",
-	"desc": "STU 2 May 2023 Connecatathon Version",
+	"version": "2.0.0",
+	"desc": "STU 2",
 	"path": "http://build.fhir.org/ig/HL7/bser",
 	"status": "trial-use",
 	"sequence": "STU 2"
