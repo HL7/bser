@@ -7,7 +7,7 @@
         <lastUpdated value="2023-05-23T02:35:39.791Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser"/>
-    <version value="2.0.0-connectathon"/>
+    <version value="2.0.0"/>
     <name value="BSeR_BidirectionalServices_eReferral"/>
     <title value="BSeR: Bidirectional Services_eReferral"/>
     <status value="active"/>
