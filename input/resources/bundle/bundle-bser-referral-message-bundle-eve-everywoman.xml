@@ -267,8 +267,6 @@
     <entry>
         <fullUrl value="Task/task-BSeR-ReferralTask" />
         <resource>
-
-
             <Task xmlns="http://hl7.org/fhir">
                 <id value="task-BSeR-ReferralTask" />
                 <meta>
