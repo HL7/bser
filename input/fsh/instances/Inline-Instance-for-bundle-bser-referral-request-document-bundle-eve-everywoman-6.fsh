@@ -12,7 +12,7 @@ Usage: #inline
 * effectiveDateTime = "2019-01-17"
 * dateAsserted = "2019-01-17"
 * dosage.timing.repeat.frequency = 3
-* dosage.timing.repeat.period = "1"
+* dosage.timing.repeat.period = 1
 * dosage.timing.repeat.periodUnit = #d
 * dosage.asNeededBoolean = false
 * dosage.route = $sct#260548002 "Oral"

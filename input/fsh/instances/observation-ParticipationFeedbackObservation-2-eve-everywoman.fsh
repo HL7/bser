@@ -12,4 +12,4 @@ Usage: #example
 * subject.display = "Eve Everywoman"
 * effectiveDateTime = "2019-01-17"
 * performer.reference = "PractitionerRole/practitionerrole-bser-referral-recipient"
-* valueQuantity.value = "1"
+* valueQuantity.value = 1
