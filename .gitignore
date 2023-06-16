@@ -85,3 +85,5 @@ input-cache/
 template/
 /fhir_validator.bat
 /validation.xml
+/bserfsh
+/oldinput
