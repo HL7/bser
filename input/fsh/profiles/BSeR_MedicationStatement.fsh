@@ -17,6 +17,6 @@ Description: "A statement of a patient medication history used as supporting inf
 * dosage 0..1
 * dosage.doseAndRate 1..1
 * dosage.doseAndRate.dose[x] 1..1
-* dosage.doseAndRate.dose[x] only Quantity
+* dosage.doseAndRate.dose[x] only SimpleQuantity
 * dosage.doseAndRate.rate[x] 0..1
 * dosage.doseAndRate.rate[x] only Ratio
