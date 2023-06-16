@@ -41,13 +41,13 @@ Description: "The structural body and metadata of the referral feedback document
 * section[obesityReferralFeedbackSupportingInformation].entry ^slicing.discriminator.type = #profile
 * section[obesityReferralFeedbackSupportingInformation].entry ^slicing.discriminator.path = "resolve()"
 * section[obesityReferralFeedbackSupportingInformation].entry ^slicing.rules = #open
-* section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeR_ParticipationFeedbackObservation)
-* section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] ^sliceName = "participationFeedbackObservation"
 * section[obesityReferralFeedbackSupportingInformation].entry contains
+    participationFeedbackObservation 0..* and
     bloodPressure 0..1 and
     bodyHeight 0..1 and
     bodyWeight 0..1 and
     bmi 0..1
+* section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeR_ParticipationFeedbackObservation)
 * section[obesityReferralFeedbackSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[obesityReferralFeedbackSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[obesityReferralFeedbackSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)

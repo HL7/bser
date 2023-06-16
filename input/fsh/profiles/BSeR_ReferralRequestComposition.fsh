@@ -120,4 +120,5 @@ Description: "The structural body and metadata of the referral request document.
 * section[tobaccoUseCessationReferralSupportingInformation].entry[nrtAuthorizationStatus] only Reference(BSeR_NRT_AuthorizationStatus)
 * section[tobaccoUseCessationReferralSupportingInformation].entry[smokingStatus] only Reference(USCoreSmokingStatusProfile)
 * section[tobaccoUseCessationReferralSupportingInformation].entry[telcomCommunicationPreferences] only Reference(BSeR_TelcomCommunicationPreferences)
+* section[tobaccoUseCessationReferralSupportingInformation].entry contains telcomCommunicationPreferences 0..*
 * section[tobaccoUseCessationReferralSupportingInformation].entry[telcomCommunicationPreferences] ^sliceName = "telcomCommunicationPreferences"
