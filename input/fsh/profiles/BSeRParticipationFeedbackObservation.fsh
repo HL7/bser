@@ -10,11 +10,11 @@ Description: "An observation regarding the level of participation in the service
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation" (exactly)
-* status 1..1
+* status MS
 * status = #final
-* code 1..1
+* code MS
 * code from $2.16.840.1.113762.1.4.1099.47 (extensible)
-* subject 1..1
+* subject 1.. MS
 * subject only Reference(USCorePatientProfile)
-* value[x] 1..1
+* value[x] ..1 MS
 * value[x] only Quantity

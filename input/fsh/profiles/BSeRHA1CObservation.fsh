@@ -10,9 +10,9 @@ Description: "A measure of the amount or percentage of hemoglobin A1c in the pat
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation" (exactly)
-* status 1..1
+* status MS
 * status = #final
-* code 1..1
+* code MS
 * code from PHVS_LabTestName_DiabetesHemoglobinA1c (extensible)
-* value[x] 1..1
+* value[x] 1.. MS
 * value[x] only Quantity

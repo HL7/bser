@@ -10,11 +10,13 @@ Description: "A collection of observational data points authored by the referral
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" (exactly)
-* status 1..1
+* status MS
 * status = #final
-* code 1..1
+* code MS
 * code from $2.16.840.1.113762.1.4.1099.39 (extensible)
+* subject 1.. MS
 * subject only Reference(USCorePatientProfile)
-* value[x] 1..1
+* value[x] 1.. MS
 * value[x] only string or CodeableConcept or boolean
-* value[x] from Breastfeeding (extensible)
+// Commenting this out because you can't have a binding that doesn't apply to all the value types
+// * value[x] from Breastfeeding (extensible)
