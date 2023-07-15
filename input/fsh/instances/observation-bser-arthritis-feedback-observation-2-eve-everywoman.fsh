@@ -3,8 +3,6 @@ InstanceOf: BSeRArthritisFeedbackObservation
 Title: "BSeR Arthritis Feedback Observation - Eve Everywoman - Pain Management"
 Description: "BSeR Arthritis Feedback Observation: Eve Everywoman - Pain Management example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.746Z"
 * status = #final
 * code = $sct#278414003 "Pain management (procedure)"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"

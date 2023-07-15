@@ -3,8 +3,6 @@ InstanceOf: BSeREducationLevel
 Title: "observation-BSeR-EducationLevel-eve-everywoman"
 Description: "Example of BSeR-EducationLevel profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2022-09-16T20:45:19.320Z"
 * status = #final
 * category = $observation-category#social-history "Social History"
 * category.text = "Social History"

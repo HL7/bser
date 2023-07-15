@@ -3,8 +3,6 @@ InstanceOf: BSeRReferralMessageBundle
 Title: "BSeR Referral Message Bundle - Eve Everywoman"
 Description: "BSeR Referral Message Bundle: Eve Everywoman example"
 Usage: #example
-* meta.versionId = "5"
-* meta.lastUpdated = "2023-05-05T23:38:05.262Z"
 * type = #message
 * entry[0].fullUrl = "MessageHeader/messageheader-BSeR-ReferralMessageHeader"
 * entry[=].resource = messageheader-BSeR-ReferralMessageHeader

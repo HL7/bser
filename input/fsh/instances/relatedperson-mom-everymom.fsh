@@ -3,8 +3,6 @@ InstanceOf: RelatedPerson
 Title: "RelatedPerson Mom L Everymom"
 Description: "Example of FHIR RelatedPerson resource as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:47:04.203Z"
 * identifier.type = $v2-0203#SS
 * identifier.system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier.value = "444222222"

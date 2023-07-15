@@ -3,8 +3,6 @@ InstanceOf: BSeRReferralRequestComposition
 Title: "BSeR Referral Request Composition - Eve Everywoman - Tobacco Use Cessation"
 Description: "BSeR Referral Request Composition:  Eve Everywoman - Tobacco Use Cessation example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-04-13T09:28:59.860Z"
 * status = #final
 * type = $loinc#57133-1 "Referral note"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"

@@ -3,8 +3,6 @@ InstanceOf: BSeREarlyChildhoodNutritionObservation
 Title: "observation-BSeR-NutritionObs-eve-everywoman"
 Description: "Example of BSeR-EarlyChildhoodNutritionObservation profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.799Z"
 * status = #final
 * code = $sct#288988007 "Able to latch on to breast for feeding (finding)"
 * code.text = "Able to latch on to breast for feeding (finding)"

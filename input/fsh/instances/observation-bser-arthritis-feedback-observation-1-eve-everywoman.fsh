@@ -3,8 +3,6 @@ InstanceOf: BSeRArthritisFeedbackObservation
 Title: "BSeR Arthritis Feedback Observation - Eve Everywoman - Endurance Improved"
 Description: "Arthritis Feedback Observation: Eve Everywoman - Endurance Improved example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.577Z"
 * status = #final
 * code = $sct#406203001 "Endurance (observable entity)"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"

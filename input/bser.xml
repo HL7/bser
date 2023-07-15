@@ -585,21 +585,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
-                <display value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
+                <reference value="Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman" />
+                <display value="BSeR Arthritis Feedback Observation - Eve Everywoman - Endurance Improved" />
             </reference>
-            <name value="observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman" />
-            <description value="Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG" />
+            <name value="observation-bser-arthritisfeedbackobservation-1-eve-everywoman" />
+            <description value="Arthritis Feedback Observation: Eve Everywoman - Endurance Improved example" />
             <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
             <groupingId value="supporting-information-feedback-examples" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
-                <display value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
+                <reference value="Observation/observation-bser-arthritis-feedback-observation-2-eve-everywoman" />
+                <display value="BSeR Arthritis Feedback Observation - Eve Everywoman - Pain Management" />
             </reference>
-            <name value="observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman" />
-            <description value="Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG" />
+            <name value="observation-bser-arthritis-feedback-observation-2-eve-everywoman" />
+            <description value="BSeR Arthritis Feedback Observation: Eve Everywoman - Pain Management example" />
             <exampleCanonical value="http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation" />
             <groupingId value="supporting-information-feedback-examples" />
         </resource>

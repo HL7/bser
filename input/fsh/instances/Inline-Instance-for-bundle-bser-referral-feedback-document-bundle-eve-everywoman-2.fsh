@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-
 InstanceOf: BSeRArthritisFeedbackObservation
 Usage: #inline
 * id = "observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T04:46:33.577+00:00"
 * meta.source = "#pO0kvhrqvU8E7xY9"
 * status = #final
 * code = $sct#406203001 "Endurance (observable entity)"

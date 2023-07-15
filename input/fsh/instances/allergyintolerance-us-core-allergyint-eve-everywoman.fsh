@@ -3,9 +3,7 @@ InstanceOf: USCoreAllergyIntolerance
 Title: "US Core AllergyIntolerance - Sulfonamide - Eve Everywoman"
 Description: "US Core AllergyIntolerance: Sulfonamide - Eve Everywoman example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:06.292Z"
-* clinicalStatus = $allergyintolerance-clinical#active
+** clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed
 * category = #medication
 * criticality = #high

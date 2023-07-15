@@ -3,8 +3,6 @@ InstanceOf: BSeRReferralRequestComposition
 Title: "BSeR Referral Request Composition - Eve Everywoman - Diabetes Prevention"
 Description: "BSeR Referral Request Composition:  Eve Everywoman - Diabetes Prevention example"
 Usage: #example
-* meta.versionId = "1"
-* meta.lastUpdated = "2023-04-12T11:00:48.408Z"
 * status = #final
 * type = $loinc#57133-1 "Referral note"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"

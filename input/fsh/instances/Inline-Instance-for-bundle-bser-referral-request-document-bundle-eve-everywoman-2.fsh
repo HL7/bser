@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: USCoreBloodPressureProfile
 Usage: #inline
 * id = "observation-blood-pressure-eve-everywoman-bser"
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-03-23T07:08:28.547+00:00"
 * meta.source = "#Z0sSBu2OZsgcUI4X"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

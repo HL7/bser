@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-
 InstanceOf: BSeRReferralRecipientPractitionerRole
 Usage: #inline
 * id = "practitionerrole-bser-referral-recipient"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T04:46:51.931+00:00"
 * meta.source = "#fKpmbvxENjA50N93"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "2222222222"

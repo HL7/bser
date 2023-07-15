@@ -3,8 +3,6 @@ InstanceOf: USCoreBloodPressureProfile
 Title: "observation-blood-pressure-eve-everywoman-bser"
 Description: "Example of FHIR Blood Pressure profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-03-23T11:08:28.547Z"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"

@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: USCoreBodyHeightProfile
 Usage: #inline
 * id = "observation-body-height-eve-everywoman"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-23T07:09:15.380+00:00"
 * meta.source = "#o2InuSlQFGDh8zMV"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

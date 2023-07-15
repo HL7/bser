@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: USCoreBMIProfile
 Usage: #inline
 * id = "observation-bmi-eve-everywoman"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-23T07:08:38.879+00:00"
 * meta.source = "#fgoWJZySAKpgvC8q"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

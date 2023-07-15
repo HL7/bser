@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-
 InstanceOf: BSeRReferralServiceRequest
 Usage: #inline
 * id = "servicerequest-BSeR-ReferralServiceRequest"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T04:47:04.215+00:00"
 * meta.source = "#geEcyuymdeHKb4ph"
 * identifier[0].type = $v2-0203#PLAC
 * identifier[=].value = "88888888"

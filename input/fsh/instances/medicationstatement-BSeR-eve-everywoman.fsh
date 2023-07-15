@@ -3,8 +3,6 @@ InstanceOf: BSeRMedicationStatement
 Title: "medicationstatement-BSeR-eve-everywoman"
 Description: "Example of BSeR-MedicationStatement profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.315Z"
 * status = #active
 * medicationCodeableConcept = $sct#27658006 "Amoxicillin-containing product"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"

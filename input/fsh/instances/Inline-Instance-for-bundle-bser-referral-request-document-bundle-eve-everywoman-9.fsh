@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: USCoreAllergyIntolerance
 Usage: #inline
 * id = "allergyintolerance-us-core-allergyint-eve-everywoman"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T04:46:06.292+00:00"
 * meta.source = "#yIKSw3EBfpjnVgt3"
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed

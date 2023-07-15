@@ -3,8 +3,6 @@ InstanceOf: BSeRServiceDeliveryLocation
 Title: "Referral Center A, St. Lukes"
 Description: "Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.311Z"
 * status = #active
 * name = "Referral Center A, St. Lukes"
 * type = $v3-RoleCode#HOSP "Hospital"

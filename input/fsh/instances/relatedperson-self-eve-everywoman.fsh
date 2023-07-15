@@ -3,8 +3,6 @@ InstanceOf: RelatedPerson
 Title: "RelatedPerson - Eve Everywoman - Self"
 Description: "RelatedPerson: Eve Everywoman - Self example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:47:04.215Z"
 * identifier.type = $v2-0203#SS
 * identifier.system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier.value = "444222222"

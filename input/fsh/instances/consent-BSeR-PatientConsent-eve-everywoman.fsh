@@ -3,8 +3,6 @@ InstanceOf: BSeRPatientConsent
 Title: "BSeR Patient Consent - Eve Everywoman"
 Description: "BSeR Patient Consent:  Eve Everywoman example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.315Z"
 * status = #active
 * scope = $consentscope#patient-privacy
 * category = $v3-ActCode#INFA "information access"

@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: BSeRReferralRequestComposition
 Usage: #inline
 * id = "composition-bser-referral-request-arthritis-everywoman"
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-04-13T05:27:36.275+00:00"
 * meta.source = "#UabNeSfKfNq7b6Gv"
 * status = #final
 * type = $loinc#57133-1 "Referral note"

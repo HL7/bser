@@ -3,8 +3,6 @@ InstanceOf: BSeRReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition - Eve Everywoman - Obesity"
 Description: "BSeR Referral Feedback Composition:  Eve Everywoman - Obesity example"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-04-13T08:57:28.720Z"
 * status = #final
 * type = $loinc#11488-4 "Consult note"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"

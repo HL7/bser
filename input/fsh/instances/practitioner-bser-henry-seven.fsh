@@ -3,8 +3,6 @@ InstanceOf: BSeRPractitioner
 Title: "Practitioner Seven Henry"
 Description: "Example of BSeR-Practitioner profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:51.931Z"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "9941339108"
 * name.family = "Henry"

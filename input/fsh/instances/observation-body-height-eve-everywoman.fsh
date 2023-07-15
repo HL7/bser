@@ -3,8 +3,6 @@ InstanceOf: USCoreBodyHeightProfile
 Title: "observation-body-height-eve-everywoman"
 Description: "Example of FHIR Body Height profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-23T11:09:15.380Z"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"

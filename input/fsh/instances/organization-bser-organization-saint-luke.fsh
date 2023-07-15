@@ -3,8 +3,6 @@ InstanceOf: Organization
 Title: "BSeR Organization - Saint Luke's Hospital of Kansas City"
 Description: "BSeR Organization:  Saint Luke's Hospital of Kansas City example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:51.929Z"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "1063494177"
 * active = true

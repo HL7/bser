@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: USCoreBodyWeightProfile
 Usage: #inline
 * id = "observation-body-weight-eve-everywoman"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-23T07:09:27.314+00:00"
 * meta.source = "#RRamooNKXxoD5ilQ"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

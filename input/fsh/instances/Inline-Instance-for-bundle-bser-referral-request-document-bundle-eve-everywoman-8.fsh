@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: USCorePatientProfile
 Usage: #inline
 * id = "patient-us-core-patient-eve-everywoman"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T04:46:51.933+00:00"
 * meta.source = "#TNq3kA1qG2CRftFd"
 * extension[0].extension[0].url = "ombCategory"
 * extension[=].extension[=].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"

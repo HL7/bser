@@ -3,8 +3,6 @@ InstanceOf: BSeRReferralFeedbackDocumentBundle
 Title: "BSeR Referral Feedback Document Bundle - Eve Everywoman"
 Description: "BSeR Referral Feedback Document Bundle:  Eve Everywoman example"
 Usage: #example
-* meta.versionId = "7"
-* meta.lastUpdated = "2023-04-13T10:55:47.216Z"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:2be4b4e4-6df1-4cb2-a947-c70fa0eda54e"
 * type = #document

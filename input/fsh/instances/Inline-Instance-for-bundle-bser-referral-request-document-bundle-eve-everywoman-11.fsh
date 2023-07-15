@@ -2,8 +2,6 @@ Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-e
 InstanceOf: Organization
 Usage: #inline
 * id = "organization-bser-organization-saint-luke"
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T04:46:51.929+00:00"
 * meta.source = "#kdzeqbNX0AdNEyTf"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "1063494177"

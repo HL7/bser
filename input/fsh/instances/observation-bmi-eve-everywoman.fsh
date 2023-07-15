@@ -3,8 +3,6 @@ InstanceOf: USCoreBMIProfile
 Title: "observation-bmi-eve-everywoman"
 Description: "Example of FHIR BMI profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-23T11:08:38.879Z"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"

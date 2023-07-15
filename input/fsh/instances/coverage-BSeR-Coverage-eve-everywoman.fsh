@@ -3,8 +3,6 @@ InstanceOf: BSeRCoverage
 Title: "coverage-BSeR-Coverage-eve-everywoman"
 Description: "Example of BSeR-Coverage profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.263Z"
 * identifier.system = "http://benefitsinc.com/certificate"
 * identifier.value = "12345"
 * status = #active

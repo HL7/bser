@@ -3,8 +3,6 @@ InstanceOf: BSeRReferralRecipientPractitionerRole
 Title: "practitionerrole-bser-referral-recipient"
 Description: "Example of BSeR-ReferralRecipientPractitionerRole profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:51.931Z"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "2222222222"
 * practitioner.reference = "Practitioner/practitioner-bser-hailey-eight"

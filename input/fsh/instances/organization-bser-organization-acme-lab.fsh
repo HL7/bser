@@ -3,8 +3,6 @@ InstanceOf: Organization
 Title: "BSeR Organization - Acme Lab"
 Description: "BSeR Organization: Acme Lab example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:51.930Z"
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[=].value = "1144221847"
 * identifier[+].system = "urn:oid:2.16.840.1.113883.4.7"

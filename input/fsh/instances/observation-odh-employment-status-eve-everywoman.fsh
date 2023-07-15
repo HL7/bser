@@ -3,8 +3,6 @@ InstanceOf: EmploymentStatus
 Title: "observation-odh-employment-status-eve-everywoman"
 Description: "Example of ODH Employment Status profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:33.946Z"
 * status = #final
 * category = $observation-category#social-history
 * code = $loinc#74165-2

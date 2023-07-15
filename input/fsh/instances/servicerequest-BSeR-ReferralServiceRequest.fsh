@@ -3,8 +3,6 @@ InstanceOf: BSeRReferralServiceRequest
 Title: "BSeR Referral ServiceRequest - Eve Everywoman"
 Description: "BSeR Referral ServiceRequest:  Eve Everywoman example"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:47:04.215Z"
 * identifier[0].type = $v2-0203#PLAC
 * identifier[=].value = "88888888"
 * identifier[=].assigner.reference = "Organization/organization-bser-organization-saint-luke"

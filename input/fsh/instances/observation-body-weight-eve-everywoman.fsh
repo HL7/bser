@@ -3,8 +3,6 @@ InstanceOf: USCoreBodyWeightProfile
 Title: "observation-body-weight-eve-everywoman"
 Description: "Example of FHIR Body Weight profile as used in the BSeR IG"
 Usage: #example
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-23T11:09:27.314Z"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"

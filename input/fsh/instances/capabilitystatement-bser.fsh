@@ -3,8 +3,6 @@ InstanceOf: CapabilityStatement
 Title: "Capability Statement BSeR"
 Description: "This resource defines the expected capabilities for both client and server participating in BSeR exchange"
 Usage: #definition
-* meta.versionId = "3"
-* meta.lastUpdated = "2023-03-31T08:46:06.326Z"
 * url = "http://hl7.org/fhir/us/bser/CapabilityStatement/capabilitystatement-bser"
 * version = "1.0.0"
 * name = "CapabilityStatement_BSeR"
