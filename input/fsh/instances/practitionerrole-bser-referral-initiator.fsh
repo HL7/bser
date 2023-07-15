@@ -1,5 +1,5 @@
 Instance: practitionerrole-bser-referral-initiator
-InstanceOf: BSeR_ReferralInitiatorPractitionerRole
+InstanceOf: BSeRReferralInitiatorPractitionerRole
 Title: "practitionerrole-bser-referral-initiator"
 Description: "Example of BSeR-ReferralInitiatorPractitionerRole profile as used in the BSeR IG"
 Usage: #example

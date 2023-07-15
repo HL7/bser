@@ -1,4 +1,4 @@
-Profile: BSeR_ReferralActivityStatus
+Profile: BSeRReferralActivityStatus
 Parent: Observation
 Id: BSeR-ReferralActivityStatus
 Title: "BSeR Referral Activity Status"

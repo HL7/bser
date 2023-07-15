@@ -1,5 +1,5 @@
 Instance: composition-bser-referral-request-hypertension-everywoman
-InstanceOf: BSeR_ReferralRequestComposition
+InstanceOf: BSeRReferralRequestComposition
 Title: "BSeR Referral Request Composition - Eve Everywoman - Hypertension"
 Description: "BSeR Referral Request Composition:  Eve Everywoman - Hypertension example"
 Usage: #example

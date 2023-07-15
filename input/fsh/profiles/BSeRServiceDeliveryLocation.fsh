@@ -1,4 +1,4 @@
-Profile: BSeR_ServiceDeliveryLocation
+Profile: BSeRServiceDeliveryLocation
 Parent: USCoreLocation
 Id: BSeR-ServiceDeliveryLocation
 Title: "BSeR Service Delivery Location"

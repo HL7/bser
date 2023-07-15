@@ -1,4 +1,4 @@
-Profile: BSeR_EarlyChildhoodNutritionObservation
+Profile: BSeREarlyChildhoodNutritionObservation
 Parent: Observation
 Id: BSeR-EarlyChildhoodNutritionObservation
 Title: "BSeR Early Childhood Nutrition Observation"

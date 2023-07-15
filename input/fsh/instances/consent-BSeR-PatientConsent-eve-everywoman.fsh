@@ -1,5 +1,5 @@
 Instance: consent-BSeR-PatientConsent-eve-everywoman
-InstanceOf: BSeR_PatientConsent
+InstanceOf: BSeRPatientConsent
 Title: "BSeR Patient Consent - Eve Everywoman"
 Description: "BSeR Patient Consent:  Eve Everywoman example"
 Usage: #example

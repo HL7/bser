@@ -137,7 +137,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-EducationLevel" />
-                <display value="BSeR_EducationLevel" />
+                <display value="BSeREducationLevel" />
             </reference>
             <name value="BSeR Education Level" />
             <description
@@ -168,7 +168,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ArthritisFeedbackObservation" />
-                <display value="BSeR_ArthritisFeedbackObservation" />
+                <display value="BSeRArthritisFeedbackObservation" />
             </reference>
             <name value="BSeR Arthritis Feedback Observation" />
             <description
@@ -179,7 +179,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-Coverage" />
-                <display value="BSeR_Coverage" />
+                <display value="BSeRCoverage" />
             </reference>
             <name value="BSeR Coverage" />
             <description
@@ -190,7 +190,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-Diagnosis" />
-                <display value="BSeR_Diagnosis" />
+                <display value="BSeRDiagnosis" />
             </reference>
             <name value="BSeR Diagnosis" />
             <description value="A health condition of the referral patient." />
@@ -200,7 +200,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-EarlyChildhoodNutritionObservation" />
-                <display value="BSeR_EarlyChildhoodNutritionObservation" />
+                <display value="BSeREarlyChildhoodNutritionObservation" />
             </reference>
             <name value="BSeR Early Childhood Nutrition Observation" />
             <description
@@ -211,7 +211,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-HA1C-Observation" />
-                <display value="BSeR_HA1C-Observation" />
+                <display value="BSeRHA1C-Observation" />
             </reference>
             <name value="BSeR HA1C Observation" />
             <description
@@ -222,7 +222,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-MedicationStatement" />
-                <display value="BSeR_MedicationStatement" />
+                <display value="BSeRMedicationStatement" />
             </reference>
             <name value="BSeR MedicationStatement" />
             <description value="A statement of a patient medication history used as supporting information for a patient service request referral." />
@@ -232,7 +232,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-NRT-AuthorizationStatus" />
-                <display value="BSeR_NRT-AuthorizationStatus" />
+                <display value="BSeRNRT-AuthorizationStatus" />
             </reference>
             <name value="BSeR NRT Authorization Status" />
             <description
@@ -243,7 +243,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-Organization" />
-                <display value="BSeR_Organization" />
+                <display value="BSeROrganization" />
             </reference>
             <name value="BSeR Organization" />
             <description
@@ -254,7 +254,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ParticipationFeedbackObservation" />
-                <display value="BSeR_ParticipationFeedbackObservation" />
+                <display value="BSeRParticipationFeedbackObservation" />
             </reference>
             <name value="BSeR Participation Feedback Observation" />
             <description
@@ -265,7 +265,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-PatientConsent" />
-                <display value="BSeR_PatientConsent" />
+                <display value="BSeRPatientConsent" />
             </reference>
             <name value="BSeR Patient Consent" />
             <description
@@ -276,7 +276,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-Practitioner" />
-                <display value="BSeR_Practitioner" />
+                <display value="BSeRPractitioner" />
             </reference>
             <name value="BSeR Practitioner" />
             <description
@@ -287,7 +287,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralActivityStatus" />
-                <display value="BSeR_ReferralActivityStatus" />
+                <display value="BSeRReferralActivityStatus" />
             </reference>
             <name value="BSeR Referral Activity Status" />
             <description
@@ -298,7 +298,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralFeedbackComposition" />
-                <display value="BSeR_ReferralFeedbackComposition" />
+                <display value="BSeRReferralFeedbackComposition" />
             </reference>
             <name value="BSeR Referral Feedback Composition" />
             <description value="The structural body and metadata of the referral feedback document." />
@@ -308,7 +308,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralFeedbackDocumentBundle" />
-                <display value="BSeR_ReferralFeedbackDocumentBundle" />
+                <display value="BSeRReferralFeedbackDocumentBundle" />
             </reference>
             <name value="BSeR Referral Feedback Document Bundle" />
             <description
@@ -319,7 +319,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" />
-                <display value="BSeR_ReferralInitiatorPractitionerRole" />
+                <display value="BSeRReferralInitiatorPractitionerRole" />
             </reference>
             <name value="BSeR Referral Initiator PractitionerRole" />
             <description
@@ -330,7 +330,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralMessageHeader" />
-                <display value="BSeR_ReferralMessageHeader" />
+                <display value="BSeRReferralMessageHeader" />
             </reference>
             <name value="BSeR Referral MessageHeader" />
             <description
@@ -352,7 +352,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralRequestComposition" />
-                <display value="BSeR_ReferralRequestComposition" />
+                <display value="BSeRReferralRequestComposition" />
             </reference>
             <name value="BSeR Referral Request Composition" />
             <description value="The structural body and metadata of the referral request document." />
@@ -362,7 +362,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralRequestDocumentBundle" />
-                <display value="BSeR_ReferralRequestDocumentBundle" />
+                <display value="BSeRReferralRequestDocumentBundle" />
             </reference>
             <name value="BSeR Referral Request Document Bundle" />
             <description
@@ -373,7 +373,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralServiceRequest" />
-                <display value="BSeR_ReferralServiceRequest" />
+                <display value="BSeRReferralServiceRequest" />
             </reference>
             <name value="BSeR Referral Service Request" />
             <description
@@ -384,7 +384,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ReferralTask" />
-                <display value="BSeR_ReferralTask" />
+                <display value="BSeRReferralTask" />
             </reference>
             <name value="BSeR Referral Task" />
             <description
@@ -395,7 +395,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-ServiceDeliveryLocation" />
-                <display value="BSeR_ServiceDeliveryLocation" />
+                <display value="BSeRServiceDeliveryLocation" />
             </reference>
             <name value="BSeR Service Delivery Location" />
             <description
@@ -406,7 +406,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication" />
-                <display value="BSeR_TobaccoUseCessationFeedbackMedication" />
+                <display value="BSeRTobaccoUseCessationFeedbackMedication" />
             </reference>
             <name value="BSeR Tobacco Use Cessation Feedback Medication" />
             <description
@@ -417,7 +417,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation" />
-                <display value="BSeR_TobaccoUseCessationFeedbackObservation" />
+                <display value="BSeRTobaccoUseCessationFeedbackObservation" />
             </reference>
             <name value="BSeR Tobacco Use Cessation Feedback Observation" />
             <description

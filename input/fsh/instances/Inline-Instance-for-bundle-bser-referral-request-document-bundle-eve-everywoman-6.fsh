@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-6
-InstanceOf: BSeR_MedicationStatement
+InstanceOf: BSeRMedicationStatement
 Usage: #inline
 * id = "medicationstatement-BSeR-eve-everywoman"
 * meta.versionId = "3"

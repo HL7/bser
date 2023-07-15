@@ -1,4 +1,4 @@
-Profile: BSeR_HA1C_Observation
+Profile: BSeRHa1cObservation
 Parent: USCoreLaboratoryResultObservationProfile
 Id: BSeR-HA1C-Observation
 Title: "BSeR HA1C Observation"

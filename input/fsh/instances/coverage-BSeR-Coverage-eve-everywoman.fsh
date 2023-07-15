@@ -1,5 +1,5 @@
 Instance: coverage-BSeR-Coverage-eve-everywoman
-InstanceOf: BSeR_Coverage
+InstanceOf: BSeRCoverage
 Title: "coverage-BSeR-Coverage-eve-everywoman"
 Description: "Example of BSeR-Coverage profile as used in the BSeR IG"
 Usage: #example

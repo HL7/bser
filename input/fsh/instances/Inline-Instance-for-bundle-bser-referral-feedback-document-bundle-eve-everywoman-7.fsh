@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-7
-InstanceOf: BSeR_Practitioner
+InstanceOf: BSeRPractitioner
 Usage: #inline
 * id = "practitioner-bser-hailey-eight"
 * meta.versionId = "3"

@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-1
-InstanceOf: BSeR_ReferralRequestComposition
+InstanceOf: BSeRReferralRequestComposition
 Usage: #inline
 * id = "composition-bser-referral-request-arthritis-everywoman"
 * meta.versionId = "2"

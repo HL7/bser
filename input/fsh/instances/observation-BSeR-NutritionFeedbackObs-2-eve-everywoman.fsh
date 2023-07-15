@@ -1,5 +1,5 @@
 Instance: observation-BSeR-NutritionFeedbackObs-2-eve-everywoman
-InstanceOf: BSeR_EarlyChildhoodNutritionFeedbackObservation
+InstanceOf: BSeREarlyChildhoodNutritionFeedbackObservation
 Title: "observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"
 Description: "Example of BSeR-EarlyChildhoodNutritionFeedbackObservation profile as used in the BSeR IG"
 Usage: #example

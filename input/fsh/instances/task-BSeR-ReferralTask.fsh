@@ -1,5 +1,5 @@
 Instance: task-BSeR-ReferralTask
-InstanceOf: BSeR_ReferralTask
+InstanceOf: BSeRReferralTask
 Title: "BSeR Referral Task - Eve Everywoman"
 Description: "BSeR Referral Task: Eve Everywoman example"
 Usage: #example

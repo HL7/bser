@@ -1,5 +1,5 @@
 Instance: composition-bser-referral-request-arthritis-everywoman
-InstanceOf: BSeR_ReferralRequestComposition
+InstanceOf: BSeRReferralRequestComposition
 Title: "BSeR Referral Request Composition - Eve Everywoman - Arthritis"
 Description: "BSeR Referral Request Composition:  Eve Everywoman - Arthritis example"
 Usage: #example

@@ -1,4 +1,4 @@
-Profile: BSeR_PatientConsent
+Profile: BSeRPatientConsent
 Parent: Consent
 Id: BSeR-PatientConsent
 Title: "BSeR Patient Consent"

@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-10
-InstanceOf: BSeR_Practitioner
+InstanceOf: BSeRPractitioner
 Usage: #inline
 * id = "practitioner-bser-henry-seven"
 * meta.versionId = "3"

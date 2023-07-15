@@ -1,4 +1,4 @@
-Profile: BSeR_ArthritisFeedbackObservation
+Profile: BSeRArthritisFeedbackObservation
 Parent: Observation
 Id: BSeR-ArthritisFeedbackObservation
 Title: "BSeR Arthritis Feedback Observation"

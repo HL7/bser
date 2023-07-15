@@ -1,5 +1,5 @@
 Instance: practitioner-bser-henry-seven
-InstanceOf: BSeR_Practitioner
+InstanceOf: BSeRPractitioner
 Title: "Practitioner Seven Henry"
 Description: "Example of BSeR-Practitioner profile as used in the BSeR IG"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: composition-bser-referral-feedback-diabetes-everywoman
-InstanceOf: BSeR_ReferralFeedbackComposition
+InstanceOf: BSeRReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition - Eve Everywoman - Diabetes Prevention"
 Description: "BSeR Referral Feedback Composition:  Eve Everywoman - Diabetes Prevention example"
 Usage: #example

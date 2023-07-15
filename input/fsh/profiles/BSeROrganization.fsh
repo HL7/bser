@@ -1,4 +1,4 @@
-Profile: BSeR_Organization
+Profile: BSeROrganization
 Parent: USCoreOrganizationProfile
 Id: BSeR-Organization
 Title: "BSeR Organization"

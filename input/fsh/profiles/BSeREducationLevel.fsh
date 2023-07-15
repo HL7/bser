@@ -1,4 +1,4 @@
-Profile: BSeR_EducationLevel
+Profile: BSeREducationLevel
 Parent: USCoreObservationSocialHistoryProfile
 Id: BSeR-EducationLevel
 Title: "BSeR Education Level"

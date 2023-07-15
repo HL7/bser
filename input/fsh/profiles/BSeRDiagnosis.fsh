@@ -1,4 +1,4 @@
-Profile: BSeR_Diagnosis
+Profile: BSeRDiagnosis
 Parent: USCoreConditionProblemsHealthConcernsProfile
 Id: BSeR-Diagnosis
 Title: "BSeR Diagnosis"

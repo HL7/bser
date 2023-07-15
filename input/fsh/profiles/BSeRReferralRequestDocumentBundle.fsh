@@ -1,4 +1,4 @@
-Profile: BSeR_ReferralRequestDocumentBundle
+Profile: BSeRReferralRequestDocumentBundle
 Parent: Bundle
 Id: BSeR-ReferralRequestDocumentBundle
 Title: "BSeR Referral Request Document Bundle"
@@ -20,4 +20,4 @@ Description: "This Bundle profile represents an BSeR Referral Request Document B
 * entry ^slicing.rules = #open
 * entry contains sliceBSeRReferralRequestComposition 1..1 MS
 * entry[sliceBSeRReferralRequestComposition].resource 1.. MS
-* entry[sliceBSeRReferralRequestComposition].resource only BSeR_ReferralRequestComposition
+* entry[sliceBSeRReferralRequestComposition].resource only BSeRReferralRequestComposition

@@ -1,4 +1,4 @@
-Profile: BSeR_ReferralFeedbackComposition
+Profile: BSeRReferralFeedbackComposition
 Parent: Composition
 Id: BSeR-ReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition"
@@ -13,7 +13,7 @@ Description: "The structural body and metadata of the referral feedback document
 * subject only Reference(USCorePatientProfile)
 * date 1..1
 * author 1..1
-* author only Reference(BSeR_ReferralRecipientPractitionerRole)
+* author only Reference(BSeRReferralRecipientPractitionerRole)
 * title 1..1
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
@@ -31,9 +31,9 @@ Description: "The structural body and metadata of the referral feedback document
 * section[referralServiceRequestFeedbackSummary].code = BSeR#RSRFS
 * section[referralServiceRequestFeedbackSummary].code ^short = "CompositionSectionReferralServiceRequestFeedbackSummary"
 * section[referralServiceRequestFeedbackSummary].focus 1..
-* section[referralServiceRequestFeedbackSummary].focus only Reference(BSeR_ReferralServiceRequest)
+* section[referralServiceRequestFeedbackSummary].focus only Reference(BSeRReferralServiceRequest)
 * section[referralServiceRequestFeedbackSummary].text MS
-* section[referralServiceRequestFeedbackSummary].entry only Reference(BSeR_ReferralActivityStatus)
+* section[referralServiceRequestFeedbackSummary].entry only Reference(BSeRReferralActivityStatus)
 * section[obesityReferralFeedbackSupportingInformation].code 1..
 * section[obesityReferralFeedbackSupportingInformation].code = BSeR#ORFSI "Obesity Referral Feedback Supporting Information"
 * section[obesityReferralFeedbackSupportingInformation].entry ^slicing.discriminator.type = #profile
@@ -45,7 +45,7 @@ Description: "The structural body and metadata of the referral feedback document
     bodyHeight 0..1 and
     bodyWeight 0..1 and
     bmi 0..1
-* section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeR_ParticipationFeedbackObservation)
+* section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeRParticipationFeedbackObservation)
 * section[obesityReferralFeedbackSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[obesityReferralFeedbackSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[obesityReferralFeedbackSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
@@ -56,7 +56,7 @@ Description: "The structural body and metadata of the referral feedback document
 * section[arthritisReferralFeedbackSupportingInformation].entry ^slicing.discriminator.path = "resolve()"
 * section[arthritisReferralFeedbackSupportingInformation].entry ^slicing.rules = #open
 * section[arthritisReferralFeedbackSupportingInformation].entry contains arthritisFeedbackObservation 0..*
-* section[arthritisReferralFeedbackSupportingInformation].entry[arthritisFeedbackObservation] only Reference(BSeR_ArthritisFeedbackObservation)
+* section[arthritisReferralFeedbackSupportingInformation].entry[arthritisFeedbackObservation] only Reference(BSeRArthritisFeedbackObservation)
 * section[hypertensionReferralFeedbackSupportingInformation].code 1..
 * section[hypertensionReferralFeedbackSupportingInformation].code = BSeR#HRFSI "Hypertension Referral Feedback Supporting Information"
 * section[hypertensionReferralFeedbackSupportingInformation].entry ^slicing.discriminator.type = #profile
@@ -80,9 +80,9 @@ Description: "The structural body and metadata of the referral feedback document
     earlyChildhoodNutritionFeedbackObservation 0..* and
     medicationHistory 0..* and
     participationFeedbackObservation 0..*
-* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[earlyChildhoodNutritionFeedbackObservation] only Reference(BSeR_EarlyChildhoodNutritionFeedbackObservation)
+* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[earlyChildhoodNutritionFeedbackObservation] only Reference(BSeREarlyChildhoodNutritionFeedbackObservation)
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[medicationHistory] only Reference(MedicationStatement)
-* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeR_ParticipationFeedbackObservation)
+* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeRParticipationFeedbackObservation)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].code 1..
 * section[diabetesPreventionReferralFeedbackSupportingInformation].code = BSeR#DPRFSI "Diabetes Prevention Referral Feedback Supporting Information"
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry ^slicing.discriminator.type = #profile
@@ -93,7 +93,7 @@ Description: "The structural body and metadata of the referral feedback document
     bodyHeight 0..1 and
     bodyWeight 0..1 and
     bmi 0..1
-* section[diabetesPreventionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeR_ParticipationFeedbackObservation)
+* section[diabetesPreventionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeRParticipationFeedbackObservation)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bmi] only Reference(USCoreBMIProfile)
@@ -105,5 +105,5 @@ Description: "The structural body and metadata of the referral feedback document
 * section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry contains
     tobaccoUseCessationFeedbackMedication 0..* and
     tobaccoUseCessationFeedbackObservation 0..*
-* section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry[tobaccoUseCessationFeedbackMedication] only Reference(BSeR_TobaccoUseCessationFeedbackMedication)
-* section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry[tobaccoUseCessationFeedbackObservation] only Reference(BSeR_TobaccoUseCessationFeedbackObservation)
+* section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry[tobaccoUseCessationFeedbackMedication] only Reference(BSeRTobaccoUseCessationFeedbackMedication)
+* section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry[tobaccoUseCessationFeedbackObservation] only Reference(BSeRTobaccoUseCessationFeedbackObservation)

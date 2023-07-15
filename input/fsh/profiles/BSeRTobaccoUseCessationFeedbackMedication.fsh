@@ -1,4 +1,4 @@
-Profile: BSeR_TobaccoUseCessationFeedbackMedication
+Profile: BSeRTobaccoUseCessationFeedbackMedication
 Parent: USCoreMedicationProfile
 Id: BSeR-TobaccoUseCessationFeedbackMedication
 Title: "BSeR Tobacco Use Cessation Feedback Medication"

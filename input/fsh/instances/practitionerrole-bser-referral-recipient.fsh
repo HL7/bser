@@ -1,5 +1,5 @@
 Instance: practitionerrole-bser-referral-recipient
-InstanceOf: BSeR_ReferralRecipientPractitionerRole
+InstanceOf: BSeRReferralRecipientPractitionerRole
 Title: "practitionerrole-bser-referral-recipient"
 Description: "Example of BSeR-ReferralRecipientPractitionerRole profile as used in the BSeR IG"
 Usage: #example

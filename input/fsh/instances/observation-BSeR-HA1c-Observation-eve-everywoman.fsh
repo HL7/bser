@@ -1,5 +1,5 @@
 Instance: observation-BSeR-HA1c-Observation-eve-everywoman
-InstanceOf: BSeR_HA1C_Observation
+InstanceOf: BSeRHa1cObservation
 Title: "observation-BSeR-HA1c-Observation-eve-everywoman"
 Description: "Example of BSeR-HA1C-Observation profile as used in the BSeR IG"
 Usage: #example

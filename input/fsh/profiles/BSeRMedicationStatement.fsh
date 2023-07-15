@@ -1,4 +1,4 @@
-Profile: BSeR_MedicationStatement
+Profile: BSeRMedicationStatement
 Parent: MedicationStatement
 Id: BSeR-MedicationStatement
 Title: "BSeR Medication Statement"

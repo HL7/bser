@@ -1,5 +1,5 @@
 Instance: location-bser-service-delivery-location-st-luke
-InstanceOf: BSeR_ServiceDeliveryLocation
+InstanceOf: BSeRServiceDeliveryLocation
 Title: "Referral Center A, St. Lukes"
 Description: "Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG"
 Usage: #example

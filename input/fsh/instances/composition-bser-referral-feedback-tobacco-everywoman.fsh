@@ -1,5 +1,5 @@
 Instance: composition-bser-referral-feedback-tobacco-everywoman
-InstanceOf: BSeR_ReferralFeedbackComposition
+InstanceOf: BSeRReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition - Eve Everywoman - Tobacco Use Cessation"
 Description: "BSeR Referral Feedback Composition:  Eve Everywoman - Tobacco Use Cessation example"
 Usage: #example

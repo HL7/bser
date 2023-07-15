@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-8
-InstanceOf: BSeR_ReferralServiceRequest
+InstanceOf: BSeRReferralServiceRequest
 Usage: #inline
 * id = "servicerequest-BSeR-ReferralServiceRequest"
 * meta.versionId = "3"

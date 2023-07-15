@@ -1,5 +1,5 @@
 Instance: observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman
-InstanceOf: BSeR_ArthritisFeedbackObservation
+InstanceOf: BSeRArthritisFeedbackObservation
 Title: "observation-BSeR-ArthritisFeedbackObservation-2-eve-everywoman"
 Description: "Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG"
 Usage: #example

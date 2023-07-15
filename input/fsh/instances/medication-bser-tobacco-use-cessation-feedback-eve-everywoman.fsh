@@ -1,5 +1,5 @@
 Instance: medication-bser-tobacco-use-cessation-feedback-eve-everywoman
-InstanceOf: BSeR_TobaccoUseCessationFeedbackMedication
+InstanceOf: BSeRTobaccoUseCessationFeedbackMedication
 Title: "medication-bser-tobacco-use-cessation-feedback-eve-everywoman"
 Description: "Example of BSeR-TobaccoUseCessationFeedbackMedication profile as used in the BSeR IG"
 Usage: #example

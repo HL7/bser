@@ -1,4 +1,4 @@
-Profile: BSeR_ReferralMessageHeader
+Profile: BSeRReferralMessageHeader
 Parent: MessageHeader
 Id: BSeR-ReferralMessageHeader
 Title: "BSeR Referral Message Header"
@@ -13,9 +13,9 @@ Description: "The FHIR MessageHeader resource is defined as \"the header for a m
 * event[x] ^short = "REF/RRI - Patient referral"
 * destination 1..1
 * destination.receiver 1..1
-* destination.receiver only Reference(BSeR_ReferralRecipientPractitionerRole)
+* destination.receiver only Reference(BSeRReferralRecipientPractitionerRole)
 * sender 1..1
-* sender only Reference(BSeR_ReferralInitiatorPractitionerRole)
+* sender only Reference(BSeRReferralInitiatorPractitionerRole)
 * reason MS
 * focus 1..1
-* focus only Reference(BSeR_ReferralTask)
+* focus only Reference(BSeRReferralTask)

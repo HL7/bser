@@ -1,4 +1,4 @@
-Profile: BSeR_Practitioner
+Profile: BSeRPractitioner
 Parent: USCorePractitionerProfile
 Id: BSeR-Practitioner
 Title: "BSeR Practitioner"

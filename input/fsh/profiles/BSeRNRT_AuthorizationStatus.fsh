@@ -1,4 +1,4 @@
-Profile: BSeR_NRT_AuthorizationStatus
+Profile: BSeRNRTAuthorizationStatus
 Parent: Observation
 Id: BSeR-NRT-AuthorizationStatus
 Title: "BSeR NRT Authorization Status"

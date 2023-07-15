@@ -1,5 +1,5 @@
 Instance: observation-BSeR-ReferralActivityStatus-eve-everywoman
-InstanceOf: BSeR_ReferralActivityStatus
+InstanceOf: BSeRReferralActivityStatus
 Title: "observation-BSeR-ReferralActivityStatus-eve-everywoman"
 Description: "Example of BSeR-ReferralActivityStatus profile as used in the BSeR IG"
 Usage: #example

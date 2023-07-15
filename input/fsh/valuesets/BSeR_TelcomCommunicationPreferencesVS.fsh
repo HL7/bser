@@ -1,4 +1,4 @@
-ValueSet: BSeR_TelcomCommunicationPreferencesVS
+ValueSet: BSeRTelcomCommunicationPreferencesVS
 Id: BSeR-TelcomCommunicationPreferencesVS
 Title: "BSeR Telcom Communication Preferences VS"
 Description: "BSeR Telcom Communication Preferences value set"

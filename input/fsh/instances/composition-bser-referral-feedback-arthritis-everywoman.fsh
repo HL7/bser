@@ -1,5 +1,5 @@
 Instance: composition-bser-referral-feedback-arthritis-everywoman
-InstanceOf: BSeR_ReferralFeedbackComposition
+InstanceOf: BSeRReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition - Eve Everywoman - Arthritis"
 Description: "BSeR Referral Feedback Composition:  Eve Everywoman - Arthritis example"
 Usage: #example

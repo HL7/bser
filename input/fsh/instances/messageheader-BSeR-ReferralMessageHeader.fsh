@@ -1,5 +1,5 @@
 Instance: messageheader-BSeR-ReferralMessageHeader
-InstanceOf: BSeR_ReferralMessageHeader
+InstanceOf: BSeRReferralMessageHeader
 Title: "messageheader-BSeR-ReferralMessageHeader"
 Description: "Example of BSeR-ReferralMessageHeader profile as used in the BSeR IG"
 Usage: #example

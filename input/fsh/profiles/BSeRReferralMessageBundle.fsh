@@ -1,4 +1,4 @@
-Profile: BSeR_ReferralMessageBundle
+Profile: BSeRReferralMessageBundle
 Parent: Bundle
 Id: BSeR-ReferralMessageBundle
 Title: "BSeR Referral Message Bundle"
@@ -20,7 +20,7 @@ Description: "This Bundle profile represents a BSeR Referral Message Bundle. It 
     sliceEmploymentStatus 0..* MS and
     slicePatientConsent 0..* MS and
     sliceEducationLevel 0..* MS
-* entry[sliceMessageHeader].resource only BSeR_ReferralMessageHeader
+* entry[sliceMessageHeader].resource only BSeRReferralMessageHeader
 * entry[sliceEmploymentStatus].resource only EmploymentStatus
-* entry[slicePatientConsent].resource only BSeR_PatientConsent
-* entry[sliceEducationLevel].resource only BSeR_EducationLevel
+* entry[slicePatientConsent].resource only BSeRPatientConsent
+* entry[sliceEducationLevel].resource only BSeREducationLevel

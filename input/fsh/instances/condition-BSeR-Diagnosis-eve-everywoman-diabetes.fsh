@@ -1,5 +1,5 @@
 Instance: condition-BSeR-Diagnosis-eve-everywoman-diabetes
-InstanceOf: BSeR_Diagnosis
+InstanceOf: BSeRDiagnosis
 Title: "BSeR Diagnosis - Diabetes - Eve Everywoman"
 Description: "BSeR Diagnosis: Diabetes - Eve Everywoman example"
 Usage: #example

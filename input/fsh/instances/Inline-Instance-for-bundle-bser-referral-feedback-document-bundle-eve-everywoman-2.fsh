@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-2
-InstanceOf: BSeR_ArthritisFeedbackObservation
+InstanceOf: BSeRArthritisFeedbackObservation
 Usage: #inline
 * id = "observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"
 * meta.versionId = "3"

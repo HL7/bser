@@ -1,5 +1,5 @@
 Instance: medicationstatement-BSeR-eve-everywoman
-InstanceOf: BSeR_MedicationStatement
+InstanceOf: BSeRMedicationStatement
 Title: "medicationstatement-BSeR-eve-everywoman"
 Description: "Example of BSeR-MedicationStatement profile as used in the BSeR IG"
 Usage: #example

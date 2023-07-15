@@ -1,4 +1,4 @@
-Profile: BSeR_ReferralTask
+Profile: BSeRReferralTask
 Parent: ReferralTask
 Id: BSeR-ReferralTask
 Title: "BSeR Referral Task"
@@ -17,14 +17,14 @@ Description: "A task resource describes an activity that can be performed and tr
 // * identifier[referralInitiatorTaskIdentifier].type 1..
 // * identifier[referralInitiatorTaskIdentifier].type = $v2-0203#PLAC
 // * identifier[referralInitiatorTaskIdentifier].value 1..1
-* identifier[referralInitiatorTaskIdentifier].assigner only Reference(BSeR_Organization)
+* identifier[referralInitiatorTaskIdentifier].assigner only Reference(BSeROrganization)
 // * identifier[referralRecipientTaskIdentifier].type 1..
 // * identifier[referralRecipientTaskIdentifier].type = $v2-0203#FILL
 // * identifier[referralRecipientTaskIdentifier].value 1..1
 // * identifier[referralRecipientTaskIdentifier].assigner 1..1
-* identifier[referralRecipientTaskIdentifier].assigner only Reference(BSeR_Organization)
-* focus only Reference(BSeR_ReferralServiceRequest)
+* identifier[referralRecipientTaskIdentifier].assigner only Reference(BSeROrganization)
+* focus only Reference(BSeRReferralServiceRequest)
 * for only Reference(USCorePatientProfile)
-* requester only Reference(BSeR_ReferralInitiatorPractitionerRole)
-* owner only Reference(BSeR_ReferralRecipientPractitionerRole)
-* output.value[x] only Reference(BSeR_ReferralFeedbackDocumentBundle)
+* requester only Reference(BSeRReferralInitiatorPractitionerRole)
+* owner only Reference(BSeRReferralRecipientPractitionerRole)
+* output.value[x] only Reference(BSeRReferralFeedbackDocumentBundle)

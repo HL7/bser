@@ -1,5 +1,5 @@
 Instance: composition-bser-referral-feedback-obesity-everywoman
-InstanceOf: BSeR_ReferralFeedbackComposition
+InstanceOf: BSeRReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition - Eve Everywoman - Obesity"
 Description: "BSeR Referral Feedback Composition:  Eve Everywoman - Obesity example"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: bundle-bser-referral-request-document-bundle-eve-everywoman
-InstanceOf: BSeR_ReferralRequestDocumentBundle
+InstanceOf: BSeRReferralRequestDocumentBundle
 Title: "BSeR Referral Request Document Bundle - Eve Everywoman"
 Description: "BSeR Referral Request Document Bundle:  Eve Everywoman example"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-4
-InstanceOf: BSeR_ReferralInitiatorPractitionerRole
+InstanceOf: BSeRReferralInitiatorPractitionerRole
 Usage: #inline
 * id = "practitionerrole-bser-referral-initiator"
 * meta.versionId = "3"

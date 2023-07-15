@@ -1,4 +1,4 @@
-Profile: BSeR_ParticipationFeedbackObservation
+Profile: BSeRParticipationFeedbackObservation
 Parent: Observation
 Id: BSeR-ParticipationFeedbackObservation
 Title: "BSeR Participation Feedback Observation"

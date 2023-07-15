@@ -1,5 +1,5 @@
 Instance: bundle-bser-referral-message-bundle-eve-everywoman
-InstanceOf: BSeR_ReferralMessageBundle
+InstanceOf: BSeRReferralMessageBundle
 Title: "BSeR Referral Message Bundle - Eve Everywoman"
 Description: "BSeR Referral Message Bundle: Eve Everywoman example"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: servicerequest-BSeR-ReferralServiceRequest
-InstanceOf: BSeR_ReferralServiceRequest
+InstanceOf: BSeRReferralServiceRequest
 Title: "BSeR Referral ServiceRequest - Eve Everywoman"
 Description: "BSeR Referral ServiceRequest:  Eve Everywoman example"
 Usage: #example

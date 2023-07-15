@@ -1,5 +1,5 @@
 Instance: bundle-bser-referral-feedback-document-bundle-eve-everywoman
-InstanceOf: BSeR_ReferralFeedbackDocumentBundle
+InstanceOf: BSeRReferralFeedbackDocumentBundle
 Title: "BSeR Referral Feedback Document Bundle - Eve Everywoman"
 Description: "BSeR Referral Feedback Document Bundle:  Eve Everywoman example"
 Usage: #example

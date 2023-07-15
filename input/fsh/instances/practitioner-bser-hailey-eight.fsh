@@ -1,5 +1,5 @@
 Instance: practitioner-bser-hailey-eight
-InstanceOf: BSeR_Practitioner
+InstanceOf: BSeRPractitioner
 Title: "Practitioner Eight Hailey"
 Description: "Example of BSeR-Practitioner profile as used in the BSeR IG"
 Usage: #example

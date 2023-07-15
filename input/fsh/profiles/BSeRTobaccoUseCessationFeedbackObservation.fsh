@@ -1,7 +1,7 @@
-Profile: BSeR_TobaccoUseCessationFeedbackObservation
+Profile: BSeRTobaccoUseCessationFeedbackObservation
 Parent: Observation
 Id: BSeR-TobaccoUseCessationFeedbackObservation
-Title: "BSeR_TobaccoUseCessationFeedbackObservation"
+Title: "BSeRTobaccoUseCessationFeedbackObservation"
 Description: "A collection of observational data points provided by the referral recipient as feedback to the referral initiator. Tobacco use cessation feedback observations include quit Date, session type, and tobacco free duration."
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"

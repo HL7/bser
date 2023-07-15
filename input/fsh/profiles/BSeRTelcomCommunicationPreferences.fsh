@@ -1,4 +1,4 @@
-Profile: BSeR_TelcomCommunicationPreferences
+Profile: BSeRTelcomCommunicationPreferences
 Parent: Observation
 Id: BSeR-TelcomCommunicationPreferences
 Title: "BSeR Telcom Communication Preferences"
@@ -13,7 +13,7 @@ Description: "A collection of observations about the patient's preferences with 
 * status 1..1
 * status = #final (exactly)
 * code 1..1
-* code from BSeR_TelcomCommunicationPreferencesVS (extensible)
+* code from BSeRTelcomCommunicationPreferencesVS (extensible)
 * subject 1..1
 * subject only Reference(USCorePatientProfile)
 * value[x] 1..1

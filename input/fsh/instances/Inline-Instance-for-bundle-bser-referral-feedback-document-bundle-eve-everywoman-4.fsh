@@ -1,5 +1,5 @@
 Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-4
-InstanceOf: BSeR_ReferralActivityStatus
+InstanceOf: BSeRReferralActivityStatus
 Usage: #inline
 * id = "observation-BSeR-ReferralActivityStatus-eve-everywoman"
 * meta.versionId = "3"
