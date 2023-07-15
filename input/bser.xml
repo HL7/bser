@@ -7,8 +7,8 @@
     </meta>
     <url value="http://hl7.org/fhir/us/bser/ImplementationGuide/bser" />
     <version value="2.0.0" />
-    <name value="BSeR_BidirectionalServices_eReferral" />
-    <title value="BSeR: Bidirectional Services_eReferral" />
+    <name value="BSeRBidirectionalServicesEReferral" />
+    <title value="Bidirectional Services eReferral (BSeR)" />
     <status value="active" />
     <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)" />
     <contact>
