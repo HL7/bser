@@ -41,13 +41,15 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * performer 1..1 MS
 * performer only Reference(HealthcareService or Device or USCorePatientProfile or USCoreRelatedPersonProfile or USCorePractitionerProfile or USCorePractitionerRoleProfile or USCoreOrganizationProfile or USCoreCareTeam)
 * reasonCode MS
+* reasonCode ^short = "Reason for referral"
+* reasonCode ^definition = "Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. \"Referral\")."
 * reasonReference only Reference(USCoreConditionProblemsHealthConcernsProfile or Observation)
 * reasonReference MS
 * insurance MS
 * insurance ^slicing.discriminator.type = #profile
 * insurance ^slicing.discriminator.path = "resolve()"
 * insurance ^slicing.rules = #open
-* insurance contains sliceInsuranceBSeRCoverage 0..* MS
-* insurance[sliceInsuranceBSeRCoverage] only Reference(Coverage)
+* insurance contains sliceInsuranceCoverage 0..* MS
+* insurance[sliceInsuranceCoverage] only Reference(Coverage)
 * supportingInfo only Reference(Consent or Bundle)
 * note 0..* MS
