@@ -1,5 +1,5 @@
 Profile: ReferralServiceRequest
-Parent: ServiceRequest
+Parent: USCoreServiceRequest
 Id: ReferralServiceRequest
 Title: "Referral Service Request"
 Description: "The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for services such as diagnostic investigations, treatments, or operations to be performed."
