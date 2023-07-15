@@ -116,6 +116,6 @@ Description: "The structural body and metadata of the referral request document.
     nrtAuthorizationStatus 0..* and
     smokingStatus 0..1 and
     telcomCommunicationPreferences 0..*
-* section[tobaccoUseCessationReferralSupportingInformation].entry[nrtAuthorizationStatus] only Reference(BSeRNRT_AuthorizationStatus)
+* section[tobaccoUseCessationReferralSupportingInformation].entry[nrtAuthorizationStatus] only Reference(BSeRNRTAuthorizationStatus)
 * section[tobaccoUseCessationReferralSupportingInformation].entry[smokingStatus] only Reference(USCoreSmokingStatusProfile)
 * section[tobaccoUseCessationReferralSupportingInformation].entry[telcomCommunicationPreferences] only Reference(BSeRTelcomCommunicationPreferences) 
