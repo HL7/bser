@@ -1,7 +1,7 @@
-Instance: observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman
+Instance: observation-bser-arthritis-feedback-observation-1-eve-everywoman
 InstanceOf: BSeRArthritisFeedbackObservation
-Title: "observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"
-Description: "Example of BSeR-ArthritisFeedbackObservation profile as used in the BSeR IG"
+Title: "BSeR Arthritis Feedback Observation - Eve Everywoman - Endurance Improved"
+Description: "Arthritis Feedback Observation: Eve Everywoman - Endurance Improved example"
 Usage: #example
 * meta.versionId = "3"
 * meta.lastUpdated = "2023-03-31T08:46:33.577Z"
