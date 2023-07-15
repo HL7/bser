@@ -3,7 +3,7 @@ fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 id: bser
-name: BSeR_BidirectionalServices_eReferral
+name: BSeRBidirectionalServicesEReferral
 status: active
 version: 2.0.0
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     uri: http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads
     id: uscdcphinvads
   us.nlm.vsac:
-    version: 0.7.0
+    version: 0.11.0
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
     id: usnlmvsac
   hl7.fhir.us.core:
