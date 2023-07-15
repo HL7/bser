@@ -7,9 +7,9 @@ Description: "The FHIR R4 PractitionerRole resource covers the recording of the 
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* practitioner 1..1
+* practitioner 1..
 * practitioner only Reference(BSeRPractitioner)
-* organization 1..1
+* organization 1..
 * organization only Reference(BSeROrganization)
-* location 0..1
+* location ..1
 * location only Reference(BSeRServiceDeliveryLocation)
