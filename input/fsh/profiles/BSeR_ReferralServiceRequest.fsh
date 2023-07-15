@@ -1,5 +1,5 @@
 Profile: BSeR_ReferralServiceRequest
-Parent: USCoreServiceRequest
+Parent: USCoreServiceRequestProfile
 Id: BSeR-ReferralServiceRequest
 Title: "BSeR Referral Service Request"
 Description: "The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed."
