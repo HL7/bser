@@ -35,7 +35,7 @@ Description: "A task resource describes an activity that can be performed and tr
 * intent = #order (exactly)
 * intent MS
 * code 1.. MS
-* code = $task-code#fulfill (exactly)
+* code = $task-code#fulfill
 * code ^short = "Fulfill the focal request"
 * focus 1..1
 * focus only Reference(ReferralServiceRequest)
