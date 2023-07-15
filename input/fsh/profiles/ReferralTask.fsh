@@ -7,7 +7,7 @@ Description: "A task resource describes an activity that can be performed and tr
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* identifier ..2 MS
+* identifier MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
@@ -24,28 +24,33 @@ Description: "A task resource describes an activity that can be performed and tr
 * identifier[referralRecipientTaskIdentifier].value 1..1 MS
 * identifier[referralRecipientTaskIdentifier].assigner 1..1 MS
 * identifier[referralRecipientTaskIdentifier].assigner only Reference(USCoreOrganizationProfile)
+* partOf MS
 * partOf ^slicing.discriminator.type = #profile
 * partOf ^slicing.discriminator.path = "resolve()"
 * partOf ^slicing.rules = #open
-* partOf contains supportedPartOf 0..*
-* status 1..1 MS
+* partOf contains supportedPartOf 0..* MS
+* status MS
 * statusReason MS
 * businessStatus 1..1 MS
 * businessStatus from TaskBusinessStatusVS (extensible)
-* intent = #order (exactly)
 * intent MS
+* intent = #order (exactly)
 * code 1.. MS
 * code = $task-code#fulfill
 * code ^short = "Fulfill the focal request"
-* focus 1..1
+* focus 1.. MS
 * focus only Reference(ReferralServiceRequest)
 * for 1.. MS
 * for only Reference(USCorePatientProfile or USCoreRelatedPersonProfile or Group)
-* authoredOn 1..1 MS
-* requester 1..1 MS
+* authoredOn 1.. MS
+* requester 1.. MS
 * requester only Reference(USCorePractitionerRoleProfile or USCoreOrganizationProfile)
-* owner 1..1 MS
-* note 0..1
-* output 0..1
-* output.value[x] 1..1
+* requester ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = true
+* requester ^type.targetProfile[1].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* requester ^type.targetProfile[=].extension.valueBoolean = true
+* owner 1.. MS
+* note MS
+* output MS
+* output.value[x] MS
 * output.value[x] only Reference

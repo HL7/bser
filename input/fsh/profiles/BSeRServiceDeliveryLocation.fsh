@@ -7,13 +7,11 @@ Description: "Service delivery location is physical place used by a referral ini
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* identifier 0..*
-* alias 0..*
-* type 0..1
-* telecom 0..*
-* telecom.system 1..1
-* telecom.value 1..1
-* telecom.use 0..1
-* address 0..1
-* address.use 0..1
-* address.text 0..1
+* identifier MS
+* alias MS
+* type MS
+* telecom.system ..1 MS
+* telecom.value ..1 MS
+* telecom.use ..1 MS
+* address.use ..1 MS
+* address.text ..1 MS
