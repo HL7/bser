@@ -1,11 +1,14 @@
 canonical: http://hl7.org/fhir/us/bser
+title: "Bidirectional Services eReferral (BSeR)"
+releaseLabel: STU2
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: bser
+id: hl7.fhir.us.bser
 name: BSeRBidirectionalServicesEReferral
 status: active
 version: 2.0.0
+
 dependencies:
   us.cdc.phinvads:
     version: 0.12.0
@@ -23,3 +26,238 @@ dependencies:
     version: 1.1.0
     uri: http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh
     id: hl7fhirusodh
+
+pages:
+  index.md:
+    title: Home Page
+    Introduction:
+      title: Introduction
+    bser_project_team.md:
+      title: BSeR Project Team
+    Acknowledgements:
+      title: Acknowledgements
+    scope_and_context:
+      title: Scope and Context
+    resource_profiles:
+      title: Resource Profiles
+      referral_participant_resources:
+        title: Referral Participant Resources
+      workflow_management_resources:
+        title: Workflow Management Resources
+      referral_service_request_resources:
+        title: Referral Service Request Resources
+      referral_service_request_feedback_resources:
+        title: Referral Service Request Feedback Resources
+      service_request_and_referral_feedback_supporting_information:
+        title: Service Request and Referral Feedback Supporting Information
+    bi-directional_service_e-referral_transactions:
+      title: Bi-directional Service e-Referral Transactions
+    transport_options:
+      title: Transport Options
+    adaptation_for_additional_referral_use_cases:
+      title: Adaptation for Additional Referral Use Cases
+    uml_rendering_of_the_bser_ig:
+      title: UML rendering of the BSeR IG
+    Downloads:
+      title: Downloads
+    change_log:
+      title: Change Log
+
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Background:
+    Introduction: Introduction.html
+    BSeR Project Team: BSeR Project Team
+    Acknowledgements: Acknowledgements.html
+    Scope and Context: scope_and_context.html
+    UML rendering of the BSeR IG: uml_rendering_of_the_bser_ig.html
+    Change Log: change_log.html
+  Resource Profile Information:
+    Resource Profiles: resource_profiles.html
+    Referral Participant Resources: referral_participant_resources.html
+    Workflow Management Resources: workflow_management_resources.html
+    Referral Service Request Resources: referral_service_request_resources.html
+    Referral Service Request Feedback Resources: referral_service_request_feedback_resources.html
+    Service Request and Referral Feedback Supporting Information: service_request_and_referral_feedback_supporting_information.html
+    Bi-directional Service e-Referral Transactions: bi-directional_service_e-referral_transactions.html
+    Transport Options: transport_options.html
+    Adaptation for Additional Referral Use Cases: adaptation_for_additional_referral_use_cases.html
+  Downloads: Downloads.html
+  Artifact Index: artifacts.html
+
+groups:
+  core-referral-architecture-profiles:
+    name: Core Referral Architecture Profiles
+    description: Core Referral Architecture Profiles
+    resources:
+     - StructureDefinition/ReferralServiceRequest
+     - StructureDefinition/ReferralTask
+  workflow-management-profiles:
+    name: Workflow Management Profiles
+    description: Workflow Management Profiles
+    resources:
+    - StructureDefinition/BSeR-ReferralMessageHeader
+    - StructureDefinition/BSeR-ReferralTask
+  referral-service-request-profiles:
+    name: Referral Service Request Profiles
+    description: Referral Service Request Profiles
+    resources:
+    - StructureDefinition/BSeR-ReferralMessageBundle
+    - StructureDefinition/BSeR-ReferralRequestComposition
+    - StructureDefinition/BSeR-ReferralRequestDocumentBundle
+    - StructureDefinition/BSeR-ReferralServiceRequest
+  referral-service-request-feedback-profiles:
+    name: Referral Service Request Feedback Profiles
+    description: Referral Service Request Feedback Profiles
+    resources:
+    - StructureDefinition/BSeR-ReferralActivityStatus
+    - StructureDefinition/BSeR-ReferralFeedbackComposition
+    - StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
+  supporting-information-profiles:
+    name: Supporting Information Profiles
+    description: Supporting Information Profiles
+    resources:
+    - StructureDefinition/BSeR-Diagnosis
+    - StructureDefinition/BSeR-EarlyChildhoodNutritionObservation
+    - StructureDefinition/BSeR-HA1C-Observation
+    - StructureDefinition/BSeR-NRT-AuthorizationStatus
+    - StructureDefinition/BSeR-TelcomCommunicationPreferences
+  supporting-information-feedback-profiles:
+    name: Supporting Information Feedback Profiles
+    description: Supporting Information Feedback Profiles
+    resources:
+    - StructureDefinition/BSeR-ArthritisFeedbackObservation
+    - StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation
+    - StructureDefinition/BSeR-MedicationStatement
+    - StructureDefinition/BSeR-ParticipationFeedbackObservation
+    - StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication
+    - StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation
+  referral-participant-profiles:
+    name: Referral Participant Profiles
+    description: Referral Participant Profiles
+    resources:
+    - StructureDefinition/BSeR-Organization
+    - StructureDefinition/BSeR-Practitioner
+    - StructureDefinition/BSeR-ReferralInitiatorPractitionerRole
+    - StructureDefinition/BSeR-ReferralRecipientPractitionerRole
+    - StructureDefinition/BSeR-ServiceDeliveryLocation
+  other-profiles:
+    name: Other Profiles
+    description: Other Profiles
+    resources:
+    - StructureDefinition/BSeR-Coverage
+    - StructureDefinition/BSeR-EducationLevel
+    - StructureDefinition/BSeR-PatientConsent
+  workflow-management-examples:
+    name: Workflow Management Examples
+    description: Workflow Management Examples
+    resources:
+    - MessageHeader/messageheader-BSeR-ReferralMessageHeader
+    - Task/task-BSeR-ReferralTask
+  referral-service-request-examples:
+    name: Referral Service Request Examples
+    description: Referral Service Request Examples
+    resources:
+    - Bundle/bundle-bser-referral-message-bundle-eve-everywoman
+    - Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman
+    - ServiceRequest/servicerequest-BSeR-ReferralServiceRequest
+  referral-serivce-request-examples-composition:
+    name: Referral Service Request Examples: Composition
+    description: Referral Service Request Examples: Composition
+    resources:
+    - Composition/composition-bser-referral-request-arthritis-everywoman
+    - Composition/composition-bser-referral-request-diabetes-everywoman
+    - Composition/composition-bser-referral-request-hypertension-everywoman
+    - Composition/composition-bser-referral-request-obesity-everywoman
+    - Composition/composition-bser-referral-request-tobacco-everywoman
+  referral-service-request-feedback-examples:
+    name: Referral Service Request Feedback Examples
+    description: Referral Service Request Feedback Examples
+    resources:
+    - Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
+    - Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman
+  referral-service-request-feedback-examples-composition:
+    name: Referral Service Request Feedback Examples: Composition
+    description: Referral Service Request Feedback Examples: Composition
+    resources:
+    - Composition/composition-bser-referral-feedback-arthritis-everywoman
+    - Composition/composition-bser-referral-feedback-diabetes-everywoman
+    - Composition/composition-bser-referral-feedback-hypertension-everywoman
+    - Composition/composition-bser-referral-feedback-obesity-everywoman
+    - Composition/composition-bser-referral-feedback-tobacco-everywoman
+  supporting-information-examples:
+    name: Supporting Information Examples
+    description: Supporting Information Examples
+    resources:
+    - AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman
+    - Condition/condition-BSeR-Diagnosis-eve-everywoman-diabetes
+    - Observation/observation-BSeR-HA1c-Observation-eve-everywoman
+    - Observation/observation-BSeR-NRT-AuthorizationStatus-eve-everywoman
+    - Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman
+    - Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman
+    - Observation/observation-BSeR-NutritionObs-eve-everywoman
+    - Observation/observation-BSeR-TelcomComm-eve-everywoman
+    - Observation/observation-blood-pressure-eve-everywoman-bser
+    - Observation/observation-bmi-eve-everywoman
+    - Observation/observation-body-height-baby-everybaby
+    - Observation/observation-body-height-eve-everywoman
+    - Observation/observation-body-weight-eve-everywoman
+    - Observation/observation-odh-employment-status-eve-everywoman
+    - Observation/observation-us-core-smokingstatus-eve-everywoman
+  supporting-information-feedback-examples:
+    name: Supporting Information Feedback Examples
+    description: Supporting Information Feedback Examples
+    resources:
+    - Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman
+    - MedicationStatement/medicationstatement-BSeR-eve-everywoman
+    - Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman
+    - Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman
+    - Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman
+    - Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman
+    - Observation/observation-bser-arthritis-feedback-observation-2-eve-everywoman
+    - Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman
+  referral-participant-examples:
+    name: Referral Participant Examples
+    description: Referral Participant Examples
+    resources:
+    - Location/location-bser-service-delivery-location-st-luke
+    - Organization/organization-bser-organization-acme-lab
+    - Organization/organization-bser-organization-saint-luke
+    - Patient/patient-us-core-patient-baby-everybaby
+    - Patient/patient-us-core-patient-eve-everywoman
+    - Patient/patient-us-core-patient-mom-everymom
+    - Practitioner/practitioner-bser-hailey-eight
+    - Practitioner/practitioner-bser-henry-seven
+    - PractitionerRole/practitionerrole-bser-referral-initiator
+    - PractitionerRole/practitionerrole-bser-referral-recipient
+    - RelatedPerson/relatedperson-mom-everymom
+    - RelatedPerson/relatedperson-self-eve-everywoman
+  other-examples:
+    name: Other Examples
+    - Consent/consent-BSeR-PatientConsent-eve-everywoman
+    - Coverage/coverage-BSeR-Coverage-eve-everywoman
+    - Observation/observation-BSeR-EducationLevel-eve-everywoman
+  code-systems:
+    name: Code Systems
+    - CodeSystem/TaskBusinessStatusCS
+    - CodeSystem/bser
+  value-sets:
+    name: Value Sets
+    - ValueSet/BSeR-TelcomCommunicationPreferencesVS
+    - ValueSet/TaskBusinessStatusVS
+  capability-statement:
+    name: Capability Statement
+    - CapabilityStatement/capabilitystatement-bser
+
+copyrightYear: 2022+
+publisher:
+  name: HL7 Public Health Working Group
+  url: http://www.hl7.org/Special/committees/pher
+  email: pher@lists.HL7.org
+parameters:
+  show-inherited-invariants: false
+  //path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
+
+jurisdiction: urn:iso:std:iso:3166#US
+license: CC0-1.0
