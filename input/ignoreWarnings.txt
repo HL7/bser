@@ -1,26 +1,18 @@
 == Suppressed Messages ==
 #  Not matching is expected behaviour - the only slice defined in the BSeR-ReferralRequestDocumentBundle is the required Composition
-INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0
 
 #  Not matching is expected behaviour - the only slice defined in the BSeR-ReferralFeedbackDocumentBundle is the required Composition
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0
 
 #  Not matching is expected behaviour - Task is the focus of the MessageHeader which is a required slice of BSeR_ReferralMessageBundle and is included in the bundle
-INFORMATION: Bundle/bundle-bser-referral-message-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle|2.0.0
 
 # US Core Variance - need to find when (if) these were approved
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
-# Core Spec issue detailed here: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/IG.20Publication.20Validation.20issue.20-.20Consent.20Profile
+# US Core: the US Core Coverage profile does not exist in the version of US Core this IG is dependent on (5.0.1)
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
+
+# Error on Consent: Core Spec issue detailed here: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/IG.20Publication.20Validation.20issue.20-.20Consent.20Profile
 if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
