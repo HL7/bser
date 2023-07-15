@@ -7,20 +7,12 @@ Description: "An individual who are engaged in the health care process or health
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* identifier 1..*
-* identifier.value 1..1
 * name 1..1
-* name.family 1..1
-* name.given 1..*
-* name.prefix 0..1
-* name.suffix 0..1
-* telecom 0..*
-* telecom.system 1..1
-* telecom.value 1..1
-* telecom.use 0..1
-* address 0..1
-* address.use 0..1
-* address.city 0..1
-* address.state 0..1
-* address.postalCode 0..1
-* address.country 0..1
+* name.given 1.. MS
+* name.prefix ..1 MS
+* name.suffix ..1 MS
+* telecom.system 1..
+* telecom.value 1..
+* telecom.use MS
+* address ..1
+* address.use MS

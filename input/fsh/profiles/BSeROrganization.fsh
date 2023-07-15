@@ -7,11 +7,9 @@ Description: "An organization resource playing the roles of practitioner affilia
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* type 1..1
-* telecom 0..* MS
-* telecom.system 1..1 MS
-* telecom.value 1..1 MS
-* telecom.use 0..1 MS
-* address 0..* MS
-* address.use 0..1 MS
-* address.text 0..1 MS
+* type 1..1 MS
+* telecom.system 1.. MS
+* telecom.value 1.. MS
+* telecom.use MS
+* address.use MS
+* address.text MS
