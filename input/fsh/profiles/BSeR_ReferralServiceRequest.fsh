@@ -23,11 +23,11 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * requester only Reference(BSeR_ReferralInitiatorPractitionerRole)
 * performer only Reference(BSeR_ReferralRecipientPractitionerRole)
 * reasonCode from $2.16.840.1.113762.1.4.1099.46 (extensible)
-* insurance MS
-* insurance ^slicing.discriminator.type = #profile
-* insurance ^slicing.discriminator.path = "resolve()"
-* insurance ^slicing.rules = #open
-* insurance contains insuranceCoverageBSeR 0..* MS
+// * insurance MS
+// * insurance ^slicing.discriminator.type = #profile
+// * insurance ^slicing.discriminator.path = "resolve()"
+// * insurance ^slicing.rules = #open
+* insurance[insuranceCoverage] contains insuranceCoverageBSeR 0..* MS
 * insurance[insuranceCoverage][insuranceCoverageBSeR] only Reference(BSeR_Coverage)
 * supportingInfo 1..1 MS
 * supportingInfo only Reference(BSeR_ReferralRequestDocumentBundle)

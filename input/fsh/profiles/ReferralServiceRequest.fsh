@@ -51,5 +51,6 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * insurance ^slicing.rules = #open
 * insurance contains insuranceCoverage 0..* MS
 * insurance[insuranceCoverage] only Reference(Coverage)
+* supportingInfo MS
 * supportingInfo only Reference(Consent or Bundle)
 * note 0..* MS
