@@ -3,8 +3,7 @@ Parent: USCoreLaboratoryResultObservationProfile
 Id: BSeR-HA1C-Observation
 Title: "BSeR HA1C Observation"
 Description: "A measure of the amount or percentage of hemoglobin A1c in the patient's blood. This observation is used a supporting information primarily for diabetes prevention referrals."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:37.848Z"
+* ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

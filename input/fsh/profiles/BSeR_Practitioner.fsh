@@ -3,8 +3,7 @@ Parent: USCorePractitionerProfile
 Id: BSeR-Practitioner
 Title: "BSeR Practitioner"
 Description: "An individual who are engaged in the health care process or health care-related services as part of their formal responsibilities."
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2023-05-05T21:56:39.546Z"
+* ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

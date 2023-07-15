@@ -3,8 +3,7 @@ Parent: Observation
 Id: BSeR-TelcomCommunicationPreferences
 Title: "BSeR Telcom Communication Preferences"
 Description: "A collection of observations about the patient's preferences with regard to contact via telecommunication (phone/email) such as best Day To Call, best Time To Call, and leave Message Indicator."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:38.281Z"
+* ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

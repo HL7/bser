@@ -3,8 +3,6 @@ Parent: Task
 Id: ReferralTask
 Title: "Referral Task"
 Description: "A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is used in a referral to track the performance and state of completion of the referral service request."
-* ^meta.versionId = "10"
-* ^meta.lastUpdated = "2023-04-13T10:00:09.552Z"
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

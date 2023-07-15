@@ -3,8 +3,6 @@ Parent: Task
 Id: BSeR-ReferralTask
 Title: "BSeR Referral Task"
 Description: "A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is used in BSeR to track the performance and state of completion of the referral service request."
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2023-05-07T01:42:31.168Z"
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

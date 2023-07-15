@@ -3,8 +3,6 @@ Parent: Composition
 Id: BSeR-ReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition"
 Description: "The structural body and metadata of the referral feedback document."
-* ^meta.versionId = "10"
-* ^meta.lastUpdated = "2023-04-13T08:51:31.016Z"
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

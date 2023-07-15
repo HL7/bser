@@ -3,8 +3,7 @@ Parent: Observation
 Id: BSeR-NRT-AuthorizationStatus
 Title: "BSeR NRT Authorization Status"
 Description: "An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:37.933Z"
+* ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

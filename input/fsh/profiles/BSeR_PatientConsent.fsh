@@ -3,8 +3,7 @@ Parent: Consent
 Id: BSeR-PatientConsent
 Title: "BSeR Patient Consent"
 Description: "A record regarding the consent status of the patient with regard to treatment authorization or protected health information sharing."
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2023-05-05T21:57:12.566Z"
+* ^status = #active
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

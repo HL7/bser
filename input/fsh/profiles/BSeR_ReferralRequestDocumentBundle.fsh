@@ -3,8 +3,7 @@ Parent: Bundle
 Id: BSeR-ReferralRequestDocumentBundle
 Title: "BSeR Referral Request Document Bundle"
 Description: "This Bundle profile represents an BSeR Referral Request Document Bundle. It contains the BSeR Referral Request Composition."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:38.142Z"
+* ^status = #active
 * ^version = "1.0.0"
 * ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"

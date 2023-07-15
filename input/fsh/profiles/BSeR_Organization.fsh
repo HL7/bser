@@ -3,8 +3,7 @@ Parent: USCoreOrganizationProfile
 Id: BSeR-Organization
 Title: "BSeR Organization"
 Description: "An organization resource playing the roles of practitioner affiliated organization, patient coverage payer organization, or patient employer organization."
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2023-05-05T21:58:03.140Z"
+* ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

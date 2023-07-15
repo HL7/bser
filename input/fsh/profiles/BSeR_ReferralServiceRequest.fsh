@@ -3,8 +3,6 @@ Parent: ServiceRequest
 Id: BSeR-ReferralServiceRequest
 Title: "BSeR Referral Service Request"
 Description: "The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for service such as diagnostic investigations, treatments, or operations to be performed."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:38.110Z"
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

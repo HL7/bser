@@ -3,8 +3,6 @@ Parent: ServiceRequest
 Id: ReferralServiceRequest
 Title: "Referral Service Request"
 Description: "The referral service request is a profile of the FHIR ServiceRequest resource, a record of a request for services such as diagnostic investigations, treatments, or operations to be performed."
-* ^meta.versionId = "18"
-* ^meta.lastUpdated = "2023-04-13T09:18:39.414Z"
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

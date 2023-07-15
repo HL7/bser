@@ -3,8 +3,7 @@ Parent: Observation
 Id: BSeR-ParticipationFeedbackObservation
 Title: "BSeR Participation Feedback Observation"
 Description: "An observation regarding the level of participation in the services provided by the referral recipient, such as the number of sessions attended."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:37.951Z"
+* ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

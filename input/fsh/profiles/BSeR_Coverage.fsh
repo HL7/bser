@@ -3,8 +3,6 @@ Parent: Coverage
 Id: BSeR-Coverage
 Title: "BSeR Coverage"
 Description: "Coverage high-level identifiers and descriptors of an insurance plan underwriting some or all of the cost of the referral services provided."
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2023-05-05T21:59:29.751Z"
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

@@ -3,8 +3,7 @@ Parent: Bundle
 Id: BSeR-ReferralFeedbackDocumentBundle
 Title: "BSeR Referral Feedback Document Bundle"
 Description: "This Bundle profile represents an BSeR Referral Feedback Document Bundle. It contains the BSeR Referral Feedback Composition."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:38.083Z"
+* ^status = #active
 * ^version = "1.0.0"
 * ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"

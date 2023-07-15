@@ -3,8 +3,7 @@ Parent: Observation
 Id: BSeR-EarlyChildhoodNutritionObservation
 Title: "BSeR Early Childhood Nutrition Observation"
 Description: "A collection of observational data points authored by the referral initiator as part of supporting information related to an early childhood nutrition referral."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-09-16T21:05:37.703Z"
+* ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

@@ -3,8 +3,6 @@ Parent: Composition
 Id: BSeR-ReferralRequestComposition
 Title: "BSeR Referral Request Composition"
 Description: "The structural body and metadata of the referral request document."
-* ^meta.versionId = "14"
-* ^meta.lastUpdated = "2023-04-13T09:51:40.036Z"
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
