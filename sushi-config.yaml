@@ -30,38 +30,38 @@ dependencies:
 pages:
   index.md:
     title: Home Page
-    Introduction:
-      title: Introduction
-    bser_project_team.md:
-      title: BSeR Project Team
-    Acknowledgements:
-      title: Acknowledgements
-    scope_and_context:
-      title: Scope and Context
-    resource_profiles:
-      title: Resource Profiles
-      referral_participant_resources:
-        title: Referral Participant Resources
-      workflow_management_resources:
-        title: Workflow Management Resources
-      referral_service_request_resources:
-        title: Referral Service Request Resources
-      referral_service_request_feedback_resources:
-        title: Referral Service Request Feedback Resources
-      service_request_and_referral_feedback_supporting_information:
-        title: Service Request and Referral Feedback Supporting Information
-    bi-directional_service_e-referral_transactions:
-      title: Bi-directional Service e-Referral Transactions
-    transport_options:
-      title: Transport Options
-    adaptation_for_additional_referral_use_cases:
-      title: Adaptation for Additional Referral Use Cases
-    uml_rendering_of_the_bser_ig:
-      title: UML rendering of the BSeR IG
-    Downloads:
-      title: Downloads
-    change_log:
-      title: Change Log
+  Introduction.md:
+    title: Introduction
+  bser_project_team.md:
+    title: BSeR Project Team
+  Acknowledgements.md:
+    title: Acknowledgements
+  scope_and_context.md:
+    title: Scope and Context
+  resource_profiles.md:
+    title: Resource Profiles
+  referral_participant_resources.md:
+    title: Referral Participant Resources
+  workflow_management_resources.md:
+    title: Workflow Management Resources
+  referral_service_request_resources.md:
+    title: Referral Service Request Resources
+  referral_service_request_feedback_resources.md:
+    title: Referral Service Request Feedback Resources
+  service_request_and_referral_feedback_supporting_information.md:
+    title: Service Request and Referral Feedback Supporting Information
+  bi-directional_service_e-referral_transactions.md:
+    title: Bi-directional Service e-Referral Transactions
+  transport_options.md:
+    title: Transport Options
+  adaptation_for_additional_referral_use_cases.md:
+    title: Adaptation for Additional Referral Use Cases
+  uml_rendering_of_the_bser_ig.md:
+    title: UML rendering of the BSeR IG
+  Downloads.md:
+    title: Downloads
+  change_log.md:
+    title: Change Log
 
 menu:
   Home: index.html
@@ -91,8 +91,8 @@ groups:
     name: Core Referral Architecture Profiles
     description: Core Referral Architecture Profiles
     resources:
-     - StructureDefinition/ReferralServiceRequest
-     - StructureDefinition/ReferralTask
+    - StructureDefinition/ReferralServiceRequest
+    - StructureDefinition/ReferralTask
   workflow-management-profiles:
     name: Workflow Management Profiles
     description: Workflow Management Profiles
@@ -163,8 +163,8 @@ groups:
     - Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman
     - ServiceRequest/servicerequest-BSeR-ReferralServiceRequest
   referral-serivce-request-examples-composition:
-    name: Referral Service Request Examples: Composition
-    description: Referral Service Request Examples: Composition
+    name: "Referral Service Request Examples: Composition"
+    description: "Referral Service Request Examples: Composition"
     resources:
     - Composition/composition-bser-referral-request-arthritis-everywoman
     - Composition/composition-bser-referral-request-diabetes-everywoman
@@ -178,8 +178,8 @@ groups:
     - Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
     - Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman
   referral-service-request-feedback-examples-composition:
-    name: Referral Service Request Feedback Examples: Composition
-    description: Referral Service Request Feedback Examples: Composition
+    name: "Referral Service Request Feedback Examples: Composition"
+    description: "Referral Service Request Feedback Examples: Composition"
     resources:
     - Composition/composition-bser-referral-feedback-arthritis-everywoman
     - Composition/composition-bser-referral-feedback-diabetes-everywoman
@@ -216,7 +216,7 @@ groups:
     - Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman
     - Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman
     - Observation/observation-bser-arthritis-feedback-observation-2-eve-everywoman
-    - Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman
+    - Observation/observation-bser-arthritis-feedback-observation-1-eve-everywoman
   referral-participant-examples:
     name: Referral Participant Examples
     description: Referral Participant Examples
@@ -235,19 +235,23 @@ groups:
     - RelatedPerson/relatedperson-self-eve-everywoman
   other-examples:
     name: Other Examples
+    resources:
     - Consent/consent-BSeR-PatientConsent-eve-everywoman
     - Coverage/coverage-BSeR-Coverage-eve-everywoman
     - Observation/observation-BSeR-EducationLevel-eve-everywoman
   code-systems:
     name: Code Systems
+    resources:
     - CodeSystem/TaskBusinessStatusCS
     - CodeSystem/bser
   value-sets:
     name: Value Sets
+    resources:
     - ValueSet/BSeR-TelcomCommunicationPreferencesVS
     - ValueSet/TaskBusinessStatusVS
   capability-statement:
     name: Capability Statement
+    resources:
     - CapabilityStatement/capabilitystatement-bser
 
 copyrightYear: 2022+
