@@ -1,6 +1,6 @@
 canonical: http://hl7.org/fhir/us/bser
 fhirVersion: 4.0.1
-FSHOnly: true
+FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: bser
 name: BSeRBidirectionalServicesEReferral
