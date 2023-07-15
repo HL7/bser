@@ -32,21 +32,12 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * identifier[referralRecipientServiceRequestIdentifier].assigner only Reference(USCoreOrganizationProfile)
 * basedOn only Reference(ReferralServiceRequest)
 * basedOn MS
-* status 1..1 MS
-* intent 1..1 MS
 * intent = #order
-* category MS
-* code 1..1 MS
-* code from USCoreProcedureCodes (extensible)
 * code ^short = "Referral or specific type of referral"
 * code ^definition = "Referral or specific type of referral. If the code used describes the type of/reason for referral (such as \"Referral to diabetes prevention program\") then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."
-* code ^binding.description = "US Core Procedure Codes"
-* subject 1..1 MS
-* subject only Reference(USCorePatientProfile)
-* occurrence[x] 1..1 MS
+* occurrence[x] 1..1
 * occurrence[x] only dateTime
-* requester 1..1 MS
-* requester only Reference(USCorePatientProfile or USCoreRelatedPersonProfile or USCorePractitionerRoleProfile or USCorePractitionerProfile or USCoreOrganizationProfile or Device)
+* requester 1..1
 * performer 1..1 MS
 * performer only Reference(HealthcareService or Device or USCorePatientProfile or USCoreRelatedPersonProfile or USCorePractitionerProfile or USCorePractitionerRoleProfile or USCoreOrganizationProfile or USCoreCareTeam)
 * reasonCode MS
