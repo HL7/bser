@@ -49,7 +49,7 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * insurance ^slicing.discriminator.type = #profile
 * insurance ^slicing.discriminator.path = "resolve()"
 * insurance ^slicing.rules = #open
-* insurance contains sliceInsuranceCoverage 0..* MS
-* insurance[sliceInsuranceCoverage] only Reference(Coverage)
+* insurance contains insuranceCoverage 0..* MS
+* insurance[insuranceCoverage] only Reference(Coverage)
 * supportingInfo only Reference(Consent or Bundle)
 * note 0..* MS
