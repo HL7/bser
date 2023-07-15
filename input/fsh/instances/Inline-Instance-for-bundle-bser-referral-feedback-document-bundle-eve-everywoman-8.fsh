@@ -13,6 +13,7 @@ Usage: #inline
 * identifier[=].assigner.reference = "Organization/organization-bser-organization-saint-luke"
 * status = #active
 * intent = #order
+* category = $sct#313204009 "Lifestyle education (procedure)"
 * code = $sct#3457005 "Patient referral"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * subject.display = "Eve Everywoman"
