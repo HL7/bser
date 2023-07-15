@@ -23,28 +23,28 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
     referralRecipientServiceRequestIdentifier 0..1 MS
 * identifier[referralInitiatorServiceRequestIdentifier].type 1.. MS
 * identifier[referralInitiatorServiceRequestIdentifier].type = $v2-0203#PLAC
-* identifier[referralInitiatorServiceRequestIdentifier].value 1..1 MS
+* identifier[referralInitiatorServiceRequestIdentifier].value 1.. MS
+* identifier[referralInitiatorServiceRequestIdentifier].assigner MS
 * identifier[referralInitiatorServiceRequestIdentifier].assigner only Reference(USCoreOrganizationProfile)
 * identifier[referralRecipientServiceRequestIdentifier].type 1.. MS
 * identifier[referralRecipientServiceRequestIdentifier].type = $v2-0203#FILL
-* identifier[referralRecipientServiceRequestIdentifier].value 1..1 MS
-* identifier[referralRecipientServiceRequestIdentifier].assigner 1..1 MS
+* identifier[referralRecipientServiceRequestIdentifier].value 1.. MS
+* identifier[referralRecipientServiceRequestIdentifier].assigner MS
 * identifier[referralRecipientServiceRequestIdentifier].assigner only Reference(USCoreOrganizationProfile)
-* basedOn only Reference(ReferralServiceRequest)
 * basedOn MS
+* basedOn only Reference(ReferralServiceRequest)
 * intent = #order
 * code ^short = "Referral or specific type of referral"
 * code ^definition = "Referral or specific type of referral. If the code used describes the type of/reason for referral (such as \"Referral to diabetes prevention program\") then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."
-* occurrence[x] 1..1
+* occurrence[x] 1..
 * occurrence[x] only dateTime
-* requester 1..1
+* requester 1.. MS
 * performer 1..1 MS
-* performer only Reference(HealthcareService or Device or USCorePatientProfile or USCoreRelatedPersonProfile or USCorePractitionerProfile or USCorePractitionerRoleProfile or USCoreOrganizationProfile or USCoreCareTeam)
 * reasonCode MS
 * reasonCode ^short = "Reason for referral"
 * reasonCode ^definition = "Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. \"Referral\")."
-* reasonReference only Reference(USCoreConditionProblemsHealthConcernsProfile or Observation)
 * reasonReference MS
+* reasonReference only Reference(USCoreConditionProblemsHealthConcernsProfile or Observation)
 * insurance MS
 * insurance ^slicing.discriminator.type = #profile
 * insurance ^slicing.discriminator.path = "resolve()"
@@ -53,4 +53,4 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * insurance[insuranceCoverage] only Reference(Coverage)
 * supportingInfo MS
 * supportingInfo only Reference(Consent or Bundle)
-* note 0..* MS
+* note MS
