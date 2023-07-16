@@ -9,8 +9,8 @@ Usage: #example
 * timestamp = "2020-01-07T09:25:00Z"
 * entry[0].fullUrl = "http://example.org/fhir/Composition/composition-bser-referral-feedback-arthritis-everywoman"
 * entry[=].resource = composition-bser-referral-feedback-arthritis-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-BSeR-ArthritisFeedbackObservation-1-eve-everywoman"
-* entry[=].resource = Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-2
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bser-arthritis-feedback-observation-2-eve-everywoman"
+* entry[=].resource = observation-bser-arthritis-feedback-observation-2-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-bser-referral-recipient"
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-3
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman"
