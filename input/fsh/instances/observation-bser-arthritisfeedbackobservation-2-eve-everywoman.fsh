@@ -1,4 +1,4 @@
-Instance: observation-bser-arthritis-feedback-observation-2-eve-everywoman
+Instance: observation-bser-arthritisfeedbackobservation-2-eve-everywoman
 InstanceOf: BSeRArthritisFeedbackObservation
 Title: "BSeR Arthritis Feedback Observation - Eve Everywoman - Pain Management"
 Description: "BSeR Arthritis Feedback Observation: Eve Everywoman - Pain Management example"

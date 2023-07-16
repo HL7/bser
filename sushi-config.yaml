@@ -176,7 +176,7 @@ groups:
     description: Referral Service Request Feedback Examples
     resources:
     - Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
-    - Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman
+    - Observation/observation-bser-referralactivitystatus-eve-everywoman
   referral-service-request-feedback-examples-composition:
     name: "Referral Service Request Feedback Examples: Composition"
     description: "Referral Service Request Feedback Examples: Composition"
@@ -215,8 +215,8 @@ groups:
     - Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman
     - Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman
     - Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman
-    - Observation/observation-bser-arthritis-feedback-observation-2-eve-everywoman
-    - Observation/observation-bser-arthritis-feedback-observation-1-eve-everywoman
+    - Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman
+    - Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman
   referral-participant-examples:
     name: Referral Participant Examples
     description: Referral Participant Examples

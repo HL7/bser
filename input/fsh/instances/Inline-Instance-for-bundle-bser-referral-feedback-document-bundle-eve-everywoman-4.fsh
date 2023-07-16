@@ -1,7 +1,7 @@
 Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-4
 InstanceOf: BSeRReferralActivityStatus
 Usage: #inline
-* id = "observation-BSeR-ReferralActivityStatus-eve-everywoman"
+* id = "observation-bser-referralactivitystatus-eve-everywoman"
 * meta.source = "#KH1UGGSHAr2RLZRo"
 * status = #final
 * code = $sct#385641008 "Action status"

@@ -14,7 +14,7 @@ Usage: #example
 * section[0].title = "Referral Service Request Feedback Summary"
 * section[=].code = BSeR#RSRFS "CompositionSectionReferralServiceRequestFeedbackSummary"
 * section[=].focus.reference = "ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"
-* section[=].entry.reference = "Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman"
+* section[=].entry.reference = "Observation/observation-bser-referralactivitystatus-eve-everywoman"
 * section[+].title = "Obesity Referral Feedback Supporting Information"
 * section[=].code = BSeR#ORFSI "Obesity Referral Feedback Supporting Information"
 * section[=].entry[0].reference = "Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman"
