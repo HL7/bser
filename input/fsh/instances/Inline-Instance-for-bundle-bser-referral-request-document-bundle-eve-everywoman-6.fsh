@@ -1,7 +1,7 @@
 Instance: Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-6
 InstanceOf: BSeRMedicationStatement
 Usage: #inline
-* id = "medicationstatement-BSeR-eve-everywoman"
+* id = "medicationstatement-bser-eve-everywoman"
 * meta.source = "#NPKNmapU7nw7QyhC"
 * status = #active
 * medicationCodeableConcept = $sct#27658006 "Amoxicillin-containing product"

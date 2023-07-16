@@ -1,6 +1,6 @@
-Instance: medicationstatement-BSeR-eve-everywoman
+Instance: medicationstatement-bser-eve-everywoman
 InstanceOf: BSeRMedicationStatement
-Title: "medicationstatement-BSeR-eve-everywoman"
+Title: "medicationstatement-bser-eve-everywoman"
 Description: "Example of BSeR-MedicationStatement profile as used in the BSeR IG"
 Usage: #example
 * status = #active

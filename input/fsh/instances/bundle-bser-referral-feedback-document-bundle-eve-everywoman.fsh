@@ -21,5 +21,5 @@ Usage: #example
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-6
 * entry[+].fullUrl = "http://example.org/fhir/Practitioner/practitioner-bser-hailey-eight"
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-7
-* entry[+].fullUrl = "http://example.org/fhir/ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"
+* entry[+].fullUrl = "http://example.org/fhir/ServiceRequest/servicerequest-bser-referralservicerequest"
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-8

@@ -1,7 +1,7 @@
 Instance: Inline-Instance-for-bundle-bser-referral-feedback-document-bundle-eve-everywoman-8
 InstanceOf: BSeRReferralServiceRequest
 Usage: #inline
-* id = "servicerequest-BSeR-ReferralServiceRequest"
+* id = "servicerequest-bser-referralservicerequest"
 * meta.source = "#geEcyuymdeHKb4ph"
 * identifier[0].type = $v2-0203#PLAC
 * identifier[=].value = "88888888"
@@ -22,5 +22,5 @@ Usage: #inline
 * performer.reference = "PractitionerRole/practitionerrole-bser-referral-recipient"
 * performer.display = "Hailey Eight, MD"
 * reasonCode = $sct#3723001 "Arthritis (disorder)"
-* insurance.reference = "Coverage/coverage-BSeR-Coverage-eve-everywoman"
+* insurance.reference = "Coverage/coverage-bser-coverage-eve-everywoman"
 * supportingInfo.reference = "Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman"

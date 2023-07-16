@@ -1,6 +1,6 @@
-Instance: messageheader-BSeR-ReferralMessageHeader
+Instance: messageheader-bser-referralmessageheader
 InstanceOf: BSeRReferralMessageHeader
-Title: "messageheader-BSeR-ReferralMessageHeader"
+Title: "messageheader-bser-referralmessageheader"
 Description: "Example of BSeR-ReferralMessageHeader profile as used in the BSeR IG"
 Usage: #example
 * eventCoding = $v2-0003#I12 "REF/RRI - Patient referral"
@@ -14,4 +14,4 @@ Usage: #example
 * source.contact.value = "+1 (555) 123 4567"
 * source.endpoint = "http://www.saintlukeshealthsystem.org/fhir"
 * reason = $v2-0003#I12 "REF/RRI - Patient referral"
-* focus.reference = "Task/task-BSeR-ReferralTask"
+* focus.reference = "Task/task-bser-referraltask"

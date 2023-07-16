@@ -1,6 +1,6 @@
-Instance: observation-BSeR-TelcomComm-eve-everywoman
+Instance: observation-bser-telcomcomm-eve-everywoman
 InstanceOf: BSeRTelcomCommunicationPreferences
-Title: "observation-BSeR-TelcomComm-eve-everywoman"
+Title: "observation-bser-telcomcomm-eve-everywoman"
 Description: "Example of BSeR-TelcomCommunicationPreferences profile as used in the BSeR IG"
 Usage: #example
 * status = #final

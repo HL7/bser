@@ -13,7 +13,7 @@ Usage: #example
 * title = "Referral request"
 * section.title = "Hypertension Referral Request Supporting Information"
 * section.code = BSeR#HRSI "Hypertension Referral Supporting Information"
-* section.entry[0].reference = "Condition/condition-BSeR-Diagnosis-eve-everywoman-diabetes"
+* section.entry[0].reference = "Condition/condition-bser-diagnosis-eve-everywoman-diabetes"
 * section.entry[+].reference = "Observation/observation-blood-pressure-eve-everywoman-bser"
 * section.entry[+].reference = "Observation/observation-body-height-eve-everywoman"
 * section.entry[+].reference = "Observation/observation-bmi-eve-everywoman"

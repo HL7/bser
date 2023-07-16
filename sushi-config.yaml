@@ -153,15 +153,15 @@ groups:
     name: Workflow Management Examples
     description: Workflow Management Examples
     resources:
-    - MessageHeader/messageheader-BSeR-ReferralMessageHeader
-    - Task/task-BSeR-ReferralTask
+    - MessageHeader/messageheader-bser-referralmessageheader
+    - Task/task-bser-referraltask
   referral-service-request-examples:
     name: Referral Service Request Examples
     description: Referral Service Request Examples
     resources:
     - Bundle/bundle-bser-referral-message-bundle-eve-everywoman
     - Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman
-    - ServiceRequest/servicerequest-BSeR-ReferralServiceRequest
+    - ServiceRequest/servicerequest-bser-referralservicerequest
   referral-serivce-request-examples-composition:
     name: "Referral Service Request Examples: Composition"
     description: "Referral Service Request Examples: Composition"
@@ -191,13 +191,13 @@ groups:
     description: Supporting Information Examples
     resources:
     - AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman
-    - Condition/condition-BSeR-Diagnosis-eve-everywoman-diabetes
-    - Observation/observation-BSeR-HA1c-Observation-eve-everywoman
-    - Observation/observation-BSeR-NRT-AuthorizationStatus-eve-everywoman
-    - Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman
-    - Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman
-    - Observation/observation-BSeR-NutritionObs-eve-everywoman
-    - Observation/observation-BSeR-TelcomComm-eve-everywoman
+    - Condition/condition-bser-diagnosis-eve-everywoman-diabetes
+    - Observation/observation-bser-ha1c-observation-eve-everywoman
+    - Observation/observation-bser-nrt-authorizationstatus-eve-everywoman
+    - Observation/observation-bser-nutritionfeedbackobs-1-eve-everywoman
+    - Observation/observation-bser-nutritionfeedbackobs-2-eve-everywoman
+    - Observation/observation-bser-nutritionobs-eve-everywoman
+    - Observation/observation-bser-telcomcomm-eve-everywoman
     - Observation/observation-blood-pressure-eve-everywoman-bser
     - Observation/observation-bmi-eve-everywoman
     - Observation/observation-body-height-baby-everybaby
@@ -210,11 +210,11 @@ groups:
     description: Supporting Information Feedback Examples
     resources:
     - Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman
-    - MedicationStatement/medicationstatement-BSeR-eve-everywoman
-    - Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman
-    - Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman
-    - Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman
-    - Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman
+    - MedicationStatement/medicationstatement-bser-eve-everywoman
+    - Observation/observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman
+    - Observation/observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman
+    - Observation/observation-participationfeedbackobservation-1-eve-everywoman
+    - Observation/observation-participationfeedbackobservation-2-eve-everywoman
     - Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman
     - Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman
   referral-participant-examples:
@@ -236,9 +236,9 @@ groups:
   other-examples:
     name: Other Examples
     resources:
-    - Consent/consent-BSeR-PatientConsent-eve-everywoman
-    - Coverage/coverage-BSeR-Coverage-eve-everywoman
-    - Observation/observation-BSeR-EducationLevel-eve-everywoman
+    - Consent/consent-bser-patientconsent-eve-everywoman
+    - Coverage/coverage-bser-coverage-eve-everywoman
+    - Observation/observation-bser-educationlevel-eve-everywoman
   code-systems:
     name: Code Systems
     resources:

@@ -1,6 +1,6 @@
-Instance: observation-BSeR-EducationLevel-eve-everywoman
+Instance: observation-bser-educationlevel-eve-everywoman
 InstanceOf: BSeREducationLevel
-Title: "observation-BSeR-EducationLevel-eve-everywoman"
+Title: "observation-bser-educationlevel-eve-everywoman"
 Description: "Example of BSeR-EducationLevel profile as used in the BSeR IG"
 Usage: #example
 * status = #final

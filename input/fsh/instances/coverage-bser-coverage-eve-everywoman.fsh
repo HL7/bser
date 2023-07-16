@@ -1,6 +1,6 @@
-Instance: coverage-BSeR-Coverage-eve-everywoman
+Instance: coverage-bser-coverage-eve-everywoman
 InstanceOf: BSeRCoverage
-Title: "coverage-BSeR-Coverage-eve-everywoman"
+Title: "coverage-bser-coverage-eve-everywoman"
 Description: "Example of BSeR-Coverage profile as used in the BSeR IG"
 Usage: #example
 * identifier.system = "http://benefitsinc.com/certificate"

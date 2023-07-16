@@ -13,6 +13,6 @@ Usage: #example
 * title = "Referral request"
 * section.title = "Tobacco Cessation Referral Request Supporting Information"
 * section.code = BSeR#TUCRSI "Tobacco Use Cessation Referral Supporting Information"
-* section.entry[0].reference = "Observation/observation-BSeR-NRT-AuthorizationStatus-eve-everywoman"
+* section.entry[0].reference = "Observation/observation-bser-nrt-authorizationstatus-eve-everywoman"
 * section.entry[+].reference = "Observation/observation-us-core-smokingstatus-eve-everywoman"
-* section.entry[+].reference = "Observation/observation-BSeR-TelcomComm-eve-everywoman"
+* section.entry[+].reference = "Observation/observation-bser-telcomcomm-eve-everywoman"

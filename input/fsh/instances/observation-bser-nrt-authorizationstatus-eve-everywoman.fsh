@@ -1,6 +1,6 @@
-Instance: observation-BSeR-NRT-AuthorizationStatus-eve-everywoman
+Instance: observation-bser-nrt-authorizationstatus-eve-everywoman
 InstanceOf: BSeRNRTAuthorizationStatus
-Title: "observation-BSeR-NRT-AuthorizationStatus-eve-everywoman"
+Title: "observation-bser-nrt-authorizationstatus-eve-everywoman"
 Description: "Example of BSeR-NRT-AuthorizationStatus profile as used in the BSeR IG"
 Usage: #example
 * status = #final

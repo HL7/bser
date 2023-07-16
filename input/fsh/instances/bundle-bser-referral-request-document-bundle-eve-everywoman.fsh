@@ -17,7 +17,7 @@ Usage: #example
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-4
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bmi-eve-everywoman"
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-5
-* entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-BSeR-eve-everywoman"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-6
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-body-weight-eve-everywoman"
 * entry[=].resource = Inline-Instance-for-bundle-bser-referral-request-document-bundle-eve-everywoman-7

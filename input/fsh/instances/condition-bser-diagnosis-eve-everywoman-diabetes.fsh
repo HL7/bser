@@ -1,4 +1,4 @@
-Instance: condition-BSeR-Diagnosis-eve-everywoman-diabetes
+Instance: condition-bser-diagnosis-eve-everywoman-diabetes
 InstanceOf: BSeRDiagnosis
 Title: "BSeR Diagnosis - Diabetes - Eve Everywoman"
 Description: "BSeR Diagnosis: Diabetes - Eve Everywoman example"

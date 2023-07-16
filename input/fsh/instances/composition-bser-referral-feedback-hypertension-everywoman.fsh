@@ -13,7 +13,7 @@ Usage: #example
 * title = "Referral feedback"
 * section[0].title = "Referral Service Request Feedback Summary"
 * section[=].code = BSeR#RSRFS "CompositionSectionReferralServiceRequestFeedbackSummary"
-* section[=].focus.reference = "ServiceRequest/servicerequest-BSeR-ReferralServiceRequest"
+* section[=].focus.reference = "ServiceRequest/servicerequest-bser-referralservicerequest"
 * section[=].entry.reference = "Observation/observation-bser-referralactivitystatus-eve-everywoman"
 * section[+].title = "Hypertension Referral Feedback Supporting Information"
 * section[=].code = BSeR#HRFSI "Hypertension Referral Feedback Supporting Information"

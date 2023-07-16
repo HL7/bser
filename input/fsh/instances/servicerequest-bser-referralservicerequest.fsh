@@ -1,4 +1,4 @@
-Instance: servicerequest-BSeR-ReferralServiceRequest
+Instance: servicerequest-bser-referralservicerequest
 InstanceOf: BSeRReferralServiceRequest
 Title: "BSeR Referral ServiceRequest - Eve Everywoman"
 Description: "BSeR Referral ServiceRequest:  Eve Everywoman example"
@@ -22,5 +22,5 @@ Usage: #example
 * performer.reference = "PractitionerRole/practitionerrole-bser-referral-recipient"
 * performer.display = "Hailey Eight, MD"
 * reasonCode = $sct#3723001 "Arthritis (disorder)"
-* insurance.reference = "Coverage/coverage-BSeR-Coverage-eve-everywoman"
+* insurance.reference = "Coverage/coverage-bser-coverage-eve-everywoman"
 * supportingInfo.reference = "Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman"

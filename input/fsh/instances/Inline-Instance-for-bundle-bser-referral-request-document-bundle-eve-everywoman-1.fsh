@@ -17,5 +17,5 @@ Usage: #inline
 * section.entry[+].reference = "Observation/observation-body-height-eve-everywoman"
 * section.entry[+].reference = "Observation/observation-bmi-eve-everywoman"
 * section.entry[+].reference = "Observation/observation-body-weight-eve-everywoman"
-* section.entry[+].reference = "MedicationStatement/medicationstatement-BSeR-eve-everywoman"
+* section.entry[+].reference = "MedicationStatement/medicationstatement-bser-eve-everywoman"
 * section.entry[+].reference = "AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"

@@ -1,6 +1,6 @@
-Instance: observation-ParticipationFeedbackObservation-1-eve-everywoman
+Instance: observation-participationfeedbackobservation-1-eve-everywoman
 InstanceOf: BSeRParticipationFeedbackObservation
-Title: "observation-ParticipationFeedbackObservation-1-eve-everywoman"
+Title: "observation-participationfeedbackobservation-1-eve-everywoman"
 Description: "Example of BSeR-ParticipationFeedbackObservation profile as used in the BSeR IG"
 Usage: #example
 * status = #final
