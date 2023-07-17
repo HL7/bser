@@ -16,5 +16,5 @@ Usage: #example
 * section[diabetesPreventionReferralSupportingInformation].entry[hA1c].reference = "Observation/observation-bser-ha1c-observation-eve-everywoman"
 * section[diabetesPreventionReferralSupportingInformation].entry[bloodPressure].reference = "Observation/observation-blood-pressure-eve-everywoman-bser"
 * section[diabetesPreventionReferralSupportingInformation].entry[bodyHeight].reference = "Observation/observation-body-height-eve-everywoman"
-* section[diabetesPreventionReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-body-weight-eve-everywoman"
+* section[diabetesPreventionReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"
 * section[diabetesPreventionReferralSupportingInformation].entry[bmi].reference = "Observation/observation-bmi-eve-everywoman"

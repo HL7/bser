@@ -17,5 +17,5 @@ Usage: #example
 * section[arthritisReferralSupportingInformation].entry[medicationStatement].reference = "MedicationStatement/medicationstatement-bser-eve-everywoman"
 * section[arthritisReferralSupportingInformation].entry[bloodPressure].reference = "Observation/observation-blood-pressure-eve-everywoman-bser"
 * section[arthritisReferralSupportingInformation].entry[bodyHeight].reference = "Observation/observation-body-height-eve-everywoman"
-* section[arthritisReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-body-weight-eve-everywoman"
+* section[arthritisReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"
 * section[arthritisReferralSupportingInformation].entry[bmi].reference = "Observation/observation-bmi-eve-everywoman"

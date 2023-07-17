@@ -1,18 +1,18 @@
-Instance: coverage-bser-coverage-eve-everywoman
+Instance: coverage-bser-coverage-baby-everybaby
 InstanceOf: BSeRCoverage
-Title: "BSeR Coverage - Eve Everywoman"
-Description: "BSeR Coverage: Eve Everywoman example"
+Title: "BSeR Coverage - Baby Everybaby"
+Description: "BSeR Coverage: Baby Everybaby example"
 Usage: #example
 * identifier.system = "http://benefitsinc.com/certificate"
 * identifier.value = "12345"
 * status = #active
 * type = $v3-ActCode#EHCPOL "extended healthcare"
-* subscriber.reference = "RelatedPerson/relatedperson-self-eve-everywoman"
-* subscriber.display = "Eve Everywoman"
-* beneficiary.reference = "Patient/patient-us-core-patient-eve-everywoman"
-* beneficiary.display = "Eve Everywoman"
-* relationship = $v3-RoleCode#ONESELF "self"
-* relationship.text = "self"
+* subscriber.reference = "RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom"
+* subscriber.display = "Mom Everymom"
+* beneficiary.reference = "Patient/patient-us-core-patient-baby-everybaby"
+* beneficiary.display = "Baby Everybaby"
+* relationship = $v3-RoleCode#GESTM "gestational mother"
+* relationship.text = "gestational mother"
 * period.start = "2019-05-23"
 * period.end = "2020-05-23"
 * payor.reference = "Organization/organization-bser-organization-saint-luke"

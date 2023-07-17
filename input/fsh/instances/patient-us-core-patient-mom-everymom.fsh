@@ -35,5 +35,5 @@ Usage: #example
 * address.state = "GA"
 * address.postalCode = "30302"
 * address.country = "US"
-* link.other = Reference(relatedperson-mom-everymom)
-* link.type = #seealso
+* link.other = Reference(relatedperson-us-core-relatedperson-mom-everymom)
+* link.type = $link-type#seealso "See also"

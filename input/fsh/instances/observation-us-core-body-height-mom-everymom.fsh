@@ -1,14 +1,14 @@
-Instance: observation-body-height-eve-everywoman
+Instance: observation-us-core-body-height-mom-everymom
 InstanceOf: USCoreBodyHeightProfile
-Title: "observation-body-height-eve-everywoman"
-Description: "Example of FHIR Body Height profile as used in the BSeR IG"
+Title: "US Core Body Height - Mom Everymom"
+Description: "US Core Body Height: Mom Everymom example"
 Usage: #example
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
 * category[VSCat].text = "Vital Signs"
 * code = $loinc#8302-2 "Body height"
 * code.text = "Body height"
-* subject = Reference(Patient/patient-us-core-patient-eve-everywoman) "Eve Everywoman"
+* subject = Reference(Patient/patient-us-core-patient-mom-everymom) "Eve Everywoman"
 * effectiveDateTime = "2019-01-17"
 * performer = Reference(Practitioner/practitioner-bser-henry-seven)
-* valueQuantity = 68 '[in_i]' "in"
+* valueQuantity = 66 '[in_i]' "in"

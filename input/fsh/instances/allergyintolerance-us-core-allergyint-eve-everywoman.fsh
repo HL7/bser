@@ -9,7 +9,7 @@ Usage: #example
 * criticality = #high
 * code = $sct#387406002 "Sulfonamide (substance)"
 * code.text = "sulfonamide antibacterial"
-* patient = Reference(patient-us-core-patient-eve-everywoman) "Eve Everywoman"
+* patient = Reference(Patient/patient-us-core-patient-eve-everywoman) "Eve Everywoman"
 * reaction.manifestation = $sct#271807003 "skin rash"
 * reaction.manifestation.text = "skin rash"
 * reaction.severity = #mild

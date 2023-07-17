@@ -16,5 +16,5 @@ Usage: #example
 * section[obesityReferralSupportingInformation].entry[allergyIntolerance].reference = "AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"
 * section[obesityReferralSupportingInformation].entry[bloodPressure].reference = "Observation/observation-blood-pressure-eve-everywoman-bser"
 * section[obesityReferralSupportingInformation].entry[bodyHeight].reference = "Observation/observation-body-height-eve-everywoman"
-* section[obesityReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-body-weight-eve-everywoman"
+* section[obesityReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"
 * section[obesityReferralSupportingInformation].entry[bmi].reference = "Observation/observation-bmi-eve-everywoman"

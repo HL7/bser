@@ -1,14 +1,14 @@
-Instance: observation-body-weight-eve-everywoman
+Instance: observation-us-core-body-weight-mom-everymom
 InstanceOf: USCoreBodyWeightProfile
-Title: "observation-body-weight-eve-everywoman"
-Description: "Example of FHIR Body Weight profile as used in the BSeR IG"
+Title: "US Core Body Weight - Mom Everymom"
+Description: "US Core Body Weight: Mom Everymom example"
 Usage: #example
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
 * category[VSCat].text = "Vital Signs"
 * code = $loinc#29463-7 "Body weight"
 * code.text = "Body weight"
-* subject = Reference(patient-us-core-patient-eve-everywoman) "Eve Everywoman"
+* subject = Reference(Patient/patient-us-core-patient-mom-everymom) "Mom Everymom"
 * effectiveDateTime = "2019-01-17"
 * performer = Reference(Practitioner/practitioner-bser-henry-seven)
-* valueQuantity = 65 'kg' "kg"
+* valueQuantity = 85 'kg' "kg"

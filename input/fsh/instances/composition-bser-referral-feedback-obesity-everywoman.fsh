@@ -20,5 +20,5 @@ Usage: #example
 * section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation].reference = "Observation/observation-participationfeedbackobservation-1-eve-everywoman"
 * section[obesityReferralFeedbackSupportingInformation].entry[bloodPressure].reference = "Observation/observation-blood-pressure-eve-everywoman-bser"
 * section[obesityReferralFeedbackSupportingInformation].entry[bodyHeight].reference = "Observation/observation-body-height-eve-everywoman"
-* section[obesityReferralFeedbackSupportingInformation].entry[bodyWeight].reference = "Observation/observation-body-weight-eve-everywoman"
+* section[obesityReferralFeedbackSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"
 * section[obesityReferralFeedbackSupportingInformation].entry[bmi].reference = "Observation/observation-bmi-eve-everywoman"

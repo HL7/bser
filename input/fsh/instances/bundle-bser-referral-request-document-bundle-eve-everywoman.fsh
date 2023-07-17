@@ -1,7 +1,7 @@
 Instance: bundle-bser-referral-request-document-bundle-eve-everywoman
 InstanceOf: BSeRReferralRequestDocumentBundle
-Title: "BSeR Referral Request Document Bundle - Eve Everywoman"
-Description: "BSeR Referral Request Document Bundle:  Eve Everywoman example"
+Title: "BSeR Referral Request Document Bundle - Eve Everywoman - Arthritis"
+Description: "BSeR Referral Request Document Bundle:  Eve Everywoman Arthritis example"
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:2be4b4e4-6df1-4cb2-a947-c70fa0eda54c"
@@ -19,8 +19,8 @@ Usage: #example
 * entry[=].resource = observation-bmi-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
 * entry[=].resource = medicationstatement-bser-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-body-weight-eve-everywoman"
-* entry[=].resource = observation-body-weight-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"
+* entry[=].resource = observation-us-core-body-weight-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-eve-everywoman"
 * entry[=].resource = patient-us-core-patient-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"

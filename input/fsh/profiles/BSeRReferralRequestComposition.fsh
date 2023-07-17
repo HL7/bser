@@ -111,6 +111,7 @@ Description: "The structural body and metadata of the referral request document.
     motherInformation 0..1
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code 1..
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code = BSeR#ECNRSIM "Early Childhood Nutrition Referral Supporting Information Mother"
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus ..1
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus only Reference(USCorePatientProfile)
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus  ^short = "The mother of the baby is the focus of this section"
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry ^slicing.discriminator.type = #profile
@@ -121,6 +122,10 @@ Description: "The structural body and metadata of the referral request document.
     motherBodyHeight 0..* and
     motherBodyWeight 0..* and
     motherBmi 0..*
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry[motherBloodPressure] only Reference(USCoreBloodPressureProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry[motherBodyHeight] only Reference(USCoreBodyHeightProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry[motherBodyWeight] only Reference(USCoreBodyWeightProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry[motherBmi] only Reference(USCoreBMIProfile)
 * section[diabetesPreventionReferralSupportingInformation].code 1..
 * section[diabetesPreventionReferralSupportingInformation].code = BSeR#DPRSI "Diabetes Prevention Referral Supporting Information"
 * section[diabetesPreventionReferralSupportingInformation].entry ^slicing.discriminator.type = #profile

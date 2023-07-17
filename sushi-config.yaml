@@ -166,6 +166,7 @@ groups:
     resources:
     - Bundle/bundle-bser-referral-message-bundle-eve-everywoman
     - Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman
+    - Bundle/bundle-bser-referral-request-document-bundle-baby-everybaby
     - ServiceRequest/servicerequest-bser-referralservicerequest
   referral-serivce-request-examples-composition:
     name: "Referral Service Request Examples: Composition"
@@ -176,6 +177,7 @@ groups:
     - Composition/composition-bser-referral-request-hypertension-everywoman
     - Composition/composition-bser-referral-request-obesity-everywoman
     - Composition/composition-bser-referral-request-tobacco-everywoman
+    - Composition/composition-bser-referral-request-nutrition-everybaby
   referral-service-request-feedback-examples:
     name: Referral Service Request Feedback Examples
     description: Referral Service Request Feedback Examples
@@ -201,13 +203,19 @@ groups:
     - Observation/observation-bser-nrt-authorizationstatus-eve-everywoman
     - Observation/observation-bser-nutritionfeedbackobs-1-eve-everywoman
     - Observation/observation-bser-nutritionfeedbackobs-2-eve-everywoman
-    - Observation/observation-bser-nutritionobs-eve-everywoman
+    - Observation/observation-bser-nutritionobs-baby-everybaby
     - Observation/observation-bser-telcomcomm-eve-everywoman
     - Observation/observation-blood-pressure-eve-everywoman-bser
+    - Observation/observation-us-core-blood-pressure-baby-everybaby
+    - Observation/observation-us-core-blood-pressure-mom-everymom
     - Observation/observation-bmi-eve-everywoman
+    - Observation/observation-us-core-bmi-mom-everymom
     - Observation/observation-body-height-baby-everybaby
     - Observation/observation-body-height-eve-everywoman
-    - Observation/observation-body-weight-eve-everywoman
+    - Observation/observation-us-core-body-height-mom-everymom
+    - Observation/observation-us-core-body-weight-eve-everywoman
+    - Observation/observation-us-core-body-weight-baby-everybaby
+    - Observation/observation-us-core-body-weight-mom-everymom
     - Observation/observation-odh-employment-status-eve-everywoman
     - Observation/observation-us-core-smokingstatus-eve-everywoman
   supporting-information-feedback-examples:
@@ -236,13 +244,15 @@ groups:
     - Practitioner/practitioner-bser-henry-seven
     - PractitionerRole/practitionerrole-bser-referral-initiator
     - PractitionerRole/practitionerrole-bser-referral-recipient
-    - RelatedPerson/relatedperson-mom-everymom
+    - RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom
     - RelatedPerson/relatedperson-self-eve-everywoman
+    - RelatedPerson/relatedperson-mother-eve-everywoman
   other-examples:
     name: Other Examples
     resources:
     - Consent/consent-bser-patientconsent-eve-everywoman
     - Coverage/coverage-bser-coverage-eve-everywoman
+    - Coverage/coverage-bser-coverage-baby-everybaby
     - Observation/observation-bser-educationlevel-eve-everywoman
   code-systems:
     name: Code Systems
@@ -258,6 +268,10 @@ groups:
     name: Capability Statement
     resources:
     - CapabilityStatement/capabilitystatement-bser
+  other:
+    name: Other
+    resources:
+    - parameters-snomed-us
 
 copyrightYear: 2022+
 publisher:
@@ -266,7 +280,7 @@ publisher:
   email: pher@lists.HL7.org
 parameters:
   show-inherited-invariants: false
-  # path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
+  path-expansion-params: 'Parameters-parameters-snomed-us.json'  #path is relative to [base]/fsh-generated/resources
 
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0

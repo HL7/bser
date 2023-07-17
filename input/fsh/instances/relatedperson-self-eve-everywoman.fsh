@@ -1,5 +1,5 @@
 Instance: relatedperson-self-eve-everywoman
-InstanceOf: RelatedPerson
+InstanceOf: USCoreRelatedPersonProfile
 Title: "RelatedPerson - Eve Everywoman - Self"
 Description: "RelatedPerson: Eve Everywoman - Self example"
 Usage: #example
@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier.value = "444222222"
 * active = true
-* patient = Reference(patient-us-core-patient-eve-everywoman) "Eve Everywoman"
+* patient = Reference(Patient/patient-us-core-patient-eve-everywoman) "Eve Everywoman"
 * relationship = $v3-RoleCode#ONESELF "self"
 * relationship.text = "oneself"
 * name.family = "Everywoman"

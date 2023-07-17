@@ -16,5 +16,5 @@ Usage: #example
 * section[hypertensionReferralSupportingInformation].entry[diagnosis].reference = "Condition/condition-us-core-cphc-eve-everywoman-diabetes"
 * section[hypertensionReferralSupportingInformation].entry[bloodPressure].reference = "Observation/observation-blood-pressure-eve-everywoman-bser"
 * section[hypertensionReferralSupportingInformation].entry[bodyHeight].reference = "Observation/observation-body-height-eve-everywoman"
-* section[hypertensionReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-body-weight-eve-everywoman"
+* section[hypertensionReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"
 * section[hypertensionReferralSupportingInformation].entry[bmi].reference = "Observation/observation-bmi-eve-everywoman"

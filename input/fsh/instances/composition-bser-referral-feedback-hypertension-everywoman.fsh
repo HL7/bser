@@ -19,5 +19,5 @@ Usage: #example
 * section[hypertensionReferralFeedbackSupportingInformation].code = BSeR#HRFSI "Hypertension Referral Feedback Supporting Information"
 * section[hypertensionReferralFeedbackSupportingInformation].entry[bloodPressure].reference = "Observation/observation-blood-pressure-eve-everywoman-bser"
 * section[hypertensionReferralFeedbackSupportingInformation].entry[bodyHeight].reference = "Observation/observation-body-height-eve-everywoman"
-* section[hypertensionReferralFeedbackSupportingInformation].entry[bodyWeight].reference = "Observation/observation-body-weight-eve-everywoman"
+* section[hypertensionReferralFeedbackSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"
 * section[hypertensionReferralFeedbackSupportingInformation].entry[bmi].reference = "Observation/observation-bmi-eve-everywoman"

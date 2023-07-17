@@ -19,5 +19,5 @@ Usage: #example
 * section[diabetesPreventionReferralFeedbackSupportingInformation].code = BSeR#DPRFSI "Diabetes Prevention Referral Feedback Supporting Information"
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation].reference = "Observation/observation-participationfeedbackobservation-1-eve-everywoman"
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bodyHeight].reference = "Observation/observation-body-height-eve-everywoman"
-* section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bodyWeight].reference = "Observation/observation-body-weight-eve-everywoman"
+* section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bmi].reference = "Observation/observation-bmi-eve-everywoman"

@@ -1,13 +1,13 @@
-Instance: relatedperson-mom-everymom
-InstanceOf: RelatedPerson
-Title: "RelatedPerson Mom L Everymom"
-Description: "Example of FHIR RelatedPerson resource as used in the BSeR IG"
+Instance: relatedperson-us-core-relatedperson-mom-everymom
+InstanceOf: USCoreRelatedPersonProfile
+Title: "US Core Relatedperson - Mom Everymom"
+Description: "US Core Relatedperson - Mom Everymom"
 Usage: #example
 * identifier.type = $v2-0203#SS
 * identifier.system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier.value = "444222222"
 * active = true
-* patient = Reference(patient-us-core-patient-baby-everybaby)
+* patient = Reference(Patient/patient-us-core-patient-baby-everybaby)
 * relationship = $v3-RoleCode#NMTH "natural mother"
 * relationship.text = "Natural Mother"
 * name.family = "Everymom"

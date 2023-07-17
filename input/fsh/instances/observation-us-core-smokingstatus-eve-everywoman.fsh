@@ -8,7 +8,7 @@ Usage: #example
 * category[SocialHistory].text = "Social History"
 * code = $loinc#72166-2 "Tobacco smoking status"
 * code.text = "Tobacco smoking status"
-* subject = Reference(patient-us-core-patient-eve-everywoman) "Eve Everywoman"
+* subject = Reference(Patient/patient-us-core-patient-eve-everywoman) "Eve Everywoman"
 * effectiveDateTime = "2019-01-17"
 * valueCodeableConcept = $sct#428041000124106
 * valueCodeableConcept.text = "Current some day smoker"

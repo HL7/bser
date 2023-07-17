@@ -1,7 +1,7 @@
 Instance: condition-us-core-cphc-eve-everywoman-diabetes
 InstanceOf: USCoreConditionProblemsHealthConcernsProfile
 Title: "US Core Condition Problems Health Concerns - Diabetes - Eve Everywoman"
-Description: "S Core Condition Problems Health Concerns: Diabetes - Eve Everywoman example"
+Description: "US Core Condition Problems Health Concerns: Diabetes - Eve Everywoman example"
 Usage: #example
 * category = $condition-category#problem-list-item "Problem List Item"
 * code = $sct#73211009 "Diabetes mellitus (disorder)"
