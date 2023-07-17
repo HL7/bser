@@ -56,7 +56,7 @@ Description: "The structural body and metadata of the referral request document.
     bodyWeight 0..1 and
     bmi 0..1
 * section[arthritisReferralSupportingInformation].entry[allergyIntolerance] only Reference(USCoreAllergyIntolerance)
-* section[arthritisReferralSupportingInformation].entry[medicationStatement] only Reference(BSeRMedicationStatement)
+* section[arthritisReferralSupportingInformation].entry[medicationStatement] only Reference(BSeRMedicationStatement or USCoreMedicationRequestProfile)
 * section[arthritisReferralSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[arthritisReferralSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[arthritisReferralSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
@@ -92,11 +92,11 @@ Description: "The structural body and metadata of the referral request document.
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyHeightLying] only Reference(USCoreBodyHeightProfile)
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyWeight] only Reference(USCoreBodyWeightProfile)
 // Section containing information about the mother of the baby
-* section.section ..1
-* section.section ^slicing.discriminator.type = #value
-* section.section ^slicing.discriminator.path = "code"
-* section.section ^slicing.rules = #open
-* section.section contains
+* section[earlyChildhoodNutritionReferralSupportingInformation].section ..1
+* section[earlyChildhoodNutritionReferralSupportingInformation].section ^slicing.discriminator.type = #value
+* section[earlyChildhoodNutritionReferralSupportingInformation].section ^slicing.discriminator.path = "code"
+* section[earlyChildhoodNutritionReferralSupportingInformation].section ^slicing.rules = #open
+* section[earlyChildhoodNutritionReferralSupportingInformation].section contains
     motherInformation 0..1
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code 1..
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code = BSeR#ECNRSIM "Early Childhood Nutrition Referral Supporting Information Mother"

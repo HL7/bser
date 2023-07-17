@@ -88,7 +88,8 @@ Description: "The structural body and metadata of the referral feedback document
     medicationHistory 0..* and
     participationFeedbackObservation 0..*
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[earlyChildhoodNutritionFeedbackObservation] only Reference(BSeREarlyChildhoodNutritionFeedbackObservation)
-* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[medicationHistory] only Reference(MedicationStatement)
+// Removing because CBOs don't have this information to feed back with
+// * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[medicationHistory] only Reference(MedicationStatement or USCoreMedicationRequestProfile)
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeRParticipationFeedbackObservation)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].code 1.. MS
 * section[diabetesPreventionReferralFeedbackSupportingInformation].code = BSeR#DPRFSI "Diabetes Prevention Referral Feedback Supporting Information"

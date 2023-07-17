@@ -1,5 +1,5 @@
-It is based on the [US Core ServiceRequest]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ServiceRequest.html) profile and further constrains it as follows:
-* adds extension [resource-pertainsToGoal]({{site.data.fhir.version}}extension-resource-pertainsToGoal.html)
+It is based on the [US Core ServiceRequest]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-servicerequest.html) profile and further constrains it as follows:
+* adds extension [resource-pertainsToGoal]({{site.data.fhir.path}}extension-resource-pertainsToGoal.html)
 * adds required and must support identifier 
     * adds slices for the ServiceRequest initiator and recipient
     * individual to US Public Health PractitionerRole
@@ -11,5 +11,5 @@ It is based on the [US Core ServiceRequest]({{site.data.fhir.ver.hl7fhiruscore}}
 * adds required must support performer
 * adds must support reasonCode and adds guidance
 * adds must support reasonReference and constrains reference to [US Core Condition Problems Health Concerns]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-condition-problems-health-concerns.html) profile
-* adds must support insurance with a slice constrained to reference [Coverage]({{site.data.fhir.version}}coverage.html)
-* adds must support supportingInfo constrained to [Consent]({{site.data.fhir.path}}/{{site.data.fhir.version}}/consent.html) or [Bundle]({{site.data.fhir.version}}bundle.html)
+* adds must support insurance with a slice constrained to reference [Coverage]({{site.data.fhir.path}}coverage.html)
+* adds must support supportingInfo constrained to [Consent]({{site.data.fhir.path}}consent.html) or [Bundle]({{site.data.fhir.path}}bundle.html)
