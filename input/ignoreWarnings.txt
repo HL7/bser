@@ -1,16 +1,14 @@
 == Suppressed Messages ==
 #  Not matching is expected behavior - the only slice defined in the BSeR-ReferralRequestDocumentBundle is the required Composition
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
+
 
 #  Not matching is expected behavior - the only slice defined in the BSeR-ReferralFeedbackDocumentBundle is the required Composition
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
+
 
 #  Not matching is expected behavior - Task is the focus of the MessageHeader which is a required slice of BSeRReferralMessageBundle and is included in the bundle
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle|2.0.0-ballot
+
 
 # Note matching is expected behavior - the US Core ServiceRequest profile allows other category codes
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest|2.0.0-ballot
 
 # US Core Variance - need to find when these were approved
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
@@ -22,4 +20,3 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureD
 if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 
 # VSAC: External value set - validator currently unable to check - codes are correct
-Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
