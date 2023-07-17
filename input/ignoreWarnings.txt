@@ -10,6 +10,7 @@ This element does not match any known slice defined in the profile http://hl7.or
 
 # Note matching is expected behavior - the US Core ServiceRequest profile allows other category codes
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest|2.0.0
 
 # US Core Variance - need to find when these were approved
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
