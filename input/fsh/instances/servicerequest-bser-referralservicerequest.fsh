@@ -23,4 +23,5 @@ Usage: #example
 * performer.display = "Hailey Eight, MD"
 * reasonCode = $sct#3723001 "Arthritis (disorder)"
 * insurance.reference = "Coverage/coverage-bser-coverage-eve-everywoman"
-* supportingInfo.reference = "Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman"
+* supportingInfo[consentSupportingInfo].reference = "Consent/consent-bser-patientconsent-eve-everywoman"
+* supportingInfo[bundleSupportingInfo].reference = "Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman"

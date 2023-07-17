@@ -1,5 +1,5 @@
 It is based on the [US Core ServiceRequest]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-servicerequest.html) profile and further constrains it as follows:
-* adds extension [resource-pertainsToGoal]({{site.data.fhir.path}}extension-resource-pertainsToGoal.html)
+* adds extension [resource-pertainsToGoal]({{site.data.fhir.path}}extension-resource-pertainstogoal.html)
 * adds required and must support identifier 
     * adds slices for the ServiceRequest initiator and recipient
     * individual to US Public Health PractitionerRole

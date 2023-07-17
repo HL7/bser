@@ -9,6 +9,8 @@ Usage: #example
 * timestamp = "2020-01-07T09:25:00Z"
 * entry[sliceBSeRComposition].fullUrl = "http://example.org/fhir/Composition/composition-bser-referral-feedback-arthritis-everywoman"
 * entry[sliceBSeRComposition].resource = composition-bser-referral-feedback-arthritis-everywoman
+* entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman"
+* entry[=].resource = observation-bser-arthritisfeedbackobservation-1-eve-everywoman
 * entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman"
 * entry[=].resource = observation-bser-arthritisfeedbackobservation-2-eve-everywoman
 * entry[2].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-bser-referral-recipient"

@@ -16,11 +16,9 @@ Description: "This Bundle profile represents a BSeR Referral Message Bundle. It 
 * entry ^slicing.discriminator.path = "$this.resource"
 * entry ^slicing.rules = #open
 * entry contains
-    sliceMessageHeader 1..1 MS and
-    sliceEmploymentStatus 0..* MS and
-    slicePatientConsent 0..* MS and
-    sliceEducationLevel 0..* MS
-* entry[sliceMessageHeader].resource only BSeRReferralMessageHeader
-* entry[sliceEmploymentStatus].resource only EmploymentStatus
-* entry[slicePatientConsent].resource only BSeRPatientConsent
-* entry[sliceEducationLevel].resource only BSeREducationLevel
+    messageHeader 1..1 MS
+* entry[messageHeader].resource only BSeRReferralMessageHeader
+// These shouldn't be here - moving them to ServiceRequest and Composition
+// * entry[sliceEmploymentStatus].resource only EmploymentStatus
+// * entry[slicePatientConsent].resource only BSeRPatientConsent
+// * entry[sliceEducationLevel].resource only BSeREducationLevel

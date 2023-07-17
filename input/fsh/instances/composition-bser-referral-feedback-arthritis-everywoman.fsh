@@ -18,3 +18,4 @@ Usage: #example
 * section[arthritisReferralFeedbackSupportingInformation].title = "Arthritis Referral Feedback Supporting Information"
 * section[arthritisReferralFeedbackSupportingInformation].code = BSeR#ARFSI "Arthritis Referral Feedback Supporting Information"
 * section[arthritisReferralFeedbackSupportingInformation].entry.reference = "Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman"
+* section[arthritisReferralFeedbackSupportingInformation].entry.reference = "Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman"

@@ -1,7 +1,7 @@
 Instance: observation-odh-employment-status-eve-everywoman
 InstanceOf: EmploymentStatus
-Title: "observation-odh-employment-status-eve-everywoman"
-Description: "Example of ODH Employment Status profile as used in the BSeR IG"
+Title: "ODH Employment Status - Eve Everywoman - Employed"
+Description: "ODH Employment Status: Eve Everywoman - Employed example"
 Usage: #example
 * status = #final
 * category = $observation-category#social-history

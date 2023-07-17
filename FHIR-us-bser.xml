@@ -64,6 +64,7 @@
 <artifact deprecated="true" key="Feed" name="Feed"/>
 <artifact deprecated="true" key="ImplementationGuide" name="ImplementationGuide"/>
 <artifact deprecated="true" key="MessageHeader" name="MessageHeader"/>
+<artifact id="Observation/observation-odh-employment-status-eve-everywoman" key="Observation-observation-odh-employment-status-eve-everywoman" name="ODH Employment Status - Eve Everywoman - Employed"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact deprecated="true" key="Patient" name="Patient"/>
 <artifact id="Patient/patient-us-core-patient-baby-everybaby" key="Patient-patient-us-core-patient-baby-everybaby" name="Patient Baby B Everybaby"/>
@@ -101,7 +102,6 @@
 <artifact id="Observation/observation-bser-telcomcomm-eve-everywoman" key="Observation-observation-bser-telcomcomm-eve-everywoman" name="observation-bser-telcomcomm-eve-everywoman"/>
 <artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" name="observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman"/>
 <artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" name="observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman"/>
-<artifact id="Observation/observation-odh-employment-status-eve-everywoman" key="Observation-observation-odh-employment-status-eve-everywoman" name="observation-odh-employment-status-eve-everywoman"/>
 <artifact id="Observation/observation-participationfeedbackobservation-1-eve-everywoman" key="Observation-observation-participationfeedbackobservation-1-eve-everywoman" name="observation-participationfeedbackobservation-1-eve-everywoman"/>
 <artifact id="Observation/observation-participationfeedbackobservation-2-eve-everywoman" key="Observation-observation-participationfeedbackobservation-2-eve-everywoman" name="observation-participationfeedbackobservation-2-eve-everywoman"/>
 <artifact id="Observation/observation-us-core-smokingstatus-eve-everywoman" key="Observation-observation-us-core-smokingstatus-eve-everywoman" name="observation-us-core-smokingstatus-eve-everywoman"/>

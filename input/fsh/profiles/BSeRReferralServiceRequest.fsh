@@ -16,5 +16,5 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 // * insurance[insuranceCoverage] contains insuranceCoverageBSeR 0..* MS
 // * insurance[insuranceCoverage][insuranceCoverageBSeR] only Reference(BSeRCoverage)
 * insurance[insuranceCoverage] only Reference(BSeRCoverage)
-* supportingInfo 1..1
-* supportingInfo only Reference(BSeRReferralRequestDocumentBundle)
+* supportingInfo[bundleSupportingInfo] 1..1
+* supportingInfo[bundleSupportingInfo] only Reference(BSeRReferralRequestDocumentBundle)
