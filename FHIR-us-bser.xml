@@ -13,8 +13,6 @@
 <artifact id="Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman" key="Observation-observation-bser-arthritisfeedbackobservation-1-eve-everywoman" name="BSeR Arthritis Feedback Observation - Eve Everywoman - Endurance Improved"/>
 <artifact id="Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman" key="Observation-observation-bser-arthritisfeedbackobservation-2-eve-everywoman" name="BSeR Arthritis Feedback Observation - Eve Everywoman - Pain Management"/>
 <artifact id="StructureDefinition/BSeR-Coverage" key="StructureDefinition-BSeR-Coverage" name="BSeR Coverage"/>
-<artifact id="StructureDefinition/BSeR-Diagnosis" key="StructureDefinition-BSeR-Diagnosis" name="BSeR Diagnosis"/>
-<artifact id="Condition/condition-us-core-condition-problems-health-concerns-eve-everywoman-diabetes" key="Condition-condition-us-core-condition-problems-health-concerns-eve-everywoman-diabetes" name="BSeR Diagnosis - Diabetes - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" key="StructureDefinition-BSeR-EarlyChildhoodNutritionFeedbackObservation" name="BSeR Early Childhood Nutrition Feedback Observation"/>
 <artifact id="StructureDefinition/BSeR-EarlyChildhoodNutritionObservation" key="StructureDefinition-BSeR-EarlyChildhoodNutritionObservation" name="BSeR Early Childhood Nutrition Observation"/>
 <artifact id="StructureDefinition/BSeR-EducationLevel" key="StructureDefinition-BSeR-EducationLevel" name="BSeR Education Level"/>
@@ -83,6 +81,7 @@
 <artifact id="CodeSystem/TaskBusinessStatusCS" key="CodeSystem-TaskBusinessStatusCS" name="Task Business Status Code System"/>
 <artifact id="ValueSet/TaskBusinessStatusVS" key="ValueSet-TaskBusinessStatusVS" name="Task Business Status VS"/>
 <artifact id="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman" key="AllergyIntolerance-allergyintolerance-us-core-allergyint-eve-everywoman" name="US Core AllergyIntolerance - Sulfonamide - Eve Everywoman"/>
+<artifact id="Condition/condition-us-core-cphc-eve-everywoman-diabetes" key="Condition-condition-us-core-cphc-eve-everywoman-diabetes" name="US Core Condition Problems Health Concerns - Diabetes - Eve Everywoman"/>
 <artifact id="Coverage/coverage-bser-coverage-eve-everywoman" key="Coverage-coverage-bser-coverage-eve-everywoman" name="coverage-bser-coverage-eve-everywoman"/>
 <artifact id="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman" key="Medication-medication-bser-tobacco-use-cessation-feedback-eve-everywoman" name="medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
 <artifact id="MedicationStatement/medicationstatement-bser-eve-everywoman" key="MedicationStatement-medicationstatement-bser-eve-everywoman" name="medicationstatement-bser-eve-everywoman"/>

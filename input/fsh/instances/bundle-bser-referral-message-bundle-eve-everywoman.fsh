@@ -8,7 +8,7 @@ Usage: #example
 * entry[sliceMessageHeader].resource = messageheader-bser-referralmessageheader
 * entry[sliceEmploymentStatus].fullUrl = "Observation/observation-odh-employment-status-eve-everywoman"
 * entry[sliceEmploymentStatus].resource = observation-odh-employment-status-eve-everywoman
-* entry[+].fullUrl = "ServiceRequest/servicerequest-bser-referralservicerequest"
+* entry[2].fullUrl = "ServiceRequest/servicerequest-bser-referralservicerequest"
 * entry[=].resource = servicerequest-bser-referralservicerequest
-* entry[+].fullUrl = "Task/task-bser-referraltask"
+* entry[3].fullUrl = "Task/task-bser-referraltask"
 * entry[=].resource = task-bser-referraltask
