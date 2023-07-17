@@ -3,6 +3,13 @@
 
 
 #  Not matching is expected behavior - the only slice defined in the BSeR-ReferralFeedbackDocumentBundle is the required Composition
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
 
 
 #  Not matching is expected behavior - Task is the focus of the MessageHeader which is a required slice of BSeRReferralMessageBundle and is included in the bundle
