@@ -3,12 +3,12 @@ InstanceOf: BSeRReferralServiceRequest
 Title: "BSeR Referral ServiceRequest - Eve Everywoman"
 Description: "BSeR Referral ServiceRequest:  Eve Everywoman example"
 Usage: #example
-* identifier[0].type = $v2-0203#PLAC
-* identifier[=].value = "88888888"
-* identifier[=].assigner.reference = "Organization/organization-bser-organization-saint-luke"
-* identifier[+].type = $v2-0203#FILL
-* identifier[=].value = "99999999"
-* identifier[=].assigner.reference = "Organization/organization-bser-organization-saint-luke"
+* identifier[referralInitiatorServiceRequestIdentifier].type = $v2-0203#PLAC
+* identifier[referralInitiatorServiceRequestIdentifier].value = "88888888"
+* identifier[referralInitiatorServiceRequestIdentifier].assigner.reference = "Organization/organization-bser-organization-saint-luke"
+* identifier[referralRecipientServiceRequestIdentifier].type = $v2-0203#FILL
+* identifier[referralRecipientServiceRequestIdentifier].value = "99999999"
+* identifier[referralRecipientServiceRequestIdentifier].assigner.reference = "Organization/organization-bser-organization-saint-luke"
 * status = #active
 * intent = #order
 * category = $sct#313204009 "Lifestyle education (procedure)"

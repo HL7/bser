@@ -1,7 +1,7 @@
-Instance: condition-bser-diagnosis-eve-everywoman-diabetes
-InstanceOf: BSeRDiagnosis
-Title: "BSeR Diagnosis - Diabetes - Eve Everywoman"
-Description: "BSeR Diagnosis: Diabetes - Eve Everywoman example"
+Instance: condition-us-core-cphc-eve-everywoman-diabetes
+InstanceOf: USCoreConditionProblemsHealthConcernsProfile
+Title: "US Core Condition Problems Health Concerns - Diabetes - Eve Everywoman"
+Description: "S Core Condition Problems Health Concerns: Diabetes - Eve Everywoman example"
 Usage: #example
 * category = $condition-category#problem-list-item "Problem List Item"
 * code = $sct#73211009 "Diabetes mellitus (disorder)"

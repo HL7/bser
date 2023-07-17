@@ -3,12 +3,12 @@ InstanceOf: BSeRReferralTask
 Title: "BSeR Referral Task - Eve Everywoman"
 Description: "BSeR Referral Task: Eve Everywoman example"
 Usage: #example
-* identifier[0].type = $v2-0203#PLAC
-* identifier[=].value = "66666666"
-* identifier[=].assigner.reference = "Organization/organization-bser-organization-saint-luke"
-* identifier[+].type = $v2-0203#FILL
-* identifier[=].value = "77777777"
-* identifier[=].assigner.reference = "Organization/organization-bser-organization-saint-luke"
+* identifier[referralInitiatorTaskIdentifier].type = $v2-0203#PLAC
+* identifier[referralInitiatorTaskIdentifier].value = "66666666"
+* identifier[referralInitiatorTaskIdentifier].assigner.reference = "Organization/organization-bser-organization-saint-luke"
+* identifier[referralRecipientTaskIdentifier].type = $v2-0203#FILL
+* identifier[referralRecipientTaskIdentifier].value = "77777777"
+* identifier[referralRecipientTaskIdentifier].assigner.reference = "Organization/organization-bser-organization-saint-luke"
 * status = #requested
 * businessStatus = TaskBusinessStatusCS#7.0 "Service Request Fulfillment Completed"
 * intent = #order

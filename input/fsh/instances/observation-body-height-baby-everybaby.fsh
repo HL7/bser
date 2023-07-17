@@ -4,7 +4,7 @@ Title: "observation-body-height-baby-everybaby"
 Description: "Example of FHIR Vital Sign Observation as used in the BSeR IG"
 Usage: #example
 * status = #final
-* category = $observation-category#vital-signs
+* category[VSCat] = $observation-category#vital-signs
 * code.coding[0] = $loinc#8302-2 "Body height"
 * code.coding[+] = $loinc#8306-3 "Body height lying"
 * subject = Reference(patient-us-core-patient-baby-everybaby) "Baby Everybaby"

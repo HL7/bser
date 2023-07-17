@@ -72,37 +72,56 @@ Description: "The structural body and metadata of the referral request document.
     bodyHeight 0..1 and
     bodyWeight 0..1 and
     bmi 0..1
-* section[hypertensionReferralSupportingInformation].entry[diagnosis] only Reference(BSeRDiagnosis)
+* section[hypertensionReferralSupportingInformation].entry[diagnosis] only Reference(USCoreConditionProblemsHealthConcernsProfile)
 * section[hypertensionReferralSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[hypertensionReferralSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[hypertensionReferralSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
 * section[hypertensionReferralSupportingInformation].entry[bmi] only Reference(USCoreBMIProfile)
 * section[earlyChildhoodNutritionReferralSupportingInformation].code 1..
-* section[earlyChildhoodNutritionReferralSupportingInformation].code = BSeR#ECNRSI "Early Childhood Nutrition Referral Supporting Information"
+* section[earlyChildhoodNutritionReferralSupportingInformation].code = BSeR#ECNRSIB "Early Childhood Nutrition Referral Supporting Information Baby"
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry ^slicing.discriminator.type = #profile
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry ^slicing.discriminator.path = "resolve()"
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry ^slicing.rules = #open
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry contains
     earlyChildhoodNutritionObservation 0..* and
-    bloodPressure 0..1 and
-    bodyHeight 0..1 and
-    bodyWeight 0..1
+    babyBloodPressure 0..1 and
+    babyBodyHeightLying 0..1 and
+    babyBodyWeight 0..2
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[earlyChildhoodNutritionObservation] only Reference(BSeREarlyChildhoodNutritionObservation)
-* section[earlyChildhoodNutritionReferralSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
-* section[earlyChildhoodNutritionReferralSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
-* section[earlyChildhoodNutritionReferralSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBloodPressure] only Reference(USCoreBloodPressureProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyHeightLying] only Reference(USCoreBodyHeightProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyWeight] only Reference(USCoreBodyWeightProfile)
+// Section containing information about the mother of the baby
+* section.section ..1
+* section.section ^slicing.discriminator.type = #value
+* section.section ^slicing.discriminator.path = "code"
+* section.section ^slicing.rules = #open
+* section.section contains
+    motherInformation 0..1
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code 1..
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code = BSeR#ECNRSIM "Early Childhood Nutrition Referral Supporting Information Mother"
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus only Reference(USCorePatientProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus  ^short = "The mother of the baby is the focus of this section"
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry ^slicing.discriminator.type = #profile
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry ^slicing.discriminator.path = "resolve()"
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry ^slicing.rules = #open
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry contains
+    motherBloodPressure 0..1 and
+    motherBodyHeight 0..1 and
+    motherBodyWeight 0..1 and
+    motherBmi 0..1
 * section[diabetesPreventionReferralSupportingInformation].code 1..
 * section[diabetesPreventionReferralSupportingInformation].code = BSeR#DPRSI "Diabetes Prevention Referral Supporting Information"
 * section[diabetesPreventionReferralSupportingInformation].entry ^slicing.discriminator.type = #profile
 * section[diabetesPreventionReferralSupportingInformation].entry ^slicing.discriminator.path = "resolve()"
 * section[diabetesPreventionReferralSupportingInformation].entry ^slicing.rules = #open
 * section[diabetesPreventionReferralSupportingInformation].entry contains
-    HA1cObservation 0..1 and
+    hA1c 0..1 and
     bloodPressure 0..1 and
     bodyHeight 0..1 and
     bodyWeight 0..1 and
     bmi 0..1
-* section[diabetesPreventionReferralSupportingInformation].entry[HA1cObservation] only Reference(BSeRHa1cObservation)
+* section[diabetesPreventionReferralSupportingInformation].entry[hA1c] only Reference(BSeRHa1cObservation)
 * section[diabetesPreventionReferralSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[diabetesPreventionReferralSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[diabetesPreventionReferralSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)

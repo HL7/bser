@@ -4,8 +4,8 @@ Title: "observation-body-height-eve-everywoman"
 Description: "Example of FHIR Body Height profile as used in the BSeR IG"
 Usage: #example
 * status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-* category.text = "Vital Signs"
+* category[VSCat] = $observation-category#vital-signs "Vital Signs"
+* category[VSCat].text = "Vital Signs"
 * code = $loinc#8302-2 "Body height"
 * code.text = "Body height"
 * subject = Reference(patient-us-core-patient-eve-everywoman) "Eve Everywoman"

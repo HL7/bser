@@ -4,8 +4,8 @@ Title: "observation-us-core-smokingstatus-eve-everywoman"
 Description: "Example of US Core Smoking Status profile as used in the BSeR IG"
 Usage: #example
 * status = #final
-* category = $observation-category#social-history "Social History"
-* category.text = "Social History"
+* category[SocialHistory] = $observation-category#social-history "Social History"
+* category[SocialHistory].text = "Social History"
 * code = $loinc#72166-2 "Tobacco smoking status"
 * code.text = "Tobacco smoking status"
 * subject = Reference(patient-us-core-patient-eve-everywoman) "Eve Everywoman"

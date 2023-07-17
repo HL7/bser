@@ -14,7 +14,7 @@
 <artifact id="Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman" key="Observation-observation-bser-arthritisfeedbackobservation-2-eve-everywoman" name="BSeR Arthritis Feedback Observation - Eve Everywoman - Pain Management"/>
 <artifact id="StructureDefinition/BSeR-Coverage" key="StructureDefinition-BSeR-Coverage" name="BSeR Coverage"/>
 <artifact id="StructureDefinition/BSeR-Diagnosis" key="StructureDefinition-BSeR-Diagnosis" name="BSeR Diagnosis"/>
-<artifact id="Condition/condition-BSeR-Diagnosis-eve-everywoman-diabetes" key="Condition-condition-BSeR-Diagnosis-eve-everywoman-diabetes" name="BSeR Diagnosis - Diabetes - Eve Everywoman"/>
+<artifact id="Condition/condition-us-core-condition-problems-health-concerns-eve-everywoman-diabetes" key="Condition-condition-us-core-condition-problems-health-concerns-eve-everywoman-diabetes" name="BSeR Diagnosis - Diabetes - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation" key="StructureDefinition-BSeR-EarlyChildhoodNutritionFeedbackObservation" name="BSeR Early Childhood Nutrition Feedback Observation"/>
 <artifact id="StructureDefinition/BSeR-EarlyChildhoodNutritionObservation" key="StructureDefinition-BSeR-EarlyChildhoodNutritionObservation" name="BSeR Early Childhood Nutrition Observation"/>
 <artifact id="StructureDefinition/BSeR-EducationLevel" key="StructureDefinition-BSeR-EducationLevel" name="BSeR Education Level"/>
@@ -26,7 +26,7 @@
 <artifact id="Organization/organization-bser-organization-saint-luke" key="Organization-organization-bser-organization-saint-luke" name="BSeR Organization - Saint Luke's Hospital of Kansas City"/>
 <artifact id="StructureDefinition/BSeR-ParticipationFeedbackObservation" key="StructureDefinition-BSeR-ParticipationFeedbackObservation" name="BSeR Participation Feedback Observation"/>
 <artifact id="StructureDefinition/BSeR-PatientConsent" key="StructureDefinition-BSeR-PatientConsent" name="BSeR Patient Consent"/>
-<artifact id="Consent/consent-BSeR-PatientConsent-eve-everywoman" key="Consent-consent-BSeR-PatientConsent-eve-everywoman" name="BSeR Patient Consent - Eve Everywoman"/>
+<artifact id="Consent/consent-bser-patientconsent-eve-everywoman" key="Consent-consent-bser-patientconsent-eve-everywoman" name="BSeR Patient Consent - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-Practitioner" key="StructureDefinition-BSeR-Practitioner" name="BSeR Practitioner"/>
 <artifact id="StructureDefinition/BSeR-ReferralActivityStatus" key="StructureDefinition-BSeR-ReferralActivityStatus" name="BSeR Referral Activity Status"/>
 <artifact id="StructureDefinition/BSeR-ReferralFeedbackComposition" key="StructureDefinition-BSeR-ReferralFeedbackComposition" name="BSeR Referral Feedback Composition"/>
@@ -52,9 +52,9 @@
 <artifact id="StructureDefinition/BSeR-ReferralRequestDocumentBundle" key="StructureDefinition-BSeR-ReferralRequestDocumentBundle" name="BSeR Referral Request Document Bundle"/>
 <artifact id="Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman" key="Bundle-bundle-bser-referral-request-document-bundle-eve-everywoman" name="BSeR Referral Request Document Bundle - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-ReferralServiceRequest" key="StructureDefinition-BSeR-ReferralServiceRequest" name="BSeR Referral Service Request"/>
-<artifact id="ServiceRequest/servicerequest-BSeR-ReferralServiceRequest" key="ServiceRequest-servicerequest-BSeR-ReferralServiceRequest" name="BSeR Referral ServiceRequest - Eve Everywoman"/>
+<artifact id="ServiceRequest/servicerequest-bser-referralservicerequest" key="ServiceRequest-servicerequest-bser-referralservicerequest" name="BSeR Referral ServiceRequest - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-ReferralTask" key="StructureDefinition-BSeR-ReferralTask" name="BSeR Referral Task"/>
-<artifact id="Task/task-BSeR-ReferralTask" key="Task-task-BSeR-ReferralTask" name="BSeR Referral Task - Eve Everywoman"/>
+<artifact id="Task/task-bser-referraltask" key="Task-task-bser-referraltask" name="BSeR Referral Task - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-ServiceDeliveryLocation" key="StructureDefinition-BSeR-ServiceDeliveryLocation" name="BSeR Service Delivery Location"/>
 <artifact id="StructureDefinition/BSeR-TelcomCommunicationPreferences" key="StructureDefinition-BSeR-TelcomCommunicationPreferences" name="BSeR Telcom Communication Preferences"/>
 <artifact id="ValueSet/BSeR-TelcomCommunicationPreferencesVS" key="ValueSet-BSeR-TelcomCommunicationPreferencesVS" name="BSeR Telcom Communication Preferences VS"/>
@@ -83,28 +83,28 @@
 <artifact id="CodeSystem/TaskBusinessStatusCS" key="CodeSystem-TaskBusinessStatusCS" name="Task Business Status Code System"/>
 <artifact id="ValueSet/TaskBusinessStatusVS" key="ValueSet-TaskBusinessStatusVS" name="Task Business Status VS"/>
 <artifact id="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman" key="AllergyIntolerance-allergyintolerance-us-core-allergyint-eve-everywoman" name="US Core AllergyIntolerance - Sulfonamide - Eve Everywoman"/>
-<artifact id="Coverage/coverage-BSeR-Coverage-eve-everywoman" key="Coverage-coverage-BSeR-Coverage-eve-everywoman" name="coverage-BSeR-Coverage-eve-everywoman"/>
+<artifact id="Coverage/coverage-bser-coverage-eve-everywoman" key="Coverage-coverage-bser-coverage-eve-everywoman" name="coverage-bser-coverage-eve-everywoman"/>
 <artifact id="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman" key="Medication-medication-bser-tobacco-use-cessation-feedback-eve-everywoman" name="medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
-<artifact id="MedicationStatement/medicationstatement-BSeR-eve-everywoman" key="MedicationStatement-medicationstatement-BSeR-eve-everywoman" name="medicationstatement-BSeR-eve-everywoman"/>
-<artifact id="MessageHeader/messageheader-BSeR-ReferralMessageHeader" key="MessageHeader-messageheader-BSeR-ReferralMessageHeader" name="messageheader-BSeR-ReferralMessageHeader"/>
-<artifact id="Observation/observation-BSeR-EducationLevel-eve-everywoman" key="Observation-observation-BSeR-EducationLevel-eve-everywoman" name="observation-BSeR-EducationLevel-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-HA1c-Observation-eve-everywoman" key="Observation-observation-BSeR-HA1c-Observation-eve-everywoman" name="observation-BSeR-HA1c-Observation-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" key="Observation-observation-BSeR-NRT-AuthorizationStatus-eve-everywoman" name="observation-BSeR-NRT-AuthorizationStatus-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-NutritionFeedbackObs-1-eve-everywoman" key="Observation-observation-BSeR-NutritionFeedbackObs-1-eve-everywoman" name="observation-BSeR-NutritionFeedbackObs-1-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-NutritionFeedbackObs-2-eve-everywoman" key="Observation-observation-BSeR-NutritionFeedbackObs-2-eve-everywoman" name="observation-BSeR-NutritionFeedbackObs-2-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-NutritionObs-eve-everywoman" key="Observation-observation-BSeR-NutritionObs-eve-everywoman" name="observation-BSeR-NutritionObs-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-ReferralActivityStatus-eve-everywoman" key="Observation-observation-BSeR-ReferralActivityStatus-eve-everywoman" name="observation-BSeR-ReferralActivityStatus-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-TelcomComm-eve-everywoman" key="Observation-observation-BSeR-TelcomComm-eve-everywoman" name="observation-BSeR-TelcomComm-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" key="Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman" name="observation-BSeR-TobaccoUseCessationFeedbackObs-1-eve-everywoman"/>
-<artifact id="Observation/observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" key="Observation-observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman" name="observation-BSeR-TobaccoUseCessationFeedbackObs-2-eve-everywoman"/>
-<artifact id="Observation/observation-ParticipationFeedbackObservation-1-eve-everywoman" key="Observation-observation-ParticipationFeedbackObservation-1-eve-everywoman" name="observation-ParticipationFeedbackObservation-1-eve-everywoman"/>
-<artifact id="Observation/observation-ParticipationFeedbackObservation-2-eve-everywoman" key="Observation-observation-ParticipationFeedbackObservation-2-eve-everywoman" name="observation-ParticipationFeedbackObservation-2-eve-everywoman"/>
+<artifact id="MedicationStatement/medicationstatement-bser-eve-everywoman" key="MedicationStatement-medicationstatement-bser-eve-everywoman" name="medicationstatement-bser-eve-everywoman"/>
+<artifact id="MessageHeader/messageheader-bser-referralmessageheader" key="MessageHeader-messageheader-bser-referralmessageheader" name="messageheader-bser-referralmessageheader"/>
 <artifact id="Observation/observation-blood-pressure-eve-everywoman-bser" key="Observation-observation-blood-pressure-eve-everywoman-bser" name="observation-blood-pressure-eve-everywoman-bser"/>
 <artifact id="Observation/observation-bmi-eve-everywoman" key="Observation-observation-bmi-eve-everywoman" name="observation-bmi-eve-everywoman"/>
 <artifact id="Observation/observation-body-height-baby-everybaby" key="Observation-observation-body-height-baby-everybaby" name="observation-body-height-baby-everybaby"/>
 <artifact id="Observation/observation-body-height-eve-everywoman" key="Observation-observation-body-height-eve-everywoman" name="observation-body-height-eve-everywoman"/>
 <artifact id="Observation/observation-body-weight-eve-everywoman" key="Observation-observation-body-weight-eve-everywoman" name="observation-body-weight-eve-everywoman"/>
+<artifact id="Observation/observation-bser-educationlevel-eve-everywoman" key="Observation-observation-bser-educationlevel-eve-everywoman" name="observation-bser-educationlevel-eve-everywoman"/>
+<artifact id="Observation/observation-bser-ha1c-observation-eve-everywoman" key="Observation-observation-bser-ha1c-observation-eve-everywoman" name="observation-bser-ha1c-observation-eve-everywoman"/>
+<artifact id="Observation/observation-bser-nrt-authorizationstatus-eve-everywoman" key="Observation-observation-bser-nrt-authorizationstatus-eve-everywoman" name="observation-bser-nrt-authorizationstatus-eve-everywoman"/>
+<artifact id="Observation/observation-bser-nutritionfeedbackobs-1-eve-everywoman" key="Observation-observation-bser-nutritionfeedbackobs-1-eve-everywoman" name="observation-bser-nutritionfeedbackobs-1-eve-everywoman"/>
+<artifact id="Observation/observation-bser-nutritionfeedbackobs-2-eve-everywoman" key="Observation-observation-bser-nutritionfeedbackobs-2-eve-everywoman" name="observation-bser-nutritionfeedbackobs-2-eve-everywoman"/>
+<artifact id="Observation/observation-bser-nutritionobs-eve-everywoman" key="Observation-observation-bser-nutritionobs-eve-everywoman" name="observation-bser-nutritionobs-eve-everywoman"/>
+<artifact id="Observation/observation-bser-referralactivitystatus-eve-everywoman" key="Observation-observation-bser-referralactivitystatus-eve-everywoman" name="observation-bser-referralactivitystatus-eve-everywoman"/>
+<artifact id="Observation/observation-bser-telcomcomm-eve-everywoman" key="Observation-observation-bser-telcomcomm-eve-everywoman" name="observation-bser-telcomcomm-eve-everywoman"/>
+<artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" name="observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman"/>
+<artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" name="observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman"/>
 <artifact id="Observation/observation-odh-employment-status-eve-everywoman" key="Observation-observation-odh-employment-status-eve-everywoman" name="observation-odh-employment-status-eve-everywoman"/>
+<artifact id="Observation/observation-participationfeedbackobservation-1-eve-everywoman" key="Observation-observation-participationfeedbackobservation-1-eve-everywoman" name="observation-participationfeedbackobservation-1-eve-everywoman"/>
+<artifact id="Observation/observation-participationfeedbackobservation-2-eve-everywoman" key="Observation-observation-participationfeedbackobservation-2-eve-everywoman" name="observation-participationfeedbackobservation-2-eve-everywoman"/>
 <artifact id="Observation/observation-us-core-smokingstatus-eve-everywoman" key="Observation-observation-us-core-smokingstatus-eve-everywoman" name="observation-us-core-smokingstatus-eve-everywoman"/>
 <artifact id="PractitionerRole/practitionerrole-bser-referral-initiator" key="PractitionerRole-practitionerrole-bser-referral-initiator" name="practitionerrole-bser-referral-initiator"/>
 <page key="NA" name="(NA)"/>

@@ -118,7 +118,6 @@ groups:
     name: Supporting Information Profiles
     description: Supporting Information Profiles
     resources:
-    - StructureDefinition/BSeR-Diagnosis
     - StructureDefinition/BSeR-EarlyChildhoodNutritionObservation
     - StructureDefinition/BSeR-HA1C-Observation
     - StructureDefinition/BSeR-NRT-AuthorizationStatus
@@ -191,7 +190,7 @@ groups:
     description: Supporting Information Examples
     resources:
     - AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman
-    - Condition/condition-bser-diagnosis-eve-everywoman-diabetes
+    - Condition/condition-us-core-cphc-eve-everywoman-diabetes
     - Observation/observation-bser-ha1c-observation-eve-everywoman
     - Observation/observation-bser-nrt-authorizationstatus-eve-everywoman
     - Observation/observation-bser-nutritionfeedbackobs-1-eve-everywoman
@@ -261,7 +260,7 @@ publisher:
   email: pher@lists.HL7.org
 parameters:
   show-inherited-invariants: false
-  //path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
+  # path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
 
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0

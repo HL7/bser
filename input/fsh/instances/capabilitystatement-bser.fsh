@@ -40,7 +40,7 @@ Usage: #definition
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[=].interaction[+].code = #delete
 * rest[=].resource[+].type = #Condition
-* rest[=].resource[=].profile = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"
+* rest[=].resource[=].profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #update
@@ -72,7 +72,7 @@ Usage: #definition
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[=].interaction[+].code = #delete
 * rest[=].resource[+].type = #Condition
-* rest[=].resource[=].profile = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Diagnosis"
+* rest[=].resource[=].profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #update

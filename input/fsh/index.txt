@@ -2,7 +2,6 @@ Name                                                                            
 BSeR                                                                               CodeSystem  codesystems\BSeR.fsh
 BSeRArthritisFeedbackObservation                                                   Profile     profiles\BSeRArthritisFeedbackObservation.fsh
 BSeRCoverage                                                                       Profile     profiles\BSeRCoverage.fsh
-BSeRDiagnosis                                                                      Profile     profiles\BSeRDiagnosis.fsh
 BSeREarlyChildhoodNutritionFeedbackObservation                                     Profile     profiles\BSeREarlyChildhoodNutritionFeedbackObservation.fsh
 BSeREarlyChildhoodNutritionObservation                                             Profile     profiles\BSeREarlyChildhoodNutritionObservation.fsh
 BSeREducationLevel                                                                 Profile     profiles\BSeREducationLevel.fsh
@@ -68,7 +67,7 @@ composition-bser-referral-request-diabetes-everywoman                           
 composition-bser-referral-request-hypertension-everywoman                           Instance    instances\composition-bser-referral-request-hypertension-everywoman.fsh
 composition-bser-referral-request-obesity-everywoman                                Instance    instances\composition-bser-referral-request-obesity-everywoman.fsh
 composition-bser-referral-request-tobacco-everywoman                                Instance    instances\composition-bser-referral-request-tobacco-everywoman.fsh
-condition-bser-diagnosis-eve-everywoman-diabetes                                    Instance    instances\condition-bser-diagnosis-eve-everywoman-diabetes.fsh
+condition-us-core-condition-problems-health-concerns-eve-everywoman-diabetes        Instance    instances\condition-us-core-condition-problems-health-concerns-eve-everywoman-diabetes.fsh
 consent-bser-patientconsent-eve-everywoman                                          Instance    instances\consent-bser-patientconsent-eve-everywoman.fsh
 coverage-bser-coverage-eve-everywoman                                               Instance    instances\coverage-bser-coverage-eve-everywoman.fsh
 location-bser-service-delivery-location-st-luke                                     Instance    instances\location-bser-service-delivery-location-st-luke.fsh

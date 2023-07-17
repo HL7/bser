@@ -4,9 +4,11 @@ Title: "BSeR Referral Message Bundle - Eve Everywoman"
 Description: "BSeR Referral Message Bundle: Eve Everywoman example"
 Usage: #example
 * type = #message
-* entry[0].fullUrl = "MessageHeader/messageheader-bser-referralmessageheader"
-* entry[=].resource = messageheader-bser-referralmessageheader
+* entry[sliceMessageHeader].fullUrl = "MessageHeader/messageheader-bser-referralmessageheader"
+* entry[sliceMessageHeader].resource = messageheader-bser-referralmessageheader
+* entry[sliceEmploymentStatus].fullUrl = "Observation/observation-odh-employment-status-eve-everywoman"
+* entry[sliceEmploymentStatus].resource = observation-odh-employment-status-eve-everywoman
 * entry[+].fullUrl = "ServiceRequest/servicerequest-bser-referralservicerequest"
-* entry[=].resource = Inline-Instance-for-bundle-bser-referral-message-bundle-eve-everywoman-2
+* entry[=].resource = servicerequest-bser-referralservicerequest
 * entry[+].fullUrl = "Task/task-bser-referraltask"
 * entry[=].resource = task-bser-referraltask

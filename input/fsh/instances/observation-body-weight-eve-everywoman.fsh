@@ -4,8 +4,8 @@ Title: "observation-body-weight-eve-everywoman"
 Description: "Example of FHIR Body Weight profile as used in the BSeR IG"
 Usage: #example
 * status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-* category.text = "Vital Signs"
+* category[VSCat] = $observation-category#vital-signs "Vital Signs"
+* category[VSCat].text = "Vital Signs"
 * code = $loinc#29463-7 "Body weight"
 * code.text = "Body weight"
 * subject = Reference(patient-us-core-patient-eve-everywoman) "Eve Everywoman"
