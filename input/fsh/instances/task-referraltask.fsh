@@ -1,7 +1,7 @@
-Instance: task-bser-referraltask
-InstanceOf: BSeRReferralTask
-Title: "BSeR Referral Task - Eve Everywoman"
-Description: "BSeR Referral Task: Eve Everywoman example"
+Instance: task-referraltask
+InstanceOf: ReferralTask
+Title: "Referral Task - Eve Everywoman"
+Description: "Referral Task: Eve Everywoman example"
 Usage: #example
 * identifier[referralInitiatorTaskIdentifier].type = $v2-0203#PLAC
 * identifier[referralInitiatorTaskIdentifier].value = "66666666"
@@ -12,7 +12,7 @@ Usage: #example
 * status = #requested
 * businessStatus = TaskBusinessStatusCS#7.0 "Service Request Fulfillment Completed"
 * intent = #order
-* focus.reference = "ServiceRequest/servicerequest-referralservicerequest"
+* focus.reference = "ServiceRequest/servicerequest-bser-referralservicerequest"
 * for.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * authoredOn = "2020-01-15T14:43:32-04:00"
 * requester.reference = "PractitionerRole/practitionerrole-bser-referral-initiator"

@@ -1,5 +1,5 @@
 Instance: organization-bser-organization-acme-lab
-InstanceOf: Organization
+InstanceOf: BSeROrganization
 Title: "BSeR Organization - Acme Lab"
 Description: "BSeR Organization: Acme Lab example"
 Usage: #example

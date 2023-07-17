@@ -1,5 +1,5 @@
 Instance: organization-bser-organization-saint-luke
-InstanceOf: Organization
+InstanceOf: BSeROrganization
 Title: "BSeR Organization - Saint Luke's Hospital of Kansas City"
 Description: "BSeR Organization:  Saint Luke's Hospital of Kansas City example"
 Usage: #example

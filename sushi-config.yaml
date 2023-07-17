@@ -148,6 +148,12 @@ groups:
     - StructureDefinition/BSeR-Coverage
     - StructureDefinition/BSeR-EducationLevel
     - StructureDefinition/BSeR-PatientConsent
+  core-referral-architecture-examples:
+    name: Core Referral Architecture Examples
+    description: Core Referral Architecture Examples
+    resources:
+    - ServiceRequest/servicerequest-referralservicerequest
+    - Task/task-referraltask
   workflow-management-examples:
     name: Workflow Management Examples
     description: Workflow Management Examples

@@ -1,8 +1,8 @@
 {
 	"package-id": "hl7.fhir.us.bser",
-	"version": "2.0.0",
-	"desc": "STU 2",
-	"path": "http://build.fhir.org/ig/HL7/bser",
+	"version": "2.0.0-ballot",
+	"desc": "STU 2 Ballot",
+	"path": "http://hl7.org/fhir/us/bser/2023Sep",
 	"status": "trial-use",
 	"sequence": "STU 2"
 }

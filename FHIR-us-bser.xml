@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/bser/2019May" ciUrl="http://build.fhir.org/ig/HL7/bser" defaultVersion="2.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/bser" url="http://hl7.org/fhir/us/bser">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/bser/2019May" ciUrl="http://build.fhir.org/ig/HL7/bser" defaultVersion="2.0.0-ballot" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/bser" url="http://hl7.org/fhir/us/bser">
 <version code="current" url="http://build.fhir.org/ig/HL7/bser"/>
-<version code="2.0.0" url="http://build.fhir.org/ig/HL7/bser"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/bser/2023Sep"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/bser/STU1"/>
 <version code="0.2.0" url="http://hl7.org/fhir/us/bser/2019May"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/bser/2018Sep"/>
@@ -74,7 +74,9 @@
 <artifact id="Practitioner/practitioner-bser-henry-seven" key="Practitioner-practitioner-bser-henry-seven" name="Practitioner Seven Henry"/>
 <artifact id="Location/location-bser-service-delivery-location-st-luke" key="Location-location-bser-service-delivery-location-st-luke" name="Referral Center A, St. Lukes"/>
 <artifact id="StructureDefinition/ReferralServiceRequest" key="StructureDefinition-ReferralServiceRequest" name="Referral Service Request"/>
+<artifact id="ServiceRequest/servicerequest-referralservicerequest" key="ServiceRequest-servicerequest-referralservicerequest" name="Referral ServiceRequest - Eve Everywoman"/>
 <artifact id="StructureDefinition/ReferralTask" key="StructureDefinition-ReferralTask" name="Referral Task"/>
+<artifact id="Task/task-referraltask" key="Task-task-referraltask" name="Referral Task - Eve Everywoman"/>
 <artifact id="RelatedPerson/relatedperson-self-eve-everywoman" key="RelatedPerson-relatedperson-self-eve-everywoman" name="RelatedPerson - Eve Everywoman - Self"/>
 <artifact id="RelatedPerson/relatedperson-mom-everymom" key="RelatedPerson-relatedperson-mom-everymom" name="RelatedPerson Mom L Everymom"/>
 <artifact deprecated="true" key="ServiceRequest" name="ServiceRequest"/>
