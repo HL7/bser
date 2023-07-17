@@ -18,7 +18,7 @@ Usage: #definition
 * fhirVersion = #4.0.0
 * format[0] = #xml
 * format[+] = #json
-* implementationGuide = "http://hl7.org/fhir/us/bser/ImplementationGuide/hl7.fhir.us.bser"
+// * implementationGuide = "http://hl7.org/fhir/us/bser/ImplementationGuide/hl7.fhir.us.bser"
 * rest[0].mode = #client
 * rest[=].resource[0].type = #Observation
 * rest[=].resource[=].supportedProfile[0] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-HA1C-Observation"
