@@ -1,7 +1,7 @@
 Instance: observation-bser-nrt-authorizationstatus-eve-everywoman
 InstanceOf: BSeRNRTAuthorizationStatus
-Title: "observation-bser-nrt-authorizationstatus-eve-everywoman"
-Description: "Example of BSeR-NRT-AuthorizationStatus profile as used in the BSeR IG"
+Title: "Observation - NRT Authorization Status - Eve Everywoman"
+Description: "BSeR NRT Authorization Status: Eve Everywoman example"
 Usage: #example
 * status = #final
 * code = $sct#313396002 "Nicotine replacement therapy (situation)"

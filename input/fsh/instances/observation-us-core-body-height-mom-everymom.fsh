@@ -1,6 +1,6 @@
 Instance: observation-us-core-body-height-mom-everymom
 InstanceOf: USCoreBodyHeightProfile
-Title: "US Core Body Height - Mom Everymom"
+Title: "Body Height - Mom Everymom"
 Description: "US Core Body Height: Mom Everymom example"
 Usage: #example
 * status = #final

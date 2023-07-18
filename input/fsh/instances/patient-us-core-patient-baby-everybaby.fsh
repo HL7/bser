@@ -1,6 +1,6 @@
 Instance: patient-us-core-patient-baby-everybaby
 InstanceOf: USCorePatientProfile
-Title: "US Core Patient - Baby Everybaby"
+Title: "Patient - Baby Everybaby"
 Description: "US Core Patient: Baby Everybaby example"
 Usage: #example
 * extension[0].extension[0].url = "ombCategory"

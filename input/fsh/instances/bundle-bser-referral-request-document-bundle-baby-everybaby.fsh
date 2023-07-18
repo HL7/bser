@@ -1,6 +1,6 @@
 Instance: bundle-bser-referral-request-document-bundle-baby-everybaby
 InstanceOf: BSeRReferralRequestDocumentBundle
-Title: "BSeR Referral Request Document Bundle - Baby Everybaby - Early Childhood Nutrition"
+Title: "Document Bundle - Baby Everybaby - Early Childhood Nutrition"
 Description: "BSeR Referral Request Document Bundle: Baby Everybaby - Early Childhood Nutrition"
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"

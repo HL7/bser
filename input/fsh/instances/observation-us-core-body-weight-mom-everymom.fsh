@@ -1,6 +1,6 @@
 Instance: observation-us-core-body-weight-mom-everymom
 InstanceOf: USCoreBodyWeightProfile
-Title: "US Core Body Weight - Mom Everymom"
+Title: "Body Weight - Mom Everymom"
 Description: "US Core Body Weight: Mom Everymom example"
 Usage: #example
 * status = #final

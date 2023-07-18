@@ -1,7 +1,7 @@
 Instance: composition-bser-referral-request-obesity-everywoman
 InstanceOf: BSeRReferralRequestComposition
-Title: "BSeR Referral Request Composition - Eve Everywoman - Obesity"
-Description: "BSeR Referral Request Composition:  Eve Everywoman - Obesity example"
+Title: "Composition - Eve Everywoman - Obesity"
+Description: "BSeR Referral Request Composition: Eve Everywoman - Obesity example"
 Usage: #example
 * status = #final
 * type = $loinc#57133-1 "Referral note"

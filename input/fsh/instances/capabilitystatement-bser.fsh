@@ -1,7 +1,7 @@
 Instance: capabilitystatement-bser
 InstanceOf: CapabilityStatement
-Title: "BSeR Capability Statement"
-Description: "BSeR Capability Statement: defines the expected capabilities for both client and server participating in BSeR exchange"
+Title: "Capability Statement -BSeR"
+Description: "Capability Statement: BSeR - defines the expected capabilities for both client and server participating in BSeR exchange"
 Usage: #definition
 * url = "http://hl7.org/fhir/us/bser/CapabilityStatement/capabilitystatement-bser"
 * version = "1.0.0"

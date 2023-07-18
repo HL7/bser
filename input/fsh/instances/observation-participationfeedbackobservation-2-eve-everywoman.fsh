@@ -1,7 +1,7 @@
 Instance: observation-participationfeedbackobservation-2-eve-everywoman
 InstanceOf: BSeRParticipationFeedbackObservation
-Title: "observation-participationfeedbackobservation-2-eve-everywoman"
-Description: "Example of BSeR-ParticipationFeedbackObservation profile as used in the BSeR IG"
+Title: "Observation - Appointments Missed - Eve Everywoman"
+Description: "BSeR Participation Feedback Observation: Appointments Missed - Eve Everywoman example"
 Usage: #example
 * status = #final
 * code = $sct#298058004 "Number of appointments missed (observable entity)"

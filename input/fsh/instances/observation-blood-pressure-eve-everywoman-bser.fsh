@@ -1,7 +1,7 @@
 Instance: observation-blood-pressure-eve-everywoman-bser
 InstanceOf: USCoreBloodPressureProfile
-Title: "observation-blood-pressure-eve-everywoman-bser"
-Description: "Example of FHIR Blood Pressure profile as used in the BSeR IG"
+Title: "Observation - Blood Pressure - Eve Everywoman"
+Description: "US Core Blood Pressure: Blood Pressure - Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"

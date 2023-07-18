@@ -1,7 +1,7 @@
 Instance: observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman
 InstanceOf: BSeRTobaccoUseCessationFeedbackObservation
-Title: "observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman"
-Description: "Example of BSeR-TobaccoUseCessationFeedbackObservation profile as used in the BSeR IG"
+Title: "Observation - Date for cessation of smoking - Eve Everywoman"
+Description: "BSeR Tobacco Use Cessation Feedback Observation: Date for cessation of smoking - Eve Everywoman exanple"
 Usage: #example
 * status = #final
 * code = $sct#390901002 "Negotiated date for cessation of smoking (observable entity)"

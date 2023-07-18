@@ -1,6 +1,6 @@
 Instance: observation-odh-employment-status-eve-everywoman
 InstanceOf: EmploymentStatus
-Title: "ODH Employment Status - Eve Everywoman - Employed"
+Title: "Observation - Eve Everywoman - Employed"
 Description: "ODH Employment Status: Eve Everywoman - Employed example"
 Usage: #example
 * status = #final

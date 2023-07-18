@@ -1,15 +1,15 @@
 Instance: relatedperson-us-core-relatedperson-mom-everymom
 InstanceOf: USCoreRelatedPersonProfile
-Title: "US Core Relatedperson - Mom Everymom"
-Description: "US Core Relatedperson - Mom Everymom"
+Title: "RelatedPerson - Gestational Mother - Mom Everymom"
+Description: "US Core RelatedPerson: Gestational Mother - Mom Everymom example"
 Usage: #example
 * identifier.type = $v2-0203#SS
 * identifier.system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier.value = "444222222"
 * active = true
 * patient = Reference(Patient/patient-us-core-patient-baby-everybaby)
-* relationship = $v3-RoleCode#NMTH "natural mother"
-* relationship.text = "Natural Mother"
+* relationship = $v3-RoleCode#GESTM "gestational mother"
+* relationship.text = "Gestational Mother"
 * name.family = "Everymom"
 * name.given[0] = "Mom"
 * name.given[+] = "L"

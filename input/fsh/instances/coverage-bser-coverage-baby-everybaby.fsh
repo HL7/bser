@@ -1,6 +1,6 @@
 Instance: coverage-bser-coverage-baby-everybaby
 InstanceOf: BSeRCoverage
-Title: "BSeR Coverage - Baby Everybaby"
+Title: "Coverage - Baby Everybaby"
 Description: "BSeR Coverage: Baby Everybaby example"
 Usage: #example
 * identifier.system = "http://benefitsinc.com/certificate"

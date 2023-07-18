@@ -1,6 +1,6 @@
 Instance: coverage-bser-coverage-eve-everywoman
 InstanceOf: BSeRCoverage
-Title: "BSeR Coverage - Eve Everywoman"
+Title: "Coverage - Eve Everywoman"
 Description: "BSeR Coverage: Eve Everywoman example"
 Usage: #example
 * identifier.system = "http://benefitsinc.com/certificate"

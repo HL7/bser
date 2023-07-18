@@ -1,7 +1,7 @@
 Instance: bundle-bser-referral-feedback-document-bundle-eve-everywoman
 InstanceOf: BSeRReferralFeedbackDocumentBundle
-Title: "BSeR Referral Feedback Document Bundle - Eve Everywoman"
-Description: "BSeR Referral Feedback Document Bundle:  Eve Everywoman example"
+Title: "Document Bundle - Eve Everywoman"
+Description: "BSeR Referral Feedback Document Bundle: Eve Everywoman example"
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:2be4b4e4-6df1-4cb2-a947-c70fa0eda54e"

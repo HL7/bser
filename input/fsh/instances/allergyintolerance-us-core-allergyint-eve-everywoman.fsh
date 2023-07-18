@@ -1,6 +1,6 @@
 Instance: allergyintolerance-us-core-allergyint-eve-everywoman
 InstanceOf: USCoreAllergyIntolerance
-Title: "US Core AllergyIntolerance - Sulfonamide - Eve Everywoman"
+Title: "AllergyIntolerance - Sulfonamide - Eve Everywoman"
 Description: "US Core AllergyIntolerance: Sulfonamide - Eve Everywoman example"
 Usage: #example
 * clinicalStatus = $allergyintolerance-clinical#active

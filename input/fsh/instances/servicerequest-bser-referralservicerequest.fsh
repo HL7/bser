@@ -1,7 +1,7 @@
 Instance: servicerequest-bser-referralservicerequest
 InstanceOf: BSeRReferralServiceRequest
-Title: "BSeR Referral ServiceRequest - Eve Everywoman"
-Description: "BSeR Referral ServiceRequest:  Eve Everywoman example"
+Title: "ServiceRequest - Eve Everywoman"
+Description: "BSeR Referral ServiceRequest: Eve Everywoman example"
 Usage: #example
 * identifier[referralInitiatorServiceRequestIdentifier].type = $v2-0203#PLAC
 * identifier[referralInitiatorServiceRequestIdentifier].value = "88888888"

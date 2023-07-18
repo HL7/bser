@@ -1,6 +1,6 @@
 Instance: observation-us-core-smokingstatus-eve-everywoman
 InstanceOf: USCoreSmokingStatusProfile
-Title: "US Core Smoking Status - Eve Everywoman"
+Title: "Smoking Status - Eve Everywoman"
 Description: "US Core Smoking Status: Eve Everywoman example"
 Usage: #example
 * status = #final

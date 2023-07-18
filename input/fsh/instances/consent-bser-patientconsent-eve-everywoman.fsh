@@ -1,7 +1,7 @@
 Instance: consent-bser-patientconsent-eve-everywoman
 InstanceOf: BSeRPatientConsent
-Title: "BSeR Patient Consent - Eve Everywoman"
-Description: "BSeR Patient Consent:  Eve Everywoman example"
+Title: "Consent - Eve Everywoman"
+Description: "BSeR Patient Consent: Eve Everywoman example"
 Usage: #example
 * status = #active
 * scope = $consentscope#patient-privacy

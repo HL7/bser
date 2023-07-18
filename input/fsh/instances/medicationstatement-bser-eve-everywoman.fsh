@@ -1,7 +1,7 @@
 Instance: medicationstatement-bser-eve-everywoman
 InstanceOf: BSeRMedicationStatement
-Title: "medicationstatement-bser-eve-everywoman"
-Description: "Example of BSeR-MedicationStatement profile as used in the BSeR IG"
+Title: "MedicationStatement - Amoxicillin - Eve Everywoman"
+Description: "BSeR MedicationStatement: Amoxicillin - Eve Everywoman example"
 Usage: #example
 * status = #active
 * medicationCodeableConcept = $sct#27658006 "Amoxicillin-containing product"

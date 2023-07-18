@@ -1,7 +1,7 @@
 Instance: bundle-bser-referral-request-document-bundle-eve-everywoman
 InstanceOf: BSeRReferralRequestDocumentBundle
-Title: "BSeR Referral Request Document Bundle - Eve Everywoman - Arthritis"
-Description: "BSeR Referral Request Document Bundle:  Eve Everywoman Arthritis example"
+Title: "Document Bundle - Eve Everywoman - Arthritis"
+Description: "BSeR Referral Request Document Bundle: Eve Everywoman Arthritis example"
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:2be4b4e4-6df1-4cb2-a947-c70fa0eda54c"

@@ -1,7 +1,7 @@
 Instance: composition-bser-referral-request-tobacco-everywoman
 InstanceOf: BSeRReferralRequestComposition
-Title: "BSeR Referral Request Composition - Eve Everywoman - Tobacco Use Cessation"
-Description: "BSeR Referral Request Composition:  Eve Everywoman - Tobacco Use Cessation example"
+Title: "Composition - Eve Everywoman - Tobacco Use Cessation"
+Description: "BSeR Referral Request Composition: Eve Everywoman - Tobacco Use Cessation example"
 Usage: #example
 * status = #final
 * type = $loinc#57133-1 "Referral note"

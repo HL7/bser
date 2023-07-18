@@ -1,6 +1,6 @@
 Instance: observation-us-core-body-weight-eve-everywoman
 InstanceOf: USCoreBodyWeightProfile
-Title: "US Core Body Weight - Eve Everywoman"
+Title: "Body Weight - Eve Everywoman"
 Description: "US Core Body Weight: Eve Everywoman example"
 Usage: #example
 * status = #final

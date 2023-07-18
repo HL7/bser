@@ -1,7 +1,7 @@
 Instance: observation-bmi-eve-everywoman
 InstanceOf: USCoreBMIProfile
-Title: "observation-bmi-eve-everywoman"
-Description: "Example of FHIR BMI profile as used in the BSeR IG"
+Title: "Observation - BMI - Eve Everywoman"
+Description: "US Core BMI: Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"

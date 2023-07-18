@@ -1,6 +1,6 @@
 Instance: location-us-core-location-st-luke
 InstanceOf: USCoreLocation
-Title: "US Core Location - Referral Center A, St. Lukes"
+Title: "Location - Referral Center A, St. Lukes"
 Description: "US Core Location: Referral Center A, St. Lukes example"
 Usage: #example
 * status = #active

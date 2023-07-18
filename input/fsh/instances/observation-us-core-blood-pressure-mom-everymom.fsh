@@ -1,6 +1,6 @@
 Instance: observation-us-core-blood-pressure-mom-everymom
 InstanceOf: USCoreBloodPressureProfile
-Title: "US Core Blood Pressure - Mom Everymom"
+Title: "Blood Pressure - Mom Everymom"
 Description: "US Core Blood Pressure: Mom Everymom example"
 Usage: #example
 * status = #final

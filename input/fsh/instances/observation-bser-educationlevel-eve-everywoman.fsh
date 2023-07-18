@@ -1,7 +1,7 @@
 Instance: observation-bser-educationlevel-eve-everywoman
 InstanceOf: BSeREducationLevel
-Title: "observation-bser-educationlevel-eve-everywoman"
-Description: "Example of BSeR-EducationLevel profile as used in the BSeR IG"
+Title: "Observation - Education Level - Eve Everywoman"
+Description: "BsER Education Level: Education Level - Eve Everywoman example"
 Usage: #example
 * status = #final
 * category = $observation-category#social-history "Social History"

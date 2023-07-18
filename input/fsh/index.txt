@@ -59,8 +59,8 @@ observation-bser-arthritisfeedbackobservation-2-eve-everywoman                  
 observation-bser-educationlevel-eve-everywoman                                      Instance    instances\observation-bser-educationlevel-eve-everywoman.fsh
 observation-bser-ha1c-observation-eve-everywoman                                    Instance    instances\observation-bser-ha1c-observation-eve-everywoman.fsh
 observation-bser-nrt-authorizationstatus-eve-everywoman                             Instance    instances\observation-bser-nrt-authorizationstatus-eve-everywoman.fsh
-observation-bser-nutritionfeedbackobs-1-eve-everywoman                              Instance    instances\observation-bser-nutritionfeedbackobs-1-eve-everywoman.fsh
-observation-bser-nutritionfeedbackobs-2-eve-everywoman                              Instance    instances\observation-bser-nutritionfeedbackobs-2-eve-everywoman.fsh
+observation-bser-nutritionfeedbackobs-1-baby-everybaby                              Instance    instances\observation-bser-nutritionfeedbackobs-1-baby-everybaby.fsh
+observation-bser-nutritionfeedbackobs-2-baby-everybaby                              Instance    instances\observation-bser-nutritionfeedbackobs-2-baby-everybaby.fsh
 observation-bser-nutritionobs-baby-everybaby                                        Instance    instances\observation-bser-nutritionobs-baby-everybaby.fsh
 observation-bser-referralactivitystatus-eve-everywoman                              Instance    instances\observation-bser-referralactivitystatus-eve-everywoman.fsh
 observation-bser-telcomcomm-eve-everywoman                                          Instance    instances\observation-bser-telcomcomm-eve-everywoman.fsh

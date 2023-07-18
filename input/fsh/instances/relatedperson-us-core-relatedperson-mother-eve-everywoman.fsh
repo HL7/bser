@@ -1,7 +1,7 @@
 Instance: relatedperson-us-core-relatedperson-mother-eve-everywoman
 InstanceOf: USCoreRelatedPersonProfile
-Title: "US Core RelatedPerson - Eve Everywoman"
-Description: "US Core RelatedPerson: Eve Everywoman example"
+Title: "RelatedPerson - Gestational Mother - Eve Everywoman"
+Description: "US Core RelatedPerson: Gestational Mother - Eve Everywoman example"
 Usage: #example
 * active = true
 * patient = Reference(Patient/patient-us-core-patient-baby-everybaby)

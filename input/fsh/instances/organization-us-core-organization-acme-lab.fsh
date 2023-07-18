@@ -1,6 +1,6 @@
 Instance: organization-us-core-organization-acme-lab
 InstanceOf: USCoreOrganizationProfile
-Title: "US Core Organization - Acme Lab"
+Title: "Organization - Acme Lab"
 Description: "US Core Organization: Acme Lab example"
 Usage: #example
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"

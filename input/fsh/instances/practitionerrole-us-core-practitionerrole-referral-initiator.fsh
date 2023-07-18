@@ -1,7 +1,7 @@
 Instance: practitionerrole-us-core-practitionerrole-referral-initiator
 InstanceOf: USCorePractitionerRoleProfile
-Title: "US Core Pracitioner Role - Referral Initiator - Primary Care Clinis St. Luke"
-Description: "US Core Pracitioner Role: Referral Initiator - Primary Care Clinis St. Luke example"
+Title: "PracitionerRole - Referral Initiator - Primary Care Clinis St. Luke"
+Description: "US Core PracitionerRole: Referral Initiator - Primary Care Clinis St. Luke example"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "1111111111"

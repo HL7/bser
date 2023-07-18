@@ -192,8 +192,8 @@ groups:
     - Condition/condition-us-core-cphc-eve-everywoman-diabetes
     - Observation/observation-bser-ha1c-observation-eve-everywoman
     - Observation/observation-bser-nrt-authorizationstatus-eve-everywoman
-    - Observation/observation-bser-nutritionfeedbackobs-1-eve-everywoman
-    - Observation/observation-bser-nutritionfeedbackobs-2-eve-everywoman
+    - Observation/observation-bser-nutritionfeedbackobs-1-baby-everybaby
+    - Observation/observation-bser-nutritionfeedbackobs-2-baby-everybaby
     - Observation/observation-bser-nutritionobs-baby-everybaby
     - Observation/observation-bser-telcomcomm-eve-everywoman
     - Observation/observation-blood-pressure-eve-everywoman-bser

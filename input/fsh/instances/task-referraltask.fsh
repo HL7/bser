@@ -1,6 +1,6 @@
 Instance: task-referraltask
 InstanceOf: ReferralTask
-Title: "Referral Task - Eve Everywoman"
+Title: "Task - Eve Everywoman"
 Description: "Referral Task: Eve Everywoman example"
 Usage: #example
 * identifier[referralInitiatorTaskIdentifier].type = $v2-0203#PLAC

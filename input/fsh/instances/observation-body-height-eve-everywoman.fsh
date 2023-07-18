@@ -1,7 +1,7 @@
 Instance: observation-body-height-eve-everywoman
 InstanceOf: USCoreBodyHeightProfile
-Title: "observation-body-height-eve-everywoman"
-Description: "Example of FHIR Body Height profile as used in the BSeR IG"
+Title: "Observation - Body Height - Eve Everywoman"
+Description: "US Core Body Height: Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"

@@ -1,6 +1,6 @@
 Instance: observation-us-core-blood-pressure-baby-everybaby
 InstanceOf: USCoreBloodPressureProfile
-Title: "US Core Blood Pressure - Baby Everybaby"
+Title: "Blood Pressure - Baby Everybaby"
 Description: "US Core Blood Pressure: Baby Everybaby example"
 Usage: #example
 * status = #final

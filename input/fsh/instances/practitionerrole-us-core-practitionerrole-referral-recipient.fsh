@@ -1,7 +1,7 @@
 Instance: practitionerrole-us-core-practitionerrole-referral-recipient
 InstanceOf: USCorePractitionerRoleProfile
-Title: "BSeR Referral Recipient Practitioner Role - Hailey Eight"
-Description: "BSeR Referral Recipient Practitioner Role: Hailey Eight example"
+Title: "PractitionerRole - Referral Recipient - Hailey Eight"
+Description: "US Core PractitionerRole: Referral Recipient: Hailey Eight example"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "2222222222"

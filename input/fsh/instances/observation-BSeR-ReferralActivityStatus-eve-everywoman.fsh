@@ -1,7 +1,7 @@
 Instance: observation-bser-referralactivitystatus-eve-everywoman
 InstanceOf: BSeRReferralActivityStatus
-Title: "observation-bser-referralactivitystatus-eve-everywoman"
-Description: "Example of BSeR-ReferralActivityStatus profile as used in the BSeR IG"
+Title: "Observation - Referral Activity Status - Eve Everywoman"
+Description: "BSeR Referral Activity Status: Eve Everywoman example"
 Usage: #example
 * status = #final
 * code = $sct#385641008 "Action status"

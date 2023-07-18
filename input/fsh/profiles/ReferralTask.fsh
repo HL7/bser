@@ -35,7 +35,7 @@ Description: "A task resource describes an activity that can be performed and tr
 * statusReason.text 1..1 MS
 * businessStatus 0..1 MS
 * businessStatus from TaskBusinessStatusVS (extensible)
-* busnessStatus.text MS
+* businessStatus.text MS
 * intent MS 
 * intent ^short = "order"
 * intent = #order (exactly)

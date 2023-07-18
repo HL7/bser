@@ -1,6 +1,6 @@
 Instance: task-bser-referraltask
 InstanceOf: BSeRReferralTask
-Title: "BSeR Referral Task - Eve Everywoman"
+Title: "Task - Eve Everywoman"
 Description: "BSeR Referral Task: Eve Everywoman example"
 Usage: #example
 * identifier[referralInitiatorTaskIdentifier].type = $v2-0203#PLAC

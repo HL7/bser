@@ -1,7 +1,7 @@
 Instance: observation-bser-nutritionobs-baby-everybaby
 InstanceOf: BSeREarlyChildhoodNutritionObservation
-Title: "BSeR Early Childhood Nutrition Observation - Baby Everybaby - Latch to Breast"
-Description: "BSeR Early Childhood Nutrition Observation: Baby Everybaby - Latch to Breast example"
+Title: "Observation - Latch to Breast - Baby Everybaby "
+Description: "BSeR Early Childhood Nutrition Observation: Latch to Breast - Baby Everybaby example"
 Usage: #example
 * status = #final
 * code = $sct#288988007 "Able to latch on to breast for feeding (finding)"

@@ -1,7 +1,7 @@
 Instance: observation-bser-telcomcomm-eve-everywoman
 InstanceOf: BSeRTelcomCommunicationPreferences
-Title: "observation-bser-telcomcomm-eve-everywoman"
-Description: "Example of BSeR-TelcomCommunicationPreferences profile as used in the BSeR IG"
+Title: "Observation - Best Day to Call - Eve Everywoman"
+Description: "BSeR Telcom Comm Observation: Best Day to Call - Eve Everywoman example"
 Usage: #example
 * status = #final
 * code = BSeR#BDTC "Best Day To Call"

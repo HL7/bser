@@ -1,7 +1,7 @@
 Instance: observation-bser-ha1c-observation-eve-everywoman
 InstanceOf: BSeRHa1cObservation
-Title: "observation-bser-ha1c-observation-eve-everywoman"
-Description: "Example of BSeR-HA1C-Observation profile as used in the BSeR IG"
+Title: "Observation - Ha1c - Eve Everywoman"
+Description: "BSeR Ha1c Observation: Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[Laboratory] = $observation-category#laboratory

@@ -1,6 +1,6 @@
 Instance: practitioner-us-core-practitioner-henry-seven
 InstanceOf: USCorePractitionerProfile
-Title: "US Core Practitioner - Henry Seven"
+Title: "Practitioner - Henry Seven"
 Description: "US Core Practitioner: Henry Seven example"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"

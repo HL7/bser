@@ -1,6 +1,6 @@
 Instance: observation-us-core-body-weight-baby-everybaby
 InstanceOf: USCoreBodyWeightProfile
-Title: "US Core Body Weight - Baby Everybaby"
+Title: "Body Weight - Baby Everybaby"
 Description: "US Core Body Weight: Baby Everybaby example"
 Usage: #example
 * status = #final

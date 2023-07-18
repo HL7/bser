@@ -1,7 +1,7 @@
 Instance: observation-body-height-baby-everybaby
 InstanceOf: USCoreBodyHeightProfile
-Title: "observation-body-height-baby-everybaby"
-Description: "Example of FHIR Vital Sign Observation as used in the BSeR IG"
+Title: "Observation - Body Height - Baby Everybaby"
+Description: "US Core Body Height: Baby Everybaby example"
 Usage: #example
 * status = #final
 * category[VSCat] = $observation-category#vital-signs

@@ -1,6 +1,6 @@
 Instance: observation-us-core-bmi-mom-everymom
 InstanceOf: USCoreBMIProfile
-Title: "US Core BMI - Mom Everymom"
+Title: "BMI - Mom Everymom"
 Description: "US Core BMI: Mom Everymom example"
 Usage: #example
 * status = #final

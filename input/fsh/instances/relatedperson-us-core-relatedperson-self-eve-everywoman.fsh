@@ -1,7 +1,7 @@
 Instance: relatedperson-us-core-relatedperson-self-eve-everywoman
 InstanceOf: USCoreRelatedPersonProfile
-Title: "US Core RelatedPerson - Eve Everywoman - Self"
-Description: "US Core RelatedPerson: Eve Everywoman - Self example"
+Title: "RelatedPerson - Self - Eve Everywoman"
+Description: "US Core RelatedPerson: Self - Eve Everywoman example"
 Usage: #example
 * identifier.type = $v2-0203#SS
 * identifier.system = "http://hl7.org/fhir/sid/us-ssn"
