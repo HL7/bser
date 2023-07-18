@@ -22,13 +22,9 @@
 <artifact id="StructureDefinition/BSeR-HA1C-Observation" key="StructureDefinition-BSeR-HA1C-Observation" name="BSeR HA1C Observation"/>
 <artifact id="StructureDefinition/BSeR-MedicationStatement" key="StructureDefinition-BSeR-MedicationStatement" name="BSeR Medication Statement"/>
 <artifact id="StructureDefinition/BSeR-NRT-AuthorizationStatus" key="StructureDefinition-BSeR-NRT-AuthorizationStatus" name="BSeR NRT Authorization Status"/>
-<artifact id="StructureDefinition/BSeR-Organization" key="StructureDefinition-BSeR-Organization" name="BSeR Organization"/>
-<artifact id="Organization/organization-bser-organization-acme-lab" key="Organization-organization-bser-organization-acme-lab" name="BSeR Organization - Acme Lab"/>
-<artifact id="Organization/organization-bser-organization-saint-luke" key="Organization-organization-bser-organization-saint-luke" name="BSeR Organization - Saint Luke's Hospital of Kansas City"/>
 <artifact id="StructureDefinition/BSeR-ParticipationFeedbackObservation" key="StructureDefinition-BSeR-ParticipationFeedbackObservation" name="BSeR Participation Feedback Observation"/>
 <artifact id="StructureDefinition/BSeR-PatientConsent" key="StructureDefinition-BSeR-PatientConsent" name="BSeR Patient Consent"/>
 <artifact id="Consent/consent-bser-patientconsent-eve-everywoman" key="Consent-consent-bser-patientconsent-eve-everywoman" name="BSeR Patient Consent - Eve Everywoman"/>
-<artifact id="StructureDefinition/BSeR-Practitioner" key="StructureDefinition-BSeR-Practitioner" name="BSeR Practitioner"/>
 <artifact id="StructureDefinition/BSeR-ReferralActivityStatus" key="StructureDefinition-BSeR-ReferralActivityStatus" name="BSeR Referral Activity Status"/>
 <artifact id="StructureDefinition/BSeR-ReferralFeedbackComposition" key="StructureDefinition-BSeR-ReferralFeedbackComposition" name="BSeR Referral Feedback Composition"/>
 <artifact id="Composition/composition-bser-referral-feedback-arthritis-everywoman" key="Composition-composition-bser-referral-feedback-arthritis-everywoman" name="BSeR Referral Feedback Composition - Eve Everywoman - Arthritis"/>
@@ -38,12 +34,10 @@
 <artifact id="Composition/composition-bser-referral-feedback-tobacco-everywoman" key="Composition-composition-bser-referral-feedback-tobacco-everywoman" name="BSeR Referral Feedback Composition - Eve Everywoman - Tobacco Use Cessation"/>
 <artifact id="StructureDefinition/BSeR-ReferralFeedbackDocumentBundle" key="StructureDefinition-BSeR-ReferralFeedbackDocumentBundle" name="BSeR Referral Feedback Document Bundle"/>
 <artifact id="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman" key="Bundle-bundle-bser-referral-feedback-document-bundle-eve-everywoman" name="BSeR Referral Feedback Document Bundle - Eve Everywoman"/>
-<artifact id="StructureDefinition/BSeR-ReferralInitiatorPractitionerRole" key="StructureDefinition-BSeR-ReferralInitiatorPractitionerRole" name="BSeR Referral Initiator Practitioner Role"/>
 <artifact id="StructureDefinition/BSeR-ReferralMessageBundle" key="StructureDefinition-BSeR-ReferralMessageBundle" name="BSeR Referral Message Bundle"/>
 <artifact id="Bundle/bundle-bser-referral-message-bundle-eve-everywoman" key="Bundle-bundle-bser-referral-message-bundle-eve-everywoman" name="BSeR Referral Message Bundle - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-ReferralMessageHeader" key="StructureDefinition-BSeR-ReferralMessageHeader" name="BSeR Referral Message Header"/>
-<artifact id="StructureDefinition/BSeR-ReferralRecipientPractitionerRole" key="StructureDefinition-BSeR-ReferralRecipientPractitionerRole" name="BSeR Referral Recipient Practitioner Role"/>
-<artifact id="PractitionerRole/practitionerrole-bser-referral-recipient" key="PractitionerRole-practitionerrole-bser-referral-recipient" name="BSeR Referral Recipient Practitioner Role - Hailey Eight"/>
+<artifact id="PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient" key="PractitionerRole-practitionerrole-us-core-practitionerrole-referral-recipient" name="BSeR Referral Recipient Practitioner Role - Hailey Eight"/>
 <artifact id="StructureDefinition/BSeR-ReferralRequestComposition" key="StructureDefinition-BSeR-ReferralRequestComposition" name="BSeR Referral Request Composition"/>
 <artifact id="Composition/composition-bser-referral-request-nutrition-everybaby" key="Composition-composition-bser-referral-request-nutrition-everybaby" name="BSeR Referral Request Composition - Baby Everybaby - Early Childhood Nutrition"/>
 <artifact id="Composition/composition-bser-referral-request-arthritis-everywoman" key="Composition-composition-bser-referral-request-arthritis-everywoman" name="BSeR Referral Request Composition - Eve Everywoman - Arthritis"/>
@@ -58,7 +52,6 @@
 <artifact id="ServiceRequest/servicerequest-bser-referralservicerequest" key="ServiceRequest-servicerequest-bser-referralservicerequest" name="BSeR Referral ServiceRequest - Eve Everywoman"/>
 <artifact id="StructureDefinition/BSeR-ReferralTask" key="StructureDefinition-BSeR-ReferralTask" name="BSeR Referral Task"/>
 <artifact id="Task/task-bser-referraltask" key="Task-task-bser-referraltask" name="BSeR Referral Task - Eve Everywoman"/>
-<artifact id="StructureDefinition/BSeR-ServiceDeliveryLocation" key="StructureDefinition-BSeR-ServiceDeliveryLocation" name="BSeR Service Delivery Location"/>
 <artifact id="StructureDefinition/BSeR-TelcomCommunicationPreferences" key="StructureDefinition-BSeR-TelcomCommunicationPreferences" name="BSeR Telcom Communication Preferences"/>
 <artifact id="ValueSet/BSeR-TelcomCommunicationPreferencesVS" key="ValueSet-BSeR-TelcomCommunicationPreferencesVS" name="BSeR Telcom Communication Preferences VS"/>
 <artifact id="StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication" key="StructureDefinition-BSeR-TobaccoUseCessationFeedbackMedication" name="BSeR Tobacco Use Cessation Feedback Medication"/>
@@ -76,14 +69,13 @@
 <artifact id="Patient/patient-us-core-patient-baby-everybaby" key="Patient-patient-us-core-patient-baby-everybaby" name="Patient Baby B Everybaby"/>
 <artifact id="Patient/patient-us-core-patient-eve-everywoman" key="Patient-patient-us-core-patient-eve-everywoman" name="Patient Eve L Everywoman"/>
 <artifact id="Patient/patient-us-core-patient-mom-everymom" key="Patient-patient-us-core-patient-mom-everymom" name="Patient Mom L Everymom"/>
-<artifact id="Practitioner/practitioner-bser-hailey-eight" key="Practitioner-practitioner-bser-hailey-eight" name="Practitioner Eight Hailey"/>
-<artifact id="Practitioner/practitioner-bser-henry-seven" key="Practitioner-practitioner-bser-henry-seven" name="Practitioner Seven Henry"/>
-<artifact id="Location/location-bser-service-delivery-location-st-luke" key="Location-location-bser-service-delivery-location-st-luke" name="Referral Center A, St. Lukes"/>
+<artifact id="Practitioner/practitioner-us-core-practitioner-hailey-eight" key="Practitioner-practitioner-us-core-practitioner-hailey-eight" name="Practitioner Eight Hailey"/>
+<artifact id="Practitioner/practitioner-us-core-practitioner-henry-seven" key="Practitioner-practitioner-us-core-practitioner-henry-seven" name="Practitioner Seven Henry"/>
+<artifact id="Location/location-us-core-location-st-luke" key="Location-location-us-core-location-st-luke" name="Referral Center A, St. Lukes"/>
 <artifact id="StructureDefinition/ReferralServiceRequest" key="StructureDefinition-ReferralServiceRequest" name="Referral Service Request"/>
 <artifact id="ServiceRequest/servicerequest-referralservicerequest" key="ServiceRequest-servicerequest-referralservicerequest" name="Referral ServiceRequest - Eve Everywoman"/>
 <artifact id="StructureDefinition/ReferralTask" key="StructureDefinition-ReferralTask" name="Referral Task"/>
 <artifact id="Task/task-referraltask" key="Task-task-referraltask" name="Referral Task - Eve Everywoman"/>
-<artifact id="RelatedPerson/relatedperson-self-eve-everywoman" key="RelatedPerson-relatedperson-self-eve-everywoman" name="RelatedPerson - Eve Everywoman - Self"/>
 <artifact deprecated="true" key="ServiceRequest" name="ServiceRequest"/>
 <artifact deprecated="true" key="Task" name="Task"/>
 <artifact id="CodeSystem/TaskBusinessStatusCS" key="CodeSystem-TaskBusinessStatusCS" name="Task Business Status Code System"/>
@@ -97,7 +89,10 @@
 <artifact id="Observation/observation-us-core-body-weight-eve-everywoman" key="Observation-observation-us-core-body-weight-eve-everywoman" name="US Core Body Weight - Eve Everywoman"/>
 <artifact id="Observation/observation-us-core-body-weight-mom-everymom" key="Observation-observation-us-core-body-weight-mom-everymom" name="US Core Body Weight - Mom Everymom"/>
 <artifact id="Condition/condition-us-core-cphc-eve-everywoman-diabetes" key="Condition-condition-us-core-cphc-eve-everywoman-diabetes" name="US Core Condition Problems Health Concerns - Diabetes - Eve Everywoman"/>
-<artifact id="RelatedPerson/relatedperson-mother-eve-everywoman" key="RelatedPerson-relatedperson-mother-eve-everywoman" name="US Core RelatedPerson - Eve Everywoman"/>
+<artifact id="Organization/organization-us-core-organization-acme-lab" key="Organization-organization-us-core-organization-acme-lab" name="US Core Organization - Acme Lab"/>
+<artifact id="Organization/organization-us-core-organization-saint-luke" key="Organization-organization-us-core-organization-saint-luke" name="US Core Organization - Saint Luke's Hospital of Kansas City"/>
+<artifact id="RelatedPerson/relatedperson-us-core-relatedperson-mother-eve-everywoman" key="RelatedPerson-relatedperson-us-core-relatedperson-mother-eve-everywoman" name="US Core RelatedPerson - Eve Everywoman"/>
+<artifact id="RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman" key="RelatedPerson-relatedperson-us-core-relatedperson-self-eve-everywoman" name="US Core RelatedPerson - Eve Everywoman - Self"/>
 <artifact id="RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom" key="RelatedPerson-relatedperson-us-core-relatedperson-mom-everymom" name="US Core Relatedperson - Mom Everymom"/>
 <artifact id="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman" key="Medication-medication-bser-tobacco-use-cessation-feedback-eve-everywoman" name="medication-bser-tobacco-use-cessation-feedback-eve-everywoman"/>
 <artifact id="MedicationStatement/medicationstatement-bser-eve-everywoman" key="MedicationStatement-medicationstatement-bser-eve-everywoman" name="medicationstatement-bser-eve-everywoman"/>
@@ -118,7 +113,7 @@
 <artifact id="Observation/observation-participationfeedbackobservation-1-eve-everywoman" key="Observation-observation-participationfeedbackobservation-1-eve-everywoman" name="observation-participationfeedbackobservation-1-eve-everywoman"/>
 <artifact id="Observation/observation-participationfeedbackobservation-2-eve-everywoman" key="Observation-observation-participationfeedbackobservation-2-eve-everywoman" name="observation-participationfeedbackobservation-2-eve-everywoman"/>
 <artifact id="Observation/observation-us-core-smokingstatus-eve-everywoman" key="Observation-observation-us-core-smokingstatus-eve-everywoman" name="observation-us-core-smokingstatus-eve-everywoman"/>
-<artifact id="PractitionerRole/practitionerrole-bser-referral-initiator" key="PractitionerRole-practitionerrole-bser-referral-initiator" name="practitionerrole-bser-referral-initiator"/>
+<artifact id="PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator" key="PractitionerRole-practitionerrole-us-core-practitionerrole-referral-initiator" name="practitionerrole-us-core-practitionerrole-referral-initiator"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>

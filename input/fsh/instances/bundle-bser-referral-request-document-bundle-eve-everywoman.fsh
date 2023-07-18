@@ -13,8 +13,8 @@ Usage: #example
 * entry[=].resource = observation-blood-pressure-eve-everywoman-bser
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-body-height-eve-everywoman"
 * entry[=].resource = observation-body-height-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-bser-referral-initiator"
-* entry[=].resource = practitionerrole-bser-referral-initiator
+* entry[+].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"
+* entry[=].resource = practitionerrole-us-core-practitionerrole-referral-initiator
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bmi-eve-everywoman"
 * entry[=].resource = observation-bmi-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
@@ -25,7 +25,7 @@ Usage: #example
 * entry[=].resource = patient-us-core-patient-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"
 * entry[=].resource = allergyintolerance-us-core-allergyint-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Practitioner/practitioner-bser-henry-seven"
-* entry[=].resource = practitioner-bser-henry-seven
-* entry[+].fullUrl = "http://example.org/fhir/Organization/organization-bser-organization-saint-luke"
-* entry[=].resource = organization-bser-organization-saint-luke
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/practitioner-us-core-practitioner-henry-seven"
+* entry[=].resource = practitioner-us-core-practitioner-henry-seven
+* entry[+].fullUrl = "http://example.org/fhir/Organization/organization-us-core-organization-saint-luke"
+* entry[=].resource = organization-us-core-organization-saint-luke

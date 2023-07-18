@@ -15,7 +15,7 @@ Usage: #example
 * relationship.text = "gestational mother"
 * period.start = "2019-05-23"
 * period.end = "2020-05-23"
-* payor.reference = "Organization/organization-bser-organization-saint-luke"
+* payor.reference = "Organization/organization-us-core-organization-saint-luke"
 * class[0].type = $coverage-class#group
 * class[=].value = "CB135"
 * class[=].name = "Corporate Baker's Inc. Local #35"

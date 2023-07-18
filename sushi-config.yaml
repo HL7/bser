@@ -132,15 +132,6 @@ groups:
     - StructureDefinition/BSeR-ParticipationFeedbackObservation
     - StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication
     - StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation
-  referral-participant-profiles:
-    name: Referral Participant Profiles
-    description: Referral Participant Profiles
-    resources:
-    - StructureDefinition/BSeR-Organization
-    - StructureDefinition/BSeR-Practitioner
-    - StructureDefinition/BSeR-ReferralInitiatorPractitionerRole
-    - StructureDefinition/BSeR-ReferralRecipientPractitionerRole
-    - StructureDefinition/BSeR-ServiceDeliveryLocation
   other-profiles:
     name: Other Profiles
     description: Other Profiles
@@ -234,19 +225,19 @@ groups:
     name: Referral Participant Examples
     description: Referral Participant Examples
     resources:
-    - Location/location-bser-service-delivery-location-st-luke
-    - Organization/organization-bser-organization-acme-lab
-    - Organization/organization-bser-organization-saint-luke
+    - Location/location-us-core-location-st-luke
+    - Organization/organization-us-core-organization-acme-lab
+    - Organization/organization-us-core-organization-saint-luke
     - Patient/patient-us-core-patient-baby-everybaby
     - Patient/patient-us-core-patient-eve-everywoman
     - Patient/patient-us-core-patient-mom-everymom
-    - Practitioner/practitioner-bser-hailey-eight
-    - Practitioner/practitioner-bser-henry-seven
-    - PractitionerRole/practitionerrole-bser-referral-initiator
-    - PractitionerRole/practitionerrole-bser-referral-recipient
+    - Practitioner/practitioner-us-core-practitioner-hailey-eight
+    - Practitioner/practitioner-us-core-practitioner-henry-seven
+    - PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator
+    - PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient
     - RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom
-    - RelatedPerson/relatedperson-self-eve-everywoman
-    - RelatedPerson/relatedperson-mother-eve-everywoman
+    - RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman
+    - RelatedPerson/relatedperson-us-core-relatedperson-mother-eve-everywoman
   other-examples:
     name: Other Examples
     resources:

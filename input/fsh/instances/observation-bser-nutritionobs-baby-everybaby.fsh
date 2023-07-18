@@ -9,5 +9,5 @@ Usage: #example
 * subject.reference = "Patient/patient-us-core-patient-baby-everybaby"
 * subject.display = "Baby Everybaby"
 * effectiveDateTime = "2019-01-17"
-* performer.reference = "PractitionerRole/practitionerrole-bser-referral-initiator"
+* performer.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"
 * valueBoolean = true

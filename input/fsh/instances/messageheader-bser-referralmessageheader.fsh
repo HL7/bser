@@ -5,8 +5,8 @@ Description: "Example of BSeR-ReferralMessageHeader profile as used in the BSeR 
 Usage: #example
 * eventCoding = $v2-0003#I12 "REF/RRI - Patient referral"
 * destination.endpoint = "http://www.saintlukeshealthsystem.org/fhir/endpoint"
-* destination.receiver.reference = "PractitionerRole/practitionerrole-bser-referral-recipient"
-* sender.reference = "PractitionerRole/practitionerrole-bser-referral-initiator"
+* destination.receiver.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
+* sender.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"
 * source.name = "Acme Central Patient Registry"
 * source.software = "FooBar Patient Manager"
 * source.version = "3.1.45.AABB"

@@ -10,5 +10,5 @@ Usage: #example
 * code.text = "Body weight"
 * subject = Reference(Patient/patient-us-core-patient-mom-everymom) "Mom Everymom"
 * effectiveDateTime = "2019-01-17"
-* performer = Reference(Practitioner/practitioner-bser-henry-seven)
+* performer = Reference(Practitioner/practitioner-us-core-practitioner-henry-seven)
 * valueQuantity = 85 'kg' "kg"

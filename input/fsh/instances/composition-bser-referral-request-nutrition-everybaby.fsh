@@ -8,7 +8,7 @@ Usage: #example
 * subject.reference = "Patient/patient-us-core-patient-baby-everybaby"
 * subject.display = "Baby Everybaby"
 * date = "2020-01-02T22:13:23Z"
-* author.reference = "PractitionerRole/practitionerrole-bser-referral-initiator"
+* author.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"
 * author.display = "Henry Seven, MD"
 * title = "Referral request"
 * section.title = "Early Childhood Nutrition Referral Supporting Information Baby"

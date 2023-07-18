@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "12345"
 * status = #active
 * type = $v3-ActCode#EHCPOL "extended healthcare"
-* subscriber.reference = "RelatedPerson/relatedperson-self-eve-everywoman"
+* subscriber.reference = "RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman"
 * subscriber.display = "Eve Everywoman"
 * beneficiary.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * beneficiary.display = "Eve Everywoman"
@@ -15,7 +15,7 @@ Usage: #example
 * relationship.text = "self"
 * period.start = "2019-05-23"
 * period.end = "2020-05-23"
-* payor.reference = "Organization/organization-bser-organization-saint-luke"
+* payor.reference = "Organization/organization-us-core-organization-saint-luke"
 * class[0].type = $coverage-class#group
 * class[=].value = "CB135"
 * class[=].name = "Corporate Baker's Inc. Local #35"

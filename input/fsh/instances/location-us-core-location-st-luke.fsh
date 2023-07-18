@@ -1,5 +1,5 @@
-Instance: location-bser-service-delivery-location-st-luke
-InstanceOf: BSeRServiceDeliveryLocation
+Instance: location-us-core-location-st-luke
+InstanceOf: USCoreLocation
 Title: "Referral Center A, St. Lukes"
 Description: "Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG"
 Usage: #example
@@ -16,4 +16,4 @@ Usage: #example
 * address.city = "Amherst"
 * address.state = "MA"
 * address.postalCode = "64111"
-* managingOrganization.reference = "Organization/organization-bser-organization-saint-luke"
+* managingOrganization.reference = "Organization/organization-us-core-organization-saint-luke"

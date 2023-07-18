@@ -1,4 +1,4 @@
-Instance: relatedperson-mother-eve-everywoman
+Instance: relatedperson-us-core-relatedperson-mother-eve-everywoman
 InstanceOf: USCoreRelatedPersonProfile
 Title: "US Core RelatedPerson - Eve Everywoman"
 Description: "US Core RelatedPerson: Eve Everywoman example"

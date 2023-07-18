@@ -1,15 +1,15 @@
-Instance: practitioner-bser-hailey-eight
-InstanceOf: BSeRPractitioner
-Title: "Practitioner Eight Hailey"
+Instance: practitioner-us-core-practitioner-henry-seven
+InstanceOf: USCorePractitionerProfile
+Title: "Practitioner Seven Henry"
 Description: "Example of BSeR-Practitioner profile as used in the BSeR IG"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
-* identifier.value = "9941339888"
-* name.family = "Hailey"
-* name.given = "Eight"
+* identifier.value = "9941339108"
+* name.family = "Henry"
+* name.given = "Seven"
 * name.suffix = "M.D."
 * telecom.system = #email
-* telecom.value = "hailey.eight@example.com"
+* telecom.value = "henry.seven@example.com"
 * address.line[0] = "BMass Doctors"
 * address.line[+] = "2100 North Ave"
 * address.city = "Burlington"

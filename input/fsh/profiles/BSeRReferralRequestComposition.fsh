@@ -13,7 +13,7 @@ Description: "The structural body and metadata of the referral request document.
 * subject only Reference(USCorePatientProfile)
 * date 1..1
 * author 1..1
-* author only Reference(BSeRReferralInitiatorPractitionerRole)
+* author only Reference(USCorePractitionerRoleProfile)
 * title 1..1
 * section 1..
 * section ^slicing.discriminator.type = #value

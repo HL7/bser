@@ -10,7 +10,7 @@ Usage: #example
 * code.text = "Blood pressure systolic & diastolic"
 * subject = Reference(Patient/patient-us-core-patient-mom-everymom) "Mom Everymom"
 * effectiveDateTime = "2019-01-17"
-* performer = Reference(Practitioner/practitioner-bser-henry-seven)
+* performer = Reference(Practitioner/practitioner-us-core-practitioner-henry-seven)
 * component[systolic].code = $loinc#8480-6 "Systolic blood pressure"
 * component[systolic].valueQuantity = 125 'mm[Hg]' "mmHg"
 * component[diastolic].code = $loinc#8462-4 "Diastolic blood pressure"

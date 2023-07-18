@@ -21,7 +21,7 @@ Description: "Coverage high-level identifiers and descriptors of an insurance pl
 * period.start 1..1
 * period.end 0..1
 * payor 1..1
-* payor only Reference(BSeROrganization)
+* payor only Reference(USCoreOrganizationProfile)
 * class.type 1..1
 * class.type from CoverageClassCodes (extensible)
 * class.value 1..1

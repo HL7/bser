@@ -1,7 +1,7 @@
-Instance: organization-bser-organization-saint-luke
-InstanceOf: BSeROrganization
-Title: "BSeR Organization - Saint Luke's Hospital of Kansas City"
-Description: "BSeR Organization:  Saint Luke's Hospital of Kansas City example"
+Instance: organization-us-core-organization-saint-luke
+InstanceOf: USCoreOrganizationProfile
+Title: "US Core Organization - Saint Luke's Hospital of Kansas City"
+Description: "US Core Organization:  Saint Luke's Hospital of Kansas City example"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "1063494177"

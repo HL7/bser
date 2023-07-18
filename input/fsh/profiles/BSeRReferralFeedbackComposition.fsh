@@ -14,7 +14,7 @@ Description: "The structural body and metadata of the referral feedback document
 * subject only Reference(USCorePatientProfile)
 * date MS
 * author 1..1 MS
-* author only Reference(BSeRReferralRecipientPractitionerRole)
+* author only Reference(USCorePractitionerRoleProfile)
 * title MS
 * section MS
 * section ^slicing.discriminator.type = #value

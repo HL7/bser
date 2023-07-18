@@ -9,6 +9,6 @@ Usage: #example
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * subject.display = "Eve Everywoman"
 * effectiveDateTime = "2019-01-17"
-* performer.reference = "PractitionerRole/practitionerrole-bser-referral-recipient"
+* performer.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
 * valueCodeableConcept = $sct#199004 "Decreased lactation (finding)"
 * valueCodeableConcept.text = "Decreased lactation (finding)"

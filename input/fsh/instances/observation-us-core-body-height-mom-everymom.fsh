@@ -10,5 +10,5 @@ Usage: #example
 * code.text = "Body height"
 * subject = Reference(Patient/patient-us-core-patient-mom-everymom) "Eve Everywoman"
 * effectiveDateTime = "2019-01-17"
-* performer = Reference(Practitioner/practitioner-bser-henry-seven)
+* performer = Reference(Practitioner/practitioner-us-core-practitioner-henry-seven)
 * valueQuantity = 66 '[in_i]' "in"

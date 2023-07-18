@@ -1,7 +1,7 @@
-Instance: organization-bser-organization-acme-lab
-InstanceOf: BSeROrganization
-Title: "BSeR Organization - Acme Lab"
-Description: "BSeR Organization: Acme Lab example"
+Instance: organization-us-core-organization-acme-lab
+InstanceOf: USCoreOrganizationProfile
+Title: "US Core Organization - Acme Lab"
+Description: "US Core Organization: Acme Lab example"
 Usage: #example
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[=].value = "1144221847"
