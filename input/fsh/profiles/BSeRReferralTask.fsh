@@ -7,10 +7,7 @@ Description: "A task resource describes an activity that can be performed and tr
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* identifier[referralInitiatorTaskIdentifier].assigner only Reference(BSeROrganization)
-* identifier[referralRecipientTaskIdentifier].assigner only Reference(BSeROrganization)
 * focus only Reference(BSeRReferralServiceRequest)
 * for only Reference(USCorePatientProfile)
-* requester only Reference(BSeRReferralInitiatorPractitionerRole)
-* owner only Reference(BSeRReferralRecipientPractitionerRole)
+* owner only Reference(USCorePractitionerRoleProfile)
 * output.value[x] only Reference(BSeRReferralFeedbackDocumentBundle)

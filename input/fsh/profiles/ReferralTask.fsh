@@ -45,12 +45,7 @@ Description: "A task resource describes an activity that can be performed and tr
 * authoredOn 1.. MS
 * requester 1.. MS
 * requester only Reference(USCorePractitionerRoleProfile or USCoreOrganizationProfile)
-// * requester ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-// * requester ^type.targetProfile[=].extension.valueBoolean = true
-// * requester ^type.targetProfile[1].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-// * requester ^type.targetProfile[=].extension.valueBoolean = true
 * owner 1.. MS
 * note MS
 * output MS
 * output.value[x] MS
-* output.value[x] only Reference
