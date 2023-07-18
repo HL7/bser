@@ -38,9 +38,10 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * code ^short = "Referral or specific type of referral"
 * code ^definition = "Referral or specific type of referral. If the code used describes the type of/reason for referral (such as \"Referral to diabetes prevention program\") then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."
 * occurrence[x] 1..
-* occurrence[x] only dateTime
 * requester 1.. MS
+* requester ^short = "Referral Initiator"
 * performer 0..1 MS
+* performer ^short = "Referral Recipient"
 * reasonCode MS
 * reasonCode ^short = "Reason for referral"
 * reasonCode ^definition = "Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. \"Referral\")."

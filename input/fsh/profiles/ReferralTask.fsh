@@ -7,12 +7,12 @@ Description: "A task resource describes an activity that can be performed and tr
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* identifier 1.. MS
+* identifier 0.. MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
-    referralInitiatorTaskIdentifier 1..1 MS and
+    referralInitiatorTaskIdentifier 0..1 MS and
     referralRecipientTaskIdentifier 0..1 MS
 * identifier[referralInitiatorTaskIdentifier].type 1.. MS
 * identifier[referralInitiatorTaskIdentifier].type = $v2-0203#PLAC
@@ -32,9 +32,10 @@ Description: "A task resource describes an activity that can be performed and tr
 * partOf[supportedPartOf] only Reference(ReferralTask)
 * status MS
 * statusReason MS
-* statusReason.text MS
+* statusReason.text 1..1 MS
 * businessStatus 0..1 MS
 * businessStatus from TaskBusinessStatusVS (extensible)
+* busnessStatus.text MS
 * intent MS 
 * intent ^short = "order"
 * intent = #order (exactly)
@@ -47,8 +48,10 @@ Description: "A task resource describes an activity that can be performed and tr
 * for only Reference(USCorePatientProfile or USCoreRelatedPersonProfile or Group)
 * authoredOn 1.. MS
 * requester 1.. MS
+* requester ^short = "Referral Initiator"
 * requester only Reference(USCorePractitionerRoleProfile or USCorePractitionerProfile or USCoreOrganizationProfile)
 * owner 1.. MS
+* owner ^short = "Referral Recipient"
 * note MS
 * output MS
 * output.value[x] MS

@@ -1,7 +1,7 @@
 Instance: practitioner-us-core-practitioner-hailey-eight
 InstanceOf: USCorePractitionerProfile
-Title: "Practitioner Eight Hailey"
-Description: "Example of BSeR-Practitioner profile as used in the BSeR IG"
+Title: "US Core Practitioner - Hailey Eight"
+Description: "US Core Practitioner:  Hailey Eight example"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "9941339888"

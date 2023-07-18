@@ -1,7 +1,7 @@
 Instance: observation-us-core-smokingstatus-eve-everywoman
 InstanceOf: USCoreSmokingStatusProfile
-Title: "observation-us-core-smokingstatus-eve-everywoman"
-Description: "Example of US Core Smoking Status profile as used in the BSeR IG"
+Title: "US Core Smoking Status - Eve Everywoman"
+Description: "US Core Smoking Status: Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[SocialHistory] = $observation-category#social-history "Social History"

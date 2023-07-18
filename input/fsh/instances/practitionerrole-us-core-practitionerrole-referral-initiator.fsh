@@ -1,7 +1,7 @@
 Instance: practitionerrole-us-core-practitionerrole-referral-initiator
 InstanceOf: USCorePractitionerRoleProfile
-Title: "practitionerrole-us-core-practitionerrole-referral-initiator"
-Description: "Example of BSeR-ReferralInitiatorPractitionerRole profile as used in the BSeR IG"
+Title: "US Core Pracitioner Role - Referral Initiator - Primary Care Clinis St. Luke"
+Description: "US Core Pracitioner Role: Referral Initiator - Primary Care Clinis St. Luke example"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "1111111111"

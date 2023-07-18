@@ -1,7 +1,7 @@
 Instance: location-us-core-location-st-luke
 InstanceOf: USCoreLocation
-Title: "Referral Center A, St. Lukes"
-Description: "Example of BSeR-ServiceDeliveryLocation profile as used in the BSeR IG"
+Title: "US Core Location - Referral Center A, St. Lukes"
+Description: "US Core Location: Referral Center A, St. Lukes example"
 Usage: #example
 * status = #active
 * name = "Referral Center A, St. Lukes"

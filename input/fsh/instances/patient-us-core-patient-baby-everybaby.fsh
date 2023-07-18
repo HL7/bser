@@ -1,7 +1,7 @@
 Instance: patient-us-core-patient-baby-everybaby
 InstanceOf: USCorePatientProfile
-Title: "Patient Baby B Everybaby"
-Description: "Example of US Core Patient profile as used in the BSeR IG"
+Title: "US Core Patient - Baby Everybaby"
+Description: "US Core Patient: Baby Everybaby example"
 Usage: #example
 * extension[0].extension[0].url = "ombCategory"
 * extension[=].extension[=].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"

@@ -1,7 +1,7 @@
 Instance: practitioner-us-core-practitioner-henry-seven
 InstanceOf: USCorePractitionerProfile
-Title: "Practitioner Seven Henry"
-Description: "Example of BSeR-Practitioner profile as used in the BSeR IG"
+Title: "US Core Practitioner - Henry Seven"
+Description: "US Core Practitioner: Henry Seven example"
 Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "9941339108"
