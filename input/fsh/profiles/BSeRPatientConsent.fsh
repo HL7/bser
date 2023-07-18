@@ -15,7 +15,7 @@ Description: "A record regarding the consent status of the patient with regard t
 * patient only Reference(USCorePatientProfile)
 * dateTime 1..1
 * performer 1..1
-* performer only Reference(RelatedPerson)
-* performer ^definition = "Performer is the person responding to the consent request. The role of performer is played by a related person. When the patient is the performer the relationship of related person to patient is 'self'."
+* performer only Reference(USCorePatientProfile or USCoreRelatedPersonProfile)
+* performer ^definition = "Performer is the person responding to the consent request. If the performer is different to the patient, the role of performer is played by a related person."
 * provision 1..1
 * provision.type 1..1

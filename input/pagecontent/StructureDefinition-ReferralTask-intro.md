@@ -1,0 +1,3 @@
+The referral Task is an essential component of the electronic exchange of the referral ServiceRequest and its associated referral feedback. 
+
+The Task.focus contains a [Referral ServiceRequest](StructureDefinition-ReferralServiceRequest), the Task.requester is the initiator of the Task, and a Task.owner is the recipient of the task.  Task.output contains referral feedback and the state of the referral transaction (e.g., created, accepted, in progress, or completed) is contained in Task.status.

@@ -9,7 +9,7 @@ Description: "The referral service request is a profile of the FHIR ServiceReque
 * ^jurisdiction.text = "United States of America"
 * code from $2.16.840.1.113762.1.4.1099.45 (extensible)
 * requester only Reference(USCorePractitionerRoleProfile)
-* performer only Reference(USCorePractitionerRoleProfile)
+* performer only Reference(USCorePractitionerRoleProfile or USCoreOrganizationProfile)
 * reasonCode from $2.16.840.1.113762.1.4.1099.46 (extensible)
 // * insurance[insuranceCoverage] contains insuranceCoverageBSeR 0..* MS
 // * insurance[insuranceCoverage][insuranceCoverageBSeR] only Reference(BSeRCoverage)
