@@ -1,10 +1,10 @@
-Instance: condition-us-core-cphc-eve-everywoman-diabetes
+Instance: condition-us-core-cphc-eve-everywoman-hypertension
 InstanceOf: USCoreConditionProblemsHealthConcernsProfile
-Title: "Condition - Diabetes - Eve Everywoman"
-Description: "US Core Condition Problems Health Concerns: Diabetes - Eve Everywoman example"
+Title: "Condition - Hypertension - Eve Everywoman"
+Description: "US Core Condition Problems Health Concerns: Hypertension - Eve Everywoman example"
 Usage: #example
 * category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct#73211009 "Diabetes mellitus (disorder)"
+* code = $sct#38341003 "Hypertensive disorder, systemic arterial (disorder)"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * subject.display = "Eve Everywoman"
 * onsetDateTime = "2017-08-23"

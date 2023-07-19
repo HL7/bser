@@ -54,7 +54,7 @@
 <artifact id="Composition/composition-bser-referral-feedback-obesity-everywoman" key="Composition-composition-bser-referral-feedback-obesity-everywoman" name="Composition - Eve Everywoman - Obesity"/>
 <artifact id="Composition/composition-bser-referral-request-tobacco-everywoman" key="Composition-composition-bser-referral-request-tobacco-everywoman" name="Composition - Eve Everywoman - Tobacco Use Cessation"/>
 <artifact id="Composition/composition-bser-referral-feedback-tobacco-everywoman" key="Composition-composition-bser-referral-feedback-tobacco-everywoman" name="Composition - Eve Everywoman - Tobacco Use Cessation"/>
-<artifact id="Condition/condition-us-core-cphc-eve-everywoman-diabetes" key="Condition-condition-us-core-cphc-eve-everywoman-diabetes" name="Condition - Diabetes - Eve Everywoman"/>
+<artifact id="Condition/condition-us-core-cphc-eve-everywoman-hypertension" key="Condition-condition-us-core-cphc-eve-everywoman-hypertension" name="Condition - Diabetes - Eve Everywoman"/>
 <artifact deprecated="true" key="Consent" name="Consent"/>
 <artifact id="Consent/consent-bser-patientconsent-eve-everywoman" key="Consent-consent-bser-patientconsent-eve-everywoman" name="Consent - Eve Everywoman"/>
 <artifact id="Coverage/coverage-bser-coverage-baby-everybaby" key="Coverage-coverage-bser-coverage-baby-everybaby" name="Coverage - Baby Everybaby"/>

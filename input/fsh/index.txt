@@ -47,7 +47,7 @@ composition-bser-referral-request-diabetes-everywoman                           
 composition-bser-referral-request-hypertension-everywoman                           Instance    instances\composition-bser-referral-request-hypertension-everywoman.fsh
 composition-bser-referral-request-obesity-everywoman                                Instance    instances\composition-bser-referral-request-obesity-everywoman.fsh
 composition-bser-referral-request-tobacco-everywoman                                Instance    instances\composition-bser-referral-request-tobacco-everywoman.fsh
-condition-us-core-cphc-eve-everywoman-diabetes                                      Instance    instances\condition-us-core-cphc-eve-everywoman-diabetes.fsh
+condition-us-core-cphc-eve-everywoman-hypertension                                      Instance    instances\condition-us-core-cphc-eve-everywoman-hypertension.fsh
 consent-bser-patientconsent-eve-everywoman                                          Instance    instances\consent-bser-patientconsent-eve-everywoman.fsh
 coverage-bser-coverage-eve-everywoman                                               Instance    instances\coverage-bser-coverage-eve-everywoman.fsh
 location-us-core-location-st-luke                                     Instance    instances\location-us-core-location-st-luke.fsh

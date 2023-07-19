@@ -186,7 +186,7 @@ groups:
     description: Supporting Information Examples
     resources:
     - AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman
-    - Condition/condition-us-core-cphc-eve-everywoman-diabetes
+    - Condition/condition-us-core-cphc-eve-everywoman-hypertension
     - Observation/observation-bser-ha1c-observation-eve-everywoman
     - Observation/observation-bser-nrt-authorizationstatus-eve-everywoman
     - Observation/observation-bser-nutritionfeedbackobs-1-baby-everybaby
