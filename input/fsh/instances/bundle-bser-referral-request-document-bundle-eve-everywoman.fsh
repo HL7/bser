@@ -16,6 +16,10 @@ Usage: #example
 * entry[+].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"
 * entry[=].resource = practitionerrole-us-core-practitionerrole-referral-initiator
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bmi-eve-everywoman"
+* entry[=].resource = observation-bser-bmi-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bser-educationlevel-eve-everywoman"
+* entry[=].resource = observation-bser-education-level-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bmi-eve-everywoman"
 * entry[=].resource = observation-bmi-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
 * entry[=].resource = medicationstatement-bser-eve-everywoman

@@ -50,14 +50,12 @@ pages:
     title: Referral Service Request Feedback Resources
   service_request_and_referral_feedback_supporting_information.md:
     title: Service Request and Referral Feedback Supporting Information
-  bi-directional_service_e-referral_transactions.md:
-    title: Bi-directional Service e-Referral Transactions
+  bi-directional_service_ereferral_transactions.md:
+    title: Bi-directional Service eReferral Transactions
   transport_options.md:
     title: Transport Options
   adaptation_for_additional_referral_use_cases.md:
     title: Adaptation for Additional Referral Use Cases
-  uml_rendering_of_the_bser_ig.md:
-    title: UML rendering of the BSeR IG
   Downloads.md:
     title: Downloads
   change_log.md:
@@ -71,7 +69,6 @@ menu:
     BSeR Project Team: bser_project_team.html
     Acknowledgements: Acknowledgements.html
     Scope and Context: scope_and_context.html
-    UML rendering of the BSeR IG: uml_rendering_of_the_bser_ig.html
     Change Log: change_log.html
   Resource Profile Information:
     Resource Profiles: resource_profiles.html
@@ -80,7 +77,7 @@ menu:
     Referral Service Request Resources: referral_service_request_resources.html
     Referral Service Request Feedback Resources: referral_service_request_feedback_resources.html
     Service Request and Referral Feedback Supporting Information: service_request_and_referral_feedback_supporting_information.html
-    Bi-directional Service e-Referral Transactions: bi-directional_service_e-referral_transactions.html
+    Bi-directional Service e-Referral Transactions: bi-directional_service_ereferral_transactions.html
     Transport Options: transport_options.html
     Adaptation for Additional Referral Use Cases: adaptation_for_additional_referral_use_cases.html
   Downloads: Downloads.html

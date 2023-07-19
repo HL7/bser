@@ -4,6 +4,8 @@ Title: "Observation - Tobacco free duration - Eve Everywoman"
 Description: "BSeR Tobacco Use Cessation Feedback Observation: Tobacco free duration - Eve Everywoman example"
 Usage: #example
 * status = #final
+* category[us-core/social-history] = $observation-category#social-history "Social History"
+* category[us-core/social-history].text = "Social History"
 * code = $sct#228486009 "Time since stopped smoking (observable entity)"
 * code.text = "Tobacco free duration"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"

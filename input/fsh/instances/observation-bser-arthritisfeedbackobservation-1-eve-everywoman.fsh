@@ -1,7 +1,7 @@
 Instance: observation-bser-arthritisfeedbackobservation-1-eve-everywoman
 InstanceOf: BSeRArthritisFeedbackObservation
 Title: "BSeR Arthritis Feedback Observation - Endurance Improved - Eve Everywoman"
-Description: "BSeR Arthritis Feedback Observation: Endurance Improved -Eve Everywoman example"
+Description: "BSeR Arthritis Feedback Observation: Endurance Improved - Eve Everywoman example"
 Usage: #example
 * status = #final
 * code = $sct#406203001 "Endurance (observable entity)"

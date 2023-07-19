@@ -2,7 +2,7 @@ Profile: BSeRNRTAuthorizationStatus
 Parent: Observation
 Id: BSeR-NRT-AuthorizationStatus
 Title: "BSeR NRT Authorization Status"
-Description: "An observation regarding the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy."
+Description: "This Observation profile represents the status (approved, denied, pending) of an authorization for the patient to participate in Nicotine Replacement Therapy."
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

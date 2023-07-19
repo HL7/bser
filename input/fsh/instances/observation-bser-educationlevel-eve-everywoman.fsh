@@ -4,9 +4,9 @@ Title: "Observation - Education Level - Eve Everywoman"
 Description: "BsER Education Level: Education Level - Eve Everywoman example"
 Usage: #example
 * status = #final
-* category = $observation-category#social-history "Social History"
-* category.text = "Social History"
-* code = $loinc#82589-3
+* category[us-core/social-history] = $observation-category#social-history "Social History"
+* category[us-core/social-history].text = "Social History"
+* code = $loinc#82589-3 "Highest level of education"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * subject.display = "Eve Everywoman"
 * effectiveDateTime = "2019-01-17"

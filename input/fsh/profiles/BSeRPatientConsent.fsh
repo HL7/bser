@@ -2,7 +2,7 @@ Profile: BSeRPatientConsent
 Parent: Consent
 Id: BSeR-PatientConsent
 Title: "BSeR Patient Consent"
-Description: "A record regarding the consent status of the patient with regard to treatment authorization or protected health information sharing."
+Description: "This Consent profile represents the consent status of the patient with regard to treatment authorization or protected health information sharing."
 * ^status = #active
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"

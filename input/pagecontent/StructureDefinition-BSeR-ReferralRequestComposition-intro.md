@@ -1,0 +1,1 @@
+It contains a section for other supporting information including employment status and education level which can be included for any referral type. It also contains optional sections for each type of referral containing clinical supporting information and only one of these optional sections is expected.

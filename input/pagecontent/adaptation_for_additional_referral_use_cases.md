@@ -2,7 +2,7 @@
 
 The BSeR IG includes specifications to support the information needs of six specific bi-directional referral use cases. However, the guide can be easily adapted to accommodate additional referral use cases. The following is a list of touchpoints within the BSeR specification where adaptation may be necessary to support additional referral use cases.
 
-* **[BSeRReferralMessageHeader.reason](StructureDefinition-BSeR-ReferralMessageHeader-definitions.html#MessageHeader.reason)** If FHIR messaging is used as the means of exchange for the referral use case, then the value set bound to the reason element of the referral message header needs to be expanding to include the new use case as the reason for the referral message.
+* **[BSeRReferralMessageHeader.reason](StructureDefinition-BSeR-ReferralMessageHeader-definitions.html#MessageHeader.reason)** If FHIR messaging is used as the means of exchange for the referral use case, then the value set bound to the reason element of the referral message header needs to be expanded to include the new use case as the reason for the referral message.
 
 * **[BSeRReferralTask.businessStatus](StructureDefinition-BSeR-ReferralTask-definitions.html#Task.businessStatus)** If the workflow state machine associated with the referral exchange use case differs from the BSeR state machine, then it is necessary to extend the value set bound to the business status element of the referral task to include additional states.
 

@@ -2,7 +2,7 @@ Profile: BSeRReferralMessageHeader
 Parent: MessageHeader
 Id: BSeR-ReferralMessageHeader
 Title: "BSeR Referral Message Header"
-Description: "The FHIR MessageHeader resource is defined as \"the header for a message exchange that is either requesting or responding to an action\". In BSeR the message header is used to exchange the referral services request or the referral service request feedback."
+Description: "The FHIR MessageHeader resource is defined as \"the header for a message exchange that is either requesting or responding to an action\". In BSeR the message header is used to exchange the referral service request or the referral service request feedback."
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

@@ -2,7 +2,7 @@ Profile: BSeRArthritisFeedbackObservation
 Parent: Observation
 Id: BSeR-ArthritisFeedbackObservation
 Title: "BSeR Arthritis Feedback Observation"
-Description: "A collection of observational data points concerning the patient arthritic condition provided by the referral recipient as feedback to the referral initiator."
+Description: "This Observation profile represents a collection of observational data points concerning the patient's arthritic condition provided by the referral recipient as feedback to the referral initiator."
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

@@ -2,7 +2,7 @@ Profile: BSeRTobaccoUseCessationFeedbackMedication
 Parent: USCoreMedicationProfile
 Id: BSeR-TobaccoUseCessationFeedbackMedication
 Title: "BSeR Tobacco Use Cessation Feedback Medication"
-Description: "A statement regarding the use of a tobacco cessation medication. Medication.status indicates active or inactive use of the medication indicated in medication.code."
+Description: "This Medication represents a tobacco cessation medication."
 * ^status = #active
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
