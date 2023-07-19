@@ -7,21 +7,19 @@ Description: "This Coverage profile represents identifiers and descriptors of an
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* identifier 0..1
-* status 1..1
-* status from FinancialResourceStatusCodes (required)
-* type 1..1
+* identifier MS
+* status MS
+* type 1.. MS
 * type from $coverage-type (extensible)
-* subscriber 1..1
-* subscriber only Reference(RelatedPerson)
-* subscriber ^definition = "The subscriber is the policy holder of the insurance plan. The role of subscriber is played by a related person. When the patient is the subscriber the relationship of related person to patient is 'self'."
-* beneficiary 1..1
+* subscriber 1.. MS
+* subscriber only Reference(USCorePatientProfile or USCoreRelatedPersonProfile)
+* subscriber ^definition = "The subscriber is the policy holder of the insurance plan. When the beneficiary Patient is not the subscriber use RelatedPerson."
+* beneficiary MS
 * beneficiary only Reference(USCorePatientProfile)
-* period 0..1
-* period.start 1..1
-* period.end 0..1
-* payor 1..1
+* period MS
+* period.start 1..1 MS
+* period.end MS
+* payor MS
 * payor only Reference(USCoreOrganizationProfile)
-* class.type 1..1
-* class.type from CoverageClassCodes (extensible)
-* class.value 1..1
+* class.type MS
+* class.value MS
