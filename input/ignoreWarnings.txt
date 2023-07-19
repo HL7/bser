@@ -24,6 +24,8 @@ INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman:
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
 
 #  Not matching is expected behavior - the only slice [0] defined in the BSeR-ReferralFeedbackDocumentBundle is the required Composition
 INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
@@ -41,6 +43,25 @@ INFORMATION: Bundle/bundle-bser-referral-message-bundle-eve-everywoman: Bundle.e
 INFORMATION: ServiceRequest/servicerequest-bser-referralservicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
 INFORMATION: ServiceRequest/servicerequest-referralservicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest|2.0.0-ballot
 INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[0].resource.entry[7].resource/*ServiceRequest/servicerequest-bser-referralservicerequest*/.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
+
+# Not matching is expected behavior - BSeR Coverage only defines two slices
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
+
 
 # US Core Variance - need to find when these were approved
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
