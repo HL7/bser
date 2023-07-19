@@ -3,7 +3,7 @@ InstanceOf: BSeRCoverage
 Title: "Coverage - Baby Everybaby"
 Description: "BSeR Coverage: Baby Everybaby example"
 Usage: #example
-* identifier[memberid].type = $v2-0203#MB "Member Number identifier type"
+* identifier[memberid].type = $v2-0203#MB "Member Number"
 * identifier[memberid].system = "http://benefitsinc.com/certificate"
 * identifier[memberid].value = "12345"
 * status = #active

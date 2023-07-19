@@ -3,7 +3,7 @@ InstanceOf: BSeRCoverage
 Title: "Coverage - Eve Everywoman"
 Description: "BSeR Coverage: Eve Everywoman example"
 Usage: #example
-* identifier[memberid].type = $v2-0203#MB "Member Number identifier type"
+* identifier[memberid].type = $v2-0203#MB "Member Number"
 * identifier[memberid].system = "http://benefitsinc.com/certificate"
 * identifier[memberid].value = "12345"
 * status = #active
