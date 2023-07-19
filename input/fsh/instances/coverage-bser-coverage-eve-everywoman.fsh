@@ -3,8 +3,9 @@ InstanceOf: BSeRCoverage
 Title: "Coverage - Eve Everywoman"
 Description: "BSeR Coverage: Eve Everywoman example"
 Usage: #example
-* identifier.system = "http://benefitsinc.com/certificate"
-* identifier.value = "12345"
+* identifier[memberid].type = $v2-0203#MB "Member Number identifier type"
+* identifier[memberid].system = "http://benefitsinc.com/certificate"
+* identifier[memberid].value = "12345"
 * status = #active
 * type = $v3-ActCode#EHCPOL "extended healthcare"
 * subscriber.reference = "RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman"
@@ -16,14 +17,14 @@ Usage: #example
 * period.start = "2019-05-23"
 * period.end = "2020-05-23"
 * payor.reference = "Organization/organization-us-core-organization-saint-luke"
-* class[0].type = $coverage-class#group
-* class[=].value = "CB135"
-* class[=].name = "Corporate Baker's Inc. Local #35"
+* class[group].type = $coverage-class#group
+* class[group].value = "CB135"
+* class[group].name = "Corporate Baker's Inc. Local #35"
 * class[+].type = $coverage-class#subgroup
 * class[=].value = "123"
 * class[=].name = "Trainee Part-time Benefits"
-* class[+].type = $coverage-class#plan
-* class[=].value = "B37FC"
+* class[plan].type = $coverage-class#plan
+* class[plan].value = "B37FC"
 * class[=].name = "Full Coverage: Medical, Dental, Pharmacy, Vision, EHC"
 * class[+].type = $coverage-class#subplan
 * class[=].value = "P7"

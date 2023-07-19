@@ -22,7 +22,7 @@ This Guide is divided into several pages which are listed at the top of each pag
   * [Bi-Directional Service eReferral Transactions](bi-directional_service_ereferral_transactions.html): Transactions involved in referrals
   * [Transport Options](transport_options.html): Options for transport of referrals and referral feedback
   * [Adaptation for Additional Referral Use Cases](adaptation_for_additional_referral_use_cases.html): How to use the IG outside of the use cases covered
-* [Downloads](downloads.html): Links to downloadable artifacts
+* [Downloads](Downloads.html): Links to downloadable artifacts
 * [Artifact Index](artifacts.html): A list of the FHIR artifacts (profiles, examples, value sets, and code systems) defined as part of this guide
 
 ### Other Information
