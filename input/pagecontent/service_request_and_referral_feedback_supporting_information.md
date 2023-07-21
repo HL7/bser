@@ -123,13 +123,13 @@ The following table identifies the aggregation of clinical statement profiles to
             <td style="background-color:#E8E8E8">Blood pressure (baby)</td>
             <td style="background-color:#E8E8E8"><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
             <td style="background-color:#E8E8E8">Number of appointments attended</td>
-            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
+            <td style="background-color:#E8E8E8"><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
         </tr>
         <tr style="height: 20px">
             <td style="background-color:#E8E8E8">Blood pressure (mother)</td>
             <td style="background-color:#E8E8E8"><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
             <td style="background-color:#E8E8E8">Number of appointments missed</td>
-            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
+            <td style="background-color:#E8E8E8"><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
         </tr>
         <tr style="height: 20px">
             <td style="background-color:#E8E8E8">Body Height Lying (baby)</td>
@@ -258,37 +258,44 @@ The following table identifies the aggregation of clinical statement profiles to
         <tr style="height: 20px">
             <td style="background-color:#E8E8E8">Allergies</td>
             <td style="background-color:#E8E8E8"><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td>
-            <td style="background-color:#E8E8E8">Number of appointments attended</td>
-            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr style="height: 20px">
-            <td rowspan="5">Tobacco Use Cessation</td>
+            <td rowspan="6">Tobacco Use Cessation</td>
             <td>Nicotine replacement therapy</td>
             <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
-            <td>Number of appointments missed</td>
+            <td style="background-color:#E8E8E8">Number of appointments attended</td>
             <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
         </tr>
         <tr style="height: 20px">
             <td>Smoking Status</td>
             <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
-            <td>Cessation medications</td>
-            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td>
+            <td>Number of appointments missed</td>
+            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
         </tr>
         <tr style="height: 20px">
             <td>Best day to call</td>
             <td><a href="StructureDefinition-BSeR-TelcomCommunicationPreferences.html">BSeR Telcom Communication Preferences</a></td>
-            <td>Negotiated date for cessation of smoking</td>
-            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
+            <td>Cessation medications</td>
+            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td>
         </tr>
         <tr style="height: 20px">
             <td>Best time to call</td>
+            <td><a href="StructureDefinition-BSeR-TelcomCommunicationPreferences.html">BSeR Telcom Communication Preferences</a></td>
+            <td>Negotiated date for cessation of smoking</td>
+            <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
+            
+        </tr>
+        <tr style="height: 20px">
+            <td>Leave message indicator</td>
             <td><a href="StructureDefinition-BSeR-TelcomCommunicationPreferences.html">BSeR Telcom Communication Preferences</a></td>
             <td>Session type</td>
             <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
         </tr>
         <tr style="height: 20px">
-            <td>Leave message indicator</td>
-            <td><a href="StructureDefinition-BSeR-TelcomCommunicationPreferences.html">BSeR Telcom Communication Preferences</a></td>
+            <td></td>
+            <td></td>
             <td>Time since stopped smoking</td>
             <td><a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a></td>
         </tr>
