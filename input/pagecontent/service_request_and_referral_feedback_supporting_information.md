@@ -40,13 +40,13 @@ The following table identifies the aggregation of clinical statement profiles to
         </tr>
         <tr style="height: 20px">
             <td>Patient consent</td>
-            <td><a href="StructureDefinition-bser-PatientConsent.html">BSeR Patient Consent</a></td>
+            <td><a href="StructureDefinition-BSeR-PatientConsent.html">BSeR Patient Consent</a></td>
             <td></td>
             <td></td>
         </tr>
         <tr style="height: 20px">
             <td>Insurance coverage</td>
-            <td><a href="StructureDefinition-bser-Coverage.html">BSeR Coverage</a></td>
+            <td><a href="StructureDefinition-BSeR-Coverage.html">BSeR Coverage</a></td>
             <td></td>
             <td></td>
         </tr>
