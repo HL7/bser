@@ -4,6 +4,7 @@ Id: BSeR-MedicationStatement
 Title: "BSeR Medication Statement"
 Description: "This MedicationStatement profile represents a patient medication history used as supporting information for a patient service request referral."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

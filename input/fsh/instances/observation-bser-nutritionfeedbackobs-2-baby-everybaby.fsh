@@ -1,5 +1,5 @@
 Instance: observation-bser-nutritionfeedbackobs-2-baby-everybaby
-InstanceOf: BSeREarlyChildhoodNutritionFeedbackObservation
+InstanceOf: BSeRReferralObservation
 Title: "Observation - Painful lactation - Baby Everybaby"
 Description: "BSeR Early Childhood Nutrition Feedback Observation: Painful lactation - Baby Everybaby example"
 Usage: #example

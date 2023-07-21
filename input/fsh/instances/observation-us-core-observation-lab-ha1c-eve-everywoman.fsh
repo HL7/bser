@@ -1,7 +1,7 @@
-Instance: observation-bser-ha1c-observation-eve-everywoman
-InstanceOf: BSeRHa1cObservation
+Instance: observation-us-core-observation-lab-ha1c-eve-everywoman
+InstanceOf: USCoreLaboratoryResultObservationProfile
 Title: "Observation - Ha1c - Eve Everywoman"
-Description: "BSeR Ha1c Observation: Eve Everywoman example"
+Description: "US Core Laboratory Result Observation: Ha1c - Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[Laboratory] = $observation-category#laboratory

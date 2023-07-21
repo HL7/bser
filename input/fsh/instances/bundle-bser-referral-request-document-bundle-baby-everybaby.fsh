@@ -13,8 +13,8 @@ Usage: #example
 * entry[=].resource = observation-bser-nutritionobs-baby-everybaby
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-blood-pressure-baby-everybaby"
 * entry[=].resource = observation-us-core-blood-pressure-baby-everybaby
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-body-height-baby-everybaby"
-* entry[=].resource = observation-body-height-baby-everybaby
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-height-baby-everybaby"
+* entry[=].resource = observation-us-core-body-height-baby-everybaby
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-baby-everybaby"
 * entry[=].resource = observation-us-core-body-weight-baby-everybaby
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-blood-pressure-mom-everymom"

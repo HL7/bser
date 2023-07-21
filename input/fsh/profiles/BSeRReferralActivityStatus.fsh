@@ -4,6 +4,7 @@ Id: BSeR-ReferralActivityStatus
 Title: "BSeR Referral Activity Status"
 Description: "This Observation profile represents the state of the referral service request as observed by the referral recipient. It is included as part of the referral feedback as a further elaboration of the business state in task."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

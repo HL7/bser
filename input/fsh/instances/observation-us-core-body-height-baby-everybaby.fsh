@@ -1,4 +1,4 @@
-Instance: observation-body-height-baby-everybaby
+Instance: observation-us-core-body-height-baby-everybaby
 InstanceOf: USCoreBodyHeightProfile
 Title: "Observation - Body Height - Baby Everybaby"
 Description: "US Core Body Height: Baby Everybaby example"

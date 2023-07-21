@@ -1,9 +1,10 @@
-Instance: observation-bser-arthritisfeedbackobservation-2-eve-everywoman
-InstanceOf: BSeRArthritisFeedbackObservation
+Instance: observation-bser-referral-observation-pain-mgmt-eve-everywoman
+InstanceOf: BSeRReferralObservation
 Title: "Observation - Pain Management - Eve Everywoman"
 Description: "BSeR Arthritis Feedback Observation: Pain Management - Eve Everywoman example"
 Usage: #example
 * status = #final
+* category[therapy] = $observation-category#therapy
 * code = $sct#278414003 "Pain management (procedure)"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * subject.display = "Eve Everywoman"

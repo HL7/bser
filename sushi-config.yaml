@@ -88,8 +88,8 @@ groups:
     name: Core Referral Architecture Profiles
     description: Core Referral Architecture Profiles
     resources:
-    - StructureDefinition/ReferralServiceRequest
-    - StructureDefinition/ReferralTask
+    - StructureDefinition/referral-servicerequest
+    - StructureDefinition/referral-task
   workflow-management-profiles:
     name: Workflow Management Profiles
     description: Workflow Management Profiles
@@ -112,42 +112,59 @@ groups:
     - StructureDefinition/BSeR-ReferralFeedbackComposition
     - StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
   supporting-information-profiles:
-    name: Supporting Information Profiles
-    description: Supporting Information Profiles
+    name: Supporting Information Profiles (Request and Feedback)
+    description: Supporting Information Profiles (Request and Feedback)
     resources:
-    - StructureDefinition/BSeR-EarlyChildhoodNutritionObservation
-    - StructureDefinition/BSeR-HA1C-Observation
-    - StructureDefinition/BSeR-NRT-AuthorizationStatus
+    - StructureDefinition/bser-referral-observation
+    # - StructureDefinition/BSeR-EarlyChildhoodNutritionObservation
+    # - StructureDefinition/BSeR-HA1C-Observation
+    # - StructureDefinition/BSeR-NRT-AuthorizationStatus
     - StructureDefinition/BSeR-TelcomCommunicationPreferences
-  supporting-information-feedback-profiles:
-    name: Supporting Information Feedback Profiles
-    description: Supporting Information Feedback Profiles
-    resources:
-    - StructureDefinition/BSeR-ArthritisFeedbackObservation
-    - StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation
+  # supporting-information-feedback-profiles:
+    # name: Supporting Information Feedback Profiles
+    # description: Supporting Information Feedback Profiles
+    # resources:
+    # - StructureDefinition/BSeR-ArthritisFeedbackObservation
+    # - StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation
     - StructureDefinition/BSeR-MedicationStatement
-    - StructureDefinition/BSeR-ParticipationFeedbackObservation
+    # - StructureDefinition/BSeR-ParticipationFeedbackObservation
     - StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication
-    - StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation
+    # - StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation
   other-profiles:
     name: Other Profiles
     description: Other Profiles
     resources:
     - StructureDefinition/BSeR-Coverage
-    - StructureDefinition/BSeR-EducationLevel
+    # - StructureDefinition/BSeR-EducationLevel
     - StructureDefinition/BSeR-PatientConsent
+  use-case-batch-queries-request-bundle-examples:
+    name: Use Case Batch Query Request Bundle Examples
+    description: Examples of batch query request bundles for each use case. These bundles describe the data required for each use case and demonstrate the mechanism to be used to define the use case requirements.
+    resources:
+    - Bundle/bundle-batch-query-arthritis-feedback
+    - Bundle/bundle-batch-query-arthritis-request
+    - Bundle/bundle-batch-query-diabetes-prevention-feedback
+    - Bundle/bundle-batch-query-diabetes-prevention-request
+    - Bundle/bundle-batch-query-early-childhood-nutrition-feedback
+    - Bundle/bundle-batch-query-early-childhood-nutrition-request
+    - Bundle/bundle-batch-query-hypertension-feedback
+    - Bundle/bundle-batch-query-hypertension-request
+    - Bundle/bundle-batch-query-obesity-feedback
+    - Bundle/bundle-batch-query-obesity-request
+    - Bundle/bundle-batch-query-tobacco-use-cessation-feedback
+    - Bundle/bundle-batch-query-tobacco-use-cessation-request
   core-referral-architecture-examples:
     name: Core Referral Architecture Examples
     description: Core Referral Architecture Examples
     resources:
-    - ServiceRequest/servicerequest-referralservicerequest
-    - Task/task-referraltask
+    - ServiceRequest/servicerequest-referral-servicerequest
+    - Task/task-referral-task
   workflow-management-examples:
     name: Workflow Management Examples
     description: Workflow Management Examples
     resources:
     - MessageHeader/messageheader-bser-referralmessageheader
-    - Task/task-bser-referraltask
+    - Task/task-bser-referral-task
   referral-service-request-examples:
     name: Referral Service Request Examples
     description: Referral Service Request Examples
@@ -155,7 +172,7 @@ groups:
     - Bundle/bundle-bser-referral-message-bundle-eve-everywoman
     - Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman
     - Bundle/bundle-bser-referral-request-document-bundle-baby-everybaby
-    - ServiceRequest/servicerequest-bser-referralservicerequest
+    - ServiceRequest/servicerequest-bser-referral-servicerequest
   referral-serivce-request-examples-composition:
     name: "Referral Service Request Examples: Composition"
     description: "Referral Service Request Examples: Composition"
@@ -187,19 +204,19 @@ groups:
     resources:
     - AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman
     - Condition/condition-us-core-cphc-eve-everywoman-hypertension
-    - Observation/observation-bser-ha1c-observation-eve-everywoman
-    - Observation/observation-bser-nrt-authorizationstatus-eve-everywoman
-    - Observation/observation-bser-nutritionfeedbackobs-1-baby-everybaby
+    - Observation/observation-us-core-observation-lab-ha1c-eve-everywoman
+    - Procedure/procedure-us-core-procedure-nicotine-replacement-eve-everywoman
+    - Observation/observation-bser-referral-observation-lactation-baby-everybaby
     - Observation/observation-bser-nutritionfeedbackobs-2-baby-everybaby
     - Observation/observation-bser-nutritionobs-baby-everybaby
     - Observation/observation-bser-telcomcomm-eve-everywoman
-    - Observation/observation-blood-pressure-eve-everywoman-bser
+    - Observation/observation-us-core-blood-pressure-eve-everywoman
     - Observation/observation-us-core-blood-pressure-baby-everybaby
     - Observation/observation-us-core-blood-pressure-mom-everymom
-    - Observation/observation-bmi-eve-everywoman
+    - Observation/observation-us-core-bmi-eve-everywoman
     - Observation/observation-us-core-bmi-mom-everymom
-    - Observation/observation-body-height-baby-everybaby
-    - Observation/observation-body-height-eve-everywoman
+    - Observation/observation-us-core-body-height-baby-everybaby
+    - Observation/observation-us-core-body-height-eve-everywoman
     - Observation/observation-us-core-body-height-mom-everymom
     - Observation/observation-us-core-body-weight-eve-everywoman
     - Observation/observation-us-core-body-weight-baby-everybaby
@@ -216,8 +233,8 @@ groups:
     - Observation/observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman
     - Observation/observation-participationfeedbackobservation-1-eve-everywoman
     - Observation/observation-participationfeedbackobservation-2-eve-everywoman
-    - Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman
-    - Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman
+    - Observation/observation-bser-referral-observation-pain-mgmt-eve-everywoman
+    - Observation/observation-bser-referral-observation-endurance-eve-everywoman
   referral-participant-examples:
     name: Referral Participant Examples
     description: Referral Participant Examples
@@ -241,7 +258,7 @@ groups:
     - Consent/consent-bser-patientconsent-eve-everywoman
     - Coverage/coverage-bser-coverage-eve-everywoman
     - Coverage/coverage-bser-coverage-baby-everybaby
-    - Observation/observation-bser-educationlevel-eve-everywoman
+    - Observation/observation-us-core-social-history-eve-everywoman
   code-systems:
     name: Code Systems
     resources:

@@ -9,10 +9,10 @@ Usage: #example
 * timestamp = "2020-01-07T09:25:00Z"
 * entry[sliceBSeRComposition].fullUrl = "http://example.org/fhir/Composition/composition-bser-referral-feedback-arthritis-everywoman"
 * entry[sliceBSeRComposition].resource = composition-bser-referral-feedback-arthritis-everywoman
-* entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-arthritisfeedbackobservation-1-eve-everywoman"
-* entry[=].resource = observation-bser-arthritisfeedbackobservation-1-eve-everywoman
-* entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-arthritisfeedbackobservation-2-eve-everywoman"
-* entry[=].resource = observation-bser-arthritisfeedbackobservation-2-eve-everywoman
+* entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-referral-observation-endurance-eve-everywoman"
+* entry[=].resource = observation-bser-referral-observation-endurance-eve-everywoman
+* entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-referral-observation-pain-mgmt-eve-everywoman"
+* entry[=].resource = observation-bser-referral-observation-pain-mgmt-eve-everywoman
 * entry[2].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
 * entry[=].resource = practitionerrole-us-core-practitionerrole-referral-recipient
 * entry[3].fullUrl = "http://example.org/fhir/Observation/observation-bser-referralactivitystatus-eve-everywoman"
@@ -23,5 +23,5 @@ Usage: #example
 * entry[=].resource = organization-us-core-organization-saint-luke
 * entry[6].fullUrl = "http://example.org/fhir/Practitioner/practitioner-us-core-practitioner-hailey-eight"
 * entry[=].resource = practitioner-us-core-practitioner-hailey-eight
-* entry[7].fullUrl = "http://example.org/fhir/ServiceRequest/servicerequest-bser-referralservicerequest"
-* entry[=].resource = servicerequest-bser-referralservicerequest
+* entry[7].fullUrl = "http://example.org/fhir/ServiceRequest/servicerequest-bser-referral-servicerequest"
+* entry[=].resource = servicerequest-bser-referral-servicerequest

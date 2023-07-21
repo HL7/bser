@@ -1,1 +1,0 @@
-It is based on the [US Core Medication]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-medication.html) profile and further constrains the Medication.code to a set of tobacco use cessation-specific medications. Medication.status indicates active or inactive use of the medication.

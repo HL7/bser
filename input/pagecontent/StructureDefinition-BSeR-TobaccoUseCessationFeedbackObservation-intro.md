@@ -1,1 +1,0 @@
- Tobacco use cessation feedback observations include quit date, session type, and tobacco free duration.

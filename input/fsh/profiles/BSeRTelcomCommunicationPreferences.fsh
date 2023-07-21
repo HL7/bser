@@ -4,6 +4,7 @@ Id: BSeR-TelcomCommunicationPreferences
 Title: "BSeR Telcom Communication Preferences"
 Description: "This Observation profile represents a the patient's preference with regard to contact via telecommunication (phone/email) such as the best day to call, the best time to call, whether a message can be left."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

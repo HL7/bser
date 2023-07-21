@@ -4,6 +4,7 @@ Id: BSeR-ReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition"
 Description: "This Composition profile represents the clical feedback included in the referral feedback document."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
@@ -49,7 +50,7 @@ Description: "This Composition profile represents the clical feedback included i
     bodyHeight 0..1 and
     bodyWeight 0..1 and
     bmi 0..1
-* section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeRParticipationFeedbackObservation)
+* section[obesityReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(USCoreObservationSocialHistoryProfile)
 * section[obesityReferralFeedbackSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[obesityReferralFeedbackSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[obesityReferralFeedbackSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
@@ -61,7 +62,7 @@ Description: "This Composition profile represents the clical feedback included i
 * section[arthritisReferralFeedbackSupportingInformation].entry ^slicing.discriminator.path = "resolve()"
 * section[arthritisReferralFeedbackSupportingInformation].entry ^slicing.rules = #open
 * section[arthritisReferralFeedbackSupportingInformation].entry contains arthritisFeedbackObservation 0..*
-* section[arthritisReferralFeedbackSupportingInformation].entry[arthritisFeedbackObservation] only Reference(BSeRArthritisFeedbackObservation)
+* section[arthritisReferralFeedbackSupportingInformation].entry[arthritisFeedbackObservation] only Reference(BSeRReferralObservation)
 * section[hypertensionReferralFeedbackSupportingInformation].code 1.. MS
 * section[hypertensionReferralFeedbackSupportingInformation].code = BSeR#HRFSI "Hypertension Referral Feedback Supporting Information"
 * section[hypertensionReferralFeedbackSupportingInformation].entry MS
@@ -87,10 +88,10 @@ Description: "This Composition profile represents the clical feedback included i
     earlyChildhoodNutritionFeedbackObservation 0..* and
     medicationHistory 0..* and
     participationFeedbackObservation 0..*
-* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[earlyChildhoodNutritionFeedbackObservation] only Reference(BSeREarlyChildhoodNutritionFeedbackObservation)
+* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[earlyChildhoodNutritionFeedbackObservation] only Reference(BSeRReferralObservation)
 // Removing because CBOs don't have this information to feed back with
 // * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[medicationHistory] only Reference(MedicationStatement or USCoreMedicationRequestProfile)
-* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeRParticipationFeedbackObservation)
+* section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(USCoreObservationSocialHistoryProfile)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].code 1.. MS
 * section[diabetesPreventionReferralFeedbackSupportingInformation].code = BSeR#DPRFSI "Diabetes Prevention Referral Feedback Supporting Information"
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry MS
@@ -102,7 +103,7 @@ Description: "This Composition profile represents the clical feedback included i
     bodyHeight 0..1 and
     bodyWeight 0..1 and
     bmi 0..1
-* section[diabetesPreventionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(BSeRParticipationFeedbackObservation)
+* section[diabetesPreventionReferralFeedbackSupportingInformation].entry[participationFeedbackObservation] only Reference(USCoreObservationSocialHistoryProfile)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
 * section[diabetesPreventionReferralFeedbackSupportingInformation].entry[bmi] only Reference(USCoreBMIProfile)
@@ -116,4 +117,4 @@ Description: "This Composition profile represents the clical feedback included i
     tobaccoUseCessationFeedbackMedication 0..* and
     tobaccoUseCessationFeedbackObservation 0..*
 * section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry[tobaccoUseCessationFeedbackMedication] only Reference(BSeRTobaccoUseCessationFeedbackMedication)
-* section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry[tobaccoUseCessationFeedbackObservation] only Reference(BSeRTobaccoUseCessationFeedbackObservation)
+* section[tobaccoUseCessationReferralFeedbackSupportingInformation].entry[tobaccoUseCessationFeedbackObservation] only Reference(USCoreObservationSocialHistoryProfile)

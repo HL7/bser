@@ -1,7 +1,7 @@
-Instance: observation-bser-educationlevel-eve-everywoman
-InstanceOf: BSeREducationLevel
+Instance: observation-us-core-social-history-eve-everywoman
+InstanceOf: USCoreObservationSocialHistoryProfile
 Title: "Observation - Education Level - Eve Everywoman"
-Description: "BsER Education Level: Education Level - Eve Everywoman example"
+Description: "US Core Observation Social History: Education Level - Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[us-core/social-history] = $observation-category#social-history "Social History"

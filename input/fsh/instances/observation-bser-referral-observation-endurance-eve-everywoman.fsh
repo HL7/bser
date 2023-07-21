@@ -1,9 +1,10 @@
-Instance: observation-bser-arthritisfeedbackobservation-1-eve-everywoman
-InstanceOf: BSeRArthritisFeedbackObservation
-Title: "BSeR Arthritis Feedback Observation - Endurance Improved - Eve Everywoman"
-Description: "BSeR Arthritis Feedback Observation: Endurance Improved - Eve Everywoman example"
+Instance: observation-bser-referral-observation-endurance-eve-everywoman
+InstanceOf: BSeRReferralObservation
+Title: "BSeR Referral Observation - Arthritis Feedback - Endurance Improved - Eve Everywoman"
+Description: "BSeR Referral Observation: Arthritis Feedback - Endurance Improved - Eve Everywoman example"
 Usage: #example
 * status = #final
+* category[therapy] = $observation-category#therapy
 * code = $sct#406203001 "Endurance (observable entity)"
 * subject.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * subject.display = "Eve Everywoman"

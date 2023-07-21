@@ -4,6 +4,7 @@ Id: BSeR-Coverage
 Title: "BSeR Coverage"
 Description: "This Coverage profile represents identifiers and descriptors of an insurance plan underwriting some or all of the cost of the referral services provided."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

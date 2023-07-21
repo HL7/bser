@@ -1,9 +1,10 @@
 Profile: ReferralTask
 Parent: Task
-Id: ReferralTask
+Id: referral-task
 Title: "Referral Task"
 Description: "This Task profile represents the state of a task containing a referral service request."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

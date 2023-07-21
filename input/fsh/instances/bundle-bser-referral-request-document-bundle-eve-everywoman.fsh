@@ -9,18 +9,18 @@ Usage: #example
 * timestamp = "2020-01-06T22:13:23Z"
 * entry[0].fullUrl = "http://example.org/fhir/Composition/composition-bser-referral-request-arthritis-everywoman"
 * entry[=].resource = composition-bser-referral-request-arthritis-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-blood-pressure-eve-everywoman-bser"
-* entry[=].resource = observation-blood-pressure-eve-everywoman-bser
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-body-height-eve-everywoman"
-* entry[=].resource = observation-body-height-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-blood-pressure-eve-everywoman"
+* entry[=].resource = observation-us-core-blood-pressure-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-height-eve-everywoman"
+* entry[=].resource = observation-us-core-body-height-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"
 * entry[=].resource = practitionerrole-us-core-practitionerrole-referral-initiator
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bmi-eve-everywoman"
-* entry[=].resource = observation-bmi-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bser-educationlevel-eve-everywoman"
-* entry[=].resource = observation-bser-educationlevel-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-eve-everywoman"
-* entry[=].resource = observation-odh-employment-status-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-bmi-eve-everywoman"
+* entry[=].resource = observation-us-core-bmi-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-social-history-eve-everywoman"
+* entry[=].resource = observation-us-core-social-history-eve-everywoman
+// * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-eve-everywoman"
+// * entry[=].resource = observation-odh-employment-status-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
 * entry[=].resource = medicationstatement-bser-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"

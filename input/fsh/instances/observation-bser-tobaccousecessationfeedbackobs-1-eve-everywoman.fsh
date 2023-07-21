@@ -1,5 +1,5 @@
 Instance: observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman
-InstanceOf: BSeRTobaccoUseCessationFeedbackObservation
+InstanceOf: USCoreObservationSocialHistoryProfile
 Title: "Observation - Date for cessation of smoking - Eve Everywoman"
 Description: "BSeR Tobacco Use Cessation Feedback Observation: Date for cessation of smoking - Eve Everywoman exanple"
 Usage: #example

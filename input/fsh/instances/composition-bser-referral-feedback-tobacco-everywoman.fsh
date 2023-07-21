@@ -13,7 +13,7 @@ Usage: #example
 * title = "Referral feedback"
 * section[referralServiceRequestFeedbackSummary].title = "Referral Service Request Feedback Summary"
 * section[referralServiceRequestFeedbackSummary].code = BSeR#RSRFS "CompositionSectionReferralServiceRequestFeedbackSummary"
-* section[referralServiceRequestFeedbackSummary].focus.reference = "ServiceRequest/servicerequest-bser-referralservicerequest"
+* section[referralServiceRequestFeedbackSummary].focus.reference = "ServiceRequest/servicerequest-bser-referral-servicerequest"
 * section[referralServiceRequestFeedbackSummary].entry.reference = "Observation/observation-bser-referralactivitystatus-eve-everywoman"
 * section[tobaccoUseCessationReferralFeedbackSupportingInformation].title = "Tobacco Use Cessation Referral Feedback Supporting Information"
 * section[tobaccoUseCessationReferralFeedbackSupportingInformation].code = BSeR#TUCRFSI "Tobacco Use Cessation Referral Feedback Supporting Information"

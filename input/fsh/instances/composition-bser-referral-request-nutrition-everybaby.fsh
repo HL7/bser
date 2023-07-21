@@ -15,7 +15,7 @@ Usage: #example
 * section[earlyChildhoodNutritionReferralSupportingInformation].code = BSeR#ECNRSIB "Early Childhood Nutrition Referral Supporting Information Baby"
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[earlyChildhoodNutritionObservation].reference = "Observation/observation-bser-nutritionobs-baby-everybaby"
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBloodPressure].reference = "Observation/observation-us-core-blood-pressure-baby-everybaby"
-* section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyHeightLying].reference = "Observation/observation-body-height-baby-everybaby"
+* section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyHeightLying].reference = "Observation/observation-us-core-body-height-baby-everybaby"
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyWeight].reference = "Observation/observation-us-core-body-weight-baby-everybaby"
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code = BSeR#ECNRSIM "Early Childhood Nutrition Referral Supporting Information Mother"
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus.reference = "Patient/patient-us-core-patient-mom-everymom"

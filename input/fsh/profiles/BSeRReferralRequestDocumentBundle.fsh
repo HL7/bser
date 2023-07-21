@@ -4,7 +4,6 @@ Id: BSeR-ReferralRequestDocumentBundle
 Title: "BSeR Referral Request Document Bundle"
 Description: "This Bundle profile represents an BSeR Referral Request Document Bundle. It contains the BSeR Referral Request Composition."
 * ^status = #active
-* ^version = "1.0.0"
 * ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"

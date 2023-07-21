@@ -2,6 +2,10 @@
 SET publisher_jar=publisher.jar
 SET input_cache_path=%CD%\input-cache
 
+rd output /S /Q
+rd temp /S /Q
+rd fsh-generated /S /Q
+
 ECHO Checking internet connection...
 PING tx.fhir.org -4 -n 1 -w 1000 | FINDSTR TTL && GOTO isonline
 ECHO We're offline...

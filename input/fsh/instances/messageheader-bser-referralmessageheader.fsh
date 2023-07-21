@@ -14,4 +14,4 @@ Usage: #example
 * source.contact.value = "+1 (555) 123 4567"
 * source.endpoint = "http://www.saintlukeshealthsystem.org/fhir"
 * reason = $v2-0003#I12 "REF/RRI - Patient referral"
-* focus.reference = "Task/task-bser-referraltask"
+* focus.reference = "Task/task-bser-referral-task"

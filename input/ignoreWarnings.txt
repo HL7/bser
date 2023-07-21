@@ -40,9 +40,9 @@ INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
 INFORMATION: Bundle/bundle-bser-referral-message-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle|2.0.0-ballot
 
 # Not matching is expected behavior - the US Core ServiceRequest profile allows other category codes
-INFORMATION: ServiceRequest/servicerequest-bser-referralservicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
-INFORMATION: ServiceRequest/servicerequest-referralservicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/ReferralServiceRequest|2.0.0-ballot
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[0].resource.entry[7].resource/*ServiceRequest/servicerequest-bser-referralservicerequest*/.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
+INFORMATION: ServiceRequest/servicerequest-bser-referral-servicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
+INFORMATION: ServiceRequest/servicerequest-referral-servicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/referral-servicerequest|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[0].resource.entry[7].resource/*ServiceRequest/servicerequest-bser-referral-servicerequest*/.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
 
 # Not matching is expected behavior - BSeR Coverage only defines two slices
 INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
@@ -63,18 +63,12 @@ INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[8]: 
 INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
 
 
-# US Core Variance - need to find when these were approved
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ArthritisFeedbackObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EducationLevel').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-NRT-AuthorizationStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+# US Core Variance - https://jira.hl7.org/browse/FHIR-41603 (waiting for approval)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/bser-referral-observation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
-# US Core: the US Core Coverage profile does not exist in the version of US Core this IG is dependent on (5.0.1)
+# US Core: the US Core Coverage profile does not exist in the version of US Core this IG is dependent on (5.0.1) - https://jira.hl7.org/browse/FHIR-41603 (waiting for approval)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
 
 # ERROR on Consent: Core Spec issue detailed here: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/IG.20Publication.20Validation.20issue.20-.20Consent.20Profile

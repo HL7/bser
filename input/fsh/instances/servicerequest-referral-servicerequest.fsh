@@ -1,4 +1,4 @@
-Instance: servicerequest-referralservicerequest
+Instance: servicerequest-referral-servicerequest
 InstanceOf: ReferralServiceRequest
 Title: "ServiceRequest - Eve Everywoman"
 Description: "Referral ServiceRequest: Eve Everywoman example"

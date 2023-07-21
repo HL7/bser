@@ -4,6 +4,7 @@ Id: BSeR-ReferralRequestComposition
 Title: "BSeR Referral Request Composition"
 Description: "This Composition profile represents the clical supporting information included in the referral request document."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
@@ -28,16 +29,15 @@ Description: "This Composition profile represents the clical supporting informat
     earlyChildhoodNutritionReferralSupportingInformation 0..1 and
     diabetesPreventionReferralSupportingInformation 0..1 and
     tobaccoUseCessationReferralSupportingInformation 0..1
+* section[otherSupportingInformation] ^short = "Employment Status and Education Level"
 * section[otherSupportingInformation].code 1..
 * section[otherSupportingInformation].code = BSeR#OSI "Other Supporting Information"
 * section[otherSupportingInformation].entry ^slicing.discriminator.type = #profile
 * section[otherSupportingInformation].entry ^slicing.discriminator.path = "resolve()"
 * section[otherSupportingInformation].entry ^slicing.rules = #open
 * section[otherSupportingInformation].entry contains
-    employmentStatus 0..* and
-    educationLevel 0..*
-* section[otherSupportingInformation].entry[employmentStatus] only Reference(EmploymentStatus)
-* section[otherSupportingInformation].entry[educationLevel] only Reference(BSeREducationLevel)
+    employmentStatusOrEducationLevel 1..*
+* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel] only Reference(USCoreObservationSocialHistoryProfile or EmploymentStatus)
 * section[obesityReferralSupportingInformation].code 1..
 * section[obesityReferralSupportingInformation].code = BSeR#ORSI "Obesity Referral Supporting Information"
 * section[obesityReferralSupportingInformation].entry ^slicing.discriminator.type = #profile
@@ -98,7 +98,7 @@ Description: "This Composition profile represents the clical supporting informat
     babyBloodPressure 0..* and
     babyBodyHeightLying 0..* and
     babyBodyWeight 0..*
-* section[earlyChildhoodNutritionReferralSupportingInformation].entry[earlyChildhoodNutritionObservation] only Reference(BSeREarlyChildhoodNutritionObservation)
+* section[earlyChildhoodNutritionReferralSupportingInformation].entry[earlyChildhoodNutritionObservation] only Reference(BSeRReferralObservation)
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyHeightLying] only Reference(USCoreBodyHeightProfile)
 * section[earlyChildhoodNutritionReferralSupportingInformation].entry[babyBodyWeight] only Reference(USCoreBodyWeightProfile)
@@ -137,7 +137,7 @@ Description: "This Composition profile represents the clical supporting informat
     bodyHeight 0..* and
     bodyWeight 0..* and
     bmi 0..*
-* section[diabetesPreventionReferralSupportingInformation].entry[hA1c] only Reference(BSeRHa1cObservation)
+* section[diabetesPreventionReferralSupportingInformation].entry[hA1c] only Reference(USCoreLaboratoryResultObservationProfile)
 * section[diabetesPreventionReferralSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[diabetesPreventionReferralSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[diabetesPreventionReferralSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)
@@ -151,6 +151,6 @@ Description: "This Composition profile represents the clical supporting informat
     nrtAuthorizationStatus 0..* and
     smokingStatus 0..* and
     telcomCommunicationPreferences 0..*
-* section[tobaccoUseCessationReferralSupportingInformation].entry[nrtAuthorizationStatus] only Reference(BSeRNRTAuthorizationStatus)
+* section[tobaccoUseCessationReferralSupportingInformation].entry[nrtAuthorizationStatus] only Reference(USCoreProcedureProfile)
 * section[tobaccoUseCessationReferralSupportingInformation].entry[smokingStatus] only Reference(USCoreSmokingStatusProfile)
 * section[tobaccoUseCessationReferralSupportingInformation].entry[telcomCommunicationPreferences] only Reference(BSeRTelcomCommunicationPreferences) 

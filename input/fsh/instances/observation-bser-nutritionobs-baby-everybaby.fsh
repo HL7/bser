@@ -1,5 +1,5 @@
 Instance: observation-bser-nutritionobs-baby-everybaby
-InstanceOf: BSeREarlyChildhoodNutritionObservation
+InstanceOf: BSeRReferralObservation
 Title: "Observation - Latch to Breast - Baby Everybaby"
 Description: "BSeR Early Childhood Nutrition Observation: Latch to Breast - Baby Everybaby example"
 Usage: #example

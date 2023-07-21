@@ -4,6 +4,7 @@ Id: BSeR-TobaccoUseCessationFeedbackMedication
 Title: "BSeR Tobacco Use Cessation Feedback Medication"
 Description: "This Medication represents a tobacco cessation medication."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"

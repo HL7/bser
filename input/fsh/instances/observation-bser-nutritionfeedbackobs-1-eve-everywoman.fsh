@@ -1,7 +1,7 @@
-Instance: observation-bser-nutritionfeedbackobs-1-baby-everybaby
-InstanceOf: BSeREarlyChildhoodNutritionFeedbackObservation
-Title: "Observation - Decreased lactation - Baby Everybaby"
-Description: "BSeR Early Childhood Nutrition Feedback Observation: Decreased lactation - Baby Everybaby example"
+Instance: observation-bser-referral-observation-lactation-baby-everybaby
+InstanceOf: BSeRReferralObservation
+Title: "Observation - Feedback - Decreased lactation - Baby Everybaby"
+Description: "BSeR Referral Observation: Feedback - Decreased lactation - Baby Everybaby example"
 Usage: #example
 * status = #final
 * code = $sct#364826005 "Finding related to ability to perform breast-feeding (finding)"

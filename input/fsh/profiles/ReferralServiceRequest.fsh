@@ -1,9 +1,10 @@
 Profile: ReferralServiceRequest
 Parent: USCoreServiceRequestProfile
-Id: ReferralServiceRequest
+Id: referral-servicerequest
 Title: "Referral Service Request"
 Description: "This ServiceRequest profile represents a request for a referral."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
