@@ -1314,7 +1314,7 @@ The following table shows the mapping of concepts required for each use case:
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a>
             </td>
             <td>Tobacco Use Cessation Session Type</td>
-            <td></td>
+            <td><a href="https://loinc.org/79213-5/">LOINC#79213-5</a></td>
             <td></td>
             <td></td>
             <td></td>
