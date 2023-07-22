@@ -12,15 +12,15 @@ The following table identifies the aggregation of clinical statement profiles to
 <table style="width:100%" cellspacing="0" border="1">
     <thead>
         <tr style="height: 20px">
-            <th style="background-color:#DCDCDC" rowspan="2">Referral Use Case</th>
-            <th style="background-color:#DCDCDC" colspan="2" align="center">Referral Request</th>
-            <th style="background-color:#DCDCDC" colspan="2" align="center">Referral Feedback</th>
+            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" rowspan="2">Referral Use Case</th>
+            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" colspan="2" align="center">Referral Request</th>
+            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" colspan="2" align="center">Referral Feedback</th>
         </tr>
         <tr style="height: 20px">
-            <th style="background-color:#DCDCDC">Concept</th>
-            <th style="background-color:#DCDCDC">Profile</th>
-            <th style="background-color:#DCDCDC">Concept</th>
-            <th style="background-color:#DCDCDC">Profile</th>
+            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Concept</th>
+            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Profile</th>
+            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Concept</th>
+            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Profile</th>
         </tr>
     </thead>
     <tbody>
@@ -452,21 +452,21 @@ The following table shows the mapping of concepts required for each use case:
 <table style="width:100%" border="1">
     <thead>
         <tr style="background-color:#DCDCDC">
-            <th>Profile</th>
-            <th>Concept</th>
-            <th>Code</th>
-            <th>Diabetes Prevention Request</th>
-            <th>Diabetes Prevention Feedback</th>
-            <th>Obesity Request</th>
-            <th>Obesity Feedback</th>
-            <th>Arthritis Request</th>
-            <th>Arthritis Feedback</th>
-            <th>Hypertension Request</th>
-            <th>Hypertension Feedback</th>
-            <th>Early Childhood Nutrition Request</th>
-            <th>Early Childhood Nutrition Feedback</th>
-            <th>Tobacco Use Cessation Request</th>
-            <th>Tobacco Use Cessation Feedback</th>
+            <th style="text-align: center; vertical-align: middle;">Profile</th>
+            <th style="text-align: center; vertical-align: middle;">Concept</th>
+            <th style="text-align: center; vertical-align: middle;">Code</th>
+            <th style="text-align: center; vertical-align: middle;">Diabetes Prevention Request</th>
+            <th style="text-align: center; vertical-align: middle;">Diabetes Prevention Feedback</th>
+            <th style="text-align: center; vertical-align: middle;">Obesity Request</th>
+            <th style="text-align: center; vertical-align: middle;">Obesity Feedback</th>
+            <th style="text-align: center; vertical-align: middle;">Arthritis Request</th>
+            <th style="text-align: center; vertical-align: middle;">Arthritis Feedback</th>
+            <th style="text-align: center; vertical-align: middle;">Hypertension Request</th>
+            <th style="text-align: center; vertical-align: middle;">Hypertension Feedback</th>
+            <th style="text-align: center; vertical-align: middle;">Early Childhood Nutrition Request</th>
+            <th style="text-align: center; vertical-align: middle;">Early Childhood Nutrition Feedback</th>
+            <th style="text-align: center; vertical-align: middle;">Tobacco Use Cessation Request</th>
+            <th style="text-align: center; vertical-align: middle;">Tobacco Use Cessation Feedback</th>
         </tr>
     </thead>
     <tbody>
