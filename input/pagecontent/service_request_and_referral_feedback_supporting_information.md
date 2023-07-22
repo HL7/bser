@@ -1392,7 +1392,7 @@ The following table shows the mapping of concepts required for each use case:
         </tr>
         <tr>
             <td>
-                <a href="StructureDefinition-bser-PatientConsent.html">BSeR Patient Consent</a>
+                <a href="StructureDefinition-BSeR-PatientConsent.html">BSeR Patient Consent</a>
             </td>
             <td>Patient consent</td>
             <td></td>
@@ -1411,7 +1411,7 @@ The following table shows the mapping of concepts required for each use case:
         </tr>
         <tr>
             <td>
-                <a href="StructureDefinition-bser-Coverage.html">BSeR Coverage</a>
+                <a href="StructureDefinition-BSeR-Coverage.html">BSeR Coverage</a>
             </td>
             <td>Insurance coverage</td>
             <td></td>
