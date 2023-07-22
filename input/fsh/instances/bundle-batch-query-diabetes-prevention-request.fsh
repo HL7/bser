@@ -23,7 +23,7 @@ Usage: #example
 * entry[=].request.url = "/Observation?patient={{patient-id}}&category=vital-signs&code=29463-7"
 // Ha1C Laboratory Result Observation
 * entry[+].request.method = #GET
-* entry[=].request.url = "/Observation?patient={{patient-id}}&category=laboratory&code=4548-4,74246-0,55454-3,41995-2,17855-8,4549-2,17856-6,62388-4,71875-9,59261-8"
+* entry[=].request.url = "/Observation?patient={{patient-id}}&category=laboratory&code=17855-8,17856-6,41995-2,43150-2,4548-4,4549-2,55454-3,59261-8,62388-4,71875-9,86910-7"
 // Employment Status Social History Observation
 * entry[+].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id}}&category=social-history&code=74165-2"

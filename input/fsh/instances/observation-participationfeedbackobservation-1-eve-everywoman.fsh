@@ -1,7 +1,7 @@
 Instance: observation-participationfeedbackobservation-1-eve-everywoman
 InstanceOf: USCoreObservationSocialHistoryProfile
 Title: "Observation - Appointments Attended - Eve Everywoman"
-Description: "BSeR Participation Feedback Observation: Appointments Attended - Eve Everywoman example"
+Description: "US Core Observation Social History: Referral Feedback - Appointments Attended - Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[us-core/social-history] = $observation-category#social-history

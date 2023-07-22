@@ -19,8 +19,6 @@ Usage: #example
 * entry[=].resource = observation-us-core-bmi-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-social-history-eve-everywoman"
 * entry[=].resource = observation-us-core-social-history-eve-everywoman
-// * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-eve-everywoman"
-// * entry[=].resource = observation-odh-employment-status-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
 * entry[=].resource = medicationstatement-bser-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"
@@ -33,3 +31,5 @@ Usage: #example
 * entry[=].resource = practitioner-us-core-practitioner-henry-seven
 * entry[+].fullUrl = "http://example.org/fhir/Organization/organization-us-core-organization-saint-luke"
 * entry[=].resource = organization-us-core-organization-saint-luke
+// * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-eve-everywoman"
+// * entry[=].resource = observation-odh-employment-status-eve-everywoman
