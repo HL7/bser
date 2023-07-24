@@ -16,4 +16,8 @@ Description: "This Bundle profile constrains to be a batch query and allows for 
 
 * type = #batch
 
+* entry 1..*
+* entry.request 1..1
+* entry.search 0..0
+* entry.response 0..0
 * entry.request.extension contains http://hl7.org/fhir/us/bser/StructureDefinition/query-description named description 0..1
