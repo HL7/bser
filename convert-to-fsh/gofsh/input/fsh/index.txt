@@ -1,3 +1,0 @@
-Name                                    Type      File
-BSeRReferralObservation                 Profile   profiles\BSeRReferralObservation.fsh
-bundle-batch-query-diabetes-prevention  Instance  instances\bundle-batch-query-diabetes-prevention.fsh
