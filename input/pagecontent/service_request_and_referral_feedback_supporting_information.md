@@ -14,6 +14,7 @@ The following table identifies the aggregation of clinical statement profiles to
         <tr style="height: 20px">
             <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" rowspan="2">Referral Use Case</th>
             <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" colspan="2" align="center">Referral Request</th>
+            <th rowspan="500" style="width:1; background-color:#DCDCDC" />
             <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" colspan="2" align="center">Referral Feedback</th>
         </tr>
         <tr style="height: 20px">
@@ -30,6 +31,8 @@ The following table identifies the aggregation of clinical statement profiles to
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-EmploymentStatus.html">ODH Employment Status</a>
             </td>
+            <td rowspan="500" style="width:1; background-color:#DCDCDC" />
+            <td/>
             <td />
             <td />
         </tr>
