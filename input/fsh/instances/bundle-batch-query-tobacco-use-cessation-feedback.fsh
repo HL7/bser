@@ -1,6 +1,6 @@
 Instance: bundle-batch-query-tobacco-use-cessation-feedback
 InstanceOf: Bundle
-Title: "Batch Query Bundle - Tobacco Use Cessation Request"
+Title: "Batch Query Bundle - Tobacco Use Cessation Feedback"
 Description: "This bundle is a batch of requests to the FHIR RESTful API for referral feedback supporting information for a tobacco use cessation referral. Each entry is used to represent a RESTful API request."
 Usage: #example
 
