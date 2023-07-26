@@ -1,7 +1,6 @@
 Instance: batchquery-request-diabetes
 InstanceOf: BSeRBatchQuery
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Bundle"
 * type = #batch
 * entry[0].request.method = #GET
 * entry[=].request.url = "/Patient/{PatientID}"
