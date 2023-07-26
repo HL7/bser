@@ -1,5 +1,5 @@
 Instance: bundle-batch-query-hypertension-request
-InstanceOf: Bundle
+InstanceOf: BSeRBatchQuery
 Title: "Batch Query Bundle - Hypertension Request"
 Description: "This bundle is a batch of requests to the FHIR RESTful API for referral request supporting information for a hypertension referral. Each entry is used to represent a RESTful API request."
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: bundle-batch-query-obesity-feedback
-InstanceOf: Bundle
+InstanceOf: BSeRBatchQuery
 Title: "Batch Query Bundle - Obesity Feedback"
 Description: "This bundle is a batch of requests to the FHIR RESTful API for referral feedback supporting information for a obesity referral. Each entry is used to represent a RESTful API request."
 Usage: #example

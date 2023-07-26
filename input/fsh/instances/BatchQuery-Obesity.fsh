@@ -1,5 +1,5 @@
 Instance: batchquery-request-obesity
-InstanceOf: Bundle
+InstanceOf: BSeRBatchQuery
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Bundle"
 * type = #batch

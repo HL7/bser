@@ -1,5 +1,5 @@
 Instance: bundle-batch-query-early-childhood-nutrition-feedback
-InstanceOf: Bundle
+InstanceOf: BSeRBatchQuery
 Title: "Batch Query Bundle - Early Childhood Nutrition Feedback"
 Description: "This bundle is a batch of requests to the FHIR RESTful API for referral feedback supporting information for a early childhood nutrition referral. Each entry is used to represent a RESTful API request."
 Usage: #example
