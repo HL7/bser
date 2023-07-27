@@ -18,5 +18,6 @@ Description: "The FHIR MessageHeader resource is defined as \"the header for a m
 * sender 1..1
 * sender only Reference(USCorePractitionerRoleProfile)
 * reason MS
+* reason from $us-core-procedure-code (extensible)
 * focus 1..1
 * focus only Reference(BSeRReferralTask)

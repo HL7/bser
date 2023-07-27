@@ -6,7 +6,7 @@ Each referral use case is an aggregation of supporting information data items. S
 
 ### Use Case Profiles
 
-The following table identifies the aggregation of clinical statement profiles to referral request and referral feedback supporting information Composition sections:
+The following table identifies the aggregation of supporting information profiles for each use case split between referral request and referral feedback flows:
 
 
 <table style="width:100%" cellspacing="0" border="1">

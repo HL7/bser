@@ -37,3 +37,4 @@ Alias: $2.16.840.1.113762.1.4.1099.41 = http://cts.nlm.nih.gov/fhir/ValueSet/2.1
 Alias: $link-type = http://hl7.org/fhir/link-type
 Alias: $2.16.840.1.114222.4.11.3591 = http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
 Alias: $SubscriberRelationshipCodes = http://hl7.org/fhir/ValueSet/subscriber-relationship
+Alias: $us-core-procedure-code = http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code
