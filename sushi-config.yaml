@@ -116,43 +116,54 @@ groups:
     description: Supporting Information Profiles (Request and Feedback)
     resources:
     - StructureDefinition/bser-referral-observation
-    # - StructureDefinition/BSeR-EarlyChildhoodNutritionObservation
-    # - StructureDefinition/BSeR-HA1C-Observation
-    # - StructureDefinition/BSeR-NRT-AuthorizationStatus
     - StructureDefinition/BSeR-TelcomCommunicationPreferences
-  # supporting-information-feedback-profiles:
-    # name: Supporting Information Feedback Profiles
-    # description: Supporting Information Feedback Profiles
-    # resources:
-    # - StructureDefinition/BSeR-ArthritisFeedbackObservation
-    # - StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation
     - StructureDefinition/BSeR-MedicationStatement
-    # - StructureDefinition/BSeR-ParticipationFeedbackObservation
     - StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication
-    # - StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation
   other-profiles:
     name: Other Profiles
     description: Other Profiles
     resources:
     - StructureDefinition/BSeR-Coverage
-    # - StructureDefinition/BSeR-EducationLevel
     - StructureDefinition/BSeR-PatientConsent
-  use-case-batch-queries-request-bundle-examples:
-    name: Use Case Batch Query Request Bundle Examples
-    description: Examples of batch query request bundles for each use case. These bundles describe the data required for each use case and demonstrate the mechanism to be used to define the use case requirements.
+  batch-query-bundle-referral-request-examples:
+    name: Batch Query Bundle Referral Request Examples
+    description: Examples of batch query Bundles for each use case for referral requests. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request.
+    resources:
+    - Bundle/bundle-batch-query-arthritis-request
+    - Bundle/bundle-batch-query-diabetes-prevention-request
+    - Bundle/bundle-batch-query-early-childhood-nutrition-request
+    - Bundle/bundle-batch-query-hypertension-request
+    - Bundle/bundle-batch-query-obesity-request
+    - Bundle/bundle-batch-query-tobacco-use-cessation-request
+batch-query-bundle-referral-feedback-examples:
+    name: Batch Query Bundle Referral Feedback Examples
+    description: Examples of batch query Bundles for each use case for referral feedback. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for use case specific referral feedback.
     resources:
     - Bundle/bundle-batch-query-arthritis-feedback
-    - Bundle/bundle-batch-query-arthritis-request
     - Bundle/bundle-batch-query-diabetes-prevention-feedback
-    - Bundle/bundle-batch-query-diabetes-prevention-request
     - Bundle/bundle-batch-query-early-childhood-nutrition-feedback
-    - Bundle/bundle-batch-query-early-childhood-nutrition-request
     - Bundle/bundle-batch-query-hypertension-feedback
-    - Bundle/bundle-batch-query-hypertension-request
     - Bundle/bundle-batch-query-obesity-feedback
-    - Bundle/bundle-batch-query-obesity-request
     - Bundle/bundle-batch-query-tobacco-use-cessation-feedback
-    - Bundle/bundle-batch-query-tobacco-use-cessation-request
+  batch-response-bundle-examples:
+    name: Batch Response Supporting Information Bundle Examples for Referral Requests
+    description: Examples of batch query Bundles for each use case. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request or referral feedback.
+    resources:
+    - Bundle/bundle-batch-response-arthritis-request-supp-info
+    - Bundle/bundle-batch-response-diabetes-prevention-request-supp-info
+    - Bundle/bundle-batch-response-childhood-request-supp-info
+    - Bundle/bundle-batch-response-hypertension-request-supp-info
+    - Bundle/bundle-batch-response-obesity-request-supp-info
+    - Bundle/bundle-batch-response-tobacco-use-request-supp-info
+  # name: Batch Response Supporting Information Bundle Examples for Referral Feedback
+  #   description: Examples of batch query Bundles for each use case. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request or referral feedback.
+  #   resources:
+  #   - Bundle/bundle-batch-query-arthritis-feedback
+  #   - Bundle/bundle-batch-query-diabetes-prevention-feedback
+  #   - Bundle/bundle-batch-query-early-childhood-nutrition-feedback
+  #   - Bundle/bundle-batch-query-hypertension-feedback
+  #   - Bundle/bundle-batch-query-obesity-feedback
+  #   - Bundle/bundle-batch-query-tobacco-use-cessation-feedback
   core-referral-architecture-examples:
     name: Core Referral Architecture Examples
     description: Core Referral Architecture Examples
