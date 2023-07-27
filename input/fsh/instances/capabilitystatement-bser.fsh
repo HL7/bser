@@ -80,7 +80,7 @@ Usage: #definition
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[=].interaction[+].code = #delete
 * rest[=].resource[+].type = #MedicationRequest
-* rest[=].resource[=].profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-request"
+* rest[=].resource[=].profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #update
