@@ -1,5 +1,4 @@
 Profile: BSeRBundleBatchQueryResponseReferralSupportingInfo
-upportingInfo
 Parent: Bundle
 Id: bser-bundle-batch-query-response-referral-supporting-info
 Title: "BSeR Batch Query Response Bundle"
