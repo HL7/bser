@@ -14,7 +14,7 @@ Usage: #example
 * section[otherSupportingInformation].title = "Other Supporting Information"
 * section[otherSupportingInformation].code = BSeR#OSI "Other Supporting Information"
 * section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-odh-employment-status-eve-everywoman"
-* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-us-core-social-history-eve-everywoman"
+* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-us-core-social-history-education-eve-everywoman"
 * section[hypertensionReferralSupportingInformation].title = "Hypertension Referral Request Supporting Information"
 * section[hypertensionReferralSupportingInformation].code = BSeR#HRSI "Hypertension Referral Supporting Information"
 * section[hypertensionReferralSupportingInformation].entry[diagnosis].reference = "Condition/condition-us-core-cphc-eve-everywoman-hypertension"

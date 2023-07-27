@@ -14,7 +14,7 @@ Usage: #example
 * section[otherSupportingInformation].title = "Other Supporting Information"
 * section[otherSupportingInformation].code = BSeR#OSI "Other Supporting Information"
 * section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-odh-employment-status-eve-everywoman"
-* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-us-core-social-history-eve-everywoman"
+* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-us-core-social-history-education-eve-everywoman"
 * section[obesityReferralSupportingInformation].title = "Obesity Referral Request Supporting Information"
 * section[obesityReferralSupportingInformation].code = BSeR#ORSI "Obesity Referral Supporting Information"
 * section[obesityReferralSupportingInformation].entry[allergyIntolerance].reference = "AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"

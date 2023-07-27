@@ -258,7 +258,7 @@ groups:
     - Consent/consent-bser-patientconsent-eve-everywoman
     - Coverage/coverage-bser-coverage-eve-everywoman
     - Coverage/coverage-bser-coverage-baby-everybaby
-    - Observation/observation-us-core-social-history-eve-everywoman
+    - Observation/observation-us-core-social-history-education-eve-everywoman
   code-systems:
     name: Code Systems
     resources:

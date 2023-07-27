@@ -56,7 +56,7 @@ medicationstatement-bser-eve-everywoman                                         
 messageheader-bser-referralmessageheader                                            Instance    instances\messageheader-bser-referralmessageheader.fsh
 observation-bser-referral-observation-endurance-eve-everywoman                      Instance    instances\observation-bser-referral-observation-endurance-eve-everywoman.fsh
 observation-bser-referral-observation-pain-mgmt-eve-everywoman                      Instance    instances\observation-bser-referral-observation-pain-mgmt-eve-everywoman.fsh
-observation-us-core-social-history-eve-everywoman                                      Instance    instances\observation-us-core-social-history-eve-everywoman.fsh
+observation-us-core-social-history-education-eve-everywoman                                      Instance    instances\observation-us-core-social-history-education-eve-everywoman.fsh
 observation-us-core-observation-lab-ha1c-eve-everywoman                                    Instance    instances\observation-us-core-observation-lab-ha1c-eve-everywoman.fsh
 procedure-us-core-procedure-nicotine-replacement-eve-everywoman                             Instance    instances\procedure-us-core-procedure-nicotine-replacement-eve-everywoman.fsh
 observation-bser-referral-observation-lactation-baby-everybaby                              Instance    instances\observation-bser-referral-observation-lactation-baby-everybaby.fsh

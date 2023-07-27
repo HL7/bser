@@ -17,8 +17,8 @@ Usage: #example
 * entry[=].resource = practitionerrole-us-core-practitionerrole-referral-initiator
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-bmi-eve-everywoman"
 * entry[=].resource = observation-us-core-bmi-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-social-history-eve-everywoman"
-* entry[=].resource = observation-us-core-social-history-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-social-history-education-eve-everywoman"
+* entry[=].resource = observation-us-core-social-history-education-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
 * entry[=].resource = medicationstatement-bser-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"

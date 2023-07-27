@@ -6,7 +6,7 @@ Usage: #example
 * type = #message
 * entry[messageHeader].fullUrl = "MessageHeader/messageheader-bser-referralmessageheader"
 * entry[messageHeader].resource = messageheader-bser-referralmessageheader
-// * entry[sliceEmploymentStatus].fullUrl = "Observation/observation-odh-employment-status-eve-everywoman"
+// * entry[sliceEmploymentStatus].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-eve-everywoman"
 // * entry[sliceEmploymentStatus].resource = observation-odh-employment-status-eve-everywoman
 // * entry[1].fullUrl = "ServiceRequest/servicerequest-bser-referral-servicerequest"
 // * entry[=].resource = servicerequest-bser-referral-servicerequest

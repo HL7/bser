@@ -1,4 +1,4 @@
-Instance: observation-us-core-social-history-eve-everywoman
+Instance: observation-us-core-social-history-education-eve-everywoman
 InstanceOf: USCoreObservationSocialHistoryProfile
 Title: "Observation - Education Level - Eve Everywoman"
 Description: "US Core Observation Social History: Education Level - Eve Everywoman example"

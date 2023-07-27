@@ -84,7 +84,7 @@
 <artifact id="Observation/observation-us-core-body-height-baby-everybaby" key="Observation-observation-us-core-body-height-baby-everybaby" name="Observation - Body Height - Baby Everybaby"/>
 <artifact id="Observation/observation-us-core-body-height-eve-everywoman" key="Observation-observation-us-core-body-height-eve-everywoman" name="Observation - Body Height - Eve Everywoman"/>
 <artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" name="Observation - Date for cessation of smoking - Eve Everywoman"/>
-<artifact id="Observation/observation-us-core-social-history-eve-everywoman" key="Observation-observation-us-core-social-history-eve-everywoman" name="Observation - Education Level - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-social-history-education-eve-everywoman" key="Observation-observation-us-core-social-history-education-eve-everywoman" name="Observation - Education Level - Eve Everywoman"/>
 <artifact id="Observation/observation-odh-employment-status-eve-everywoman" key="Observation-observation-odh-employment-status-eve-everywoman" name="Observation - Eve Everywoman - Employed"/>
 <artifact id="Observation/observation-bser-referral-observation-lactation-baby-everybaby" key="Observation-observation-bser-referral-observation-lactation-baby-everybaby" name="Observation - Feedback - Decreased lactation - Baby Everybaby"/>
 <artifact id="Observation/observation-us-core-observation-lab-ha1c-eve-everywoman" key="Observation-observation-us-core-observation-lab-ha1c-eve-everywoman" name="Observation - Ha1c - Eve Everywoman"/>

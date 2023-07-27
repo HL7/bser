@@ -14,7 +14,7 @@ Usage: #example
 * section[otherSupportingInformation].title = "Other Supporting Information"
 * section[otherSupportingInformation].code = BSeR#OSI "Other Supporting Information"
 * section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-odh-employment-status-eve-everywoman"
-* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-us-core-social-history-eve-everywoman"
+* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-us-core-social-history-education-eve-everywoman"
 * section[tobaccoUseCessationReferralSupportingInformation].title = "Tobacco Cessation Referral Request Supporting Information"
 * section[tobaccoUseCessationReferralSupportingInformation].code = BSeR#TUCRSI "Tobacco Use Cessation Referral Supporting Information"
 * section[tobaccoUseCessationReferralSupportingInformation].entry[nrtAuthorizationStatus].reference = "Procedure/procedure-us-core-procedure-nicotine-replacement-eve-everywoman"
