@@ -1,5 +1,5 @@
 Instance: bundle-batch-query-diabetes-prevention-request
-InstanceOf: BSeRBatchQuery
+InstanceOf: BSeRBundleBatchQueryReferralSupportingInfo
 Title: "Batch Query Bundle - Diabetes Prevention Request"
 Description: "This bundle is a batch of requests to the FHIR RESTful API for referral request supporting information for a diabetes prevention referral. Each entry is used to represent a RESTful API request."
 Usage: #example

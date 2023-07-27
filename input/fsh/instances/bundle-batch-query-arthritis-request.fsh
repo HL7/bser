@@ -1,13 +1,15 @@
 Instance: bundle-batch-query-arthritis-request
-InstanceOf: BSeRBatchQuery
+InstanceOf: BSeRBundleBatchQueryReferralSupportingInfo
 Title: "Batch Query Bundle - Arthritis Request"
 Description: "This bundle is a batch of requests to the FHIR RESTful API for referral request supporting information for a arthritis referral. Each entry is used to represent a RESTful API request."
 Usage: #example
 
 * type = #batch
 
-// Each entry is used to represent a RESTful API request.This request retrieves a single Patient resource
-* entry[0].request.method = #GET
+// Patient
+* entry[0].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
+* entry[=].request.extension.valueString = "Patient"
+* entry[=].request.method = #GET
 * entry[=].request.url = "/Patient/{{patient-id}}"
 
 // Blood Pressure Vital Sign Observation
