@@ -10,7 +10,7 @@ The following table identifies the aggregation of clinical statement profiles to
 
 
 <table style="width:100%" cellspacing="0" border="1">
-    <thead>
+    <thead border="1">
         <tr style="height: 20px">
             <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" rowspan="2">Referral Use Case</th>
             <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" colspan="2" align="center">Referral Request</th>
@@ -24,7 +24,7 @@ The following table identifies the aggregation of clinical statement profiles to
             <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Profile</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody border="1">
         <tr style="height: 20px">
             <td rowspan="4">All</td>
             <td>Employment status</td>
