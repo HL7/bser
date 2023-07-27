@@ -1,7 +1,7 @@
 Instance: bundle-batch-query-arthritis-feedback
 InstanceOf: BSeRBundleBatchQueryReferralSupportingInfo
 Title: "Batch Query Bundle - Diabetes Prevention Feedback"
-Description: "This bundle is a batch of requests to the FHIR RESTful API for referral feedback supporting information for an arthritis referral. Each entry is used to represent a RESTful API request."
+Description: "This Bundle is a batch of requests to the FHIR RESTful API for referral feedback supporting information for an arthritis referral. Each entry is used to represent a RESTful API request."
 Usage: #example
 
 * type = #batch

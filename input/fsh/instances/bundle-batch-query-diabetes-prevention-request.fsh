@@ -1,13 +1,15 @@
 Instance: bundle-batch-query-diabetes-prevention-request
 InstanceOf: BSeRBundleBatchQueryReferralSupportingInfo
-Title: "Batch Query Bundle - Diabetes Prevention Request"
-Description: "This bundle is a batch of requests to the FHIR RESTful API for referral request supporting information for a diabetes prevention referral. Each entry is used to represent a RESTful API request."
+Title: "Batch Query Bundle - Diabetes Prevention Request Supporting Information Queries"
+Description: "This Bundle is a batch of queries for definition and/or retrieval of supporting information for a diabetes prevention referral request. Each entry is used to represent a RESTful API request."
 Usage: #example
 
 * type = #batch
 
-// Each entry is used to represent a RESTful API request.This request retrieves a single Patient resource
-* entry[0].request.method = #GET
+// Patient
+* entry[0].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
+* entry[=].request.extension.valueString = "Patient"
+* entry[=].request.method = #GET
 * entry[=].request.url = "/Patient/{{patient-id}}"
 
 // Blood Pressure Vital Sign Observation
@@ -51,15 +53,3 @@ Usage: #example
 * entry[=].request.extension.valueString = "Education Level"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id}}&category=social-history&code=82589-3"
-
-// Patient Consent and Consent.performer
-* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
-* entry[=].request.extension.valueString = "Patient Consent"
-* entry[=].request.method = #GET
-* entry[=].request.url = "/Consent?patient={{patient-id}}&_include=Consent:performer"
-
-// Insurance Coverage and Coverage.subscriber
-* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
-* entry[=].request.extension.valueString = "Insurance Coverage"
-* entry[=].request.method = #GET
-* entry[=].request.url = "/Coverage?patient={{patient-id}}_include=Coverage:subscriber"

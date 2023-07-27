@@ -1,7 +1,7 @@
 Instance: bundle-batch-query-early-childhood-nutrition-request
 InstanceOf: BSeRBundleBatchQueryReferralSupportingInfo
-Title: "Batch Query Bundle - Early Childhood Nutrition Request"
-Description: "This bundle is a batch of requests to the FHIR RESTful API for referral request supporting information for a early childhood nutrition referral. Each entry is used to represent a RESTful API request."
+Title: "Batch Query Bundle - Early Childhood Nutrition Request Supporting Information Queries"
+Description: "This Bundle is a batch of queries for definition and/or retrieval of supporting information for an early childhood nutrition referral request. Each entry is used to represent a RESTful API request."
 Usage: #example
 
 * type = #batch
@@ -79,8 +79,6 @@ Usage: #example
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id-mother}}&code=335389008"
 
-
-
 // Employment Status Social History Observation - Mother
 * entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Employment Status - Mother"
@@ -92,15 +90,3 @@ Usage: #example
 * entry[=].request.extension.valueString = "Education Level - Mother"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id-mother}}&category=social-history&code=82589-3"
-
-// Patient Consent and Consent.performer - Mother
-* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
-* entry[=].request.extension.valueString = "Patient Consent - Mother (on behalf of baby)"
-* entry[=].request.method = #GET
-* entry[=].request.url = "/Consent?patient={{patient-id-mother}}&_include=Consent:performer"
-
-// Insurance Coverage and Coverage.subscriber - Mother (on behalf of baby)
-* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
-* entry[=].request.extension.valueString = "Insurance Coverage - Mother (on behalf of baby)"
-* entry[=].request.method = #GET
-* entry[=].request.url = "/Coverage?patient={{patient-id-mother}}_include=Coverage:subscriber"

@@ -1,8 +1,8 @@
-Profile: BSeRBundleBatchQueryResponseReferralSupportingInfo
+Profile: BSeRBundleBatchResponseReferralSupportingInfo
 Parent: Bundle
-Id: bser-bundle-batch-query-response-referral-supporting-info
-Title: "BSeR Batch Query Response Bundle"
-Description: "This Bundle profile is of type batch, is used to contain the supporting information that is the response to the use case specific referral request and feedback batch queries."
+Id: bser-bundle-batch-response-referral-supporting-info
+Title: "BSeR Bundle Batch Response Referral Supporting Information"
+Description: "This Bundle profile is of type batch-response, is used to contain the supporting information that is the response to a use case specific referral request or feedback batch query Bundle."
 
 * meta.profile 1..*
 * meta.profile ^slicing.discriminator.type = #pattern
