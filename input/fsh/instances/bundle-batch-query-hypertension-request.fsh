@@ -13,31 +13,31 @@ Usage: #example
 * entry[=].request.url = "/Patient/{{patient-id}}"
 
 // Blood Pressure Vital Sign Observation
-* entry[+].request.extension.url = "$query-description-url"
+* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Blood Pressure"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id}}&.category=vital-signs&code=85354-9"
 
 // Body Height Vital Sign Observation
-* entry[+].request.extension.url = "$query-description-url"
+* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Body Height"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id}}&category=vital-signs&code=8302-2"
 
 // BMI Vital Sign Observation
-* entry[+].request.extension.url = "$query-description-url"
+* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Body Mass Index"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id}}&category=vital-signs&code=39156-5"
 
 // Body Weight Observation
-* entry[+].request.extension.url = "$query-description-url"
+* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Body Mass Index"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id}}&category=vital-signs&code=29463-7"
 
 // Diagnosis - Hypertension
-* entry[+].request.extension.url = "$query-description-url"
+* entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Diangosis - Hypertension"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Condition?patient={{patient-id}}&category=problem-list-item,health-concern&codein=https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1032.9/expansion/Latest"
