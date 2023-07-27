@@ -1,4 +1,4 @@
-Instance: bundle-batch-response-arthritis-request-supp-info
+Instance: bundle-batch-query-hypertension-request-response-supp-info
 InstanceOf: BSeRBundleBatchResponseReferralSupportingInfo
 Title: "Batch Response Bundle - Arthritis Request Supporting Information"
 Description: "This Bundle is a batch-response of resources making up the supporting information for an arthritis referral request. It is in reponse to the corresponding batch query Bundle."
