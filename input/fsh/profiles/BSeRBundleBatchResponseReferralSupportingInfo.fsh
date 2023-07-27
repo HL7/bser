@@ -12,7 +12,7 @@ Description: "This Bundle profile is of type batch-response, is used to contain 
 * meta.profile ^slicing.rules = #open
 * meta.profile ^comment = "meta.profile is required as a matter of convenience of receiving systems. The meta.profile SHALL be used by the Server to hint/assert/declare that this instance conforms to the stated profiles (with business versions). meta.profile does not capture any business logic, processing directives, or semantics (for example, inpatient or outpatient). "
 * meta.profile contains asserted 1..1
-* meta.profile[asserted] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-BatchQuery-Response"
+* meta.profile[asserted] = "http://hl7.org/fhir/us/bser/StructureDefinition/bser-bundle-batch-response-referral-supporting-info"
 
 * type = #batch-response
 
