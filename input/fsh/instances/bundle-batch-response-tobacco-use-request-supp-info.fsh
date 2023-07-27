@@ -10,28 +10,16 @@ Usage: #example
 * entry[=].resource = patient-us-core-patient-eve-everywoman
 * entry[=].response.status = "202 OK"
 
-* entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"
-* entry[=].resource = allergyintolerance-us-core-allergyint-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Procedure/procedure-us-core-procedure-nicotine-replacement-eve-everywoman"
+* entry[=].resource = procedure-us-core-procedure-nicotine-replacement-eve-everywoman
 * entry[=].response.status = "202 OK"
 
-* entry[+].fullUrl = "MedicationStatement/medicationstatement-bser-eve-everywoman"
-* entry[=].resource = medicationstatement-bser-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-smokingstatus-eve-everywoman"
+* entry[=].resource = observation-us-core-smokingstatus-eve-everywoman
 * entry[=].response.status = "202 OK"
 
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-blood-pressure-eve-everywoman"
-* entry[=].resource = observation-us-core-blood-pressure-eve-everywoman
-* entry[=].response.status = "202 OK"
-
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-height-eve-everywoman"
-* entry[=].resource = observation-us-core-body-height-eve-everywoman
-* entry[=].response.status = "202 OK"
-
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"
-* entry[=].resource = observation-us-core-body-weight-eve-everywoman
-* entry[=].response.status = "202 OK"
-
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-bmi-eve-everywoman"
-* entry[=].resource = observation-us-core-bmi-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bser-telcomcomm-eve-everywoman"
+* entry[=].resource = observation-bser-telcomcomm-eve-everywoman
 * entry[=].response.status = "202 OK"
 
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-eve-everywoman"
@@ -41,4 +29,3 @@ Usage: #example
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-social-history-education-eve-everywoman"
 * entry[=].resource = observation-us-core-social-history-education-eve-everywoman
 * entry[=].response.status = "202 OK"
-

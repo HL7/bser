@@ -14,7 +14,7 @@ Usage: #example
 * entry[=].resource = allergyintolerance-us-core-allergyint-eve-everywoman
 * entry[=].response.status = "202 OK"
 
-* entry[+].fullUrl = "MedicationStatement/medicationstatement-bser-eve-everywoman"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
 * entry[=].resource = medicationstatement-bser-eve-everywoman
 * entry[=].response.status = "202 OK"
 
