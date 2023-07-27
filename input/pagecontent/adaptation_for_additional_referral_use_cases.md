@@ -4,7 +4,7 @@ The BSeR IG includes specifications to support the information needs of six spec
 
 In order not to restrict this guide to any set of use cases, it has been designed to be extensible. 
 
-[Batch query Bundles]({{site.date.fhir.path}}bundle.html#transaction) are used to store queries to both define and, if a query paradigm is being followed, pull the data required. This [Use Case Profiles table](service_request_and_referral_feedback_supporting_information.html#use-case-profiles) shows how each use case utilizes different sets of profiles for it's referral request and referral feedback needs.
+[Batch query Bundles]({{site.data.fhir.path}}bundle.html#transaction) are used to store queries to both define and, if a query paradigm is being followed, pull the data required. This [Use Case Profiles table](service_request_and_referral_feedback_supporting_information.html#use-case-profiles) shows how each use case utilizes different sets of profiles for it's referral request and referral feedback needs.
 
 These use cases are illustrated in [examples of batch query Bundles for referral request supporting information](artifacts.html#batch-query-bundle-referral-request-examples) and [examples of batch query Bundles for referral feedback supporing information](artifacts.html#batch-query-bundle-referral-feedback-examples).
 
