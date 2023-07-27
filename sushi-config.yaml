@@ -86,47 +86,48 @@ menu:
 groups:
   core-referral-architecture-profiles:
     name: Core Referral Architecture Profiles
-    description: Core Referral Architecture Profiles
+    # description: Core Referral Architecture Profiles
     resources:
-    - StructureDefinition/referral-servicerequest
     - StructureDefinition/referral-task
+    - StructureDefinition/referral-servicerequest
   workflow-management-profiles:
     name: Workflow Management Profiles
-    description: Workflow Management Profiles
+    # description: Workflow Management Profiles
     resources:
     - StructureDefinition/BSeR-ReferralMessageHeader
     - StructureDefinition/BSeR-ReferralTask
   referral-service-request-profiles:
     name: Referral Service Request Profiles
-    description: Referral Service Request Profiles
+    # description: Referral Service Request Profiles
     resources:
-    - StructureDefinition/BSeR-ReferralMessageBundle
+    - StructureDefinition/BSeR-ReferralServiceRequest
     - StructureDefinition/BSeR-ReferralRequestComposition
     - StructureDefinition/BSeR-ReferralRequestDocumentBundle
-    - StructureDefinition/BSeR-ReferralServiceRequest
+    - StructureDefinition/BSeR-ReferralMessageBundle
   referral-service-request-feedback-profiles:
     name: Referral Service Request Feedback Profiles
-    description: Referral Service Request Feedback Profiles
+    # description: Referral Service Request Feedback Profiles
     resources:
     - StructureDefinition/BSeR-ReferralActivityStatus
     - StructureDefinition/BSeR-ReferralFeedbackComposition
     - StructureDefinition/BSeR-ReferralFeedbackDocumentBundle
   supporting-information-profiles:
     name: Supporting Information Profiles (Request and Feedback)
-    description: Supporting Information Profiles (Request and Feedback)
+    # description: Supporting Information Profiles (Request and Feedback)
     resources:
+    - StructureDefinition/bser-bundle-batch-query-referral-supporting-info
     - StructureDefinition/bser-referral-observation
     - StructureDefinition/BSeR-TelcomCommunicationPreferences
     - StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication
   other-profiles:
     name: Other Profiles
-    description: Other Profiles
+    # description: Other Profiles
     resources:
     - StructureDefinition/BSeR-Coverage
     - StructureDefinition/BSeR-PatientConsent
   batch-query-bundle-referral-request-examples:
     name: Batch Query Bundle Referral Request Examples
-    description: Examples of batch query Bundles for each use case for referral requests. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request.
+    description: Examples of referral request batch query Bundles for each use case described in the BSeR IG. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request.
     resources:
     - Bundle/bundle-batch-query-arthritis-request
     - Bundle/bundle-batch-query-diabetes-prevention-request
@@ -136,7 +137,7 @@ groups:
     - Bundle/bundle-batch-query-tobacco-use-cessation-request
   batch-query-bundle-referral-feedback-examples:
     name: Batch Query Bundle Referral Feedback Examples
-    description: Examples of batch query Bundles for each use case for referral feedback. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for use case specific referral feedback.
+    description: Examples of referral feedback batch query Bundles for each use case described in the BSeR IG. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for use case specific referral feedback.
     resources:
     - Bundle/bundle-batch-query-arthritis-feedback
     - Bundle/bundle-batch-query-diabetes-prevention-feedback
@@ -144,16 +145,16 @@ groups:
     - Bundle/bundle-batch-query-hypertension-feedback
     - Bundle/bundle-batch-query-obesity-feedback
     - Bundle/bundle-batch-query-tobacco-use-cessation-feedback
-  batch-response-bundle-examples:
-    name: Batch Response Supporting Information Bundle Examples for Referral Requests
-    description: Examples of batch query Bundles for each use case. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request or referral feedback.
-    resources:
-    - Bundle/bundle-batch-response-arthritis-request-supp-info
-    - Bundle/bundle-batch-response-diabetes-prevention-request-supp-info
-    - Bundle/bundle-batch-response-early-childhood-request-supp-info
-    - Bundle/bundle-batch-response-hypertension-request-supp-info
-    - Bundle/bundle-batch-response-obesity-request-supp-info
-    - Bundle/bundle-batch-response-tobacco-use-request-supp-info
+  # batch-response-bundle-examples:
+  #   name: Batch Response Supporting Information Bundle Examples for Referral Requests
+  #   description: Examples of batch query Bundles for each use case. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request or referral feedback.
+  #   resources:
+  #   - Bundle/bundle-batch-response-arthritis-request-supp-info
+  #   - Bundle/bundle-batch-response-diabetes-prevention-request-supp-info
+  #   - Bundle/bundle-batch-response-early-childhood-request-supp-info
+  #   - Bundle/bundle-batch-response-hypertension-request-supp-info
+  #   - Bundle/bundle-batch-response-obesity-request-supp-info
+  #   - Bundle/bundle-batch-response-tobacco-use-request-supp-info
   # name: Batch Response Supporting Information Bundle Examples for Referral Feedback
   #   description: Examples of batch query Bundles for each use case. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for a use case specific referral request or referral feedback.
   #   resources:
@@ -165,19 +166,19 @@ groups:
   #   - Bundle/bundle-batch-query-tobacco-use-cessation-feedback
   core-referral-architecture-examples:
     name: Core Referral Architecture Examples
-    description: Core Referral Architecture Examples
+    # description: Core Referral Architecture Examples
     resources:
     - ServiceRequest/servicerequest-referral-servicerequest
     - Task/task-referral-task
   workflow-management-examples:
     name: Workflow Management Examples
-    description: Workflow Management Examples
+    # description: Workflow Management Examples
     resources:
     - MessageHeader/messageheader-bser-referralmessageheader
     - Task/task-bser-referral-task
   referral-service-request-examples:
     name: Referral Service Request Examples
-    description: Referral Service Request Examples
+    # description: Referral Service Request Examples
     resources:
     - Bundle/bundle-bser-referral-message-bundle-eve-everywoman
     - Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman
@@ -185,7 +186,7 @@ groups:
     - ServiceRequest/servicerequest-bser-referral-servicerequest
   referral-serivce-request-examples-composition:
     name: "Referral Service Request Examples: Composition"
-    description: "Referral Service Request Examples: Composition"
+    # description: "Referral Service Request Examples: Composition"
     resources:
     - Composition/composition-bser-referral-request-arthritis-everywoman
     - Composition/composition-bser-referral-request-diabetes-everywoman
@@ -195,13 +196,13 @@ groups:
     - Composition/composition-bser-referral-request-nutrition-everybaby
   referral-service-request-feedback-examples:
     name: Referral Service Request Feedback Examples
-    description: Referral Service Request Feedback Examples
+    # description: Referral Service Request Feedback Examples
     resources:
     - Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
     - Observation/observation-bser-referralactivitystatus-eve-everywoman
   referral-service-request-feedback-examples-composition:
     name: "Referral Service Request Feedback Examples: Composition"
-    description: "Referral Service Request Feedback Examples: Composition"
+    # description: "Referral Service Request Feedback Examples: Composition"
     resources:
     - Composition/composition-bser-referral-feedback-arthritis-everywoman
     - Composition/composition-bser-referral-feedback-diabetes-everywoman
@@ -210,7 +211,7 @@ groups:
     - Composition/composition-bser-referral-feedback-tobacco-everywoman
   supporting-information-examples:
     name: Supporting Information Examples
-    description: Supporting Information Examples
+    # description: Supporting Information Examples
     resources:
     - AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman
     - Condition/condition-us-core-cphc-eve-everywoman-hypertension
@@ -236,7 +237,7 @@ groups:
     - Observation/observation-us-core-smokingstatus-eve-everywoman
   supporting-information-feedback-examples:
     name: Supporting Information Feedback Examples
-    description: Supporting Information Feedback Examples
+    # description: Supporting Information Feedback Examples
     resources:
     - Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman
     - MedicationRequest/medicationrequest-us-core-medicationrequest-eve-everywoman
@@ -248,7 +249,7 @@ groups:
     - Observation/observation-bser-referral-observation-endurance-eve-everywoman
   referral-participant-examples:
     name: Referral Participant Examples
-    description: Referral Participant Examples
+    # description: Referral Participant Examples
     resources:
     - Location/location-us-core-location-st-luke
     - Organization/organization-us-core-organization-acme-lab
