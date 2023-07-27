@@ -1,4 +1,4 @@
-The BSeR IG illustrates the inclusion of service request content profiles for six representative use cases. Detailed elsewhere in this guide is the context for extension of BSeR for use by other implementation guides.
+The BSeR IG illustrates the inclusion of service request content profiles for six representative use cases. See [Adaptation for Additional Referral Use Cases](adaptation_for_additional_referral_use_cases.html) for details on extension of BSeR for use by other applications/programs.
 
 The selected use cases have overlapping information needs that demonstrate the concepts of parsimonious partitioning and resource profile reuse.
 
