@@ -172,7 +172,7 @@ Each referral use case requires that certain information items accompany the ser
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a>
             </td>
             <td>Allergies</td>
-            <td />
+            <td>All allergies</td>
             <td />
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
@@ -184,8 +184,10 @@ Each referral use case requires that certain information items accompany the ser
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a>
             </td>
-            <td>Diagnosis</td>
-            <td />
+            <td>Diagnosis - Hypertension</td>
+            <td>
+                <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1032.9/expansion/Latest">Hypertension Value Set</a>
+            </td>
             <td />
             <td />
             <td />
@@ -243,7 +245,7 @@ Each referral use case requires that certain information items accompany the ser
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
             </td>
             <td>Baby's birthdate</td>
-            <td />
+            <td>n/a</td>
             <td />
             <td />
             <td />
@@ -256,7 +258,7 @@ Each referral use case requires that certain information items accompany the ser
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
             </td>
             <td>Baby's name</td>
-            <td />
+            <td>n/a</td>
             <td />
             <td />
             <td />
@@ -269,7 +271,7 @@ Each referral use case requires that certain information items accompany the ser
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
             </td>
             <td>Baby's sex</td>
-            <td />
+            <td>n/a</td>
             <td />
             <td />
             <td />
@@ -374,14 +376,13 @@ Each referral use case requires that certain information items accompany the ser
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
-            <td style="text-align: center; vertical-align: middle;">●</td>
         </tr>
         <tr>
             <td>
                 <a href="StructureDefinition-BSeR-PatientConsent.html">BSeR Patient Consent</a>
             </td>
             <td>Patient consent</td>
-            <td />
+            <td>n/a</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
@@ -394,7 +395,7 @@ Each referral use case requires that certain information items accompany the ser
                 <a href="StructureDefinition-BSeR-Coverage.html">BSeR Coverage</a>
             </td>
             <td>Insurance coverage</td>
-            <td />
+            <td>n/a</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
