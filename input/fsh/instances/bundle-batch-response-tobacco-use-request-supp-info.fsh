@@ -1,7 +1,7 @@
-Instance: bundle-batch-response-diabetes-prevention-request-supp-info
+Instance: bundle-batch-response-tobacco-use-request-supp-info
 InstanceOf: BSeRBundleBatchResponseReferralSupportingInfo
-Title: "Batch Response Bundle - Diabetes Prevention Request Supporting Information"
-Description: "This Bundle is a batch-response of resources making up the supporting information for an diabetes prevention referral request. It is in reponse to the corresponding batch query Bundle."
+Title: "Batch Response Bundle - Arthritis Request Supporting Information"
+Description: "This Bundle is a batch-response of resources making up the supporting information for an arthritis referral request. It is in reponse to the corresponding batch query Bundle."
 Usage: #example
 * meta.lastUpdated = "2023-07-18T01:43:33Z"
 * type = #batch-response
@@ -10,26 +10,29 @@ Usage: #example
 * entry[=].resource = patient-us-core-patient-eve-everywoman
 * entry[=].response.status = "202 OK"
 
+* entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"
+* entry[=].resource = allergyintolerance-us-core-allergyint-eve-everywoman
+* entry[=].response.status = "202 OK"
+
+* entry[+].fullUrl = "MedicationStatement/medicationstatement-bser-eve-everywoman"
+* entry[=].resource = medicationstatement-bser-eve-everywoman
+* entry[=].response.status = "202 OK"
+
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-blood-pressure-eve-everywoman"
-* entry[=].resource = Observation/observation-us-core-blood-pressure-eve-everywoman
+* entry[=].resource = observation-us-core-blood-pressure-eve-everywoman
 * entry[=].response.status = "202 OK"
 
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-height-eve-everywoman"
 * entry[=].resource = observation-us-core-body-height-eve-everywoman
 * entry[=].response.status = "202 OK"
 
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-bmi-eve-everywoman"
-* entry[=].resource = observation-us-core-bmi-eve-everywoman
-* entry[=].response.status = "202 OK"
-
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"
 * entry[=].resource = observation-us-core-body-weight-eve-everywoman
 * entry[=].response.status = "202 OK"
 
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-observation-lab-ha1c-eve-everywoman"
-* entry[=].resource = observation-us-core-observation-lab-ha1c-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-bmi-eve-everywoman"
+* entry[=].resource = observation-us-core-bmi-eve-everywoman
 * entry[=].response.status = "202 OK"
-
 
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-eve-everywoman"
 * entry[=].resource = observation-odh-employment-status-eve-everywoman
@@ -38,3 +41,4 @@ Usage: #example
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-social-history-education-eve-everywoman"
 * entry[=].resource = observation-us-core-social-history-education-eve-everywoman
 * entry[=].response.status = "202 OK"
+

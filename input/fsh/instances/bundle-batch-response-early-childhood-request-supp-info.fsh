@@ -1,4 +1,4 @@
-Instance: bundle-batch-query-early-childhood-request-response-supp-info
+Instance: bundle-batch-response-early-childhood-request-supp-info
 InstanceOf: BSeRBundleBatchResponseReferralSupportingInfo
 Title: "Batch Response Bundle - Arthritis Request Supporting Information"
 Description: "This Bundle is a batch-response of resources making up the supporting information for an arthritis referral request. It is in reponse to the corresponding batch query Bundle."
@@ -44,10 +44,6 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-bser-nutritionobs-baby-everybaby"
 * entry[=].resource = observation-bser-nutritionobs-baby-everybaby
-* entry[=].response.status = "202 OK"
-
-* entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-mom-everymom"
-* entry[=].resource = observation-odh-employment-status-mom-everymom
 * entry[=].response.status = "202 OK"
 
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-odh-employment-status-mom-everymom"

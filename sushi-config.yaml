@@ -135,7 +135,7 @@ groups:
     - Bundle/bundle-batch-query-hypertension-request
     - Bundle/bundle-batch-query-obesity-request
     - Bundle/bundle-batch-query-tobacco-use-cessation-request
-batch-query-bundle-referral-feedback-examples:
+  batch-query-bundle-referral-feedback-examples:
     name: Batch Query Bundle Referral Feedback Examples
     description: Examples of batch query Bundles for each use case for referral feedback. Each Bundle is a batch of queries for definition and/or retrieval of supporting information for use case specific referral feedback.
     resources:
@@ -151,7 +151,7 @@ batch-query-bundle-referral-feedback-examples:
     resources:
     - Bundle/bundle-batch-response-arthritis-request-supp-info
     - Bundle/bundle-batch-response-diabetes-prevention-request-supp-info
-    - Bundle/bundle-batch-response-childhood-request-supp-info
+    - Bundle/bundle-batch-response-early-childhood-request-supp-info
     - Bundle/bundle-batch-response-hypertension-request-supp-info
     - Bundle/bundle-batch-response-obesity-request-supp-info
     - Bundle/bundle-batch-response-tobacco-use-request-supp-info
@@ -233,6 +233,7 @@ batch-query-bundle-referral-feedback-examples:
     - Observation/observation-us-core-body-weight-baby-everybaby
     - Observation/observation-us-core-body-weight-mom-everymom
     - Observation/observation-odh-employment-status-eve-everywoman
+    - Observation/observation-odh-employment-status-mom-everymom
     - Observation/observation-us-core-smokingstatus-eve-everywoman
   supporting-information-feedback-examples:
     name: Supporting Information Feedback Examples
@@ -270,6 +271,7 @@ batch-query-bundle-referral-feedback-examples:
     - Coverage/coverage-bser-coverage-eve-everywoman
     - Coverage/coverage-bser-coverage-baby-everybaby
     - Observation/observation-us-core-social-history-education-eve-everywoman
+    - Observation/observation-us-core-social-history-education-mom-everymom
   code-systems:
     name: Code Systems
     resources:
