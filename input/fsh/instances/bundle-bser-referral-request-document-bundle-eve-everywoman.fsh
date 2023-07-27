@@ -19,8 +19,8 @@ Usage: #example
 * entry[=].resource = observation-us-core-bmi-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-social-history-education-eve-everywoman"
 * entry[=].resource = observation-us-core-social-history-education-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/MedicationStatement/medicationstatement-bser-eve-everywoman"
-* entry[=].resource = medicationstatement-bser-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/medicationrequest-us-core-medicationrequest-eve-everywoman"
+* entry[=].resource = medicationrequest-us-core-medicationrequest-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"
 * entry[=].resource = observation-us-core-body-weight-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-eve-everywoman"

@@ -61,13 +61,13 @@ Description: "This Composition profile represents the clical supporting informat
 * section[arthritisReferralSupportingInformation].entry ^slicing.rules = #open
 * section[arthritisReferralSupportingInformation].entry contains
     allergyIntolerance 0..* and
-    medicationStatement 0..* and
+    medicationRequest 0..* and
     bloodPressure 0..* and
     bodyHeight 0..* and
     bodyWeight 0..* and
     bmi 0..*
 * section[arthritisReferralSupportingInformation].entry[allergyIntolerance] only Reference(USCoreAllergyIntolerance)
-* section[arthritisReferralSupportingInformation].entry[medicationStatement] only Reference(BSeRMedicationStatement or USCoreMedicationRequestProfile)
+* section[arthritisReferralSupportingInformation].entry[medicationRequest] only Reference(USCoreMedicationRequestProfile)
 * section[arthritisReferralSupportingInformation].entry[bloodPressure] only Reference(USCoreBloodPressureProfile)
 * section[arthritisReferralSupportingInformation].entry[bodyHeight] only Reference(USCoreBodyHeightProfile)
 * section[arthritisReferralSupportingInformation].entry[bodyWeight] only Reference(USCoreBodyWeightProfile)

@@ -117,7 +117,6 @@ groups:
     resources:
     - StructureDefinition/bser-referral-observation
     - StructureDefinition/BSeR-TelcomCommunicationPreferences
-    - StructureDefinition/BSeR-MedicationStatement
     - StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication
   other-profiles:
     name: Other Profiles
@@ -240,7 +239,7 @@ groups:
     description: Supporting Information Feedback Examples
     resources:
     - Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman
-    - MedicationStatement/medicationstatement-bser-eve-everywoman
+    - MedicationRequest/medicationrequest-us-core-medicationrequest-eve-everywoman
     - Observation/observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman
     - Observation/observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman
     - Observation/observation-participationfeedbackobservation-1-eve-everywoman

@@ -18,7 +18,7 @@ Usage: #example
 * section[arthritisReferralSupportingInformation].title = "Arthritis Referral Request Supporting Information"
 * section[arthritisReferralSupportingInformation].code = BSeR#ARSI "Arthritis Referral Supporting Information"
 * section[arthritisReferralSupportingInformation].entry[allergyIntolerance].reference = "AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"
-* section[arthritisReferralSupportingInformation].entry[medicationStatement].reference = "MedicationStatement/medicationstatement-bser-eve-everywoman"
+* section[arthritisReferralSupportingInformation].entry[medicationRequest].reference = "MedicationRequest/medicationrequest-us-core-medicationrequest-eve-everywoman"
 * section[arthritisReferralSupportingInformation].entry[bloodPressure].reference = "Observation/observation-us-core-blood-pressure-eve-everywoman"
 * section[arthritisReferralSupportingInformation].entry[bodyHeight].reference = "Observation/observation-us-core-body-height-eve-everywoman"
 * section[arthritisReferralSupportingInformation].entry[bodyWeight].reference = "Observation/observation-us-core-body-weight-eve-everywoman"

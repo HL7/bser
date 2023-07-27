@@ -86,7 +86,7 @@ Description: "This Composition profile represents the clical feedback included i
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry ^slicing.rules = #open
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry contains
     earlyChildhoodNutritionFeedbackObservation 0..* and
-    medicationHistory 0..* and
+    //medicationHistory 0..* and
     participationFeedbackObservation 0..*
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[earlyChildhoodNutritionFeedbackObservation] only Reference(BSeRReferralObservation)
 // Removing because CBOs don't have this information to feed back with
