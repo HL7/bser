@@ -11,7 +11,7 @@ Usage: #example
 * entry[=].request.url = "/Patient/{{patient-id}}"
 // Blood Pressure Vital Sign Observation
 * entry[+].request.method = #GET
-* entry[=].request.url = "/Observation?patient={{patient-id}}&.category=vital-signs&code=85354-9"
+* entry[=].request.url = "/Observation?patient={{patient-id}}&category=vital-signs&code=85354-9"
 // Body Height Vital Sign Observation
 * entry[+].request.method = #GET
 * entry[=].request.url = "/Observation?patient={{patient-id}}&category=vital-signs&code=8302-2"

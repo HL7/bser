@@ -23,13 +23,13 @@ Usage: #example
 * entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Blood Pressure - Baby"
 * entry[=].request.method = #GET
-* entry[=].request.url = "/Observation?patient={{patient-id-baby}}&.category=vital-signs&code=85354-9"
+* entry[=].request.url = "/Observation?patient={{patient-id-baby}}&category=vital-signs&code=85354-9"
 
 // Blood Pressure Vital Sign Observation - Mother
 * entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
 * entry[=].request.extension.valueString = "Blood Pressure - Mother"
 * entry[=].request.method = #GET
-* entry[=].request.url = "/Observation?patient={{patient-id-baby}}&.category=vital-signs&code=85354-9"
+* entry[=].request.url = "/Observation?patient={{patient-id-baby}}&category=vital-signs&code=85354-9"
 
 // Body Height - Lying - Vital Sign Observation - Baby
 * entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
