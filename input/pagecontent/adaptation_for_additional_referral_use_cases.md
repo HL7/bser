@@ -6,9 +6,13 @@ While some of the data such as patient and provider demographics are common acro
 
 [Batch query Bundles]({{site.data.fhir.path}}bundle.html#transaction) are used to store queries to both define, and, if a query paradigm is being followed, pull, use case specific data for subsequent organization into the specified resources for transmission. This [Use Case Profiles table](service_request_and_referral_feedback_supporting_information.html#use-case-profiles) shows how each BSeR use case utilizes different sets of profiles for its referral request and referral feedback needs.
 
-These use case data needs are illustrated in [examples of batch query Bundles for referral request supporting information](artifacts.html#batch-query-bundle-referral-request-examples) and [examples of batch query Bundles for referral feedback supporing information](artifacts.html#batch-query-bundle-referral-feedback-examples).
-
 The batch query Bundles are stored outside of this guide and new use cases can be added, and existing use cases updated, at any time.
+
+The BSeR use case data needs are detailed in [examples of BSeR batch query Bundles for referral request supporting information](artifacts.html#batch-query-bundle-referral-request-examples) and [examples of BSeR batch query Bundles for referral feedback supporing information](artifacts.html#batch-query-bundle-referral-feedback-examples).
+
+The BSeR arthritis batch query Bundle example is as follows:
+
+<center><table><tr><td><img src="batch-query-example.png" style="width:100%;"/></td></tr></table></center>
 
 
 ### Additional Referral Use Case Adaptation Touchpoints
