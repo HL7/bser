@@ -13,7 +13,7 @@ Usage: #example
 * title = "Referral request"
 * section[otherSupportingInformation].title = "Other Supporting Information"
 * section[otherSupportingInformation].code = BSeR#OSI "Other Supporting Information"
-* section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-odh-employment-status-eve-everywoman"
+// * section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-odh-employment-status-eve-everywoman"
 * section[otherSupportingInformation].entry[employmentStatusOrEducationLevel].reference = "Observation/observation-us-core-social-history-education-eve-everywoman"
 * section[diabetesPreventionReferralSupportingInformation].title = "Diabetes Prevention Referral Request Supporting Information"
 * section[diabetesPreventionReferralSupportingInformation].code = BSeR#DPRSI "Diabetes Prevention Referral Supporting Information"

@@ -1,4 +1,4 @@
-Instance: messageheader-bser-referralmessageheader
+Instance: messageheader-bser-referral-messageheader
 InstanceOf: BSeRReferralMessageHeader
 Title: "MessageHeader - Patient Referral - Saint Lukes"
 Description: "BSeR Referral MessageHeader: Patient Referral - Saint Lukes example"

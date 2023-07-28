@@ -72,7 +72,7 @@
 <artifact id="MedicationRequest/medicationrequest-us-core-medicationrequest-eve-everywoman" key="MedicationRequest-medicationrequest-us-core-medicationrequest-eve-everywoman" name="MedicationRequest - Amoxicillin - Eve Everywoman"/>
 <artifact id="Bundle/bundle-bser-referral-message-bundle-eve-everywoman" key="Bundle-bundle-bser-referral-message-bundle-eve-everywoman" name="Message Bundle - Eve Everywoman"/>
 <artifact deprecated="true" key="MessageHeader" name="MessageHeader"/>
-<artifact id="MessageHeader/messageheader-bser-referralmessageheader" key="MessageHeader-messageheader-bser-referralmessageheader" name="MessageHeader - Patient Referral - Saint Lukes"/>
+<artifact id="MessageHeader/messageheader-bser-referral-messageheader" key="MessageHeader-messageheader-bser-referral-messageheader" name="MessageHeader - Patient Referral - Saint Lukes"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact id="Observation/observation-participationfeedbackobservation-1-eve-everywoman" key="Observation-observation-participationfeedbackobservation-1-eve-everywoman" name="Observation - Appointments Attended - Eve Everywoman"/>
 <artifact id="Observation/observation-participationfeedbackobservation-2-eve-everywoman" key="Observation-observation-participationfeedbackobservation-2-eve-everywoman" name="Observation - Appointments Missed - Eve Everywoman"/>
@@ -113,12 +113,12 @@
 <artifact id="RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom" key="RelatedPerson-relatedperson-us-core-relatedperson-mom-everymom" name="RelatedPerson - Gestational Mother - Mom Everymom"/>
 <artifact id="RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman" key="RelatedPerson-relatedperson-us-core-relatedperson-self-eve-everywoman" name="RelatedPerson - Self - Eve Everywoman"/>
 <artifact deprecated="true" key="ServiceRequest" name="ServiceRequest"/>
-<artifact id="ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis" key="ServiceRequest-servicerequest-bser-referral-servicerequest-arthritis" name="ServiceRequest - Eve Everywoman"/>
-<artifact id="ServiceRequest/servicerequest-bser-referral-servicerequest-early-childhood" key="ServiceRequest-servicerequest-bser-referral-servicerequest-early-childhood" name="ServiceRequest - Eve Everywoman"/>
+<artifact id="ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis" key="ServiceRequest-servicerequest-bser-referral-servicerequest-arthritis" name="ServiceRequest - Arthritis Referral - Eve Everywoman"/>
+<artifact id="ServiceRequest/servicerequest-bser-referral-servicerequest-early-childhood" key="ServiceRequest-servicerequest-bser-referral-servicerequest-early-childhood" name="ServiceRequest - Early Childhood Nutrition Referral - Baby Everybaby"/>
 <artifact id="ServiceRequest/servicerequest-referral-servicerequest" key="ServiceRequest-servicerequest-referral-servicerequest" name="ServiceRequest - Eve Everywoman"/>
 <artifact id="Observation/observation-us-core-smokingstatus-eve-everywoman" key="Observation-observation-us-core-smokingstatus-eve-everywoman" name="Smoking Status - Eve Everywoman"/>
 <artifact deprecated="true" key="Task" name="Task"/>
-<artifact id="Task/task-bser-referral-task" key="Task-task-bser-referral-task" name="Task - Eve Everywoman"/>
+<artifact id="Task/task-bser-referral-task" key="Task-task-bser-referral-task" name="Task - Arthritis Referral - Eve Everywoman"/>
 <artifact id="Task/task-referral-task" key="Task-task-referral-task" name="Task - Eve Everywoman"/>
 <artifact id="CodeSystem/TaskBusinessStatusCS" key="CodeSystem-TaskBusinessStatusCS" name="Task Business Status Code System"/>
 <artifact id="ValueSet/TaskBusinessStatusVS" key="ValueSet-TaskBusinessStatusVS" name="Task Business Status VS"/>

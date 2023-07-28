@@ -12,7 +12,7 @@ Usage: #example
 * status = #requested
 * businessStatus = TaskBusinessStatusCS#7.0 "Service Request Fulfillment Completed"
 * intent = #order
-* focus.reference = "ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis"
+* focus.reference = "ServiceRequest/servicerequest-referral-servicerequest"
 * for.reference = "Patient/patient-us-core-patient-eve-everywoman"
 * authoredOn = "2020-01-15T14:43:32-04:00"
 * requester.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"

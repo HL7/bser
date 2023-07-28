@@ -53,7 +53,7 @@ coverage-bser-coverage-eve-everywoman                                           
 location-us-core-location-st-luke                                     Instance    instances\location-us-core-location-st-luke.fsh
 medication-bser-tobacco-use-cessation-feedback-eve-everywoman                       Instance    instances\medication-bser-tobacco-use-cessation-feedback-eve-everywoman.fsh
 medicationstatement-bser-eve-everywoman                                             Instance    instances\medicationstatement-bser-eve-everywoman.fsh
-messageheader-bser-referralmessageheader                                            Instance    instances\messageheader-bser-referralmessageheader.fsh
+messageheader-bser-referral-messageheader                                            Instance    instances\messageheader-bser-referral-messageheader.fsh
 observation-bser-referral-observation-endurance-eve-everywoman                      Instance    instances\observation-bser-referral-observation-endurance-eve-everywoman.fsh
 observation-bser-referral-observation-pain-mgmt-eve-everywoman                      Instance    instances\observation-bser-referral-observation-pain-mgmt-eve-everywoman.fsh
 observation-us-core-social-history-education-eve-everywoman                                      Instance    instances\observation-us-core-social-history-education-eve-everywoman.fsh

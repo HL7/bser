@@ -174,7 +174,7 @@ groups:
     name: Workflow Management Examples
     # description: Workflow Management Examples
     resources:
-    - MessageHeader/messageheader-bser-referralmessageheader
+    - MessageHeader/messageheader-bser-referral-messageheader
     - Task/task-bser-referral-task
   referral-service-request-examples:
     name: Referral Service Request Examples
