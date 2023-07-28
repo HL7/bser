@@ -1,4 +1,4 @@
-The FHIR R4 resource profiles defined in the BSeR IG are grouped into the following four packages:
+The FHIR R4 resource profiles used in the BSeR IG are grouped into the following four packages:
 
 ### [Referral Participant Resources](referral_participant_resources.html) 
 
