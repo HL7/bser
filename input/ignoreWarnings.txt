@@ -62,7 +62,7 @@ INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[7]: 
 INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
 INFORMATION: Coverage/coverage-bser-coverage-eve-everywoman: Coverage.class[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot
 
-# US Core: the US Core Coverage profile does not exist in the version of US Core this IG is dependent on (5.0.1) - https://jira.hl7.org/browse/FHIR-41603 (waiting for approval)
+# US Core: the US Core Coverage profile does not exist in the version of US Core this IG is dependent on (5.0.1) - https://jira.hl7.org/browse/FHIR-41603 (APPROVED)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
 
 # US Core Variance - https://jira.hl7.org/browse/FHIR-41603 (APPROVED)
