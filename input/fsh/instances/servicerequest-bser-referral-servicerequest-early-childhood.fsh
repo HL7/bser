@@ -1,7 +1,7 @@
 Instance: servicerequest-bser-referral-servicerequest-early-childhood
 InstanceOf: BSeRReferralServiceRequest
-Title: "ServiceRequest - Eve Everywoman"
-Description: "BSeR Referral ServiceRequest: Eve Everywoman example"
+Title: "ServiceRequest - Early Childhood Nutrition Referral - Baby Everybaby"
+Description: "BSeR Referral ServiceRequest: Early Childhood Nutrition Referral - Baby Everybaby example"
 Usage: #example
 * identifier[referralInitiatorServiceRequestIdentifier].type = $v2-0203#PLAC
 * identifier[referralInitiatorServiceRequestIdentifier].value = "88888888"
