@@ -9,4 +9,4 @@ Usage: #example
 * subject.display = "Eve Everywoman"
 * effectiveDateTime = "2019-01-17"
 * performer.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
-* valueString = "Referral accepted"
+* valueString = "Referral completed"

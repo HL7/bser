@@ -1,6 +1,6 @@
 Instance: composition-bser-referral-request-diabetes-everywoman
 InstanceOf: BSeRReferralRequestComposition
-Title: "Composition - Eve Everywoman - Diabetes Prevention"
+Title: "Composition - Eve Everywoman - Diabetes Prevention Referral Request"
 Description: "BSeR Referral Request Composition: Eve Everywoman - Diabetes Prevention example"
 Usage: #example
 * status = #final

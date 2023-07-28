@@ -23,5 +23,5 @@ Usage: #example
 * entry[=].resource = organization-us-core-organization-saint-luke
 * entry[6].fullUrl = "http://example.org/fhir/Practitioner/practitioner-us-core-practitioner-hailey-eight"
 * entry[=].resource = practitioner-us-core-practitioner-hailey-eight
-* entry[7].fullUrl = "http://example.org/fhir/ServiceRequest/servicerequest-bser-referral-servicerequest"
-* entry[=].resource = servicerequest-bser-referral-servicerequest
+* entry[7].fullUrl = "http://example.org/fhir/ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis"
+* entry[=].resource = servicerequest-bser-referral-servicerequest-arthritis

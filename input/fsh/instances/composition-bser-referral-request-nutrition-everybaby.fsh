@@ -1,7 +1,7 @@
 Instance: composition-bser-referral-request-nutrition-everybaby
 InstanceOf: BSeRReferralRequestComposition
-Title: "Composition - Baby Everybaby - Early Childhood Nutrition"
-Description: "BSeR Referral Request Composition: Baby Everybaby - Early Childhood Nutrition"
+Title: "Composition - Baby Everybaby - Early Childhood Nutrition Referral Request"
+Description: "BSeR Referral Request Composition: Baby Everybaby - Early Childhood Nutrition example"
 Usage: #example
 * status = #final
 * type = $loinc#57133-1 "Referral note"

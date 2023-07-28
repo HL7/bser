@@ -25,7 +25,7 @@ INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman:
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
 INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
-INFORMATION: Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralRequestDocumentBundle|2.0.0-ballot
+
 
 #  Not matching is expected behavior - the only slice [0] defined in the BSeR-ReferralFeedbackDocumentBundle is the required Composition
 INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralFeedbackDocumentBundle|2.0.0-ballot
@@ -40,9 +40,11 @@ INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
 INFORMATION: Bundle/bundle-bser-referral-message-bundle-eve-everywoman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralMessageBundle|2.0.0-ballot
 
 # Not matching is expected behavior - the US Core ServiceRequest profile allows other category codes
-INFORMATION: ServiceRequest/servicerequest-bser-referral-servicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
+INFORMATION: ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
+INFORMATION: ServiceRequest/servicerequest-bser-referral-servicerequest-early-childhood: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
 INFORMATION: ServiceRequest/servicerequest-referral-servicerequest: ServiceRequest.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/referral-servicerequest|2.0.0-ballot
-INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[0].resource.entry[7].resource/*ServiceRequest/servicerequest-bser-referral-servicerequest*/.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
+INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman: Bundle.entry[0].resource.entry[7].resource/*ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis*/.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralServiceRequest|2.0.0-ballot
+
 
 # Not matching is expected behavior - BSeR Coverage only defines two slices
 INFORMATION: Coverage/coverage-bser-coverage-baby-everybaby: Coverage.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage|2.0.0-ballot

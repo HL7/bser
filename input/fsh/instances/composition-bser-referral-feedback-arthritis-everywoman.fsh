@@ -1,6 +1,6 @@
 Instance: composition-bser-referral-feedback-arthritis-everywoman
 InstanceOf: BSeRReferralFeedbackComposition
-Title: "Composition - Eve Everywoman - Arthritis"
+Title: "Composition - Eve Everywoman - Arthritis Referral Feedback"
 Description: "BSeR Referral Feedback Composition: Eve Everywoman - Arthritis example"
 Usage: #example
 * status = #final
@@ -13,7 +13,7 @@ Usage: #example
 * title = "Referral feedback"
 * section[referralServiceRequestFeedbackSummary].title = "Referral Service Request Feedback Summary"
 * section[referralServiceRequestFeedbackSummary].code = BSeR#RSRFS "CompositionSectionReferralServiceRequestFeedbackSummary"
-* section[referralServiceRequestFeedbackSummary].focus.reference = "ServiceRequest/servicerequest-bser-referral-servicerequest"
+* section[referralServiceRequestFeedbackSummary].focus.reference = "ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis"
 * section[referralServiceRequestFeedbackSummary].entry.reference = "Observation/observation-bser-referralactivitystatus-eve-everywoman"
 * section[arthritisReferralFeedbackSupportingInformation].title = "Arthritis Referral Feedback Supporting Information"
 * section[arthritisReferralFeedbackSupportingInformation].code = BSeR#ARFSI "Arthritis Referral Feedback Supporting Information"

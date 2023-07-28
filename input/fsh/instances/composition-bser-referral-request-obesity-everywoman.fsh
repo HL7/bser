@@ -1,6 +1,6 @@
 Instance: composition-bser-referral-request-obesity-everywoman
 InstanceOf: BSeRReferralRequestComposition
-Title: "Composition - Eve Everywoman - Obesity"
+Title: "Composition - Eve Everywoman - Obesity Referral Request"
 Description: "BSeR Referral Request Composition: Eve Everywoman - Obesity example"
 Usage: #example
 * status = #final

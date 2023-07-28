@@ -1,7 +1,7 @@
 Instance: bundle-batch-query-tobacco-use-cessation-request
 InstanceOf: BSeRBundleBatchQueryReferralSupportingInfo
 Title: "Batch Query Bundle - Tobacco Use Cessation Request Supporting Information Queries"
-Description: "This Bundle is a batch of queries for definition and/or retrieval of supporting information for  a tobacco use cessation referral request. Each entry is used to represent a RESTful API request."
+Description: "This Bundle is a batch of queries for definition and/or retrieval of supporting information for a tobacco use cessation referral request. Each entry is used to represent a RESTful API request."
 Usage: #example
 
 * type = #batch

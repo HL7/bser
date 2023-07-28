@@ -183,7 +183,8 @@ groups:
     - Bundle/bundle-bser-referral-message-bundle-eve-everywoman
     - Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman
     - Bundle/bundle-bser-referral-request-document-bundle-baby-everybaby
-    - ServiceRequest/servicerequest-bser-referral-servicerequest
+    - ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis
+    - ServiceRequest/servicerequest-bser-referral-servicerequest-early-childhood
   referral-serivce-request-examples-composition:
     name: "Referral Service Request Examples: Composition"
     # description: "Referral Service Request Examples: Composition"
@@ -205,10 +206,11 @@ groups:
     # description: "Referral Service Request Feedback Examples: Composition"
     resources:
     - Composition/composition-bser-referral-feedback-arthritis-everywoman
-    - Composition/composition-bser-referral-feedback-diabetes-everywoman
-    - Composition/composition-bser-referral-feedback-hypertension-everywoman
-    - Composition/composition-bser-referral-feedback-obesity-everywoman
-    - Composition/composition-bser-referral-feedback-tobacco-everywoman
+    - Composition/composition-bser-referral-feedback-nutrition-everybaby
+    # - Composition/composition-bser-referral-feedback-diabetes-everywoman
+    # - Composition/composition-bser-referral-feedback-hypertension-everywoman
+    # - Composition/composition-bser-referral-feedback-obesity-everywoman
+    # - Composition/composition-bser-referral-feedback-tobacco-everywoman
   supporting-information-examples:
     name: Supporting Information Examples
     # description: Supporting Information Examples
@@ -262,12 +264,13 @@ groups:
     - PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator
     - PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient
     - RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom
-    - RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman
+    # - RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman
     - RelatedPerson/relatedperson-us-core-relatedperson-mother-eve-everywoman
   other-examples:
     name: Other Examples
     resources:
     - Consent/consent-bser-patientconsent-eve-everywoman
+    - Consent/consent-bser-patientconsent-baby-everybaby
     - Coverage/coverage-bser-coverage-eve-everywoman
     - Coverage/coverage-bser-coverage-baby-everybaby
     - Observation/observation-us-core-social-history-education-eve-everywoman
