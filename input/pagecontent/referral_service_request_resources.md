@@ -1,8 +1,8 @@
-Each referral service request includes references to a patient (subject), referral initiator (requester), referral recipient (performer), and a reference to a bundle of supporting information consistent with the scope of the referral use case as designated in ServiceRequest.code. The supporting information bundles are mutually exclusive.
+Each referral service request includes references to a patient (subject), referral initiator (requester), referral recipient (performer), and a reference to a Bundle of supporting information consistent with the scope of the referral use case as designated in ServiceRequest.code.
 
 ### Referral Service Request Clinical Statements
 
-Each referral use case requires that certain information items accompany the service request as supporting information. The information items are supporting information for one or more referral use case. The following table indicates how service request supporting information items are allocated to referral use cases.
+Each referral use case requires that certain information items accompany the service request as supporting information. The following table indicates how service request supporting information items are allocated to BSeR referral use cases.
 
 <table style="width:100%" border="1">
     <thead>

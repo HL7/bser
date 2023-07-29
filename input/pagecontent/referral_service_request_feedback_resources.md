@@ -2,7 +2,7 @@ Each referral feedback includes references to a patient (subject), referral reci
 
 ### Referral Service Request Feedback Clinical Statements
 
-Each referral use case requires that certain information items accompany the service request feedback as supporting information. The information items are supporting information for one or more referral use case. The following table indicates how service request feedback supporting information items are allocated to referral use cases.
+Each referral use case requires that certain information items accompany the service request feedback as supporting information. The following table indicates how referral feedback supporting information items are allocated to the BSeR referral use cases.
 
 <table style="width:100%" border="1">
     <thead>

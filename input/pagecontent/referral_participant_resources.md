@@ -1,9 +1,9 @@
-The primary participants in referral functions within the scope of the BSeR FHIR IG are the referral service request initiator, referral service request recipient, and referral service request patient. The resource profiles for the referral service request initiator and referral service request recipient use the [US Core Practitioner]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-practitioner.html) and [US Core PractitionerRole]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-practitionerrole.html) as their base resources. The referral service request patient is the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) profile.
+The primary participants in referral functions within the scope of the BSeR FHIR IG are the referral service request initiator, referral service request recipient, and referral service request patient. The referral service request initiator and referral service request recipient are represented by the [US Core Practitioner]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-practitioner.html) and [US Core PractitionerRole]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-practitionerrole.html). The referral service request patient is the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) profile.
 <center><table><tr><td><img src="Participant Resources.png" style="width:100%;"/></td></tr></table></center>
 
 ### Referral Service Request Initiator
 
-The referral initiator is the practitioner that initiates the referral task by sending the referral service request to the referral recipient. The initiator is related to an organization and a service delivery location. 
+The referral initiator is the practitioner that is making the referral request and initiates the referral task. The initiator is related to an organization and a service delivery location. 
 <center><table><tr><td><img src="Referral Initiator.png" style="width:100%;"/></td></tr></table></center>
 
 ### Referral Service Request Recipient

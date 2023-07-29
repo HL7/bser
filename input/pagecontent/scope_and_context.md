@@ -13,4 +13,4 @@ The context of the BSeR IG is the placement of a referral by a clinical practiti
 
 ### Additional Referral Use Cases
 
-See the section "Adaptation for Additional Referral Use Cases" for guidance in reusing or extending the use of the BSeR standard for use in additional referral use cases.
+See the section [Adaptation for Additional Referral Use Cases](adaptation_for_additional_referral_use_cases.html) for guidance in reusing or extending the use of the BSeR standard for use in additional referral use cases.

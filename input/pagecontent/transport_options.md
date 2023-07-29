@@ -18,7 +18,7 @@ The first resource in the <a href="StructureDefinition-BSeR-ReferralMessageBundl
 
 ### Basic REST Option
 
-The second option for transmitting the content in this implementation guide is described here as Basic REST. In this case, a point-to-point RESTful exchange is supported. If the immediate inclusion of all resource content must be ensured, then a top level bundle and insistence on their inclusion will be the responsibility of the transmitting server.
+The second option for transmitting the content in this implementation guide is described here as Basic REST. In this case, a point-to-point RESTful exchange is supported.
 
 The following profiles have been defined for the RESTful Submit Option:
 

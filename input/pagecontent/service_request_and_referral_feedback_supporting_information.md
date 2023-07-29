@@ -2,7 +2,7 @@ The BSeR IG illustrates the inclusion of service request content profiles for si
 
 The selected use cases have overlapping information needs that demonstrate the concepts of parsimonious partitioning and resource profile reuse.
 
-Each referral use case is an aggregation of supporting information data items. Supported information data items are represented with clinical profiles. In most cases, US Core profiles have been reused.
+Each referral use case is an aggregation of supporting information data items. Supporting information data items are represented with clinical profiles. In most cases, US Core profiles have been reused.
 
 ### Use Case Profiles
 
