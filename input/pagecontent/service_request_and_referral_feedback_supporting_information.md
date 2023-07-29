@@ -12,10 +12,10 @@ The following table identifies the aggregation of supporting information profile
 <table style="width:100%" cellspacing="0" border="1">
     <thead>
         <tr style="height: 20px">
-            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" rowspan="2">Referral Use Case</th>
-            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" colspan="2" align="center">Referral Request</th>
-            <th rowspan="46" style="width:1; background-color:#DCDCDC" />
-            <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC" colspan="2" align="center">Referral Feedback</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Referral Use Case</th>
+            <th colspan="2" style="text-align: center; vertical-align: middle; background-color:#DCDCDC" align="center">Referral Request</th>
+            <th rowspan="2" style="width:1; background-color:#DCDCDC" />
+            <th colspan="2" style="text-align: center; vertical-align: middle; background-color:#DCDCDC" align="center">Referral Feedback</th>
         </tr>
         <tr style="height: 20px">
             <th style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Concept</th>
@@ -25,15 +25,14 @@ The following table identifies the aggregation of supporting information profile
         </tr>
     </thead>
     <tbody>
-        <tr style="height: 20px">
+        <tr style="height: 20px" border="1">
             <td rowspan="4">All</td>
             <td>Employment status</td>
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-EmploymentStatus.html">ODH Employment Status</a>
             </td>
-            <td rowspan="500" style="width:1; background-color:#DCDCDC" />
+            <td rowspan="44" style="width:1; background-color:#DCDCDC" />
             <td/>
-            <td />
             <td />
         </tr>
         <tr style="height: 20px">
