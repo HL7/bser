@@ -14,7 +14,7 @@ The following table identifies the aggregation of supporting information profile
         <tr style="height: 20px">
             <th rowspan="2" style="text-align: center; vertical-align: middle; background-color:#DCDCDC">Referral Use Case</th>
             <th colspan="2" style="text-align: center; vertical-align: middle; background-color:#DCDCDC" align="center">Referral Request</th>
-            <th rowspan="2" style="width:1; background-color:#DCDCDC" />
+            <th rowspan="46" style="width:1; background-color:#DCDCDC" />
             <th colspan="2" style="text-align: center; vertical-align: middle; background-color:#DCDCDC" align="center">Referral Feedback</th>
         </tr>
         <tr style="height: 20px">
@@ -31,8 +31,8 @@ The following table identifies the aggregation of supporting information profile
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-EmploymentStatus.html">ODH Employment Status</a>
             </td>
-            <td rowspan="44" style="width:1; background-color:#DCDCDC" />
-            <td/>
+            <!-- <td rowspan="44" style="width:1; background-color:#DCDCDC" /> -->
+            <td />
             <td />
         </tr>
         <tr style="height: 20px">
