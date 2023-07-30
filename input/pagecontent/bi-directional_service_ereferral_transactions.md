@@ -7,7 +7,7 @@ This specification defines two main transaction types, a Referral Request Transa
 The exchange of information between a referral service request initiator and a referral service request recipient is bi-directional.
 
 ### High-Level Referral Use Cases
-This guide describes two high-level use cases which provide a general overview of the interactions and main actors involved, along with the major actions that occur within the context of the use case. These use cases to not delve into specific details or technical intricacies; instead, they serves as a conceptual representation of purpose and functionality.
+This guide describes two high-level use cases which provide a general overview of the interactions and main actors involved, along with the major actions that occur within the context of the use case. These use cases do not delve into specific details or technical intricacies; instead, they serves as a conceptual representation of purpose and functionality.
 
 ##### Actors
  * **Patient**
