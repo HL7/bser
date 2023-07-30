@@ -16,7 +16,7 @@ This guide describes two high-level use cases which provide a general overview o
  * **Intermediary**: CBO, Healthcare Information Exchange (HIE)
  * **Requirements Respository**: Repository containing payload data element requirements (batch queries)
 
-#### Referral Push
+#### Referral - Push
 
 <center><table><tr><td><img src="referral-push.png" style="width:100%;"/></td></tr></table></center>
 
@@ -38,7 +38,7 @@ This guide describes two high-level use cases which provide a general overview o
 {: .grid }
  
 
-#### Referral Notify and Pull
+#### Referral - Notify and Pull
 
 <center><table><tr><td><img src="referral-notify-and-pull.png" style="width:100%;"/></td></tr></table></center>
 

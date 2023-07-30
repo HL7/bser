@@ -2,7 +2,7 @@
 
 We are seeking specific feedback on the following issues:
  * Is it realistic for community-based organizations (CBOs) to offer secure subscriptions to data in their systems?
- * In the Notify of Referral step in [Referral - Notify and Pull](bi-directional_service_ereferral_transactions#referral-notify-and-pull) should both the Task and SerivceRequest be sent, or should just the Task be sent?
+ * In the Notify of Referral step in [Referral - Notify and Pull](bi-directional_service_ereferral_transactions.html#referral-notify-and-pull) should both the Task and SerivceRequest be sent, or should just the Task be sent?
 
 ### Overview
 
