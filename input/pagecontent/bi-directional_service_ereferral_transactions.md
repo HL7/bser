@@ -56,7 +56,7 @@ This guide describes two high-level use cases which provide a general overview o
 | **Referral** | Referral Response(s) - Subscription (Option B) | Referral Recipient | Once the requested service(s) have been performed the Referral Recipient (FHIR Server) automatically sends Subscription Notification (including Task) to Referral Initiator | [R4 Topic-Based Subscription Notification Bundle](http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-notification-r4.html), [BSeR Task](StructureDefinition-BSeR-ReferralTask.html) |
 {: .grid }
 
-##### [Referral - Notify and Pull Diagram](referral---notify-and-pull) Steps
+##### [Referral - Notify and Pull Diagram](#referral---notify-and-pull) Steps
 
 | **Category** | **Step** | **Actor(s)** | **Description** | **Resources (where applicable)** |
 |--------------|----------|--------------|-----------------|----------------------------------|
