@@ -13,7 +13,7 @@ This guide describes two high-level use cases which provide a general overview o
  * **Patient**
  * **Referral Initiator**: Healthcare Provider
  * **Referral Recipient**: Community Based Organization (CBO), Healthcare Organization (HCO), Healthcare Provider
- * **Intermediary**: CBO, Healthcare Information Exchange (HIE)
+ * **Intermediary**: CBO Hub, Healthcare Information Exchange (HIE)
  * **Requirements Respository**: Repository containing payload data element requirements (batch queries)
 
 #### Referral - Push
