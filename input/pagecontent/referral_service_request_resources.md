@@ -376,6 +376,7 @@ Each referral use case requires that certain information items accompany the ser
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
             <td style="text-align: center; vertical-align: middle;">●</td>
+            <td style="text-align: center; vertical-align: middle;">●</td>
         </tr>
         <tr>
             <td>

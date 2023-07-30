@@ -1,6 +1,11 @@
 ### Transaction Types
 
-This specification defines two main transaction types, a Referral Request Transaction and a Referral Feedback Transaction. A referral service request flows from a referral initiator to a referral recipient. The referral service request transaction is comprised of the referral service request and its supporting information bundles and clinical statements. A service request feedback transaction flows from the referral recipient to the referral initiator. The service request feedback transaction is comprised of the referral feedback document containing the referral activity status, supporting information bundles and clinical statements.
+This specification defines two primary transaction types, the “Referral Request” and the “Referral Feedback”. For each "Referral Request" there may be multiple “Feedback” transactions which can be either technical or programmatic. Additionally, depending on the transaction paradigm, such as "Referral – Push" or "Referral – Notify and Pull," there may be a need for subcomponent transactions.
+
+A referral request flows from a referral initiator to a referral recipient. The referral request transaction is comprised of the referral service request and its supporting information bundles and clinical statements. At times there may be an intermediary, such as a Community Based Organization (CBO) hub or a Health Information Exchange (HIE), between the referral initiator and the referral recipient.
+
+A service request feedback transaction flows from the referral recipient to the referral initiator. The service request feedback transaction is comprised of the referral feedback document containing the referral activity status, supporting information bundles and clinical statements. At times there may be an intermediary between the referral recipient and the referral initiator.
+
 
 ### Information Exchange
 
