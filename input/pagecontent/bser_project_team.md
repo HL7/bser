@@ -1,18 +1,8 @@
-### CDC Executive Sponsor
-
-Arunkumar Srinivasan PhD, Senior Health Scientist
-
 ### Project Lead
 
 John W. Loonsk MD, Consulting CMIO APHL, Johns Hopkins University
 
-### Modeling Facilitator
-
-AbdulMalik Shakir, President and Chief Informatics Scientist, Hi3 Solutions
-
 ### Domain Expert Representatives
-
-*          Jason Bonander, Deputy Chief Information Officer
 
 *          Heather Hodge, YMCA of the USA
 
@@ -20,23 +10,27 @@ AbdulMalik Shakir, President and Chief Informatics Scientist, Hi3 Solutions
 
 *          Brenna VanFrank, CDC Smoking and Health
 
-### Business Requirements Analyst
+*          Arunkumar Srinivasan PhD, Senior Health Scientist
 
-*          Salimah Shakir, Hi3 Solutions
+*          Kailah Davis, Centers for Disease Control and Prevention
+
+*          Sena Seged, Centers for Disease Control and Prevention
+
+*          Pradeep Podila, Centers for Disease Control and Prevention
+
+*          Jason Bonander, Deputy Chief Information Officer, Centers for Disease Control and Prevention
 
 ### Specification Developers
 
-*          AbdulMalik Shakir Sr., Hi3 Solutions
+*          Sarah Gaunt, Lantana Consulting Group
 
-*          AbdulMalik Shakir Jr., Hi3 Solutions
+*          Jeff Brown, Lantana Consulting Group
+
+*          AbdulMalik Shakir Sr., Hi3 Solutions
 
 *          Salimah Shakir, Hi3 Solutions
 
-*          Rishi Tarar, Northrop Grumman Corporation
-
 *          Adam Holmes, MITRE
- 
-*          Sarah Gaunt, Lantana Consulting Group
 
 *          Rick Geimer, Lantana Consulting Group
 
