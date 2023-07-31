@@ -2,7 +2,7 @@
 
 We are seeking specific feedback on the following issues:
  * Is it realistic for community-based organizations (CBOs) to offer secure subscriptions to data in their systems? How would that work when there is an intermediary? When the intermediary is a pure pass through?
- * In the Notify of Referral step in [Referral - Notify and Pull](bi-directional_service_ereferral_transactions.html#referral-notify-and-pull) should both the Task and SerivceRequest be sent, or should just the Task be sent?
+ * In the Notify of Referral step in [Referral - Notify and Pull](bi-directional_service_ereferral_transactions.html#referral-notify-and-pull) should both the Task and SerivceRequest be sent, or should just the Task be sent? Should the resource(s) that is sent include all its referenced resources?
  * We believe that sometimes the Intermediary (CBO Hub or Healthcare Information Exchange (HIE)) will act on behalf of the CBO and will present the CBO with web access to the data at the intermediary and sometimes the intermediary will act as a “pass through” and full functionality will exist at the CBO. We have represented one of each option in the interaction diagrams (with intermediary). Should we represent both of these possibilities for the both transactions (Referral - Push (with intermediary) and Referral - Notify and Pull (with intermediary)) use cases?
 
 ### Overview
