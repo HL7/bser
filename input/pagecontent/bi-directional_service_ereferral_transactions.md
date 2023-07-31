@@ -97,6 +97,7 @@ This guide describes two high-level use cases which provide a general overview o
 {: .grid }
 
 ##### [Referral - Notify and Pull (with intermediary) Diagram](#referral---notify-and-pull-with-intermediary) Steps
+
 | **Category** | **Step** | **Actor(s)** | **Description** | **Resources (where applicable)** |
 |--------------|----------|--------------|-----------------|----------------------------------|
 | **Setup Coordination** | Policy Agreements | Referral Initiator, Intermediary | The Referral Initiator and Intermediary negotiate required policy agreements | |
