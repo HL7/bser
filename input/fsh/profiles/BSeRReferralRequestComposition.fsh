@@ -2,7 +2,7 @@ Profile: BSeRReferralRequestComposition
 Parent: Composition
 Id: BSeR-ReferralRequestComposition
 Title: "BSeR Referral Request Composition"
-Description: "This Composition profile represents the clical supporting information included in the referral request document."
+Description: "This Composition profile represents the clinical supporting information included in the referral request document."
 * ^status = #active
 * ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"

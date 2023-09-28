@@ -2,7 +2,7 @@ Profile: BSeRReferralFeedbackComposition
 Parent: Composition
 Id: BSeR-ReferralFeedbackComposition
 Title: "BSeR Referral Feedback Composition"
-Description: "This Composition profile represents the clical feedback included in the referral feedback document."
+Description: "This Composition profile represents the clinical feedback included in the referral feedback document."
 * ^status = #active
 * ^experimental = false
 * ^publisher = "HL7 Public Health Work Group"
