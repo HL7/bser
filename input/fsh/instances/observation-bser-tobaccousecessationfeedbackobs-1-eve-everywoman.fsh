@@ -1,7 +1,7 @@
 Instance: observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman
 InstanceOf: USCoreObservationSocialHistoryProfile
 Title: "Observation - Date for cessation of smoking - Eve Everywoman"
-Description: "US Core Observation Social History: Referral Feedback - Date for cessation of smoking - Eve Everywoman exanple"
+Description: "US Core Observation Social History: Referral Feedback - Date for cessation of smoking - Eve Everywoman example"
 Usage: #example
 * status = #final
 * category[us-core/social-history] = $observation-category#social-history "Social History"

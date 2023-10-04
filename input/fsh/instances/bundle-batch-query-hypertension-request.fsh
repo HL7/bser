@@ -38,7 +38,7 @@ Usage: #example
 
 // Diagnosis - Hypertension
 * entry[+].request.extension.url = "http://hl7.org/fhir/us/bser/StructureDefinition/query-description"
-* entry[=].request.extension.valueString = "Diangosis - Hypertension"
+* entry[=].request.extension.valueString = "Diagnosis - Hypertension"
 * entry[=].request.method = #GET
 * entry[=].request.url = "/Condition?patient={{patient-id}}&category=problem-list-item,health-concern&codein=https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1032.9/expansion/Latest"
 

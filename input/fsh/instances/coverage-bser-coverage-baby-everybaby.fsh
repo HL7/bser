@@ -34,7 +34,7 @@ Usage: #example
 * class[=].name = "Silver: Family Plan spouse only"
 * class[+].type = $coverage-class#subclass
 * class[=].value = "Tier2"
-* class[=].name = "Low deductable, max $20 copay"
+* class[=].name = "Low deductible, max $20 copay"
 * class[+].type = $coverage-class#sequence
 * class[=].value = "9"
 * class[+].type = $coverage-class#rxid
