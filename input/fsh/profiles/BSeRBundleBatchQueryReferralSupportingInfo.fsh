@@ -2,7 +2,7 @@ Profile: BSeRBundleBatchQueryReferralSupportingInfo
 Parent: Bundle
 Id: bser-bundle-batch-query-referral-supporting-info
 Title: "BSeR Bundle Batch Query Referral Supporting Information"
-Description: "This Bundle profile is of type batch, is used to contain queries to represent use case specific referral request and feedback supporting information, and allows for descriptive query information."
+Description: "This Bundle profile is of type batch and is used to contain queries to represent use case specific referral request and feedback supporting information, and allows for descriptive query information."
 
 * meta.profile 1..*
 * meta.profile ^slicing.discriminator.type = #pattern
