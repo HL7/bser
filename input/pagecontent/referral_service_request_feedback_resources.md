@@ -23,7 +23,7 @@ Each referral use case requires that certain information items accompany the ser
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
-            <td>Blood pressure (patient)</td>
+            <td>Blood Pressure (patient)</td>
             <td>
                 <a href="https://loinc.org/85354-9/">LOINC#85354-9</a>
             </td>

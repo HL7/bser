@@ -61,7 +61,7 @@ The following table identifies the aggregation of supporting information profile
         </tr>
         <tr style="height: 20px">
             <td rowspan="5" style="background-color:#F2F2F2">Arthritis</td>
-            <td style="background-color:#F2F2F2">Blood pressure</td>
+            <td style="background-color:#F2F2F2">Blood Pressure</td>
             <td style="background-color:#F2F2F2">
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
@@ -112,7 +112,7 @@ The following table identifies the aggregation of supporting information profile
         </tr>
         <tr style="height: 20px">
             <td rowspan="6">Diabetes Prevention</td>
-            <td>Blood pressure</td>
+            <td>Blood Pressure</td>
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
@@ -171,7 +171,7 @@ The following table identifies the aggregation of supporting information profile
         </tr>
         <tr style="height: 20px">
             <td rowspan="13" style="background-color:#F2F2F2">Early Childhood Nutrition</td>
-            <td style="background-color:#F2F2F2">Blood pressure (baby)</td>
+            <td style="background-color:#F2F2F2">Blood Pressure (baby)</td>
             <td style="background-color:#F2F2F2">
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
@@ -181,7 +181,7 @@ The following table identifies the aggregation of supporting information profile
             </td>
         </tr>
         <tr style="height: 20px">
-            <td style="background-color:#F2F2F2">Blood pressure (mother)</td>
+            <td style="background-color:#F2F2F2">Blood Pressure (mother)</td>
             <td style="background-color:#F2F2F2">
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
@@ -286,11 +286,11 @@ The following table identifies the aggregation of supporting information profile
         </tr>
         <tr style="height: 20px">
             <td rowspan="5">Hypertension</td>
-            <td>Blood pressure</td>
+            <td>Blood Pressure</td>
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
-            <td>Blood pressure</td>
+            <td>Blood Pressure</td>
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
@@ -335,11 +335,11 @@ The following table identifies the aggregation of supporting information profile
         </tr>
         <tr style="height: 20px">
             <td rowspan="5" style="background-color:#F2F2F2">Obesity</td>
-            <td style="background-color:#F2F2F2">Blood pressure</td>
+            <td style="background-color:#F2F2F2">Blood Pressure</td>
             <td style="background-color:#F2F2F2">
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>
-            <td style="background-color:#F2F2F2">Blood pressure</td>
+            <td style="background-color:#F2F2F2">Blood Pressure</td>
             <td style="background-color:#F2F2F2">
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
             </td>

@@ -1,4 +1,4 @@
-The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes and feedback by a referral recipient provider.
+The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 FHIR standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes and feedback by a referral recipient provider.
 
 ### Key Concepts
 
