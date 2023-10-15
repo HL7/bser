@@ -1,4 +1,4 @@
-The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 FHIR standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes and feedback by a referral recipient provider.
+The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes and feedback by a referral recipient provider.
 
 ### Key Concepts
 
@@ -14,6 +14,6 @@ The BSeR specification also seeks to foster and reinforce provider engagement in
 
 ### Collaboration
 
-The BSeR team worked in conjunction with the IHE Patient Care Coordination Technical Framework Supplement 360 Exchange Closed Loop Referral (360X) initiative to make sure that the breadth and nuances of 360x IHE referral transactions are representable in the BSeR FHIR process. The 360x team participated extensively in BSeR preparation and we thank them for their collaboration and support.
+The BSeR team worked in conjunction with the [IHE Patient Care Coordination Technical Framework Supplement 360 Exchange Closed Loop Referral (360X)](https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_360X.pdf) initiative to make sure that the breadth and nuances of 360x IHE referral transactions are representable in the BSeR FHIR process. The 360x team participated extensively in BSeR preparation and we thank them for their collaboration and support.
 
 The BSeR team also has worked with the HL7 Gravity social determinants of health team to enable the use of the BSeR specification by Gravity, and other implemetation guides. Other implementation guides can reference and use the BSeR specification for their particular referral type in conjunction with extension guidance found elsewhere in this implementation guide. We would also like to thank the Gravity team for all of their help in making the BSeR specification more useful through the development of this generic extension approach.

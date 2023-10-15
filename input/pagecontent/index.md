@@ -7,7 +7,7 @@ We are seeking specific feedback on the following issues:
 
 ### Overview
 
-The Bidirectional Services eReferral (BSeR) FHIR implementation guide (IG) provides guidance for using the HL7 FHIR standard as an exchange format for clinical and non-clinical referrals (service requests). It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. The goal of the BSeR project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.
+The Bidirectional Services eReferral (BSeR) FHIR implementation guide (IG) provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical referrals (service requests). It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes by a referral recipient provider. The goal of the BSeR project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.
 
 ### How to Read This Guide
 
@@ -40,19 +40,4 @@ For Clinical Safety Information please refer to the [FHIR Implementer’s Safety
 
 Disclaimer: All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.
 
-### Authors
 
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Email/URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HL7 International - Public Health</td>
-<td><a href="http://www.hl7.org/Special/committees/pher" target="_new">http://www.hl7.org/Special/committees/pher</a></td>
-</tr>
-</tbody>
-</table>

@@ -34,7 +34,7 @@ Description: "This ServiceRequest profile represents a request for a referral."
 * identifier[referralRecipientServiceRequestIdentifier].assigner only Reference(USCoreOrganizationProfile)
 * basedOn MS
 * basedOn only Reference(ReferralServiceRequest)
-* intent = #order
+* intent = #order (exactly)
 * priority MS
 * code ^short = "Referral or specific type of referral"
 * code ^definition = "Referral or specific type of referral. If the code used describes the type of/reason for referral (such as \"Referral to diabetes prevention program\") then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."

@@ -34,6 +34,23 @@ John W. Loonsk MD, Consulting CMIO APHL, Johns Hopkins University
 
 *          Rick Geimer, Lantana Consulting Group
 
+### Authors
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email/URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HL7 International - Public Health</td>
+<td><a href="http://www.hl7.org/Special/committees/pher" target="_new">http://www.hl7.org/Special/committees/pher</a></td>
+</tr>
+</tbody>
+</table>
+
 ### BSeR Project Realm
 
 This is a U.S. Realm Specification. This guide and related materials are based on reporting specifications in U.S. jurisdictions.
