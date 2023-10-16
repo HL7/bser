@@ -1,4 +1,4 @@
-The Bidirectional Services eReferral (BSeR) FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes and feedback by a referral recipient provider.
+The Bidirectional Services eReferral (BSeR) FHIR implementation guide (IG) provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical referrals to be communicated in the form of service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes and feedback by a referral recipient provider.
 
 ### Key Concepts
 
@@ -10,7 +10,7 @@ A critical design requirement for BSeR is to limit the exchange of clinical info
 
 ### Provider Engagement
 
-The BSeR specification also seeks to foster and reinforce provider engagement in patient outcomes through both practical and program-specific from the referral recipient provider to the referral initiating provider related to the initiation, progress, and completion of the referral activities. The feedback transactions that close the loop can contain practical information about successful program enrollment and participation as well as information about outcomes that may be achieved.
+The BSeR specification also seeks to foster and reinforce provider engagement in patient outcomes, and this extends to both the referral recipient provider and the referral initiating provider as well as throughout the initiation, progress, and completion of the referral activities. The feedback transactions that close the loop can contain practical information about successful program enrollment and participation as well as information about outcomes that may be achieved.
 
 ### Collaboration
 
