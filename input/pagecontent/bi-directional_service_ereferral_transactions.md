@@ -26,18 +26,6 @@ This guide describes two high-level use cases which provide a general overview o
 
 <center><table><tr><td><img src="referral-push.png" style="width:100%;"/></td></tr></table></center>
 
-##### Referral - Notify and Pull
-
-<center><table><tr><td><img src="referral-notify-and-pull.png" style="width:100%;"/></td></tr></table></center>
-
-##### Referral - Push (with intermediary)
-
-<center><table><tr><td><img src="referral-push-intermediary.png" style="width:100%;"/></td></tr></table></center>
-
-##### Referral - Notify and Pull (with intermediary)
-
-<center><table><tr><td><img src="referral-notify-and-pull-intermediary.png" style="width:100%;"/></td></tr></table></center>
-
 #### Referral Interaction Diagram Steps
 
 ##### [Referral - Push Diagram](#referral---push) Steps
@@ -56,6 +44,10 @@ This guide describes two high-level use cases which provide a general overview o
 | **Referral** | Referral Response(s) - Subscription (Option B) | Referral Recipient | Once the requested service(s) have been performed the Referral Recipient (FHIR Server) automatically sends Subscription Notification (including Task) to Referral Initiator | [R4 Topic-Based Subscription Notification Bundle](http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-notification-r4.html), [BSeR Task](StructureDefinition-BSeR-ReferralTask.html) |
 {: .grid }
 
+##### Referral - Notify and Pull
+
+<center><table><tr><td><img src="referral-notify-and-pull.png" style="width:100%;"/></td></tr></table></center>
+
 ##### [Referral - Notify and Pull Diagram](#referral---notify-and-pull) Steps
 
 | **Category** | **Step** | **Actor(s)** | **Description** | **Resources (where applicable)** |
@@ -72,6 +64,10 @@ This guide describes two high-level use cases which provide a general overview o
 | **Referral** | Referral Response(s) - Submit (Option A) | Referral Recipient | Once the requested service(s) have been performed the Referral Recipient submits the updated Task containing a Document Bundle with the use case specific referral feedback resources specified in the payload data element requirements | [BSeR Task](StructureDefinition-BSeR-ReferralTask.html), [BSeR Referral Feedback Document Bundle](StructureDefinition-BSeR-ReferralFeedbackDocumentBundle.html) |
 | **Referral** | Referral Response(s) - Subscription (Option B) | Referral Recipient | Once the requested service(s) have been performed the Referral Recipient (FHIR Server) automatically sends Subscription Notification (including Task) to Referral Initiator | [R4 Topic-Based Subscription Notification Bundle](http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-notification-r4.html), [BSeR Task](StructureDefinition-BSeR-ReferralTask.html) |
 {: .grid }
+
+##### Referral - Push (with intermediary)
+
+<center><table><tr><td><img src="referral-push-intermediary.png" style="width:100%;"/></td></tr></table></center>
 
 ##### [Referral - Push (with intermediary) Diagram](#referral---push-with-intermediary) Steps
 
@@ -95,6 +91,11 @@ This guide describes two high-level use cases which provide a general overview o
 | **Referral** | Referral Response(s) - Submit (Option A) | Intermediary | On receipt of submit from the Referral Recipient the Intermediary submits the updated Task containing a Document Bundle with the use case specific referral feedback resources specified in the payload data element requirements to the Referral Initiator | [BSeR Task](StructureDefinition-BSeR-ReferralTask.html), [BSeR Referral Feedback Document Bundle](StructureDefinition-BSeR-ReferralFeedbackDocumentBundle.html) |
 | **Referral** | Referral Response(s) - Subscription (Option B) | Intermediary | On Subscription Notification from the Referral Recipient the Intermediary (FHIR Server) automatically sends Subscription Notification (including Task) to Referral Initiator | [R4 Topic-Based Subscription Notification Bundle](http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription-notification-r4.html), [BSeR Task](StructureDefinition-BSeR-ReferralTask.html) |
 {: .grid }
+
+##### Referral - Notify and Pull (with intermediary)
+
+<center><table><tr><td><img src="referral-notify-and-pull-intermediary.png" style="width:100%;"/></td></tr></table></center>
+
 
 ##### [Referral - Notify and Pull (with intermediary) Diagram](#referral---notify-and-pull-with-intermediary) Steps
 
