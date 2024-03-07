@@ -31,7 +31,7 @@ The following table identifies the aggregation of supporting information profile
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-EmploymentStatus.html">ODH Employment Status</a>
             </td>
-            <td rowspan="44" style="width:1; background-color:#DCDCDC" />
+            <td rowspan="44" style="width:1; border-top-style: hidden; background-color:#DCDCDC" />
             <td />
             <td />
         </tr>
