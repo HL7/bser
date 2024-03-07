@@ -94,9 +94,8 @@ INFORMATION: Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-Coverage').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
 
 # Approved US Core Variance - https://jira.hl7.org/browse/FHIR-41603 (APPROVED)
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/bser-referral-observation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/bser-referral-observation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # ERROR on Consent: Core Spec issue detailed here: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/IG.20Publication.20Validation.20issue.20-.20Consent.20Profile
