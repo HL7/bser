@@ -97,6 +97,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureD
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TelcomCommunicationPreferences').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/bser-referral-observation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bser/StructureDefinition/bser-referral-observation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # ERROR on Consent: Core Spec issue detailed here: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/IG.20Publication.20Validation.20issue.20-.20Consent.20Profile
 ERROR: StructureDefinition/BSeR-PatientConsent: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is 'urn:ietf:rfc:3986', then the identifier.value must be a full URI (e.g. start with a scheme), not 'Local eCMS identifier'
