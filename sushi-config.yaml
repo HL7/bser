@@ -302,6 +302,7 @@ publisher:
 parameters:
   show-inherited-invariants: false
   path-expansion-params: 'Parameters-parameters-snomed-us.json'  #path is relative to [base]/fsh-generated/resources
+  auto-oid-root: 2.16.840.1.113883.4.642.40.33
 
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0
