@@ -38,7 +38,7 @@ Description: "This ServiceRequest profile represents a request for a referral."
 * priority MS
 * code ^short = "Referral or specific type of referral"
 * code ^definition = "Referral or specific type of referral. If the code used describes the type of/reason for referral (such as \"Referral to diabetes prevention program\") then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."
-* occurrence[x] 0..1
+* occurrence[x] only Period or Timing
 * requester 1.. MS
 * requester ^short = "Referral Initiator"
 * performer 0..1 MS
