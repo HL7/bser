@@ -38,7 +38,7 @@ Description: "This ServiceRequest profile represents a request for a referral."
 * priority MS
 * code ^short = "Referral or specific type of referral"
 * code ^definition = "Referral or specific type of referral. If the code used describes the type of/reason for referral (such as \"Referral to diabetes prevention program\") then reasonCode may be omitted. If the code used doesn't describe the type of/reason for referral then reasonCode should contain a value."
-* occurrence[x] only Period or Timing
+* occurrence[x] 0..1
 * requester 1.. MS
 * requester ^short = "Referral Initiator"
 * performer 0..1 MS
@@ -46,9 +46,10 @@ Description: "This ServiceRequest profile represents a request for a referral."
 * reasonCode MS
 * reasonCode ^short = "Reason for referral"
 * reasonCode ^definition = "Reason for referral. Should be present if the reason isn't pre-coordinated in the code (e.g. \"Referral\")."
+* reasonCode.text 1..1 MS 
+* reasonCode.text ^short = "set to the reason if there is no code otherwise set this field to the description of the code"
 * reasonReference MS
 // * reasonReference ^short
-* reasonReference only Reference(USCoreConditionProblemsHealthConcernsProfile or Observation)
 * insurance MS
 * insurance ^slicing.discriminator.type = #profile
 * insurance ^slicing.discriminator.path = "resolve()"

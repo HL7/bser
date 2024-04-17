@@ -10,5 +10,4 @@ Description: "This Task profile represents state of a task containing a BSeR ref
 * ^jurisdiction.text = "United States of America"
 * focus only Reference(BSeRReferralServiceRequest)
 * for only Reference(USCorePatientProfile)
-* owner only Reference(USCorePractitionerRoleProfile)
 * output.value[x] only Reference(BSeRReferralFeedbackDocumentBundle)

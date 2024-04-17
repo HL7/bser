@@ -22,6 +22,7 @@ Usage: #example
 * performer.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
 * performer.display = "Hailey Eight, MD"
 * reasonCode = $sct#762496003 "Acute malnutrition in infancy (disorder)"
+* reasonCode.text = "Acute malnutrition in infancy (disorder)"
 * insurance.reference = "Coverage/coverage-bser-coverage-baby-everybaby"
 * supportingInfo[bundleSupportingInfo].reference = "Bundle/bundle-bser-referral-request-document-bundle-baby-everybaby"
 * supportingInfo[consentSupportingInfo].reference = "Consent/consent-bser-patientconsent-baby-everybaby"

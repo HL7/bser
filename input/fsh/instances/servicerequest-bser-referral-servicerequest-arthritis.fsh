@@ -22,6 +22,7 @@ Usage: #example
 * performer.reference = "PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
 * performer.display = "Hailey Eight, MD"
 * reasonCode = $sct#3723001 "Arthritis (disorder)"
+* reasonCode.text = "Arthritis (disorder)"
 * insurance.reference = "Coverage/coverage-bser-coverage-eve-everywoman"
 * supportingInfo[bundleSupportingInfo].reference = "Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman"
 * supportingInfo[consentSupportingInfo].reference = "Consent/consent-bser-patientconsent-eve-everywoman"

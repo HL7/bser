@@ -12,7 +12,6 @@ BSeROrganization                                                                
 BSeRParticipationFeedbackObservation                                               Profile     profiles\BSeRParticipationFeedbackObservation.fsh
 BSeRPatientConsent                                                                 Profile     profiles\BSeRPatientConsent.fsh
 BSeRPractitioner                                                                   Profile     profiles\BSeRPractitioner.fsh
-BSeRReferralActivityStatus                                                         Profile     profiles\BSeRReferralActivityStatus.fsh
 BSeRReferralFeedbackComposition                                                    Profile     profiles\BSeRReferralFeedbackComposition.fsh
 BSeRReferralFeedbackDocumentBundle                                                 Profile     profiles\BSeRReferralFeedbackDocumentBundle.fsh
 USCorePractitionerRoleProfile                                              Profile     profiles\USCorePractitionerRoleProfile.fsh
@@ -62,7 +61,6 @@ procedure-us-core-procedure-nicotine-replacement-eve-everywoman                 
 observation-bser-referral-observation-lactation-baby-everybaby                              Instance    instances\observation-bser-referral-observation-lactation-baby-everybaby.fsh
 observation-bser-nutritionfeedbackobs-2-baby-everybaby                              Instance    instances\observation-bser-nutritionfeedbackobs-2-baby-everybaby.fsh
 observation-bser-nutritionobs-baby-everybaby                                        Instance    instances\observation-bser-nutritionobs-baby-everybaby.fsh
-observation-bser-referralactivitystatus-eve-everywoman                              Instance    instances\observation-bser-referralactivitystatus-eve-everywoman.fsh
 observation-bser-telcomcomm-eve-everywoman                                          Instance    instances\observation-bser-telcomcomm-eve-everywoman.fsh
 observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman                    Instance    instances\observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman.fsh
 observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman                    Instance    instances\observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman.fsh

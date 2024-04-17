@@ -14,7 +14,6 @@ Usage: #example
 * section[referralServiceRequestFeedbackSummary].title = "Referral Service Request Feedback Summary"
 * section[referralServiceRequestFeedbackSummary].code = BSeR#RSRFS "CompositionSectionReferralServiceRequestFeedbackSummary"
 * section[referralServiceRequestFeedbackSummary].focus.reference = "ServiceRequest/servicerequest-bser-referral-servicerequest-early-childhood"
-* section[referralServiceRequestFeedbackSummary].entry.reference = "Observation/observation-bser-referralactivitystatus-baby-everybaby"
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].title = "Early Childhood Nutrition Referral Feedback Supporting Information"
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].code = BSeR#ECNRFSI "Early Childhood Nutrition Referral Feedback Supporting Information"
 * section[earlyChildhoodNutritionReferralFeedbackSupportingInformation].entry[earlyChildhoodNutritionFeedbackObservation].reference = "Observation/observation-bser-referral-observation-lactation-baby-everybaby"

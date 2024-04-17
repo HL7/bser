@@ -15,7 +15,7 @@
 <artifact id="StructureDefinition/bser-bundle-batch-query-referral-supporting-info" key="StructureDefinition-bser-bundle-batch-query-referral-supporting-info" name="BSeR Bundle Batch Query Referral Supporting Information"/>
 <artifact id="StructureDefinition/BSeR-Coverage" key="StructureDefinition-BSeR-Coverage" name="BSeR Coverage"/>
 <artifact id="StructureDefinition/BSeR-PatientConsent" key="StructureDefinition-BSeR-PatientConsent" name="BSeR Patient Consent"/>
-<artifact id="StructureDefinition/BSeR-ReferralActivityStatus" key="StructureDefinition-BSeR-ReferralActivityStatus" name="BSeR Referral Activity Status"/>
+<artifact deprecated="true" id="StructureDefinition/BSeR-ReferralActivityStatus" key="StructureDefinition-BSeR-ReferralActivityStatus" name="BSeR Referral Activity Status"/>
 <artifact id="StructureDefinition/BSeR-ReferralFeedbackComposition" key="StructureDefinition-BSeR-ReferralFeedbackComposition" name="BSeR Referral Feedback Composition"/>
 <artifact id="StructureDefinition/BSeR-ReferralFeedbackDocumentBundle" key="StructureDefinition-BSeR-ReferralFeedbackDocumentBundle" name="BSeR Referral Feedback Document Bundle"/>
 <artifact id="StructureDefinition/BSeR-ReferralMessageBundle" key="StructureDefinition-BSeR-ReferralMessageBundle" name="BSeR Referral Message Bundle"/>
@@ -92,8 +92,8 @@
 <artifact id="Observation/observation-odh-employment-status-mom-everymom" key="Observation-observation-odh-employment-status-mom-everymom" name="Observation - Mom Everymom - Employed"/>
 <artifact id="Observation/observation-bser-referral-observation-pain-mgmt-eve-everywoman" key="Observation-observation-bser-referral-observation-pain-mgmt-eve-everywoman" name="Observation - Pain Management - Eve Everywoman"/>
 <artifact id="Observation/observation-bser-nutritionfeedbackobs-2-baby-everybaby" key="Observation-observation-bser-nutritionfeedbackobs-2-baby-everybaby" name="Observation - Painful lactation - Baby Everybaby"/>
-<artifact id="Observation/observation-bser-referralactivitystatus-baby-everybaby" key="Observation-observation-bser-referralactivitystatus-baby-everybaby" name="Observation - Referral Activity Status - Baby Everybaby"/>
-<artifact id="Observation/observation-bser-referralactivitystatus-eve-everywoman" key="Observation-observation-bser-referralactivitystatus-eve-everywoman" name="Observation - Referral Activity Status - Eve Everywoman"/>
+<artifact deprecated="true" id="Observation/observation-bser-referralactivitystatus-baby-everybaby" key="Observation-observation-bser-referralactivitystatus-baby-everybaby" name="Observation - Referral Activity Status - Baby Everybaby"/>
+<artifact deprecated="true" id="Observation/observation-bser-referralactivitystatus-eve-everywoman" key="Observation-observation-bser-referralactivitystatus-eve-everywoman" name="Observation - Referral Activity Status - Eve Everywoman"/>
 <artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" name="Observation - Tobacco free duration - Eve Everywoman"/>
 <artifact id="Organization/organization-us-core-organization-acme-lab" key="Organization-organization-us-core-organization-acme-lab" name="Organization - Acme Lab"/>
 <artifact id="Organization/organization-us-core-organization-saint-luke" key="Organization-organization-us-core-organization-saint-luke" name="Organization - Saint Luke's Hospital of Kansas City"/>

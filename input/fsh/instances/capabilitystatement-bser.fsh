@@ -29,7 +29,6 @@ Usage: #definition
 // * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"
 // * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"
 * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/bser-referral-observation"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #update
@@ -60,7 +59,6 @@ Usage: #definition
 // * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-TobaccoUseCessationFeedbackObservation"
 // * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionObservation"
 // * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-EarlyChildhoodNutritionFeedbackObservation"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ReferralActivityStatus"
 * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/bser-referral-observation"
 // * rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/bser/StructureDefinition/BSeR-ParticipationFeedbackObservation"
 * rest[=].resource[=].interaction[0].code = #create

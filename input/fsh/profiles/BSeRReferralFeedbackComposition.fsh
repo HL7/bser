@@ -37,7 +37,6 @@ Description: "This Composition profile represents the clinical feedback included
 * section[referralServiceRequestFeedbackSummary].focus only Reference(BSeRReferralServiceRequest)
 * section[referralServiceRequestFeedbackSummary].text MS
 * section[referralServiceRequestFeedbackSummary].entry MS
-* section[referralServiceRequestFeedbackSummary].entry only Reference(BSeRReferralActivityStatus)
 * section[obesityReferralFeedbackSupportingInformation].code 1.. MS
 * section[obesityReferralFeedbackSupportingInformation].code = BSeR#ORFSI "Obesity Referral Feedback Supporting Information"
 * section[obesityReferralFeedbackSupportingInformation].entry MS
