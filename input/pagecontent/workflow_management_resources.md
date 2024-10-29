@@ -1,4 +1,4 @@
-The BSeR referral request workflow resources are Message Bundle, Referral messageHeader, and Referral Task.
+The BSeR referral request workflow resources are Message Bundle, Referral MessageHeader, and Referral Task.
 
 The electronic exchange of the referral request and associated referral feedback can utilize FHIR Messaging and/or a basic RESTful Submit. 
 
