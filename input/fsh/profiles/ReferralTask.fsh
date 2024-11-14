@@ -56,3 +56,4 @@ Description: "This Task profile represents the state of a task containing a refe
 * owner only Reference(USCorePractitionerProfile or USCorePractitionerRoleProfile or USCoreOrganizationProfile or USCoreCareTeam or HealthcareService or USCorePatientProfile or Device or USCoreRelatedPersonProfile)
 * note MS
 * output MS
+* output.value[x] MS
