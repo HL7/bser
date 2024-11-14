@@ -55,7 +55,7 @@ Description: "This ServiceRequest profile represents a request for a referral."
 * insurance ^slicing.discriminator.path = "resolve()"
 * insurance ^slicing.rules = #open
 * insurance contains insuranceCoverage 0..* MS
-* insurance[insuranceCoverage] only Reference(Coverage)
+* insurance[insuranceCoverage] only Reference(BSeRCoverage)
 * supportingInfo MS
 * supportingInfo ^slicing.discriminator.type = #profile
 * supportingInfo ^slicing.discriminator.path = "resolve()"
