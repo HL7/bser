@@ -36,7 +36,7 @@ Description: "This Composition profile represents the clinical supporting inform
 * section[otherSupportingInformation].entry ^slicing.discriminator.path = "resolve()"
 * section[otherSupportingInformation].entry ^slicing.rules = #open
 * section[otherSupportingInformation].entry contains
-    employmentStatusOrEducationLevel 1..*
+    employmentStatusOrEducationLevel 0..*
 * section[otherSupportingInformation].entry[employmentStatusOrEducationLevel] only Reference(USCoreObservationSocialHistoryProfile or EmploymentStatus)
 * section[obesityReferralSupportingInformation].code 1..
 * section[obesityReferralSupportingInformation].code = BSeR#ORSI "Obesity Referral Supporting Information"
