@@ -41,3 +41,7 @@ For Clinical Safety Information please refer to the [FHIR Implementer’s Safety
 Disclaimer: All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.
 
 
+### BSeR Project Realm
+
+This is a U.S. Realm Specification. This guide and related materials are based on reporting specifications in U.S. jurisdictions.
+

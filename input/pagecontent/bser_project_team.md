@@ -50,7 +50,3 @@ John W. Loonsk MD, Consulting CMIO APHL, Johns Hopkins University
 </tr>
 </tbody>
 </table>
-
-### BSeR Project Realm
-
-This is a U.S. Realm Specification. This guide and related materials are based on reporting specifications in U.S. jurisdictions.
