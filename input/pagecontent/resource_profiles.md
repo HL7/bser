@@ -15,3 +15,7 @@ The set of FHIR resources used in referral service request transactions.
 ### [Referral Service Request Feedback Resources](referral_service_request_feedback_resources.html)
 
 The set of FHIR resources used in the service request feedback transactions.
+
+### [Must Support]
+
+The set of FHIR resources used in the service request feedback transactions.
