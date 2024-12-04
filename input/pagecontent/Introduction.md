@@ -1,8 +1,23 @@
 The Bidirectional Services eReferral (BSeR) FHIR implementation guide (IG) provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for clinical and non-clinical referrals to be communicated in the form of service requests. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the placement of a service request by a referral initiating provider and the reporting of service delivery outcomes and feedback by a referral recipient provider.
 
+### Scope
+
+The scope of the BSeR IG is the placement of a service request referral by a referral initiator and the feedback of a service request outcome report by a referral recipient.  
+
 ### Key Concepts
 
 Key concepts adopted in the design of the BSeR FHIR Profiles are specific fit to purpose, parsimony, and closed-loop feedback to the referral initiating provider. Under the HIPAA minimum necessary standard, covered entities must make reasonable efforts to ensure that access to protected health information (PHI) is limited, per the HIPAA Privacy Rule, to the minimum amount of information necessary to fulfill or satisfy the intended purpose of a particular disclosure, request, or use. Many clinical care organizations are particularly uncomfortable sending a full clinical summary to extra-clinical programs that support specific lifestyle changes or very selective areas of general health management.
+
+### Context
+
+The context of the BSeR IG is the placement of a referral by a clinical practitioner to a clinical or extra-clinical practitioner requesting preventive or therapeutic services for a patient with a health related condition requiring intervention. The requested service is typically a care regime or program specifically designed to address the patients condition. The six health related used case conditions within the scope of this specification are depicted in the following diagram:
+<center>
+<table><tr><td><img src="BSeR IG Referral Use Cases.png" style="width:100%;"/></td></tr></table>
+</center>
+
+### Additional Referral Use Cases
+
+See the section [Adaptation for Additional Referral Use Cases](adaptation_for_additional_referral_use_cases.html) for guidance in reusing or extending the use of the BSeR standard for use in additional referral use cases.
 
 ### Design Requirements
 
