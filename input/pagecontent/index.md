@@ -34,7 +34,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 ### BSeR Project Realm
 
-This is a U.S. Realm Specification. This guide and related materials are based on reporting specifications in U.S. jurisdictions.
+This is a U.S. Realm Specification. This guide and related materials are based on reporting specifications in U.S. jurisdictions. The two profiles referenced in the [Core Reference Architecture Profiles](artifacts.html#core-referral-architecture-profiles) are not US Specific and can be used anywhere. 
 
 ### Other Information
 
