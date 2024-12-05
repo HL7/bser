@@ -2,7 +2,7 @@ The Bidirectional Services eReferral (BSeR) FHIR implementation guide (IG) provi
 
 ### Scope
 
-The scope of the BSeR IG is the placement of a service request referral by a referral initiator and the feedback of a service request outcome report by a referral recipient.  
+The scope of the BSeR IG is the placement of a service request referral by a referral initiator and the feedback of a service request outcome report by a referral recipient..
 
 ### Key Concepts
 
