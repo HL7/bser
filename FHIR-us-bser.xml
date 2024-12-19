@@ -14,6 +14,7 @@
 <artifact id="CodeSystem/bser" key="CodeSystem-bser" name="BSeR"/>
 <artifact id="StructureDefinition/bser-bundle-batch-query-referral-supporting-info" key="StructureDefinition-bser-bundle-batch-query-referral-supporting-info" name="BSeR Bundle Batch Query Referral Supporting Information"/>
 <artifact id="StructureDefinition/BSeR-Coverage" key="StructureDefinition-BSeR-Coverage" name="BSeR Coverage"/>
+<artifact id="StructureDefinition/BSeR-Patient" key="StructureDefinition-BSeR-Patient" name="BSeR Patient"/>
 <artifact id="StructureDefinition/BSeR-PatientConsent" key="StructureDefinition-BSeR-PatientConsent" name="BSeR Patient Consent"/>
 <artifact deprecated="true" id="StructureDefinition/BSeR-ReferralActivityStatus" key="StructureDefinition-BSeR-ReferralActivityStatus" name="BSeR Referral Activity Status"/>
 <artifact id="StructureDefinition/BSeR-ReferralFeedbackComposition" key="StructureDefinition-BSeR-ReferralFeedbackComposition" name="BSeR Referral Feedback Composition"/>

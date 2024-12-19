@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "fsh",
+			"task": "Build SUSHI",
+			"problemMatcher": [
+				"$sushi"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "fsh: sushi"
+		}
+	]
+}
