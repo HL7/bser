@@ -10,22 +10,22 @@ status: active
 version: 2.0.0-ballot
 
 dependencies:
-  # us.cdc.phinvads:
-  #   version: 0.12.0
-  #   uri: http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads
-  #   id: uscdcphinvads
-  # us.nlm.vsac:
-  #   version: 0.11.0
-  #   uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
-  #   id: usnlmvsac
-  # hl7.fhir.us.core:
-  #   version: 5.0.1
-  #   uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-  #   id: hl7fhiruscore
-  # hl7.fhir.us.odh:
-  #   version: 1.3.0
-  #   uri: http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh
-  #   id: hl7fhirusodh
+  us.cdc.phinvads:
+    version: 0.12.0
+    uri: http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads
+    id: uscdcphinvads
+  us.nlm.vsac:
+    version: 0.11.0
+    uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
+    id: usnlmvsac
+  hl7.fhir.us.core:
+    version: 5.0.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: hl7fhiruscore
+  hl7.fhir.us.odh:
+    version: 1.3.0
+    uri: http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh
+    id: hl7fhirusodh
 
 pages:
   index.md:
