@@ -1,16 +1,16 @@
-The BSeR referral request workflow resources are Message Bundle, Referral MessageHeader, and Referral Task.
+The BSeR referral request workflow resources are Message Bundle, Referral MessageHeader, and [BSeR Referral Task](StructureDefinition-BSeR-ReferralTask.html) (or the [Referral Task](StructureDefinition-referral-task.html) for a generic referral use case).
 
 The electronic exchange of the referral request and associated referral feedback can utilize FHIR Messaging and/or a basic RESTful Submit. 
 
-**A message Bundle** is used when messaging is the method of electronic information exchange. It contains a messageHeader as the first entry in the Bundle, followed by the resources comprising the message content. **The messageHeader** includes a reference to the referral initiator as the message sender and the ultimate referral recipient as the message receiver. A referral Task is included as the focus of the messageHeader. 
+A [BSeR Referral Message Bundle](StructureDefinition-BSeR-ReferralMessageBundle.html) is used when messaging is the method of electronic information exchange. It contains a messageHeader as the first entry in the Bundle, followed by the resources comprising the message content. [BSeR Referral Message Header](StructureDefinition-BSeR-ReferralMessageHeader.html) includes a reference to the referral initiator as the message sender and the ultimate referral recipient as the message receiver. A referral Task is included as the focus of the messageHeader. 
 
-**The referral Task** is an essential component of the electronic exchange of the referral request and its associated referral feedback. Referral Task contains the state of the referral transaction (e.g., created, accepted, in progress, or completed), references to the referral initiator (Task requester) and referral recipient (Task owner), a reference to the referral ServiceRequest (focus) and, if applicable, the referral feedback (output). 
+The [BSeR Referral Task](StructureDefinition-BSeR-ReferralTask.html) (or the [Referral Task](StructureDefinition-referral-task.html) for a generic referral use case) is an essential component of the electronic exchange of the referral request and its associated referral feedback. Referral Task contains the state of the referral transaction (e.g., created, accepted, in progress, or completed), references to the referral initiator (Task requester) and referral recipient (Task owner), a reference to the referral ServiceRequest (focus) and, if applicable, the referral feedback (output). 
 
 Task and its associated references are included in general RESTful Submit even if the messageHeader and message Bundle are not utilized. 
 
 ### Trigger Events and State Transitions
 
-Actions taken by the referral initiator such as sending a referral ServiceRequest or sending a cancellation request and actions taken by the referral recipient such as sending a referral acceptance or sending a ServiceRequest outcome are triggering events that trigger a change in state of the referral request Task. The full set of triggering events by actor and their corresponding state transitions are depicted in the following table:
+Actions taken by the referral initiator such as sending a [BSeR Service Request](StructureDefinition-BSeR-ReferralServiceRequest.html) (or the [Service Request](StructureDefinition-referral-servicerequest.html) for a generic referral use case) or sending a cancellation request and actions taken by the referral recipient such as sending a referral acceptance or sending a ServiceRequest outcome are triggering events that trigger a change in state of the referral request Task. The full set of triggering events by actor and their corresponding state transitions are depicted in the following table:
 <center>
 <table><tr><td><img src="Harmonized State Transitions.png" style="width:100%;"/></td></tr></table></center>
 
