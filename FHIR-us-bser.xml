@@ -142,7 +142,7 @@
 <page key="resource_profiles" name="Resource Profiles"/>
 <page deprecated="true" key="scope_and_context" name="Scope and Context"/>
 <page key="service_request_and_referral_feedback_supporting_information" name="Service Request and Referral Feedback Supporting Information"/>
-<page key="specification" name="Specification"/>
+<page key="Specification" name="Specification"/>
 <page key="toc" name="Table of Contents"/>
 <page key="transactions" name="Transactions"/>
 <page key="transport_options" name="Transport Options"/>
