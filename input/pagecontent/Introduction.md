@@ -12,7 +12,7 @@ Key concepts adopted in the design of the BSeR FHIR Profiles are specific fit to
 
 The context of the BSeR IG is the placement of a referral by a clinical practitioner to a clinical or extra-clinical practitioner requesting preventive or therapeutic services for a patient with a health related condition requiring intervention. The requested service is typically a care regime or program specifically designed to address the patients condition. The six health related used case conditions within the scope of this specification are depicted in the following diagram:
 <center>
-<table><tr><td><img src="BSeR IG Referral Use Cases.png" style="width:100%;"/></td></tr></table>
+<table><tr><td><img src="BSeR IG Referral Use Cases.png" style="width:75%;"/></td></tr></table>
 </center>
 
 ### Additional Referral Use Cases
