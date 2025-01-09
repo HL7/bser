@@ -127,11 +127,11 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
-<page key="Acknowledgements" name="Acknowledgements"/>
+<page deprecated="true" key="Acknowledgements" name="Acknowledgements"/>
 <page key="adaptation_for_additional_referral_use_cases" name="Adaptation for Additional Referral Use Cases"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="bser_project_team" name="BSeR Project Team"/>
-<page key="bi-directional_service_ereferral_transactions" name="Bi-directional Service eReferral Transactions"/>
+<page deprecated="true" key="bi-directional_service_ereferral_transactions" name="Bi-directional Service eReferral Transactions"/>
 <page key="change_log" name="Change Log"/>
 <page key="Downloads" name="Downloads"/>
 <page key="index" name="Home Page"/>
@@ -140,9 +140,11 @@
 <page key="referral_service_request_feedback_resources" name="Referral Service Request Feedback Resources"/>
 <page key="referral_service_request_resources" name="Referral Service Request Resources"/>
 <page key="resource_profiles" name="Resource Profiles"/>
-<page key="scope_and_context" name="Scope and Context"/>
+<page deprecated="true" key="scope_and_context" name="Scope and Context"/>
 <page key="service_request_and_referral_feedback_supporting_information" name="Service Request and Referral Feedback Supporting Information"/>
+<page key="specification" name="Specification"/>
 <page key="toc" name="Table of Contents"/>
+<page key="transactions" name="Transactions"/>
 <page key="transport_options" name="Transport Options"/>
 <page key="workflow_management_resources" name="Workflow Management Resources"/>
 <page deprecated="true" key="documentation" name="documentation" url="documentation"/>
