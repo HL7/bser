@@ -11,9 +11,9 @@ Usage: #example
 * entry[sliceBSeRComposition].resource = composition-bser-referral-feedback-arthritis-everywoman
 * entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-referral-observation-endurance-eve-everywoman"
 * entry[=].resource = observation-bser-referral-observation-endurance-eve-everywoman
-* entry[1].fullUrl = "http://example.org/fhir/Observation/observation-bser-referral-observation-pain-mgmt-eve-everywoman"
+* entry[2].fullUrl = "http://example.org/fhir/Observation/observation-bser-referral-observation-pain-mgmt-eve-everywoman"
 * entry[=].resource = observation-bser-referral-observation-pain-mgmt-eve-everywoman
-* entry[2].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
+* entry[3].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
 * entry[=].resource = practitionerrole-us-core-practitionerrole-referral-recipient
 * entry[4].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-eve-everywoman"
 * entry[=].resource = patient-us-core-patient-eve-everywoman

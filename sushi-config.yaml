@@ -56,7 +56,7 @@ pages:
     title: Downloads
   change_log.md:
     title: Change Log
-  specification.md:
+  Specification.md:
     title: Specification
 
 menu:
