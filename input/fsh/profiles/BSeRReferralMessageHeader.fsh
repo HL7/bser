@@ -8,17 +8,17 @@ Description: "The FHIR MessageHeader resource is defined as \"the header for a m
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* event[x] 1..1
+* event[x] 1..1 MS
 * event[x] only Coding
 * event[x] = $v2-0003#I12
 * event[x] ^short = "REF/RRI - Patient referral"
-* destination 1..1
-* destination.receiver 1..1
+* destination 1..1 MS
+* destination.receiver 1..1 MS
 * destination.receiver only Reference(USCorePractitionerRoleProfile)
-* sender 1..1
+* sender 1..1 MS
 * sender only Reference(USCorePractitionerRoleProfile)
 * reason MS
 * reason from $us-core-procedure-code (extensible)
 * response MS
-* focus 1..1
+* focus 1..1 MS
 * focus only Reference(BSeRReferralTask)
