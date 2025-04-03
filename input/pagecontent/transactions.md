@@ -13,6 +13,14 @@ The exchange of information between a referral service request initiator and a r
 ### High-Level Referral Use Cases
 This guide describes two high-level use cases which provide a general overview of the interactions and main actors involved, along with the major actions that occur within the context of the use case. These use cases do not delve into specific details or technical intricacies; instead, they serve as a conceptual representation of purpose and functionality.
 
+| Use Case                                                                                        | Description | Actors                                               |
+| ----------------------------------------------------------------------------------------------- | ----------- | ---------------------------------------------------- |
+| [Referral - Push](#referral---push)                                                             | TODO        | Referral Initiator, Referral Recipient               |
+| [Referral - Notify and Pull](#referral---notify-and-pull)                                       | TODO        | Referral Initiator, Referral Recipient               |
+| [Referral - Push (with intermediary)](#referral---push-with-intermediary)                       | TODO        | Referral Initiator, Referral Recipient, Intermediary |
+| [Referral - Notify and Pull (with intermediary)](#referral---notify-and-pull-with-intermediary) | TODO        | Referral Initiator, Referral Recipient, Intermediary |
+
+
 ##### Actors
  * **Patient**
  * **Referral Initiator**: Healthcare Provider
