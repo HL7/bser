@@ -15,10 +15,10 @@ This guide describes two high-level use cases which provide a general overview o
 
 | Use Case                                                                                        | Description | Actors                                               |
 | ----------------------------------------------------------------------------------------------- | ----------- | ---------------------------------------------------- |
-| [Referral - Push](#referral---push)                                                             | TODO        | Referral Initiator, Referral Recipient               |
-| [Referral - Notify and Pull](#referral---notify-and-pull)                                       | TODO        | Referral Initiator, Referral Recipient               |
-| [Referral - Push (with intermediary)](#referral---push-with-intermediary)                       | TODO        | Referral Initiator, Referral Recipient, Intermediary |
-| [Referral - Notify and Pull (with intermediary)](#referral---notify-and-pull-with-intermediary) | TODO        | Referral Initiator, Referral Recipient, Intermediary |
+| [Referral - Push](#referral---push.html)                                                             | TODO        | Referral Initiator, Referral Recipient               |
+| [Referral - Notify and Pull](#referral---notify-and-pull.html)                                       | TODO        | Referral Initiator, Referral Recipient               |
+| [Referral - Push (with intermediary)](#referral---push-with-intermediary.html)                       | TODO        | Referral Initiator, Referral Recipient, Intermediary |
+| [Referral - Notify and Pull (with intermediary)](#referral---notify-and-pull-with-intermediary.html) | TODO        | Referral Initiator, Referral Recipient, Intermediary |
 
 
 ##### Actors
