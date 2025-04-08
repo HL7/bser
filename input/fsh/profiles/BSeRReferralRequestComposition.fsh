@@ -11,7 +11,7 @@ Description: "This Composition profile represents the clinical supporting inform
 * status 1..1
 * type 1..1
 * subject 1..1
-* subject only Reference(USCorePatientProfile)
+* subject only Reference(BSeRPatient)
 * date 1..1
 * author 1..1
 * author only Reference(USCorePractitionerRoleProfile)
@@ -112,7 +112,7 @@ Description: "This Composition profile represents the clinical supporting inform
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code 1..
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].code = BSeR#ECNRSIM "Early Childhood Nutrition Referral Supporting Information Mother"
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus ..1
-* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus only Reference(USCorePatientProfile)
+* section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus only Reference(BSeRPatient)
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].focus  ^short = "The mother of the baby is the focus of this section"
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry ^slicing.discriminator.type = #profile
 * section[earlyChildhoodNutritionReferralSupportingInformation].section[motherInformation].entry ^slicing.discriminator.path = "resolve()"
@@ -153,4 +153,3 @@ Description: "This Composition profile represents the clinical supporting inform
     telcomCommunicationPreferences 0..*
 * section[tobaccoUseCessationReferralSupportingInformation].entry[nrtAuthorizationStatus] only Reference(USCoreProcedureProfile)
 * section[tobaccoUseCessationReferralSupportingInformation].entry[smokingStatus] only Reference(USCoreSmokingStatusProfile)
-* section[tobaccoUseCessationReferralSupportingInformation].entry[telcomCommunicationPreferences] only Reference(BSeRTelcomCommunicationPreferences) 

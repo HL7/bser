@@ -27,10 +27,10 @@ Usage: #example
 * entry[=].resource = observation-us-core-bmi-mom-everymom
 * entry[+].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"
 * entry[=].resource = practitionerrole-us-core-practitionerrole-referral-initiator
-* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-baby-everybaby"
-* entry[=].resource = patient-us-core-patient-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-mom-everymom"
-* entry[=].resource = patient-us-core-patient-mom-everymom
+* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-bser-patient-baby-everybaby"
+* entry[=].resource = patient-bser-patient-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-bser-patient-mom-everymom"
+* entry[=].resource = patient-bser-patient-mom-everymom
 * entry[+].fullUrl = "http://example.org/fhir/RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom"
 * entry[=].resource = relatedperson-us-core-relatedperson-mom-everymom
 * entry[+].fullUrl = "http://example.org/fhir/Practitioner/practitioner-us-core-practitioner-henry-seven"

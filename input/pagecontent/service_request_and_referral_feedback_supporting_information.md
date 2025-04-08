@@ -263,7 +263,7 @@ The following table identifies the aggregation of supporting information profile
         <tr style="height: 20px">
             <td style="background-color:#F2F2F2">Baby&#39;s birthdate</td>
             <td style="background-color:#F2F2F2">
-                <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+                <a href="StructureDefinition-BSeR-Patient.html">BSeR Patient</a>
             </td>
             <td style="background-color:#F2F2F2" />
             <td style="background-color:#F2F2F2" />
@@ -271,7 +271,7 @@ The following table identifies the aggregation of supporting information profile
         <tr style="height: 20px">
             <td style="background-color:#F2F2F2">Baby&#39;s name</td>
             <td style="background-color:#F2F2F2">
-                <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+                <a href="StructureDefinition-BSeR-Patient.html">BSeR Patient</a>
             </td>
             <td style="background-color:#F2F2F2" />
             <td style="background-color:#F2F2F2" />
@@ -279,7 +279,7 @@ The following table identifies the aggregation of supporting information profile
         <tr style="height: 20px">
             <td style="background-color:#F2F2F2">Baby&#39;s sex</td>
             <td style="background-color:#F2F2F2">
-                <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+                <a href="StructureDefinition-BSeR-Patient.html">BSeR Patient</a>
             </td>
             <td style="background-color:#F2F2F2" />
             <td style="background-color:#F2F2F2" />
@@ -403,7 +403,7 @@ The following table identifies the aggregation of supporting information profile
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a>
             </td>
         </tr>
-        <tr style="height: 20px">
+        <!-- <tr style="height: 20px">
             <td>Best day to call</td>
             <td>
                 <a href="StructureDefinition-BSeR-TelcomCommunicationPreferences.html">BSeR Telcom Communication Preferences</a>
@@ -432,7 +432,7 @@ The following table identifies the aggregation of supporting information profile
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-observation-social-history.html">US Core Observation Social History Profile</a>
             </td>
-        </tr>
+        </tr> -->
         <tr style="height: 20px">
             <td />
             <td />

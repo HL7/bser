@@ -15,8 +15,8 @@ Usage: #example
 * entry[=].resource = observation-bser-referral-observation-pain-mgmt-eve-everywoman
 * entry[3].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient"
 * entry[=].resource = practitionerrole-us-core-practitionerrole-referral-recipient
-* entry[4].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-eve-everywoman"
-* entry[=].resource = patient-us-core-patient-eve-everywoman
+* entry[4].fullUrl = "http://example.org/fhir/Patient/patient-bser-patient-eve-everywoman"
+* entry[=].resource = patient-bser-patient-eve-everywoman
 * entry[5].fullUrl = "http://example.org/fhir/Organization/organization-us-core-organization-saint-luke"
 * entry[=].resource = organization-us-core-organization-saint-luke
 * entry[6].fullUrl = "http://example.org/fhir/Practitioner/practitioner-us-core-practitioner-hailey-eight"

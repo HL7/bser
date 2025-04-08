@@ -11,9 +11,6 @@ Description: "BSeR code system"
 * ^jurisdiction.text = "United States of America"
 * ^caseSensitive = false
 * ^content = #complete
-* #BDTC "Best Day To Call"
-* #BTTC "Best Time To Call"
-* #LMI "Leave Message Indicator"
 * #RSRFS "CompositionSectionReferralServiceRequestFeedbackSummary"
 * #RSRFSI "CompositionSectionReferralServiceRequestFeedbackSupportingInformation"
 * #RSRSI "CompositionSectionReferralServiceRequestSupportingInformation"

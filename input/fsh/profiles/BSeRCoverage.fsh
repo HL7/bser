@@ -24,13 +24,13 @@ Description: "This Coverage profile represents identifiers and descriptors of an
 * type MS
 * type from $2.16.840.1.114222.4.11.3591 (extensible)
 * subscriber MS
-* subscriber only Reference(USCorePatientProfile or USCoreRelatedPersonProfile)
+* subscriber only Reference(BSeRPatient or USCoreRelatedPersonProfile)
 * subscriber ^definition = "The subscriber is the policy holder of the insurance plan. When the beneficiary Patient is not the subscriber use RelatedPerson."
 * subscriberId MS
 * subscriberId ^short = "ID assigned to the subscriber"
 * subscriberId ^comment = "The identifier assigned by the Payer on the subscriber's ID card"
 * beneficiary MS
-* beneficiary only Reference(USCorePatientProfile)
+* beneficiary only Reference(BSeRPatient)
 * beneficiary ^short = "Plan beneficiary"
 * beneficiary ^comment = "Identifier for a member assigned by the Payer."
 * relationship 1.. MS
@@ -41,7 +41,7 @@ Description: "This Coverage profile represents identifiers and descriptors of an
 * period ^short = "Coverage start and end dates"
 * period ^comment = "Date that the contract became effective and date that the contract was terminated or coverage changed."
 * payor ..1 MS
-* payor only Reference(USCoreOrganizationProfile or USCorePatientProfile or USCoreRelatedPersonProfile)
+* payor only Reference(USCoreOrganizationProfile or BSeRPatient or USCoreRelatedPersonProfile)
 * payor ^short = "Issuer of the policy"
 * class MS
 * class ^slicing.discriminator.type = #pattern

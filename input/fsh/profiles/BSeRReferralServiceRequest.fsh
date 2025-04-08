@@ -8,6 +8,7 @@ Description: "This ServiceRequest profile represents a BSeR request for a referr
 * ^publisher = "HL7 Public Health Work Group"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
+* subject only Reference(BSeRPatient)
 * requester only Reference(USCorePractitionerRoleProfile)
 * performer only Reference(USCorePractitionerRoleProfile or USCoreOrganizationProfile)
 * reasonCode from $2.16.840.1.113762.1.4.1099.46 (extensible)

@@ -8,8 +8,8 @@ Usage: #example
 * entry[=].resource = messageheader-bser-referral-messageheader
 * entry[+].fullUrl = "http://example.org/fhir/ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis"
 * entry[=].resource = servicerequest-bser-referral-servicerequest-arthritis
-* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-eve-everywoman"
-* entry[=].resource = patient-us-core-patient-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-bser-patient-eve-everywoman"
+* entry[=].resource = patient-bser-patient-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Task/task-bser-referral-task"
 * entry[=].resource = task-bser-referral-task
 * entry[+].fullUrl = "http://example.org/fhir/PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator"

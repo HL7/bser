@@ -1,6 +1,6 @@
 Profile: BSeRPatient
 Parent: USCorePatientProfile
-Id: BSeR-Patient
+Id: bser-patient
 Title: "BSeR Patient"
 Description: "This Patient profile represents a BSeR patient. It adds the extension ContactPoint Comment to the telecom field, to represent the patient’s preference with regard to contact via telecommunication (phone/email) such as the best day to call, the best time to call, whether a message can be left."
 * ^status = #active

@@ -242,7 +242,7 @@ Each referral use case requires that certain information items accompany the ser
         </tr>
         <tr>
             <td>
-                <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+                <a href="StructureDefinition-BSeR-Patient.html">BSeR Patient</a>
             </td>
             <td>Baby's birthdate</td>
             <td>n/a</td>
@@ -255,7 +255,7 @@ Each referral use case requires that certain information items accompany the ser
         </tr>
         <tr>
             <td>
-                <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+                <a href="StructureDefinition-BSeR-Patient.html">BSeR Patient</a>
             </td>
             <td>Baby's name</td>
             <td>n/a</td>
@@ -268,7 +268,7 @@ Each referral use case requires that certain information items accompany the ser
         </tr>
         <tr>
             <td>
-                <a href="{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+                <a href="StructureDefinition-BSeR-Patient.html">BSeR Patient</a>
             </td>
             <td>Baby's sex</td>
             <td>n/a</td>
@@ -309,7 +309,7 @@ Each referral use case requires that certain information items accompany the ser
             <td />
             <td style="text-align: center; vertical-align: middle;">●</td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td>
                 <a href="StructureDefinition-BSeR-TelcomCommunicationPreferences.html">BSeR Telcom Communication Preferences</a>
             </td>
@@ -347,7 +347,7 @@ Each referral use case requires that certain information items accompany the ser
             <td />
             <td />
             <td style="text-align: center; vertical-align: middle;">●</td>
-        </tr>
+        </tr> -->
         <tr>
             <td>
                 <a href="{{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-EmploymentStatus.html">ODH Employment Status</a>

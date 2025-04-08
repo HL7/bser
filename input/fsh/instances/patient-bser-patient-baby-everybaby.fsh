@@ -1,7 +1,7 @@
-Instance: patient-us-core-patient-baby-everybaby
-InstanceOf: USCorePatientProfile
+Instance: patient-bser-patient-baby-everybaby
+InstanceOf: BSeRPatient
 Title: "Patient - Baby Everybaby"
-Description: "US Core Patient: Baby Everybaby example"
+Description: "BSeR Patient: Baby Everybaby example"
 Usage: #example
 * extension[0].extension[0].url = "ombCategory"
 * extension[=].extension[=].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"

@@ -12,7 +12,7 @@ Description: "This Composition profile represents the clinical feedback included
 * status MS
 * type MS
 * subject 1.. MS
-* subject only Reference(USCorePatientProfile)
+* subject only Reference(BSeRPatient)
 * date MS
 * author 1..1 MS
 * author only Reference(USCorePractitionerRoleProfile)

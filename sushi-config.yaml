@@ -81,6 +81,11 @@ menu:
   Artifact Index: artifacts.html
 
 groups:
+  bser-participant-profiles:
+    name: BSeR Participant Profile
+    # description: BSeR Participant Profile
+    resources:
+    - StructureDefinition/bser-patient
   core-referral-architecture-profiles:
     name: Core Referral Architecture Profiles
     # description: Core Referral Architecture Profiles
@@ -113,7 +118,6 @@ groups:
     resources:
     - StructureDefinition/bser-bundle-batch-query-referral-supporting-info
     - StructureDefinition/bser-referral-observation
-    - StructureDefinition/BSeR-TelcomCommunicationPreferences
     - StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication
   other-profiles:
     name: Other Profiles
@@ -217,7 +221,6 @@ groups:
     - Observation/observation-bser-referral-observation-lactation-baby-everybaby
     - Observation/observation-bser-nutritionfeedbackobs-2-baby-everybaby
     - Observation/observation-bser-nutritionobs-baby-everybaby
-    - Observation/observation-bser-telcomcomm-eve-everywoman
     - Observation/observation-us-core-blood-pressure-eve-everywoman
     - Observation/observation-us-core-blood-pressure-baby-everybaby
     - Observation/observation-us-core-blood-pressure-mom-everymom
@@ -251,9 +254,9 @@ groups:
     - Location/location-us-core-location-st-luke
     - Organization/organization-us-core-organization-acme-lab
     - Organization/organization-us-core-organization-saint-luke
-    - Patient/patient-us-core-patient-baby-everybaby
-    - Patient/patient-us-core-patient-eve-everywoman
-    - Patient/patient-us-core-patient-mom-everymom
+    - Patient/patient-bser-patient-baby-everybaby
+    - Patient/patient-bser-patient-eve-everywoman
+    - Patient/patient-bser-patient-mom-everymom
     - Practitioner/practitioner-us-core-practitioner-hailey-eight
     - Practitioner/practitioner-us-core-practitioner-henry-seven
     - PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator
@@ -278,7 +281,6 @@ groups:
   value-sets:
     name: Value Sets
     resources:
-    - ValueSet/BSeR-TelcomCommunicationPreferencesVS
     - ValueSet/TaskBusinessStatusVS
   capability-statement:
     name: Capability Statement

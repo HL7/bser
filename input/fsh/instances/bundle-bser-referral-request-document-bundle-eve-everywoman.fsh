@@ -23,8 +23,8 @@ Usage: #example
 * entry[=].resource = medicationrequest-us-core-medicationrequest-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Observation/observation-us-core-body-weight-eve-everywoman"
 * entry[=].resource = observation-us-core-body-weight-eve-everywoman
-* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-us-core-patient-eve-everywoman"
-* entry[=].resource = patient-us-core-patient-eve-everywoman
+* entry[+].fullUrl = "http://example.org/fhir/Patient/patient-bser-patient-eve-everywoman"
+* entry[=].resource = patient-bser-patient-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman"
 * entry[=].resource = allergyintolerance-us-core-allergyint-eve-everywoman
 * entry[+].fullUrl = "http://example.org/fhir/Practitioner/practitioner-us-core-practitioner-henry-seven"
